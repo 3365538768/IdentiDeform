@@ -53,7 +53,7 @@ figcaption,.cap{font-size:14px;color:var(--muted);margin-top:8px}
 video,.media img{display:block;width:100%;height:auto;border-radius:9px;background:var(--media)}
 .vlabels{display:grid;gap:4px;margin-top:6px;font-size:13px;color:var(--muted);text-align:center}
 .vlabels b{color:var(--text);font-weight:600}
-.l2{grid-template-columns:1fr 1fr}.l3{grid-template-columns:repeat(3,1fr)}.l4{grid-template-columns:repeat(4,1fr)}
+.l2{grid-template-columns:1fr 1fr}.l3{grid-template-columns:repeat(3,1fr)}.l4{grid-template-columns:repeat(4,1fr)}.l5{grid-template-columns:repeat(5,1fr)}
 .pill{display:inline-block;padding:1px 8px;border-radius:999px;font-size:12px;font-weight:600;border:1px solid var(--line)}
 .ok{color:var(--ok)}.bad{color:var(--bad)}
 .note{background:var(--surface-2);border-radius:12px;padding:14px 16px;font-size:15px}
@@ -152,16 +152,26 @@ footer{padding:28px 0 48px;border-top:1px solid var(--line);color:var(--muted);f
   <div class="grid">
     <div class="card">
       <h3>Plasticine, drop <span>validation #5</span></h3>
-      <video src="assets/refine/refine_000005.mp4" poster="assets/refine/refine_000005.jpg" muted loop playsinline preload="none" width="1042" height="256"></video>
-      <div class="vlabels l4"><div><b>Observed</b><br>(ground-truth parameters)</div><div><b>Class mean</b><br>IoU 0.74</div><div><b>Video prior</b>, 0 sims<br>IoU 0.84</div><div><b>Prior + refinement</b><br>IoU 0.93 (best of 24 sims)</div></div>
+      <video src="assets/refine/refine_000005.mp4" poster="assets/refine/refine_000005.jpg" muted loop playsinline preload="none" width="1304" height="322"></video>
+      <div class="vlabels l5"><div><b>Observed</b><br>ground-truth simulation</div><div><b>PIXIE</b>, no prior<br>IoU 0.28 &middot; ~8 s</div><div><b>Our prior</b>, 0 sims<br>IoU 0.84 &middot; ~6 s</div><div><b>Prior + 4 sims</b><br>IoU 0.86 &middot; ~32 min</div><div><b>No prior</b>, 24 sims<br>IoU 0.93 &middot; ~2.9 h</div></div>
     </div>
     <div class="card">
       <h3>Jelly, bend <span>validation #210</span></h3>
-      <video src="assets/refine/refine_000210.mp4" poster="assets/refine/refine_000210.jpg" muted loop playsinline preload="none" width="1042" height="256"></video>
-      <div class="vlabels l4"><div><b>Observed</b><br>(ground-truth parameters)</div><div><b>Class mean</b><br>IoU 0.66</div><div><b>Video prior</b>, 0 sims<br>IoU 0.75</div><div><b>Prior + refinement</b><br>IoU 0.95 (best of 24 sims)</div></div>
+      <video src="assets/refine/refine_000210.mp4" poster="assets/refine/refine_000210.jpg" muted loop playsinline preload="none" width="1304" height="322"></video>
+      <div class="vlabels l5"><div><b>Observed</b><br>ground-truth simulation</div><div><b>PIXIE</b>, no prior<br>IoU 0.75 &middot; ~8 s</div><div><b>Our prior</b>, 0 sims<br>IoU 0.75 &middot; ~6 s</div><div><b>Prior + 4 sims</b><br>IoU 0.85 &middot; ~29 min</div><div><b>No prior</b>, 12 sims<br>IoU 0.95 &middot; ~1.5 h</div></div>
+    </div>
+    <div class="card">
+      <h3>Jelly, tap and hold <span>validation #159</span></h3>
+      <video src="assets/refine/refine_000159.mp4" poster="assets/refine/refine_000159.jpg" muted loop playsinline preload="none" width="1304" height="322"></video>
+      <div class="vlabels l5"><div><b>Observed</b><br>ground-truth simulation</div><div><b>PIXIE</b>, no prior<br>IoU 0.62 &middot; ~9 s</div><div><b>Our prior</b>, 0 sims<br>IoU 0.98 &middot; ~6 s</div><div><b>Prior + 4 sims</b><br>IoU 0.98 &middot; ~33 min</div><div><b>No prior</b>, 24 sims<br>IoU 0.96 &middot; ~3.3 h</div></div>
+    </div>
+    <div class="card">
+      <h3>Jelly, drop <span>validation #219</span></h3>
+      <video src="assets/refine/refine_000219.mp4" poster="assets/refine/refine_000219.jpg" muted loop playsinline preload="none" width="1304" height="322"></video>
+      <div class="vlabels l5"><div><b>Observed</b><br>ground-truth simulation</div><div><b>PIXIE</b>, no prior<br>IoU 0.38 &middot; ~9 s</div><div><b>Our prior</b>, 0 sims<br>IoU 0.93 &middot; ~6 s</div><div><b>Prior + 4 sims</b><br>IoU 0.93 &middot; ~30 min</div><div><b>No prior</b>, 13 sims<br>IoU 0.98 &middot; ~1.7 h</div></div>
     </div>
   </div>
-  <p class="cap">Each clip re-simulates the observed action with the given parameters (one camera view). The observed video is itself the ground-truth simulation. IoU is the object-mask overlap with the observed video, averaged over frames and three views. "Class mean" is the training-set mean of the true class.</p>
+  <p class="cap">Each clip re-simulates the observed action with one parameter set (one camera view); the observed video is itself the ground-truth simulation. Columns, left to right: the observed video; <b>PIXIE</b>, a feed-forward predictor from static appearance, simulated once without our prior (8&ndash;9&nbsp;s per object in our setup, which includes rendering 200 views and building the CLIP feature volume; PIXIE has no yield stress, so it is set to the training mean); <b>our video prior</b> with no simulation (about 6&nbsp;s); <b>prior + 4 simulations</b>, the best of the first four simulator evaluations started from the prior (time = 6&nbsp;s plus those four simulations); and <b>no prior</b>, the best of up to 24 evaluations of an uninformed search that simulates each class&rsquo;s training mean and then refines the best one (it stops early once the search converges, e.g. 13 evaluations for #219). This last column is our simulation-in-the-loop baseline: same simulator and the same search, but no prior. It stands in for per-scene fitting methods that optimize physical parameters against video from scratch. For reference, the official PAC-NeRF took 5.8&nbsp;h per scene with 11 views on its own data in our runs. Time is the measured wall-clock on shared GPUs. IoU is the object-mask overlap with the observed video, averaged over frames and the three views. Given enough time the uninformed search reaches a fit comparable to or better than prior + 4 simulations, but it needs 1.5&ndash;3.3&nbsp;h instead of about half an hour.</p>
   <div class="split" style="margin-top:22px">
     <figure class="fig"><img src="assets/figs/F2_init_vs_refined.png" alt="Error after 4 and 12 simulations against initial error for several initializations." width="975" height="771" loading="lazy"></figure>
     <div>
