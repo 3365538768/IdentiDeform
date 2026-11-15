@@ -1,0 +1,30 @@
+# Large artifacts are released on Hugging Face, never committed.
+data/
+weights/
+runs/
+outputs/
+upstream/
+external/
+.cache/
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.lmdb
+*.ply
+*.log
+# Python / tooling
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.ipynb_checkpoints/
+# Secrets / local env
+.env
+*.env
+env.sh
+*.pem
+id_*
+.DS_Store
