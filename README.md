@@ -2,7 +2,7 @@
 
 **What Can a Video Tell About Material? Identifiable Video Priors for Few-Simulation System Identification**
 
-Project page: https://3365538768.github.io/IdentiDeform/  ·  Paper: coming soon  ·  Data & models: [Hugging Face](https://huggingface.co/HandsomeHusky) (coming soon)
+Project page: https://3365538768.github.io/IdentiDeform/  ·  Paper: coming soon  ·  Model: [HandsomeHusky/IdentiDeform-prior](https://huggingface.co/HandsomeHusky/IdentiDeform-prior)  ·  Dataset: coming soon on [Hugging Face](https://huggingface.co/HandsomeHusky)
 
 Multi-view video of a deformable object identifies its constitutive class and the density-normalized quantities
 E/ρ and σ<sub>y</sub>/ρ. It does not identify density itself. IdentiDeform is a simulated benchmark built around this
@@ -15,7 +15,7 @@ identifiable subspace. This repository contains:
 3. **Few-simulation refinement.** Gradient-free simulation-in-the-loop fitting starts from the prior and stops after
    0–24 simulations.
 
-> Datasets, cached features and trained weights will be released on Hugging Face (https://huggingface.co/HandsomeHusky).
+> Trained prior heads: https://huggingface.co/HandsomeHusky/IdentiDeform-prior. Datasets and cached features will be released at https://huggingface.co/HandsomeHusky.
 > This repository contains code and configurations only.
 
 ## Repository layout

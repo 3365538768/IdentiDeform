@@ -82,14 +82,15 @@ footer{padding:28px 0 48px;border-top:1px solid var(--line);color:var(--muted);f
 <button class="theme" id="theme" aria-label="Toggle light/dark theme" title="Toggle theme">&#9680;</button>
 
 <header class="hero wrap">
-  <div class="kicker">IdentiDeform &middot; CVPR submission (under review)</div>
+  <div class="kicker">IdentiDeform &middot; identifiable video priors for material system identification</div>
   <h1>What Can a Video Tell About Material? Identifiable Video Priors for Few-Simulation System Identification</h1>
   <p class="claim">Multi-view video pins down a deformable object's material class and its density-normalized stiffness and yield (E/&rho;, &sigma;<sub>y</sub>/&rho;), but not density itself. A video prior trained on that identifiable subspace starts simulation-in-the-loop fitting close to the answer, so you need about ten fewer simulations per object.</p>
   <div class="authors">Anonymous authors</div>
   <div class="btns">
     <a class="btn" aria-disabled="true" title="Paper link will be added after review"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg>Paper <small>(coming soon)</small></a>
     <a class="btn primary" href="https://github.com/3365538768/IdentiDeform"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>Code</a>
-    <a class="btn" href="https://huggingface.co/HandsomeHusky"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>Data &amp; Models <small>(coming soon)</small></a>
+    <a class="btn" href="https://huggingface.co/HandsomeHusky/IdentiDeform-prior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>Model <small>(Hugging Face)</small></a>
+    <a class="btn" href="https://huggingface.co/HandsomeHusky"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>Dataset <small>(coming soon)</small></a>
   </div>
   <figure class="fig">
     <img src="assets/figs/F1_teaser.png" alt="Error versus number of simulations for the video prior and for class-mean initializations on validation and test, and gripper success rates." width="2062" height="690">
@@ -102,14 +103,14 @@ footer{padding:28px 0 48px;border-top:1px solid var(--line);color:var(--muted);f
   <h2>What can a video tell?</h2>
   <p class="lead">IdentiDeform contains MPM simulations of 3D-Gaussian objects under six loading actions, each rendered from three cameras. Jelly, metal and plasticine, with E/&rho; and &sigma;<sub>y</sub>/&rho; spanning several decades.</p>
   <div class="grid g2">
-    <div class="card"><h3>Press <span>plasticine</span></h3><video src="assets/actions/press.mp4" poster="assets/actions/press.jpg" muted loop playsinline preload="none" width="776" height="256"></video></div>
-    <div class="card"><h3>Drop <span>metal</span></h3><video src="assets/actions/drop.mp4" poster="assets/actions/drop.jpg" muted loop playsinline preload="none" width="776" height="256"></video></div>
-    <div class="card"><h3>Shear <span>jelly</span></h3><video src="assets/actions/shear.mp4" poster="assets/actions/shear.jpg" muted loop playsinline preload="none" width="776" height="256"></video></div>
+    <div class="card"><h3>Press <span>jelly</span></h3><video src="assets/actions/press.mp4" poster="assets/actions/press.jpg" muted loop playsinline preload="none" width="776" height="256"></video></div>
+    <div class="card"><h3>Drop <span>jelly</span></h3><video src="assets/actions/drop.mp4" poster="assets/actions/drop.jpg" muted loop playsinline preload="none" width="776" height="256"></video></div>
+    <div class="card"><h3>Shear <span>plasticine</span></h3><video src="assets/actions/shear.mp4" poster="assets/actions/shear.jpg" muted loop playsinline preload="none" width="776" height="256"></video></div>
     <div class="card"><h3>Stretch <span>jelly</span></h3><video src="assets/actions/stretch.mp4" poster="assets/actions/stretch.jpg" muted loop playsinline preload="none" width="776" height="256"></video></div>
     <div class="card"><h3>Bend <span>jelly</span></h3><video src="assets/actions/bend.mp4" poster="assets/actions/bend.jpg" muted loop playsinline preload="none" width="776" height="256"></video></div>
     <div class="card"><h3>Press&ndash;hold&ndash;release <span>jelly</span></h3><video src="assets/actions/tap30hold.mp4" poster="assets/actions/tap30hold.jpg" muted loop playsinline preload="none" width="776" height="256"></video></div>
   </div>
-  <p class="cap">Each clip shows three camera views of one validation sample (4&nbsp;s, cropped to the object).</p>
+  <p class="cap">Each clip shows three camera views of one sample (4&nbsp;s, cropped to the object).</p>
 
   <h3 style="margin:30px 0 6px">Differences within one class are visible</h3>
   <p class="lead">Below, the same object and material class get the same action, but E/&rho; differs by more than one decade. The two motions look clearly different. On earlier benchmarks, heavy damping and weak excitation hid such differences.</p>
@@ -120,9 +121,9 @@ footer{padding:28px 0 48px;border-top:1px solid var(--line);color:var(--muted);f
       <div class="vlabels l2"><div><b>softer</b><br>log<sub>10</sub>E/&rho; = 2.95</div><div><b>stiffer</b><br>log<sub>10</sub>E/&rho; = 4.16</div></div>
     </div>
     <div class="card">
-      <h3>Shear &middot; jelly tray</h3>
-      <video src="assets/pairs/shear_tray.mp4" poster="assets/pairs/shear_tray.jpg" muted loop playsinline preload="none" width="1044" height="256"></video>
-      <div class="vlabels l2"><div><b>softer</b><br>log<sub>10</sub>E/&rho; = 2.34</div><div><b>stiffer</b><br>log<sub>10</sub>E/&rho; = 3.67</div></div>
+      <h3>Press&ndash;hold&ndash;release &middot; jelly ball</h3>
+      <video src="assets/pairs/hold_ball.mp4" poster="assets/pairs/hold_ball.jpg" muted loop playsinline preload="none" width="1044" height="256"></video>
+      <div class="vlabels l2"><div><b>softer</b><br>log<sub>10</sub>E/&rho; = 3.24</div><div><b>stiffer</b><br>log<sub>10</sub>E/&rho; = 4.83</div></div>
     </div>
   </div>
   <p class="cap">Each half shows two camera views. E/&rho; is given in specific units, E/(&rho;/1000).</p>
@@ -137,7 +138,19 @@ footer{padding:28px 0 48px;border-top:1px solid var(--line);color:var(--muted);f
 <section class="wrap" id="refine">
   <h2>Prior + few simulations</h2>
   <p class="lead">The video prior gives an initial guess in about 6&nbsp;s. Gradient-free simulation-in-the-loop refinement then fits the observed video. The error after refinement is close to linear in the starting error, so a better start reaches the refinement floor with fewer simulations.</p>
-  <!--REFINE_VIDEOS-->
+  <div class="grid">
+    <div class="card">
+      <h3>Plasticine, drop <span>validation #5</span></h3>
+      <video src="assets/refine/refine_000005.mp4" poster="assets/refine/refine_000005.jpg" muted loop playsinline preload="none" width="1042" height="256"></video>
+      <div class="vlabels l4"><div><b>Observed</b><br>(ground-truth parameters)</div><div><b>Class mean</b><br>IoU 0.74</div><div><b>Video prior</b>, 0 sims<br>IoU 0.84</div><div><b>Prior + refinement</b><br>IoU 0.93 (best of 24 sims)</div></div>
+    </div>
+    <div class="card">
+      <h3>Jelly, bend <span>validation #210</span></h3>
+      <video src="assets/refine/refine_000210.mp4" poster="assets/refine/refine_000210.jpg" muted loop playsinline preload="none" width="1042" height="256"></video>
+      <div class="vlabels l4"><div><b>Observed</b><br>(ground-truth parameters)</div><div><b>Class mean</b><br>IoU 0.66</div><div><b>Video prior</b>, 0 sims<br>IoU 0.75</div><div><b>Prior + refinement</b><br>IoU 0.95 (best of 24 sims)</div></div>
+    </div>
+  </div>
+  <p class="cap">Each clip re-simulates the observed action with the given parameters (one camera view). The observed video is itself the ground-truth simulation. IoU is the object-mask overlap with the observed video, averaged over frames and three views. "Class mean" is the training-set mean of the true class.</p>
   <div class="split" style="margin-top:22px">
     <figure class="fig"><img src="assets/figs/F2_init_vs_refined.png" alt="Error after 4 and 12 simulations against initial error for several initializations." width="975" height="771" loading="lazy"></figure>
     <div>
@@ -154,26 +167,31 @@ footer{padding:28px 0 48px;border-top:1px solid var(--line);color:var(--muted);f
 <section class="wrap" id="grasp">
   <h2>Using the twin: damage-aware grasp</h2>
   <p class="lead">A parallel-jaw gripper squeezes the object, holds, and releases. Each twin simulates six candidate depths and picks the deepest one whose predicted permanent crush stays within 3% of the object's width. We then run the chosen depth with the ground-truth material.</p>
-  <div class="grid">
-    <div class="card">
-      <h3>Plasticine bottle (#182) <span>deepest safe depth: d = 0.18</span></h3>
-      <video src="assets/grasp/grasp_000182.mp4" poster="assets/grasp/grasp_000182.jpg" muted loop playsinline preload="none" width="960" height="440"></video>
-      <div class="vlabels l2"><div>class-mean twin: d = 0.32 &rarr; <b class="bad">11.5% crush</b></div><div>our twin: d = 0.10 &rarr; <b class="ok">intact</b></div></div>
-    </div>
+  <div class="card" style="margin-bottom:18px">
+    <h3>Plasticine bottle (#182) <span>deepest safe depth: d = 0.18</span></h3>
     <div class="grid g2">
-      <div class="card">
-        <h3>Metal boot (#181) <span>deepest safe: d = 0.14</span></h3>
-        <video src="assets/grasp/grasp_000181.mp4" poster="assets/grasp/grasp_000181.jpg" muted loop playsinline preload="none" width="960" height="440"></video>
-        <div class="vlabels l2"><div>class mean: d = 0.24 &rarr; <b class="bad">6.8%</b></div><div>ours: d = 0.14 &rarr; <b class="ok">2.8%</b></div></div>
-      </div>
-      <div class="card">
-        <h3>Plasticine, sample #71 <span>deepest safe: d = 0.24</span></h3>
-        <video src="assets/grasp/grasp_000071.mp4" poster="assets/grasp/grasp_000071.jpg" muted loop playsinline preload="none" width="960" height="440"></video>
-        <div class="vlabels l2"><div>class mean: d = 0.32 &rarr; <b class="bad">4.5%</b></div><div>ours: d = 0.24 &rarr; <b class="ok">2.0%</b></div></div>
-      </div>
+      <div><video src="assets/grasp/grasp_gs_000182.mp4" poster="assets/grasp/grasp_gs_000182.jpg" muted loop playsinline preload="none" width="808" height="484"></video><div class="vlabels"><div>3DGS rendering</div></div></div>
+      <div><video src="assets/grasp/grasp_000182.mp4" poster="assets/grasp/grasp_000182.jpg" muted loop playsinline preload="none" width="960" height="440"></video><div class="vlabels"><div>MPM particles with jaws (side view)</div></div></div>
     </div>
+    <div class="vlabels l2"><div>class-mean twin: d = 0.32 &rarr; <b class="bad">11.5% crush</b></div><div>our twin: d = 0.10 &rarr; <b class="ok">intact (0.0%)</b></div></div>
   </div>
-  <p class="cap">Side view of 4,096 tracked MPM particles under ground-truth execution. Blue bars are the jaws. Grey dashed lines mark the initial width and the coloured ticks mark the current width. "Ours" means the video prior followed by 12 refinement simulations. The task runs with gravity off.</p>
+  <div class="card" style="margin-bottom:18px">
+    <h3>Metal boot (#181) <span>deepest safe depth: d = 0.14</span></h3>
+    <div class="grid g2">
+      <div><video src="assets/grasp/grasp_gs_000181.mp4" poster="assets/grasp/grasp_gs_000181.jpg" muted loop playsinline preload="none" width="808" height="484"></video><div class="vlabels"><div>3DGS rendering</div></div></div>
+      <div><video src="assets/grasp/grasp_000181.mp4" poster="assets/grasp/grasp_000181.jpg" muted loop playsinline preload="none" width="960" height="440"></video><div class="vlabels"><div>MPM particles with jaws (side view)</div></div></div>
+    </div>
+    <div class="vlabels l2"><div>class-mean twin: d = 0.24 &rarr; <b class="bad">6.8% crush</b></div><div>our twin: d = 0.14 &rarr; <b class="ok">intact (2.8%)</b></div></div>
+  </div>
+  <div class="card" style="margin-bottom:18px">
+    <h3>Plasticine tray (#71) <span>deepest safe depth: d = 0.24</span></h3>
+    <div class="grid g2">
+      <div><video src="assets/grasp/grasp_gs_000071.mp4" poster="assets/grasp/grasp_gs_000071.jpg" muted loop playsinline preload="none" width="808" height="484"></video><div class="vlabels"><div>3DGS rendering</div></div></div>
+      <div><video src="assets/grasp/grasp_000071.mp4" poster="assets/grasp/grasp_000071.jpg" muted loop playsinline preload="none" width="960" height="440"></video><div class="vlabels"><div>MPM particles with jaws (side view)</div></div></div>
+    </div>
+    <div class="vlabels l2"><div>class-mean twin: d = 0.32 &rarr; <b class="bad">4.5% crush</b></div><div>our twin: d = 0.24 &rarr; <b class="ok">intact (2.0%)</b></div></div>
+  </div>
+  <p class="cap">Both views show the ground-truth execution of the depth chosen by each twin. Left: the object rendered with its 3D Gaussians (the jaws are not rendered; the phase is printed). Right: 4,096 tracked MPM particles, side view. Blue bars are the jaws, grey dashed lines mark the initial width and coloured ticks the current width. "Our twin" is the video prior followed by 12 refinement simulations. The task runs with gravity off.</p>
   <div class="split" style="margin-top:22px">
     <figure class="fig"><img src="assets/figs/F6_gripper.png" alt="Gripper success rate and regret for each planning twin, 55 samples." width="975" height="532" loading="lazy"></figure>
     <div class="note">Over 55 validation objects, twins built from the video prior succeed <b>20 percentage points</b> more often than twins with class-average parameters (82% vs. 62%), and their regret is about half as large. A fixed shallow grasp is also often safe, but it grips about 3.6&times; less deeply.</div>
@@ -224,7 +242,7 @@ footer{padding:28px 0 48px;border-top:1px solid var(--line);color:var(--muted);f
 </section>
 </main>
 
-<footer class="wrap">IdentiDeform &middot; code under the MIT license &middot; datasets and model weights will be released on <a href="https://huggingface.co/HandsomeHusky">Hugging Face</a>.</footer>
+<footer class="wrap">IdentiDeform &middot; code under the MIT license &middot; model weights on <a href="https://huggingface.co/HandsomeHusky/IdentiDeform-prior">Hugging Face</a>; the dataset will follow at <a href="https://huggingface.co/HandsomeHusky">huggingface.co/HandsomeHusky</a>.</footer>
 
 <script>
 (function(){
