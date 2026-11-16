@@ -144,16 +144,16 @@ hr{border:0;border-top:1px solid var(--line);margin:0}
 
   <h3>IdentiDeform-Touch</h3>
   <div class="grid g2">
-    <div class="tile"><div class="t">Press (plate) <span>jelly</span></div><div class="vbox r3x1"><video src="assets/touch/press_jelly_000198.mp4" poster="assets/touch/press_jelly_000198.jpg" muted loop playsinline preload="none"></video></div></div>
-    <div class="tile"><div class="t">Press (plate) <span>metal</span></div><div class="vbox r3x1"><video src="assets/touch/press_metal_000163.mp4" poster="assets/touch/press_metal_000163.jpg" muted loop playsinline preload="none"></video></div></div>
-    <div class="tile"><div class="t">Drop <span>metal</span></div><div class="vbox r3x1"><video src="assets/touch/drop_metal_000112.mp4" poster="assets/touch/drop_metal_000112.jpg" muted loop playsinline preload="none"></video></div></div>
-    <div class="tile"><div class="t">Cantilever hold <span>metal</span></div><div class="vbox r3x1"><video src="assets/touch/shear_held_metal_000025.mp4" poster="assets/touch/shear_held_metal_000025.jpg" muted loop playsinline preload="none"></video></div><div class="vbox" style="aspect-ratio:768/200;margin-top:4px;background:#fff"><video src="assets/touch/shear_held_metal_000025_force.mp4" muted loop playsinline preload="none"></video></div><div class="lbl"><div>contact force of each jaw, synchronized</div></div></div>
-    <div class="tile"><div class="t">Hang <span>jelly</span></div><div class="vbox r3x1"><video src="assets/touch/stretch_held_jelly_000081.mp4" poster="assets/touch/stretch_held_jelly_000081.jpg" muted loop playsinline preload="none"></video></div></div>
-    <div class="tile"><div class="t">Swing <span>jelly</span></div><div class="vbox r3x1"><video src="assets/touch/bend_held_jelly_000048.mp4" poster="assets/touch/bend_held_jelly_000048.jpg" muted loop playsinline preload="none"></video></div><div class="vbox" style="aspect-ratio:768/200;margin-top:4px;background:#fff"><video src="assets/touch/bend_held_jelly_000048_force.mp4" muted loop playsinline preload="none"></video></div><div class="lbl"><div>contact force of each jaw, synchronized</div></div></div>
-    <div class="tile"><div class="t">Press&ndash;hold&ndash;release <span>plasticine</span></div><div class="vbox r3x1"><video src="assets/touch/press_hold_release_plasticine_000035.mp4" poster="assets/touch/press_hold_release_plasticine_000035.jpg" muted loop playsinline preload="none"></video></div></div>
-    <div class="tile"><div class="t">Force-controlled press <span>plasticine</span></div><div class="vbox r3x1"><video src="assets/touch/force_press_plasticine_000038.mp4" poster="assets/touch/force_press_plasticine_000038.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">Plate press <span>jelly</span></div><div class="vbox" style="aspect-ratio:768/416;background:#fff"><video src="assets/touch/press_jelly_000198.mp4" poster="assets/touch/press_jelly_000198.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">Plate press <span>metal</span></div><div class="vbox" style="aspect-ratio:768/416;background:#fff"><video src="assets/touch/press_metal_000163.mp4" poster="assets/touch/press_metal_000163.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">Cantilever <span>metal</span></div><div class="vbox" style="aspect-ratio:768/416;background:#fff"><video src="assets/touch/shear_held_metal_000079.mp4" poster="assets/touch/shear_held_metal_000079.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">Cantilever <span>metal</span></div><div class="vbox" style="aspect-ratio:768/416;background:#fff"><video src="assets/touch/shear_held_metal_000025.mp4" poster="assets/touch/shear_held_metal_000025.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">Hang <span>jelly</span></div><div class="vbox" style="aspect-ratio:768/416;background:#fff"><video src="assets/touch/stretch_held_jelly_000081.mp4" poster="assets/touch/stretch_held_jelly_000081.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">Swing <span>jelly</span></div><div class="vbox" style="aspect-ratio:768/416;background:#fff"><video src="assets/touch/bend_held_jelly_000048.mp4" poster="assets/touch/bend_held_jelly_000048.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">Press&ndash;hold&ndash;release <span>plasticine</span></div><div class="vbox" style="aspect-ratio:768/416;background:#fff"><video src="assets/touch/press_hold_release_plasticine_000035.mp4" poster="assets/touch/press_hold_release_plasticine_000035.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">Force-controlled press <span>plasticine</span></div><div class="vbox" style="aspect-ratio:768/416;background:#fff"><video src="assets/touch/force_press_plasticine_000038.mp4" poster="assets/touch/force_press_plasticine_000038.jpg" muted loop playsinline preload="none"></video></div></div>
   </div>
-  <p class="cap">Three camera views per clip; the plate, support and jaws act on the object but are not rendered. Held actions lift the object off the support so that its own weight loads it (cantilever, hang, swing), which makes stiffness far more visible than displacement-controlled contact. Every tool records the force it applies.</p>
+  <p class="cap">Top: three camera views (the plate, support and jaws act on the object but are not rendered). Bottom: the contact force recorded by each tool, in simulation units, with a cursor synchronized to the video. Held actions lift the object off the support so that its own weight loads it, which makes stiffness far more visible than displacement-controlled contact.</p>
 </section>
 
 <hr>
@@ -211,10 +211,8 @@ hr{border:0;border-top:1px solid var(--line);margin:0}
     <div class="num"><div class="v">3</div><div class="d">CMA-ES simulations from the prior to match the privileged search after 24</div></div>
     <div class="num"><div class="v">&asymp;0.2</div><div class="d">error floor, set by weakly identifiable hardening and &nu;</div></div>
   </div>
-  <div class="split">
-    <figure class="fig"><img src="assets/figs/F2_init_vs_refined.png" alt="Error after 4 and 12 simulations against the initial error." width="975" height="810" loading="lazy"></figure>
-    <p class="cap"><b>Initialization quality decides the cost of refinement.</b> Error after refinement is close to linear in the starting error (r&nbsp;=&nbsp;0.95 after 4 simulations). Every good start ends near the same floor; searching hardening and &nu; as well does not lower it. The prior's value is to start near that floor without simulation.</p>
-  </div>
+  <figure class="fig" style="max-width:560px;margin:8px auto 0"><img src="assets/figs/F2_init_vs_refined.png" alt="Error after 4 and 12 simulations against the initial error." width="975" height="810" loading="lazy"></figure>
+  <p class="cap center" style="max-width:760px"><b>Initialization quality decides the cost of refinement.</b> Error after refinement is close to linear in the starting error (r&nbsp;=&nbsp;0.95 after 4 simulations). Every good start ends near the same floor; searching hardening and &nu; as well does not lower it. The prior's value is to start near that floor without simulation.</p>
 </section>
 
 <hr>
