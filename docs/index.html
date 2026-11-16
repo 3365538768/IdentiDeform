@@ -32,6 +32,9 @@ p{margin:0 0 12px}
 .abstract{background:var(--soft);border-radius:10px;padding:18px 22px;text-align:justify;hyphens:auto}
 .fig{margin:0}
 .fig img{display:block;width:100%;height:auto}
+.teaser{max-width:920px;margin:0 auto}
+.teaser img{margin:0 auto}
+.cap.center{text-align:center}
 .cap{font-size:15px;color:var(--muted);margin:8px auto 0;max-width:920px;text-align:justify;hyphens:auto}
 .cap b{color:var(--text)}
 .grid{display:grid;gap:14px}
@@ -91,10 +94,10 @@ hr{border:0;border-top:1px solid var(--line);margin:0}
 </header>
 
 <main class="wrap">
-<figure class="fig">
+<figure class="fig teaser">
   <img src="assets/figs/F1_teaser.png" alt="Identifiable error versus number of simulations on validation and test, and grasp-outcome prediction macro-F1 per twin." width="2062" height="707">
 </figure>
-<p class="cap"><b>An identifiable video prior removes most of the simulation-in-the-loop search.</b> (a, b) Error on the identifiable parameters versus the number of simulations on validation (60 samples) and held-out test objects (60 samples, 10 objects), with object-bootstrap 95% bands. Starting from the prior, zero simulations beat class-agnostic search after 24; a search told the true class needs 9&ndash;12 simulations to catch up. (c) Twins built from the prior predict grasp outcomes about twice as well as per-grasp lookup tables.</p>
+<p class="cap center"><b>An identifiable video prior removes most of the simulation-in-the-loop search.</b> (a, b) Error on the identifiable parameters versus the number of simulations on validation (60 samples) and held-out test objects (60 samples, 10 objects), with object-bootstrap 95% bands. Starting from the prior, zero simulations beat class-agnostic search after 24; a search told the true class needs 9&ndash;12 simulations to catch up. (c) Twins built from the prior predict grasp outcomes about twice as well as per-grasp lookup tables.</p>
 
 <section>
   <h2>Abstract</h2>
