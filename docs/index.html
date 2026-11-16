@@ -5,255 +5,320 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>IdentiDeform</title>
 <meta name="description" content="What Can a Video Tell About Material? Identifiable Video Priors for Few-Simulation System Identification.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232f6fdf'/%3E%3Cpath d='M7 22c4-9 7-12 9-12s4 6 9 12' stroke='white' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f5fbf'/%3E%3Cpath d='M7 22c4-9 7-12 9-12s4 6 9 12' stroke='white' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600&display=swap">
 <style>
-:root{
-  --bg:#f7f8fa; --surface:#ffffff; --surface-2:#eef1f5; --text:#14181f; --muted:#5a6472; --line:#dde2e9;
-  --accent:#2f6fdf; --accent-text:#ffffff; --ok:#16875a; --bad:#c93a3a; --figbg:#ffffff; --media:#0d1014;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --bg:#0e1116; --surface:#161b22; --surface-2:#1d242e; --text:#e7ebf0; --muted:#9aa5b3; --line:#2a323d;
-    --accent:#6ea0ff; --accent-text:#0b1220; --ok:#3ecf8e; --bad:#ff6b6b; --figbg:#f4f5f7; --media:#0d1014;
-  }
-}
-:root[data-theme="dark"]{
-  --bg:#0e1116; --surface:#161b22; --surface-2:#1d242e; --text:#e7ebf0; --muted:#9aa5b3; --line:#2a323d;
-  --accent:#6ea0ff; --accent-text:#0b1220; --ok:#3ecf8e; --bad:#ff6b6b; --figbg:#f4f5f7; --media:#0d1014;
-}
+:root{--bg:#ffffff;--text:#1d2129;--muted:#5d6573;--line:#e3e6eb;--soft:#f5f6f8;--accent:#1f5fbf;--ok:#1a8a5a;--warn:#c47a10;--bad:#c33b3b;--media:#0e1013;color-scheme:light}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
-a{color:var(--accent)}
-.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
-header.hero{padding:56px 0 24px;text-align:center}
-.kicker{display:inline-block;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
-h1{font-size:clamp(26px,4.2vw,42px);line-height:1.18;margin:0 auto 14px;max-width:900px;letter-spacing:-.01em}
-.claim{font-size:clamp(16px,2vw,19px);color:var(--muted);max-width:760px;margin:0 auto 22px}
-.authors{font-size:15px;color:var(--muted);margin-bottom:20px}
-.btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:28px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--text);text-decoration:none;font-weight:600;font-size:15px}
-.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-text)}
-.btn[aria-disabled="true"]{opacity:.6;cursor:default}
-.btn small{font-weight:500;color:inherit;opacity:.75}
-.btn svg{width:18px;height:18px}
-section{padding:40px 0;border-top:1px solid var(--line)}
-h2{font-size:clamp(22px,3vw,30px);margin:0 0 8px;letter-spacing:-.01em}
-.lead{color:var(--muted);max-width:780px;margin:0 0 22px}
-.fig{background:var(--figbg);border-radius:12px;padding:12px;margin:0}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 "Source Sans 3",-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1000px;margin:0 auto;padding:0 16px}
+header{text-align:center;padding:56px 0 20px}
+h1{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:clamp(26px,3.6vw,38px);line-height:1.22;margin:0 auto 14px;max-width:880px;text-wrap:balance}
+.venue{font-size:15px;color:var(--muted);margin-bottom:6px;letter-spacing:.02em}
+.authors{font-size:17px;margin-bottom:18px}
+.btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:0 0 26px}
+.btn{display:inline-flex;align-items:center;gap:7px;padding:8px 18px;border-radius:999px;background:#1d2129;color:#fff;font-weight:600;font-size:15px}
+.btn:hover{text-decoration:none;background:#363c47}
+.btn[aria-disabled="true"]{background:#8a909a;cursor:default}
+.btn svg{width:17px;height:17px}
+section{padding:34px 0 26px}
+h2{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:clamp(22px,2.6vw,28px);text-align:center;margin:0 0 14px;text-wrap:balance}
+h3{font-size:18px;margin:26px 0 10px}
+p{margin:0 0 12px}
+.lead{max-width:860px;margin:0 auto 18px;text-align:justify;hyphens:auto}
+.abstract{background:var(--soft);border-radius:10px;padding:18px 22px;text-align:justify;hyphens:auto}
+.fig{margin:0}
 .fig img{display:block;width:100%;height:auto}
-figcaption,.cap{font-size:14px;color:var(--muted);margin-top:8px}
-.grid{display:grid;gap:16px}
+.cap{font-size:15px;color:var(--muted);margin:8px auto 0;max-width:920px;text-align:justify;hyphens:auto}
+.cap b{color:var(--text)}
+.grid{display:grid;gap:14px}
 .g2{grid-template-columns:repeat(2,minmax(0,1fr))}
 .g3{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media (max-width:760px){.g2,.g3{grid-template-columns:1fr}}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px;min-width:0}
-.card h3{font-size:16px;margin:2px 4px 8px;display:flex;justify-content:space-between;gap:8px;align-items:baseline}
-.card h3 span{font-weight:500;font-size:13px;color:var(--muted)}
-video,.media img{display:block;width:100%;height:auto;border-radius:9px;background:var(--media)}
-.vlabels{display:grid;gap:4px;margin-top:6px;font-size:13px;color:var(--muted);text-align:center}
-.vlabels b{color:var(--text);font-weight:600}
+.tile{min-width:0}
+.tile .t{font-size:15px;font-weight:600;margin:0 0 5px;display:flex;justify-content:space-between;gap:8px}
+.tile .t span{font-weight:400;color:var(--muted)}
+.vbox{position:relative;width:100%;background:var(--media);border-radius:6px;overflow:hidden}
+.vbox video,.vbox img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
+.r3x1{aspect-ratio:3/1}.r4x1{aspect-ratio:1304/322}.r1044{aspect-ratio:1044/256}.rsq{aspect-ratio:808/484}.r960{aspect-ratio:960/440}.rauto{aspect-ratio:var(--ar,16/9)}
+.lbl{display:grid;font-size:13.5px;color:var(--muted);text-align:center;margin-top:5px;gap:2px}
+.lbl b{color:var(--text);font-weight:600}
 .l2{grid-template-columns:1fr 1fr}.l3{grid-template-columns:repeat(3,1fr)}.l4{grid-template-columns:repeat(4,1fr)}.l5{grid-template-columns:repeat(5,1fr)}
-.pill{display:inline-block;padding:1px 8px;border-radius:999px;font-size:12px;font-weight:600;border:1px solid var(--line)}
-.ok{color:var(--ok)}.bad{color:var(--bad)}
-.note{background:var(--surface-2);border-radius:12px;padding:14px 16px;font-size:15px}
-.split{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:20px;align-items:center}
+.ok{color:var(--ok)}.warn{color:var(--warn)}.bad{color:var(--bad)}
+.box{border:1px solid var(--line);border-radius:10px;padding:16px 20px;max-width:860px;margin:0 auto 18px}
+.box .h{font-weight:700;margin-bottom:4px}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;align-items:center}
 @media (max-width:860px){.split{grid-template-columns:1fr}}
-table{width:100%;border-collapse:collapse;font-size:15px}
-th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
-th{font-size:13px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.04em}
-td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
-tr.ours td{font-weight:600}
-.tablewrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:4px 6px}
-.limits{border:1px solid var(--line);border-left:4px solid #d6a531;background:var(--surface);border-radius:12px;padding:16px 20px}
-.limits ul{margin:6px 0 0;padding-left:20px}
-.limits li{margin:6px 0}
-pre{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;overflow-x:auto;font-size:13.5px;line-height:1.5;margin:0}
-footer{padding:28px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px;text-align:center}
-.theme{position:fixed;top:12px;right:12px;z-index:5;border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:999px;width:38px;height:38px;cursor:pointer;font-size:16px}
-.big-num{font-size:30px;font-weight:700;line-height:1.1}
-.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
-@media (max-width:620px){.stats{grid-template-columns:1fr}}
-.stat{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px}
-.stat div:last-child{color:var(--muted);font-size:14px;margin-top:4px}
+.tw{overflow-x:auto;margin:6px auto 0;max-width:920px}
+table{border-collapse:collapse;width:100%;font-size:15.5px;font-variant-numeric:tabular-nums}
+caption{caption-side:top;text-align:left;font-size:15px;color:var(--muted);padding:0 0 6px}
+caption b{color:var(--text)}
+thead th{border-top:2px solid var(--text);border-bottom:1px solid var(--text);font-weight:600;padding:6px 10px;text-align:right}
+thead th:first-child{text-align:left}
+tbody td{padding:5px 10px;text-align:right;white-space:nowrap}
+tbody td:first-child{text-align:left;white-space:normal}
+tbody tr:last-child td{border-bottom:2px solid var(--text)}
+tr.sep td{border-top:1px solid var(--line)}
+tr.grp td{font-style:italic;color:var(--muted);text-align:left;padding-top:9px}
+tr.ours td{font-weight:700}
+.nums{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:860px;margin:4px auto 18px}
+@media (max-width:620px){.nums{grid-template-columns:1fr}}
+.num{border:1px solid var(--line);border-radius:10px;padding:12px 14px;text-align:center}
+.num .v{font-size:26px;font-weight:700;line-height:1.15}
+.num .d{font-size:14px;color:var(--muted)}
+pre{background:var(--soft);border-radius:10px;padding:16px;overflow-x:auto;font-size:13.5px;line-height:1.5;margin:0}
+.limits ul{margin:4px 0 0;padding-left:20px}.limits li{margin:4px 0}
+nav.toc{display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:center;font-size:15px;margin:-6px 0 6px}
+footer{padding:26px 0 46px;color:var(--muted);font-size:14px;text-align:center;border-top:1px solid var(--line);margin-top:20px}
+hr{border:0;border-top:1px solid var(--line);margin:0}
 </style>
 </head>
 <body>
-<button class="theme" id="theme" aria-label="Toggle light/dark theme" title="Toggle theme">&#9680;</button>
 
-<header class="hero wrap">
-  <div class="kicker">IdentiDeform &middot; identifiable video priors for material system identification</div>
-  <h1>What Can a Video Tell About Material? Identifiable Video Priors for Few-Simulation System Identification</h1>
-  <p class="claim">Multi-view video pins down a deformable object's material class and its density-normalized stiffness and yield (E/&rho;, &sigma;<sub>y</sub>/&rho;), but not density itself. A video prior trained on that identifiable subspace starts simulation-in-the-loop fitting close to the answer, so you need about ten fewer simulations per object.</p>
+<header class="wrap">
+  <h1>What Can a Video Tell About Material?<br>Identifiable Video Priors for Few-Simulation System Identification</h1>
+  <div class="venue">Under review</div>
   <div class="authors">Anonymous authors</div>
   <div class="btns">
-    <a class="btn" aria-disabled="true" title="Paper link will be added after review"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg>Paper <small>(coming soon)</small></a>
-    <a class="btn primary" href="https://github.com/3365538768/IdentiDeform"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>Code</a>
-    <a class="btn" href="https://huggingface.co/HandsomeHusky/IdentiDeform-prior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>Model <small>(Hugging Face)</small></a>
-    <a class="btn" href="https://huggingface.co/HandsomeHusky"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>Dataset <small>(coming soon)</small></a>
+    <a class="btn" aria-disabled="true" title="Available after review"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg>Paper</a>
+    <a class="btn" href="https://github.com/3365538768/IdentiDeform"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>Code</a>
+    <a class="btn" href="https://huggingface.co/HandsomeHusky/IdentiDeform-prior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/></svg>Model</a>
   </div>
-  <figure class="fig">
-    <img src="assets/figs/F1_teaser.png" alt="Error versus number of simulations for the video prior and for class-mean initializations on validation and test, and gripper success rates." width="2062" height="690">
-  </figure>
-  <p class="cap">(a, b) Error of the identifiable parameters against the number of simulations. Starting from the video prior (blue) saves about 10 simulations, even compared with a baseline that is told the true material class (orange). (c) Success of a damage-aware grasp planned with each twin.</p>
+  <nav class="toc"><a href="#ident">Identifiability</a><a href="#data">Benchmark</a><a href="#prior">Prior &amp; touch</a><a href="#refine">Few simulations</a><a href="#compare">Comparison</a><a href="#real">Real captures</a><a href="#grasp">Grasping</a></nav>
 </header>
 
-<main>
-<section class="wrap" id="video">
-  <h2>What can a video tell?</h2>
-  <p class="lead">IdentiDeform contains MPM simulations of 3D-Gaussian objects under six loading actions, each rendered from three cameras. Jelly, metal and plasticine, with E/&rho; and &sigma;<sub>y</sub>/&rho; spanning several decades.</p>
-  <div class="grid g2">
-    <div class="card"><h3>Press <span>metal</span></h3><video src="assets/actions/press.mp4" poster="assets/actions/press.jpg" muted loop playsinline preload="none" width="776" height="256"></video></div>
-    <div class="card"><h3>Drop <span>jelly</span></h3><video src="assets/actions/drop.mp4" poster="assets/actions/drop.jpg" muted loop playsinline preload="none" width="776" height="256"></video></div>
-    <div class="card"><h3>Shear <span>plasticine</span></h3><video src="assets/actions/shear.mp4" poster="assets/actions/shear.jpg" muted loop playsinline preload="none" width="776" height="256"></video></div>
-    <div class="card"><h3>Stretch <span>jelly</span></h3><video src="assets/actions/stretch.mp4" poster="assets/actions/stretch.jpg" muted loop playsinline preload="none" width="776" height="256"></video></div>
-    <div class="card"><h3>Bend <span>jelly</span></h3><video src="assets/actions/bend.mp4" poster="assets/actions/bend.jpg" muted loop playsinline preload="none" width="776" height="256"></video></div>
-    <div class="card"><h3>Press&ndash;hold&ndash;release <span>jelly</span></h3><video src="assets/actions/tap30hold.mp4" poster="assets/actions/tap30hold.jpg" muted loop playsinline preload="none" width="776" height="256"></video></div>
-  </div>
-  <p class="cap">Each clip shows three camera views of one sample (4&nbsp;s, cropped to the object; the stretch clip ends when the grip releases).</p>
+<main class="wrap">
+<figure class="fig">
+  <img src="assets/figs/F1_teaser.png" alt="Identifiable error versus number of simulations on validation and test, and grasp-outcome prediction macro-F1 per twin." width="2062" height="707">
+</figure>
+<p class="cap"><b>An identifiable video prior removes most of the simulation-in-the-loop search.</b> (a, b) Error on the identifiable parameters versus the number of simulations on validation (60 samples) and held-out test objects (60 samples, 10 objects), with object-bootstrap 95% bands. Starting from the prior, zero simulations beat class-agnostic search after 24; a search told the true class needs 9&ndash;12 simulations to catch up. (c) Twins built from the prior predict grasp outcomes about twice as well as per-grasp lookup tables.</p>
 
-  <h3 style="margin:26px 0 6px">More materials: metal and plasticine</h3>
-  <div class="grid g2">
-    <div class="card"><h3>Shear <span>metal</span></h3><video src="assets/more/m_shear_bulb.mp4" poster="assets/more/m_shear_bulb.jpg" muted loop playsinline preload="none" width="776" height="256"></video></div>
-    <div class="card"><h3>Press <span>metal</span></h3><video src="assets/more/m_press_sweater.mp4" poster="assets/more/m_press_sweater.jpg" muted loop playsinline preload="none" width="776" height="256"></video></div>
-    <div class="card"><h3>Shear <span>metal</span></h3><video src="assets/more/m_shear_slab.mp4" poster="assets/more/m_shear_slab.jpg" muted loop playsinline preload="none" width="776" height="256"></video></div>
-    <div class="card"><h3>Bend <span>metal</span></h3><video src="assets/more/m_bend_mug.mp4" poster="assets/more/m_bend_mug.jpg" muted loop playsinline preload="none" width="776" height="256"></video></div>
-    <div class="card"><h3>Press <span>plasticine</span></h3><video src="assets/more/p_press_pillow.mp4" poster="assets/more/p_press_pillow.jpg" muted loop playsinline preload="none" width="776" height="256"></video></div>
-    <div class="card"><h3>Press <span>plasticine</span></h3><video src="assets/more/p_press_ring.mp4" poster="assets/more/p_press_ring.jpg" muted loop playsinline preload="none" width="776" height="256"></video></div>
-  </div>
-  <p class="cap">Metal deforms elastically until it yields and then keeps a permanent bend or dent; plasticine yields at low stress and keeps the pressed shape; jelly springs back.</p>
-
-  <h3 style="margin:30px 0 6px">Differences within one class are visible</h3>
-  <p class="lead">Below, the same object and material class get the same action, but E/&rho; differs by more than one decade. The two motions look clearly different. On earlier benchmarks, heavy damping and weak excitation hid such differences.</p>
-  <div class="grid g2">
-    <div class="card">
-      <h3>Drop &middot; jelly bottle</h3>
-      <video src="assets/pairs/drop_bottle.mp4" poster="assets/pairs/drop_bottle.jpg" muted loop playsinline preload="none" width="1044" height="256"></video>
-      <div class="vlabels l2"><div><b>softer</b><br>log<sub>10</sub>E/&rho; = 2.95</div><div><b>stiffer</b><br>log<sub>10</sub>E/&rho; = 4.16</div></div>
-    </div>
-    <div class="card">
-      <h3>Press&ndash;hold&ndash;release &middot; jelly basket</h3>
-      <video src="assets/pairs/hold_basket.mp4" poster="assets/pairs/hold_basket.jpg" muted loop playsinline preload="none" width="1044" height="256"></video>
-      <div class="vlabels l2"><div><b>softer</b><br>log<sub>10</sub>E/&rho; = 3.52</div><div><b>stiffer</b><br>log<sub>10</sub>E/&rho; = 4.80</div></div>
-    </div>
-  </div>
-  <p class="cap">Each half shows two camera views. E/&rho; is given in specific units, E/(&rho;/1000).</p>
-
-  <h3 style="margin:30px 0 6px">&hellip;but density is not</h3>
-  <div class="split">
-    <figure class="fig"><img src="assets/figs/F3_identifiability.png" alt="Within-class correlation for V1 vs V2 data and damping, and relative trajectory change when E alone or E, rho and sigma_y together are scaled." width="2062" height="573" loading="lazy"></figure>
-    <div class="note">If E, &rho; and &sigma;<sub>y</sub> are all multiplied by 4, the simulated motion stays the same up to numerical noise (c, right bar). Multiplying E alone by 4 changes it a lot. A video can therefore only identify the ratios E/&rho; and &sigma;<sub>y</sub>/&rho;, so we use them as labels. Lower damping and richer excitation (a, b) make these ratios learnable within each material class.</div>
-  </div>
+<section>
+  <h2>Abstract</h2>
+  <div class="abstract">Recovering a simulation-ready digital twin of a deformable object from video usually means fitting material parameters with a physics simulator in the loop, at the cost of tens of simulations and hours per object, while feed-forward predictors barely track the ground truth within a material class. We argue that both observations share one cause: a video determines only part of the material description. A similarity law shows that video can identify at most the constitutive class and the density-normalized quantities E/&rho; and &sigma;<sub>y</sub>/&rho;, and that a single contact force fixes the remaining scale; controlled re-simulation shows that damping and loading decide how much of this subspace is visible. Guided by this analysis we build <b>IdentiDeform</b>, a benchmark designed around what can be identified. On it, a frozen video foundation model with a light head recovers within-class variation, and fusing contact forces with video also recovers density and absolute stiffness. Used to initialize simulation-in-the-loop refinement, the prior with 0&ndash;12 simulations beats class-agnostic fitting with 24 on held-out objects, and saves about ten simulations even against a search told the true material class. On real captures its twins reproduce held-out views and future frames better than constant-stiffness twins, and in simulation they predict the outcome of candidate grasps before execution.</div>
 </section>
 
-<section class="wrap" id="refine">
-  <h2>Prior + few simulations</h2>
-  <p class="lead">The video prior gives an initial guess in about 6&nbsp;s. Gradient-free simulation-in-the-loop refinement then fits the observed video. The error after refinement is close to linear in the starting error, so a better start reaches the refinement floor with fewer simulations.</p>
-  <div class="grid">
-    <div class="card">
-      <h3>Plasticine, drop <span>validation #5</span></h3>
-      <video src="assets/refine/refine_000005.mp4" poster="assets/refine/refine_000005.jpg" muted loop playsinline preload="none" width="1304" height="322"></video>
-      <div class="vlabels l5"><div><b>Observed</b><br>ground-truth simulation</div><div><b>PIXIE</b>, no prior<br>IoU 0.28 &middot; ~8 s</div><div><b>Our prior</b>, 0 sims<br>IoU 0.84 &middot; ~6 s</div><div><b>Prior + 4 sims</b><br>IoU 0.86 &middot; ~32 min</div><div><b>No prior</b>, 24 sims<br>IoU 0.93 &middot; ~2.9 h</div></div>
-    </div>
-    <div class="card">
-      <h3>Jelly, bend <span>validation #210</span></h3>
-      <video src="assets/refine/refine_000210.mp4" poster="assets/refine/refine_000210.jpg" muted loop playsinline preload="none" width="1304" height="322"></video>
-      <div class="vlabels l5"><div><b>Observed</b><br>ground-truth simulation</div><div><b>PIXIE</b>, no prior<br>IoU 0.75 &middot; ~8 s</div><div><b>Our prior</b>, 0 sims<br>IoU 0.75 &middot; ~6 s</div><div><b>Prior + 4 sims</b><br>IoU 0.85 &middot; ~29 min</div><div><b>No prior</b>, 12 sims<br>IoU 0.95 &middot; ~1.5 h</div></div>
-    </div>
-    <div class="card">
-      <h3>Metal, press&ndash;hold&ndash;release <span>validation #106</span></h3>
-      <video src="assets/refine/refine_000106.mp4" poster="assets/refine/refine_000106.jpg" muted loop playsinline preload="none" width="1304" height="322"></video>
-      <div class="vlabels l5"><div><b>Observed</b><br>ground-truth simulation</div><div><b>PIXIE</b>, no prior<br>IoU 0.51 &middot; ~8 s</div><div><b>Our prior</b>, 0 sims<br>IoU 0.77 &middot; ~6 s</div><div><b>Prior + 4 sims</b><br>IoU 0.97 &middot; ~33 min</div><div><b>No prior</b>, 14 sims<br>IoU 0.98 &middot; ~1.6 h</div></div>
-    </div>
-    <div class="card">
-      <h3>Jelly, drop <span>validation #219</span></h3>
-      <video src="assets/refine/refine_000219.mp4" poster="assets/refine/refine_000219.jpg" muted loop playsinline preload="none" width="1304" height="322"></video>
-      <div class="vlabels l5"><div><b>Observed</b><br>ground-truth simulation</div><div><b>PIXIE</b>, no prior<br>IoU 0.38 &middot; ~9 s</div><div><b>Our prior</b>, 0 sims<br>IoU 0.93 &middot; ~6 s</div><div><b>Prior + 4 sims</b><br>IoU 0.93 &middot; ~30 min</div><div><b>No prior</b>, 13 sims<br>IoU 0.98 &middot; ~1.7 h</div></div>
-    </div>
+<hr>
+<section id="ident">
+  <h2>What can a video identify?</h2>
+  <div class="box"><div class="h">Similarity law</div>For a constitutive law that is homogeneous in its stress-like parameters (neo-Hookean, von Mises, softening plasticity), kinematic loading and mass-proportional damping, scaling (E, &sigma;<sub>y</sub>, &rho;) by the same factor &lambda; leaves the motion unchanged and multiplies every contact force by &lambda;. Video therefore determines at most the class, <b>E/&rho;</b> and <b>&sigma;<sub>y</sub>/&rho;</b>; one measured force fixes &lambda;.</div>
+  <figure class="fig"><img src="assets/figs/F3_identifiability.png" alt="Within-class correlation on the original and new data, a damping-paired pilot, and trajectory change when parameters are scaled." width="2062" height="573" loading="lazy"></figure>
+  <p class="cap">(a) Within-class correlation of predicted vs. true specific stiffness and yield stress on the original benchmark and on IdentiDeform-Vision. (b) Paired pilot in which only damping changes. (c) Scaling E alone changes a press by 47% (jelly) or 1% (metal); scaling E, &rho; and &sigma;<sub>y</sub> together changes nothing beyond solver noise, as the similarity law predicts.</p>
+
+  <h3>Within one class, stiffness is visible</h3>
+  <div class="grid g2">
+    <div class="tile"><div class="t">Drop &middot; jelly bottle</div>
+      <div class="vbox r1044"><video src="assets/pairs/drop_bottle.mp4" poster="assets/pairs/drop_bottle.jpg" muted loop playsinline preload="none"></video></div>
+      <div class="lbl l2"><div><b>softer</b> &middot; log<sub>10</sub>E/&rho; = 2.95</div><div><b>stiffer</b> &middot; log<sub>10</sub>E/&rho; = 4.16</div></div></div>
+    <div class="tile"><div class="t">Press&ndash;hold&ndash;release &middot; jelly basket</div>
+      <div class="vbox r1044"><video src="assets/pairs/hold_basket.mp4" poster="assets/pairs/hold_basket.jpg" muted loop playsinline preload="none"></video></div>
+      <div class="lbl l2"><div><b>softer</b> &middot; log<sub>10</sub>E/&rho; = 3.52</div><div><b>stiffer</b> &middot; log<sub>10</sub>E/&rho; = 4.80</div></div></div>
   </div>
-  <p class="cap">Each clip re-simulates the observed action with one parameter set (one camera view); the observed video is itself the ground-truth simulation. Columns, left to right: the observed video; <b>PIXIE</b>, a feed-forward predictor from static appearance, simulated once without our prior (8&ndash;9&nbsp;s per object in our setup, which includes rendering 200 views and building the CLIP feature volume; PIXIE has no yield stress, so it is set to the training mean); <b>our video prior</b> with no simulation (about 6&nbsp;s); <b>prior + 4 simulations</b>, the best of the first four simulator evaluations started from the prior (time = 6&nbsp;s plus those four simulations); and <b>no prior</b>, the best of up to 24 evaluations of an uninformed search that simulates each class&rsquo;s training mean and then refines the best one (it stops early once the search converges, e.g. 13 evaluations for #219). This last column is our simulation-in-the-loop baseline: same simulator and the same search, but no prior. It stands in for per-scene fitting methods that optimize physical parameters against video from scratch. For reference, the official PAC-NeRF took 5.8&nbsp;h per scene with 11 views on its own data in our runs. Time is the measured wall-clock on shared GPUs. IoU is the object-mask overlap with the observed video, averaged over frames and the three views. Given enough time the uninformed search reaches a fit comparable to or better than prior + 4 simulations, but it needs 1.5&ndash;2.9&nbsp;h instead of about half an hour.</p>
-  <div class="split" style="margin-top:22px">
-    <figure class="fig"><img src="assets/figs/F2_init_vs_refined.png" alt="Error after 4 and 12 simulations against initial error for several initializations." width="975" height="771" loading="lazy"></figure>
+  <p class="cap">Same object, class and action; E/&rho; differs by more than one decade (two camera views each; E/&rho; in units of E/(&rho;/1000)).</p>
+</section>
+
+<hr>
+<section id="data">
+  <h2>IdentiDeform: two loading regimes</h2>
+  <p class="lead">MPM simulations of 3D-Gaussian objects (jelly, metal, plasticine) with identifiable targets, class-independent low damping and object-held-out splits, each observed by three fixed cameras for 4&nbsp;s. <b>IdentiDeform-Vision</b> applies six actions by prescribed motion and is the testbed for video priors and refinement. <b>IdentiDeform-Touch</b> applies every action through external rigid tools &mdash; a press plate over a shape-adapted support and a two-jaw gripper that holds, hangs or swings the object &mdash; and records the contact force of every tool.</p>
+
+  <h3>IdentiDeform-Vision</h3>
+  <div class="grid g3">
+    <div class="tile"><div class="t">Press <span>metal</span></div><div class="vbox r3x1"><video src="assets/actions/press.mp4" poster="assets/actions/press.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">Drop <span>jelly</span></div><div class="vbox r3x1"><video src="assets/actions/drop.mp4" poster="assets/actions/drop.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">Shear <span>plasticine</span></div><div class="vbox r3x1"><video src="assets/actions/shear.mp4" poster="assets/actions/shear.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">Stretch <span>jelly</span></div><div class="vbox r3x1"><video src="assets/actions/stretch.mp4" poster="assets/actions/stretch.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">Bend <span>metal</span></div><div class="vbox r3x1"><video src="assets/more/m_bend_mug.mp4" poster="assets/more/m_bend_mug.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">Press&ndash;hold&ndash;release <span>jelly</span></div><div class="vbox r3x1"><video src="assets/actions/tap30hold.mp4" poster="assets/actions/tap30hold.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">Shear <span>metal</span></div><div class="vbox r3x1"><video src="assets/more/m_shear_slab.mp4" poster="assets/more/m_shear_slab.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">Press <span>plasticine</span></div><div class="vbox r3x1"><video src="assets/more/p_press_pillow.mp4" poster="assets/more/p_press_pillow.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">Press <span>plasticine</span></div><div class="vbox r3x1"><video src="assets/more/p_press_ring.mp4" poster="assets/more/p_press_ring.jpg" muted loop playsinline preload="none"></video></div></div>
+  </div>
+  <p class="cap">Three camera views per clip. Jelly springs back, metal keeps a permanent bend or dent after yielding, plasticine keeps the pressed shape.</p>
+
+  <h3>IdentiDeform-Touch</h3>
+  <div class="grid g2">
+    <div class="tile"><div class="t">Press (plate) <span>jelly</span></div><div class="vbox r3x1"><video src="assets/touch/press_jelly_000198.mp4" poster="assets/touch/press_jelly_000198.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">Press (plate) <span>metal</span></div><div class="vbox r3x1"><video src="assets/touch/press_metal_000163.mp4" poster="assets/touch/press_metal_000163.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">Drop <span>metal</span></div><div class="vbox r3x1"><video src="assets/touch/drop_metal_000112.mp4" poster="assets/touch/drop_metal_000112.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">Cantilever hold <span>metal</span></div><div class="vbox r3x1"><video src="assets/touch/shear_held_metal_000025.mp4" poster="assets/touch/shear_held_metal_000025.jpg" muted loop playsinline preload="none"></video></div><div class="vbox" style="aspect-ratio:768/200;margin-top:4px;background:#fff"><video src="assets/touch/shear_held_metal_000025_force.mp4" muted loop playsinline preload="none"></video></div><div class="lbl"><div>contact force of each jaw, synchronized</div></div></div>
+    <div class="tile"><div class="t">Hang <span>jelly</span></div><div class="vbox r3x1"><video src="assets/touch/stretch_held_jelly_000081.mp4" poster="assets/touch/stretch_held_jelly_000081.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">Swing <span>jelly</span></div><div class="vbox r3x1"><video src="assets/touch/bend_held_jelly_000048.mp4" poster="assets/touch/bend_held_jelly_000048.jpg" muted loop playsinline preload="none"></video></div><div class="vbox" style="aspect-ratio:768/200;margin-top:4px;background:#fff"><video src="assets/touch/bend_held_jelly_000048_force.mp4" muted loop playsinline preload="none"></video></div><div class="lbl"><div>contact force of each jaw, synchronized</div></div></div>
+    <div class="tile"><div class="t">Press&ndash;hold&ndash;release <span>plasticine</span></div><div class="vbox r3x1"><video src="assets/touch/press_hold_release_plasticine_000035.mp4" poster="assets/touch/press_hold_release_plasticine_000035.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">Force-controlled press <span>plasticine</span></div><div class="vbox r3x1"><video src="assets/touch/force_press_plasticine_000038.mp4" poster="assets/touch/force_press_plasticine_000038.jpg" muted loop playsinline preload="none"></video></div></div>
+  </div>
+  <p class="cap">Three camera views per clip; the plate, support and jaws act on the object but are not rendered. Held actions lift the object off the support so that its own weight loads it (cantilever, hang, swing), which makes stiffness far more visible than displacement-controlled contact. Every tool records the force it applies.</p>
+</section>
+
+<hr>
+<section id="prior">
+  <h2>A video prior, and what touch adds</h2>
+  <div class="split">
     <div>
-      <div class="stats">
-        <div class="stat"><div class="big-num">~10</div><div>simulations saved against a start that is told the true class</div></div>
-        <div class="stat"><div class="big-num">0.78</div><div>slope of error after 4 sims vs. initial error (r = 0.95)</div></div>
-        <div class="stat"><div class="big-num">0.2&ndash;0.3</div><div>refinement floor (z-MAE), set by unmodeled parameters</div></div>
-      </div>
-      <p class="cap">Each point is one initialization, including the video prior, class means and ground truth plus noise. After 12 simulations every good start ends near the same floor. The prior's value is that it starts close to that floor without running any simulation.</p>
+      <figure class="fig"><img src="assets/figs/F5_baselines.png" alt="Standardized MAE of feed-forward predictors on validation and test." width="975" height="817" loading="lazy"></figure>
+      <p class="cap"><b>Video prior on IdentiDeform-Vision.</b> A frozen V-JEPA&nbsp;2 encoder with a light head beats even the privileged class mean; appearance-only predictors, including PIXIE and a vision&ndash;language model, are at the level of a constant. Test within-class correlation: 0.63 for E/&rho;, 0.79 for &sigma;<sub>y</sub>/&rho;.</p>
+    </div>
+    <div>
+      <figure class="fig"><img src="assets/figs/F8_touch.png" alt="Error reduction and within-class Spearman for vision, touch and their fusion." width="961" height="934" loading="lazy"></figure>
+      <p class="cap"><b>Video + touch on IdentiDeform-Touch</b> (test, 300 simulations). Force tokens for every tool, fused with video, recover density (within-class Spearman 0.22&nbsp;&rarr;&nbsp;0.72) and absolute stiffness (0.75), and beat the true-class mean on every target.</p>
     </div>
   </div>
 </section>
 
-<section class="wrap" id="grasp">
-  <h2>Using the twin: damage-aware grasp</h2>
-  <p class="lead">A parallel-jaw gripper squeezes the object, holds, and releases. Each twin simulates six candidate depths and picks the deepest one whose predicted permanent crush stays within 3% of the object's width. We then run the chosen depth with the ground-truth material.</p>
-  <div class="card" style="margin-bottom:18px">
-    <h3>Plasticine bottle (#182) <span>deepest safe depth: d = 0.18</span></h3>
-    <div class="grid g2">
-      <div><video src="assets/grasp/grasp_gs_000182.mp4" poster="assets/grasp/grasp_gs_000182.jpg" muted loop playsinline preload="none" width="808" height="484"></video><div class="vlabels"><div>3DGS rendering</div></div></div>
-      <div><video src="assets/grasp/grasp_000182.mp4" poster="assets/grasp/grasp_000182.jpg" muted loop playsinline preload="none" width="960" height="440"></video><div class="vlabels"><div>MPM particles with jaws (side view)</div></div></div>
-    </div>
-    <div class="vlabels l2"><div>class-mean twin: d = 0.32 &rarr; <b class="bad">11.5% crush</b></div><div>our twin: d = 0.10 &rarr; <b class="ok">intact (0.0%)</b></div></div>
+<hr>
+<section id="refine">
+  <h2>Prior + few simulations</h2>
+  <p class="lead">The prior gives a starting point in about 6&nbsp;s; gradient-free simulation-in-the-loop refinement (compass search or CMA-ES) then fits the observed video in our MPM engine. Each clip re-simulates the observed action with one parameter set.</p>
+  <div class="grid">
+    <div class="tile"><div class="t">Plasticine, drop <span>validation #5</span></div>
+      <div class="vbox r4x1"><video src="assets/refine/refine_000005.mp4" poster="assets/refine/refine_000005.jpg" muted loop playsinline preload="none"></video></div>
+      <div class="lbl l5"><div><b>Observed</b><br>ground-truth simulation</div><div><b>PIXIE</b>, no prior<br>IoU 0.28 &middot; ~8 s</div><div><b>Our prior</b>, 0 sims<br>IoU 0.84 &middot; ~6 s</div><div><b>Prior + 4 sims</b><br>IoU 0.86 &middot; ~32 min</div><div><b>No prior</b>, 24 sims<br>IoU 0.93 &middot; ~2.9 h</div></div>
+    <div class="tile"><div class="t">Metal, press&ndash;hold&ndash;release <span>validation #106</span></div>
+      <div class="vbox r4x1"><video src="assets/refine/refine_000106.mp4" poster="assets/refine/refine_000106.jpg" muted loop playsinline preload="none"></video></div>
+      <div class="lbl l5"><div><b>Observed</b><br>ground-truth simulation</div><div><b>PIXIE</b>, no prior<br>IoU 0.51 &middot; ~8 s</div><div><b>Our prior</b>, 0 sims<br>IoU 0.77 &middot; ~6 s</div><div><b>Prior + 4 sims</b><br>IoU 0.97 &middot; ~33 min</div><div><b>No prior</b>, 14 sims<br>IoU 0.98 &middot; ~1.6 h</div></div>
+    <div class="tile"><div class="t">Jelly, drop <span>validation #219</span></div>
+      <div class="vbox r4x1"><video src="assets/refine/refine_000219.mp4" poster="assets/refine/refine_000219.jpg" muted loop playsinline preload="none"></video></div>
+      <div class="lbl l5"><div><b>Observed</b><br>ground-truth simulation</div><div><b>PIXIE</b>, no prior<br>IoU 0.38 &middot; ~9 s</div><div><b>Our prior</b>, 0 sims<br>IoU 0.93 &middot; ~6 s</div><div><b>Prior + 4 sims</b><br>IoU 0.93 &middot; ~30 min</div><div><b>No prior</b>, 13 sims<br>IoU 0.98 &middot; ~1.7 h</div></div>
   </div>
-  <div class="card" style="margin-bottom:18px">
-    <h3>Metal boot (#181) <span>deepest safe depth: d = 0.14</span></h3>
-    <div class="grid g2">
-      <div><video src="assets/grasp/grasp_gs_000181.mp4" poster="assets/grasp/grasp_gs_000181.jpg" muted loop playsinline preload="none" width="808" height="484"></video><div class="vlabels"><div>3DGS rendering</div></div></div>
-      <div><video src="assets/grasp/grasp_000181.mp4" poster="assets/grasp/grasp_000181.jpg" muted loop playsinline preload="none" width="960" height="440"></video><div class="vlabels"><div>MPM particles with jaws (side view)</div></div></div>
-    </div>
-    <div class="vlabels l2"><div>class-mean twin: d = 0.24 &rarr; <b class="bad">6.8% crush</b></div><div>our twin: d = 0.14 &rarr; <b class="ok">intact (2.8%)</b></div></div>
-  </div>
-  <div class="card" style="margin-bottom:18px">
-    <h3>Plasticine tray (#71) <span>deepest safe depth: d = 0.24</span></h3>
-    <div class="grid g2">
-      <div><video src="assets/grasp/grasp_gs_000071.mp4" poster="assets/grasp/grasp_gs_000071.jpg" muted loop playsinline preload="none" width="808" height="484"></video><div class="vlabels"><div>3DGS rendering</div></div></div>
-      <div><video src="assets/grasp/grasp_000071.mp4" poster="assets/grasp/grasp_000071.jpg" muted loop playsinline preload="none" width="960" height="440"></video><div class="vlabels"><div>MPM particles with jaws (side view)</div></div></div>
-    </div>
-    <div class="vlabels l2"><div>class-mean twin: d = 0.32 &rarr; <b class="bad">4.5% crush</b></div><div>our twin: d = 0.24 &rarr; <b class="ok">intact (2.0%)</b></div></div>
-  </div>
-  <p class="cap">Both views show the ground-truth execution of the depth chosen by each twin. Left: the object rendered with its 3D Gaussians (the jaws are not rendered; the phase is printed). Right: 4,096 tracked MPM particles, side view. Blue bars are the jaws, grey dashed lines mark the initial width and coloured ticks the current width. "Our twin" is the video prior followed by 12 refinement simulations. The task runs with gravity off.</p>
-  <div class="split" style="margin-top:22px">
-    <figure class="fig"><img src="assets/figs/F6_gripper.png" alt="Gripper success rate and regret for each planning twin, 55 samples." width="975" height="532" loading="lazy"></figure>
-    <div class="note">Over 55 validation objects, twins built from the video prior succeed <b>20 percentage points</b> more often than twins with class-average parameters (82% vs. 62%), and their regret is about half as large. A fixed shallow grasp is also often safe, but it grips about 3.6&times; less deeply.</div>
-  </div>
-</section>
+  <p class="cap">The observed video is itself a ground-truth simulation; PIXIE is a published appearance-based predictor; "no prior" is the same search started from the best class mean, run to convergence (up to 24 simulations). Mask IoU against the observation; times include simulation.</p>
 
-<section class="wrap" id="compare">
-  <h2>Comparison</h2>
-  <p class="lead">Per-scene system identification costs hours. The prior is a single forward pass.</p>
+  <div class="tw"><table>
+    <caption><b>Identifiable-parameter error after k simulations</b> (standardized MAE on E/&rho;, &sigma;<sub>y</sub>/&rho;; lower is better). &dagger;Privileged: told the true class. Best-of-3 spends 3 probe simulations.</caption>
+    <thead><tr><th>Simulations k</th><th>0</th><th>4</th><th>12</th><th>24</th></tr></thead>
+    <tbody>
+      <tr class="grp"><td colspan="5">Validation, 60 samples / 10 objects</td></tr>
+      <tr><td>Best-of-3 class means</td><td>&ndash;</td><td>0.771</td><td>0.536</td><td>0.482</td></tr>
+      <tr><td>True-class mean&dagger;</td><td>0.674</td><td>0.577</td><td>0.339</td><td>0.257</td></tr>
+      <tr class="ours"><td>Prior (ours)</td><td>0.344</td><td>0.327</td><td>0.283</td><td>0.236</td></tr>
+      <tr class="grp sep"><td colspan="5">Test, 60 samples / 10 held-out objects</td></tr>
+      <tr><td>Best-of-3 class means</td><td>&ndash;</td><td>0.864</td><td>0.585</td><td>0.486</td></tr>
+      <tr><td>True-class mean&dagger; (50 samples)</td><td>0.763</td><td>0.688</td><td>0.433</td><td>0.307</td></tr>
+      <tr class="ours"><td>Prior (ours)</td><td>0.482</td><td>0.490</td><td>0.370</td><td>0.283</td></tr>
+      <tr class="grp sep"><td colspan="5">Validation subset, 20 samples: optimizer-matched CMA-ES</td></tr>
+      <tr><td>True-class mean&dagger; + CMA-ES</td><td>0.629</td><td>0.469</td><td>0.395</td><td>0.327</td></tr>
+      <tr><td>Best-of-3 + CMA-ES</td><td>&ndash;</td><td>0.735</td><td>0.566</td><td>0.533</td></tr>
+      <tr class="ours"><td>Prior + CMA-ES (ours)</td><td>0.243</td><td>0.202</td><td>0.209</td><td>0.154</td></tr>
+    </tbody>
+  </table></div>
+  <div class="nums" style="margin-top:18px">
+    <div class="num"><div class="v">9&ndash;12</div><div class="d">simulations saved against a search told the true class (test / val)</div></div>
+    <div class="num"><div class="v">3</div><div class="d">CMA-ES simulations from the prior to match the privileged search after 24</div></div>
+    <div class="num"><div class="v">&asymp;0.2</div><div class="d">error floor, set by weakly identifiable hardening and &nu;</div></div>
+  </div>
   <div class="split">
-    <div class="tablewrap">
-      <table>
-        <thead><tr><th>Method</th><th>Input</th><th style="text-align:right">Time / scene</th></tr></thead>
-        <tbody>
-          <tr><td>PAC-NeRF</td><td>11 views</td><td class="num">5.8 h</td></tr>
-          <tr><td>Spring-Gaus</td><td>10 views</td><td class="num">2.4&ndash;5.1 h</td></tr>
-          <tr><td>PhysTwin</td><td>3 RGB-D</td><td class="num">31 min</td></tr>
-          <tr class="ours"><td>Ours, prior only</td><td>3 views</td><td class="num">6 s</td></tr>
-        </tbody>
-      </table>
-      <p class="cap" style="margin:8px 6px">Official implementations on their own data, timed on shared GPUs (upper bounds). These methods differ in input and output, so the table compares cost only. On PAC-NeRF scenes our prior needs a 3-scene calibration to match their accuracy (see paper).</p>
-    </div>
-    <figure class="fig"><img src="assets/figs/F5_baselines.png" alt="Standardized MAE of feed-forward predictors and baselines on IdentiDeform validation and test." width="975" height="817" loading="lazy">
-      <figcaption style="color:#5a6472">Feed-forward predictors on IdentiDeform (lower is better).</figcaption></figure>
+    <figure class="fig"><img src="assets/figs/F2_init_vs_refined.png" alt="Error after 4 and 12 simulations against the initial error." width="975" height="810" loading="lazy"></figure>
+    <p class="cap"><b>Initialization quality decides the cost of refinement.</b> Error after refinement is close to linear in the starting error (r&nbsp;=&nbsp;0.95 after 4 simulations). Every good start ends near the same floor; searching hardening and &nu; as well does not lower it. The prior's value is to start near that floor without simulation.</p>
   </div>
 </section>
 
-<section class="wrap" id="limits">
-  <div class="limits">
-    <h2 style="font-size:22px">Limitations</h2>
-    <ul>
-      <li><b>Simulation only.</b> All quantitative results come from simulated videos with known ground truth. The real-object checks in the paper are small and qualitative.</li>
-      <li><b>Refinement floor.</b> Refinement plateaus at a z-MAE of about 0.2&ndash;0.3, set by parameters we do not model (e.g. hardening). The prior helps you reach the floor quickly but does not lower it.</li>
-      <li><b>Zero-shot transfer across datasets is unreliable.</b> On PAC-NeRF and Spring-Gaus data the prior needs in-target calibration or refinement.</li>
-    </ul>
-  </div>
+<hr>
+<section id="compare">
+  <h2>Comparison with per-scene methods</h2>
+  <div class="tw"><table>
+    <caption><b>Official per-scene implementations on their own data</b> (time on shared A800 GPUs, upper bounds). Spring-Gaus and PhysTwin do not output E.</caption>
+    <thead><tr><th>Method</th><th>Data (scenes)</th><th>Views</th><th>Time / scene</th><th>|&Delta;log<sub>10</sub>E| &darr;</th></tr></thead>
+    <tbody>
+      <tr><td>PAC-NeRF</td><td>PAC-NeRF (4)</td><td>11</td><td>5.8 h</td><td>0.36</td></tr>
+      <tr><td>PAC-NeRF</td><td>PAC-NeRF (4)</td><td>3</td><td>2.9&ndash;10.8 h</td><td>1.42</td></tr>
+      <tr><td>Spring-Gaus</td><td>Spring-Gaus (3)</td><td>10</td><td>2.4&ndash;5.1 h</td><td>n/a</td></tr>
+      <tr><td>PhysTwin</td><td>PhysTwin (1)</td><td>3 RGB-D</td><td>31 min</td><td>n/a</td></tr>
+      <tr class="ours sep"><td>Ours, prior + 3-scene calibration</td><td>PAC-NeRF (4)</td><td>3</td><td>6 s</td><td>0.26</td></tr>
+    </tbody>
+  </table></div>
+  <div class="tw" style="margin-top:18px"><table>
+    <caption><b>Against Spring-Gaus with its own metrics</b> (3 synthetic scenes, fit on frames 0&ndash;19, roll out to frame 29; Chamfer distance, lower is better).</caption>
+    <thead><tr><th>Method</th><th>Fit CD</th><th>Future CD</th><th>Future PSNR</th><th>Time / scene</th></tr></thead>
+    <tbody>
+      <tr><td>Spring-Gaus</td><td>0.0110</td><td>0.0173</td><td>18.8 dB</td><td>2.4&ndash;5.1 h</td></tr>
+      <tr><td>Ours, prior only</td><td>0.0212</td><td>0.0178</td><td>17.2 dB</td><td>2 s</td></tr>
+      <tr class="ours"><td>Ours, prior + 12 sims</td><td>0.0094</td><td>0.0143</td><td>19.5 dB</td><td>2&ndash;3 min</td></tr>
+    </tbody>
+  </table></div>
+  <p class="cap">We start from the dataset's first-frame particles (favouring us in geometry) and render unshaded particle splats (disfavouring us in appearance); we are better on both Chamfer distances for two of the three scenes. Feed-forward baselines (PIXIE, Qwen3-VL, appearance only) are compared in the figure above.</p>
 </section>
 
-<section class="wrap" id="bibtex">
+<hr>
+<section id="real">
+  <h2>Real captures</h2>
+  <p class="lead">Real objects have no parameter ground truth, so we test whether twins reproduce what was <i>not</i> used to build them. For five real drops of the Spring-Gaus captures (3 calibrated cameras, 120&nbsp;fps), we build a visual hull, take the prior's prediction from the videos, replay the drop in our MPM engine and render it into a held-out camera and into future frames.</p>
+  <div class="grid">
+    <div class="tile"><div class="t">burger <span>held-out camera, 20 frames at 120 fps, shown at 8 fps</span></div><div class="vbox" style="aspect-ratio:1024/284"><video src="assets/real/burger.mp4" poster="assets/real/burger.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">bun <span>held-out camera, 20 frames at 120 fps, shown at 8 fps</span></div><div class="vbox" style="aspect-ratio:1024/284"><video src="assets/real/bun.mp4" poster="assets/real/bun.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">potato <span>held-out camera, 20 frames at 120 fps, shown at 8 fps</span></div><div class="vbox" style="aspect-ratio:1024/284"><video src="assets/real/potato.mp4" poster="assets/real/potato.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">dog <span>held-out camera, 20 frames at 120 fps, shown at 8 fps</span></div><div class="vbox" style="aspect-ratio:1024/284"><video src="assets/real/dog.mp4" poster="assets/real/dog.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">pig <span>held-out camera, 20 frames at 120 fps, shown at 8 fps</span></div><div class="vbox" style="aspect-ratio:1024/284"><video src="assets/real/pig.mp4" poster="assets/real/pig.jpg" muted loop playsinline preload="none"></video></div></div>
+  </div>
+  <p class="cap">Columns: observed held-out view; our prior with no simulation; prior + refinement of E with one dissipation parameter fixed from the other objects; class-mean E. The white contour is the observed mask; labels give the future-frame IoU on this camera.</p>
+  <div class="tw"><table>
+    <caption><b>Replay on real captures</b> (means over 5 objects and 3 camera folds). Twins are fitted on 2 cameras &times; the first 10 frames. &lowast;One dissipation parameter fixed from the other four objects (designed after the first results).</caption>
+    <thead><tr><th>Twin</th><th>Held-out IoU &uarr;</th><th>Held-out PSNR &uarr;</th><th>Future IoU &uarr;</th><th>Future PSNR &uarr;</th><th>3D error (cm) &darr;</th></tr></thead>
+    <tbody>
+      <tr><td>Class-mean E</td><td>0.347</td><td>9.93</td><td>0.041</td><td>7.63</td><td>7.3</td></tr>
+      <tr><td>Global constant E</td><td>0.417</td><td>10.69</td><td>0.111</td><td>8.56</td><td>9.0</td></tr>
+      <tr class="ours"><td>Prior, 0 sims (ours)</td><td>0.484</td><td>10.95</td><td>0.258</td><td>9.28</td><td>5.6</td></tr>
+      <tr><td>Prior + refine E, 12 sims</td><td>0.445</td><td>10.86</td><td>0.127</td><td>8.63</td><td>7.7</td></tr>
+      <tr class="ours sep"><td>Prior + refine E, dissipation&lowast;</td><td>0.580</td><td>11.63</td><td>0.378</td><td>10.23</td><td>3.6</td></tr>
+      <tr><td>Best E in hindsight</td><td>0.561</td><td>11.37</td><td>0.415</td><td>10.31</td><td>3.4</td></tr>
+    </tbody>
+  </table></div>
+  <p class="cap">The prior's twin beats both constant-stiffness twins on all five objects (future IoU +0.22 [0.15, 0.30] over the class mean). Refining stiffness alone overfits the few post-impact frames; one dissipation parameter fixes this, pointing to missing dissipation rather than stiffness as the main gap on real data.</p>
+  <figure class="fig" style="margin-top:14px"><img src="assets/figs/F9_real.png" alt="Held-out camera comparison for two real objects and IoU/PSNR bars per arm." width="2070" height="825" loading="lazy"></figure>
+</section>
+
+<hr>
+<section id="grasp">
+  <h2>Using the twin for grasping</h2>
+  <h3>Evaluating grasps before execution (IdentiDeform-Touch)</h3>
+  <p class="lead">A two-jaw gripper grasps the object at its end or center with one of four grip depths and lifts it under gravity. A grasp fails if the object is not carried (<span class="warn">drop</span>) or is crushed by more than 5% (<span class="bad">damage</span>). Each twin simulates every candidate and predicts its outcome; we compare with executing it under the true parameters.</p>
+  <div class="grid">
+    <div class="tile"><div class="t">Plastic bottle <span>plasticine, validation #134</span></div><div class="vbox" style="aspect-ratio:1024/312;background:#fff"><video src="assets/grasp_pred/000134.mp4" poster="assets/grasp_pred/000134.jpg" muted loop playsinline preload="none"></video></div></div>
+    <div class="tile"><div class="t">Brass telescope <span>metal, validation #37</span></div><div class="vbox" style="aspect-ratio:1024/312;background:#fff"><video src="assets/grasp_pred/000037.mp4" poster="assets/grasp_pred/000037.jpg" muted loop playsinline preload="none"></video></div></div>
+  </div>
+  <p class="cap">True execution of four candidate grasps on one object (4,096 tracked MPM particles, coloured by height gained; grey boxes are the jaws), with the outcome predicted by the video&ndash;touch twin and by the class-mean twin. On these two objects the video&ndash;touch twin predicts all eight candidates correctly, the class-mean twin 2/8 and 6/8.</p>
+  <div class="tw"><table>
+    <caption><b>Grasp-outcome prediction</b> (validation, 56 samples / 10 objects &times; 8 candidate grasps). Lookup tables predict, per candidate, the most common outcome on the other objects. Safe precision: fraction of grasps predicted to succeed that do.</caption>
+    <thead><tr><th>Predictor</th><th>Macro-F1 &uarr;</th><th>Accuracy &uarr;</th><th>Safe precision &uarr;</th></tr></thead>
+    <tbody>
+      <tr><td>Lookup per grasp</td><td>0.378</td><td>&ndash;</td><td>&ndash;</td></tr>
+      <tr><td>Lookup per grasp and class</td><td>0.341</td><td>&ndash;</td><td>&ndash;</td></tr>
+      <tr class="sep"><td>Twin, class-mean parameters</td><td>0.676</td><td>0.754</td><td>0.41</td></tr>
+      <tr><td>Twin, video prior</td><td>0.715</td><td>0.788</td><td>0.45</td></tr>
+      <tr class="ours"><td>Twin, video + touch prior</td><td>0.770</td><td>0.835</td><td>0.52</td></tr>
+    </tbody>
+  </table></div>
+  <p class="cap">Twins predict outcomes far better than lookups over grasp position and depth (+0.30 to +0.39 macro-F1). The video&ndash;touch twin is best and beats the class-mean twin (+0.09 [0.01, 0.22]); its margin over the video-only twin is not significant, likely because each probe touches only a small area during a single loading phase.</p>
+
+  <h3>Damage-aware squeeze (IdentiDeform-Vision)</h3>
+  <p class="lead">Each twin simulates six squeeze depths and picks the deepest one whose predicted permanent crush stays within 3% of the object's width; the choice is then executed with the true parameters. Over 55 validation samples (10 objects), twins from the video prior succeed in 82% of cases, against 62% for class-mean twins.</p>
+  <div class="grid">
+    <div class="tile"><div class="t">Plasticine bottle (#182) <span>deepest safe depth 0.18</span></div>
+      <div class="grid g2"><div class="vbox rsq"><video src="assets/grasp/grasp_gs_000182.mp4" poster="assets/grasp/grasp_gs_000182.jpg" muted loop playsinline preload="none"></video></div><div class="vbox rsq"><video src="assets/grasp/grasp_000182.mp4" poster="assets/grasp/grasp_000182.jpg" muted loop playsinline preload="none"></video></div></div>
+      <div class="lbl l2"><div>class-mean twin: depth 0.32 &rarr; <b class="bad">11.5% crush</b></div><div>our twin: depth 0.10 &rarr; <b class="ok">intact</b></div></div></div>
+    <div class="tile"><div class="t">Metal boot (#181) <span>deepest safe depth 0.14</span></div>
+      <div class="grid g2"><div class="vbox rsq"><video src="assets/grasp/grasp_gs_000181.mp4" poster="assets/grasp/grasp_gs_000181.jpg" muted loop playsinline preload="none"></video></div><div class="vbox rsq"><video src="assets/grasp/grasp_000181.mp4" poster="assets/grasp/grasp_000181.jpg" muted loop playsinline preload="none"></video></div></div>
+      <div class="lbl l2"><div>class-mean twin: depth 0.24 &rarr; <b class="bad">6.8% crush</b></div><div>our twin: depth 0.14 &rarr; <b class="ok">intact</b></div></div></div>
+  </div>
+  <p class="cap">Left: 3DGS rendering of the true execution (jaws not rendered). Right: 4,096 tracked MPM particles with the jaws, side view.</p>
+</section>
+
+<hr>
+<section id="limits" class="limits">
+  <h2>Limitations</h2>
+  <ul>
+    <li>Parameter accuracy is measured in simulation, where ground truth exists; on real data we evaluate replay of held-out views and frames, on five objects.</li>
+    <li>Contact forces are simulated, and our probes touch a small area for a short time.</li>
+    <li>Refinement needs accurate geometry and a matched engine, and plateaus at a floor set by hardening and &nu;.</li>
+    <li>Zero-shot transfer across engines needs few-shot calibration or in-target refinement.</li>
+  </ul>
+</section>
+
+<hr>
+<section id="bibtex">
   <h2>BibTeX</h2>
-<pre><code>@inproceedings{identideform2026,
+<pre><code>@inproceedings{identideform,
   title     = {What Can a Video Tell About Material? Identifiable Video Priors
                for Few-Simulation System Identification},
   author    = {Anonymous},
@@ -263,27 +328,17 @@ footer{padding:28px 0 48px;border-top:1px solid var(--line);color:var(--muted);f
 </section>
 </main>
 
-<footer class="wrap">IdentiDeform &middot; code under the MIT license &middot; model weights on <a href="https://huggingface.co/HandsomeHusky/IdentiDeform-prior">Hugging Face</a>; the dataset will follow at <a href="https://huggingface.co/HandsomeHusky">huggingface.co/HandsomeHusky</a>.</footer>
+<footer class="wrap">IdentiDeform &middot; code under the MIT license &middot; model weights on <a href="https://huggingface.co/HandsomeHusky/IdentiDeform-prior">Hugging Face</a></footer>
 
 <script>
 (function(){
-  var root=document.documentElement, b=document.getElementById('theme');
-  try{var t=localStorage.getItem('theme'); if(t) root.setAttribute('data-theme',t);}catch(e){}
-  b.addEventListener('click',function(){
-    var cur=root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
-    var nxt=cur==='dark'?'light':'dark'; root.setAttribute('data-theme',nxt);
-    try{localStorage.setItem('theme',nxt);}catch(e){}
-  });
   var vids=[].slice.call(document.querySelectorAll('video'));
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  vids.forEach(function(v){ if(reduce) v.setAttribute('controls',''); });
-  if(!('IntersectionObserver' in window)){ vids.forEach(function(v){ v.preload='auto'; if(!reduce) v.play().catch(function(){}); }); return; }
-  var io=new IntersectionObserver(function(es){ es.forEach(function(e){
-    var v=e.target;
-    if(e.isIntersecting){ if(v.preload!=='auto') v.preload='auto'; if(!reduce) v.play().catch(function(){}); }
-    else v.pause();
-  }); },{rootMargin:'120px'});
-  vids.forEach(function(v){ io.observe(v); });
+  if(reduce){vids.forEach(function(v){v.setAttribute('controls','');});return;}
+  if(!('IntersectionObserver' in window)){vids.forEach(function(v){v.preload='auto';v.play().catch(function(){});});return;}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;
+    if(e.isIntersecting){if(v.preload!=='auto')v.preload='auto';v.play().catch(function(){});}else v.pause();});},{rootMargin:'150px'});
+  vids.forEach(function(v){io.observe(v);});
 })();
 </script>
 </body>
