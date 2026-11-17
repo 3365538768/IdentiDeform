@@ -2,7 +2,7 @@
 
 **What Can a Video Tell About Material? Identifiable Video Priors for Few-Simulation System Identification**
 
-Project page: https://3365538768.github.io/IdentiDeform/  ·  Paper: coming soon  ·  Model: [HandsomeHusky/IdentiDeform-prior](https://huggingface.co/HandsomeHusky/IdentiDeform-prior)  ·  Dataset: coming soon on [Hugging Face](https://huggingface.co/HandsomeHusky)
+Project page: https://3365538768.github.io/IdentiDeform/  ·  Paper: coming soon  ·  Model: [HandsomeHusky/IdentiDeform-prior](https://huggingface.co/HandsomeHusky/IdentiDeform-prior)  ·  Dataset: [HandsomeHusky/IdentiDeform](https://huggingface.co/datasets/HandsomeHusky/IdentiDeform)
 
 Multi-view video of a deformable object identifies its constitutive class and the density-normalized quantities
 E/ρ and σ<sub>y</sub>/ρ. It does not identify density itself. IdentiDeform is a simulated benchmark built around this
@@ -15,7 +15,8 @@ identifiable subspace. This repository contains:
 3. **Few-simulation refinement.** Gradient-free simulation-in-the-loop fitting starts from the prior and stops after
    0–24 simulations.
 
-> Trained prior heads: https://huggingface.co/HandsomeHusky/IdentiDeform-prior. Datasets and cached features will be released at https://huggingface.co/HandsomeHusky.
+> Trained prior heads: https://huggingface.co/HandsomeHusky/IdentiDeform-prior. Dataset (simulations, manifests,
+> cached V-JEPA 2 features, object assets): https://huggingface.co/datasets/HandsomeHusky/IdentiDeform.
 > This repository contains code and configurations only.
 
 ## Repository layout
@@ -50,10 +51,25 @@ export GSIM_PYTHON=/path/to/deformfieldbench/env/bin/python   # interpreter with
 ```
 
 Place the 3D-Gaussian object assets (`<object>.ply`) under `data/geometry/kaggle_v2/3DGS_model/3DGS_model/`. The
-assets will also be published on Hugging Face. Download the V-JEPA 2 ViT-L weights
+assets are in the dataset under `data/geometry/kaggle_v2/`. Download the V-JEPA 2 ViT-L weights
 (`facebook/vjepa2-vitl-fpc64-256`) to `weights/hf/facebook__vjepa2-vitl-fpc64-256/`.
 
 All paths in the configs are relative to the repository root.
+
+## 0. Download the data
+
+```bash
+huggingface-cli download HandsomeHusky/IdentiDeform --repo-type dataset --local-dir .
+```
+
+This puts `data/v2_main/` (2538 simulations), `data/manifests/` (train/val and train/val/test manifests with
+statistics), `data/prepared/v2main_vjl/` (frozen V-JEPA 2 features for train and val, ~120 GB) and
+`data/geometry/kaggle_v2/` (object assets) at the repository root, where the configs expect them. With the cached
+features you can skip sections 1 and the feature-cache step of section 2.
+
+The full research working tree (all experiment lines, logs and scripts beyond this release) is archived on the
+branch [`archive/rsi_real_test-20261117`](https://github.com/3365538768/IdentiDeform/tree/archive/rsi_real_test-20261117),
+with its data in [HandsomeHusky/IdentiDeform-extra](https://huggingface.co/datasets/HandsomeHusky/IdentiDeform-extra).
 
 ## 1. Generate the benchmark
 
