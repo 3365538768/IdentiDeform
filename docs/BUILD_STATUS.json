@@ -1,0 +1,116 @@
+{
+  "date": "2026-11-07",
+  "remote_root": "/mnt/afs_engine/linrui/rsi_real_test",
+  "upstream_commit": "131c0b063d81b5413691e43ea78fe3ba64e53e9c",
+  "python": "3.12.3",
+  "validation": {
+    "pytest": "9 passed (latest 9.51s)",
+    "pip_check": "No broken requirements found",
+    "checks": {
+      "software_smoke": {
+        "status": "software_smoke_passed",
+        "steps": 3,
+        "best_val_standardized_mae": 1.4405646560092766,
+        "max_gpu_allocated_bytes": 21245952
+      },
+      "ddp8_software_smoke": {
+        "status": "software_smoke_passed",
+        "steps": 2,
+        "best_val_standardized_mae": 1.4963875723381836,
+        "max_gpu_allocated_bytes": 21254656
+      },
+      "acceptance_ddp8_no_feedback": {
+        "status": "software_smoke_passed",
+        "steps": 2,
+        "best_val_standardized_mae": 1.4976104858020942,
+        "max_gpu_allocated_bytes": 21254656
+      },
+      "acceptance_real_pretrained": {
+        "status": "software_smoke_passed",
+        "steps": 3,
+        "best_val_standardized_mae": 0.8795606891314188,
+        "max_gpu_allocated_bytes": 152294400
+      },
+      "acceptance_resume": {
+        "status": "software_smoke_passed",
+        "steps": 4,
+        "best_val_standardized_mae": 1.4405646560092766,
+        "max_gpu_allocated_bytes": 20465152
+      },
+      "independent_cli_val": true
+    }
+  },
+  "data": {
+    "archive_bytes": 41425509436,
+    "gt_json_count": 5000,
+    "sample_pack_count": 4914,
+    "missing_packs": 86,
+    "local_real_subset_objects": 7,
+    "full_dataset_downloaded": true,
+    "published_split": {
+      "train": 4420,
+      "test": 494,
+      "object_stats_count": 108
+    },
+    "missing_packs_interpretation": "86 gt-only directories are excluded from the published cleaned split",
+    "geometry_assets": 108,
+    "geometry_crc_and_finite_arrays": "passed",
+    "geometry_dataset_coverage": "108/108",
+    "full_schema_crc_audit": "passed",
+    "original_test_preserved": true,
+    "split_counts": {
+      "train": 4021,
+      "val": 399,
+      "test": 494
+    }
+  },
+  "models": {
+    "pretrained_smoke": "official DINOv2-vits14-reg, frozen, real samples, 3 optimizer steps",
+    "dinov3_large": "adapter/config ready, official weights not acquired; HF gated=manual",
+    "dinov3_hplus": "adapter/config ready, weights not acquired",
+    "vomp": "independent prior contract ready; inference adapter not yet implemented",
+    "dinov2_giant": "official checkpoint downloaded, CRC checked, strict model loading and 16/64-frame profiling passed"
+  },
+  "implemented": [
+    "independent data/model/loss/train/eval modules",
+    "legacy and explicit metric field contracts",
+    "object split and train-only statistics",
+    "law-valid missing-parameter masks",
+    "variable view/time masks",
+    "matched feedback controls",
+    "BF16 + DDP + accumulation",
+    "epoch-boundary resume",
+    "per-source/action/law evaluation",
+    "paired object bootstrap utility",
+    "static prior provenance join",
+    "simulation result interface"
+  ],
+  "pending": [
+    "full data/schema/physics audit",
+    "full research training and improvement evidence",
+    "DINOv3 licensed checkpoint acquisition and profiling",
+    "VoMP inference/geometry/unit adapter",
+    "PokeFlex/PhysTwin real-response experiments",
+    "actual calibrated simulator backend",
+    "composite material generation"
+  ],
+  "long_running_training_active": true,
+  "source_file_count": 90,
+  "note": "Full CRC/schema/timing audit passed. First full-data controlled training started; no test-set evaluation or superiority evidence yet.",
+  "engineering_pilots": {
+    "v1_bce": "completed; D vs C error +1.43%; no bridge benefit",
+    "v2_balanced_bce": "completed; D vs C error +1.72%; recall improved but precision remains poor",
+    "samples": 240,
+    "train": 226,
+    "val": 14,
+    "seed_count": 1,
+    "backbone": "DINOv2-S",
+    "test_evaluated": false
+  },
+  "phase_report": "docs/STAGE_P0_PROGRESS_ZH.md",
+  "active_jobs": [
+    "full-data C_aux_no_feedback seed17, GPUs 0-3",
+    "full-data D_field_bridge seed17, GPUs 4-7"
+  ],
+  "p0_phase": "first_full_data_cd_running"
+}

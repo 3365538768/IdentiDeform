@@ -1,0 +1,49 @@
+{
+  "status": "complete",
+  "source": "raw_packs_and_official_weights_on_a8002",
+  "git_commit": "21e136b",
+  "tests_passed": 12,
+  "sample_scope": "512 train + 128 val per backbone; no test data",
+  "migration": "cancelled_by_user",
+  "updated_unix": 1794102071.182538,
+  "backbones": {
+    "DINOV2": {
+      "files": 640,
+      "bytes": 15455804160,
+      "parity_max_z_delta": 0.0,
+      "raw_parity_samples": 4,
+      "manifest_sha256": "2d13b51c01b7808277a467ab566c120b9e495dae998249dd7e97734d76cf3f6b",
+      "aliases": [
+        {
+          "alias": "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/prepared/g1_dinos16",
+          "target": "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/prepared/g1_dinos16_rebuilt_a8002",
+          "retained_copy": "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/prepared/g1_dinos16_migration_retained_1794101942844636184"
+        },
+        {
+          "alias": "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/prepared/g1_dinos16_local",
+          "target": "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/prepared/g1_dinos16_rebuilt_a8002",
+          "retained_copy": null
+        }
+      ]
+    },
+    "DINOV3": {
+      "files": 640,
+      "bytes": 28038716160,
+      "parity_max_z_delta": 0.0,
+      "raw_parity_samples": 4,
+      "manifest_sha256": "2d13b51c01b7808277a467ab566c120b9e495dae998249dd7e97734d76cf3f6b",
+      "aliases": [
+        {
+          "alias": "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/prepared/g1f_dinov3l16",
+          "target": "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/prepared/g1f_dinov3l16_rebuilt_a8002",
+          "retained_copy": "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/prepared/g1f_dinov3l16_migration_retained_1794102042225620447"
+        },
+        {
+          "alias": "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/prepared/g1f_dinov3l16_local",
+          "target": "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/prepared/g1f_dinov3l16_rebuilt_a8002",
+          "retained_copy": null
+        }
+      ]
+    }
+  }
+}

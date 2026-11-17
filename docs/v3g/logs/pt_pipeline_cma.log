@@ -1,0 +1,971 @@
+index, name, memory.used [MiB], utilization.gpu [%]
+3, NVIDIA A800-SXM4-80GB, 40026 MiB, 100 %
+=== cma start 2026-11-14T01:25:01Z
+Warp 1.7.0 initialized:
+   CUDA Toolkit 12.8, Driver 12.6
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA A800-SXM4-80GB" (79 GiB, sm_80, mempool enabled)
+   Kernel cache:
+     /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.cache/warp_v3g_pt
+2026-11-14 01:25:07,562 [   INFO] [DATA]: loading data from ./data/different_types/single_push_sloth/final_data.pkl
+2026-11-14 01:25:09,212 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:25:11,881 [   INFO] Module qqtt.model.diff_simulator.spring_mass_warp 8110844 load on device 'cuda:0' took 2305.91 ms  (compiled)
+2026-11-14 01:25:16,098 [   INFO] (5_w,11)-aCMA-ES (mu_w=3.4,w_1=42%) in dimension 12 (seed=42, Sat Nov 14 01:25:16 2026)
+2026-11-14 01:25:17,623 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:25:21,686 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:25:24,713 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:25:28,076 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:25:30,844 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:25:34,151 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:25:37,264 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:25:40,918 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:25:45,607 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:25:49,377 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:25:53,135 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:25:56,059 [   INFO] Iterat #Fevals   function value  axis ratio  sigma  min&max std  t[m:s]
+2026-11-14 01:25:56,060 [   INFO] 1     11 7.334990409815319e-04 1.0e+00 1.55e-01  1e-01  2e-01 0:39.9
+2026-11-14 01:25:57,061 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:26:00,603 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:26:04,074 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:26:07,696 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:26:11,798 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:26:15,180 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:26:18,286 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:26:21,498 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:26:25,100 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:26:29,053 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:26:32,604 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:26:34,854 [   INFO] 2     22 7.351402744303493e-04 1.1e+00 1.51e-01  1e-01  2e-01 1:18.7
+2026-11-14 01:26:36,279 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:26:40,433 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:26:43,934 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:26:47,277 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:26:51,096 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:26:54,891 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:26:59,157 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:27:03,537 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:27:07,383 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:27:11,577 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:27:15,934 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:27:18,391 [   INFO] 3     33 5.832941061745931e-04 1.2e+00 1.49e-01  1e-01  2e-01 2:02.3
+2026-11-14 01:27:19,765 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:27:23,495 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:27:27,425 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:27:31,453 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:27:34,659 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:27:37,623 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:27:40,412 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:27:43,831 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:27:48,197 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:27:52,071 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:27:55,480 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:27:58,102 [   INFO] 4     44 5.451508511372515e-04 1.3e+00 1.47e-01  1e-01  2e-01 2:42.0
+2026-11-14 01:27:59,371 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:28:03,276 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:28:06,857 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:28:10,910 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:28:14,816 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:28:18,230 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:28:21,810 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:28:25,282 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:28:29,031 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:28:33,659 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:28:37,428 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:28:39,401 [   INFO] 5     55 6.276842820190485e-04 1.3e+00 1.46e-01  1e-01  2e-01 3:23.3
+2026-11-14 01:28:40,205 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:28:43,906 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:28:47,671 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:28:51,207 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:28:54,553 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:28:58,168 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:29:02,350 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:29:05,887 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:29:09,265 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:29:13,474 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:29:17,868 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:29:20,854 [   INFO] 6     66 5.438586823481234e-04 1.4e+00 1.38e-01  1e-01  1e-01 4:04.7
+2026-11-14 01:29:22,053 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:29:26,240 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:29:30,436 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:29:34,616 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:29:38,669 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:29:42,304 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:29:45,585 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:29:48,908 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:29:52,281 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:29:56,016 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:29:59,786 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:30:02,532 [   INFO] 7     77 5.938008662467283e-04 1.3e+00 1.30e-01  1e-01  1e-01 4:46.4
+2026-11-14 01:30:03,924 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:30:07,868 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:30:11,119 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:30:14,889 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:30:19,381 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:30:23,836 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:30:27,516 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:30:31,720 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:30:36,027 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:30:39,884 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:30:43,972 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:30:46,977 [   INFO] 8     88 5.628270369015809e-04 1.3e+00 1.30e-01  1e-01  1e-01 5:30.8
+2026-11-14 01:30:48,736 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:30:53,549 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:30:57,705 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:31:01,961 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:31:06,631 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:31:10,367 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:31:13,861 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:31:17,856 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:31:21,019 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:31:24,270 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:31:27,764 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:31:30,088 [   INFO] 9     99 5.756214570045931e-04 1.4e+00 1.35e-01  1e-01  1e-01 6:13.9
+2026-11-14 01:31:31,211 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:31:35,288 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:31:39,683 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:31:44,217 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:31:48,553 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:31:52,420 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:31:56,081 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:32:00,277 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:32:04,439 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:32:08,009 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:32:12,462 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:32:15,761 [   INFO] 10    110 7.057939283976853e-04 1.5e+00 1.32e-01  1e-01  1e-01 6:59.6
+2026-11-14 01:32:16,849 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:32:20,755 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:32:24,262 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:32:28,239 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:32:32,762 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:32:36,566 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:32:40,202 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:32:44,070 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:32:48,032 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:32:52,442 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:32:56,455 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:32:59,204 [   INFO] 11    121 6.210036783712618e-04 1.5e+00 1.29e-01  1e-01  1e-01 7:43.1
+2026-11-14 01:33:00,421 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:33:04,415 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:33:08,424 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:33:13,045 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:33:17,566 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:33:21,556 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:33:25,854 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:33:29,490 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:33:33,195 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:33:37,694 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:33:41,846 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:33:45,376 [   INFO] 12    132 6.081263000732692e-04 1.5e+00 1.33e-01  1e-01  1e-01 8:29.2
+2026-11-14 01:33:46,600 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:33:51,116 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:33:55,783 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:34:01,648 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:34:06,923 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:34:10,576 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:34:14,048 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:34:17,693 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:34:21,857 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:34:25,743 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:34:29,213 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:34:31,722 [   INFO] 13    143 5.811277662122966e-04 1.5e+00 1.39e-01  1e-01  2e-01 9:15.6
+2026-11-14 01:34:33,202 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:34:37,498 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:34:41,496 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:34:44,970 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:34:48,252 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:34:52,138 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:34:55,591 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:34:59,536 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:35:04,167 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:35:08,026 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:35:11,642 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:35:14,498 [   INFO] 14    154 5.032308990057968e-04 1.6e+00 1.35e-01  1e-01  1e-01 9:58.3
+2026-11-14 01:35:15,870 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:35:21,053 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:35:24,884 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:35:28,854 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:35:32,857 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:35:37,036 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:35:40,960 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:35:44,673 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:35:47,768 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:35:51,521 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:35:55,700 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:35:57,934 [   INFO] 15    165 6.324198831822761e-04 1.6e+00 1.29e-01  1e-01  1e-01 10:41.8
+2026-11-14 01:35:58,990 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:36:03,256 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:36:07,687 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:36:11,284 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:36:14,877 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:36:18,771 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:36:22,398 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:36:26,587 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:36:31,368 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:36:35,819 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:36:40,178 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:36:43,094 [   INFO] 16    176 6.154521056289567e-04 1.7e+00 1.33e-01  1e-01  1e-01 11:26.9
+2026-11-14 01:36:44,348 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:36:48,205 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:36:52,427 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:36:56,398 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:36:59,914 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:37:03,578 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:37:06,906 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:37:10,472 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:37:14,387 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:37:18,076 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:37:21,270 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:37:23,494 [   INFO] 17    187 5.604693600142365e-04 1.8e+00 1.29e-01  1e-01  1e-01 12:07.3
+2026-11-14 01:37:24,516 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:37:28,041 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:37:31,955 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:37:35,369 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:37:39,103 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:37:42,923 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:37:46,331 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:37:49,647 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:37:52,742 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:37:55,930 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:37:59,521 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:38:02,004 [   INFO] 18    198 5.237883373529653e-04 1.9e+00 1.38e-01  1e-01  1e-01 12:45.8
+2026-11-14 01:38:02,962 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:38:05,894 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:38:09,214 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:38:12,986 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:38:16,835 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:38:20,780 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:38:24,873 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:38:28,627 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:38:31,931 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:38:35,461 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:38:38,523 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:38:40,620 [   INFO] 19    209 4.785453881160483e-04 1.9e+00 1.47e-01  1e-01  2e-01 13:24.5
+2026-11-14 01:38:41,348 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:38:44,539 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:38:48,148 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:38:51,962 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:38:55,594 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:38:58,377 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:39:01,530 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:39:04,813 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:39:08,254 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:39:11,291 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:39:14,575 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+2026-11-14 01:39:17,109 [   INFO] 20    220 5.002059187182053e-04 2.0e+00 1.57e-01  1e-01  2e-01 14:00.9
+2026-11-14 01:39:17,113 [   INFO] Optimal x: [0.31095338 0.42099    0.08180764 0.62630075 0.62747043 0.99172693
+ 0.6170801  0.77750486 0.8117321  0.00227542 0.9104917  0.8799958 ], Optimal error: 0.0004785453881160483
+2026-11-14 01:39:17,777 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+V3G_STAGE_DONE {"stage": "cma", "script": "optimize_cma.py", "case": "single_push_sloth", "argv": ["--base_path", "./data/different_types", "--case_name", "single_push_sloth", "--train_frame", "47"], "status": "ok", "error": null, "wall_s": 859.3274064064026, "cuda_visible": "3", "end_unix": 1794620360.724968, "gpu": "NVIDIA A800-SXM4-80GB", "peak_mem_gb": 0.022331904}
+=== cma rc=0 2026-11-14T01:39:21Z
+=== train start 2026-11-14T01:39:21Z
+Warp 1.7.0 initialized:
+   CUDA Toolkit 12.8, Driver 12.6
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA A800-SXM4-80GB" (79 GiB, sm_80, mempool enabled)
+   Kernel cache:
+     /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.cache/warp_v3g_pt
+[DATA TYPE]: real
+2026-11-14 01:39:27,902 [   INFO] [DATA]: loading data from ./data/different_types/single_push_sloth/final_data.pkl
+2026-11-14 01:39:28,649 [   INFO] [SIMULATION]: Initialize the Spring-Mass System
+Module qqtt.model.diff_simulator.spring_mass_warp 8110844 load on device 'cuda:0' took 3.65 ms  (cached)
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel compute_neigh_indices is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel compute_distances is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+Warp UserWarning: Running the tape backwards may produce incorrect gradients because recorded kernel set_control_points is configured with the option 'enable_backward=False'.
+2026-11-14 01:39:29,610 [   INFO] Visualizing the simulation
+  0%|          | 0/67 [00:00<?, ?it/s]  6%|▌         | 4/67 [00:00<00:01, 38.55it/s] 12%|█▏        | 8/67 [00:00<00:01, 37.40it/s] 18%|█▊        | 12/67 [00:00<00:01, 37.47it/s] 24%|██▍       | 16/67 [00:00<00:01, 37.49it/s] 30%|██▉       | 20/67 [00:00<00:01, 37.67it/s] 36%|███▌      | 24/67 [00:00<00:01, 37.39it/s] 42%|████▏     | 28/67 [00:00<00:01, 37.39it/s] 48%|████▊     | 32/67 [00:00<00:00, 37.51it/s] 54%|█████▎    | 36/67 [00:00<00:00, 37.67it/s] 60%|█████▉    | 40/67 [00:01<00:00, 37.66it/s] 66%|██████▌   | 44/67 [00:01<00:00, 37.33it/s] 72%|███████▏  | 48/67 [00:01<00:00, 37.54it/s] 78%|███████▊  | 52/67 [00:01<00:00, 37.66it/s] 84%|████████▎ | 56/67 [00:01<00:00, 37.92it/s] 90%|████████▉ | 60/67 [00:01<00:00, 37.30it/s] 96%|█████████▌| 64/67 [00:01<00:00, 37.41it/s]100%|██████████| 67/67 [00:01<00:00, 37.56it/s]
+simulate took 1784.42 ms
+  0%|          | 0/46 [00:00<?, ?it/s]  2%|▏         | 1/46 [00:00<00:06,  6.48it/s]  7%|▋         | 3/46 [00:00<00:04,  9.64it/s] 11%|█         | 5/46 [00:00<00:03, 10.77it/s] 15%|█▌        | 7/46 [00:00<00:03, 11.23it/s] 20%|█▉        | 9/46 [00:00<00:03, 11.35it/s] 24%|██▍       | 11/46 [00:01<00:03, 11.41it/s] 28%|██▊       | 13/46 [00:01<00:02, 11.34it/s] 33%|███▎      | 15/46 [00:01<00:02, 11.42it/s] 37%|███▋      | 17/46 [00:01<00:02, 11.77it/s] 41%|████▏     | 19/46 [00:01<00:02, 11.73it/s] 46%|████▌     | 21/46 [00:01<00:02, 11.70it/s] 50%|█████     | 23/46 [00:02<00:01, 11.65it/s] 54%|█████▍    | 25/46 [00:02<00:01, 11.70it/s] 59%|█████▊    | 27/46 [00:02<00:01, 11.77it/s] 63%|██████▎   | 29/46 [00:02<00:01, 11.77it/s] 67%|██████▋   | 31/46 [00:02<00:01, 11.68it/s] 72%|███████▏  | 33/46 [00:02<00:01, 11.60it/s] 76%|███████▌  | 35/46 [00:03<00:00, 11.60it/s] 80%|████████  | 37/46 [00:03<00:00, 11.74it/s] 85%|████████▍ | 39/46 [00:03<00:00, 11.93it/s] 89%|████████▉ | 41/46 [00:03<00:00, 11.86it/s] 93%|█████████▎| 43/46 [00:03<00:00, 11.84it/s] 98%|█████████▊| 45/46 [00:03<00:00, 11.88it/s]100%|██████████| 46/46 [00:03<00:00, 11.56it/s]
+backward took 3978.92 ms
+2026-11-14 01:39:35,377 [   INFO] [Train]: Iteration: 0, Loss: 0.00045833461441045233
+2026-11-14 01:39:35,378 [   INFO] Visualizing the simulation
+  0%|          | 0/67 [00:00<?, ?it/s]  6%|▌         | 4/67 [00:00<00:01, 37.87it/s] 12%|█▏        | 8/67 [00:00<00:01, 36.84it/s] 18%|█▊        | 12/67 [00:00<00:01, 37.49it/s] 24%|██▍       | 16/67 [00:00<00:01, 37.59it/s] 30%|██▉       | 20/67 [00:00<00:01, 37.87it/s] 36%|███▌      | 24/67 [00:00<00:01, 37.23it/s] 42%|████▏     | 28/67 [00:00<00:01, 37.48it/s] 48%|████▊     | 32/67 [00:00<00:00, 37.59it/s] 54%|█████▎    | 36/67 [00:00<00:00, 37.68it/s] 60%|█████▉    | 40/67 [00:01<00:00, 37.15it/s] 66%|██████▌   | 44/67 [00:01<00:00, 37.54it/s] 72%|███████▏  | 48/67 [00:01<00:00, 37.55it/s] 78%|███████▊  | 52/67 [00:01<00:00, 37.71it/s] 84%|████████▎ | 56/67 [00:01<00:00, 37.50it/s] 90%|████████▉ | 60/67 [00:01<00:00, 37.43it/s] 96%|█████████▌| 64/67 [00:01<00:00, 37.40it/s]100%|██████████| 67/67 [00:01<00:00, 37.49it/s]
+simulate took 1787.52 ms
+Traceback (most recent call last):
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/scripts/v3g/pt_run.py", line 36, in <module>
+    runpy.run_path(os.path.join(REPO, script), run_name='__main__')
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.engine-envs/python/cpython-3.10-linux-x86_64-gnu/lib/python3.10/runpy.py", line 289, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.engine-envs/python/cpython-3.10-linux-x86_64-gnu/lib/python3.10/runpy.py", line 96, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.engine-envs/python/cpython-3.10-linux-x86_64-gnu/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/external/v3g_phystwin/train_warp.py", line 73, in <module>
+    trainer.train()
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/external/v3g_phystwin/qqtt/engine/trainer_warp.py", line 403, in train
+    "video": wandb.Video(
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.engine-envs/v3g_phystwin/lib/python3.10/site-packages/wandb/sdk/data_types/video.py", line 176, in __init__
+    self._set_file(data_or_path, is_tmp=False)
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.engine-envs/v3g_phystwin/lib/python3.10/site-packages/wandb/sdk/data_types/base_types/media.py", line 86, in _set_file
+    with open(self._path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'experiments/single_push_sloth/train/sim_iter0.mp4'
+V3G_STAGE_DONE {"stage": "train", "script": "train_warp.py", "case": "single_push_sloth", "argv": ["--base_path", "./data/different_types", "--case_name", "single_push_sloth", "--train_frame", "47"], "status": "failed", "error": "FileNotFoundError: [Errno 2] No such file or directory: 'experiments/single_push_sloth/train/sim_iter0.mp4'", "wall_s": 15.468433380126953, "cuda_visible": "3", "end_unix": 1794620377.1708329, "gpu": "NVIDIA A800-SXM4-80GB", "peak_mem_gb": 0.016651776}
+=== train rc=1 2026-11-14T01:39:38Z
+PIPELINE_ABORT

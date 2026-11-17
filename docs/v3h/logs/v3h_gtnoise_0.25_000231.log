@@ -1,0 +1,22 @@
+eval {'n': 1, 'law': 'jelly', 'x': [3.607579, 0.056285], 'seconds': 375.2725293636322, 'iou': 0.7564946696670333, 'iou_last': 0.5542037217909469, 'rgb_mae_union': 49.619810650748654, 'loss': 0.43809282308100067}
+simulation failed obs_01 1
+eval {'n': 2, 'law': 'jelly', 'x': [4.107579, 0.056285], 'seconds': 100.00011992454529, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_02 1
+eval {'n': 3, 'law': 'jelly', 'x': [3.107579, 0.056285], 'seconds': 92.70267629623413, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_03 1
+eval {'n': 4, 'law': 'jelly', 'x': [3.857579, 0.056285], 'seconds': 100.41873383522034, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_04 1
+eval {'n': 5, 'law': 'jelly', 'x': [3.357579, 0.056285], 'seconds': 96.48833346366882, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_05 1
+eval {'n': 6, 'law': 'jelly', 'x': [3.732579, 0.056285], 'seconds': 101.57282710075378, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_06 1
+eval {'n': 7, 'law': 'jelly', 'x': [3.482579, 0.056285], 'seconds': 95.14938187599182, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_07 1
+eval {'n': 8, 'law': 'jelly', 'x': [3.670079, 0.056285], 'seconds': 101.76569986343384, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_08 1
+eval {'n': 9, 'law': 'jelly', 'x': [3.545079, 0.056285], 'seconds': 87.22810363769531, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_09 1
+eval {'n': 10, 'law': 'jelly', 'x': [3.638829, 0.056285], 'seconds': 97.62997937202454, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_10 1
+eval {'n': 11, 'law': 'jelly', 'x': [3.576329, 0.056285], 'seconds': 98.10790300369263, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+done 231 gtnoise_0.25 {'0': 0.071, '4': 0.071, '12': 0.071}

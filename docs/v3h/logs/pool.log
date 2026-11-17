@@ -1,0 +1,185 @@
+10:20:23 start v3h_dino_c_000021 gpu 4
+10:20:25 start v3h_gtnoise_0.25_000021 gpu 5
+10:20:27 start v3h_gtnoise_0.5_000021 gpu 6
+10:20:29 start v3h_gtnoise_1_000021 gpu 7
+10:20:32 start v3h_dino_c_000052 gpu 4
+10:20:34 start v3h_gtnoise_0.25_000052 gpu 5
+10:20:36 start v3h_gtnoise_0.5_000052 gpu 6
+10:20:38 start v3h_gtnoise_1_000052 gpu 7
+10:20:40 start v3h_dino_c_000053 gpu 4
+10:20:42 start v3h_gtnoise_0.25_000053 gpu 5
+10:20:44 start v3h_gtnoise_0.5_000053 gpu 6
+10:20:46 start v3h_gtnoise_1_000053 gpu 7
+10:20:48 start v3h_dino_c_000071 gpu 4
+10:20:50 start v3h_gtnoise_0.25_000071 gpu 5
+10:20:52 start v3h_gtnoise_0.5_000071 gpu 6
+10:20:54 start v3h_gtnoise_1_000071 gpu 7
+10:20:56 start v3h_dino_c_000073 gpu 4
+10:20:58 start v3h_gtnoise_0.25_000073 gpu 5
+10:21:00 start v3h_gtnoise_0.5_000073 gpu 6
+10:21:02 start v3h_gtnoise_1_000073 gpu 7
+12:14:21 exit v3h_gtnoise_0.5_000021 0 gpu 6
+12:14:21 exit v3h_gtnoise_1_000021 0 gpu 7
+12:14:21 start v3h_dino_c_000096 gpu 6
+12:14:23 start v3h_gtnoise_0.25_000096 gpu 7
+12:14:55 exit v3h_gtnoise_0.25_000021 0 gpu 5
+12:14:55 start v3h_gtnoise_0.5_000096 gpu 5
+12:16:27 exit v3h_dino_c_000021 0 gpu 4
+12:16:27 start v3h_gtnoise_1_000096 gpu 4
+12:28:59 exit v3h_dino_c_000052 0 gpu 4
+12:28:59 start v3h_dino_c_000113 gpu 4
+12:38:31 exit v3h_gtnoise_0.5_000073 0 gpu 6
+12:38:31 start v3h_gtnoise_0.25_000113 gpu 6
+12:39:18 exit v3h_gtnoise_1_000073 0 gpu 7
+12:39:18 start v3h_gtnoise_0.5_000113 gpu 7
+12:39:35 exit v3h_gtnoise_0.25_000073 0 gpu 5
+12:39:35 start v3h_gtnoise_1_000113 gpu 5
+12:40:22 exit v3h_dino_c_000073 0 gpu 4
+12:40:22 start v3h_dino_c_000118 gpu 4
+12:40:54 exit v3h_dino_c_000053 0 gpu 4
+12:40:54 start v3h_gtnoise_0.25_000118 gpu 4
+12:51:26 exit v3h_gtnoise_1_000053 0 gpu 7
+12:51:26 start v3h_gtnoise_0.5_000118 gpu 7
+12:51:43 exit v3h_gtnoise_0.5_000053 0 gpu 6
+12:51:43 start v3h_gtnoise_1_000118 gpu 6
+12:52:00 exit v3h_gtnoise_0.5_000052 0 gpu 6
+12:52:00 exit v3h_gtnoise_0.5_000071 0 gpu 6
+12:52:00 start v3h_dino_c_000119 gpu 6
+12:52:02 start v3h_gtnoise_0.25_000119 gpu 6
+12:52:19 exit v3h_gtnoise_0.25_000053 0 gpu 5
+12:52:19 start v3h_gtnoise_0.5_000119 gpu 5
+12:52:36 exit v3h_gtnoise_0.25_000052 0 gpu 5
+12:52:36 exit v3h_gtnoise_1_000071 0 gpu 7
+12:52:36 start v3h_gtnoise_1_000119 gpu 5
+12:52:38 start v3h_dino_c_000134 gpu 7
+12:52:55 exit v3h_gtnoise_1_000052 0 gpu 7
+12:52:55 exit v3h_gtnoise_0.25_000071 0 gpu 5
+12:52:55 start v3h_gtnoise_0.25_000134 gpu 5
+12:52:57 start v3h_gtnoise_0.5_000134 gpu 7
+12:53:29 exit v3h_dino_c_000071 0 gpu 4
+12:53:29 start v3h_gtnoise_1_000134 gpu 4
+13:49:17 exit v3h_gtnoise_1_000096 0 gpu 4
+13:49:17 start v3h_dino_c_000139 gpu 4
+14:24:50 exit v3h_dino_c_000113 0 gpu 4
+14:24:50 start v3h_gtnoise_0.25_000139 gpu 4
+14:30:07 exit v3h_gtnoise_0.25_000096 0 gpu 7
+14:30:07 start v3h_gtnoise_0.5_000139 gpu 7
+14:31:09 exit v3h_dino_c_000096 0 gpu 6
+14:31:09 start v3h_gtnoise_1_000139 gpu 6
+14:32:41 exit v3h_gtnoise_0.5_000096 0 gpu 5
+14:32:41 start v3h_dino_c_000141 gpu 5
+14:34:43 exit v3h_dino_c_000139 0 gpu 4
+14:34:43 start v3h_gtnoise_0.25_000141 gpu 4
+14:38:00 exit v3h_dino_c_000118 0 gpu 4
+14:38:00 start v3h_gtnoise_0.5_000141 gpu 4
+14:38:32 exit v3h_gtnoise_0.25_000118 0 gpu 4
+14:38:32 start v3h_gtnoise_1_000141 gpu 4
+14:40:04 exit v3h_gtnoise_0.5_000113 0 gpu 7
+14:40:04 start v3h_dino_c_000180 gpu 7
+14:41:21 exit v3h_gtnoise_0.25_000113 0 gpu 6
+14:41:21 start v3h_gtnoise_0.25_000180 gpu 6
+14:42:38 exit v3h_dino_c_000119 0 gpu 6
+14:42:38 start v3h_gtnoise_0.5_000180 gpu 6
+14:45:10 exit v3h_gtnoise_1_000113 0 gpu 5
+14:45:10 start v3h_gtnoise_1_000180 gpu 5
+14:55:57 exit v3h_gtnoise_0.5_000139 0 gpu 7
+14:55:57 start v3h_dino_c_000181 gpu 7
+14:56:14 exit v3h_gtnoise_0.25_000139 0 gpu 4
+14:56:14 start v3h_gtnoise_0.25_000181 gpu 4
+14:56:31 exit v3h_gtnoise_0.5_000118 0 gpu 7
+14:56:31 start v3h_gtnoise_0.5_000181 gpu 7
+14:57:48 exit v3h_gtnoise_1_000134 0 gpu 4
+14:57:48 start v3h_gtnoise_1_000181 gpu 4
+15:01:50 exit v3h_gtnoise_1_000118 0 gpu 6
+15:01:50 start v3h_dino_c_000182 gpu 6
+15:02:22 exit v3h_gtnoise_0.25_000119 0 gpu 6
+15:02:22 start v3h_gtnoise_0.25_000182 gpu 6
+15:07:24 exit v3h_gtnoise_0.5_000119 0 gpu 5
+15:07:24 exit v3h_gtnoise_1_000139 0 gpu 6
+15:07:24 start v3h_gtnoise_0.5_000182 gpu 5
+15:07:26 start v3h_gtnoise_1_000182 gpu 6
+15:07:43 exit v3h_gtnoise_1_000119 0 gpu 5
+15:07:43 exit v3h_dino_c_000134 0 gpu 7
+15:07:43 start v3h_dino_c_000184 gpu 5
+15:07:45 start v3h_gtnoise_0.25_000184 gpu 7
+15:08:02 exit v3h_gtnoise_0.5_000134 0 gpu 7
+15:08:02 start v3h_gtnoise_0.5_000184 gpu 7
+15:20:04 exit v3h_gtnoise_0.25_000134 0 gpu 5
+15:20:04 start v3h_gtnoise_1_000184 gpu 5
+15:46:21 exit v3h_dino_c_000180 0 gpu 7
+15:46:21 start v3h_dino_c_000210 gpu 7
+15:52:24 exit v3h_gtnoise_1_000141 0 gpu 4
+15:52:24 start v3h_gtnoise_0.25_000210 gpu 4
+15:55:41 exit v3h_gtnoise_0.25_000180 0 gpu 6
+15:55:41 start v3h_gtnoise_0.5_000210 gpu 6
+15:56:28 exit v3h_gtnoise_0.25_000141 0 gpu 4
+15:56:28 exit v3h_gtnoise_1_000180 0 gpu 5
+15:56:28 start v3h_gtnoise_1_000210 gpu 4
+15:56:30 start v3h_dino_c_000219 gpu 5
+15:59:17 exit v3h_gtnoise_0.5_000141 0 gpu 4
+15:59:17 start v3h_gtnoise_0.25_000219 gpu 4
+16:03:19 exit v3h_gtnoise_0.5_000180 0 gpu 6
+16:03:19 start v3h_gtnoise_0.5_000219 gpu 6
+16:16:36 exit v3h_dino_c_000181 0 gpu 7
+16:16:36 start v3h_gtnoise_1_000219 gpu 7
+16:16:53 exit v3h_gtnoise_0.5_000181 0 gpu 7
+16:16:53 start v3h_dino_c_000231 gpu 7
+16:19:55 exit v3h_gtnoise_0.25_000181 0 gpu 4
+16:19:55 start v3h_gtnoise_0.25_000231 gpu 4
+16:20:42 exit v3h_gtnoise_1_000181 0 gpu 4
+16:20:42 start v3h_gtnoise_0.5_000231 gpu 4
+16:22:59 exit v3h_dino_c_000141 0 gpu 5
+16:22:59 start v3h_gtnoise_1_000231 gpu 5
+16:25:31 exit v3h_gtnoise_0.25_000184 0 gpu 7
+16:25:31 start v3h_dino_c_000248 gpu 7
+16:25:48 exit v3h_gtnoise_0.5_000184 0 gpu 7
+16:25:48 start v3h_gtnoise_0.25_000248 gpu 7
+16:27:20 exit v3h_dino_c_000182 0 gpu 6
+16:27:20 start v3h_gtnoise_0.5_000248 gpu 6
+16:28:07 exit v3h_gtnoise_0.25_000182 0 gpu 6
+16:28:07 start v3h_gtnoise_1_000248 gpu 6
+16:31:09 exit v3h_gtnoise_1_000182 0 gpu 6
+16:31:09 start v3h_dino_c_000276 gpu 6
+16:34:26 exit v3h_gtnoise_0.5_000182 0 gpu 5
+16:34:26 start v3h_gtnoise_0.25_000276 gpu 5
+16:34:43 exit v3h_dino_c_000184 0 gpu 5
+16:34:43 start v3h_gtnoise_0.5_000276 gpu 5
+16:39:30 exit v3h_dino_c_000231 0 gpu 7
+16:39:30 start v3h_gtnoise_1_000276 gpu 7
+16:42:17 exit v3h_gtnoise_1_000184 0 gpu 5
+16:42:17 start v3h_dino_c_000293 gpu 5
+16:42:34 exit v3h_gtnoise_0.25_000231 0 gpu 4
+16:42:34 start v3h_gtnoise_0.25_000293 gpu 4
+16:44:51 exit v3h_gtnoise_1_000231 0 gpu 5
+16:44:51 start v3h_gtnoise_0.5_000293 gpu 5
+16:46:53 exit v3h_gtnoise_0.5_000231 0 gpu 4
+16:46:53 start v3h_gtnoise_1_000293 gpu 4
+16:50:55 exit v3h_dino_c_000219 0 gpu 5
+16:50:55 start v3h_dino_c_000297 gpu 5
+16:57:12 exit v3h_gtnoise_0.25_000219 0 gpu 4
+16:57:12 start v3h_gtnoise_0.25_000297 gpu 4
+16:58:59 exit v3h_dino_c_000210 0 gpu 7
+16:58:59 start v3h_gtnoise_0.5_000297 gpu 7
+17:03:31 exit v3h_gtnoise_0.5_000219 0 gpu 6
+17:03:31 start v3h_gtnoise_1_000297 gpu 6
+17:04:03 exit v3h_gtnoise_0.25_000210 0 gpu 4
+17:09:18 exit v3h_gtnoise_0.5_000210 0 gpu 6
+17:11:33 exit v3h_gtnoise_1_000210 0 gpu 4
+17:21:33 exit v3h_gtnoise_1_000219 0 gpu 7
+17:34:49 exit v3h_gtnoise_0.25_000293 0 gpu 4
+17:36:49 exit v3h_gtnoise_1_000293 0 gpu 4
+17:38:04 exit v3h_gtnoise_0.25_000297 0 gpu 4
+17:42:04 exit v3h_gtnoise_0.5_000248 0 gpu 6
+17:42:49 exit v3h_dino_c_000248 0 gpu 7
+17:42:49 exit v3h_gtnoise_1_000276 0 gpu 7
+17:43:04 exit v3h_gtnoise_0.25_000248 0 gpu 7
+17:43:19 exit v3h_gtnoise_1_000248 0 gpu 6
+17:43:49 exit v3h_dino_c_000276 0 gpu 6
+17:47:19 exit v3h_gtnoise_0.5_000297 0 gpu 7
+17:48:04 exit v3h_gtnoise_1_000297 0 gpu 6
+17:48:19 exit v3h_gtnoise_0.25_000276 0 gpu 5
+17:48:34 exit v3h_gtnoise_0.5_000276 0 gpu 5
+17:52:49 exit v3h_dino_c_000293 0 gpu 5
+17:53:34 exit v3h_gtnoise_0.5_000293 0 gpu 5
+17:54:04 exit v3h_dino_c_000297 0 gpu 5
+all done

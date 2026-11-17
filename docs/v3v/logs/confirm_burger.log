@@ -1,0 +1,46 @@
+2026-11-16T07:18:05+00:00 di-20261103141208-krk4l START run3 --objs burger
+Warp 1.11.1 initialized:
+   CUDA Toolkit 12.9, Driver 12.6
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA A800-SXM4-80GB" (79 GiB, sm_80, mempool enabled)
+   Kernel cache:
+     /root/.cache/warp/1.11.1
+Warp DeprecationWarning: The namespace `warp.torch` will soon be removed from the public API. It can still be accessed from `warp._src.torch` but might be changed or removed without notice.
+Warp DeprecationWarning: The symbol `warp.types.float32` will soon be removed from the public API. Use `warp.float32` instead.
+Module warp_utils 5598e36 load on device 'cuda:0' took 0.98 ms  (cached)
+Particles initialized from torch data.
+Total particles:  14238
+Module mpm_utils 8c60f93 load on device 'cuda:0' took 1.86 ms  (cached)
+Module mpm_solver_warp 3dca6b4 load on device 'cuda:0' took 0.93 ms  (cached)
+  sim burger lg4.9976_nu0.285_r1.0000 13.7s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg3.9976_nu0.285_r1.0000 13.0s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg4.7476_nu0.285_r1.0000 12.7s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg4.2476_nu0.285_r1.0000 11.1s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg4.6226_nu0.285_r1.0000 10.8s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg4.3726_nu0.285_r1.0000 8.7s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg4.5601_nu0.285_r1.0000 9.9s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg4.4351_nu0.285_r1.0000 9.1s
+burger fold C0733 loo rpic 1.0 refined lg 4.4976 sims 9
+burger fold C0787 loo rpic 1.0 refined lg 4.4976 sims 9
+burger fold C0801 loo rpic 1.0 refined lg 4.5601 sims 9
+2026-11-16T07:19:47+00:00 END rc=0
+2026-11-16T07:19:47+00:00 di-20261103141208-krk4l START eval3 --objs burger
+burger C0733 prior_refine_damp_loo 4.4976 1.0 HO {'iou': 0.736, 'psnr': 13.388, 'ssim': 0.39} FU {'iou': 0.681, 'psnr': 13.534, 'ssim': 0.351}
+burger C0787 prior_refine_damp_loo 4.4976 1.0 HO {'iou': 0.761, 'psnr': 14.604, 'ssim': 0.422} FU {'iou': 0.681, 'psnr': 13.469, 'ssim': 0.365}
+burger C0801 prior_refine_damp_loo 4.5601 1.0 HO {'iou': 0.814, 'psnr': 13.224, 'ssim': 0.41} FU {'iou': 0.775, 'psnr': 14.058, 'ssim': 0.412}
+2026-11-16T07:20:09+00:00 END rc=0

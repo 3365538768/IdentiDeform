@@ -1,0 +1,271 @@
+07:18:08 start v5g_gt_000021_centre_0.03 gpu 0
+07:18:08 start v5g_gt_000021_centre_0.06 gpu 1
+07:18:08 start v5g_gt_000021_centre_0.10 gpu 3
+07:18:08 start v5g_gt_000021_centre_0.16 gpu 4
+07:18:08 start v5g_gt_000021_centre_0.25 gpu 5
+07:18:08 start v5g_gt_000021_centre_0.40 gpu 6
+07:18:08 start v5g_gt_000021_end_0.03 gpu 7
+07:18:08 start v5g_gt_000021_end_0.06 gpu 0
+07:18:08 start v5g_gt_000021_end_0.10 gpu 1
+07:18:08 start v5g_gt_000021_end_0.16 gpu 3
+07:18:08 start v5g_gt_000021_end_0.25 gpu 4
+07:18:08 start v5g_gt_000021_end_0.40 gpu 5
+07:18:08 start v5g_gt_000021_none_0 gpu 6
+07:18:08 start v5g_gt_000037_centre_0.03 gpu 7
+07:18:08 start v5g_gt_000037_centre_0.06 gpu 0
+07:18:08 start v5g_gt_000037_centre_0.10 gpu 1
+07:18:08 start v5g_gt_000037_centre_0.16 gpu 3
+07:18:08 start v5g_gt_000037_centre_0.25 gpu 4
+07:18:08 start v5g_gt_000037_centre_0.40 gpu 5
+07:18:08 start v5g_gt_000037_end_0.03 gpu 6
+07:18:08 start v5g_gt_000037_end_0.06 gpu 7
+07:18:08 start v5g_gt_000037_end_0.10 gpu 0
+07:18:08 start v5g_gt_000037_end_0.16 gpu 1
+07:18:08 start v5g_gt_000037_end_0.25 gpu 3
+07:18:08 start v5g_gt_000037_end_0.40 gpu 4
+07:18:08 start v5g_gt_000037_none_0 gpu 5
+07:18:08 start v5g_gt_000060_centre_0.03 gpu 6
+07:18:08 start v5g_gt_000060_centre_0.06 gpu 7
+07:18:08 start v5g_gt_000060_centre_0.10 gpu 0
+07:18:08 start v5g_gt_000060_centre_0.16 gpu 1
+07:18:08 start v5g_gt_000060_centre_0.25 gpu 3
+07:18:08 start v5g_gt_000060_centre_0.40 gpu 4
+07:18:08 start v5g_gt_000060_end_0.03 gpu 5
+07:18:08 start v5g_gt_000060_end_0.06 gpu 6
+07:18:08 start v5g_gt_000060_end_0.10 gpu 7
+07:18:08 start v5g_gt_000060_end_0.16 gpu 0
+07:18:08 start v5g_gt_000060_end_0.25 gpu 1
+07:18:08 start v5g_gt_000060_end_0.40 gpu 3
+07:18:08 start v5g_gt_000060_none_0 gpu 4
+07:18:08 start v5g_gt_000066_centre_0.03 gpu 5
+07:18:08 start v5g_gt_000066_centre_0.06 gpu 6
+07:18:08 start v5g_gt_000066_centre_0.10 gpu 7
+07:18:08 start v5g_gt_000066_centre_0.16 gpu 0
+07:18:08 start v5g_gt_000066_centre_0.25 gpu 1
+07:18:08 start v5g_gt_000066_centre_0.40 gpu 3
+07:18:08 start v5g_gt_000066_end_0.03 gpu 4
+07:18:08 start v5g_gt_000066_end_0.06 gpu 5
+07:18:08 start v5g_gt_000066_end_0.10 gpu 6
+07:18:08 start v5g_gt_000066_end_0.16 gpu 7
+07:18:08 start v5g_gt_000066_end_0.25 gpu 0
+07:18:08 start v5g_gt_000066_end_0.40 gpu 1
+07:18:08 start v5g_gt_000066_none_0 gpu 3
+07:18:08 start v5g_gt_000088_centre_0.03 gpu 4
+07:18:08 start v5g_gt_000088_centre_0.06 gpu 5
+07:18:08 start v5g_gt_000088_centre_0.10 gpu 6
+07:18:08 start v5g_gt_000088_centre_0.16 gpu 7
+07:18:08 start v5g_gt_000088_centre_0.25 gpu 0
+07:18:08 start v5g_gt_000088_centre_0.40 gpu 1
+07:18:08 start v5g_gt_000088_end_0.03 gpu 3
+07:18:08 start v5g_gt_000088_end_0.06 gpu 4
+07:18:08 start v5g_gt_000088_end_0.10 gpu 5
+07:18:08 start v5g_gt_000088_end_0.16 gpu 6
+07:18:08 start v5g_gt_000088_end_0.25 gpu 7
+07:18:38 exit v5g_gt_000066_none_0 0 gpu 3
+07:18:38 start v5g_gt_000088_end_0.40 gpu 3
+07:18:53 exit v5g_gt_000060_none_0 0 gpu 4
+07:18:53 start v5g_gt_000088_none_0 gpu 4
+07:19:08 exit v5g_gt_000088_none_0 0 gpu 4
+07:19:08 start v5g_gt_000112_centre_0.03 gpu 4
+07:20:39 exit v5g_gt_000066_end_0.03 0 gpu 4
+07:20:39 start v5g_gt_000112_centre_0.06 gpu 4
+07:21:54 exit v5g_gt_000066_centre_0.40 0 gpu 3
+07:21:54 start v5g_gt_000112_centre_0.10 gpu 3
+07:22:24 exit v5g_gt_000021_none_0 0 gpu 6
+07:22:24 exit v5g_gt_000037_none_0 0 gpu 5
+07:22:24 start v5g_gt_000112_centre_0.16 gpu 5
+07:22:24 start v5g_gt_000112_centre_0.25 gpu 6
+07:23:25 exit v5g_gt_000066_centre_0.25 0 gpu 1
+07:23:25 start v5g_gt_000112_centre_0.40 gpu 1
+07:23:40 exit v5g_gt_000066_end_0.06 0 gpu 5
+07:23:40 exit v5g_gt_000066_end_0.40 0 gpu 1
+07:23:40 start v5g_gt_000112_end_0.03 gpu 1
+07:23:40 start v5g_gt_000112_end_0.06 gpu 5
+07:23:55 exit v5g_gt_000060_centre_0.40 0 gpu 4
+07:23:55 exit v5g_gt_000066_centre_0.03 0 gpu 5
+07:23:55 exit v5g_gt_000088_centre_0.03 0 gpu 4
+07:23:55 exit v5g_gt_000088_end_0.06 0 gpu 4
+07:23:55 start v5g_gt_000112_end_0.10 gpu 4
+07:23:55 start v5g_gt_000112_end_0.16 gpu 4
+07:23:55 start v5g_gt_000112_end_0.25 gpu 4
+07:23:55 start v5g_gt_000112_end_0.40 gpu 5
+07:24:25 exit v5g_gt_000060_centre_0.25 0 gpu 3
+07:24:25 exit v5g_gt_000060_end_0.40 0 gpu 3
+07:24:25 exit v5g_gt_000066_centre_0.10 0 gpu 7
+07:24:25 start v5g_gt_000112_none_0 gpu 3
+07:24:25 start v5g_gt_000116_centre_0.03 gpu 3
+07:24:25 start v5g_gt_000116_centre_0.06 gpu 7
+07:24:40 exit v5g_gt_000060_centre_0.16 0 gpu 1
+07:24:40 exit v5g_gt_000060_end_0.03 0 gpu 5
+07:24:40 exit v5g_gt_000060_end_0.25 0 gpu 1
+07:24:40 exit v5g_gt_000066_centre_0.06 0 gpu 6
+07:24:40 exit v5g_gt_000066_end_0.10 0 gpu 6
+07:24:40 exit v5g_gt_000066_end_0.16 0 gpu 7
+07:24:40 exit v5g_gt_000088_centre_0.06 0 gpu 5
+07:24:40 exit v5g_gt_000088_centre_0.40 0 gpu 1
+07:24:40 exit v5g_gt_000088_end_0.03 0 gpu 3
+07:24:40 exit v5g_gt_000088_end_0.10 0 gpu 5
+07:24:40 exit v5g_gt_000088_end_0.40 0 gpu 3
+07:24:40 exit v5g_gt_000112_none_0 0 gpu 3
+07:24:40 start v5g_gt_000116_centre_0.10 gpu 1
+07:24:40 start v5g_gt_000116_centre_0.16 gpu 3
+07:24:40 start v5g_gt_000116_centre_0.25 gpu 5
+07:24:40 start v5g_gt_000116_centre_0.40 gpu 1
+07:24:40 start v5g_gt_000116_end_0.03 gpu 3
+07:24:40 start v5g_gt_000116_end_0.06 gpu 5
+07:24:40 start v5g_gt_000116_end_0.10 gpu 6
+07:24:40 start v5g_gt_000116_end_0.16 gpu 1
+07:24:40 start v5g_gt_000116_end_0.25 gpu 3
+07:24:40 start v5g_gt_000116_end_0.40 gpu 5
+07:24:40 start v5g_gt_000116_none_0 gpu 6
+07:24:40 start v5g_gt_000121_centre_0.03 gpu 7
+07:25:25 exit v5g_gt_000060_centre_0.03 0 gpu 6
+07:25:25 start v5g_gt_000121_centre_0.06 gpu 6
+07:25:40 exit v5g_gt_000060_centre_0.06 0 gpu 7
+07:25:40 exit v5g_gt_000060_end_0.06 0 gpu 6
+07:25:40 exit v5g_gt_000060_end_0.10 0 gpu 7
+07:25:40 exit v5g_gt_000088_centre_0.10 0 gpu 6
+07:25:40 exit v5g_gt_000088_centre_0.16 0 gpu 7
+07:25:40 exit v5g_gt_000088_end_0.16 0 gpu 6
+07:25:40 exit v5g_gt_000088_end_0.25 0 gpu 7
+07:25:41 start v5g_gt_000121_centre_0.10 gpu 7
+07:25:41 start v5g_gt_000121_centre_0.16 gpu 6
+07:25:41 start v5g_gt_000121_centre_0.25 gpu 7
+07:25:41 start v5g_gt_000121_centre_0.40 gpu 6
+07:25:41 start v5g_gt_000121_end_0.03 gpu 7
+07:25:41 start v5g_gt_000121_end_0.06 gpu 6
+07:25:41 start v5g_gt_000121_end_0.10 gpu 7
+07:26:11 exit v5g_gt_000066_centre_0.16 0 gpu 0
+07:26:11 exit v5g_gt_000066_end_0.25 0 gpu 0
+07:26:11 start v5g_gt_000121_end_0.16 gpu 0
+07:26:11 start v5g_gt_000121_end_0.25 gpu 0
+07:26:26 exit v5g_gt_000060_centre_0.10 0 gpu 0
+07:26:26 exit v5g_gt_000060_end_0.16 0 gpu 0
+07:26:26 exit v5g_gt_000088_centre_0.25 0 gpu 0
+07:26:26 start v5g_gt_000121_end_0.40 gpu 0
+07:26:26 start v5g_gt_000121_none_0 gpu 0
+07:26:26 start v5g_gt_000134_centre_0.03 gpu 0
+07:27:27 exit v5g_gt_000021_centre_0.40 0 gpu 6
+07:27:27 exit v5g_gt_000037_end_0.03 0 gpu 6
+07:27:27 exit v5g_gt_000112_centre_0.25 0 gpu 6
+07:27:27 start v5g_gt_000134_centre_0.06 gpu 6
+07:27:27 start v5g_gt_000134_centre_0.10 gpu 6
+07:27:27 start v5g_gt_000134_centre_0.16 gpu 6
+07:27:57 exit v5g_gt_000037_end_0.06 0 gpu 7
+07:27:57 start v5g_gt_000134_centre_0.25 gpu 7
+07:28:12 exit v5g_gt_000021_end_0.03 0 gpu 7
+07:28:12 exit v5g_gt_000037_centre_0.03 0 gpu 7
+07:28:12 exit v5g_gt_000121_none_0 0 gpu 0
+07:28:12 start v5g_gt_000134_centre_0.40 gpu 7
+07:28:12 start v5g_gt_000134_end_0.03 gpu 0
+07:28:12 start v5g_gt_000134_end_0.06 gpu 7
+07:28:57 exit v5g_gt_000021_centre_0.06 0 gpu 1
+07:28:57 exit v5g_gt_000021_centre_0.10 0 gpu 3
+07:28:57 exit v5g_gt_000021_end_0.10 0 gpu 1
+07:28:57 exit v5g_gt_000021_end_0.16 0 gpu 3
+07:28:57 exit v5g_gt_000037_centre_0.10 0 gpu 1
+07:28:57 exit v5g_gt_000037_centre_0.16 0 gpu 3
+07:28:57 exit v5g_gt_000037_centre_0.40 0 gpu 5
+07:28:57 exit v5g_gt_000037_end_0.16 0 gpu 1
+07:28:57 exit v5g_gt_000037_end_0.25 0 gpu 3
+07:28:57 exit v5g_gt_000112_centre_0.10 0 gpu 3
+07:28:57 exit v5g_gt_000116_none_0 0 gpu 6
+07:28:57 start v5g_gt_000134_end_0.10 gpu 3
+07:28:57 start v5g_gt_000134_end_0.16 gpu 1
+07:28:57 start v5g_gt_000134_end_0.25 gpu 3
+07:28:57 start v5g_gt_000134_end_0.40 gpu 1
+07:28:57 start v5g_gt_000134_none_0 gpu 3
+07:28:57 start v5g_gt_000141_centre_0.03 gpu 1
+07:28:57 start v5g_gt_000141_centre_0.06 gpu 3
+07:28:57 start v5g_gt_000141_centre_0.10 gpu 1
+07:28:57 start v5g_gt_000141_centre_0.16 gpu 3
+07:28:57 start v5g_gt_000141_centre_0.25 gpu 5
+07:28:57 start v5g_gt_000141_centre_0.40 gpu 6
+07:29:12 exit v5g_gt_000021_centre_0.25 0 gpu 5
+07:29:12 exit v5g_gt_000021_end_0.40 0 gpu 5
+07:29:12 start v5g_gt_000141_end_0.03 gpu 5
+07:29:12 start v5g_gt_000141_end_0.06 gpu 5
+07:29:27 exit v5g_gt_000021_centre_0.03 0 gpu 0
+07:29:27 exit v5g_gt_000021_end_0.06 0 gpu 0
+07:29:27 exit v5g_gt_000037_centre_0.06 0 gpu 0
+07:29:27 exit v5g_gt_000037_end_0.10 0 gpu 0
+07:29:27 exit v5g_gt_000112_centre_0.16 0 gpu 5
+07:29:27 start v5g_gt_000141_end_0.10 gpu 0
+07:29:27 start v5g_gt_000141_end_0.16 gpu 0
+07:29:27 start v5g_gt_000141_end_0.25 gpu 0
+07:29:27 start v5g_gt_000141_end_0.40 gpu 0
+07:29:27 start v5g_gt_000141_none_0 gpu 5
+07:29:42 exit v5g_gt_000112_centre_0.40 0 gpu 1
+07:29:42 start v5g_gt_000151_centre_0.03 gpu 1
+07:29:57 exit v5g_gt_000112_end_0.03 0 gpu 1
+07:29:57 exit v5g_gt_000112_end_0.06 0 gpu 5
+07:29:57 exit v5g_gt_000112_end_0.40 0 gpu 5
+07:29:57 start v5g_gt_000151_centre_0.06 gpu 5
+07:29:57 start v5g_gt_000151_centre_0.10 gpu 1
+07:29:57 start v5g_gt_000151_centre_0.16 gpu 5
+07:30:42 exit v5g_gt_000134_none_0 0 gpu 3
+07:30:42 start v5g_gt_000151_centre_0.25 gpu 3
+07:31:12 exit v5g_gt_000021_centre_0.16 0 gpu 4
+07:31:12 exit v5g_gt_000021_end_0.25 0 gpu 4
+07:31:12 exit v5g_gt_000037_centre_0.25 0 gpu 4
+07:31:12 exit v5g_gt_000037_end_0.40 0 gpu 4
+07:31:27 exit v5g_gt_000112_centre_0.03 0 gpu 4
+07:31:27 exit v5g_gt_000112_centre_0.06 0 gpu 4
+07:31:57 exit v5g_gt_000112_end_0.10 0 gpu 4
+07:31:57 exit v5g_gt_000112_end_0.16 0 gpu 4
+07:31:57 exit v5g_gt_000112_end_0.25 0 gpu 4
+07:32:12 exit v5g_gt_000116_centre_0.25 0 gpu 5
+07:32:12 exit v5g_gt_000116_end_0.06 0 gpu 5
+07:32:12 exit v5g_gt_000116_end_0.40 0 gpu 5
+07:33:27 exit v5g_gt_000121_end_0.16 0 gpu 0
+07:33:27 exit v5g_gt_000121_end_0.25 0 gpu 0
+07:33:27 exit v5g_gt_000121_end_0.40 0 gpu 0
+07:33:57 exit v5g_gt_000116_centre_0.03 0 gpu 3
+07:33:57 exit v5g_gt_000116_centre_0.16 0 gpu 3
+07:33:57 exit v5g_gt_000116_end_0.03 0 gpu 3
+07:33:57 exit v5g_gt_000116_end_0.25 0 gpu 3
+07:34:12 exit v5g_gt_000141_none_0 0 gpu 5
+07:34:27 exit v5g_gt_000121_centre_0.06 0 gpu 6
+07:34:27 exit v5g_gt_000121_centre_0.16 0 gpu 6
+07:34:27 exit v5g_gt_000121_centre_0.40 0 gpu 6
+07:34:27 exit v5g_gt_000121_end_0.06 0 gpu 6
+07:35:42 exit v5g_gt_000134_centre_0.03 0 gpu 0
+07:35:42 exit v5g_gt_000134_end_0.03 0 gpu 0
+07:35:57 exit v5g_gt_000116_centre_0.10 0 gpu 1
+07:35:57 exit v5g_gt_000116_centre_0.40 0 gpu 1
+07:35:57 exit v5g_gt_000116_end_0.16 0 gpu 1
+07:35:57 exit v5g_gt_000121_centre_0.10 0 gpu 7
+07:36:12 exit v5g_gt_000116_end_0.10 0 gpu 6
+07:36:12 exit v5g_gt_000121_centre_0.03 0 gpu 7
+07:36:12 exit v5g_gt_000121_centre_0.25 0 gpu 7
+07:36:12 exit v5g_gt_000121_end_0.03 0 gpu 7
+07:36:12 exit v5g_gt_000121_end_0.10 0 gpu 7
+07:36:42 exit v5g_gt_000134_end_0.10 0 gpu 3
+07:36:42 exit v5g_gt_000134_end_0.25 0 gpu 3
+07:37:27 exit v5g_gt_000116_centre_0.06 0 gpu 7
+07:38:27 exit v5g_gt_000134_centre_0.06 0 gpu 6
+07:38:27 exit v5g_gt_000134_centre_0.10 0 gpu 6
+07:38:27 exit v5g_gt_000134_centre_0.16 0 gpu 6
+07:38:57 exit v5g_gt_000134_centre_0.25 0 gpu 7
+07:38:57 exit v5g_gt_000134_centre_0.40 0 gpu 7
+07:38:57 exit v5g_gt_000134_end_0.06 0 gpu 7
+07:39:57 exit v5g_gt_000134_end_0.16 0 gpu 1
+07:39:57 exit v5g_gt_000134_end_0.40 0 gpu 1
+07:40:12 exit v5g_gt_000141_centre_0.40 0 gpu 6
+07:42:27 exit v5g_gt_000141_centre_0.25 0 gpu 5
+07:42:27 exit v5g_gt_000141_end_0.03 0 gpu 5
+07:42:27 exit v5g_gt_000141_end_0.06 0 gpu 5
+07:42:57 exit v5g_gt_000141_centre_0.06 0 gpu 3
+07:42:57 exit v5g_gt_000141_centre_0.16 0 gpu 3
+07:43:27 exit v5g_gt_000151_centre_0.06 0 gpu 5
+07:43:27 exit v5g_gt_000151_centre_0.16 0 gpu 5
+07:44:12 exit v5g_gt_000141_end_0.10 0 gpu 0
+07:44:12 exit v5g_gt_000141_end_0.16 0 gpu 0
+07:44:12 exit v5g_gt_000141_end_0.25 0 gpu 0
+07:44:12 exit v5g_gt_000141_end_0.40 0 gpu 0
+07:45:12 exit v5g_gt_000151_centre_0.25 0 gpu 3
+07:45:57 exit v5g_gt_000141_centre_0.03 0 gpu 1
+07:45:57 exit v5g_gt_000141_centre_0.10 0 gpu 1
+07:47:27 exit v5g_gt_000151_centre_0.03 0 gpu 1
+07:47:27 exit v5g_gt_000151_centre_0.10 0 gpu 1
+all done

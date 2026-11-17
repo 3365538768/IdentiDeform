@@ -1,0 +1,96 @@
+{
+ "phase": "P4b",
+ "max_per_gpu": 2,
+ "gpus": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "jobs": [
+  {
+   "id": "p4b_jelly_E_v1",
+   "kind": "cmd",
+   "group": "p4b-sweep",
+   "mem_mib": 6000,
+   "retries": 1,
+   "cmd": "PYTHONPATH=.venv/lib/python3.12/site-packages .engine-envs/warp/bin/python scripts/v2/p4b_excitation_sweep.py --material jelly --sweep E --damping v1 --substep-dt 0.0001"
+  },
+  {
+   "id": "p4b_jelly_E_low",
+   "kind": "cmd",
+   "group": "p4b-sweep",
+   "mem_mib": 6000,
+   "retries": 1,
+   "cmd": "PYTHONPATH=.venv/lib/python3.12/site-packages .engine-envs/warp/bin/python scripts/v2/p4b_excitation_sweep.py --material jelly --sweep E --damping low --substep-dt 0.0001"
+  },
+  {
+   "id": "p4b_plasticine_E_v1",
+   "kind": "cmd",
+   "group": "p4b-sweep",
+   "mem_mib": 6000,
+   "retries": 1,
+   "cmd": "PYTHONPATH=.venv/lib/python3.12/site-packages .engine-envs/warp/bin/python scripts/v2/p4b_excitation_sweep.py --material plasticine --sweep E --damping v1 --substep-dt 0.0001"
+  },
+  {
+   "id": "p4b_plasticine_E_low",
+   "kind": "cmd",
+   "group": "p4b-sweep",
+   "mem_mib": 6000,
+   "retries": 1,
+   "cmd": "PYTHONPATH=.venv/lib/python3.12/site-packages .engine-envs/warp/bin/python scripts/v2/p4b_excitation_sweep.py --material plasticine --sweep E --damping low --substep-dt 0.0001"
+  },
+  {
+   "id": "p4b_plasticine_yield_stress_v1",
+   "kind": "cmd",
+   "group": "p4b-sweep",
+   "mem_mib": 6000,
+   "retries": 1,
+   "cmd": "PYTHONPATH=.venv/lib/python3.12/site-packages .engine-envs/warp/bin/python scripts/v2/p4b_excitation_sweep.py --material plasticine --sweep yield_stress --damping v1 --substep-dt 0.0001"
+  },
+  {
+   "id": "p4b_plasticine_yield_stress_low",
+   "kind": "cmd",
+   "group": "p4b-sweep",
+   "mem_mib": 6000,
+   "retries": 1,
+   "cmd": "PYTHONPATH=.venv/lib/python3.12/site-packages .engine-envs/warp/bin/python scripts/v2/p4b_excitation_sweep.py --material plasticine --sweep yield_stress --damping low --substep-dt 0.0001"
+  },
+  {
+   "id": "p4b_metal_yield_stress_v1",
+   "kind": "cmd",
+   "group": "p4b-sweep",
+   "mem_mib": 6000,
+   "retries": 1,
+   "cmd": "PYTHONPATH=.venv/lib/python3.12/site-packages .engine-envs/warp/bin/python scripts/v2/p4b_excitation_sweep.py --material metal --sweep yield_stress --damping v1 --substep-dt 0.0001"
+  },
+  {
+   "id": "p4b_metal_yield_stress_low",
+   "kind": "cmd",
+   "group": "p4b-sweep",
+   "mem_mib": 6000,
+   "retries": 1,
+   "cmd": "PYTHONPATH=.venv/lib/python3.12/site-packages .engine-envs/warp/bin/python scripts/v2/p4b_excitation_sweep.py --material metal --sweep yield_stress --damping low --substep-dt 0.0001"
+  },
+  {
+   "id": "p4b_metal_E_v1",
+   "kind": "cmd",
+   "group": "p4b-sweep",
+   "mem_mib": 6000,
+   "retries": 1,
+   "cmd": "PYTHONPATH=.venv/lib/python3.12/site-packages .engine-envs/warp/bin/python scripts/v2/p4b_excitation_sweep.py --material metal --sweep E --damping v1 --substep-dt 2e-05"
+  },
+  {
+   "id": "p4b_metal_E_low",
+   "kind": "cmd",
+   "group": "p4b-sweep",
+   "mem_mib": 6000,
+   "retries": 1,
+   "cmd": "PYTHONPATH=.venv/lib/python3.12/site-packages .engine-envs/warp/bin/python scripts/v2/p4b_excitation_sweep.py --material metal --sweep E --damping low --substep-dt 2e-05"
+  }
+ ]
+}

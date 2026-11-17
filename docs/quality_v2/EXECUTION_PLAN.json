@@ -1,0 +1,49 @@
+{
+  "updated_unix": 1794403080.1663473,
+  "priority": "rebuttal first, V2 quality in parallel",
+  "resource_policy": "GPUs 0-7 allowed; at most one quality job per GPU; preserve other workloads; existing free-memory admission checks",
+  "stages": [
+    {
+      "id": "Q1",
+      "state": "queued",
+      "task": "Fixed-time metal drop 25/12.5/6.25us; response summary comparison",
+      "gate": "Adjacent response difference <5% provisional screening; full trajectory/grid checks still required"
+    },
+    {
+      "id": "Q2",
+      "state": "queued",
+      "task": "press/drop/stretch x 2 camera distances x 4 matched samples =24 simulations",
+      "gate": "empty <=1%, border <=5%, p10 area >=2% proposed; report per view and failures, do not silently discard"
+    },
+    {
+      "id": "Q3",
+      "state": "planned",
+      "task": "3 material families x 3 actions x 4 shapes x 2 stiffness values =72 simulations; finite trajectories, active deformation, aligned field/contact labels",
+      "gate": "No CUDA/NaN; report failure rate and material coverage; matched controls and independent objects"
+    },
+    {
+      "id": "R1",
+      "state": "planned",
+      "task": "Audit B/C/D bottleneck equality; isolate regularizers, stress/contact/flow controls; train only missing controls, 3 seeds",
+      "gate": "Same backbone/data/compute; val only selection; report object bootstrap, include null results"
+    },
+    {
+      "id": "R2",
+      "state": "planned",
+      "task": "Per-law scatter, replay comparisons, real-video small fixed benchmark, reproducibility table",
+      "gate": "No GT family at deployment; separate synthetic parameters from real replay error"
+    },
+    {
+      "id": "D1",
+      "state": "planned",
+      "task": "Physion video representation pilot; external particle data only for auxiliary dynamics, engine-specific labels",
+      "gate": "License/split/unit/engine audit before download; no shared raw E labels"
+    },
+    {
+      "id": "V2",
+      "state": "blocked_quality",
+      "task": "4000 sample expansion then same backbone B/C/D 3 seeds; cross-engine few-shot afterward",
+      "gate": "Q1-Q3 plus held-out audit pass; no automatic escalation based on process exit alone"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+sim 68 prior_vision end:0.25 True 477
+measure end:0.25 {'sag': 0.22833291587766777, 'left': 0.7154558996987768, 'crush': 0.4451556993387124, 'dent_p95': 0.3213978871565207, 'grip': 26.636523246765137, 'lift': 0.17915675640106202, 'height': 0.59718918800354, 'n_particles': 141866, 'seg_particles': 41146}
+done 68 prior_vision end:0.25 False

@@ -1,0 +1,96 @@
+{
+ "created_utc": "2026-11-15",
+ "split": "validation only (v2main/val); test untouched",
+ "questions": {
+  "exp1": "Does the learned-prior advantage survive stronger uninformed (CMA-ES) search baselines?",
+  "exp2": "Is the ~0.2-0.3 identifiable z-MAE floor caused by the frozen nuisance parameters (hardening, nu)? Does the prior advantage persist when they are searched?"
+ },
+ "subset": {
+  "n": 20,
+  "indices": [
+   210,
+   219,
+   180,
+   276,
+   297,
+   141,
+   283,
+   202,
+   181,
+   295,
+   118,
+   52,
+   248,
+   113,
+   272,
+   134,
+   119,
+   71,
+   231,
+   228
+  ],
+  "v3h_stratified_order": [
+   210,
+   219,
+   180,
+   276,
+   297,
+   141,
+   283,
+   202,
+   181,
+   295,
+   118,
+   52,
+   248,
+   113,
+   272,
+   134,
+   119,
+   71,
+   231,
+   228,
+   21,
+   96,
+   73,
+   184,
+   241,
+   139,
+   182,
+   53,
+   212,
+   293
+  ],
+  "rule": "first 20 of the v3h 30-sample subset in its stratified selection order (18 law x action cells, then 2 jelly extras); composition 8 jelly / 6 metal / 6 plasticine"
+ },
+ "common": {
+  "objective": "(1 - mean object-mask IoU) + RGB-MAE(union)/255 vs observed 3-view video (scripts/v3d/c1_refine.py compare, simulate)",
+  "budgets_reported": [
+   0,
+   4,
+   12,
+   24
+  ],
+  "nested": "budget k = best observed loss among the first k simulations; k = 0 = start point (cma_best3: from k = 3)",
+  "failure_rule": "as C1: quick crash (<60 s) retried once; failed sims loss 9, count toward the budget, never selected; no sample dropped",
+  "reuse": "a simulation with exactly the same law and candidate parameters as one stored in data/v3b_refine/v2main_C_seed29 (prior_top1 / lawmean_gt / lawmean_best3) is reused and counted in the budget",
+  "code": "scripts/v3j/c1j_refine.py",
+  "outputs": "data/v3j_refine/<arm>/<index>/state.json"
+ },
+ "exp1_arms": {
+  "cma_gtmean": "PRIVILEGED GT law; start = GT-law train mean (as lawmean_gt); CMA-ES sigma0 = 1 decade",
+  "cma_best3": "3 law-mean probes (sims 1-3), CMA-ES from the best probe (its law and law mean); sigma0 = 1 decade",
+  "cma_prior": "9-run V-JEPA ensemble prediction, top-1 vote law (= prior_top1 start); CMA-ES sigma0 = 0.5 decade",
+  "cma_details": "own numpy (mu/mu_w, lambda)-CMA-ES (pycma not installed), Hansen tutorial default parameters, lambda = 4 (mu = 2), search space log10(E/rho) [+ log10(sigma_y/rho) unless law = jelly], box = train range E [2, 6], sigma_y [0, 4.5] (clip-repair, clipped points used in the update); start point evaluated as sim 1; generations of 4 evaluated in parallel; rng seed [20261115, index, arm_id]; nu = arm nu, hardening/softening 0.25 (as C1)",
+  "compared_with": "existing compass arms on the same 20 samples: prior_top1, lawmean_gt, lawmean_best3 (data/v3b_refine)"
+ },
+ "exp2_arms": {
+  "u4_prior": "prior_top1 start (ensemble prediction, top-1 law, ensemble nu clipped to [0.10, 0.46], hardening 0.25)",
+  "u4_gtmean": "PRIVILEGED GT law, GT-law train mean (law-mean nu, hardening 0.25)",
+  "optimizer": "4-D deterministic opportunistic compass search (C1 code path generalised): dims log10 E/rho, log10 sigma_y/rho (bounds as C1 [1.5, 6.5], [-0.5, 5.0]), hardening [0.05, 0.45], nu [0.10, 0.46] (train ranges); jelly: E, nu. initial steps 0.5, 0.5 decade, 0.1, 0.08; all halved after an unsuccessful poll; stop when the E step < 0.02. Plasticine softening stays 0.25.",
+  "metrics": "identifiable z-MAE (E/rho, sigma_y/rho, as C1); |hardening error| (GT metal/plasticine samples with a non-jelly estimate), |nu error| (raw); observed-fit IoU of the selected candidate; unseen-action replay IoU at budgets 0/4/12/24 (swapped action ACTIONS[(i+3)%6], vs GT-parameter replay; skipped where the C1 GT replay failed); frozen counterparts = prior_top1 / lawmean_gt (stored replays at their budgets)"
+ },
+ "metric": "identifiable z-MAE: |z_hat - z_gt| on E/rho and sigma_y/rho (train-standardized ln1p specific; sigma_y only where defined), pooled over (sample, target) elements; paired object-clustered bootstrap CIs (2000 draws, seed 17) vs prior_top1",
+ "sims_to_target": "target T = lawmean_gt (compass) pooled MAE at 24 sims on these 20 samples; smallest k (linear interpolation) at which the arm pooled MAE <= T; censored if never",
+ "scheduling": "a800-4, 8 GPUs; budget 12 first for every arm, then extension to 24 (nested, resumed deterministically). If the projection exceeds the 08:00 UTC deadline: drop budget 24 of cma_prior first, then report on the samples complete in all arms at 07:30 UTC."
+}

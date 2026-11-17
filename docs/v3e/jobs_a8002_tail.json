@@ -1,0 +1,66 @@
+[
+ {
+  "id": "v3e_lawmean_pred_000276",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 276 --method lawmean_pred"
+ },
+ {
+  "id": "v3e_gt_000283",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 283 --method gt"
+ },
+ {
+  "id": "v3e_refined_top2_000283",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 283 --method refined_top2"
+ },
+ {
+  "id": "v3e_ensemble_prior_000283",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 283 --method ensemble_prior"
+ },
+ {
+  "id": "v3e_refined_best3_000283",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 283 --method refined_best3"
+ },
+ {
+  "id": "v3e_lawmean_pred_000283",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 283 --method lawmean_pred"
+ },
+ {
+  "id": "v3e_gt_000296",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 296 --method gt"
+ },
+ {
+  "id": "v3e_refined_top2_000296",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 296 --method refined_top2"
+ },
+ {
+  "id": "v3e_ensemble_prior_000296",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 296 --method ensemble_prior"
+ },
+ {
+  "id": "v3e_refined_best3_000296",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 296 --method refined_best3"
+ },
+ {
+  "id": "v3e_lawmean_pred_000296",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 296 --method lawmean_pred"
+ },
+ {
+  "id": "v3e_gt_000297",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 297 --method gt"
+ },
+ {
+  "id": "v3e_refined_top2_000297",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 297 --method refined_top2"
+ },
+ {
+  "id": "v3e_ensemble_prior_000297",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 297 --method ensemble_prior"
+ },
+ {
+  "id": "v3e_refined_best3_000297",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 297 --method refined_best3"
+ },
+ {
+  "id": "v3e_lawmean_pred_000297",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 297 --method lawmean_pred"
+ }
+]

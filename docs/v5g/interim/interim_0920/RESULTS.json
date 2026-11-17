@@ -1,0 +1,1256 @@
+{
+ "stage": "v5g",
+ "created_utc": "2026-11-16T09:18:39Z",
+ "prereg": "docs/v5g/PREREG_2026-11-16.md",
+ "n_samples": 25,
+ "thresholds": {
+  "T_DROP_left": 0.5,
+  "T_DMG_crush": 0.05
+ },
+ "candidates": [
+  "centre:0.03",
+  "centre:0.10",
+  "centre:0.25",
+  "centre:0.40",
+  "end:0.03",
+  "end:0.10",
+  "end:0.25",
+  "end:0.40"
+ ],
+ "summary": {
+  "gt": {
+   "label": "GT oracle",
+   "n": 25,
+   "success": 1.0,
+   "drop": 0.0,
+   "damage": 0.0,
+   "missed": 0.0,
+   "level_regret": 0.0,
+   "success_ci95": [
+    1.0,
+    1.0
+   ],
+   "drop_ci95": [
+    0.0,
+    0.0
+   ],
+   "damage_ci95": [
+    0.0,
+    0.0
+   ],
+   "level_regret_ci95": [
+    0.0,
+    0.0
+   ],
+   "force_regret_rel": 0.0,
+   "force_regret_rel_ci95": [
+    0.0,
+    0.0
+   ],
+   "n_force_regret": 7,
+   "law_accuracy": null
+  },
+  "prior_vt": {
+   "label": "vision + touch prior twin",
+   "n": 25,
+   "success": 0.8,
+   "drop": 0.0,
+   "damage": 0.08,
+   "missed": 0.12,
+   "level_regret": 0.56,
+   "success_ci95": [
+    0.6521739130434783,
+    0.9545454545454546
+   ],
+   "drop_ci95": [
+    0.0,
+    0.0
+   ],
+   "damage_ci95": [
+    0.0,
+    0.1935483870967742
+   ],
+   "level_regret_ci95": [
+    0.15384615384615385,
+    1.0500657894736838
+   ],
+   "force_regret_rel": 0.0,
+   "force_regret_rel_ci95": [
+    0.0,
+    0.0
+   ],
+   "n_force_regret": 4,
+   "law_accuracy": 0.72
+  },
+  "prior_vision": {
+   "label": "vision prior twin (9-run)",
+   "n": 25,
+   "success": 0.76,
+   "drop": 0.04,
+   "damage": 0.04,
+   "missed": 0.16,
+   "level_regret": 0.48,
+   "success_ci95": [
+    0.55,
+    0.9
+   ],
+   "drop_ci95": [
+    0.0,
+    0.13793103448275862
+   ],
+   "damage_ci95": [
+    0.0,
+    0.13043478260869565
+   ],
+   "level_regret_ci95": [
+    0.13886494252873563,
+    1.0527046783625726
+   ],
+   "force_regret_rel": 0.0,
+   "force_regret_rel_ci95": [
+    0.0,
+    0.0
+   ],
+   "n_force_regret": 2,
+   "law_accuracy": 0.56
+  },
+  "lawmean_pred": {
+   "label": "class-mean twin",
+   "n": 25,
+   "success": 0.72,
+   "drop": 0.08,
+   "damage": 0.04,
+   "missed": 0.16,
+   "level_regret": 0.6,
+   "success_ci95": [
+    0.5,
+    0.8695652173913043
+   ],
+   "drop_ci95": [
+    0.0,
+    0.27586206896551724
+   ],
+   "damage_ci95": [
+    0.0,
+    0.0967741935483871
+   ],
+   "level_regret_ci95": [
+    0.24,
+    1.1177058823529409
+   ],
+   "force_regret_rel": 2.183149620690458,
+   "force_regret_rel_ci95": [
+    0.0,
+    6.549448862071374
+   ],
+   "n_force_regret": 3,
+   "law_accuracy": 0.56
+  },
+  "fixed_loo": {
+   "label": "fixed grasp (leave-one-out)",
+   "n": 25,
+   "success": 0.72,
+   "drop": 0.0,
+   "damage": 0.0,
+   "missed": 0.28,
+   "level_regret": 0.52,
+   "success_ci95": [
+    0.5,
+    0.8928571428571429
+   ],
+   "drop_ci95": [
+    0.0,
+    0.0
+   ],
+   "damage_ci95": [
+    0.0,
+    0.0
+   ],
+   "level_regret_ci95": [
+    0.16666666666666666,
+    1.0910173160173153
+   ],
+   "force_regret_rel": null,
+   "force_regret_rel_ci95": [
+    null,
+    null
+   ],
+   "n_force_regret": 0,
+   "law_accuracy": null
+  }
+ },
+ "paired": {
+  "vt-minus-vision": {
+   "n": 25,
+   "n_objects": 10,
+   "success_diff": 0.04,
+   "drop_diff": -0.04,
+   "damage_diff": 0.04,
+   "level_regret_diff": 0.08,
+   "success_diff_ci95": [
+    -0.13793103448275862,
+    0.2727272727272727
+   ],
+   "drop_diff_ci95": [
+    -0.13793103448275862,
+    0.0
+   ],
+   "damage_diff_ci95": [
+    -0.125,
+    0.18181818181818182
+   ],
+   "level_regret_diff_ci95": [
+    -0.2727272727272727,
+    0.41935483870967744
+   ]
+  },
+  "vision-minus-classmean": {
+   "n": 25,
+   "n_objects": 10,
+   "success_diff": 0.04,
+   "drop_diff": -0.04,
+   "damage_diff": 0.0,
+   "level_regret_diff": -0.12,
+   "success_diff_ci95": [
+    -0.1111111111111111,
+    0.1539062499999997
+   ],
+   "drop_diff_ci95": [
+    -0.13793103448275862,
+    0.0
+   ],
+   "damage_diff_ci95": [
+    -0.08823529411764706,
+    0.125
+   ],
+   "level_regret_diff_ci95": [
+    -0.31258223684210523,
+    0.10526315789473684
+   ]
+  },
+  "vt-minus-classmean": {
+   "n": 25,
+   "n_objects": 10,
+   "success_diff": 0.08,
+   "drop_diff": -0.08,
+   "damage_diff": 0.04,
+   "level_regret_diff": -0.04,
+   "success_diff_ci95": [
+    -0.07142857142857142,
+    0.3158492822966504
+   ],
+   "drop_diff_ci95": [
+    -0.27586206896551724,
+    0.0
+   ],
+   "damage_diff_ci95": [
+    0.0,
+    0.0967741935483871
+   ],
+   "level_regret_diff_ci95": [
+    -0.3076923076923077,
+    0.15151515151515152
+   ]
+  },
+  "vt-minus-fixed": {
+   "n": 25,
+   "n_objects": 10,
+   "success_diff": 0.08,
+   "drop_diff": 0.0,
+   "damage_diff": 0.08,
+   "level_regret_diff": 0.04,
+   "success_diff_ci95": [
+    -0.13520503261882572,
+    0.3461956521739128
+   ],
+   "drop_diff_ci95": [
+    0.0,
+    0.0
+   ],
+   "damage_diff_ci95": [
+    0.0,
+    0.1935483870967742
+   ],
+   "level_regret_diff_ci95": [
+    -0.346195652173913,
+    0.41673387096774156
+   ]
+  },
+  "vision-minus-fixed": {
+   "n": 25,
+   "n_objects": 10,
+   "success_diff": 0.04,
+   "drop_diff": 0.04,
+   "damage_diff": 0.04,
+   "level_regret_diff": -0.04,
+   "success_diff_ci95": [
+    -0.12,
+    0.23076923076923078
+   ],
+   "drop_diff_ci95": [
+    0.0,
+    0.13793103448275862
+   ],
+   "damage_diff_ci95": [
+    0.0,
+    0.13043478260869565
+   ],
+   "level_regret_diff_ci95": [
+    -0.23076923076923078,
+    0.12
+   ]
+  },
+  "classmean-minus-fixed": {
+   "n": 25,
+   "n_objects": 10,
+   "success_diff": 0.0,
+   "drop_diff": 0.08,
+   "damage_diff": 0.04,
+   "level_regret_diff": 0.08,
+   "success_diff_ci95": [
+    -0.23814285714285713,
+    0.2608695652173913
+   ],
+   "drop_diff_ci95": [
+    0.0,
+    0.27586206896551724
+   ],
+   "damage_diff_ci95": [
+    0.0,
+    0.0967741935483871
+   ],
+   "level_regret_diff_ci95": [
+    -0.2608695652173913,
+    0.36666666666666664
+   ]
+  }
+ },
+ "gt_outcome_by_candidate": {
+  "centre:0.03": {
+   "success": 5,
+   "drop": 12,
+   "damage": 8
+  },
+  "centre:0.10": {
+   "success": 3,
+   "drop": 10,
+   "damage": 12
+  },
+  "centre:0.25": {
+   "success": 1,
+   "drop": 9,
+   "damage": 15
+  },
+  "centre:0.40": {
+   "success": 2,
+   "drop": 8,
+   "damage": 15
+  },
+  "end:0.03": {
+   "success": 2,
+   "drop": 19,
+   "damage": 4
+  },
+  "end:0.10": {
+   "success": 2,
+   "drop": 18,
+   "damage": 5
+  },
+  "end:0.25": {
+   "success": 1,
+   "drop": 16,
+   "damage": 8
+  },
+  "end:0.40": {
+   "success": 1,
+   "drop": 15,
+   "damage": 9
+  }
+ },
+ "oracle_histogram": {
+  "None": 18,
+  "centre:0.03": 5,
+  "centre:0.10": 0,
+  "centre:0.25": 0,
+  "centre:0.40": 1,
+  "end:0.03": 0,
+  "end:0.10": 0,
+  "end:0.25": 0,
+  "end:0.40": 1
+ },
+ "fixed_global_success": {
+  "centre:0.03": 0.2,
+  "centre:0.10": 0.12,
+  "centre:0.25": 0.04,
+  "centre:0.40": 0.08,
+  "end:0.03": 0.08,
+  "end:0.10": 0.08,
+  "end:0.25": 0.04,
+  "end:0.40": 0.04,
+  "abstain": 0.72
+ },
+ "sensitivity": {
+  "drop0.4": {
+   "gt": {
+    "success": 1.0,
+    "drop": 0.0,
+    "damage": 0.0,
+    "level_regret": 0.0
+   },
+   "prior_vt": {
+    "success": 0.84,
+    "drop": 0.0,
+    "damage": 0.12,
+    "level_regret": 0.4
+   },
+   "prior_vision": {
+    "success": 0.84,
+    "drop": 0.04,
+    "damage": 0.0,
+    "level_regret": 0.28
+   },
+   "lawmean_pred": {
+    "success": 0.8,
+    "drop": 0.08,
+    "damage": 0.04,
+    "level_regret": 0.4
+   },
+   "fixed_loo": {
+    "success": 0.8,
+    "drop": 0.0,
+    "damage": 0.0,
+    "level_regret": 0.32
+   }
+  },
+  "drop0.6": {
+   "gt": {
+    "success": 1.0,
+    "drop": 0.0,
+    "damage": 0.0,
+    "level_regret": 0.0
+   },
+   "prior_vt": {
+    "success": 0.84,
+    "drop": 0.0,
+    "damage": 0.12,
+    "level_regret": 0.36
+   },
+   "prior_vision": {
+    "success": 0.76,
+    "drop": 0.08,
+    "damage": 0.04,
+    "level_regret": 0.32
+   },
+   "lawmean_pred": {
+    "success": 0.72,
+    "drop": 0.08,
+    "damage": 0.04,
+    "level_regret": 0.52
+   },
+   "fixed_loo": {
+    "success": 0.72,
+    "drop": 0.0,
+    "damage": 0.0,
+    "level_regret": 0.44
+   }
+  },
+  "dmg0.03": {
+   "gt": {
+    "success": 1.0,
+    "drop": 0.0,
+    "damage": 0.0,
+    "level_regret": 0.0
+   },
+   "prior_vt": {
+    "success": 0.84,
+    "drop": 0.0,
+    "damage": 0.08,
+    "level_regret": 0.44
+   },
+   "prior_vision": {
+    "success": 0.84,
+    "drop": 0.04,
+    "damage": 0.0,
+    "level_regret": 0.32
+   },
+   "lawmean_pred": {
+    "success": 0.76,
+    "drop": 0.08,
+    "damage": 0.04,
+    "level_regret": 0.48
+   },
+   "fixed_loo": {
+    "success": 0.8,
+    "drop": 0.0,
+    "damage": 0.0,
+    "level_regret": 0.36
+   }
+  },
+  "dmg0.08": {
+   "gt": {
+    "success": 1.0,
+    "drop": 0.0,
+    "damage": 0.0,
+    "level_regret": 0.0
+   },
+   "prior_vt": {
+    "success": 0.68,
+    "drop": 0.04,
+    "damage": 0.08,
+    "level_regret": 0.8
+   },
+   "prior_vision": {
+    "success": 0.64,
+    "drop": 0.08,
+    "damage": 0.08,
+    "level_regret": 0.76
+   },
+   "lawmean_pred": {
+    "success": 0.6,
+    "drop": 0.12,
+    "damage": 0.04,
+    "level_regret": 0.92
+   },
+   "fixed_loo": {
+    "success": 0.6,
+    "drop": 0.0,
+    "damage": 0.0,
+    "level_regret": 0.76
+   }
+  }
+ },
+ "per_sample": "docs/v5g/RESULTS_core.json",
+ "figure": "docs/paper_figs/F6b_grasp.pdf (scripts/v5g/make_fig.py)",
+ "evaluator_stdout": "gt             n=25 succ=1.000 [1.0, 1.0] drop=0.00 dmg=0.00 miss=0.00 lvl_regret=0.00 force_regret=0.0\nprior_vt       n=25 succ=0.800 [0.6521739130434783, 0.9545454545454546] drop=0.00 dmg=0.08 miss=0.12 lvl_regret=0.56 force_regret=0.0\nprior_vision   n=25 succ=0.760 [0.55, 0.9] drop=0.04 dmg=0.04 miss=0.16 lvl_regret=0.48 force_regret=0.0\nlawmean_pred   n=25 succ=0.720 [0.5, 0.8695652173913043] drop=0.08 dmg=0.04 miss=0.16 lvl_regret=0.60 force_regret=2.183149620690458\nfixed_loo      n=25 succ=0.720 [0.5, 0.8928571428571429] drop=0.00 dmg=0.00 miss=0.28 lvl_regret=0.52 force_regret=None\noracle {'None': 18, 'centre:0.03': 5, 'centre:0.10': 0, 'centre:0.25': 0, 'centre:0.40': 1, 'end:0.03': 0, 'end:0.10': 0, 'end:0.25': 0, 'end:0.40': 1}\nfixed global {'centre:0.03': 0.2, 'centre:0.10': 0.12, 'centre:0.25': 0.04, 'centre:0.40': 0.08, 'end:0.03': 0.08, 'end:0.10': 0.08, 'end:0.25': 0.04, 'end:0.40': 0.04, 'abstain': 0.72}\nvt-minus-vision 25 0.04 [-0.13793103448275862, 0.2727272727272727]\nvision-minus-classmean 25 0.04 [-0.1111111111111111, 0.1539062499999997]\nvt-minus-classmean 25 0.08 [-0.07142857142857142, 0.3158492822966504]\nvt-minus-fixed 25 0.08 [-0.13520503261882572, 0.3461956521739128]\nvision-minus-fixed 25 0.04 [-0.12, 0.23076923076923078]\nclassmean-minus-fixed 25 0.0 [-0.23814285714285713, 0.2608695652173913]\n",
+ "feasible_subset": {
+  "definition": "samples with at least one GT-feasible grasp (descriptive; selected on GT outcomes)",
+  "n": 7,
+  "arms": {
+   "gt": {
+    "n": 7,
+    "success": 1.0,
+    "drop": 0.0,
+    "damage": 0.0,
+    "missed": 0.0,
+    "success_ci95": [
+     1.0,
+     1.0
+    ]
+   },
+   "prior_vt": {
+    "n": 7,
+    "success": 0.5714285714285714,
+    "drop": 0.0,
+    "damage": 0.0,
+    "missed": 0.42857142857142855,
+    "success_ci95": [
+     0.16666666666666666,
+     0.8888888888888888
+    ]
+   },
+   "prior_vision": {
+    "n": 7,
+    "success": 0.2857142857142857,
+    "drop": 0.0,
+    "damage": 0.14285714285714285,
+    "missed": 0.5714285714285714,
+    "success_ci95": [
+     0.0,
+     0.6666666666666666
+    ]
+   },
+   "lawmean_pred": {
+    "n": 7,
+    "success": 0.42857142857142855,
+    "drop": 0.0,
+    "damage": 0.0,
+    "missed": 0.5714285714285714,
+    "success_ci95": [
+     0.0,
+     0.7777777777777778
+    ]
+   },
+   "fixed_loo": {
+    "n": 7,
+    "success": 0.0,
+    "drop": 0.0,
+    "damage": 0.0,
+    "missed": 1.0,
+    "success_ci95": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "paired": {
+   "vt-minus-vision": {
+    "n": 7,
+    "success_diff": 0.2857142857142857,
+    "ci95": [
+     0.0,
+     0.6666666666666666
+    ]
+   },
+   "vision-minus-classmean": {
+    "n": 7,
+    "success_diff": -0.14285714285714285,
+    "ci95": [
+     -0.5,
+     0.0
+    ]
+   },
+   "vt-minus-fixed": {
+    "n": 7,
+    "success_diff": 0.5714285714285714,
+    "ci95": [
+     0.16666666666666666,
+     0.8888888888888888
+    ]
+   }
+  }
+ },
+ "analysis_set": "paired-complete samples (all 4 twins complete)",
+ "primary_prediction": {
+  "addendum": "docs/v5g/PREREG_ADDENDUM.md",
+  "n_samples": 25,
+  "n_objects": 10,
+  "n_candidates": 8,
+  "class_counts_gt": {
+   "drop": 107,
+   "damage": 76,
+   "success": 17
+  },
+  "predictors": {
+   "prior_vt": {
+    "macro_f1": 0.8099972383319525,
+    "accuracy": 0.875,
+    "recall": {
+     "success": 0.6470588235294118,
+     "drop": 0.9158878504672897,
+     "damage": 0.868421052631579
+    },
+    "safe_precision": 0.6470588235294118,
+    "safe_recall": 0.6470588235294118,
+    "n_pairs": 200,
+    "feasibility_accuracy": 0.8,
+    "ci95": {
+     "macro_f1": [
+      0.6098294812669813,
+      0.8546322441952989
+     ],
+     "accuracy": [
+      0.8295454545454546,
+      0.93125
+     ],
+     "safe_precision": [
+      0.1,
+      0.8571428571428571
+     ],
+     "safe_recall": [
+      0.0,
+      0.8518790849673201
+     ],
+     "feasibility_accuracy": [
+      0.6521739130434783,
+      0.9545454545454546
+     ],
+     "recall": {
+      "success": [
+       0.0,
+       0.8518790849673201
+      ],
+      "drop": [
+       0.792068894389439,
+       1.0
+      ],
+      "damage": [
+       0.720906976744186,
+       0.9298306956201693
+      ]
+     }
+    }
+   },
+   "prior_vision": {
+    "macro_f1": 0.7323232323232323,
+    "accuracy": 0.805,
+    "recall": {
+     "success": 0.5882352941176471,
+     "drop": 0.8878504672897196,
+     "damage": 0.7368421052631579
+    },
+    "safe_precision": 0.5263157894736842,
+    "safe_recall": 0.5882352941176471,
+    "n_pairs": 200,
+    "feasibility_accuracy": 0.8,
+    "ci95": {
+     "macro_f1": [
+      0.4682268197900764,
+      0.8031267536674956
+     ],
+     "accuracy": [
+      0.6978794642857142,
+      0.8888888888888888
+     ],
+     "safe_precision": [
+      0.0,
+      0.625
+     ],
+     "safe_recall": [
+      0.0,
+      0.8888888888888888
+     ],
+     "feasibility_accuracy": [
+      0.5789473684210527,
+      0.9375
+     ],
+     "recall": {
+      "success": [
+       0.0,
+       0.8888888888888888
+      ],
+      "drop": [
+       0.7640347293156282,
+       0.974364406779661
+      ],
+      "damage": [
+       0.27494318181818184,
+       0.9339776935284781
+      ]
+     }
+    }
+   },
+   "lawmean_pred": {
+    "macro_f1": 0.7283637415216363,
+    "accuracy": 0.785,
+    "recall": {
+     "success": 0.6470588235294118,
+     "drop": 0.8037383177570093,
+     "damage": 0.7894736842105263
+    },
+    "safe_precision": 0.5238095238095238,
+    "safe_recall": 0.6470588235294118,
+    "n_pairs": 200,
+    "feasibility_accuracy": 0.72,
+    "ci95": {
+     "macro_f1": [
+      0.5140580531782231,
+      0.7785556958973288
+     ],
+     "accuracy": [
+      0.7142857142857143,
+      0.8557692307692307
+     ],
+     "safe_precision": [
+      0.0,
+      0.6842105263157895
+     ],
+     "safe_recall": [
+      0.0,
+      0.9090909090909091
+     ],
+     "feasibility_accuracy": [
+      0.5,
+      0.8695652173913043
+     ],
+     "recall": {
+      "success": [
+       0.0,
+       0.9090909090909091
+      ],
+      "drop": [
+       0.6263708513708514,
+       0.9347896668548843
+      ],
+      "damage": [
+       0.4443798449612403,
+       0.9280704008221993
+      ]
+     }
+    }
+   },
+   "base_majority": {
+    "macro_f1": 0.23235613463626492,
+    "accuracy": 0.535,
+    "recall": {
+     "success": 0.0,
+     "drop": 1.0,
+     "damage": 0.0
+    },
+    "safe_precision": null,
+    "safe_recall": 0.0,
+    "n_pairs": 200,
+    "feasibility_accuracy": 0.72,
+    "ci95": {
+     "macro_f1": [
+      0.17313330519638315,
+      0.286895040762004
+     ],
+     "accuracy": [
+      0.3508036514336918,
+      0.7554409584980237
+     ],
+     "safe_precision": [
+      null,
+      null
+     ],
+     "safe_recall": [
+      0.0,
+      0.0
+     ],
+     "feasibility_accuracy": [
+      0.5,
+      0.8928571428571429
+     ],
+     "recall": {
+      "success": [
+       0.0,
+       0.0
+      ],
+      "drop": [
+       1.0,
+       1.0
+      ],
+      "damage": [
+       0.0,
+       0.0
+      ]
+     }
+    }
+   },
+   "base_cand": {
+    "macro_f1": 0.3606314165331434,
+    "accuracy": 0.55,
+    "recall": {
+     "success": 0.0,
+     "drop": 0.7570093457943925,
+     "damage": 0.3815789473684211
+    },
+    "safe_precision": null,
+    "safe_recall": 0.0,
+    "n_pairs": 200,
+    "feasibility_accuracy": 0.72,
+    "ci95": {
+     "macro_f1": [
+      0.28725373481219185,
+      0.4601332198705072
+     ],
+     "accuracy": [
+      0.43267857142857147,
+      0.6989192193675886
+     ],
+     "safe_precision": [
+      null,
+      null
+     ],
+     "safe_recall": [
+      0.0,
+      0.0
+     ],
+     "feasibility_accuracy": [
+      0.5,
+      0.8928571428571429
+     ],
+     "recall": {
+      "success": [
+       0.0,
+       0.0
+      ],
+      "drop": [
+       0.6788255995828988,
+       0.8642071759259258
+      ],
+      "damage": [
+       0.2364771021021021,
+       0.7333333333333333
+      ]
+     }
+    }
+   },
+   "base_cand_law": {
+    "macro_f1": 0.3624997558069116,
+    "accuracy": 0.53,
+    "recall": {
+     "success": 0.0,
+     "drop": 0.6728971962616822,
+     "damage": 0.4473684210526316
+    },
+    "safe_precision": 0.0,
+    "safe_recall": 0.0,
+    "n_pairs": 200,
+    "feasibility_accuracy": 0.48,
+    "ci95": {
+     "macro_f1": [
+      0.3099374115941979,
+      0.4204909473532129
+     ],
+     "accuracy": [
+      0.45652173913043476,
+      0.625
+     ],
+     "safe_precision": [
+      0.0,
+      0.0
+     ],
+     "safe_recall": [
+      0.0,
+      0.0
+     ],
+     "feasibility_accuracy": [
+      0.32,
+      0.6842105263157895
+     ],
+     "recall": {
+      "success": [
+       0.0,
+       0.0
+      ],
+      "drop": [
+       0.5210040266106443,
+       0.8469387755102041
+      ],
+      "damage": [
+       0.3262246412666997,
+       0.7744333042720126
+      ]
+     }
+    }
+   }
+  },
+  "paired": {
+   "prior_vt-minus-prior_vision": {
+    "macro_f1": {
+     "diff": 0.07767400600872021,
+     "ci95": [
+      -0.012351941431220675,
+      0.3026380042053173
+     ]
+    },
+    "accuracy": {
+     "diff": 0.06999999999999995,
+     "ci95": [
+      -0.011363636363636354,
+      0.18452380952380953
+     ]
+    },
+    "safe_precision": {
+     "diff": 0.12074303405572762,
+     "ci95": [
+      -0.0619195046439629,
+      0.7762499999999932
+     ]
+    },
+    "safe_recall": {
+     "diff": 0.05882352941176472,
+     "ci95": [
+      -0.08333333333333337,
+      0.5555555555555556
+     ]
+    },
+    "feasibility_accuracy": {
+     "diff": 0.0,
+     "ci95": [
+      -0.15634375,
+      0.21052631578947367
+     ]
+    }
+   },
+   "prior_vision-minus-lawmean_pred": {
+    "macro_f1": {
+     "diff": 0.003959490801595966,
+     "ci95": [
+      -0.17130332963797634,
+      0.06509846504137107
+     ]
+    },
+    "accuracy": {
+     "diff": 0.020000000000000018,
+     "ci95": [
+      -0.08156702898550716,
+      0.08013392857142859
+     ]
+    },
+    "safe_precision": {
+     "diff": 0.0025062656641603454,
+     "ci95": [
+      -0.6666666666666666,
+      0.06864035087719303
+     ]
+    },
+    "safe_recall": {
+     "diff": -0.05882352941176472,
+     "ci95": [
+      -0.2857142857142857,
+      0.0
+     ]
+    },
+    "feasibility_accuracy": {
+     "diff": 0.08000000000000007,
+     "ci95": [
+      -0.08695652173913049,
+      0.20833333333333337
+     ]
+    }
+   },
+   "prior_vt-minus-lawmean_pred": {
+    "macro_f1": {
+     "diff": 0.08163349681031618,
+     "ci95": [
+      0.021345608762906355,
+      0.21105424670290412
+     ]
+    },
+    "accuracy": {
+     "diff": 0.08999999999999997,
+     "ci95": [
+      0.03750000000000009,
+      0.15790570175438595
+     ]
+    },
+    "safe_precision": {
+     "diff": 0.12324929971988796,
+     "ci95": [
+      -0.25,
+      0.5238095238095237
+     ]
+    },
+    "safe_recall": {
+     "diff": 0.0,
+     "ci95": [
+      -0.08695652173913038,
+      0.4
+     ]
+    },
+    "feasibility_accuracy": {
+     "diff": 0.08000000000000007,
+     "ci95": [
+      -0.0714285714285714,
+      0.31584928229665044
+     ]
+    }
+   },
+   "prior_vt-minus-base_cand": {
+    "macro_f1": {
+     "diff": 0.4493658217988091,
+     "ci95": [
+      0.23194458103124774,
+      0.5291742408734994
+     ]
+    },
+    "accuracy": {
+     "diff": 0.32499999999999996,
+     "ci95": [
+      0.1875,
+      0.4259458812260536
+     ]
+    },
+    "safe_precision": {
+     "diff": null,
+     "ci95": [
+      null,
+      null
+     ]
+    },
+    "safe_recall": {
+     "diff": 0.6470588235294118,
+     "ci95": [
+      0.0,
+      0.8518790849673201
+     ]
+    },
+    "feasibility_accuracy": {
+     "diff": 0.08000000000000007,
+     "ci95": [
+      -0.13520503261882577,
+      0.3461956521739129
+     ]
+    }
+   },
+   "prior_vision-minus-base_cand": {
+    "macro_f1": {
+     "diff": 0.37169181579008886,
+     "ci95": [
+      0.020871885068600285,
+      0.5025190069552159
+     ]
+    },
+    "accuracy": {
+     "diff": 0.255,
+     "ci95": [
+      0.04999999999999993,
+      0.4181196120689655
+     ]
+    },
+    "safe_precision": {
+     "diff": null,
+     "ci95": [
+      null,
+      null
+     ]
+    },
+    "safe_recall": {
+     "diff": 0.5882352941176471,
+     "ci95": [
+      0.0,
+      0.8888888888888888
+     ]
+    },
+    "feasibility_accuracy": {
+     "diff": 0.08000000000000007,
+     "ci95": [
+      -0.09523809523809523,
+      0.28571428571428575
+     ]
+    }
+   },
+   "prior_vt-minus-base_cand_law": {
+    "macro_f1": {
+     "diff": 0.44749748252504085,
+     "ci95": [
+      0.2544052795205965,
+      0.5024258931085273
+     ]
+    },
+    "accuracy": {
+     "diff": 0.345,
+     "ci95": [
+      0.2554347826086957,
+      0.421875
+     ]
+    },
+    "safe_precision": {
+     "diff": 0.6470588235294118,
+     "ci95": [
+      0.1,
+      0.8571428571428571
+     ]
+    },
+    "safe_recall": {
+     "diff": 0.6470588235294118,
+     "ci95": [
+      0.0,
+      0.8518790849673201
+     ]
+    },
+    "feasibility_accuracy": {
+     "diff": 0.32000000000000006,
+     "ci95": [
+      0.17647058823529405,
+      0.4482758620689655
+     ]
+    }
+   },
+   "prior_vision-minus-base_cand_law": {
+    "macro_f1": {
+     "diff": 0.36982347651632064,
+     "ci95": [
+      0.09170221666539878,
+      0.4565138376141897
+     ]
+    },
+    "accuracy": {
+     "diff": 0.275,
+     "ci95": [
+      0.112483552631579,
+      0.39644432773109234
+     ]
+    },
+    "safe_precision": {
+     "diff": 0.5263157894736842,
+     "ci95": [
+      0.0,
+      0.625
+     ]
+    },
+    "safe_recall": {
+     "diff": 0.5882352941176471,
+     "ci95": [
+      0.0,
+      0.8888888888888888
+     ]
+    },
+    "feasibility_accuracy": {
+     "diff": 0.32000000000000006,
+     "ci95": [
+      0.0665625,
+      0.5
+     ]
+    }
+   },
+   "lawmean_pred-minus-base_cand": {
+    "macro_f1": {
+     "diff": 0.3677323249884929,
+     "ci95": [
+      0.08374259818351858,
+      0.4766697394926409
+     ]
+    },
+    "accuracy": {
+     "diff": 0.235,
+     "ci95": [
+      0.04999999999999993,
+      0.37161458333333286
+     ]
+    },
+    "safe_precision": {
+     "diff": null,
+     "ci95": [
+      null,
+      null
+     ]
+    },
+    "safe_recall": {
+     "diff": 0.6470588235294118,
+     "ci95": [
+      0.0,
+      0.9090909090909091
+     ]
+    },
+    "feasibility_accuracy": {
+     "diff": 0.0,
+     "ci95": [
+      -0.23814285714285718,
+      0.26086956521739135
+     ]
+    }
+   },
+   "prior_vt-minus-base_majority": {
+    "macro_f1": {
+     "diff": 0.5776411036956876,
+     "ci95": [
+      0.3841208449605728,
+      0.6313751123001929
+     ]
+    },
+    "accuracy": {
+     "diff": 0.33999999999999997,
+     "ci95": [
+      0.16069642857142855,
+      0.4966216216216216
+     ]
+    },
+    "safe_precision": {
+     "diff": null,
+     "ci95": [
+      null,
+      null
+     ]
+    },
+    "safe_recall": {
+     "diff": 0.6470588235294118,
+     "ci95": [
+      0.0,
+      0.8518790849673201
+     ]
+    },
+    "feasibility_accuracy": {
+     "diff": 0.08000000000000007,
+     "ci95": [
+      -0.13520503261882577,
+      0.3461956521739129
+     ]
+    }
+   }
+  }
+ },
+ "secondary_planning_note": "planning metrics as pre-registered; always-abstain wins on raw success because most samples have no GT-feasible grasp"
+}

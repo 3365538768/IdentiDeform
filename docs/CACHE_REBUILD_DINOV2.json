@@ -1,0 +1,37 @@
+{
+  "status": "complete",
+  "completed": 640,
+  "total": 640,
+  "detail": "\u672c\u673a\u91cd\u5efa\u5b8c\u6210\uff1b\u6240\u6709\u6587\u4ef6\u9a8c\u6536\u901a\u8fc7\uff0c\u5df2\u5207\u6362\u8bad\u7ec3\u7f13\u5b58\u8def\u5f84\u3002",
+  "updated_unix": 1794101942.8481603,
+  "elapsed_seconds": 264.11274576187134,
+  "directory": "data/prepared/g1_dinos16_rebuilt_a8002",
+  "generated_on_host": "di-20261103141208-krk4l",
+  "verified_files": 640,
+  "extraction": {
+    "status": "complete",
+    "completed": 640,
+    "total": 640,
+    "elapsed_seconds": 219.90083384513855,
+    "bytes": 15455804160,
+    "parity_max_z_delta": 0.0,
+    "parity_samples": 4,
+    "prefetch_workers": 2,
+    "resumed_samples": 0,
+    "updated_unix": 1794101902.1957154
+  },
+  "aliases": [
+    {
+      "alias": "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/prepared/g1_dinos16",
+      "target": "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/prepared/g1_dinos16_rebuilt_a8002",
+      "retained_copy": "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/prepared/g1_dinos16_migration_retained_1794101942844636184"
+    },
+    {
+      "alias": "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/prepared/g1_dinos16_local",
+      "target": "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/prepared/g1_dinos16_rebuilt_a8002",
+      "retained_copy": null
+    }
+  ],
+  "manifest_sha256": "2d13b51c01b7808277a467ab566c120b9e495dae998249dd7e97734d76cf3f6b",
+  "artifact_hash_receipt": "runs/a8002_rebuild_dinov2/artifact_hashes.json"
+}

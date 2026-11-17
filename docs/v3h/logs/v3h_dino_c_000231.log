@@ -1,0 +1,22 @@
+simulation failed obs_00 1
+eval {'n': 1, 'law': 'jelly', 'x': [3.810998, 3.153225], 'seconds': 102.0931499004364, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_01 1
+eval {'n': 2, 'law': 'jelly', 'x': [4.310998, 3.153225], 'seconds': 84.28737115859985, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_02 1
+eval {'n': 3, 'law': 'jelly', 'x': [3.310998, 3.153225], 'seconds': 103.11904644966125, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_03 1
+eval {'n': 4, 'law': 'jelly', 'x': [4.060998, 3.153225], 'seconds': 99.44639158248901, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_04 1
+eval {'n': 5, 'law': 'jelly', 'x': [3.560998, 3.153225], 'seconds': 101.84037065505981, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_05 1
+eval {'n': 6, 'law': 'jelly', 'x': [3.935998, 3.153225], 'seconds': 81.95158338546753, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_06 1
+eval {'n': 7, 'law': 'jelly', 'x': [3.685998, 3.153225], 'seconds': 100.29699873924255, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_07 1
+eval {'n': 8, 'law': 'jelly', 'x': [3.873498, 3.153225], 'seconds': 103.5804374217987, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_08 1
+eval {'n': 9, 'law': 'jelly', 'x': [3.748498, 3.153225], 'seconds': 103.44559955596924, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_09 1
+eval {'n': 10, 'law': 'jelly', 'x': [3.842248, 3.153225], 'seconds': 91.58275508880615, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval {'n': 11, 'law': 'jelly', 'x': [3.779748, 3.153225], 'seconds': 381.37701320648193, 'iou': 0.6929202641313431, 'iou_last': 0.4897700184178375, 'rgb_mae_union': 60.4667384714465, 'loss': 0.5442042004625647}
+done 231 dino_c {'0': 0.884, '4': 0.884, '12': 0.874}

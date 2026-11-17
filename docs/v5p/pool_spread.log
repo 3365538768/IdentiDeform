@@ -1,0 +1,9 @@
+00:40:34 start v5b2k_C_seed17 gpu 0
+00:40:35 start v5b2k_C_seed43 gpu 1
+00:40:36 start v5b2k_D_seed17 gpu 2
+00:40:37 start v5b2k_D_seed43 gpu 3
+01:07:54 exit v5b2k_D_seed43 0 gpu 3
+01:14:24 exit v5b2k_D_seed17 0 gpu 2
+01:15:39 exit v5b2k_C_seed43 0 gpu 1
+01:18:24 exit v5b2k_C_seed17 0 gpu 0
+all done

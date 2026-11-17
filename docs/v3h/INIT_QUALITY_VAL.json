@@ -1,0 +1,59 @@
+{
+ "full_val": {
+  "n": 283,
+  "vjepa_C_seed29": {
+   "identifiable_mae": 0.40624319477691706,
+   "law_accuracy": 0.6325088339222615
+  },
+  "vjepa_BCD9_ens": {
+   "identifiable_mae": 0.3507024887738301,
+   "law_accuracy": 0.6996466431095406
+  },
+  "dinov3_C_3ens": {
+   "identifiable_mae": 0.40589833751451926,
+   "law_accuracy": 0.6749116607773852
+  },
+  "dinov3_C_seed29": {
+   "identifiable_mae": 0.42580285688211483,
+   "law_accuracy": 0.6360424028268551
+  }
+ },
+ "c1_60": {
+  "n": 60,
+  "vjepa_C_seed29": {
+   "identifiable_mae": 0.3973074474785363,
+   "law_accuracy": 0.6
+  },
+  "vjepa_BCD9_ens": {
+   "identifiable_mae": 0.3439751576583161,
+   "law_accuracy": 0.7333333333333333
+  },
+  "dinov3_C_3ens": {
+   "identifiable_mae": 0.4012454730643871,
+   "law_accuracy": 0.7166666666666667
+  },
+  "dinov3_C_seed29": {
+   "identifiable_mae": 0.4058298657871593,
+   "law_accuracy": 0.6333333333333333
+  }
+ },
+ "v3h_30": {
+  "n": 30,
+  "vjepa_C_seed29": {
+   "identifiable_mae": 0.30619298153033014,
+   "law_accuracy": 0.5666666666666667
+  },
+  "vjepa_BCD9_ens": {
+   "identifiable_mae": 0.26210808623161735,
+   "law_accuracy": 0.6666666666666666
+  },
+  "dinov3_C_3ens": {
+   "identifiable_mae": 0.29397038084344884,
+   "law_accuracy": 0.7666666666666667
+  },
+  "dinov3_C_seed29": {
+   "identifiable_mae": 0.32074577654808917,
+   "law_accuracy": 0.6666666666666666
+  }
+ }
+}

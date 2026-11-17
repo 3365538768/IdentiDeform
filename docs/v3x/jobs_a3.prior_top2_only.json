@@ -1,0 +1,122 @@
+[
+ {
+  "id": "v3x_prior_top2_000114",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 114 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000253",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 253 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000155",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 155 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000230",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 230 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000154",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 154 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000259",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 259 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000130",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 130 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000089",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 89 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000222",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 222 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000172",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 172 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000167",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 167 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000135",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 135 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000210",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 210 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000271",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 271 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000021",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 21 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000166",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 166 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000286",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 286 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000180",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 180 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000284",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 284 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000139",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 139 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000272",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 272 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000242",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 242 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000123",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 123 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000137",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 137 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000187",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 187 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000226",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 226 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000276",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 276 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000104",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 104 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000239",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 239 --arm prior_top2 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top2_000054",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test_a3 --index 54 --arm prior_top2 --budget 24 --replay-budgets 24"
+ }
+]

@@ -1,0 +1,40 @@
+{
+  "phase": "Damping-convergence",
+  "gpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "max_per_gpu": 1,
+  "jobs": [
+    {
+      "id": "physical_time_drop_25us",
+      "kind": "cmd",
+      "group": "time-normalized-damping",
+      "mem_mib": 6000,
+      "retries": 0,
+      "cmd": "cd scripts && PYTHONPATH=$PWD/../.venv/lib/python3.12/site-packages ../.engine-envs/warp/bin/python r2b_mpm_sweep.py --material metal --sweep E --decades 7 7 --actions drop --substep-dt 0.000025 --damping-mode physical_time --output docs/damping_convergence/drop_25us.json"
+    },
+    {
+      "id": "physical_time_drop_12us",
+      "kind": "cmd",
+      "group": "time-normalized-damping",
+      "mem_mib": 6000,
+      "retries": 0,
+      "cmd": "cd scripts && PYTHONPATH=$PWD/../.venv/lib/python3.12/site-packages ../.engine-envs/warp/bin/python r2b_mpm_sweep.py --material metal --sweep E --decades 7 7 --actions drop --substep-dt 0.0000125 --damping-mode physical_time --output docs/damping_convergence/drop_12us.json"
+    },
+    {
+      "id": "physical_time_drop_6us",
+      "kind": "cmd",
+      "group": "time-normalized-damping",
+      "mem_mib": 6000,
+      "retries": 0,
+      "cmd": "cd scripts && PYTHONPATH=$PWD/../.venv/lib/python3.12/site-packages ../.engine-envs/warp/bin/python r2b_mpm_sweep.py --material metal --sweep E --decades 7 7 --actions drop --substep-dt 0.00000625 --damping-mode physical_time --output docs/damping_convergence/drop_6us.json"
+    }
+  ]
+}

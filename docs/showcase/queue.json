@@ -1,0 +1,17 @@
+{
+  "phase": "Showcase",
+  "gpus": [
+    3
+  ],
+  "max_per_gpu": 2,
+  "jobs": [
+    {
+      "id": "showcase_video_export",
+      "kind": "cmd",
+      "group": "rebuttal-media",
+      "mem_mib": 0,
+      "retries": 0,
+      "cmd": ".venv/bin/python -u scripts/build_showcase.py"
+    }
+  ]
+}

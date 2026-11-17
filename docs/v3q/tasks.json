@@ -1,0 +1,3227 @@
+{
+ "note": "priority order = list order; see PROTOCOL schedule",
+ "tasks": [
+  {
+   "id": "v3q_val_gtobs_000002",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 2 --arm gt_observed",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gtobs_000005",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 5 --arm gt_observed",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gtobs_000027",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 27 --arm gt_observed",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gtobs_000031",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 31 --arm gt_observed",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gtobs_000053",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 53 --arm gt_observed",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gtobs_000060",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 60 --arm gt_observed",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_gtobs_000005",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 5 --arm gt_observed",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_gtobs_000009",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 9 --arm gt_observed",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_gtobs_000025",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 25 --arm gt_observed",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_gtobs_000055",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 55 --arm gt_observed",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_gtobs_000066",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 66 --arm gt_observed",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_gtobs_000141",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 141 --arm gt_observed",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000002",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 2 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000005",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 5 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000021",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 21 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000027",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 27 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000029",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 29 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000031",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 31 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000037",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 37 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000040",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 40 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000053",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 53 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000060",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 60 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000064",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 64 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000066",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 66 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000068",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 68 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000071",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 71 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000080",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 80 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000088",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 88 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000089",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 89 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000093",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 93 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000112",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 112 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000113",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 113 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000116",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 116 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000119",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 119 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000121",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 121 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000133",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 133 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000134",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 134 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000135",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 135 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000141",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 141 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000145",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 145 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000151",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 151 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000164",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 164 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000169",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 169 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000176",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 176 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000180",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 180 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000182",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 182 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000183",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 183 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000184",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 184 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000186",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 186 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000195",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 195 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000198",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 198 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000205",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 205 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000207",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 207 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000210",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 210 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000214",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 214 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000226",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 226 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000228",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 228 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000230",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 230 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000231",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 231 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000240",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 240 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000244",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 244 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000245",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 245 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000250",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 250 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000252",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 252 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000253",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 253 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000254",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 254 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000258",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 258 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000261",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 261 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000265",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 265 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000271",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 271 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t124_000275",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 275 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t124_000278",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 278 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t124_000005",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 5 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t124_000009",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 9 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t124_000025",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 25 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t124_000026",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 26 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t124_000029",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 29 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t124_000055",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 55 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t124_000066",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 66 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t124_000074",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 74 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t124_000093",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 93 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t124_000096",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 96 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t124_000116",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 116 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t124_000127",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 127 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t124_000128",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 128 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t124_000136",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 136 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t124_000140",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 140 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t124_000141",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 141 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t124_000142",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 142 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t124_000160",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 160 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t124_000179",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 179 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t124_000184",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 184 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t124_000195",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 195 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t124_000198",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 198 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t124_000203",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 203 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t124_000216",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 216 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t124_000219",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 219 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t124_000228",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 228 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t124_000261",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 261 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t124_000265",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 265 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t124_000269",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 269 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t124_000283",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 283 --arm prior_top1 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000002",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 2 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000005",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 5 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000021",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 21 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000027",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 27 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000029",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 29 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000031",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 31 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000037",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 37 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000040",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 40 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000053",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 53 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000060",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 60 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000064",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 64 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000066",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 66 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000068",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 68 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000071",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 71 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000080",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 80 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000088",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 88 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000089",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 89 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000093",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 93 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000112",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 112 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000113",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 113 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000116",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 116 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000119",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 119 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000121",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 121 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000133",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 133 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000134",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 134 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000135",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 135 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000141",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 141 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000145",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 145 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000151",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 151 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000164",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 164 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000169",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 169 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000176",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 176 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000180",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 180 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000182",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 182 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000183",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 183 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000184",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 184 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000186",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 186 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000195",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 195 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000198",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 198 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000205",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 205 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000207",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 207 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000210",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 210 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000214",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 214 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000226",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 226 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000228",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 228 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000230",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 230 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000231",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 231 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000240",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 240 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000244",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 244 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000245",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 245 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000250",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 250 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000252",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 252 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000253",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 253 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000254",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 254 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000258",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 258 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000261",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 261 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000265",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 265 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000271",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 271 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_t224_000275",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 275 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_t224_000278",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 278 --arm prior_top2 --budget 24",
+   "phase": "P2",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000002",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 2 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000005",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 5 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000021",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 21 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000027",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 27 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000029",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 29 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000031",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 31 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000037",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 37 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000040",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 40 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000053",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 53 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000060",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 60 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000064",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 64 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000066",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 66 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000068",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 68 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000071",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 71 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000080",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 80 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000088",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 88 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000089",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 89 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000093",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 93 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000112",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 112 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000113",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 113 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000116",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 116 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000119",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 119 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000121",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 121 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000133",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 133 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000134",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 134 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000135",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 135 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000141",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 141 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000145",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 145 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000151",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 151 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000164",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 164 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000169",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 169 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000176",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 176 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000180",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 180 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000182",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 182 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000183",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 183 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000184",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 184 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000186",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 186 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000195",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 195 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000198",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 198 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000205",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 205 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000207",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 207 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000210",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 210 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000214",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 214 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000226",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 226 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000228",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 228 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000230",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 230 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000231",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 231 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000240",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 240 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000244",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 244 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000245",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 245 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000250",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 250 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000252",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 252 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000253",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 253 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000254",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 254 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000258",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 258 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000261",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 261 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000265",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 265 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000271",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 271 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_gt24_000275",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 275 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_gt24_000278",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 278 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000002",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 2 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000005",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 5 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000021",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 21 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000027",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 27 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000029",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 29 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000031",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 31 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000037",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 37 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000040",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 40 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000053",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 53 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000060",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 60 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000064",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 64 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000066",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 66 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000068",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 68 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000071",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 71 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000080",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 80 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000088",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 88 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000089",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 89 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000093",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 93 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000112",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 112 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000113",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 113 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000116",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 116 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000119",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 119 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000121",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 121 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000133",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 133 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000134",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 134 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000135",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 135 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000141",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 141 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000145",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 145 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000151",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 151 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000164",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 164 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000169",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 169 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000176",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 176 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000180",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 180 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000182",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 182 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000183",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 183 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000184",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 184 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000186",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 186 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000195",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 195 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000198",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 198 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000205",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 205 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000207",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 207 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000210",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 210 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000214",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 214 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000226",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 226 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000228",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 228 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000230",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 230 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000231",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 231 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000240",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 240 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000244",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 244 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000245",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 245 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000250",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 250 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000252",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 252 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000253",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 253 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000254",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 254 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000258",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 258 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000261",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 261 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000265",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 265 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000271",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 271 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_12_000275",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 275 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_12_000278",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 278 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_gt24_000005",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 5 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_gt24_000009",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 9 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_gt24_000025",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 25 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_gt24_000026",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 26 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_gt24_000029",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 29 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_gt24_000055",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 55 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_gt24_000066",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 66 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_gt24_000074",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 74 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_gt24_000093",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 93 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_gt24_000096",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 96 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_gt24_000116",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 116 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_gt24_000127",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 127 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_gt24_000128",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 128 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_gt24_000136",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 136 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_gt24_000140",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 140 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_gt24_000141",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 141 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_gt24_000142",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 142 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_gt24_000160",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 160 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_gt24_000179",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 179 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_gt24_000184",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 184 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_gt24_000195",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 195 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_gt24_000198",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 198 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_gt24_000203",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 203 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_gt24_000216",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 216 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_gt24_000219",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 219 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_gt24_000228",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 228 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_gt24_000261",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 261 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_gt24_000265",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 265 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_gt24_000269",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 269 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_gt24_000283",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 283 --arm lawmean_gt --budget 24",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_12_000005",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 5 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_12_000009",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 9 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_12_000025",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 25 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_12_000026",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 26 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_12_000029",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 29 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_12_000055",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 55 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_12_000066",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 66 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_12_000074",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 74 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_12_000093",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 93 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_12_000096",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 96 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_12_000116",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 116 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_12_000127",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 127 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_12_000128",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 128 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_12_000136",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 136 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_12_000140",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 140 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_12_000141",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 141 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_12_000142",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 142 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_12_000160",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 160 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_12_000179",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 179 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_12_000184",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 184 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_12_000195",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 195 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_12_000198",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 198 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_12_000203",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 203 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_12_000216",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 216 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_12_000219",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 219 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_12_000228",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 228 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_12_000261",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 261 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_12_000265",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 265 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_12_000269",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 269 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_12_000283",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 283 --arm lawmean_best3 --budget 12",
+   "phase": "P1",
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000002",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 2 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000002"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000005",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 5 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000005"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000021",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 21 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000021"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000027",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 27 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000027"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000029",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 29 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000029"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000031",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 31 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000031"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000037",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 37 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000037"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000040",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 40 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000040"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000053",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 53 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000053"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000060",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 60 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000060"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000064",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 64 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000064"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000066",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 66 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000066"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000068",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 68 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000068"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000071",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 71 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000071"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000080",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 80 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000080"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000088",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 88 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000088"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000089",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 89 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000089"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000093",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 93 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000093"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000112",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 112 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000112"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000113",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 113 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000113"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000116",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 116 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000116"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000119",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 119 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000119"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000121",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 121 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000121"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000133",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 133 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000133"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000134",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 134 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000134"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000135",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 135 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000135"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000141",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 141 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000141"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000145",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 145 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000145"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000151",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 151 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000151"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000164",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 164 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000164"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000169",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 169 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000169"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000176",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 176 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000176"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000180",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 180 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000180"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000182",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 182 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000182"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000183",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 183 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000183"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000184",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 184 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000184"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000186",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 186 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000186"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000195",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 195 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000195"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000198",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 198 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000198"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000205",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 205 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000205"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000207",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 207 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000207"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000210",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 210 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000210"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000214",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 214 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000214"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000226",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 226 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000226"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000228",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 228 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000228"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000230",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 230 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000230"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000231",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 231 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000231"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000240",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 240 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000240"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000244",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 244 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000244"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000245",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 245 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000245"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000250",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 250 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000250"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000252",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 252 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000252"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000253",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 253 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000253"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000254",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 254 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000254"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000258",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 258 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000258"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000261",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 261 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000261"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000265",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 265 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000265"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000271",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 271 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000271"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_val_b3_24_000275",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 275 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000275"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_val_b3_24_000278",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split val --index 278 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_val_b3_12_000278"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_24_000005",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 5 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000005"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_24_000009",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 9 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000009"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_24_000025",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 25 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000025"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_24_000026",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 26 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000026"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_24_000029",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 29 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000029"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_24_000055",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 55 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000055"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_24_000066",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 66 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000066"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_24_000074",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 74 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000074"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_24_000093",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 93 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000093"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_24_000096",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 96 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000096"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_24_000116",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 116 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000116"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_24_000127",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 127 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000127"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_24_000128",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 128 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000128"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_24_000136",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 136 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000136"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_24_000140",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 140 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000140"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_24_000141",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 141 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000141"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_24_000142",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 142 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000142"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_24_000160",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 160 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000160"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_24_000179",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 179 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000179"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_24_000184",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 184 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000184"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_24_000195",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 195 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000195"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_24_000198",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 198 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000198"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_24_000203",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 203 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000203"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_24_000216",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 216 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000216"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_24_000219",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 219 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000219"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_24_000228",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 228 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000228"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_24_000261",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 261 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000261"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_24_000265",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 265 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000265"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_b3_24_000269",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 269 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000269"
+   ],
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_b3_24_000283",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 283 --arm lawmean_best3 --budget 24",
+   "phase": "P3",
+   "after": [
+    "v3q_test_b3_12_000283"
+   ],
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t224_000005",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 5 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t224_000009",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 9 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t224_000025",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 25 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t224_000026",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 26 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t224_000029",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 29 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t224_000055",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 55 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t224_000066",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 66 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t224_000074",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 74 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t224_000093",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 93 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t224_000096",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 96 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t224_000116",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 116 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t224_000127",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 127 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t224_000128",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 128 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t224_000136",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 136 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t224_000140",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 140 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t224_000141",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 141 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t224_000142",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 142 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t224_000160",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 160 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t224_000179",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 179 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t224_000184",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 184 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t224_000195",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 195 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t224_000198",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 198 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t224_000203",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 203 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t224_000216",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 216 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t224_000219",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 219 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t224_000228",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 228 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t224_000261",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 261 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t224_000265",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 265 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a2"
+  },
+  {
+   "id": "v3q_test_t224_000269",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 269 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a4"
+  },
+  {
+   "id": "v3q_test_t224_000283",
+   "cmd": ".venv/bin/python scripts/v3q/c1_refine.py --split test --index 283 --arm prior_top2 --budget 24",
+   "phase": "P4",
+   "hold": false,
+   "host": "a2"
+  }
+ ]
+}

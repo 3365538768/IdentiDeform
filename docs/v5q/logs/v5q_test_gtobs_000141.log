@@ -1,0 +1,3 @@
+
+== 2026-11-16 01:22:59 host a2 gpu 2 attempt 1
+gt_observed {'sample_id': 'v5bmain/test/000141', 'object': 'a_ceramic_plate_013020', 'observed_action': 'tap30hold', 'gt_law': 'jelly', 'seconds': 511.2220046520233, 'iou': 1.0, 'iou_last': 1.0, 'rgb_mae_union': 0.00034183166964647354, 'loss': 1.3405163515547982e-06, 'complete': True}

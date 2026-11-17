@@ -1,0 +1,46 @@
+2026-11-16T07:18:05+00:00 di-20261103141208-krk4l START run3 --objs dog
+Warp 1.11.1 initialized:
+   CUDA Toolkit 12.9, Driver 12.6
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA A800-SXM4-80GB" (79 GiB, sm_80, mempool enabled)
+   Kernel cache:
+     /root/.cache/warp/1.11.1
+Warp DeprecationWarning: The namespace `warp.torch` will soon be removed from the public API. It can still be accessed from `warp._src.torch` but might be changed or removed without notice.
+Warp DeprecationWarning: The symbol `warp.types.float32` will soon be removed from the public API. Use `warp.float32` instead.
+Module warp_utils 5598e36 load on device 'cuda:0' took 0.74 ms  (cached)
+Particles initialized from torch data.
+Total particles:  12285
+Module mpm_utils 8c60f93 load on device 'cuda:0' took 1.87 ms  (cached)
+Module mpm_solver_warp 3dca6b4 load on device 'cuda:0' took 0.70 ms  (cached)
+  sim dog lg4.3897_nu0.273_r1.0000 13.9s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg3.8897_nu0.273_r1.0000 12.9s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg5.0147_nu0.273_r1.0000 12.7s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg5.2022_nu0.273_r1.0000 12.4s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg5.0772_nu0.273_r1.0000 10.1s
+dog fold C0733 loo rpic 1.0 refined lg 5.1397 sims 11
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg5.3272_nu0.273_r1.0000 12.1s
+dog fold C0787 loo rpic 1.0 refined lg 5.3272 sims 11
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg5.5772_nu0.273_r1.0000 15.2s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg5.4522_nu0.273_r1.0000 11.5s
+dog fold C0801 loo rpic 1.0 refined lg 5.4522 sims 11
+2026-11-16T07:19:58+00:00 END rc=0
+2026-11-16T07:19:58+00:00 di-20261103141208-krk4l START eval3 --objs dog
+dog C0733 prior_refine_damp_loo 5.1397 1.0 HO {'iou': 0.519, 'psnr': 9.493, 'ssim': 0.207} FU {'iou': 0.241, 'psnr': 7.921, 'ssim': 0.1}
+dog C0787 prior_refine_damp_loo 5.3272 1.0 HO {'iou': 0.45, 'psnr': 9.896, 'ssim': 0.187} FU {'iou': 0.194, 'psnr': 7.519, 'ssim': 0.082}
+dog C0801 prior_refine_damp_loo 5.4522 1.0 HO {'iou': 0.45, 'psnr': 8.488, 'ssim': 0.159} FU {'iou': 0.17, 'psnr': 7.433, 'ssim': 0.065}
+2026-11-16T07:20:20+00:00 END rc=0

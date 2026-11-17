@@ -1,0 +1,22 @@
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/external/pixie/third_party/f3rm/f3rm/features/clip/clip.py:6: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging
+a_bamboo_mat_013020 filled sand 1.69e+06 0.327 584 {'occupied_voxels': 6245, 'directly_seen_fraction': 0.9939150810241699, 'mean_views_per_seen_voxel': 100.50121307373047}
+a_bamboo_mat_013020 shell sand 1.69e+06 0.327 584 {'occupied_voxels': 6245, 'directly_seen_fraction': 0.9939150810241699, 'mean_views_per_seen_voxel': 100.50121307373047}
+a_brass_telescope_013020 filled metal 9.32e+06 0.323 1024 {'occupied_voxels': 4464, 'directly_seen_fraction': 0.899193525314331, 'mean_views_per_seen_voxel': 72.74813079833984}
+a_brass_telescope_013020 shell metal 9.32e+06 0.323 1024 {'occupied_voxels': 4463, 'directly_seen_fraction': 0.8991709351539612, 'mean_views_per_seen_voxel': 72.7587890625}
+a_brick_wall_013020 filled sand 5.8e+05 0.273 675 {'occupied_voxels': 18512, 'directly_seen_fraction': 0.9875216484069824, 'mean_views_per_seen_voxel': 76.3310546875}
+a_brick_wall_013020 shell sand 5.8e+05 0.273 675 {'occupied_voxels': 18512, 'directly_seen_fraction': 0.9875216484069824, 'mean_views_per_seen_voxel': 76.3310546875}
+a_gold_leaf_hamburge_013020 filled sand 1.8e+07 0.310 748 {'occupied_voxels': 40703, 'directly_seen_fraction': 0.5467164516448975, 'mean_views_per_seen_voxel': 41.646881103515625}
+a_gold_leaf_hamburge_013020 shell sand 1.78e+07 0.311 743 {'occupied_voxels': 39721, 'directly_seen_fraction': 0.5520001649856567, 'mean_views_per_seen_voxel': 42.113609313964844}
+a_ice_telescope_013020 filled snow 3.49e+07 0.305 1976 {'occupied_voxels': 16600, 'directly_seen_fraction': 0.925481915473938, 'mean_views_per_seen_voxel': 49.67063522338867}
+a_ice_telescope_013020 shell snow 3.5e+07 0.305 1974 {'occupied_voxels': 16530, 'directly_seen_fraction': 0.9254688024520874, 'mean_views_per_seen_voxel': 49.81488037109375}
+a_leather_boot_013020 filled jelly 6.22e+05 0.399 411 {'occupied_voxels': 35561, 'directly_seen_fraction': 0.7283259630203247, 'mean_views_per_seen_voxel': 49.45803451538086}
+a_leather_boot_013020 shell jelly 6.56e+05 0.400 410 {'occupied_voxels': 35175, 'directly_seen_fraction': 0.7314001321792603, 'mean_views_per_seen_voxel': 49.52528762817383}
+a_marble_bread_013020 filled sand 2.31e+07 0.306 1269 {'occupied_voxels': 31230, 'directly_seen_fraction': 0.6519052386283875, 'mean_views_per_seen_voxel': 50.70587921142578}
+a_marble_bread_013020 shell sand 2.16e+07 0.307 1223 {'occupied_voxels': 30833, 'directly_seen_fraction': 0.6526125073432922, 'mean_views_per_seen_voxel': 51.085330963134766}
+a_plastic_water_bottle_thin_transparent_plastic_isolated_013020 filled metal 1.83e+08 0.314 2273 {'occupied_voxels': 29333, 'directly_seen_fraction': 0.8715780377388, 'mean_views_per_seen_voxel': 44.35778045654297}
+a_plastic_water_bottle_thin_transparent_plastic_isolated_013020 shell metal 9.2e+07 0.316 1972 {'occupied_voxels': 25545, 'directly_seen_fraction': 0.8604815602302551, 'mean_views_per_seen_voxel': 46.37778091430664}
+a_silver_human_skele_013020 filled jelly 6.94e+04 0.254 1812 {'occupied_voxels': 4889, 'directly_seen_fraction': 0.9914093017578125, 'mean_views_per_seen_voxel': 75.75056457519531}
+a_silver_human_skele_013020 shell jelly 6.94e+04 0.254 1813 {'occupied_voxels': 4888, 'directly_seen_fraction': 0.991407573223114, 'mean_views_per_seen_voxel': 75.7585678100586}
+a_stainless_steel_si_013020 filled metal 3.5e+07 0.305 2119 {'occupied_voxels': 14848, 'directly_seen_fraction': 0.873652994632721, 'mean_views_per_seen_voxel': 76.07477569580078}
+a_stainless_steel_si_013020 shell metal 3.5e+07 0.305 2118 {'occupied_voxels': 14826, 'directly_seen_fraction': 0.8734654784202576, 'mean_views_per_seen_voxel': 76.0828628540039}

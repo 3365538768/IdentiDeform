@@ -1,0 +1,624 @@
+{
+ "phase": "v3k",
+ "max_per_gpu": 5,
+ "gpus": [],
+ "jobs": [
+  {
+   "id": "v3k_a_prior_C",
+   "kind": "cmd",
+   "group": "v3k-a-prior",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip C --arm prior"
+  },
+  {
+   "id": "v3k_a_prior_E",
+   "kind": "cmd",
+   "group": "v3k-a-prior",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip E --arm prior"
+  },
+  {
+   "id": "v3k_a_prior_V",
+   "kind": "cmd",
+   "group": "v3k-a-prior",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip V --arm prior"
+  },
+  {
+   "id": "v3k_a_prior_apple",
+   "kind": "cmd",
+   "group": "v3k-a-prior",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip apple --arm prior"
+  },
+  {
+   "id": "v3k_a_prior_banana",
+   "kind": "cmd",
+   "group": "v3k-a-prior",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip banana --arm prior"
+  },
+  {
+   "id": "v3k_a_prior_chess",
+   "kind": "cmd",
+   "group": "v3k-a-prior",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip chess --arm prior"
+  },
+  {
+   "id": "v3k_a_prior_cream",
+   "kind": "cmd",
+   "group": "v3k-a-prior",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip cream --arm prior"
+  },
+  {
+   "id": "v3k_a_prior_cross",
+   "kind": "cmd",
+   "group": "v3k-a-prior",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip cross --arm prior"
+  },
+  {
+   "id": "v3k_a_prior_doraemon",
+   "kind": "cmd",
+   "group": "v3k-a-prior",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip doraemon --arm prior"
+  },
+  {
+   "id": "v3k_a_prior_droplet",
+   "kind": "cmd",
+   "group": "v3k-a-prior",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip droplet --arm prior"
+  },
+  {
+   "id": "v3k_a_prior_duck",
+   "kind": "cmd",
+   "group": "v3k-a-prior",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip duck --arm prior"
+  },
+  {
+   "id": "v3k_a_prior_rope",
+   "kind": "cmd",
+   "group": "v3k-a-prior",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip rope --arm prior"
+  },
+  {
+   "id": "v3k_a_prior_toothpaste",
+   "kind": "cmd",
+   "group": "v3k-a-prior",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip toothpaste --arm prior"
+  },
+  {
+   "id": "v3k_a_prior_torus",
+   "kind": "cmd",
+   "group": "v3k-a-prior",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip torus --arm prior"
+  },
+  {
+   "id": "v3k_a_jellymean_C",
+   "kind": "cmd",
+   "group": "v3k-a-jellymean",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip C --arm jellymean"
+  },
+  {
+   "id": "v3k_a_jellymean_E",
+   "kind": "cmd",
+   "group": "v3k-a-jellymean",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip E --arm jellymean"
+  },
+  {
+   "id": "v3k_a_jellymean_V",
+   "kind": "cmd",
+   "group": "v3k-a-jellymean",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip V --arm jellymean"
+  },
+  {
+   "id": "v3k_a_jellymean_apple",
+   "kind": "cmd",
+   "group": "v3k-a-jellymean",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip apple --arm jellymean"
+  },
+  {
+   "id": "v3k_a_jellymean_banana",
+   "kind": "cmd",
+   "group": "v3k-a-jellymean",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip banana --arm jellymean"
+  },
+  {
+   "id": "v3k_a_jellymean_chess",
+   "kind": "cmd",
+   "group": "v3k-a-jellymean",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip chess --arm jellymean"
+  },
+  {
+   "id": "v3k_a_jellymean_cream",
+   "kind": "cmd",
+   "group": "v3k-a-jellymean",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip cream --arm jellymean"
+  },
+  {
+   "id": "v3k_a_jellymean_cross",
+   "kind": "cmd",
+   "group": "v3k-a-jellymean",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip cross --arm jellymean"
+  },
+  {
+   "id": "v3k_a_jellymean_doraemon",
+   "kind": "cmd",
+   "group": "v3k-a-jellymean",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip doraemon --arm jellymean"
+  },
+  {
+   "id": "v3k_a_jellymean_droplet",
+   "kind": "cmd",
+   "group": "v3k-a-jellymean",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip droplet --arm jellymean"
+  },
+  {
+   "id": "v3k_a_jellymean_duck",
+   "kind": "cmd",
+   "group": "v3k-a-jellymean",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip duck --arm jellymean"
+  },
+  {
+   "id": "v3k_a_jellymean_rope",
+   "kind": "cmd",
+   "group": "v3k-a-jellymean",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip rope --arm jellymean"
+  },
+  {
+   "id": "v3k_a_jellymean_toothpaste",
+   "kind": "cmd",
+   "group": "v3k-a-jellymean",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip toothpaste --arm jellymean"
+  },
+  {
+   "id": "v3k_a_jellymean_torus",
+   "kind": "cmd",
+   "group": "v3k-a-jellymean",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip torus --arm jellymean"
+  },
+  {
+   "id": "v3k_a_diag_C",
+   "kind": "cmd",
+   "group": "v3k-a-diag",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip C --arm diag"
+  },
+  {
+   "id": "v3k_a_diag_E",
+   "kind": "cmd",
+   "group": "v3k-a-diag",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip E --arm diag"
+  },
+  {
+   "id": "v3k_a_diag_V",
+   "kind": "cmd",
+   "group": "v3k-a-diag",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip V --arm diag"
+  },
+  {
+   "id": "v3k_a_diag_apple",
+   "kind": "cmd",
+   "group": "v3k-a-diag",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip apple --arm diag"
+  },
+  {
+   "id": "v3k_a_diag_banana",
+   "kind": "cmd",
+   "group": "v3k-a-diag",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip banana --arm diag"
+  },
+  {
+   "id": "v3k_a_diag_chess",
+   "kind": "cmd",
+   "group": "v3k-a-diag",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip chess --arm diag"
+  },
+  {
+   "id": "v3k_a_diag_cream",
+   "kind": "cmd",
+   "group": "v3k-a-diag",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip cream --arm diag"
+  },
+  {
+   "id": "v3k_a_diag_cross",
+   "kind": "cmd",
+   "group": "v3k-a-diag",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip cross --arm diag"
+  },
+  {
+   "id": "v3k_a_diag_doraemon",
+   "kind": "cmd",
+   "group": "v3k-a-diag",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip doraemon --arm diag"
+  },
+  {
+   "id": "v3k_a_diag_droplet",
+   "kind": "cmd",
+   "group": "v3k-a-diag",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip droplet --arm diag"
+  },
+  {
+   "id": "v3k_a_diag_duck",
+   "kind": "cmd",
+   "group": "v3k-a-diag",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip duck --arm diag"
+  },
+  {
+   "id": "v3k_a_diag_rope",
+   "kind": "cmd",
+   "group": "v3k-a-diag",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip rope --arm diag"
+  },
+  {
+   "id": "v3k_a_diag_toothpaste",
+   "kind": "cmd",
+   "group": "v3k-a-diag",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip toothpaste --arm diag"
+  },
+  {
+   "id": "v3k_a_diag_torus",
+   "kind": "cmd",
+   "group": "v3k-a-diag",
+   "mem_mib": 3000,
+   "retries": 3,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip torus --arm diag"
+  },
+  {
+   "id": "v3k_b_000021",
+   "kind": "cmd",
+   "group": "v3k-b-hull",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 21 --variant hull --asset data/v3k/hull_assets/000021/a_silver_human_skele_013020.ply"
+  },
+  {
+   "id": "v3k_b_000052",
+   "kind": "cmd",
+   "group": "v3k-b-hull",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 52 --variant hull --asset data/v3k/hull_assets/000052/a_marble_bread_013020.ply"
+  },
+  {
+   "id": "v3k_b_000053",
+   "kind": "cmd",
+   "group": "v3k-b-hull",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 53 --variant hull --asset data/v3k/hull_assets/000053/a_silver_human_skele_013020.ply"
+  },
+  {
+   "id": "v3k_b_000071",
+   "kind": "cmd",
+   "group": "v3k-b-hull",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 71 --variant hull --asset data/v3k/hull_assets/000071/a_stainless_steel_si_013020.ply"
+  },
+  {
+   "id": "v3k_b_000073",
+   "kind": "cmd",
+   "group": "v3k-b-hull",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 73 --variant hull --asset data/v3k/hull_assets/000073/a_gold_leaf_hamburge_013020.ply"
+  },
+  {
+   "id": "v3k_b_000096",
+   "kind": "cmd",
+   "group": "v3k-b-hull",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 96 --variant hull --asset data/v3k/hull_assets/000096/a_stainless_steel_si_013020.ply"
+  },
+  {
+   "id": "v3k_b_000113",
+   "kind": "cmd",
+   "group": "v3k-b-hull",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 113 --variant hull --asset data/v3k/hull_assets/000113/a_ice_telescope_013020.ply"
+  },
+  {
+   "id": "v3k_b_000118",
+   "kind": "cmd",
+   "group": "v3k-b-hull",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 118 --variant hull --asset data/v3k/hull_assets/000118/a_bamboo_mat_013020.ply"
+  },
+  {
+   "id": "v3k_b_000119",
+   "kind": "cmd",
+   "group": "v3k-b-hull",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 119 --variant hull --asset data/v3k/hull_assets/000119/a_plastic_water_bottle_thin_transparent_plastic_isolated_013020.ply"
+  },
+  {
+   "id": "v3k_b_000134",
+   "kind": "cmd",
+   "group": "v3k-b-hull",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 134 --variant hull --asset data/v3k/hull_assets/000134/a_marble_bread_013020.ply"
+  },
+  {
+   "id": "v3k_b_000139",
+   "kind": "cmd",
+   "group": "v3k-b-hull",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 139 --variant hull --asset data/v3k/hull_assets/000139/a_ice_telescope_013020.ply"
+  },
+  {
+   "id": "v3k_b_000141",
+   "kind": "cmd",
+   "group": "v3k-b-hull",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 141 --variant hull --asset data/v3k/hull_assets/000141/a_gold_leaf_hamburge_013020.ply"
+  },
+  {
+   "id": "v3k_b_000180",
+   "kind": "cmd",
+   "group": "v3k-b-hull",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 180 --variant hull --asset data/v3k/hull_assets/000180/a_plastic_water_bottle_thin_transparent_plastic_isolated_013020.ply"
+  },
+  {
+   "id": "v3k_b_000181",
+   "kind": "cmd",
+   "group": "v3k-b-hull",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 181 --variant hull --asset data/v3k/hull_assets/000181/a_leather_boot_013020.ply"
+  },
+  {
+   "id": "v3k_b_000182",
+   "kind": "cmd",
+   "group": "v3k-b-hull",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 182 --variant hull --asset data/v3k/hull_assets/000182/a_plastic_water_bottle_thin_transparent_plastic_isolated_013020.ply"
+  },
+  {
+   "id": "v3k_b_000184",
+   "kind": "cmd",
+   "group": "v3k-b-hull",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 184 --variant hull --asset data/v3k/hull_assets/000184/a_stainless_steel_si_013020.ply"
+  },
+  {
+   "id": "v3k_b_000202",
+   "kind": "cmd",
+   "group": "v3k-b-hull",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 202 --variant hull --asset data/v3k/hull_assets/000202/a_leather_boot_013020.ply"
+  },
+  {
+   "id": "v3k_b_000210",
+   "kind": "cmd",
+   "group": "v3k-b-hull",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 210 --variant hull --asset data/v3k/hull_assets/000210/a_silver_human_skele_013020.ply"
+  },
+  {
+   "id": "v3k_b_000212",
+   "kind": "cmd",
+   "group": "v3k-b-hull",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 212 --variant hull --asset data/v3k/hull_assets/000212/a_ice_telescope_013020.ply"
+  },
+  {
+   "id": "v3k_b_000219",
+   "kind": "cmd",
+   "group": "v3k-b-hull",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 219 --variant hull --asset data/v3k/hull_assets/000219/a_brass_telescope_013020.ply"
+  },
+  {
+   "id": "v3k_c_000021",
+   "kind": "cmd",
+   "group": "v3k-c-mismatch",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 21 --variant mismatch"
+  },
+  {
+   "id": "v3k_c_000052",
+   "kind": "cmd",
+   "group": "v3k-c-mismatch",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 52 --variant mismatch"
+  },
+  {
+   "id": "v3k_c_000053",
+   "kind": "cmd",
+   "group": "v3k-c-mismatch",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 53 --variant mismatch"
+  },
+  {
+   "id": "v3k_c_000071",
+   "kind": "cmd",
+   "group": "v3k-c-mismatch",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 71 --variant mismatch"
+  },
+  {
+   "id": "v3k_c_000073",
+   "kind": "cmd",
+   "group": "v3k-c-mismatch",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 73 --variant mismatch"
+  },
+  {
+   "id": "v3k_c_000096",
+   "kind": "cmd",
+   "group": "v3k-c-mismatch",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 96 --variant mismatch"
+  },
+  {
+   "id": "v3k_c_000113",
+   "kind": "cmd",
+   "group": "v3k-c-mismatch",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 113 --variant mismatch"
+  },
+  {
+   "id": "v3k_c_000118",
+   "kind": "cmd",
+   "group": "v3k-c-mismatch",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 118 --variant mismatch"
+  },
+  {
+   "id": "v3k_c_000119",
+   "kind": "cmd",
+   "group": "v3k-c-mismatch",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 119 --variant mismatch"
+  },
+  {
+   "id": "v3k_c_000134",
+   "kind": "cmd",
+   "group": "v3k-c-mismatch",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 134 --variant mismatch"
+  },
+  {
+   "id": "v3k_c_000139",
+   "kind": "cmd",
+   "group": "v3k-c-mismatch",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 139 --variant mismatch"
+  },
+  {
+   "id": "v3k_c_000141",
+   "kind": "cmd",
+   "group": "v3k-c-mismatch",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 141 --variant mismatch"
+  },
+  {
+   "id": "v3k_c_000180",
+   "kind": "cmd",
+   "group": "v3k-c-mismatch",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 180 --variant mismatch"
+  },
+  {
+   "id": "v3k_c_000181",
+   "kind": "cmd",
+   "group": "v3k-c-mismatch",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 181 --variant mismatch"
+  },
+  {
+   "id": "v3k_c_000182",
+   "kind": "cmd",
+   "group": "v3k-c-mismatch",
+   "mem_mib": 6000,
+   "retries": 4,
+   "cmd": ".venv/bin/python scripts/v3k/bc_refine.py --index 182 --variant mismatch"
+  }
+ ],
+ "paused_note": "paused 2026-11-15 ~04:10 UTC by user request (GPUs go to the V3 data regeneration)"
+}

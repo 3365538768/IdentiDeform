@@ -1,0 +1,169 @@
+<title>IdentiDeform V3 Contact Review</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* layout: one reading column of notes, then per-action grids of three-row comparison clips */
+:root { --bg:#f6f7f9; --panel:#ffffff; --fg:#1b2129; --muted:#5d6876; --line:#dde2e8; --accent:#2f6fdf; --ok:#1f8a5b; --bad:#c73b3b;
+  --f-body:"IBM Plex Sans",system-ui,sans-serif; --f-mono:"IBM Plex Mono",ui-monospace,monospace; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#11151a; --panel:#181d24; --fg:#e4e8ee; --muted:#9aa5b3; --line:#2a313b; --accent:#7aa7ff; --ok:#4fc58f; --bad:#ff7b7b; color-scheme:dark; } }
+:root[data-theme="dark"] { --bg:#11151a; --panel:#181d24; --fg:#e4e8ee; --muted:#9aa5b3; --line:#2a313b; --accent:#7aa7ff; --ok:#4fc58f; --bad:#ff7b7b; color-scheme:dark; }
+body { background:var(--bg); color:var(--fg); font-family:var(--f-body); font-size:15px; line-height:1.55; padding:24px 16px 48px; }
+.wrap { max-width:1180px; margin:0 auto; display:flex; flex-direction:column; gap:28px; }
+h1 { font-size:26px; margin:0; text-wrap:balance; }
+h2 { font-size:19px; margin:0 0 4px; text-wrap:balance; }
+.notes { max-width:70ch; display:flex; flex-direction:column; gap:10px; }
+.notes p, .notes ul { margin:0; } .notes li { margin:2px 0; }
+.ask { background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--accent); padding:12px 14px; border-radius:6px; }
+.summ { margin:0 0 12px; color:var(--muted); font-size:13px; font-family:var(--f-mono); }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr)); gap:16px; }
+.card { margin:0; background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:10px; display:flex; flex-direction:column; gap:8px; min-width:0; }
+figcaption { display:flex; flex-wrap:wrap; gap:6px 10px; align-items:baseline; font-size:13px; }
+.obj { color:var(--muted); } .num { font-family:var(--f-mono); font-size:12px; color:var(--muted); font-variant-numeric:tabular-nums; }
+.law { font-family:var(--f-mono); font-size:11px; text-transform:uppercase; letter-spacing:.06em; padding:1px 6px; border-radius:3px; border:1px solid var(--line); }
+video { width:100%; max-width:100%; background:#000; border-radius:4px; display:block; }
+.frag { display:flex; flex-wrap:wrap; gap:6px 14px; font-size:12px; align-items:center; font-variant-numeric:tabular-nums; }
+.frag > span:first-child { color:var(--muted); text-transform:uppercase; letter-spacing:.06em; font-size:11px; }
+.cell { display:inline-flex; gap:5px; align-items:center; } .cell i { font-style:normal; color:var(--muted); }
+.chip { font-family:var(--f-mono); padding:0 5px; border-radius:3px; }
+.chip.ok { color:var(--ok); border:1px solid var(--ok); } .chip.bad { color:var(--bad); border:1px solid var(--bad); }
+.na { color:var(--muted); font-style:italic; }
+code { font-family:var(--f-mono); font-size:13px; }
+</style>
+<div class="wrap"><header class="notes">
+<h1>IdentiDeform V3 contact review (round 2)</h1>
+<p>Each clip stacks the variants as rows (three camera views each); the row name is printed in the video. Same objects and random draws in every row. <a href="objects.html">Object screening page</a> · <a href="index_round1.html">round 1</a></p>
+<ul>
+<li><b>Gravity</b>: 0 for every action except drop. Drop keeps g = 9.8 with the floor 0.12 below the object (was 0.25).</li>
+<li><b>Contact only</b>: press plate starts above the object; bend uses a fixed support plus two pushers; shear and stretch use two parallel-jaw grippers that close on the object's two ends (0–0.5 s), hold (to 0.75 s), then move (shear: opposite directions across the long axis; stretch: apart along it) and open at 3 s. Gripper size and closing depth follow each end's local cross-section. The floor touches each object's own lowest point.</li>
+<li><b>Press variants</b> (press and press–hold–release): sticky floor with g = 0; slip floor with gravity switched on when the plate lifts; slip floor with constant g = 2. The final row uses the sticky floor.</li>
+<li><b>V3 ranges</b> (final row): log<sub>10</sub>E/ρ jelly 3.5–6, plasticine 3.5–5.5, metal 4.5–6; log<sub>10</sub>σ<sub>y</sub>/ρ plasticine 1.5–4.5, metal 2.5–4.5. The caption shows old → new value for the same random draw.</li>
+<li>Stray particles outside the grid are moved inside before simulating; this removed the crashes on metal samples (0 failures in the final row).</li>
+</ul>
+<div class="ask"><b>Open points</b>: (1) which press variant? With the sticky floor a few long or flat objects (telescope #15, tray #18) still lift off after release because they touch the floor at only a few points; gravity after release keeps them down. (2) Gripper motions are modest (shear 25% of depth per end, stretch 15% of length per end); larger is possible. (3) Force-controlled actions are planned as a separate subset after the main run.</div>
+</header>
+<section><h2>Press</h2><p class="summ">Rows, top to bottom: V2 (old) · sticky floor, g=0 · g on after release · small g=2 · V3 ranges (final setup)</p><div class="grid"><figure class="card"><figcaption><b>#0</b> <span class="law">jelly</span> <span class="obj">gold leaf hamburge</span>
+<span class="num">log<sub>10</sub>E/ρ 2.93 → 4.28</span></figcaption>
+<video src="v2/val_000000.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip bad">10.7%</span></span><span class="cell"><i>sticky</i><span class="chip bad">7.2%</span></span><span class="cell"><i>g after</i><span class="chip bad">7.2%</span></span><span class="cell"><i>g=2</i><span class="chip bad">14.6%</span></span><span class="cell"><i>final</i><span class="chip bad">6.9%</span></span></div></figure><figure class="card"><figcaption><b>#1</b> <span class="law">metal</span> <span class="obj">plastic water bottle thin tran</span>
+<span class="num">log<sub>10</sub>E/ρ 5.27 → 5.45</span></figcaption>
+<video src="v2/val_000001.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip bad">3.1%</span></span><span class="cell"><i>sticky</i><span class="chip ok">0.0%</span></span><span class="cell"><i>g after</i><span class="chip ok">0.0%</span></span><span class="cell"><i>g=2</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure><figure class="card"><figcaption><b>#2</b> <span class="law">plasticine</span> <span class="obj">plastic water bottle thin tran</span>
+<span class="num">log<sub>10</sub>E/ρ 2.02 → 3.51</span></figcaption>
+<video src="v2/val_000002.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip bad">40.0%</span></span><span class="cell"><i>sticky</i><span class="chip ok">0.0%</span></span><span class="cell"><i>g after</i><span class="chip ok">0.0%</span></span><span class="cell"><i>g=2</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure><figure class="card"><figcaption><b>#18</b> <span class="law">jelly</span> <span class="obj">stainless steel si</span>
+<span class="num">log<sub>10</sub>E/ρ 3.08 → 4.40</span></figcaption>
+<video src="v2/val_000018.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip ok">0.0%</span></span><span class="cell"><i>sticky</i><span class="chip ok">0.0%</span></span><span class="cell"><i>g after</i><span class="chip ok">0.0%</span></span><span class="cell"><i>g=2</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure><figure class="card"><figcaption><b>#19</b> <span class="law">metal</span> <span class="obj">stainless steel si</span>
+<span class="num">log<sub>10</sub>E/ρ 4.23 → 4.67</span></figcaption>
+<video src="v2/val_000019.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip ok">0.0%</span></span><span class="cell"><i>sticky</i><span class="chip ok">0.0%</span></span><span class="cell"><i>g after</i><span class="chip ok">0.0%</span></span><span class="cell"><i>g=2</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure><figure class="card"><figcaption><b>#20</b> <span class="law">plasticine</span> <span class="obj">plastic water bottle thin tran</span>
+<span class="num">log<sub>10</sub>E/ρ 4.14 → 5.21</span></figcaption>
+<video src="v2/val_000020.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip bad">8.3%</span></span><span class="cell"><i>sticky</i><span class="chip ok">0.0%</span></span><span class="cell"><i>g after</i><span class="chip ok">0.0%</span></span><span class="cell"><i>g=2</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure></div></section><section><h2>Press–hold–release</h2><p class="summ">Rows, top to bottom: V2 (old) · sticky floor, g=0 · g on after release · small g=2 · V3 ranges (final setup)</p><div class="grid"><figure class="card"><figcaption><b>#15</b> <span class="law">jelly</span> <span class="obj">brass telescope</span>
+<span class="num">log<sub>10</sub>E/ρ 4.39 → 5.49</span></figcaption>
+<video src="v2/val_000015.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip ok">0.0%</span></span><span class="cell"><i>sticky</i><span class="chip ok">0.0%</span></span><span class="cell"><i>g after</i><span class="chip ok">0.0%</span></span><span class="cell"><i>g=2</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure><figure class="card"><figcaption><b>#16</b> <span class="law">metal</span> <span class="obj">silver human skele</span>
+<span class="num">log<sub>10</sub>E/ρ 5.66 → 5.75</span></figcaption>
+<video src="v2/val_000016.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip bad">17.0%</span></span><span class="cell"><i>sticky</i><span class="chip ok">0.0%</span></span><span class="cell"><i>g after</i><span class="chip ok">0.0%</span></span><span class="cell"><i>g=2</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure><figure class="card"><figcaption><b>#17</b> <span class="law">plasticine</span> <span class="obj">gold leaf hamburge</span>
+<span class="num">log<sub>10</sub>E/ρ 4.39 → 5.41</span></figcaption>
+<video src="v2/val_000017.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip bad">13.7%</span></span><span class="cell"><i>sticky</i><span class="chip bad">9.8%</span></span><span class="cell"><i>g after</i><span class="chip bad">9.8%</span></span><span class="cell"><i>g=2</i><span class="chip bad">10.3%</span></span><span class="cell"><i>final</i><span class="chip bad">13.0%</span></span></div></figure><figure class="card"><figcaption><b>#33</b> <span class="law">jelly</span> <span class="obj">brass telescope</span>
+<span class="num">log<sub>10</sub>E/ρ 3.06 → 4.38</span></figcaption>
+<video src="v2/val_000033.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip ok">0.0%</span></span><span class="cell"><i>sticky</i><span class="chip ok">0.0%</span></span><span class="cell"><i>g after</i><span class="chip ok">0.0%</span></span><span class="cell"><i>g=2</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure><figure class="card"><figcaption><b>#34</b> <span class="law">metal</span> <span class="obj">stainless steel si</span>
+<span class="num">log<sub>10</sub>E/ρ 5.55 → 5.66</span></figcaption>
+<video src="v2/val_000034.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip ok">0.0%</span></span><span class="cell"><i>sticky</i><span class="chip ok">0.0%</span></span><span class="cell"><i>g after</i><span class="chip ok">0.0%</span></span><span class="cell"><i>g=2</i><span class="chip ok">0.1%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure><figure class="card"><figcaption><b>#35</b> <span class="law">plasticine</span> <span class="obj">silver human skele</span>
+<span class="num">log<sub>10</sub>E/ρ 2.17 → 3.64</span></figcaption>
+<video src="v2/val_000035.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip bad">53.3%</span></span><span class="cell"><i>sticky</i><span class="chip ok">0.0%</span></span><span class="cell"><i>g after</i><span class="chip ok">0.0%</span></span><span class="cell"><i>g=2</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure></div></section><section><h2>Shear (two grippers)</h2><p class="summ">Rows, top to bottom: V2 (old) · gripper, V2 ranges · V3 ranges (final setup)</p><div class="grid"><figure class="card"><figcaption><b>#6</b> <span class="law">jelly</span> <span class="obj">marble bread</span>
+<span class="num">log<sub>10</sub>E/ρ 3.79 → 4.99</span></figcaption>
+<video src="v2/val_000006.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip bad">22.9%</span></span><span class="cell"><i>gripper</i><span class="chip bad">4.0%</span></span><span class="cell"><i>final</i><span class="chip bad">4.4%</span></span></div></figure><figure class="card"><figcaption><b>#7</b> <span class="law">metal</span> <span class="obj">ice telescope</span>
+<span class="num">log<sub>10</sub>E/ρ 4.92 → 5.19</span></figcaption>
+<video src="v2/val_000007.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip bad">51.0%</span></span><span class="cell"><i>gripper</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure><figure class="card"><figcaption><b>#8</b> <span class="law">plasticine</span> <span class="obj">gold leaf hamburge</span>
+<span class="num">log<sub>10</sub>E/ρ 3.79 → 4.93</span></figcaption>
+<video src="v2/val_000008.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip bad">46.7%</span></span><span class="cell"><i>gripper</i><span class="chip bad">11.2%</span></span><span class="cell"><i>final</i><span class="chip bad">10.7%</span></span></div></figure><figure class="card"><figcaption><b>#24</b> <span class="law">jelly</span> <span class="obj">brass telescope</span>
+<span class="num">log<sub>10</sub>E/ρ 2.21 → 3.68</span></figcaption>
+<video src="v2/val_000024.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip bad">69.8%</span></span><span class="cell"><i>gripper</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure><figure class="card"><figcaption><b>#25</b> <span class="law">metal</span> <span class="obj">silver human skele</span>
+<span class="num">log<sub>10</sub>E/ρ 5.68 → 5.76</span></figcaption>
+<video src="v2/val_000025.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip bad">51.2%</span></span><span class="cell"><i>gripper</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure><figure class="card"><figcaption><b>#26</b> <span class="law">plasticine</span> <span class="obj">ice telescope</span>
+<span class="num">log<sub>10</sub>E/ρ 4.20 → 5.26</span></figcaption>
+<video src="v2/val_000026.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="na">–</span></span><span class="cell"><i>gripper</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure></div></section><section><h2>Stretch (two grippers)</h2><p class="summ">Rows, top to bottom: V2 (old) · gripper, V2 ranges · V3 ranges (final setup)</p><div class="grid"><figure class="card"><figcaption><b>#9</b> <span class="law">jelly</span> <span class="obj">bamboo mat</span>
+<span class="num">log<sub>10</sub>E/ρ 4.21 → 5.34</span></figcaption>
+<video src="v2/val_000009.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip bad">24.5%</span></span><span class="cell"><i>gripper</i><span class="chip bad">24.9%</span></span><span class="cell"><i>final</i><span class="chip bad">33.0%</span></span></div></figure><figure class="card"><figcaption><b>#10</b> <span class="law">metal</span> <span class="obj">ice telescope</span>
+<span class="num">log<sub>10</sub>E/ρ 5.33 → 5.50</span></figcaption>
+<video src="v2/val_000010.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="na">–</span></span><span class="cell"><i>gripper</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip bad">1.2%</span></span></div></figure><figure class="card"><figcaption><b>#11</b> <span class="law">plasticine</span> <span class="obj">leather boot</span>
+<span class="num">log<sub>10</sub>E/ρ 4.39 → 5.41</span></figcaption>
+<video src="v2/val_000011.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip bad">5.8%</span></span><span class="cell"><i>gripper</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure><figure class="card"><figcaption><b>#27</b> <span class="law">jelly</span> <span class="obj">bamboo mat</span>
+<span class="num">log<sub>10</sub>E/ρ 2.15 → 3.63</span></figcaption>
+<video src="v2/val_000027.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip bad">28.0%</span></span><span class="cell"><i>gripper</i><span class="chip bad">4.0%</span></span><span class="cell"><i>final</i><span class="chip bad">3.1%</span></span></div></figure><figure class="card"><figcaption><b>#28</b> <span class="law">metal</span> <span class="obj">plastic water bottle thin tran</span>
+<span class="num">log<sub>10</sub>E/ρ 5.04 → 5.28</span></figcaption>
+<video src="v2/val_000028.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip bad">5.0%</span></span><span class="cell"><i>gripper</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure><figure class="card"><figcaption><b>#29</b> <span class="law">plasticine</span> <span class="obj">plastic water bottle thin tran</span>
+<span class="num">log<sub>10</sub>E/ρ 4.00 → 5.10</span></figcaption>
+<video src="v2/val_000029.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip ok">0.7%</span></span><span class="cell"><i>gripper</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure></div></section><section><h2>Bend (three-point contact)</h2><p class="summ">Rows, top to bottom: V2 (old) · contact, g=0, V2 ranges · V3 ranges (final setup)</p><div class="grid"><figure class="card"><figcaption><b>#12</b> <span class="law">jelly</span> <span class="obj">silver human skele</span>
+<span class="num">log<sub>10</sub>E/ρ 4.53 → 5.61</span></figcaption>
+<video src="v2/val_000012.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip ok">0.0%</span></span><span class="cell"><i>contact</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure><figure class="card"><figcaption><b>#13</b> <span class="law">metal</span> <span class="obj">brick wall</span>
+<span class="num">log<sub>10</sub>E/ρ 4.37 → 4.78</span></figcaption>
+<video src="v2/val_000013.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip bad">64.5%</span></span><span class="cell"><i>contact</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure><figure class="card"><figcaption><b>#14</b> <span class="law">plasticine</span> <span class="obj">stainless steel si</span>
+<span class="num">log<sub>10</sub>E/ρ 3.18 → 4.44</span></figcaption>
+<video src="v2/val_000014.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip bad">4.2%</span></span><span class="cell"><i>contact</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure><figure class="card"><figcaption><b>#30</b> <span class="law">jelly</span> <span class="obj">silver human skele</span>
+<span class="num">log<sub>10</sub>E/ρ 2.99 → 4.32</span></figcaption>
+<video src="v2/val_000030.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip bad">49.4%</span></span><span class="cell"><i>contact</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure><figure class="card"><figcaption><b>#31</b> <span class="law">metal</span> <span class="obj">bamboo mat</span>
+<span class="num">log<sub>10</sub>E/ρ 5.57 → 5.68</span></figcaption>
+<video src="v2/val_000031.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip bad">4.6%</span></span><span class="cell"><i>contact</i><span class="chip bad">2.4%</span></span><span class="cell"><i>final</i><span class="chip ok">0.6%</span></span></div></figure><figure class="card"><figcaption><b>#32</b> <span class="law">plasticine</span> <span class="obj">bamboo mat</span>
+<span class="num">log<sub>10</sub>E/ρ 4.16 → 5.22</span></figcaption>
+<video src="v2/val_000032.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip bad">64.8%</span></span><span class="cell"><i>contact</i><span class="chip bad">6.6%</span></span><span class="cell"><i>final</i><span class="chip bad">23.0%</span></span></div></figure></div></section><section><h2>Drop</h2><p class="summ">Rows, top to bottom: V2 (old) · V3 ranges (final setup)</p><div class="grid"><figure class="card"><figcaption><b>#3</b> <span class="law">jelly</span> <span class="obj">brass telescope</span>
+<span class="num">log<sub>10</sub>E/ρ 3.58 → 4.82</span></figcaption>
+<video src="v2/val_000003.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure><figure class="card"><figcaption><b>#4</b> <span class="law">metal</span> <span class="obj">plastic water bottle thin tran</span>
+<span class="num">log<sub>10</sub>E/ρ 5.12 → 5.34</span></figcaption>
+<video src="v2/val_000004.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip ok">0.8%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure><figure class="card"><figcaption><b>#5</b> <span class="law">plasticine</span> <span class="obj">gold leaf hamburge</span>
+<span class="num">log<sub>10</sub>E/ρ 3.56 → 4.75</span></figcaption>
+<video src="v2/val_000005.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip bad">4.6%</span></span><span class="cell"><i>final</i><span class="chip bad">5.1%</span></span></div></figure><figure class="card"><figcaption><b>#21</b> <span class="law">jelly</span> <span class="obj">silver human skele</span>
+<span class="num">log<sub>10</sub>E/ρ 3.53 → 4.78</span></figcaption>
+<video src="v2/val_000021.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure><figure class="card"><figcaption><b>#22</b> <span class="law">metal</span> <span class="obj">marble bread</span>
+<span class="num">log<sub>10</sub>E/ρ 5.35 → 5.51</span></figcaption>
+<video src="v2/val_000022.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip ok">0.8%</span></span><span class="cell"><i>final</i><span class="chip bad">2.5%</span></span></div></figure><figure class="card"><figcaption><b>#23</b> <span class="law">plasticine</span> <span class="obj">plastic water bottle thin tran</span>
+<span class="num">log<sub>10</sub>E/ρ 3.09 → 4.37</span></figcaption>
+<video src="v2/val_000023.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure><figure class="card"><figcaption><b>#39</b> <span class="law">jelly</span> <span class="obj">brick wall</span>
+<span class="num">log<sub>10</sub>E/ρ 3.05 → 4.37</span></figcaption>
+<video src="v2/val_000039.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure><figure class="card"><figcaption><b>#40</b> <span class="law">metal</span> <span class="obj">marble bread</span>
+<span class="num">log<sub>10</sub>E/ρ 4.98 → 5.24</span></figcaption>
+<video src="v2/val_000040.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip ok">0.4%</span></span><span class="cell"><i>final</i><span class="chip ok">0.3%</span></span></div></figure><figure class="card"><figcaption><b>#41</b> <span class="law">plasticine</span> <span class="obj">bamboo mat</span>
+<span class="num">log<sub>10</sub>E/ρ 3.63 → 4.80</span></figcaption>
+<video src="v2/val_000041.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip bad">5.5%</span></span><span class="cell"><i>final</i><span class="chip bad">2.5%</span></span></div></figure><figure class="card"><figcaption><b>#57</b> <span class="law">jelly</span> <span class="obj">plastic water bottle thin tran</span>
+<span class="num">log<sub>10</sub>E/ρ 4.80 → 5.83</span></figcaption>
+<video src="v2/val_000057.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure><figure class="card"><figcaption><b>#58</b> <span class="law">metal</span> <span class="obj">plastic water bottle thin tran</span>
+<span class="num">log<sub>10</sub>E/ρ 5.70 → 5.78</span></figcaption>
+<video src="v2/val_000058.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip ok">0.0%</span></span><span class="cell"><i>final</i><span class="chip ok">0.0%</span></span></div></figure><figure class="card"><figcaption><b>#59</b> <span class="law">plasticine</span> <span class="obj">gold leaf hamburge</span>
+<span class="num">log<sub>10</sub>E/ρ 3.94 → 5.05</span></figcaption>
+<video src="v2/val_000059.mp4" muted loop playsinline controls preload="metadata"></video>
+<div class="frag"><span>pieces</span><span class="cell"><i>old V2</i><span class="chip bad">3.0%</span></span><span class="cell"><i>final</i><span class="chip bad">3.2%</span></span></div></figure></div></section></div>

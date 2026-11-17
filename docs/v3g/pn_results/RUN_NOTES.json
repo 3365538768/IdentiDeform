@@ -1,0 +1,10 @@
+{
+ "torus_v11": "attempt 1 (GPU 0) CUDA-OOM caused by other tenants during the dynamic stage; dynamic stage restarted from scratch on GPU 7 from attempt-1 static/velocity checkpoints (official resume would skip the interrupted sub-stage)",
+ "bird_v11": "attempt 1 (GPU 0) CUDA-OOM during the static stage at iter ~4770; resumed with the official static checkpoint on GPU 7",
+ "playdoh_v11": "attempt 1 started on GPU 0 and was killed after ~4 min (moved off the overcrowded GPU 0); resumed from the official static checkpoint on GPU 3; 37 NaN->dt/2 re-simulations in the dynamic stage",
+ "cat_v11": "single attempt on GPU 3",
+ "torus_v3t0": "NOT COMPLETED: stopped manually at 52/150 dynamic iterations (2026-11-14T06:49Z). nu had drifted to -0.345 (bound -0.45); the simulator then returned NaN and the official NaN -> dt/2 retry loop made one iteration take >1 h (27 re-simulations). Estimate = last logged parameters",
+ "bird_v3t0": "completed (train_dynamic.pt epoch 2, 150 iterations logged); the wrapper's end-marker line is missing, end time = last log line",
+ "playdoh_v3t0": "completed; 110 NaN->dt/2 re-simulations in the dynamic stage (main reason for the long dynamic time)",
+ "cat_v3t0": "attempt 1 killed in the static stage (moved off GPU 0); restarted from scratch on GPU 3"
+}

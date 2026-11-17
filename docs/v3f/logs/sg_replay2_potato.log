@@ -1,0 +1,56 @@
+2026-11-14T01:24:07+00:00 START scripts/v3f/replay_env.sh scripts/v3f/springgaus_replay.py data/external_datasets/springgaus_gdrive/real_capture.zip data/prepared/v3f_springgaus_real_vjl docs/v3f/SPRINGGAUS_REAL_PRED.json data/v3f_springgaus_replay/potato --objs potato
+Warp 1.11.1 initialized:
+   CUDA Toolkit 12.9, Driver 12.6
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA A800-SXM4-80GB" (79 GiB, sm_80, mempool enabled)
+   Kernel cache:
+     /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.cache/warp
+Warp DeprecationWarning: The namespace `warp.torch` will soon be removed from the public API. It can still be accessed from `warp._src.torch` but might be changed or removed without notice.
+Warp DeprecationWarning: The symbol `warp.types.float32` will soon be removed from the public API. Use `warp.float32` instead.
+Module warp_utils 5598e36 load on device 'cuda:0' took 3.49 ms  (cached)
+Particles initialized from torch data.
+Total particles:  13317
+Module mpm_utils 8c60f93 load on device 'cuda:0' took 3.75 ms  (cached)
+Module mpm_solver_warp 3dca6b4 load on device 'cuda:0' took 3.81 ms  (cached)
+potato predicted 4.28 {'centroid_err_cm_mean': 3.748, 'post_hit_up_rmse_cm': 5.154, 'mask_iou_mean': 0.471} 0.6427022967161162
+Particles initialized from torch data.
+Total particles:  13317
+potato grid_3.00 3.0 {'centroid_err_cm_mean': 4.744, 'post_hit_up_rmse_cm': 5.979, 'mask_iou_mean': 0.359} 0.12522389562356526
+Particles initialized from torch data.
+Total particles:  13317
+potato grid_3.25 3.25 {'centroid_err_cm_mean': 4.592, 'post_hit_up_rmse_cm': 5.675, 'mask_iou_mean': 0.364} 0.14842435815827698
+Particles initialized from torch data.
+Total particles:  13317
+potato grid_3.50 3.5 {'centroid_err_cm_mean': 4.237, 'post_hit_up_rmse_cm': 4.902, 'mask_iou_mean': 0.377} 0.20660566897155505
+Particles initialized from torch data.
+Total particles:  13317
+potato grid_3.75 3.75 {'centroid_err_cm_mean': 3.638, 'post_hit_up_rmse_cm': 3.446, 'mask_iou_mean': 0.413} 0.3013057216486874
+Particles initialized from torch data.
+Total particles:  13317
+potato grid_4.00 4.0 {'centroid_err_cm_mean': 3.185, 'post_hit_up_rmse_cm': 2.31, 'mask_iou_mean': 0.474} 0.45365523369549765
+Particles initialized from torch data.
+Total particles:  13317
+potato grid_4.25 4.25 {'centroid_err_cm_mean': 3.651, 'post_hit_up_rmse_cm': 4.772, 'mask_iou_mean': 0.474} 0.6255320921755887
+Particles initialized from torch data.
+Total particles:  13317
+potato grid_4.50 4.5 {'centroid_err_cm_mean': 4.14, 'post_hit_up_rmse_cm': 6.723, 'mask_iou_mean': 0.463} 0.7259783103925956
+Particles initialized from torch data.
+Total particles:  13317
+potato grid_4.75 4.75 {'centroid_err_cm_mean': 4.03, 'post_hit_up_rmse_cm': 6.882, 'mask_iou_mean': 0.468} 0.6928690977326436
+Particles initialized from torch data.
+Total particles:  13317
+potato grid_5.00 5.0 {'centroid_err_cm_mean': 3.929, 'post_hit_up_rmse_cm': 6.992, 'mask_iou_mean': 0.478} 0.6673284951840887
+Particles initialized from torch data.
+Total particles:  13317
+potato grid_5.25 5.25 {'centroid_err_cm_mean': 3.898, 'post_hit_up_rmse_cm': 7.115, 'mask_iou_mean': 0.479} 0.648713588807315
+Particles initialized from torch data.
+Total particles:  13317
+potato grid_5.50 5.5 {'centroid_err_cm_mean': 3.798, 'post_hit_up_rmse_cm': 6.981, 'mask_iou_mean': 0.481} 0.6218816948133954
+Particles initialized from torch data.
+Total particles:  13317
+potato grid_5.75 5.75 {'centroid_err_cm_mean': 3.624, 'post_hit_up_rmse_cm': 6.62, 'mask_iou_mean': 0.48} 0.5884853489552703
+Particles initialized from torch data.
+Total particles:  13317
+potato grid_6.00 6.0 {'centroid_err_cm_mean': 3.4, 'post_hit_up_rmse_cm': 6.093, 'mask_iou_mean': 0.478} 0.5510951792307336
+2026-11-14T01:35:02+00:00 END rc=0

@@ -1,0 +1,1510 @@
+{
+  "status": "complete",
+  "completed": 8,
+  "total": 8,
+  "rows": [
+    {
+      "id": "uipc_ebb2790cab70d97b72b7",
+      "path": "data/calibration/g3_contact_preflight/uipc_ebb2790cab70d97b72b7",
+      "status": "probe_complete",
+      "case": {
+        "shape": "tapered",
+        "cells": [
+          12,
+          6,
+          6
+        ],
+        "layout": "homogeneous",
+        "young_pa": [
+          12000.0,
+          48000.0
+        ],
+        "poisson": 0.3,
+        "dt_seconds": 0.005,
+        "duration_s": 0.6,
+        "indentation_m": 0.004,
+        "initial_gap_m": 0.0007,
+        "barrier_distance_m": 0.0001,
+        "friction": 0.0
+      },
+      "engine": "uipc",
+      "engine_version": "0.0.29",
+      "source_sha256": "7414647363b8e1ea45f9cf4bdf3a51ef2ae4264ebdaab355417ea4302a16439e",
+      "mesh": {
+        "vertices": 637,
+        "tetrahedra": 2592,
+        "volume_m3": 1.1053333333333338e-05,
+        "min_signed_tet_volume_m3": 2.6080246913580265e-09,
+        "max_basis_condition": 5.546487613530078,
+        "boundary_triangles": 720,
+        "face_incidence_valid": true,
+        "passed": true
+      },
+      "completed": true,
+      "min_jacobian": 0.976690929309271,
+      "fixed_vertex_max_error_m": 0.0,
+      "max_tool_tracking_error_m": 4.3242717731248326e-09,
+      "vertex_inside_tool_count": 0,
+      "max_displacement_m": 0.0019625114640224356,
+      "final_displacement_m": 0.0001007175296490133,
+      "native_parameter_mapping": "mu=E/(2(1+nu)); lambda_snk1=lambda_lame+mu",
+      "material_interface": "shared-node bonded P1 tetrahedral mesh; no slip/debonding",
+      "reaction_force_gt_available": false,
+      "admitted_for_training": false,
+      "wall_seconds": 3.015254259109497,
+      "pending": [
+        "two successive mesh refinements",
+        "time-step halving",
+        "full surface clearance and contact force units",
+        "energy balance and friction sensitivity",
+        "material identifiability and independent geometry split"
+      ],
+      "scope": "Physical ABD/FEM contact prototype. Prescribed tool motion is not calibrated force. Uniform absolute E cannot be inferred from a static displacement-controlled shape without force evidence."
+    },
+    {
+      "id": "uipc_11f213d2a7bce0ecc417",
+      "path": "data/calibration/g3_contact_preflight/uipc_11f213d2a7bce0ecc417",
+      "status": "probe_complete",
+      "case": {
+        "shape": "tapered",
+        "cells": [
+          12,
+          6,
+          6
+        ],
+        "layout": "core_shell",
+        "young_pa": [
+          12000.0,
+          48000.0
+        ],
+        "poisson": 0.3,
+        "dt_seconds": 0.005,
+        "duration_s": 0.6,
+        "indentation_m": 0.004,
+        "initial_gap_m": 0.0007,
+        "barrier_distance_m": 0.0001,
+        "friction": 0.0
+      },
+      "engine": "uipc",
+      "engine_version": "0.0.29",
+      "source_sha256": "7414647363b8e1ea45f9cf4bdf3a51ef2ae4264ebdaab355417ea4302a16439e",
+      "mesh": {
+        "vertices": 637,
+        "tetrahedra": 2592,
+        "volume_m3": 1.1053333333333338e-05,
+        "min_signed_tet_volume_m3": 2.6080246913580265e-09,
+        "max_basis_condition": 5.546487613530078,
+        "boundary_triangles": 720,
+        "face_incidence_valid": true,
+        "passed": true
+      },
+      "completed": true,
+      "min_jacobian": 0.9785775189704252,
+      "fixed_vertex_max_error_m": 0.0,
+      "max_tool_tracking_error_m": 1.3161997016591931e-08,
+      "vertex_inside_tool_count": 0,
+      "max_displacement_m": 0.0017953819008468418,
+      "final_displacement_m": 2.830138061353658e-06,
+      "native_parameter_mapping": "mu=E/(2(1+nu)); lambda_snk1=lambda_lame+mu",
+      "material_interface": "shared-node bonded P1 tetrahedral mesh; no slip/debonding",
+      "reaction_force_gt_available": false,
+      "admitted_for_training": false,
+      "wall_seconds": 3.390404462814331,
+      "pending": [
+        "two successive mesh refinements",
+        "time-step halving",
+        "full surface clearance and contact force units",
+        "energy balance and friction sensitivity",
+        "material identifiability and independent geometry split"
+      ],
+      "scope": "Physical ABD/FEM contact prototype. Prescribed tool motion is not calibrated force. Uniform absolute E cannot be inferred from a static displacement-controlled shape without force evidence."
+    },
+    {
+      "id": "uipc_d8e5a9d5728c8495fac0",
+      "path": "data/calibration/g3_contact_preflight/uipc_d8e5a9d5728c8495fac0",
+      "status": "probe_complete",
+      "case": {
+        "shape": "waisted",
+        "cells": [
+          12,
+          6,
+          6
+        ],
+        "layout": "homogeneous",
+        "young_pa": [
+          12000.0,
+          48000.0
+        ],
+        "poisson": 0.3,
+        "dt_seconds": 0.005,
+        "duration_s": 0.6,
+        "indentation_m": 0.004,
+        "initial_gap_m": 0.0007,
+        "barrier_distance_m": 0.0001,
+        "friction": 0.0
+      },
+      "engine": "uipc",
+      "engine_version": "0.0.29",
+      "source_sha256": "7414647363b8e1ea45f9cf4bdf3a51ef2ae4264ebdaab355417ea4302a16439e",
+      "mesh": {
+        "vertices": 637,
+        "tetrahedra": 2592,
+        "volume_m3": 1.1124058741309057e-05,
+        "min_signed_tet_volume_m3": 2.6080246913580265e-09,
+        "max_basis_condition": 5.868237787382628,
+        "boundary_triangles": 720,
+        "face_incidence_valid": true,
+        "passed": true
+      },
+      "completed": true,
+      "min_jacobian": 0.9731307522338855,
+      "fixed_vertex_max_error_m": 0.0,
+      "max_tool_tracking_error_m": 2.0706770725159585e-09,
+      "vertex_inside_tool_count": 0,
+      "max_displacement_m": 0.0034660200389483964,
+      "final_displacement_m": 0.00043066997471168713,
+      "native_parameter_mapping": "mu=E/(2(1+nu)); lambda_snk1=lambda_lame+mu",
+      "material_interface": "shared-node bonded P1 tetrahedral mesh; no slip/debonding",
+      "reaction_force_gt_available": false,
+      "admitted_for_training": false,
+      "wall_seconds": 3.2406301498413086,
+      "pending": [
+        "two successive mesh refinements",
+        "time-step halving",
+        "full surface clearance and contact force units",
+        "energy balance and friction sensitivity",
+        "material identifiability and independent geometry split"
+      ],
+      "scope": "Physical ABD/FEM contact prototype. Prescribed tool motion is not calibrated force. Uniform absolute E cannot be inferred from a static displacement-controlled shape without force evidence."
+    },
+    {
+      "id": "uipc_aa96fd5e1891314ded34",
+      "path": "data/calibration/g3_contact_preflight/uipc_aa96fd5e1891314ded34",
+      "status": "probe_complete",
+      "case": {
+        "shape": "waisted",
+        "cells": [
+          12,
+          6,
+          6
+        ],
+        "layout": "core_shell",
+        "young_pa": [
+          12000.0,
+          48000.0
+        ],
+        "poisson": 0.3,
+        "dt_seconds": 0.005,
+        "duration_s": 0.6,
+        "indentation_m": 0.004,
+        "initial_gap_m": 0.0007,
+        "barrier_distance_m": 0.0001,
+        "friction": 0.0
+      },
+      "engine": "uipc",
+      "engine_version": "0.0.29",
+      "source_sha256": "7414647363b8e1ea45f9cf4bdf3a51ef2ae4264ebdaab355417ea4302a16439e",
+      "mesh": {
+        "vertices": 637,
+        "tetrahedra": 2592,
+        "volume_m3": 1.1124058741309057e-05,
+        "min_signed_tet_volume_m3": 2.6080246913580265e-09,
+        "max_basis_condition": 5.868237787382628,
+        "boundary_triangles": 720,
+        "face_incidence_valid": true,
+        "passed": true
+      },
+      "completed": true,
+      "min_jacobian": 0.9743160076602145,
+      "fixed_vertex_max_error_m": 0.0,
+      "max_tool_tracking_error_m": 6.7560271639274805e-09,
+      "vertex_inside_tool_count": 0,
+      "max_displacement_m": 0.0034122513672792303,
+      "final_displacement_m": 2.751962156405439e-05,
+      "native_parameter_mapping": "mu=E/(2(1+nu)); lambda_snk1=lambda_lame+mu",
+      "material_interface": "shared-node bonded P1 tetrahedral mesh; no slip/debonding",
+      "reaction_force_gt_available": false,
+      "admitted_for_training": false,
+      "wall_seconds": 3.8732666969299316,
+      "pending": [
+        "two successive mesh refinements",
+        "time-step halving",
+        "full surface clearance and contact force units",
+        "energy balance and friction sensitivity",
+        "material identifiability and independent geometry split"
+      ],
+      "scope": "Physical ABD/FEM contact prototype. Prescribed tool motion is not calibrated force. Uniform absolute E cannot be inferred from a static displacement-controlled shape without force evidence."
+    },
+    {
+      "id": "uipc_64ec64650eb3c4b0c479",
+      "path": "data/calibration/g3_contact_preflight/uipc_64ec64650eb3c4b0c479",
+      "status": "probe_complete",
+      "case": {
+        "shape": "curved",
+        "cells": [
+          12,
+          6,
+          6
+        ],
+        "layout": "homogeneous",
+        "young_pa": [
+          12000.0,
+          48000.0
+        ],
+        "poisson": 0.3,
+        "dt_seconds": 0.005,
+        "duration_s": 0.6,
+        "indentation_m": 0.004,
+        "initial_gap_m": 0.0007,
+        "barrier_distance_m": 0.0001,
+        "friction": 0.0
+      },
+      "engine": "uipc",
+      "engine_version": "0.0.29",
+      "source_sha256": "7414647363b8e1ea45f9cf4bdf3a51ef2ae4264ebdaab355417ea4302a16439e",
+      "mesh": {
+        "vertices": 637,
+        "tetrahedra": 2592,
+        "volume_m3": 1.3292198027410756e-05,
+        "min_signed_tet_volume_m3": 3.4722222222222184e-09,
+        "max_basis_condition": 5.845700362562881,
+        "boundary_triangles": 720,
+        "face_incidence_valid": true,
+        "passed": true
+      },
+      "completed": true,
+      "min_jacobian": 0.9032859441346354,
+      "fixed_vertex_max_error_m": 0.0,
+      "max_tool_tracking_error_m": 8.466951437711978e-09,
+      "vertex_inside_tool_count": 0,
+      "max_displacement_m": 0.004917560224899623,
+      "final_displacement_m": 0.0007324836610927723,
+      "native_parameter_mapping": "mu=E/(2(1+nu)); lambda_snk1=lambda_lame+mu",
+      "material_interface": "shared-node bonded P1 tetrahedral mesh; no slip/debonding",
+      "reaction_force_gt_available": false,
+      "admitted_for_training": false,
+      "wall_seconds": 3.496112823486328,
+      "pending": [
+        "two successive mesh refinements",
+        "time-step halving",
+        "full surface clearance and contact force units",
+        "energy balance and friction sensitivity",
+        "material identifiability and independent geometry split"
+      ],
+      "scope": "Physical ABD/FEM contact prototype. Prescribed tool motion is not calibrated force. Uniform absolute E cannot be inferred from a static displacement-controlled shape without force evidence."
+    },
+    {
+      "id": "uipc_111b9b545434fb67563e",
+      "path": "data/calibration/g3_contact_preflight/uipc_111b9b545434fb67563e",
+      "status": "probe_complete",
+      "case": {
+        "shape": "curved",
+        "cells": [
+          12,
+          6,
+          6
+        ],
+        "layout": "core_shell",
+        "young_pa": [
+          12000.0,
+          48000.0
+        ],
+        "poisson": 0.3,
+        "dt_seconds": 0.005,
+        "duration_s": 0.6,
+        "indentation_m": 0.004,
+        "initial_gap_m": 0.0007,
+        "barrier_distance_m": 0.0001,
+        "friction": 0.0
+      },
+      "engine": "uipc",
+      "engine_version": "0.0.29",
+      "source_sha256": "7414647363b8e1ea45f9cf4bdf3a51ef2ae4264ebdaab355417ea4302a16439e",
+      "mesh": {
+        "vertices": 637,
+        "tetrahedra": 2592,
+        "volume_m3": 1.3292198027410756e-05,
+        "min_signed_tet_volume_m3": 3.4722222222222184e-09,
+        "max_basis_condition": 5.845700362562881,
+        "boundary_triangles": 720,
+        "face_incidence_valid": true,
+        "passed": true
+      },
+      "completed": true,
+      "min_jacobian": 0.9121303194255617,
+      "fixed_vertex_max_error_m": 0.0,
+      "max_tool_tracking_error_m": 2.463703377506704e-08,
+      "vertex_inside_tool_count": 0,
+      "max_displacement_m": 0.004564277069587146,
+      "final_displacement_m": 7.200927078677527e-05,
+      "native_parameter_mapping": "mu=E/(2(1+nu)); lambda_snk1=lambda_lame+mu",
+      "material_interface": "shared-node bonded P1 tetrahedral mesh; no slip/debonding",
+      "reaction_force_gt_available": false,
+      "admitted_for_training": false,
+      "wall_seconds": 4.10922908782959,
+      "pending": [
+        "two successive mesh refinements",
+        "time-step halving",
+        "full surface clearance and contact force units",
+        "energy balance and friction sensitivity",
+        "material identifiability and independent geometry split"
+      ],
+      "scope": "Physical ABD/FEM contact prototype. Prescribed tool motion is not calibrated force. Uniform absolute E cannot be inferred from a static displacement-controlled shape without force evidence."
+    },
+    {
+      "id": "uipc_a3540617ff5d2c6ce793",
+      "path": "data/calibration/g3_contact_preflight/uipc_a3540617ff5d2c6ce793",
+      "status": "probe_complete",
+      "case": {
+        "shape": "twisted",
+        "cells": [
+          12,
+          6,
+          6
+        ],
+        "layout": "homogeneous",
+        "young_pa": [
+          12000.0,
+          48000.0
+        ],
+        "poisson": 0.3,
+        "dt_seconds": 0.005,
+        "duration_s": 0.6,
+        "indentation_m": 0.004,
+        "initial_gap_m": 0.0007,
+        "barrier_distance_m": 0.0001,
+        "friction": 0.0
+      },
+      "engine": "uipc",
+      "engine_version": "0.0.29",
+      "source_sha256": "7414647363b8e1ea45f9cf4bdf3a51ef2ae4264ebdaab355417ea4302a16439e",
+      "mesh": {
+        "vertices": 637,
+        "tetrahedra": 2592,
+        "volume_m3": 1.5992177838743062e-05,
+        "min_signed_tet_volume_m3": 6.1637860787921225e-09,
+        "max_basis_condition": 4.988546792718655,
+        "boundary_triangles": 720,
+        "face_incidence_valid": true,
+        "passed": true
+      },
+      "completed": true,
+      "min_jacobian": 0.9363067710576792,
+      "fixed_vertex_max_error_m": 0.0,
+      "max_tool_tracking_error_m": 1.7575373556684426e-09,
+      "vertex_inside_tool_count": 0,
+      "max_displacement_m": 0.0036987716648549268,
+      "final_displacement_m": 0.0002371234556289581,
+      "native_parameter_mapping": "mu=E/(2(1+nu)); lambda_snk1=lambda_lame+mu",
+      "material_interface": "shared-node bonded P1 tetrahedral mesh; no slip/debonding",
+      "reaction_force_gt_available": false,
+      "admitted_for_training": false,
+      "wall_seconds": 3.791656732559204,
+      "pending": [
+        "two successive mesh refinements",
+        "time-step halving",
+        "full surface clearance and contact force units",
+        "energy balance and friction sensitivity",
+        "material identifiability and independent geometry split"
+      ],
+      "scope": "Physical ABD/FEM contact prototype. Prescribed tool motion is not calibrated force. Uniform absolute E cannot be inferred from a static displacement-controlled shape without force evidence."
+    },
+    {
+      "id": "uipc_5f48978bc7a41c90d9c2",
+      "path": "data/calibration/g3_contact_preflight/uipc_5f48978bc7a41c90d9c2",
+      "status": "probe_complete",
+      "case": {
+        "shape": "twisted",
+        "cells": [
+          12,
+          6,
+          6
+        ],
+        "layout": "core_shell",
+        "young_pa": [
+          12000.0,
+          48000.0
+        ],
+        "poisson": 0.3,
+        "dt_seconds": 0.005,
+        "duration_s": 0.6,
+        "indentation_m": 0.004,
+        "initial_gap_m": 0.0007,
+        "barrier_distance_m": 0.0001,
+        "friction": 0.0
+      },
+      "engine": "uipc",
+      "engine_version": "0.0.29",
+      "source_sha256": "7414647363b8e1ea45f9cf4bdf3a51ef2ae4264ebdaab355417ea4302a16439e",
+      "mesh": {
+        "vertices": 637,
+        "tetrahedra": 2592,
+        "volume_m3": 1.5992177838743062e-05,
+        "min_signed_tet_volume_m3": 6.1637860787921225e-09,
+        "max_basis_condition": 4.988546792718655,
+        "boundary_triangles": 720,
+        "face_incidence_valid": true,
+        "passed": true
+      },
+      "completed": true,
+      "min_jacobian": 0.9454566703347036,
+      "fixed_vertex_max_error_m": 0.0,
+      "max_tool_tracking_error_m": 5.72569112695237e-09,
+      "vertex_inside_tool_count": 0,
+      "max_displacement_m": 0.0036050426731414585,
+      "final_displacement_m": 2.1211992489954012e-05,
+      "native_parameter_mapping": "mu=E/(2(1+nu)); lambda_snk1=lambda_lame+mu",
+      "material_interface": "shared-node bonded P1 tetrahedral mesh; no slip/debonding",
+      "reaction_force_gt_available": false,
+      "admitted_for_training": false,
+      "wall_seconds": 4.2503297328948975,
+      "pending": [
+        "two successive mesh refinements",
+        "time-step halving",
+        "full surface clearance and contact force units",
+        "energy balance and friction sensitivity",
+        "material identifiability and independent geometry split"
+      ],
+      "scope": "Physical ABD/FEM contact prototype. Prescribed tool motion is not calibrated force. Uniform absolute E cannot be inferred from a static displacement-controlled shape without force evidence."
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip_0e2d78ee8ae91c806716",
+      "path": "data/rendered/g3_contact_preflight/clip_0e2d78ee8ae91c806716",
+      "case_id": "uipc_ebb2790cab70d97b72b7",
+      "case": {
+        "shape": "tapered",
+        "cells": [
+          12,
+          6,
+          6
+        ],
+        "layout": "homogeneous",
+        "young_pa": [
+          12000.0,
+          48000.0
+        ],
+        "poisson": 0.3,
+        "dt_seconds": 0.005,
+        "duration_s": 0.6,
+        "indentation_m": 0.004,
+        "initial_gap_m": 0.0007,
+        "barrier_distance_m": 0.0001,
+        "friction": 0.0
+      },
+      "young_pa": null,
+      "poisson": 0.3,
+      "force_n": null,
+      "camera": {
+        "name": "3D tool / oblique",
+        "yaw": 0.45,
+        "pitch": 0.65,
+        "image_size": 256,
+        "field_of_view_m": 0.07,
+        "center_m": [
+          0.02,
+          0.0,
+          0.0
+        ]
+      },
+      "frame_times_s": [
+        0.0,
+        0.145,
+        0.155,
+        0.165,
+        0.18,
+        0.185,
+        0.28500000000000003,
+        0.3,
+        0.315,
+        0.34,
+        0.37,
+        0.39,
+        0.41000000000000003,
+        0.45,
+        0.48,
+        0.535,
+        0.6
+      ],
+      "sampling": {
+        "source_frames": 121,
+        "selected_frames": 17,
+        "source_duration_s": 0.6,
+        "retained_duration_s": 0.6,
+        "dropped_static_tail_frames": 0,
+        "source_active_transition_fraction": 0.675,
+        "selected_active_transition_fraction": 1.0,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "metrics": {
+        "visible_correspondence_pixels": 10664,
+        "visible_fraction": 0.9488388646676751,
+        "observed_object_fraction": 0.8315617968810614,
+        "final_motion_p50_px": 0.9851315021514893,
+        "final_motion_p95_px": 4.8919782638549805,
+        "final_motion_max_px": 6.174559593200684,
+        "motion_reference": "initial_to_peak_visible_correspondence"
+      },
+      "specification": {
+        "case": {
+          "shape": "tapered",
+          "cells": [
+            12,
+            6,
+            6
+          ],
+          "layout": "homogeneous",
+          "young_pa": [
+            12000.0,
+            48000.0
+          ],
+          "poisson": 0.3,
+          "dt_seconds": 0.005,
+          "duration_s": 0.6,
+          "indentation_m": 0.004,
+          "initial_gap_m": 0.0007,
+          "barrier_distance_m": 0.0001,
+          "friction": 0.0
+        },
+        "solver_sha256": "7414647363b8e1ea45f9cf4bdf3a51ef2ae4264ebdaab355417ea4302a16439e",
+        "trajectory_sha256": "437e2260fbb4fbed359ce1f91b269c8f164f923b0162f2f3622fe56ddbcb5fee",
+        "renderer_sha256": "e16555054686cd7b062c8c7bda0bae2919eaf680d4c46be327f2aa04f1bf9a4d",
+        "camera": {
+          "name": "3D tool / oblique",
+          "yaw": 0.45,
+          "pitch": 0.65,
+          "image_size": 256,
+          "field_of_view_m": 0.07,
+          "center_m": [
+            0.02,
+            0.0,
+            0.0
+          ]
+        },
+        "rasterizer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8"
+      },
+      "physical_tool_contact": true,
+      "occlusion_variant": "physical_tool",
+      "interaction": "physical_punch_release",
+      "deformation_amplification": 1.0,
+      "eligible_for_video_pilot": false,
+      "pending_quality_checks": [
+        "two successive mesh refinements",
+        "time-step halving",
+        "full surface clearance and contact force units",
+        "energy balance and friction sensitivity",
+        "material identifiability and independent geometry split"
+      ]
+    },
+    {
+      "id": "clip_9a251dbd94566afb6c49",
+      "path": "data/rendered/g3_contact_preflight/clip_9a251dbd94566afb6c49",
+      "case_id": "uipc_11f213d2a7bce0ecc417",
+      "case": {
+        "shape": "tapered",
+        "cells": [
+          12,
+          6,
+          6
+        ],
+        "layout": "core_shell",
+        "young_pa": [
+          12000.0,
+          48000.0
+        ],
+        "poisson": 0.3,
+        "dt_seconds": 0.005,
+        "duration_s": 0.6,
+        "indentation_m": 0.004,
+        "initial_gap_m": 0.0007,
+        "barrier_distance_m": 0.0001,
+        "friction": 0.0
+      },
+      "young_pa": null,
+      "poisson": 0.3,
+      "force_n": null,
+      "camera": {
+        "name": "3D tool / oblique",
+        "yaw": 0.45,
+        "pitch": 0.65,
+        "image_size": 256,
+        "field_of_view_m": 0.07,
+        "center_m": [
+          0.02,
+          0.0,
+          0.0
+        ]
+      },
+      "frame_times_s": [
+        0.0,
+        0.14,
+        0.145,
+        0.155,
+        0.16,
+        0.17500000000000002,
+        0.2,
+        0.255,
+        0.28500000000000003,
+        0.305,
+        0.315,
+        0.32,
+        0.33,
+        0.35000000000000003,
+        0.365,
+        0.4,
+        0.485
+      ],
+      "sampling": {
+        "source_frames": 121,
+        "selected_frames": 17,
+        "source_duration_s": 0.6,
+        "retained_duration_s": 0.485,
+        "dropped_static_tail_frames": 23,
+        "source_active_transition_fraction": 0.43333333333333335,
+        "selected_active_transition_fraction": 0.9375,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "metrics": {
+        "visible_correspondence_pixels": 10654,
+        "visible_fraction": 0.9479491057923303,
+        "observed_object_fraction": 0.8304624456859093,
+        "final_motion_p50_px": 1.0101900100708008,
+        "final_motion_p95_px": 4.592477321624756,
+        "final_motion_max_px": 5.573977947235107,
+        "motion_reference": "initial_to_peak_visible_correspondence"
+      },
+      "specification": {
+        "case": {
+          "shape": "tapered",
+          "cells": [
+            12,
+            6,
+            6
+          ],
+          "layout": "core_shell",
+          "young_pa": [
+            12000.0,
+            48000.0
+          ],
+          "poisson": 0.3,
+          "dt_seconds": 0.005,
+          "duration_s": 0.6,
+          "indentation_m": 0.004,
+          "initial_gap_m": 0.0007,
+          "barrier_distance_m": 0.0001,
+          "friction": 0.0
+        },
+        "solver_sha256": "7414647363b8e1ea45f9cf4bdf3a51ef2ae4264ebdaab355417ea4302a16439e",
+        "trajectory_sha256": "13ab6f47223de599d35bc62b2dedf2486a388a9122f31a8a4767575cedf4ff74",
+        "renderer_sha256": "e16555054686cd7b062c8c7bda0bae2919eaf680d4c46be327f2aa04f1bf9a4d",
+        "camera": {
+          "name": "3D tool / oblique",
+          "yaw": 0.45,
+          "pitch": 0.65,
+          "image_size": 256,
+          "field_of_view_m": 0.07,
+          "center_m": [
+            0.02,
+            0.0,
+            0.0
+          ]
+        },
+        "rasterizer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8"
+      },
+      "physical_tool_contact": true,
+      "occlusion_variant": "physical_tool",
+      "interaction": "physical_punch_release",
+      "deformation_amplification": 1.0,
+      "eligible_for_video_pilot": false,
+      "pending_quality_checks": [
+        "two successive mesh refinements",
+        "time-step halving",
+        "full surface clearance and contact force units",
+        "energy balance and friction sensitivity",
+        "material identifiability and independent geometry split"
+      ]
+    },
+    {
+      "id": "clip_9c47f2d5b0cf8c8cf932",
+      "path": "data/rendered/g3_contact_preflight/clip_9c47f2d5b0cf8c8cf932",
+      "case_id": "uipc_d8e5a9d5728c8495fac0",
+      "case": {
+        "shape": "waisted",
+        "cells": [
+          12,
+          6,
+          6
+        ],
+        "layout": "homogeneous",
+        "young_pa": [
+          12000.0,
+          48000.0
+        ],
+        "poisson": 0.3,
+        "dt_seconds": 0.005,
+        "duration_s": 0.6,
+        "indentation_m": 0.004,
+        "initial_gap_m": 0.0007,
+        "barrier_distance_m": 0.0001,
+        "friction": 0.0
+      },
+      "young_pa": null,
+      "poisson": 0.3,
+      "force_n": null,
+      "camera": {
+        "name": "3D tool / oblique",
+        "yaw": 0.45,
+        "pitch": 0.65,
+        "image_size": 256,
+        "field_of_view_m": 0.07,
+        "center_m": [
+          0.02,
+          0.0,
+          0.0
+        ]
+      },
+      "frame_times_s": [
+        0.0,
+        0.095,
+        0.11,
+        0.13,
+        0.15,
+        0.18,
+        0.2,
+        0.29,
+        0.315,
+        0.35000000000000003,
+        0.37,
+        0.39,
+        0.44,
+        0.47000000000000003,
+        0.5,
+        0.5650000000000001,
+        0.6
+      ],
+      "sampling": {
+        "source_frames": 121,
+        "selected_frames": 17,
+        "source_duration_s": 0.6,
+        "retained_duration_s": 0.6,
+        "dropped_static_tail_frames": 0,
+        "source_active_transition_fraction": 0.7666666666666667,
+        "selected_active_transition_fraction": 1.0,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "metrics": {
+        "visible_correspondence_pixels": 10789,
+        "visible_fraction": 0.9545253472529417,
+        "observed_object_fraction": 0.8230357938511808,
+        "final_motion_p50_px": 1.0328705310821533,
+        "final_motion_p95_px": 9.322897911071777,
+        "final_motion_max_px": 11.376619338989258,
+        "motion_reference": "initial_to_peak_visible_correspondence"
+      },
+      "specification": {
+        "case": {
+          "shape": "waisted",
+          "cells": [
+            12,
+            6,
+            6
+          ],
+          "layout": "homogeneous",
+          "young_pa": [
+            12000.0,
+            48000.0
+          ],
+          "poisson": 0.3,
+          "dt_seconds": 0.005,
+          "duration_s": 0.6,
+          "indentation_m": 0.004,
+          "initial_gap_m": 0.0007,
+          "barrier_distance_m": 0.0001,
+          "friction": 0.0
+        },
+        "solver_sha256": "7414647363b8e1ea45f9cf4bdf3a51ef2ae4264ebdaab355417ea4302a16439e",
+        "trajectory_sha256": "169970c1ca18738032ac2c96c3d4419d2655dfdc5c7c92568f0e1bfd9cbd6a97",
+        "renderer_sha256": "e16555054686cd7b062c8c7bda0bae2919eaf680d4c46be327f2aa04f1bf9a4d",
+        "camera": {
+          "name": "3D tool / oblique",
+          "yaw": 0.45,
+          "pitch": 0.65,
+          "image_size": 256,
+          "field_of_view_m": 0.07,
+          "center_m": [
+            0.02,
+            0.0,
+            0.0
+          ]
+        },
+        "rasterizer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8"
+      },
+      "physical_tool_contact": true,
+      "occlusion_variant": "physical_tool",
+      "interaction": "physical_punch_release",
+      "deformation_amplification": 1.0,
+      "eligible_for_video_pilot": false,
+      "pending_quality_checks": [
+        "two successive mesh refinements",
+        "time-step halving",
+        "full surface clearance and contact force units",
+        "energy balance and friction sensitivity",
+        "material identifiability and independent geometry split"
+      ]
+    },
+    {
+      "id": "clip_6901780a00ef07a97d1c",
+      "path": "data/rendered/g3_contact_preflight/clip_6901780a00ef07a97d1c",
+      "case_id": "uipc_aa96fd5e1891314ded34",
+      "case": {
+        "shape": "waisted",
+        "cells": [
+          12,
+          6,
+          6
+        ],
+        "layout": "core_shell",
+        "young_pa": [
+          12000.0,
+          48000.0
+        ],
+        "poisson": 0.3,
+        "dt_seconds": 0.005,
+        "duration_s": 0.6,
+        "indentation_m": 0.004,
+        "initial_gap_m": 0.0007,
+        "barrier_distance_m": 0.0001,
+        "friction": 0.0
+      },
+      "young_pa": null,
+      "poisson": 0.3,
+      "force_n": null,
+      "camera": {
+        "name": "3D tool / oblique",
+        "yaw": 0.45,
+        "pitch": 0.65,
+        "image_size": 256,
+        "field_of_view_m": 0.07,
+        "center_m": [
+          0.02,
+          0.0,
+          0.0
+        ]
+      },
+      "frame_times_s": [
+        0.0,
+        0.09,
+        0.105,
+        0.12,
+        0.135,
+        0.155,
+        0.185,
+        0.2,
+        0.29,
+        0.33,
+        0.34500000000000003,
+        0.36,
+        0.375,
+        0.395,
+        0.435,
+        0.49,
+        0.6
+      ],
+      "sampling": {
+        "source_frames": 121,
+        "selected_frames": 17,
+        "source_duration_s": 0.6,
+        "retained_duration_s": 0.6,
+        "dropped_static_tail_frames": 0,
+        "source_active_transition_fraction": 0.725,
+        "selected_active_transition_fraction": 1.0,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "metrics": {
+        "visible_correspondence_pixels": 10796,
+        "visible_fraction": 0.9551446518623374,
+        "observed_object_fraction": 0.822367443932868,
+        "final_motion_p50_px": 1.008595585823059,
+        "final_motion_p95_px": 9.088830947875977,
+        "final_motion_max_px": 11.105963706970215,
+        "motion_reference": "initial_to_peak_visible_correspondence"
+      },
+      "specification": {
+        "case": {
+          "shape": "waisted",
+          "cells": [
+            12,
+            6,
+            6
+          ],
+          "layout": "core_shell",
+          "young_pa": [
+            12000.0,
+            48000.0
+          ],
+          "poisson": 0.3,
+          "dt_seconds": 0.005,
+          "duration_s": 0.6,
+          "indentation_m": 0.004,
+          "initial_gap_m": 0.0007,
+          "barrier_distance_m": 0.0001,
+          "friction": 0.0
+        },
+        "solver_sha256": "7414647363b8e1ea45f9cf4bdf3a51ef2ae4264ebdaab355417ea4302a16439e",
+        "trajectory_sha256": "4bf122e7d384c8cceec4c3c6bb40d7f5569a82e681363f7d90034ee8f0140f81",
+        "renderer_sha256": "e16555054686cd7b062c8c7bda0bae2919eaf680d4c46be327f2aa04f1bf9a4d",
+        "camera": {
+          "name": "3D tool / oblique",
+          "yaw": 0.45,
+          "pitch": 0.65,
+          "image_size": 256,
+          "field_of_view_m": 0.07,
+          "center_m": [
+            0.02,
+            0.0,
+            0.0
+          ]
+        },
+        "rasterizer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8"
+      },
+      "physical_tool_contact": true,
+      "occlusion_variant": "physical_tool",
+      "interaction": "physical_punch_release",
+      "deformation_amplification": 1.0,
+      "eligible_for_video_pilot": false,
+      "pending_quality_checks": [
+        "two successive mesh refinements",
+        "time-step halving",
+        "full surface clearance and contact force units",
+        "energy balance and friction sensitivity",
+        "material identifiability and independent geometry split"
+      ]
+    },
+    {
+      "id": "clip_3097648eaea16cf8adcb",
+      "path": "data/rendered/g3_contact_preflight/clip_3097648eaea16cf8adcb",
+      "case_id": "uipc_64ec64650eb3c4b0c479",
+      "case": {
+        "shape": "curved",
+        "cells": [
+          12,
+          6,
+          6
+        ],
+        "layout": "homogeneous",
+        "young_pa": [
+          12000.0,
+          48000.0
+        ],
+        "poisson": 0.3,
+        "dt_seconds": 0.005,
+        "duration_s": 0.6,
+        "indentation_m": 0.004,
+        "initial_gap_m": 0.0007,
+        "barrier_distance_m": 0.0001,
+        "friction": 0.0
+      },
+      "young_pa": null,
+      "poisson": 0.3,
+      "force_n": null,
+      "camera": {
+        "name": "3D tool / oblique",
+        "yaw": 0.45,
+        "pitch": 0.65,
+        "image_size": 256,
+        "field_of_view_m": 0.07,
+        "center_m": [
+          0.02,
+          0.0,
+          0.0
+        ]
+      },
+      "frame_times_s": [
+        0.0,
+        0.1,
+        0.11,
+        0.125,
+        0.15,
+        0.18,
+        0.2,
+        0.29,
+        0.31,
+        0.35000000000000003,
+        0.37,
+        0.39,
+        0.435,
+        0.465,
+        0.495,
+        0.555,
+        0.6
+      ],
+      "sampling": {
+        "source_frames": 121,
+        "selected_frames": 17,
+        "source_duration_s": 0.6,
+        "retained_duration_s": 0.6,
+        "dropped_static_tail_frames": 0,
+        "source_active_transition_fraction": 0.85,
+        "selected_active_transition_fraction": 1.0,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "metrics": {
+        "visible_correspondence_pixels": 11748,
+        "visible_fraction": 0.9697069748245976,
+        "observed_object_fraction": 0.8631664451336583,
+        "final_motion_p50_px": 4.952456474304199,
+        "final_motion_p95_px": 13.365288734436035,
+        "final_motion_max_px": 16.031600952148438,
+        "motion_reference": "initial_to_peak_visible_correspondence"
+      },
+      "specification": {
+        "case": {
+          "shape": "curved",
+          "cells": [
+            12,
+            6,
+            6
+          ],
+          "layout": "homogeneous",
+          "young_pa": [
+            12000.0,
+            48000.0
+          ],
+          "poisson": 0.3,
+          "dt_seconds": 0.005,
+          "duration_s": 0.6,
+          "indentation_m": 0.004,
+          "initial_gap_m": 0.0007,
+          "barrier_distance_m": 0.0001,
+          "friction": 0.0
+        },
+        "solver_sha256": "7414647363b8e1ea45f9cf4bdf3a51ef2ae4264ebdaab355417ea4302a16439e",
+        "trajectory_sha256": "08d88acc2b373fd0c811d46752bc75c38380db1095521ad5a8b686dd0f19665c",
+        "renderer_sha256": "e16555054686cd7b062c8c7bda0bae2919eaf680d4c46be327f2aa04f1bf9a4d",
+        "camera": {
+          "name": "3D tool / oblique",
+          "yaw": 0.45,
+          "pitch": 0.65,
+          "image_size": 256,
+          "field_of_view_m": 0.07,
+          "center_m": [
+            0.02,
+            0.0,
+            0.0
+          ]
+        },
+        "rasterizer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8"
+      },
+      "physical_tool_contact": true,
+      "occlusion_variant": "physical_tool",
+      "interaction": "physical_punch_release",
+      "deformation_amplification": 1.0,
+      "eligible_for_video_pilot": false,
+      "pending_quality_checks": [
+        "two successive mesh refinements",
+        "time-step halving",
+        "full surface clearance and contact force units",
+        "energy balance and friction sensitivity",
+        "material identifiability and independent geometry split"
+      ]
+    },
+    {
+      "id": "clip_7ae72e1ed6d21b10e0a4",
+      "path": "data/rendered/g3_contact_preflight/clip_7ae72e1ed6d21b10e0a4",
+      "case_id": "uipc_111b9b545434fb67563e",
+      "case": {
+        "shape": "curved",
+        "cells": [
+          12,
+          6,
+          6
+        ],
+        "layout": "core_shell",
+        "young_pa": [
+          12000.0,
+          48000.0
+        ],
+        "poisson": 0.3,
+        "dt_seconds": 0.005,
+        "duration_s": 0.6,
+        "indentation_m": 0.004,
+        "initial_gap_m": 0.0007,
+        "barrier_distance_m": 0.0001,
+        "friction": 0.0
+      },
+      "young_pa": null,
+      "poisson": 0.3,
+      "force_n": null,
+      "camera": {
+        "name": "3D tool / oblique",
+        "yaw": 0.45,
+        "pitch": 0.65,
+        "image_size": 256,
+        "field_of_view_m": 0.07,
+        "center_m": [
+          0.02,
+          0.0,
+          0.0
+        ]
+      },
+      "frame_times_s": [
+        0.0,
+        0.09,
+        0.105,
+        0.12,
+        0.135,
+        0.155,
+        0.185,
+        0.2,
+        0.29,
+        0.33,
+        0.34500000000000003,
+        0.36,
+        0.375,
+        0.395,
+        0.435,
+        0.485,
+        0.6
+      ],
+      "sampling": {
+        "source_frames": 121,
+        "selected_frames": 17,
+        "source_duration_s": 0.6,
+        "retained_duration_s": 0.6,
+        "dropped_static_tail_frames": 0,
+        "source_active_transition_fraction": 0.7583333333333333,
+        "selected_active_transition_fraction": 0.9375,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "metrics": {
+        "visible_correspondence_pixels": 11757,
+        "visible_fraction": 0.9704498555509699,
+        "observed_object_fraction": 0.859744856573999,
+        "final_motion_p50_px": 4.799016952514648,
+        "final_motion_p95_px": 12.3516206741333,
+        "final_motion_max_px": 14.692855834960938,
+        "motion_reference": "initial_to_peak_visible_correspondence"
+      },
+      "specification": {
+        "case": {
+          "shape": "curved",
+          "cells": [
+            12,
+            6,
+            6
+          ],
+          "layout": "core_shell",
+          "young_pa": [
+            12000.0,
+            48000.0
+          ],
+          "poisson": 0.3,
+          "dt_seconds": 0.005,
+          "duration_s": 0.6,
+          "indentation_m": 0.004,
+          "initial_gap_m": 0.0007,
+          "barrier_distance_m": 0.0001,
+          "friction": 0.0
+        },
+        "solver_sha256": "7414647363b8e1ea45f9cf4bdf3a51ef2ae4264ebdaab355417ea4302a16439e",
+        "trajectory_sha256": "7ace682ac0a3f620677f9a3bc270ed328c40f7703ec1053716124c74613c0937",
+        "renderer_sha256": "e16555054686cd7b062c8c7bda0bae2919eaf680d4c46be327f2aa04f1bf9a4d",
+        "camera": {
+          "name": "3D tool / oblique",
+          "yaw": 0.45,
+          "pitch": 0.65,
+          "image_size": 256,
+          "field_of_view_m": 0.07,
+          "center_m": [
+            0.02,
+            0.0,
+            0.0
+          ]
+        },
+        "rasterizer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8"
+      },
+      "physical_tool_contact": true,
+      "occlusion_variant": "physical_tool",
+      "interaction": "physical_punch_release",
+      "deformation_amplification": 1.0,
+      "eligible_for_video_pilot": false,
+      "pending_quality_checks": [
+        "two successive mesh refinements",
+        "time-step halving",
+        "full surface clearance and contact force units",
+        "energy balance and friction sensitivity",
+        "material identifiability and independent geometry split"
+      ]
+    },
+    {
+      "id": "clip_6e6e5efb762d2b310952",
+      "path": "data/rendered/g3_contact_preflight/clip_6e6e5efb762d2b310952",
+      "case_id": "uipc_a3540617ff5d2c6ce793",
+      "case": {
+        "shape": "twisted",
+        "cells": [
+          12,
+          6,
+          6
+        ],
+        "layout": "homogeneous",
+        "young_pa": [
+          12000.0,
+          48000.0
+        ],
+        "poisson": 0.3,
+        "dt_seconds": 0.005,
+        "duration_s": 0.6,
+        "indentation_m": 0.004,
+        "initial_gap_m": 0.0007,
+        "barrier_distance_m": 0.0001,
+        "friction": 0.0
+      },
+      "young_pa": null,
+      "poisson": 0.3,
+      "force_n": null,
+      "camera": {
+        "name": "3D tool / oblique",
+        "yaw": 0.45,
+        "pitch": 0.65,
+        "image_size": 256,
+        "field_of_view_m": 0.07,
+        "center_m": [
+          0.02,
+          0.0,
+          0.0
+        ]
+      },
+      "frame_times_s": [
+        0.0,
+        0.085,
+        0.1,
+        0.115,
+        0.135,
+        0.15,
+        0.18,
+        0.2,
+        0.28,
+        0.325,
+        0.34500000000000003,
+        0.36,
+        0.38,
+        0.405,
+        0.46,
+        0.525,
+        0.6
+      ],
+      "sampling": {
+        "source_frames": 121,
+        "selected_frames": 17,
+        "source_duration_s": 0.6,
+        "retained_duration_s": 0.6,
+        "dropped_static_tail_frames": 0,
+        "source_active_transition_fraction": 0.825,
+        "selected_active_transition_fraction": 1.0,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "metrics": {
+        "visible_correspondence_pixels": 13047,
+        "visible_fraction": 0.9558942047036413,
+        "observed_object_fraction": 0.8691655337606008,
+        "final_motion_p50_px": 1.8516619205474854,
+        "final_motion_p95_px": 7.495684623718262,
+        "final_motion_max_px": 11.874309539794922,
+        "motion_reference": "initial_to_peak_visible_correspondence"
+      },
+      "specification": {
+        "case": {
+          "shape": "twisted",
+          "cells": [
+            12,
+            6,
+            6
+          ],
+          "layout": "homogeneous",
+          "young_pa": [
+            12000.0,
+            48000.0
+          ],
+          "poisson": 0.3,
+          "dt_seconds": 0.005,
+          "duration_s": 0.6,
+          "indentation_m": 0.004,
+          "initial_gap_m": 0.0007,
+          "barrier_distance_m": 0.0001,
+          "friction": 0.0
+        },
+        "solver_sha256": "7414647363b8e1ea45f9cf4bdf3a51ef2ae4264ebdaab355417ea4302a16439e",
+        "trajectory_sha256": "25f7851e9c4a3c03bdbf552e2982191da24bfa4a8d22835a766c81aa4a6dffd7",
+        "renderer_sha256": "e16555054686cd7b062c8c7bda0bae2919eaf680d4c46be327f2aa04f1bf9a4d",
+        "camera": {
+          "name": "3D tool / oblique",
+          "yaw": 0.45,
+          "pitch": 0.65,
+          "image_size": 256,
+          "field_of_view_m": 0.07,
+          "center_m": [
+            0.02,
+            0.0,
+            0.0
+          ]
+        },
+        "rasterizer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8"
+      },
+      "physical_tool_contact": true,
+      "occlusion_variant": "physical_tool",
+      "interaction": "physical_punch_release",
+      "deformation_amplification": 1.0,
+      "eligible_for_video_pilot": false,
+      "pending_quality_checks": [
+        "two successive mesh refinements",
+        "time-step halving",
+        "full surface clearance and contact force units",
+        "energy balance and friction sensitivity",
+        "material identifiability and independent geometry split"
+      ]
+    },
+    {
+      "id": "clip_fac1770cd4d4ee4f02c4",
+      "path": "data/rendered/g3_contact_preflight/clip_fac1770cd4d4ee4f02c4",
+      "case_id": "uipc_5f48978bc7a41c90d9c2",
+      "case": {
+        "shape": "twisted",
+        "cells": [
+          12,
+          6,
+          6
+        ],
+        "layout": "core_shell",
+        "young_pa": [
+          12000.0,
+          48000.0
+        ],
+        "poisson": 0.3,
+        "dt_seconds": 0.005,
+        "duration_s": 0.6,
+        "indentation_m": 0.004,
+        "initial_gap_m": 0.0007,
+        "barrier_distance_m": 0.0001,
+        "friction": 0.0
+      },
+      "young_pa": null,
+      "poisson": 0.3,
+      "force_n": null,
+      "camera": {
+        "name": "3D tool / oblique",
+        "yaw": 0.45,
+        "pitch": 0.65,
+        "image_size": 256,
+        "field_of_view_m": 0.07,
+        "center_m": [
+          0.02,
+          0.0,
+          0.0
+        ]
+      },
+      "frame_times_s": [
+        0.0,
+        0.08,
+        0.095,
+        0.11,
+        0.125,
+        0.14,
+        0.16,
+        0.195,
+        0.2,
+        0.31,
+        0.325,
+        0.34,
+        0.355,
+        0.37,
+        0.39,
+        0.435,
+        0.545
+      ],
+      "sampling": {
+        "source_frames": 121,
+        "selected_frames": 17,
+        "source_duration_s": 0.6,
+        "retained_duration_s": 0.545,
+        "dropped_static_tail_frames": 11,
+        "source_active_transition_fraction": 0.65,
+        "selected_active_transition_fraction": 0.9375,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "metrics": {
+        "visible_correspondence_pixels": 13057,
+        "visible_fraction": 0.9566268591105576,
+        "observed_object_fraction": 0.8692013235580355,
+        "final_motion_p50_px": 1.886125922203064,
+        "final_motion_p95_px": 7.3483710289001465,
+        "final_motion_max_px": 11.387564659118652,
+        "motion_reference": "initial_to_peak_visible_correspondence"
+      },
+      "specification": {
+        "case": {
+          "shape": "twisted",
+          "cells": [
+            12,
+            6,
+            6
+          ],
+          "layout": "core_shell",
+          "young_pa": [
+            12000.0,
+            48000.0
+          ],
+          "poisson": 0.3,
+          "dt_seconds": 0.005,
+          "duration_s": 0.6,
+          "indentation_m": 0.004,
+          "initial_gap_m": 0.0007,
+          "barrier_distance_m": 0.0001,
+          "friction": 0.0
+        },
+        "solver_sha256": "7414647363b8e1ea45f9cf4bdf3a51ef2ae4264ebdaab355417ea4302a16439e",
+        "trajectory_sha256": "5ff655a7d6ad1fb02f9c6b44afda1da1d188c4a74080944660ed9a16a13b215a",
+        "renderer_sha256": "e16555054686cd7b062c8c7bda0bae2919eaf680d4c46be327f2aa04f1bf9a4d",
+        "camera": {
+          "name": "3D tool / oblique",
+          "yaw": 0.45,
+          "pitch": 0.65,
+          "image_size": 256,
+          "field_of_view_m": 0.07,
+          "center_m": [
+            0.02,
+            0.0,
+            0.0
+          ]
+        },
+        "rasterizer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8"
+      },
+      "physical_tool_contact": true,
+      "occlusion_variant": "physical_tool",
+      "interaction": "physical_punch_release",
+      "deformation_amplification": 1.0,
+      "eligible_for_video_pilot": false,
+      "pending_quality_checks": [
+        "two successive mesh refinements",
+        "time-step halving",
+        "full surface clearance and contact force units",
+        "energy balance and friction sensitivity",
+        "material identifiability and independent geometry split"
+      ]
+    }
+  ],
+  "admitted_for_training": false,
+  "scope": "Procedural metric solids, bonded material coefficients and physical 3D punch. Not GS reconstruction; prescribed motion, no calibrated force GT; convergence/energy/clearance not yet admitted.",
+  "updated_unix": 1794072216.9306424,
+  "next_gate": "mesh_time_step_contact_force_energy_and_identifiability_audit",
+  "detail": "8/8 \u63a5\u89e6\u7ba1\u7ebf\u9884\u68c0\u5b8c\u6210\uff1b\u4ecd\u672a\u51c6\u5165\u8bad\u7ec3\uff0c\u4e0d\u81ea\u52a8\u6269\u5927\u5230 64 \u6c42\u89e3\u6216\u542f\u52a8\u6a21\u578b\u8bad\u7ec3\u3002"
+}

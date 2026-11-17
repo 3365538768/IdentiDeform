@@ -1,0 +1,4207 @@
+{
+  "status": "complete",
+  "completed": 32,
+  "total": 32,
+  "clips": [
+    {
+      "id": "clip_4358c2ac5113c8ec19fc",
+      "path": "data/rendered/g3_pilot/clip_4358c2ac5113c8ec19fc",
+      "case_id": "uipc_47adea8e210e24af3eca",
+      "source_path": "data/calibration/g3_convergence/uipc_47adea8e210e24af3eca",
+      "young_pa": 12000.0,
+      "force_n": 0.01,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 12000.0,
+        "poisson": 0.3,
+        "force_n": 0.01,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "XY",
+        "yaw": 0.0,
+        "pitch": 0.0,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14,
+        0.16,
+        0.2,
+        0.22,
+        0.24,
+        0.26,
+        0.28,
+        0.3,
+        0.34,
+        0.38
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 6270,
+        "foreground_pixels": 6272,
+        "amodal_foreground_pixels": 6272,
+        "observed_object_fraction": 1.0,
+        "visible_fraction": 0.9996811224489796,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 2.0708470344543457,
+        "final_motion_p95_px": 5.311223983764648,
+        "final_motion_max_px": 5.878693580627441,
+        "silhouette_iou": 0.9189726341537992,
+        "foreground_fraction": 0.125
+      },
+      "specification": {
+        "case_id": "uipc_47adea8e210e24af3eca",
+        "camera": {
+          "name": "XY",
+          "yaw": 0.0,
+          "pitch": 0.0,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "7e22947f15e4038bcf2d198df178d413533f4cc5d744024a05be780ff78ecddd",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          19
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "clean",
+        "occlusion_kind": "none",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 17,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.38,
+        "dropped_static_tail_frames": 181,
+        "source_active_transition_fraction": 0.075,
+        "selected_active_transition_fraction": 0.8125,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "clean",
+      "paired_group_id": "589a1dab109402b8f4efdde10e9f247147c043d663eb8c8b30631e07874b6f69",
+      "peak_time_s": 0.08,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_67a724a293f66c4b01b4",
+      "path": "data/rendered/g3_pilot/clip_67a724a293f66c4b01b4",
+      "case_id": "uipc_47adea8e210e24af3eca",
+      "source_path": "data/calibration/g3_convergence/uipc_47adea8e210e24af3eca",
+      "young_pa": 12000.0,
+      "force_n": 0.01,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 12000.0,
+        "poisson": 0.3,
+        "force_n": 0.01,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "XY",
+        "yaw": 0.0,
+        "pitch": 0.0,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14,
+        0.16,
+        0.2,
+        0.22,
+        0.24,
+        0.26,
+        0.28,
+        0.3,
+        0.34,
+        0.38
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 4494,
+        "foreground_pixels": 4536,
+        "amodal_foreground_pixels": 6272,
+        "observed_object_fraction": 0.7232142857142857,
+        "visible_fraction": 0.9907407407407407,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 1.2480099201202393,
+        "final_motion_p95_px": 5.42540168762207,
+        "final_motion_max_px": 5.878693580627441,
+        "silhouette_iou": 0.9189726341537992,
+        "foreground_fraction": 0.125
+      },
+      "specification": {
+        "case_id": "uipc_47adea8e210e24af3eca",
+        "camera": {
+          "name": "XY",
+          "yaw": 0.0,
+          "pitch": 0.0,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "7e22947f15e4038bcf2d198df178d413533f4cc5d744024a05be780ff78ecddd",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          19
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "moderate",
+        "occlusion_kind": "paired image-space augmentation; not physical contact",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 17,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.38,
+        "dropped_static_tail_frames": 181,
+        "source_active_transition_fraction": 0.075,
+        "selected_active_transition_fraction": 0.8125,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "moderate",
+      "paired_group_id": "589a1dab109402b8f4efdde10e9f247147c043d663eb8c8b30631e07874b6f69",
+      "peak_time_s": 0.08,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_aea10e2819f7845c7d45",
+      "path": "data/rendered/g3_pilot/clip_aea10e2819f7845c7d45",
+      "case_id": "uipc_47adea8e210e24af3eca",
+      "source_path": "data/calibration/g3_convergence/uipc_47adea8e210e24af3eca",
+      "young_pa": 12000.0,
+      "force_n": 0.01,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 12000.0,
+        "poisson": 0.3,
+        "force_n": 0.01,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "XY",
+        "yaw": 0.0,
+        "pitch": 0.0,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14,
+        0.16,
+        0.2,
+        0.22,
+        0.24,
+        0.26,
+        0.28,
+        0.3,
+        0.34,
+        0.38
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 2982,
+        "foreground_pixels": 3024,
+        "amodal_foreground_pixels": 6272,
+        "observed_object_fraction": 0.48214285714285715,
+        "visible_fraction": 0.9861111111111112,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 0.676393985748291,
+        "final_motion_p95_px": 5.510125637054443,
+        "final_motion_max_px": 5.878693580627441,
+        "silhouette_iou": 0.9189726341537992,
+        "foreground_fraction": 0.125
+      },
+      "specification": {
+        "case_id": "uipc_47adea8e210e24af3eca",
+        "camera": {
+          "name": "XY",
+          "yaw": 0.0,
+          "pitch": 0.0,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "7e22947f15e4038bcf2d198df178d413533f4cc5d744024a05be780ff78ecddd",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          19
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "heavy",
+        "occlusion_kind": "paired image-space augmentation; not physical contact",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 17,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.38,
+        "dropped_static_tail_frames": 181,
+        "source_active_transition_fraction": 0.075,
+        "selected_active_transition_fraction": 0.8125,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "heavy",
+      "paired_group_id": "589a1dab109402b8f4efdde10e9f247147c043d663eb8c8b30631e07874b6f69",
+      "peak_time_s": 0.08,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_272f0e402d52401d45ae",
+      "path": "data/rendered/g3_pilot/clip_272f0e402d52401d45ae",
+      "case_id": "uipc_47adea8e210e24af3eca",
+      "source_path": "data/calibration/g3_convergence/uipc_47adea8e210e24af3eca",
+      "young_pa": 12000.0,
+      "force_n": 0.01,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 12000.0,
+        "poisson": 0.3,
+        "force_n": 0.01,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "oblique",
+        "yaw": 0.45,
+        "pitch": -0.3,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14,
+        0.16,
+        0.2,
+        0.22,
+        0.24,
+        0.26,
+        0.28,
+        0.3,
+        0.34,
+        0.38
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 7981,
+        "foreground_pixels": 8592,
+        "amodal_foreground_pixels": 8592,
+        "observed_object_fraction": 1.0,
+        "visible_fraction": 0.9288873370577281,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 1.4069410562515259,
+        "final_motion_p95_px": 5.034671306610107,
+        "final_motion_max_px": 5.799826145172119,
+        "silhouette_iou": 0.9344522567475618,
+        "foreground_fraction": 0.1712372448979592
+      },
+      "specification": {
+        "case_id": "uipc_47adea8e210e24af3eca",
+        "camera": {
+          "name": "oblique",
+          "yaw": 0.45,
+          "pitch": -0.3,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "7e22947f15e4038bcf2d198df178d413533f4cc5d744024a05be780ff78ecddd",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          19
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "clean",
+        "occlusion_kind": "none",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 17,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.38,
+        "dropped_static_tail_frames": 181,
+        "source_active_transition_fraction": 0.075,
+        "selected_active_transition_fraction": 0.8125,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "clean",
+      "paired_group_id": "094a82f950e9682c03ee8c705fc78f2226a400a166e3b9188ee177532830d3ab",
+      "peak_time_s": 0.08,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_2764638d67cd22d38e12",
+      "path": "data/rendered/g3_pilot/clip_2764638d67cd22d38e12",
+      "case_id": "uipc_47adea8e210e24af3eca",
+      "source_path": "data/calibration/g3_convergence/uipc_47adea8e210e24af3eca",
+      "young_pa": 12000.0,
+      "force_n": 0.01,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 12000.0,
+        "poisson": 0.3,
+        "force_n": 0.01,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "oblique",
+        "yaw": 0.45,
+        "pitch": -0.3,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14,
+        0.16,
+        0.2,
+        0.22,
+        0.24,
+        0.26,
+        0.28,
+        0.3,
+        0.34,
+        0.38
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 5656,
+        "foreground_pixels": 6077,
+        "amodal_foreground_pixels": 8592,
+        "observed_object_fraction": 0.7072858472998138,
+        "visible_fraction": 0.930722395919039,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 0.5674905180931091,
+        "final_motion_p95_px": 5.158682346343994,
+        "final_motion_max_px": 5.799826145172119,
+        "silhouette_iou": 0.9344522567475618,
+        "foreground_fraction": 0.1712372448979592
+      },
+      "specification": {
+        "case_id": "uipc_47adea8e210e24af3eca",
+        "camera": {
+          "name": "oblique",
+          "yaw": 0.45,
+          "pitch": -0.3,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "7e22947f15e4038bcf2d198df178d413533f4cc5d744024a05be780ff78ecddd",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          19
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "moderate",
+        "occlusion_kind": "paired image-space augmentation; not physical contact",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 17,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.38,
+        "dropped_static_tail_frames": 181,
+        "source_active_transition_fraction": 0.075,
+        "selected_active_transition_fraction": 0.8125,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "moderate",
+      "paired_group_id": "094a82f950e9682c03ee8c705fc78f2226a400a166e3b9188ee177532830d3ab",
+      "peak_time_s": 0.08,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_100c5c613220580f3f2a",
+      "path": "data/rendered/g3_pilot/clip_100c5c613220580f3f2a",
+      "case_id": "uipc_47adea8e210e24af3eca",
+      "source_path": "data/calibration/g3_convergence/uipc_47adea8e210e24af3eca",
+      "young_pa": 12000.0,
+      "force_n": 0.01,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 12000.0,
+        "poisson": 0.3,
+        "force_n": 0.01,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "oblique",
+        "yaw": 0.45,
+        "pitch": -0.3,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14,
+        0.16,
+        0.2,
+        0.22,
+        0.24,
+        0.26,
+        0.28,
+        0.3,
+        0.34,
+        0.38
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 3649,
+        "foreground_pixels": 3886,
+        "amodal_foreground_pixels": 8592,
+        "observed_object_fraction": 0.4522811918063315,
+        "visible_fraction": 0.9390118373648997,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 0.1210613027215004,
+        "final_motion_p95_px": 5.235572814941406,
+        "final_motion_max_px": 5.799826145172119,
+        "silhouette_iou": 0.9344522567475618,
+        "foreground_fraction": 0.1712372448979592
+      },
+      "specification": {
+        "case_id": "uipc_47adea8e210e24af3eca",
+        "camera": {
+          "name": "oblique",
+          "yaw": 0.45,
+          "pitch": -0.3,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "7e22947f15e4038bcf2d198df178d413533f4cc5d744024a05be780ff78ecddd",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          19
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "heavy",
+        "occlusion_kind": "paired image-space augmentation; not physical contact",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 17,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.38,
+        "dropped_static_tail_frames": 181,
+        "source_active_transition_fraction": 0.075,
+        "selected_active_transition_fraction": 0.8125,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "heavy",
+      "paired_group_id": "094a82f950e9682c03ee8c705fc78f2226a400a166e3b9188ee177532830d3ab",
+      "peak_time_s": 0.08,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_1945f59708fae1f47b9a",
+      "path": "data/rendered/g3_pilot/clip_1945f59708fae1f47b9a",
+      "case_id": "uipc_a43d23989beef581825c",
+      "source_path": "data/calibration/g3_convergence/uipc_a43d23989beef581825c",
+      "young_pa": 12000.0,
+      "force_n": 0.02,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 12000.0,
+        "poisson": 0.3,
+        "force_n": 0.02,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "XY",
+        "yaw": 0.0,
+        "pitch": 0.0,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14,
+        0.16,
+        0.18,
+        0.2,
+        0.22,
+        0.24,
+        0.28,
+        0.3,
+        0.32,
+        0.4
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 6268,
+        "foreground_pixels": 6272,
+        "amodal_foreground_pixels": 6272,
+        "observed_object_fraction": 1.0,
+        "visible_fraction": 0.9993622448979592,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 4.130593299865723,
+        "final_motion_p95_px": 10.591612815856934,
+        "final_motion_max_px": 11.750229835510254,
+        "silhouette_iou": 0.8458259847148736,
+        "foreground_fraction": 0.125
+      },
+      "specification": {
+        "case_id": "uipc_a43d23989beef581825c",
+        "camera": {
+          "name": "XY",
+          "yaw": 0.0,
+          "pitch": 0.0,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "f063d631cbd164f48dda9875644bc958b533dad55fabff32a3e437e59fc3ee2a",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          15,
+          16,
+          20
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "clean",
+        "occlusion_kind": "none",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 17,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.4,
+        "dropped_static_tail_frames": 180,
+        "source_active_transition_fraction": 0.09,
+        "selected_active_transition_fraction": 1.0,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "clean",
+      "paired_group_id": "224800bb70a1b49b3b982b0478b61139c084db1d22846b3b593e0a191f88f591",
+      "peak_time_s": 0.08,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_c36a0d4105c01f61198e",
+      "path": "data/rendered/g3_pilot/clip_c36a0d4105c01f61198e",
+      "case_id": "uipc_a43d23989beef581825c",
+      "source_path": "data/calibration/g3_convergence/uipc_a43d23989beef581825c",
+      "young_pa": 12000.0,
+      "force_n": 0.02,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 12000.0,
+        "poisson": 0.3,
+        "force_n": 0.02,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "XY",
+        "yaw": 0.0,
+        "pitch": 0.0,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14,
+        0.16,
+        0.18,
+        0.2,
+        0.22,
+        0.24,
+        0.28,
+        0.3,
+        0.32,
+        0.4
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 4449,
+        "foreground_pixels": 4536,
+        "amodal_foreground_pixels": 6272,
+        "observed_object_fraction": 0.7232142857142857,
+        "visible_fraction": 0.9808201058201058,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 2.4561052322387695,
+        "final_motion_p95_px": 10.823098182678223,
+        "final_motion_max_px": 11.750229835510254,
+        "silhouette_iou": 0.8458259847148736,
+        "foreground_fraction": 0.125
+      },
+      "specification": {
+        "case_id": "uipc_a43d23989beef581825c",
+        "camera": {
+          "name": "XY",
+          "yaw": 0.0,
+          "pitch": 0.0,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "f063d631cbd164f48dda9875644bc958b533dad55fabff32a3e437e59fc3ee2a",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          15,
+          16,
+          20
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "moderate",
+        "occlusion_kind": "paired image-space augmentation; not physical contact",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 17,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.4,
+        "dropped_static_tail_frames": 180,
+        "source_active_transition_fraction": 0.09,
+        "selected_active_transition_fraction": 1.0,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "moderate",
+      "paired_group_id": "224800bb70a1b49b3b982b0478b61139c084db1d22846b3b593e0a191f88f591",
+      "peak_time_s": 0.08,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_4ca2e065a3f62f649a4b",
+      "path": "data/rendered/g3_pilot/clip_4ca2e065a3f62f649a4b",
+      "case_id": "uipc_a43d23989beef581825c",
+      "source_path": "data/calibration/g3_convergence/uipc_a43d23989beef581825c",
+      "young_pa": 12000.0,
+      "force_n": 0.02,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 12000.0,
+        "poisson": 0.3,
+        "force_n": 0.02,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "XY",
+        "yaw": 0.0,
+        "pitch": 0.0,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14,
+        0.16,
+        0.18,
+        0.2,
+        0.22,
+        0.24,
+        0.28,
+        0.3,
+        0.32,
+        0.4
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 2935,
+        "foreground_pixels": 3024,
+        "amodal_foreground_pixels": 6272,
+        "observed_object_fraction": 0.48214285714285715,
+        "visible_fraction": 0.970568783068783,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 1.323358178138733,
+        "final_motion_p95_px": 10.996902465820312,
+        "final_motion_max_px": 11.750229835510254,
+        "silhouette_iou": 0.8458259847148736,
+        "foreground_fraction": 0.125
+      },
+      "specification": {
+        "case_id": "uipc_a43d23989beef581825c",
+        "camera": {
+          "name": "XY",
+          "yaw": 0.0,
+          "pitch": 0.0,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "f063d631cbd164f48dda9875644bc958b533dad55fabff32a3e437e59fc3ee2a",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          15,
+          16,
+          20
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "heavy",
+        "occlusion_kind": "paired image-space augmentation; not physical contact",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 17,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.4,
+        "dropped_static_tail_frames": 180,
+        "source_active_transition_fraction": 0.09,
+        "selected_active_transition_fraction": 1.0,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "heavy",
+      "paired_group_id": "224800bb70a1b49b3b982b0478b61139c084db1d22846b3b593e0a191f88f591",
+      "peak_time_s": 0.08,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_6db582df7eff5f6f45d3",
+      "path": "data/rendered/g3_pilot/clip_6db582df7eff5f6f45d3",
+      "case_id": "uipc_a43d23989beef581825c",
+      "source_path": "data/calibration/g3_convergence/uipc_a43d23989beef581825c",
+      "young_pa": 12000.0,
+      "force_n": 0.02,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 12000.0,
+        "poisson": 0.3,
+        "force_n": 0.02,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "oblique",
+        "yaw": 0.45,
+        "pitch": -0.3,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14,
+        0.16,
+        0.18,
+        0.2,
+        0.22,
+        0.24,
+        0.28,
+        0.3,
+        0.32,
+        0.4
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 7840,
+        "foreground_pixels": 8592,
+        "amodal_foreground_pixels": 8592,
+        "observed_object_fraction": 1.0,
+        "visible_fraction": 0.9124767225325885,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 2.775862693786621,
+        "final_motion_p95_px": 9.987060546875,
+        "final_motion_max_px": 11.562638282775879,
+        "silhouette_iou": 0.8760513501549358,
+        "foreground_fraction": 0.1712372448979592
+      },
+      "specification": {
+        "case_id": "uipc_a43d23989beef581825c",
+        "camera": {
+          "name": "oblique",
+          "yaw": 0.45,
+          "pitch": -0.3,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "f063d631cbd164f48dda9875644bc958b533dad55fabff32a3e437e59fc3ee2a",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          15,
+          16,
+          20
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "clean",
+        "occlusion_kind": "none",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 17,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.4,
+        "dropped_static_tail_frames": 180,
+        "source_active_transition_fraction": 0.09,
+        "selected_active_transition_fraction": 1.0,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "clean",
+      "paired_group_id": "209b12893747bd2121cc5e9721ae371a95e2d1b7ed18dedd0f924612a30c046e",
+      "peak_time_s": 0.08,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_9082f6830d541fb5db77",
+      "path": "data/rendered/g3_pilot/clip_9082f6830d541fb5db77",
+      "case_id": "uipc_a43d23989beef581825c",
+      "source_path": "data/calibration/g3_convergence/uipc_a43d23989beef581825c",
+      "young_pa": 12000.0,
+      "force_n": 0.02,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 12000.0,
+        "poisson": 0.3,
+        "force_n": 0.02,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "oblique",
+        "yaw": 0.45,
+        "pitch": -0.3,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14,
+        0.16,
+        0.18,
+        0.2,
+        0.22,
+        0.24,
+        0.28,
+        0.3,
+        0.32,
+        0.4
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 5496,
+        "foreground_pixels": 6077,
+        "amodal_foreground_pixels": 8592,
+        "observed_object_fraction": 0.7072858472998138,
+        "visible_fraction": 0.9043936152706927,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 1.1950212717056274,
+        "final_motion_p95_px": 10.241764068603516,
+        "final_motion_max_px": 11.562638282775879,
+        "silhouette_iou": 0.8760513501549358,
+        "foreground_fraction": 0.1712372448979592
+      },
+      "specification": {
+        "case_id": "uipc_a43d23989beef581825c",
+        "camera": {
+          "name": "oblique",
+          "yaw": 0.45,
+          "pitch": -0.3,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "f063d631cbd164f48dda9875644bc958b533dad55fabff32a3e437e59fc3ee2a",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          15,
+          16,
+          20
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "moderate",
+        "occlusion_kind": "paired image-space augmentation; not physical contact",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 17,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.4,
+        "dropped_static_tail_frames": 180,
+        "source_active_transition_fraction": 0.09,
+        "selected_active_transition_fraction": 1.0,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "moderate",
+      "paired_group_id": "209b12893747bd2121cc5e9721ae371a95e2d1b7ed18dedd0f924612a30c046e",
+      "peak_time_s": 0.08,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_2a4f991666c7e6c25806",
+      "path": "data/rendered/g3_pilot/clip_2a4f991666c7e6c25806",
+      "case_id": "uipc_a43d23989beef581825c",
+      "source_path": "data/calibration/g3_convergence/uipc_a43d23989beef581825c",
+      "young_pa": 12000.0,
+      "force_n": 0.02,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 12000.0,
+        "poisson": 0.3,
+        "force_n": 0.02,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "oblique",
+        "yaw": 0.45,
+        "pitch": -0.3,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14,
+        0.16,
+        0.18,
+        0.2,
+        0.22,
+        0.24,
+        0.28,
+        0.3,
+        0.32,
+        0.4
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 3529,
+        "foreground_pixels": 3886,
+        "amodal_foreground_pixels": 8592,
+        "observed_object_fraction": 0.4522811918063315,
+        "visible_fraction": 0.9081317550180134,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 0.20078051090240479,
+        "final_motion_p95_px": 10.42004680633545,
+        "final_motion_max_px": 11.562638282775879,
+        "silhouette_iou": 0.8760513501549358,
+        "foreground_fraction": 0.1712372448979592
+      },
+      "specification": {
+        "case_id": "uipc_a43d23989beef581825c",
+        "camera": {
+          "name": "oblique",
+          "yaw": 0.45,
+          "pitch": -0.3,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "f063d631cbd164f48dda9875644bc958b533dad55fabff32a3e437e59fc3ee2a",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          15,
+          16,
+          20
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "heavy",
+        "occlusion_kind": "paired image-space augmentation; not physical contact",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 17,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.4,
+        "dropped_static_tail_frames": 180,
+        "source_active_transition_fraction": 0.09,
+        "selected_active_transition_fraction": 1.0,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "heavy",
+      "paired_group_id": "209b12893747bd2121cc5e9721ae371a95e2d1b7ed18dedd0f924612a30c046e",
+      "peak_time_s": 0.08,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_fd0152d66ca951385b62",
+      "path": "data/rendered/g3_pilot/clip_fd0152d66ca951385b62",
+      "case_id": "uipc_4916c652808f735f54e7",
+      "source_path": "data/calibration/g3_convergence/uipc_4916c652808f735f54e7",
+      "young_pa": 12000.0,
+      "force_n": 0.05,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 12000.0,
+        "poisson": 0.3,
+        "force_n": 0.05,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "XY",
+        "yaw": 0.0,
+        "pitch": 0.0,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14,
+        0.16,
+        0.18,
+        0.2,
+        0.24,
+        0.28,
+        0.3,
+        0.32,
+        0.36,
+        0.48
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 6264,
+        "foreground_pixels": 6272,
+        "amodal_foreground_pixels": 6272,
+        "observed_object_fraction": 1.0,
+        "visible_fraction": 0.9987244897959183,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 10.20608901977539,
+        "final_motion_p95_px": 26.011810302734375,
+        "final_motion_max_px": 29.014299392700195,
+        "silhouette_iou": 0.6754059089699228,
+        "foreground_fraction": 0.125
+      },
+      "specification": {
+        "case_id": "uipc_4916c652808f735f54e7",
+        "camera": {
+          "name": "XY",
+          "yaw": 0.0,
+          "pitch": 0.0,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "c6ea48b5934c51a77d06f9cad7bdcdd3ed8efb6a24fb69d8768d34f5cdb1fd70",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          12,
+          14,
+          15,
+          16,
+          18,
+          24
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "clean",
+        "occlusion_kind": "none",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 17,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.48,
+        "dropped_static_tail_frames": 176,
+        "source_active_transition_fraction": 0.105,
+        "selected_active_transition_fraction": 1.0,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "clean",
+      "paired_group_id": "efad45818390091e8a5039808f377580578411082c12c3b299217ffb56421bb4",
+      "peak_time_s": 0.08,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_03da9d5af36c7f6e6514",
+      "path": "data/rendered/g3_pilot/clip_03da9d5af36c7f6e6514",
+      "case_id": "uipc_4916c652808f735f54e7",
+      "source_path": "data/calibration/g3_convergence/uipc_4916c652808f735f54e7",
+      "young_pa": 12000.0,
+      "force_n": 0.05,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 12000.0,
+        "poisson": 0.3,
+        "force_n": 0.05,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "XY",
+        "yaw": 0.0,
+        "pitch": 0.0,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14,
+        0.16,
+        0.18,
+        0.2,
+        0.24,
+        0.28,
+        0.3,
+        0.32,
+        0.36,
+        0.48
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 4282,
+        "foreground_pixels": 4536,
+        "amodal_foreground_pixels": 6272,
+        "observed_object_fraction": 0.7232142857142857,
+        "visible_fraction": 0.9440035273368607,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 5.741504669189453,
+        "final_motion_p95_px": 26.600725173950195,
+        "final_motion_max_px": 29.014299392700195,
+        "silhouette_iou": 0.6754059089699228,
+        "foreground_fraction": 0.125
+      },
+      "specification": {
+        "case_id": "uipc_4916c652808f735f54e7",
+        "camera": {
+          "name": "XY",
+          "yaw": 0.0,
+          "pitch": 0.0,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "c6ea48b5934c51a77d06f9cad7bdcdd3ed8efb6a24fb69d8768d34f5cdb1fd70",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          12,
+          14,
+          15,
+          16,
+          18,
+          24
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "moderate",
+        "occlusion_kind": "paired image-space augmentation; not physical contact",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 17,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.48,
+        "dropped_static_tail_frames": 176,
+        "source_active_transition_fraction": 0.105,
+        "selected_active_transition_fraction": 1.0,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "moderate",
+      "paired_group_id": "efad45818390091e8a5039808f377580578411082c12c3b299217ffb56421bb4",
+      "peak_time_s": 0.08,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_345c8108c66e99591a49",
+      "path": "data/rendered/g3_pilot/clip_345c8108c66e99591a49",
+      "case_id": "uipc_4916c652808f735f54e7",
+      "source_path": "data/calibration/g3_convergence/uipc_4916c652808f735f54e7",
+      "young_pa": 12000.0,
+      "force_n": 0.05,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 12000.0,
+        "poisson": 0.3,
+        "force_n": 0.05,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "XY",
+        "yaw": 0.0,
+        "pitch": 0.0,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14,
+        0.16,
+        0.18,
+        0.2,
+        0.24,
+        0.28,
+        0.3,
+        0.32,
+        0.36,
+        0.48
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 2752,
+        "foreground_pixels": 3024,
+        "amodal_foreground_pixels": 6272,
+        "observed_object_fraction": 0.48214285714285715,
+        "visible_fraction": 0.91005291005291,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 2.9784607887268066,
+        "final_motion_p95_px": 27.030887603759766,
+        "final_motion_max_px": 29.014299392700195,
+        "silhouette_iou": 0.6754059089699228,
+        "foreground_fraction": 0.125
+      },
+      "specification": {
+        "case_id": "uipc_4916c652808f735f54e7",
+        "camera": {
+          "name": "XY",
+          "yaw": 0.0,
+          "pitch": 0.0,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "c6ea48b5934c51a77d06f9cad7bdcdd3ed8efb6a24fb69d8768d34f5cdb1fd70",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          12,
+          14,
+          15,
+          16,
+          18,
+          24
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "heavy",
+        "occlusion_kind": "paired image-space augmentation; not physical contact",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 17,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.48,
+        "dropped_static_tail_frames": 176,
+        "source_active_transition_fraction": 0.105,
+        "selected_active_transition_fraction": 1.0,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "heavy",
+      "paired_group_id": "efad45818390091e8a5039808f377580578411082c12c3b299217ffb56421bb4",
+      "peak_time_s": 0.08,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_281bacbd3d8f6338687e",
+      "path": "data/rendered/g3_pilot/clip_281bacbd3d8f6338687e",
+      "case_id": "uipc_4916c652808f735f54e7",
+      "source_path": "data/calibration/g3_convergence/uipc_4916c652808f735f54e7",
+      "young_pa": 12000.0,
+      "force_n": 0.05,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 12000.0,
+        "poisson": 0.3,
+        "force_n": 0.05,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "oblique",
+        "yaw": 0.45,
+        "pitch": -0.3,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14,
+        0.16,
+        0.18,
+        0.2,
+        0.24,
+        0.28,
+        0.3,
+        0.32,
+        0.36,
+        0.48
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 7583,
+        "foreground_pixels": 8592,
+        "amodal_foreground_pixels": 8592,
+        "observed_object_fraction": 1.0,
+        "visible_fraction": 0.8825651769087524,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 6.572134494781494,
+        "final_motion_p95_px": 24.65816879272461,
+        "final_motion_max_px": 28.207313537597656,
+        "silhouette_iou": 0.7202782680926176,
+        "foreground_fraction": 0.1712372448979592
+      },
+      "specification": {
+        "case_id": "uipc_4916c652808f735f54e7",
+        "camera": {
+          "name": "oblique",
+          "yaw": 0.45,
+          "pitch": -0.3,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "c6ea48b5934c51a77d06f9cad7bdcdd3ed8efb6a24fb69d8768d34f5cdb1fd70",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          12,
+          14,
+          15,
+          16,
+          18,
+          24
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "clean",
+        "occlusion_kind": "none",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 17,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.48,
+        "dropped_static_tail_frames": 176,
+        "source_active_transition_fraction": 0.105,
+        "selected_active_transition_fraction": 1.0,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "clean",
+      "paired_group_id": "9be74a9ffcad160ef14ea9214c4aba8ae7999a041e70149b4dc114245dbe7d00",
+      "peak_time_s": 0.08,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_667251e243ae426c0e88",
+      "path": "data/rendered/g3_pilot/clip_667251e243ae426c0e88",
+      "case_id": "uipc_4916c652808f735f54e7",
+      "source_path": "data/calibration/g3_convergence/uipc_4916c652808f735f54e7",
+      "young_pa": 12000.0,
+      "force_n": 0.05,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 12000.0,
+        "poisson": 0.3,
+        "force_n": 0.05,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "oblique",
+        "yaw": 0.45,
+        "pitch": -0.3,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14,
+        0.16,
+        0.18,
+        0.2,
+        0.24,
+        0.28,
+        0.3,
+        0.32,
+        0.36,
+        0.48
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 5214,
+        "foreground_pixels": 6077,
+        "amodal_foreground_pixels": 8592,
+        "observed_object_fraction": 0.7072858472998138,
+        "visible_fraction": 0.8579891393779826,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 2.455657482147217,
+        "final_motion_p95_px": 25.39141273498535,
+        "final_motion_max_px": 28.207313537597656,
+        "silhouette_iou": 0.7202782680926176,
+        "foreground_fraction": 0.1712372448979592
+      },
+      "specification": {
+        "case_id": "uipc_4916c652808f735f54e7",
+        "camera": {
+          "name": "oblique",
+          "yaw": 0.45,
+          "pitch": -0.3,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "c6ea48b5934c51a77d06f9cad7bdcdd3ed8efb6a24fb69d8768d34f5cdb1fd70",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          12,
+          14,
+          15,
+          16,
+          18,
+          24
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "moderate",
+        "occlusion_kind": "paired image-space augmentation; not physical contact",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 17,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.48,
+        "dropped_static_tail_frames": 176,
+        "source_active_transition_fraction": 0.105,
+        "selected_active_transition_fraction": 1.0,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "moderate",
+      "paired_group_id": "9be74a9ffcad160ef14ea9214c4aba8ae7999a041e70149b4dc114245dbe7d00",
+      "peak_time_s": 0.08,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_eb829574a67e44d23c2d",
+      "path": "data/rendered/g3_pilot/clip_eb829574a67e44d23c2d",
+      "case_id": "uipc_4916c652808f735f54e7",
+      "source_path": "data/calibration/g3_convergence/uipc_4916c652808f735f54e7",
+      "young_pa": 12000.0,
+      "force_n": 0.05,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 12000.0,
+        "poisson": 0.3,
+        "force_n": 0.05,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "oblique",
+        "yaw": 0.45,
+        "pitch": -0.3,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14,
+        0.16,
+        0.18,
+        0.2,
+        0.24,
+        0.28,
+        0.3,
+        0.32,
+        0.36,
+        0.48
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 3325,
+        "foreground_pixels": 3886,
+        "amodal_foreground_pixels": 8592,
+        "observed_object_fraction": 0.4522811918063315,
+        "visible_fraction": 0.8556356150283068,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 0.33591607213020325,
+        "final_motion_p95_px": 25.8233642578125,
+        "final_motion_max_px": 28.207313537597656,
+        "silhouette_iou": 0.7202782680926176,
+        "foreground_fraction": 0.1712372448979592
+      },
+      "specification": {
+        "case_id": "uipc_4916c652808f735f54e7",
+        "camera": {
+          "name": "oblique",
+          "yaw": 0.45,
+          "pitch": -0.3,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "c6ea48b5934c51a77d06f9cad7bdcdd3ed8efb6a24fb69d8768d34f5cdb1fd70",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          12,
+          14,
+          15,
+          16,
+          18,
+          24
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "heavy",
+        "occlusion_kind": "paired image-space augmentation; not physical contact",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 17,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.48,
+        "dropped_static_tail_frames": 176,
+        "source_active_transition_fraction": 0.105,
+        "selected_active_transition_fraction": 1.0,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "heavy",
+      "paired_group_id": "9be74a9ffcad160ef14ea9214c4aba8ae7999a041e70149b4dc114245dbe7d00",
+      "peak_time_s": 0.08,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_faa06d8c83ce2c1a7e1f",
+      "path": "data/rendered/g3_pilot/clip_faa06d8c83ce2c1a7e1f",
+      "case_id": "uipc_83240f7471d46403ca0d",
+      "source_path": "data/calibration/g3_convergence/uipc_83240f7471d46403ca0d",
+      "young_pa": 48000.0,
+      "force_n": 0.02,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 48000.0,
+        "poisson": 0.3,
+        "force_n": 0.02,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "XY",
+        "yaw": 0.0,
+        "pitch": 0.0,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 6272,
+        "foreground_pixels": 6272,
+        "amodal_foreground_pixels": 6272,
+        "observed_object_fraction": 1.0,
+        "visible_fraction": 1.0,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 0.8860878348350525,
+        "final_motion_p95_px": 2.306039571762085,
+        "final_motion_max_px": 2.557584762573242,
+        "silhouette_iou": 0.9650743931088489,
+        "foreground_fraction": 0.125
+      },
+      "specification": {
+        "case_id": "uipc_83240f7471d46403ca0d",
+        "camera": {
+          "name": "XY",
+          "yaw": 0.0,
+          "pitch": 0.0,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "f205b949dcceb82a9d4ee5c0e85b26dc5842506e9e5ae0001b1f0e961a1d787c",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "clean",
+        "occlusion_kind": "none",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 8,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.14,
+        "dropped_static_tail_frames": 193,
+        "source_active_transition_fraction": 0.025,
+        "selected_active_transition_fraction": 0.7142857142857143,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "clean",
+      "paired_group_id": "bba299be0ab3764b935faf47141ff4082cf116d5126ae1a4f1f99abced7eb396",
+      "peak_time_s": 0.06,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_c113edc71d8f4943f9f7",
+      "path": "data/rendered/g3_pilot/clip_c113edc71d8f4943f9f7",
+      "case_id": "uipc_83240f7471d46403ca0d",
+      "source_path": "data/calibration/g3_convergence/uipc_83240f7471d46403ca0d",
+      "young_pa": 48000.0,
+      "force_n": 0.02,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 48000.0,
+        "poisson": 0.3,
+        "force_n": 0.02,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "XY",
+        "yaw": 0.0,
+        "pitch": 0.0,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 4524,
+        "foreground_pixels": 4536,
+        "amodal_foreground_pixels": 6272,
+        "observed_object_fraction": 0.7232142857142857,
+        "visible_fraction": 0.9973544973544973,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 0.5361486077308655,
+        "final_motion_p95_px": 2.3576838970184326,
+        "final_motion_max_px": 2.557584762573242,
+        "silhouette_iou": 0.9650743931088489,
+        "foreground_fraction": 0.125
+      },
+      "specification": {
+        "case_id": "uipc_83240f7471d46403ca0d",
+        "camera": {
+          "name": "XY",
+          "yaw": 0.0,
+          "pitch": 0.0,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "f205b949dcceb82a9d4ee5c0e85b26dc5842506e9e5ae0001b1f0e961a1d787c",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "moderate",
+        "occlusion_kind": "paired image-space augmentation; not physical contact",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 8,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.14,
+        "dropped_static_tail_frames": 193,
+        "source_active_transition_fraction": 0.025,
+        "selected_active_transition_fraction": 0.7142857142857143,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "moderate",
+      "paired_group_id": "bba299be0ab3764b935faf47141ff4082cf116d5126ae1a4f1f99abced7eb396",
+      "peak_time_s": 0.06,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_8ad8367a0e39b6b2a052",
+      "path": "data/rendered/g3_pilot/clip_8ad8367a0e39b6b2a052",
+      "case_id": "uipc_83240f7471d46403ca0d",
+      "source_path": "data/calibration/g3_convergence/uipc_83240f7471d46403ca0d",
+      "young_pa": 48000.0,
+      "force_n": 0.02,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 48000.0,
+        "poisson": 0.3,
+        "force_n": 0.02,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "XY",
+        "yaw": 0.0,
+        "pitch": 0.0,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 3014,
+        "foreground_pixels": 3024,
+        "amodal_foreground_pixels": 6272,
+        "observed_object_fraction": 0.48214285714285715,
+        "visible_fraction": 0.9966931216931217,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 0.29235297441482544,
+        "final_motion_p95_px": 2.39567232131958,
+        "final_motion_max_px": 2.557584762573242,
+        "silhouette_iou": 0.9650743931088489,
+        "foreground_fraction": 0.125
+      },
+      "specification": {
+        "case_id": "uipc_83240f7471d46403ca0d",
+        "camera": {
+          "name": "XY",
+          "yaw": 0.0,
+          "pitch": 0.0,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "f205b949dcceb82a9d4ee5c0e85b26dc5842506e9e5ae0001b1f0e961a1d787c",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "heavy",
+        "occlusion_kind": "paired image-space augmentation; not physical contact",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 8,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.14,
+        "dropped_static_tail_frames": 193,
+        "source_active_transition_fraction": 0.025,
+        "selected_active_transition_fraction": 0.7142857142857143,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "heavy",
+      "paired_group_id": "bba299be0ab3764b935faf47141ff4082cf116d5126ae1a4f1f99abced7eb396",
+      "peak_time_s": 0.06,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_8ff1c326050e4d10c7a4",
+      "path": "data/rendered/g3_pilot/clip_8ff1c326050e4d10c7a4",
+      "case_id": "uipc_83240f7471d46403ca0d",
+      "source_path": "data/calibration/g3_convergence/uipc_83240f7471d46403ca0d",
+      "young_pa": 48000.0,
+      "force_n": 0.02,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 48000.0,
+        "poisson": 0.3,
+        "force_n": 0.02,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "oblique",
+        "yaw": 0.45,
+        "pitch": -0.3,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 8085,
+        "foreground_pixels": 8592,
+        "amodal_foreground_pixels": 8592,
+        "observed_object_fraction": 1.0,
+        "visible_fraction": 0.9409916201117319,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 0.5872395038604736,
+        "final_motion_p95_px": 2.1759512424468994,
+        "final_motion_max_px": 2.52693510055542,
+        "silhouette_iou": 0.9707642725598526,
+        "foreground_fraction": 0.1712372448979592
+      },
+      "specification": {
+        "case_id": "uipc_83240f7471d46403ca0d",
+        "camera": {
+          "name": "oblique",
+          "yaw": 0.45,
+          "pitch": -0.3,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "f205b949dcceb82a9d4ee5c0e85b26dc5842506e9e5ae0001b1f0e961a1d787c",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "clean",
+        "occlusion_kind": "none",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 8,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.14,
+        "dropped_static_tail_frames": 193,
+        "source_active_transition_fraction": 0.025,
+        "selected_active_transition_fraction": 0.7142857142857143,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "clean",
+      "paired_group_id": "2b1e1b4cdd945febd166e657258f5f9bb915ca96705d546372c45a30fb98a770",
+      "peak_time_s": 0.06,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_1f8d4e166765e15bd81d",
+      "path": "data/rendered/g3_pilot/clip_1f8d4e166765e15bd81d",
+      "case_id": "uipc_83240f7471d46403ca0d",
+      "source_path": "data/calibration/g3_convergence/uipc_83240f7471d46403ca0d",
+      "young_pa": 48000.0,
+      "force_n": 0.02,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 48000.0,
+        "poisson": 0.3,
+        "force_n": 0.02,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "oblique",
+        "yaw": 0.45,
+        "pitch": -0.3,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 5752,
+        "foreground_pixels": 6077,
+        "amodal_foreground_pixels": 8592,
+        "observed_object_fraction": 0.7072858472998138,
+        "visible_fraction": 0.9465196643080467,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 0.25039738416671753,
+        "final_motion_p95_px": 2.227248430252075,
+        "final_motion_max_px": 2.52693510055542,
+        "silhouette_iou": 0.9707642725598526,
+        "foreground_fraction": 0.1712372448979592
+      },
+      "specification": {
+        "case_id": "uipc_83240f7471d46403ca0d",
+        "camera": {
+          "name": "oblique",
+          "yaw": 0.45,
+          "pitch": -0.3,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "f205b949dcceb82a9d4ee5c0e85b26dc5842506e9e5ae0001b1f0e961a1d787c",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "moderate",
+        "occlusion_kind": "paired image-space augmentation; not physical contact",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 8,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.14,
+        "dropped_static_tail_frames": 193,
+        "source_active_transition_fraction": 0.025,
+        "selected_active_transition_fraction": 0.7142857142857143,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "moderate",
+      "paired_group_id": "2b1e1b4cdd945febd166e657258f5f9bb915ca96705d546372c45a30fb98a770",
+      "peak_time_s": 0.06,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_ed6047da2d5941477e0a",
+      "path": "data/rendered/g3_pilot/clip_ed6047da2d5941477e0a",
+      "case_id": "uipc_83240f7471d46403ca0d",
+      "source_path": "data/calibration/g3_convergence/uipc_83240f7471d46403ca0d",
+      "young_pa": 48000.0,
+      "force_n": 0.02,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 48000.0,
+        "poisson": 0.3,
+        "force_n": 0.02,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "oblique",
+        "yaw": 0.45,
+        "pitch": -0.3,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 3774,
+        "foreground_pixels": 3886,
+        "amodal_foreground_pixels": 8592,
+        "observed_object_fraction": 0.4522811918063315,
+        "visible_fraction": 0.9711785898095728,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 0.060519903898239136,
+        "final_motion_p95_px": 2.262786626815796,
+        "final_motion_max_px": 2.52693510055542,
+        "silhouette_iou": 0.9707642725598526,
+        "foreground_fraction": 0.1712372448979592
+      },
+      "specification": {
+        "case_id": "uipc_83240f7471d46403ca0d",
+        "camera": {
+          "name": "oblique",
+          "yaw": 0.45,
+          "pitch": -0.3,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "f205b949dcceb82a9d4ee5c0e85b26dc5842506e9e5ae0001b1f0e961a1d787c",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "heavy",
+        "occlusion_kind": "paired image-space augmentation; not physical contact",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 8,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.14,
+        "dropped_static_tail_frames": 193,
+        "source_active_transition_fraction": 0.025,
+        "selected_active_transition_fraction": 0.7142857142857143,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "heavy",
+      "paired_group_id": "2b1e1b4cdd945febd166e657258f5f9bb915ca96705d546372c45a30fb98a770",
+      "peak_time_s": 0.06,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_a0b7c957659319a44552",
+      "path": "data/rendered/g3_pilot/clip_a0b7c957659319a44552",
+      "case_id": "uipc_1446c59e1e3cfdf387d8",
+      "source_path": "data/calibration/g3_convergence/uipc_1446c59e1e3cfdf387d8",
+      "young_pa": 48000.0,
+      "force_n": 0.05,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 48000.0,
+        "poisson": 0.3,
+        "force_n": 0.05,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "XY",
+        "yaw": 0.0,
+        "pitch": 0.0,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14,
+        0.16,
+        0.18,
+        0.2
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 6271,
+        "foreground_pixels": 6272,
+        "amodal_foreground_pixels": 6272,
+        "observed_object_fraction": 1.0,
+        "visible_fraction": 0.9998405612244898,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 2.212283134460449,
+        "final_motion_p95_px": 5.763569355010986,
+        "final_motion_max_px": 6.396023750305176,
+        "silhouette_iou": 0.9121096725057121,
+        "foreground_fraction": 0.125
+      },
+      "specification": {
+        "case_id": "uipc_1446c59e1e3cfdf387d8",
+        "camera": {
+          "name": "XY",
+          "yaw": 0.0,
+          "pitch": 0.0,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "4138e1cec69e0950c9ca71aadd4454a60bb6807b3b7ed07f89216992d0853a83",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "clean",
+        "occlusion_kind": "none",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 11,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.2,
+        "dropped_static_tail_frames": 190,
+        "source_active_transition_fraction": 0.04,
+        "selected_active_transition_fraction": 0.8,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "clean",
+      "paired_group_id": "c0bf0d5edde8ee6375f6479305235fd2f764f062df8dd51f64c637c5a30c6154",
+      "peak_time_s": 0.06,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_cc4e5fdb3896d7c0366a",
+      "path": "data/rendered/g3_pilot/clip_cc4e5fdb3896d7c0366a",
+      "case_id": "uipc_1446c59e1e3cfdf387d8",
+      "source_path": "data/calibration/g3_convergence/uipc_1446c59e1e3cfdf387d8",
+      "young_pa": 48000.0,
+      "force_n": 0.05,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 48000.0,
+        "poisson": 0.3,
+        "force_n": 0.05,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "XY",
+        "yaw": 0.0,
+        "pitch": 0.0,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14,
+        0.16,
+        0.18,
+        0.2
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 4491,
+        "foreground_pixels": 4536,
+        "amodal_foreground_pixels": 6272,
+        "observed_object_fraction": 0.7232142857142857,
+        "visible_fraction": 0.9900793650793651,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 1.3249098062515259,
+        "final_motion_p95_px": 5.887775421142578,
+        "final_motion_max_px": 6.396023750305176,
+        "silhouette_iou": 0.9121096725057121,
+        "foreground_fraction": 0.125
+      },
+      "specification": {
+        "case_id": "uipc_1446c59e1e3cfdf387d8",
+        "camera": {
+          "name": "XY",
+          "yaw": 0.0,
+          "pitch": 0.0,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "4138e1cec69e0950c9ca71aadd4454a60bb6807b3b7ed07f89216992d0853a83",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "moderate",
+        "occlusion_kind": "paired image-space augmentation; not physical contact",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 11,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.2,
+        "dropped_static_tail_frames": 190,
+        "source_active_transition_fraction": 0.04,
+        "selected_active_transition_fraction": 0.8,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "moderate",
+      "paired_group_id": "c0bf0d5edde8ee6375f6479305235fd2f764f062df8dd51f64c637c5a30c6154",
+      "peak_time_s": 0.06,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_0b0e1d918749801d6913",
+      "path": "data/rendered/g3_pilot/clip_0b0e1d918749801d6913",
+      "case_id": "uipc_1446c59e1e3cfdf387d8",
+      "source_path": "data/calibration/g3_convergence/uipc_1446c59e1e3cfdf387d8",
+      "young_pa": 48000.0,
+      "force_n": 0.05,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 48000.0,
+        "poisson": 0.3,
+        "force_n": 0.05,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "XY",
+        "yaw": 0.0,
+        "pitch": 0.0,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14,
+        0.16,
+        0.18,
+        0.2
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 2979,
+        "foreground_pixels": 3024,
+        "amodal_foreground_pixels": 6272,
+        "observed_object_fraction": 0.48214285714285715,
+        "visible_fraction": 0.9851190476190477,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 0.7166481614112854,
+        "final_motion_p95_px": 5.983043193817139,
+        "final_motion_max_px": 6.396023750305176,
+        "silhouette_iou": 0.9121096725057121,
+        "foreground_fraction": 0.125
+      },
+      "specification": {
+        "case_id": "uipc_1446c59e1e3cfdf387d8",
+        "camera": {
+          "name": "XY",
+          "yaw": 0.0,
+          "pitch": 0.0,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "4138e1cec69e0950c9ca71aadd4454a60bb6807b3b7ed07f89216992d0853a83",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "heavy",
+        "occlusion_kind": "paired image-space augmentation; not physical contact",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 11,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.2,
+        "dropped_static_tail_frames": 190,
+        "source_active_transition_fraction": 0.04,
+        "selected_active_transition_fraction": 0.8,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "heavy",
+      "paired_group_id": "c0bf0d5edde8ee6375f6479305235fd2f764f062df8dd51f64c637c5a30c6154",
+      "peak_time_s": 0.06,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_cdc8c178e05b10e41332",
+      "path": "data/rendered/g3_pilot/clip_cdc8c178e05b10e41332",
+      "case_id": "uipc_1446c59e1e3cfdf387d8",
+      "source_path": "data/calibration/g3_convergence/uipc_1446c59e1e3cfdf387d8",
+      "young_pa": 48000.0,
+      "force_n": 0.05,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 48000.0,
+        "poisson": 0.3,
+        "force_n": 0.05,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "oblique",
+        "yaw": 0.45,
+        "pitch": -0.3,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14,
+        0.16,
+        0.18,
+        0.2
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 7947,
+        "foreground_pixels": 8592,
+        "amodal_foreground_pixels": 8592,
+        "observed_object_fraction": 1.0,
+        "visible_fraction": 0.9249301675977654,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 1.4796892404556274,
+        "final_motion_p95_px": 5.372988224029541,
+        "final_motion_max_px": 6.308048725128174,
+        "silhouette_iou": 0.929816617613765,
+        "foreground_fraction": 0.1712372448979592
+      },
+      "specification": {
+        "case_id": "uipc_1446c59e1e3cfdf387d8",
+        "camera": {
+          "name": "oblique",
+          "yaw": 0.45,
+          "pitch": -0.3,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "4138e1cec69e0950c9ca71aadd4454a60bb6807b3b7ed07f89216992d0853a83",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "clean",
+        "occlusion_kind": "none",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 11,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.2,
+        "dropped_static_tail_frames": 190,
+        "source_active_transition_fraction": 0.04,
+        "selected_active_transition_fraction": 0.8,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "clean",
+      "paired_group_id": "1885fc08c04f6f408bbfdad535497d0854d8114d7c7210ebd4c0ff22a55c5de9",
+      "peak_time_s": 0.06,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_f6e3cd7f849ffd8fbc74",
+      "path": "data/rendered/g3_pilot/clip_f6e3cd7f849ffd8fbc74",
+      "case_id": "uipc_1446c59e1e3cfdf387d8",
+      "source_path": "data/calibration/g3_convergence/uipc_1446c59e1e3cfdf387d8",
+      "young_pa": 48000.0,
+      "force_n": 0.05,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 48000.0,
+        "poisson": 0.3,
+        "force_n": 0.05,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "oblique",
+        "yaw": 0.45,
+        "pitch": -0.3,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14,
+        0.16,
+        0.18,
+        0.2
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 5619,
+        "foreground_pixels": 6077,
+        "amodal_foreground_pixels": 8592,
+        "observed_object_fraction": 0.7072858472998138,
+        "visible_fraction": 0.924633865394109,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 0.5923234224319458,
+        "final_motion_p95_px": 5.5124125480651855,
+        "final_motion_max_px": 6.308048725128174,
+        "silhouette_iou": 0.929816617613765,
+        "foreground_fraction": 0.1712372448979592
+      },
+      "specification": {
+        "case_id": "uipc_1446c59e1e3cfdf387d8",
+        "camera": {
+          "name": "oblique",
+          "yaw": 0.45,
+          "pitch": -0.3,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "4138e1cec69e0950c9ca71aadd4454a60bb6807b3b7ed07f89216992d0853a83",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "moderate",
+        "occlusion_kind": "paired image-space augmentation; not physical contact",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 11,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.2,
+        "dropped_static_tail_frames": 190,
+        "source_active_transition_fraction": 0.04,
+        "selected_active_transition_fraction": 0.8,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "moderate",
+      "paired_group_id": "1885fc08c04f6f408bbfdad535497d0854d8114d7c7210ebd4c0ff22a55c5de9",
+      "peak_time_s": 0.06,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_df920ec6bfeaf474a1e6",
+      "path": "data/rendered/g3_pilot/clip_df920ec6bfeaf474a1e6",
+      "case_id": "uipc_1446c59e1e3cfdf387d8",
+      "source_path": "data/calibration/g3_convergence/uipc_1446c59e1e3cfdf387d8",
+      "young_pa": 48000.0,
+      "force_n": 0.05,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 48000.0,
+        "poisson": 0.3,
+        "force_n": 0.05,
+        "axis": 1,
+        "dt_seconds": 0.02,
+        "steps": 200
+      },
+      "camera": {
+        "name": "oblique",
+        "yaw": 0.45,
+        "pitch": -0.3,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14,
+        0.16,
+        0.18,
+        0.2
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 3616,
+        "foreground_pixels": 3886,
+        "amodal_foreground_pixels": 8592,
+        "observed_object_fraction": 0.4522811918063315,
+        "visible_fraction": 0.930519814719506,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 0.12085236608982086,
+        "final_motion_p95_px": 5.637362480163574,
+        "final_motion_max_px": 6.308048725128174,
+        "silhouette_iou": 0.929816617613765,
+        "foreground_fraction": 0.1712372448979592
+      },
+      "specification": {
+        "case_id": "uipc_1446c59e1e3cfdf387d8",
+        "camera": {
+          "name": "oblique",
+          "yaw": 0.45,
+          "pitch": -0.3,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "7a2ba88ff5d78b596b30b1f4c15f662dad2b14a3df857cc95989bfee0854b617",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "4138e1cec69e0950c9ca71aadd4454a60bb6807b3b7ed07f89216992d0853a83",
+        "frame_indices_with_initial_rest": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "dt_seconds": 0.02,
+        "occlusion_variant": "heavy",
+        "occlusion_kind": "paired image-space augmentation; not physical contact",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 201,
+        "selected_frames": 11,
+        "source_duration_s": 4.0,
+        "retained_duration_s": 0.2,
+        "dropped_static_tail_frames": 190,
+        "source_active_transition_fraction": 0.04,
+        "selected_active_transition_fraction": 0.8,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "heavy",
+      "paired_group_id": "1885fc08c04f6f408bbfdad535497d0854d8114d7c7210ebd4c0ff22a55c5de9",
+      "peak_time_s": 0.06,
+      "eligible_for_video_pilot": true
+    },
+    {
+      "id": "clip_6c47e540f12cd9bc8ef2",
+      "path": "data/rendered/g3_pilot/clip_6c47e540f12cd9bc8ef2",
+      "case_id": "uipc_27b2ee843d716e0e6546",
+      "source_path": "data/calibration/g3_interaction/uipc_27b2ee843d716e0e6546",
+      "young_pa": 48000.0,
+      "force_n": 0.08,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 48000.0,
+        "poisson": 0.3,
+        "force_n": 0.08,
+        "axis": 1,
+        "dt_seconds": 0.005,
+        "steps": 400,
+        "stop_criteria": {
+          "minimum_steps": 40,
+          "window": 20,
+          "maximum_speed_m_s": 1e-06,
+          "relative_displacement_tolerance": 0.001
+        },
+        "force_history": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.15,
+            1.0
+          ],
+          [
+            0.3,
+            1.0
+          ],
+          [
+            0.5,
+            0.0
+          ],
+          [
+            0.6,
+            0.0
+          ]
+        ]
+      },
+      "camera": {
+        "name": "oblique",
+        "yaw": 0.45,
+        "pitch": -0.3,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.03,
+        0.045,
+        0.065,
+        0.095,
+        0.115,
+        0.135,
+        0.16,
+        0.165,
+        0.33,
+        0.35000000000000003,
+        0.38,
+        0.41500000000000004,
+        0.445,
+        0.47500000000000003,
+        0.505,
+        0.6
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 7890,
+        "foreground_pixels": 8592,
+        "amodal_foreground_pixels": 8592,
+        "observed_object_fraction": 1.0,
+        "visible_fraction": 0.9182960893854749,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 2.195190668106079,
+        "final_motion_p95_px": 8.039913177490234,
+        "final_motion_max_px": 9.308220863342285,
+        "silhouette_iou": 0.8998323085522638,
+        "foreground_fraction": 0.1712372448979592
+      },
+      "specification": {
+        "case_id": "uipc_27b2ee843d716e0e6546",
+        "camera": {
+          "name": "oblique",
+          "yaw": 0.45,
+          "pitch": -0.3,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "d92c2bf77df6d2e9316ee51c0f5eb3ab21a9a21544b784753b16ce4886f60f9e",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "c1a75ce01038e1f8277c97fd2aa9d3406b58704c46f2d50c17e414a16704a37c",
+        "frame_indices_with_initial_rest": [
+          0,
+          6,
+          9,
+          13,
+          19,
+          23,
+          27,
+          32,
+          33,
+          66,
+          70,
+          76,
+          83,
+          89,
+          95,
+          101,
+          120
+        ],
+        "dt_seconds": 0.005,
+        "occlusion_variant": "clean",
+        "occlusion_kind": "none",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 208,
+        "selected_frames": 17,
+        "source_duration_s": 1.035,
+        "retained_duration_s": 0.6,
+        "dropped_static_tail_frames": 87,
+        "source_active_transition_fraction": 0.47342995169082125,
+        "selected_active_transition_fraction": 0.9375,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "clean",
+      "paired_group_id": "df531bc955a78c2914ff6b2bf4bbde754cdf34aca2bc7606fab1c7a66e382baa",
+      "peak_time_s": 0.165,
+      "eligible_for_video_pilot": true,
+      "interaction": "load_hold_release"
+    },
+    {
+      "id": "clip_bc951f3e78563389bf1d",
+      "path": "data/rendered/g3_pilot/clip_bc951f3e78563389bf1d",
+      "case_id": "uipc_27b2ee843d716e0e6546",
+      "source_path": "data/calibration/g3_interaction/uipc_27b2ee843d716e0e6546",
+      "young_pa": 48000.0,
+      "force_n": 0.08,
+      "poisson": 0.3,
+      "case": {
+        "dimensions_m": [
+          0.04,
+          0.02,
+          0.02
+        ],
+        "cells": [
+          32,
+          16,
+          16
+        ],
+        "young_pa": 48000.0,
+        "poisson": 0.3,
+        "force_n": 0.08,
+        "axis": 1,
+        "dt_seconds": 0.005,
+        "steps": 400,
+        "stop_criteria": {
+          "minimum_steps": 40,
+          "window": 20,
+          "maximum_speed_m_s": 1e-06,
+          "relative_displacement_tolerance": 0.001
+        },
+        "force_history": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.15,
+            1.0
+          ],
+          [
+            0.3,
+            1.0
+          ],
+          [
+            0.5,
+            0.0
+          ],
+          [
+            0.6,
+            0.0
+          ]
+        ]
+      },
+      "camera": {
+        "name": "oblique",
+        "yaw": 0.45,
+        "pitch": -0.3,
+        "image_size": 224,
+        "field_of_view_m": 0.08,
+        "center_m": [
+          0.02,
+          0.01,
+          0.01
+        ]
+      },
+      "texture_seed": 17,
+      "frame_times_s": [
+        0.0,
+        0.03,
+        0.045,
+        0.065,
+        0.095,
+        0.115,
+        0.135,
+        0.16,
+        0.165,
+        0.33,
+        0.35000000000000003,
+        0.38,
+        0.41500000000000004,
+        0.445,
+        0.47500000000000003,
+        0.505,
+        0.6
+      ],
+      "deformation_amplification": 1.0,
+      "metrics": {
+        "visible_correspondence_pixels": 5552,
+        "foreground_pixels": 6077,
+        "amodal_foreground_pixels": 8592,
+        "observed_object_fraction": 0.7072858472998138,
+        "visible_fraction": 0.913608688497614,
+        "motion_reference": "initial_to_peak_visible_correspondence",
+        "final_motion_p50_px": 0.9011659622192383,
+        "final_motion_p95_px": 8.238332748413086,
+        "final_motion_max_px": 9.308220863342285,
+        "silhouette_iou": 0.8998323085522638,
+        "foreground_fraction": 0.1712372448979592
+      },
+      "specification": {
+        "case_id": "uipc_27b2ee843d716e0e6546",
+        "camera": {
+          "name": "oblique",
+          "yaw": 0.45,
+          "pitch": -0.3,
+          "image_size": 224,
+          "field_of_view_m": 0.08,
+          "center_m": [
+            0.02,
+            0.01,
+            0.01
+          ]
+        },
+        "texture_seed": 17,
+        "source_sha256": "d92c2bf77df6d2e9316ee51c0f5eb3ab21a9a21544b784753b16ce4886f60f9e",
+        "renderer_sha256": "759b69b824d2aea8fd1a10bd3a8dedf1a39eb250bb68dc10fa9f23001886c3f8",
+        "pipeline_sha256": "a234fe75974ec8075d78369b95d0ebaf65d2c0fe0b92689809fc5dd8a5b55668",
+        "trajectory_sha256": "c1a75ce01038e1f8277c97fd2aa9d3406b58704c46f2d50c17e414a16704a37c",
+        "frame_indices_with_initial_rest": [
+          0,
+          6,
+          9,
+          13,
+          19,
+          23,
+          27,
+          32,
+          33,
+          66,
+          70,
+          76,
+          83,
+          89,
+          95,
+          101,
+          120
+        ],
+        "dt_seconds": 0.005,
+        "occlusion_variant": "moderate",
+        "occlusion_kind": "paired image-space augmentation; not physical contact",
+        "screening": {
+          "minimum_motion_px": 2.0,
+          "maximum_motion_px": 30.0
+        }
+      },
+      "sampling": {
+        "source_frames": 208,
+        "selected_frames": 17,
+        "source_duration_s": 1.035,
+        "retained_duration_s": 0.6,
+        "dropped_static_tail_frames": 87,
+        "source_active_transition_fraction": 0.47342995169082125,
+        "selected_active_transition_fraction": 0.9375,
+        "motion_threshold_px": 0.05,
+        "selection": "actual frame indices by projected-motion arc length; timestamps unchanged"
+      },
+      "occlusion_variant": "moderate",
+      "paired_group_id": "df531bc955a78c2914ff6b2bf4bbde754cdf34aca2bc7606fab1c7a66e382baa",
+      "peak_time_s": 0.165,
+      "eligible_for_video_pilot": true,
+      "interaction": "load_hold_release"
+    }
+  ],
+  "scope": "Diagnostic textured blocks with actual SI motion, fixed orthographic cameras, no realistic scene/contact/noise. Flow is renderer correspondence with occlusion screening, not an estimated optical-flow score.",
+  "input_contract": {
+    "known_at_training": [
+      "metric geometry",
+      "camera",
+      "force history",
+      "boundary conditions"
+    ],
+    "unavailable_parameters_from_single_static_image": [
+      "absolute stiffness without load/scale calibration",
+      "density",
+      "damping"
+    ],
+    "deployment": "Uncontrolled or static real video must expose uncertainty; absolute modulus is not guaranteed identifiable."
+  },
+  "updated_unix": 1794069508.540628,
+  "wall_seconds": 1.6152317523956299,
+  "detail": "\u771f\u5b9e SI \u8f68\u8ff9\u6e32\u67d3 32/32\uff1b\u672a\u653e\u5927 RGB\u3001\u906e\u6321\u7b5b\u9009\u5bf9\u5e94\u5149\u6d41\u3001\u540c\u6750\u8d28\u5750\u6807\u7eb9\u7406\u3002",
+  "quasistatic_identifiability": {
+    "reference_case_id": "uipc_a43d23989beef581825c",
+    "scaled_case_id": "uipc_5aea70ce84cfe04c2dcf",
+    "modulus_ratio": 4.0,
+    "force_ratio": 4.0,
+    "settled_field_relative_l2": 2.6835682314665435e-16,
+    "numerical_health": {
+      "completed": true,
+      "min_jacobian": 0.9479357423099658,
+      "final_max_speed_m_s": 3.576224061345498e-16
+    },
+    "scope": "Settled displacement only. Transient dynamics may differ at fixed density. This does not prove impossibility for calibrated dynamic videos."
+  },
+  "accepted_clips": 32,
+  "raster_reuse_factor": 3,
+  "occlusion_scope": "Paired image-space occluders with visibility masks. No 3D hand, gripper contact or friction simulation yet."
+}

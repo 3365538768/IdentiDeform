@@ -1,0 +1,151 @@
+{
+  "phase": "R3",
+  "max_per_gpu": 2,
+  "gpus": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "jobs": [
+    {
+      "id": "r3_cache_shard0",
+      "kind": "cmd",
+      "group": "cache64",
+      "mem_mib": 8000,
+      "cmd": ".venv/bin/python scripts/prepare_feature_cache.py --config configs/r3/r3_cache.json --control-output runs/r3_cache --prefetch-workers 6 --shard 0 --num-shards 8 --status-output docs/r3/cache_shard0.json"
+    },
+    {
+      "id": "r3_cache_shard1",
+      "kind": "cmd",
+      "group": "cache64",
+      "mem_mib": 8000,
+      "cmd": ".venv/bin/python scripts/prepare_feature_cache.py --config configs/r3/r3_cache.json --control-output runs/r3_cache --prefetch-workers 6 --shard 1 --num-shards 8 --status-output docs/r3/cache_shard1.json"
+    },
+    {
+      "id": "r3_cache_shard2",
+      "kind": "cmd",
+      "group": "cache64",
+      "mem_mib": 8000,
+      "cmd": ".venv/bin/python scripts/prepare_feature_cache.py --config configs/r3/r3_cache.json --control-output runs/r3_cache --prefetch-workers 6 --shard 2 --num-shards 8 --status-output docs/r3/cache_shard2.json"
+    },
+    {
+      "id": "r3_cache_shard3",
+      "kind": "cmd",
+      "group": "cache64",
+      "mem_mib": 8000,
+      "cmd": ".venv/bin/python scripts/prepare_feature_cache.py --config configs/r3/r3_cache.json --control-output runs/r3_cache --prefetch-workers 6 --shard 3 --num-shards 8 --status-output docs/r3/cache_shard3.json"
+    },
+    {
+      "id": "r3_cache_shard4",
+      "kind": "cmd",
+      "group": "cache64",
+      "mem_mib": 8000,
+      "cmd": ".venv/bin/python scripts/prepare_feature_cache.py --config configs/r3/r3_cache.json --control-output runs/r3_cache --prefetch-workers 6 --shard 4 --num-shards 8 --status-output docs/r3/cache_shard4.json"
+    },
+    {
+      "id": "r3_cache_shard5",
+      "kind": "cmd",
+      "group": "cache64",
+      "mem_mib": 8000,
+      "cmd": ".venv/bin/python scripts/prepare_feature_cache.py --config configs/r3/r3_cache.json --control-output runs/r3_cache --prefetch-workers 6 --shard 5 --num-shards 8 --status-output docs/r3/cache_shard5.json"
+    },
+    {
+      "id": "r3_cache_shard6",
+      "kind": "cmd",
+      "group": "cache64",
+      "mem_mib": 8000,
+      "cmd": ".venv/bin/python scripts/prepare_feature_cache.py --config configs/r3/r3_cache.json --control-output runs/r3_cache --prefetch-workers 6 --shard 6 --num-shards 8 --status-output docs/r3/cache_shard6.json"
+    },
+    {
+      "id": "r3_cache_shard7",
+      "kind": "cmd",
+      "group": "cache64",
+      "mem_mib": 8000,
+      "cmd": ".venv/bin/python scripts/prepare_feature_cache.py --config configs/r3/r3_cache.json --control-output runs/r3_cache --prefetch-workers 6 --shard 7 --num-shards 8 --status-output docs/r3/cache_shard7.json"
+    },
+    {
+      "id": "r3_cache_merge",
+      "kind": "cmd",
+      "group": "cache64",
+      "mem_mib": 8000,
+      "after": [
+        "r3_cache_shard0",
+        "r3_cache_shard1",
+        "r3_cache_shard2",
+        "r3_cache_shard3",
+        "r3_cache_shard4",
+        "r3_cache_shard5",
+        "r3_cache_shard6",
+        "r3_cache_shard7"
+      ],
+      "cmd": ".venv/bin/python scripts/prepare_feature_cache.py --config configs/r3/r3_cache.json --control-output runs/r3_cache --prefetch-workers 6 --status-output docs/r3/cache_merged.json"
+    },
+    {
+      "id": "r3_B64_seed17",
+      "config": "configs/r3/r3_B64_seed17.json",
+      "group": "B64",
+      "seed": 17,
+      "kind": "train",
+      "after": [
+        "r3_cache_merge"
+      ],
+      "mem_mib": 30000
+    },
+    {
+      "id": "r3_C64_seed17",
+      "config": "configs/r3/r3_C64_seed17.json",
+      "group": "C64",
+      "seed": 17,
+      "kind": "train",
+      "after": [
+        "r3_cache_merge"
+      ],
+      "mem_mib": 30000
+    },
+    {
+      "id": "r3_B64_seed29",
+      "config": "configs/r3/r3_B64_seed29.json",
+      "group": "B64",
+      "seed": 29,
+      "kind": "train",
+      "after": [
+        "r3_cache_merge"
+      ],
+      "mem_mib": 30000
+    },
+    {
+      "id": "r3_C64_seed29",
+      "config": "configs/r3/r3_C64_seed29.json",
+      "group": "C64",
+      "seed": 29,
+      "kind": "train",
+      "after": [
+        "r3_cache_merge"
+      ],
+      "mem_mib": 30000
+    },
+    {
+      "id": "r3_B64_seed43",
+      "config": "configs/r3/r3_B64_seed43.json",
+      "group": "B64",
+      "seed": 43,
+      "kind": "train",
+      "after": [
+        "r3_cache_merge"
+      ],
+      "mem_mib": 30000
+    },
+    {
+      "id": "r3_C64_seed43",
+      "config": "configs/r3/r3_C64_seed43.json",
+      "group": "C64",
+      "seed": 43,
+      "kind": "train",
+      "after": [
+        "r3_cache_merge"
+      ],
+      "mem_mib": 30000
+    }
+  ]
+}

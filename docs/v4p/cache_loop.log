@@ -1,0 +1,46 @@
+15:48:21
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:3862: RuntimeWarning: Mean of empty slice
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py:219: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py:178: RuntimeWarning: invalid value encountered in divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean,
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py:211: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/manifests/v4p_cache_inc.jsonl {'train': 0, 'val': 0, 'test': 0} objects 0
+{"status":"shard_complete","completed":0,"total":0,"manifest":"v4p_cache_inc","new_samples_per_second":0.0,"updated_unix":1794757744.7056563}
+15:52:05
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:3862: RuntimeWarning: Mean of empty slice
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py:219: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py:178: RuntimeWarning: invalid value encountered in divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean,
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py:211: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/manifests/v4p_cache_inc.jsonl {'train': 0, 'val': 0, 'test': 0} objects 0
+{"status":"shard_complete","completed":0,"total":0,"manifest":"v4p_cache_inc","new_samples_per_second":0.0,"updated_unix":1794757953.3108513}
+15:55:34
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/manifests/v4p_cache_inc.jsonl {'train': 0, 'val': 24, 'test': 0} objects 8
+{"status":"shard_complete","completed":24,"total":24,"manifest":"v4p_cache_inc","new_samples_per_second":1.1105558195113967,"updated_unix":1794758170.119515}
+15:59:12
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/manifests/v4p_cache_inc.jsonl {'train': 0, 'val': 63, 'test': 0} objects 10
+{"status":"shard_complete","completed":63,"total":63,"manifest":"v4p_cache_inc","new_samples_per_second":0.6494316542973221,"updated_unix":1794758423.3904345}
+16:03:25
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/manifests/v4p_cache_inc.jsonl {'train': 0, 'val': 72, 'test': 0} objects 10
+{"status":"shard_complete","completed":72,"total":72,"manifest":"v4p_cache_inc","new_samples_per_second":0.9697342610520076,"updated_unix":1794758628.4945798}
+16:06:49
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/manifests/v4p_cache_inc.jsonl {'train': 0, 'val': 88, 'test': 0} objects 10
+{"status":"shard_complete","completed":88,"total":88,"manifest":"v4p_cache_inc","new_samples_per_second":1.1534248808287915,"updated_unix":1794758834.062383}
+16:10:15
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/manifests/v4p_cache_inc.jsonl {'train': 0, 'val': 118, 'test': 0} objects 10
+{"status":"shard_complete","completed":118,"total":118,"manifest":"v4p_cache_inc","new_samples_per_second":1.4067599879511723,"updated_unix":1794759055.7575722}
+16:13:57
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/manifests/v4p_cache_inc.jsonl {'train': 3, 'val': 147, 'test': 0} objects 13
+    raise ValueError("Invalid train standard deviation")
+ValueError: Invalid train standard deviation
+{"status":"shard_complete","completed":118,"total":118,"manifest":"v4p_cache_inc","new_samples_per_second":1.4067599879511723,"updated_unix":1794759055.7575722}

@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FieldBench 实验进度</title>
+<style>
+:root {
+  --bg: #f6f7f9; --panel: #ffffff; --text: #1d2330; --muted: #667085; --line: #e3e6ec;
+  --accent: #2f6fde; --good: #1f8a5b; --warn: #b7791f; --bad: #c2413b; --track: #edf0f5;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12151b; --panel: #1a1f27; --text: #e6e9ef; --muted: #98a2b3; --line: #2a313c;
+    --accent: #6b9cff; --good: #4cc38a; --warn: #e0a84a; --bad: #f07167; --track: #252c36;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12151b; --panel: #1a1f27; --text: #e6e9ef; --muted: #98a2b3; --line: #2a313c;
+  --accent: #6b9cff; --good: #4cc38a; --warn: #e0a84a; --bad: #f07167; --track: #252c36;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 14px/1.5 -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+main { max-width: 1280px; margin: 0 auto; padding: 20px 16px 48px; }
+header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 16px; margin-bottom: 16px; }
+h1 { font-size: 20px; margin: 0; }
+h2 { font-size: 15px; margin: 0 0 10px; }
+.muted { color: var(--muted); }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; border: 1px solid var(--line); }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px; margin-bottom: 14px; overflow-x: auto; }
+.gpus { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+.gpu { border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; }
+.gpu b { font-variant-numeric: tabular-nums; }
+.bar { height: 6px; background: var(--track); border-radius: 3px; overflow: hidden; margin: 4px 0; }
+.bar > i { display: block; height: 100%; background: var(--accent); }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th { color: var(--muted); font-weight: 500; font-size: 12px; }
+.running { color: var(--accent); } .done { color: var(--good); } .failed { color: var(--bad); } .pending { color: var(--muted); }
+.best { font-weight: 600; }
+svg.spark { display: block; }
+.notes li { margin: 4px 0; }
+.toolbar { margin-left: auto; display: flex; gap: 8px; align-items: center; }
+select, button { background: var(--panel); color: var(--text); border: 1px solid var(--line); border-radius: 6px; padding: 3px 8px; font: inherit; }
+.gloss summary { cursor: pointer; font-weight: 600; font-size: 15px; }
+.gloss table td { white-space: normal; vertical-align: top; }
+.gloss td:first-child { white-space: nowrap; font-weight: 600; }
+.gloss .tag { font-size: 12px; padding: 0 6px; border-radius: 999px; border: 1px solid var(--line); margin-left: 6px; font-weight: 400; }
+.gloss .now { color: var(--accent); border-color: var(--accent); }
+.gloss .next { color: var(--warn); border-color: var(--warn); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>FieldBench 实验进度</h1>
+    <span id="status" class="muted">加载中…</span>
+    <div class="toolbar">
+      <select id="phase"></select>
+      <button id="theme" type="button">主题</button>
+    </div>
+  </header>
+
+
+  <section class="panel gloss">
+    <details open>
+      <summary>任务说明（当前与后续实验）</summary>
+      <p class="muted" style="margin:8px 0">目标：从固定 3 视角视频推断物体材料参数（本构族 jelly / metal / plasticine，以及 E/ρ、ν、ρ、σ_y/ρ）。只用验证集选模型，test 只在协议冻结后评估一次。表格里的“阶段”下拉框可按下面的阶段名筛选。</p>
+      <table>
+        <tr><th>阶段 / 组名</th><th>含义</th></tr>
+        <tr><td>V2main <span class="tag now">进行中</span></td><td>V2 主实验。新数据：低阻尼、开重力、6 种动作，约 2000 条训练 + 300 条验证。流程：<b>v2main-gen</b> 仿真并渲染样本 → <b>v2main-prep</b> 建样本清单（训练样本少于 1000 条就不训练）→ <b>v2main-cache</b> 提取冻结的 V-JEPA2 ViT-L 视频特征 → <b>B/C/D-v2main</b> 训练 → <b>report</b> 汇总、做物体级 bootstrap 对比。</td></tr>
+        <tr><td>B / C / D</td><td>同一骨干和训练预算下的三种模型。<b>B</b>：只用视频预测参数，不用物理场。<b>C</b>：额外让模型预测物理场（接触、流动、应力）作辅助监督。<b>D</b>：在 C 基础上把预测的场反馈给参数头（原论文的 field bridge）。比较 C 与 B 看场监督有没有用，D 与 C 看场反馈有没有用。</td></tr>
+        <tr><td>seed 17 / 29 / 43</td><td>每组跑 3 个随机种子，汇总表显示均值 ± 标准差。只有 ≥2/3 个种子的物体级置信区间都不跨 0，才算显著改进。</td></tr>
+        <tr><td>v3（v3-gen） <span class="tag now">进行中</span></td><td>生成 V2 的独立 <b>test 集</b>（300 条，物体与训练和验证都不重叠）。只用于最后一次性评估。</td></tr>
+        <tr><td>v3a <span class="tag now">进行中</span></td><td><b>多引擎 few-shot</b>。用第二个物理引擎 libuipc（FEM）生成约 160 条弹性样本（<b>v3a-gen / v3a-data</b>）。把在 MPM 数据上训练的模型迁移过去，比较不适配（K=0）、只用 8 或 32 个 uipc 样本适配，以及 uipc 全量训练（<b>v3a-fewshot</b>），看模型能否快速适配新引擎。</td></tr>
+        <tr><td>v3b-C2 <span class="tag now">进行中</span></td><td><b>新方法：软族混合头</b>。现在最大的误差来源是本构族判错。模型改为先给出每个族的概率，再按概率加权各族的回归结果，判错族时不会整体崩掉。只训练输出头，用缓存特征训练很快。</td></tr>
+        <tr><td>v3b-C1 <span class="tag next">后续</span></td><td><b>新方法：仿真闭环修正</b>。用模型预测的参数作初值，在同一引擎里重新仿真观测到的动作，再按与观测视频的掩码 IoU 微调 E/ρ、σ_y/ρ。仿真预算分别是 0、4、12 次，在约 60 个验证样本上测“预算换精度”的曲线。每个任务就是一次仿真。</td></tr>
+        <tr><td>V3c <span class="tag now">进行中</span></td><td><b>横向对比基线</b>（与 V-JEPA 模型用同样的数据划分）。<b>v3c-dino-cache</b>：提取 DINOv3 逐帧特征。<b>v3c-dino-B / C</b>：DINOv3 骨干的 B、C 模型（对应原论文结构）。<b>v3c-dino-S</b>：首帧静态对照，只看第一帧外观。<b>v3c-vlm</b>：Qwen3-VL-8B 零样本（3 视角 × 8 帧，直接问参数）。另外还有常数和族均值两个参照。</td></tr>
+        <tr><td>v3c-pacnerf <span class="tag now">进行中</span></td><td><b>外部数据 few-shot</b>。PAC-NeRF 公开数据里 4 个有真实参数的场景（torus、bird、playdoh、cat），做直接迁移和留一场景适配。规模小，只作验证性证据。</td></tr>
+        <tr><td>Day1 <span class="tag next">后续</span></td><td><b>replay</b>：把预测参数放进仿真，换成没见过的动作重放，对比真实参数和族均值参数的结果。<b>report</b>：生成 Day-1 汇总（F1 学习曲线、P4d、replay、V2main），等 V2main 报告完成后自动运行。</td></tr>
+        <tr><td>其余阶段</td><td>R1–R5、P1–P4d、F1、B1、Quality-V2 等是 11-09 到 11-12 已完成的实验，结论见 <code>docs/*_ZH.md</code>。它们的缓存和权重已经清理，只保留结果文件。</td></tr>
+        <tr><td>表中各列</td><td><b>验证 MAE</b>：训练集标准化后的参数平均误差，越低越好。<b>族准确率</b>：本构族分类准确率。<b>族内 r</b>：同一本构族内预测与真值的相关系数，看模型是否真的读出了族内的连续参数，而不只是分对了族。<b>场预热 / 联合训练</b>：C 和 D 先单独训练场预测，再和参数一起训练。</td></tr>
+      </table>
+    </details>
+  </section>
+
+  <section class="panel">
+    <h2>GPU（A800-2）</h2>
+    <div id="gpus" class="gpus"></div>
+    <div id="disk" class="muted" style="margin-top:8px"></div>
+  </section>
+
+  <section class="panel">
+    <h2>分组汇总 <span class="muted">（各 seed 最佳验证；均值 ± 标准差，括号为已有 seed 数）</span></h2>
+    <table id="summary"></table>
+    <p class="muted" style="margin:8px 0 0">MAE：训练集标准化参数误差，越低越好。族内 r：同一本构族内预测与 GT 的 Pearson 相关（3 族平均），回答“是否真的学到材料”。</p>
+  </section>
+
+  <section class="panel">
+    <h2>任务</h2>
+    <table id="jobs"></table>
+  </section>
+
+  <section class="panel">
+    <h2>缓存 / 准备</h2>
+    <table id="caches"></table>
+  </section>
+
+  <section class="panel notes">
+    <h2>阶段说明</h2>
+    <ul id="notes"></ul>
+  </section>
+</main>
+<script>
+const $ = (id) => document.getElementById(id);
+const fmt = (v, d = 3) => (v === null || v === undefined || Number.isNaN(v)) ? '—' : Number(v).toFixed(d);
+const ago = (t, now) => t ? `${Math.max(0, Math.round((now - t) / 60))} 分钟前` : '—';
+const dur = (s) => s == null ? '—' : s > 3600 ? `${(s / 3600).toFixed(1)} h` : `${Math.round(s / 60)} min`;
+const STATUS = { running: '运行中', done: '完成', failed: '失败', pending: '排队' };
+let phaseFilter = '';
+try { phaseFilter = localStorage.getItem('rq_phase') || ''; } catch (e) {}
+
+function spark(points) {
+  const vals = points.filter(p => p[1] != null && p[2] === 'joint_training');
+  if (vals.length < 2) return '<span class="muted">—</span>';
+  const w = 120, h = 28, ys = vals.map(p => p[1]);
+  const lo = Math.min(...ys), hi = Math.max(...ys), span = hi - lo || 1;
+  const xs = vals.map((_, i) => 2 + i * (w - 4) / (vals.length - 1));
+  const path = vals.map((p, i) => `${i ? 'L' : 'M'}${xs[i].toFixed(1)},${(2 + (h - 4) * (p[1] - lo) / span).toFixed(1)}`).join('');
+  const b = ys.indexOf(lo);
+  return `<svg class="spark" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" aria-label="验证 MAE 曲线">
+    <path d="${path}" fill="none" stroke="var(--accent)" stroke-width="1.5"/>
+    <circle cx="${xs[b]}" cy="${2 + (h - 4) * (lo - lo) / span}" r="2.5" fill="var(--good)"/></svg>`;
+}
+const agg = (a, d = 3) => a ? `${fmt(a[0], d)} ± ${fmt(a[1], d)} <span class="muted">(${a[2]})</span>` : '—';
+
+function render(s) {
+  const now = s.now;
+  $('status').textContent = `${s.paused ? '已暂停' : '队列运行中'} · 队列更新 ${ago(s.queue_updated_unix, now)} · 页面 ${new Date(now * 1000).toLocaleTimeString()}`;
+  $('gpus').innerHTML = s.gpus.map(g => `<div class="gpu"><div>GPU ${g.index} · <b>${g.util}%</b></div>
+    <div class="bar"><i style="width:${g.util}%"></i></div>
+    <div class="muted">${(g.mem_used / 1024).toFixed(1)} / ${(g.mem_total / 1024).toFixed(0)} GB · ${g.temp}°C · ${Math.round(g.power)} W</div>
+    <div class="bar"><i style="width:${100 * g.mem_used / g.mem_total}%;background:var(--warn)"></i></div></div>`).join('');
+  $('disk').textContent = `磁盘可用 ${s.disk.free_gb.toFixed(0)} / ${s.disk.total_gb.toFixed(0)} GB`;
+
+  const phases = [...new Set(s.jobs.map(j => j.phase))];
+  $('phase').innerHTML = ['<option value="">全部阶段</option>', ...phases.map(p => `<option ${p === phaseFilter ? 'selected' : ''}>${p}</option>`)].join('');
+  const keep = (x) => !phaseFilter || x.phase === phaseFilter;
+
+  const sum = s.summary.filter(keep).sort((a, b) => (a.mae?.[0] ?? 9) - (b.mae?.[0] ?? 9));
+  const bestMae = sum.length ? sum[0].mae?.[0] : null;
+  $('summary').innerHTML = `<tr><th>阶段</th><th>组</th><th>验证 MAE</th><th>族分类准确率</th><th>族内 r (E)</th><th>族内 r (ν)</th><th>完成 seed</th></tr>` +
+    (sum.length ? sum.map(g => `<tr><td>${g.phase}</td><td class="${g.mae?.[0] === bestMae ? 'best' : ''}">${g.group}</td><td>${agg(g.mae)}</td>
+      <td>${agg(g.law_accuracy)}</td><td>${agg(g.within_law_r_E, 2)}</td><td>${agg(g.within_law_r_nu, 2)}</td><td>${g.finished}</td></tr>`).join('')
+      : '<tr><td colspan="7" class="muted">还没有完成的验证轮</td></tr>');
+
+  const jobs = s.jobs.filter(keep).sort((a, b) => (a.status === 'running' ? 0 : 1) - (b.status === 'running' ? 0 : 1) || a.id.localeCompare(b.id));
+  $('jobs').innerHTML = `<tr><th>任务</th><th>状态</th><th>GPU</th><th>进度</th><th>当前阶段</th><th>最佳 MAE</th><th>族准确率</th><th>族内 r(E)</th><th>验证曲线</th><th>剩余≤</th><th>更新</th></tr>` +
+    jobs.map(j => {
+      const pct = j.epochs ? Math.min(100, 100 * j.epoch / j.epochs) : 0;
+      const st = j.status === 'done' && j.stop_reason === 'validation_material_plateau' ? '早停完成' : (STATUS[j.status] || j.status);
+      return `<tr><td>${j.id}</td><td class="${j.status}">${st}</td><td>${j.gpu ?? '—'}</td>
+      <td><div class="bar" style="width:90px"><i style="width:${pct}%"></i></div><span class="muted">${j.epoch}/${j.epochs ?? '—'} ${j.unit || '轮'}</span></td>
+      <td>${j.train_phase === 'field_warmup' ? '场预热' : j.train_phase === 'joint_training' ? '联合训练' : j.train_phase === 'generation' ? '仿真+渲染' : '—'}${j.step ? ` · step ${j.step}` : ''}</td>
+      <td>${fmt(j.best_val_mae)}${j.best_epoch ? ` <span class="muted">@${j.best_epoch}</span>` : ''}</td>
+      <td>${fmt(j.law_accuracy)}</td><td>${fmt(j.within_law_r_E, 2)}</td><td>${spark(j.val_curve)}</td>
+      <td>${dur(j.eta_seconds_upper)}</td><td class="muted">${ago(j.updated_unix, now)}</td></tr>`;
+    }).join('');
+
+  $('caches').innerHTML = `<tr><th>名称</th><th>状态</th><th>完成</th></tr>` +
+    s.caches.map(c => `<tr><td>${c.name}</td><td>${c.status ?? '—'}</td><td>${c.completed ?? '—'} / ${c.total ?? '—'}</td></tr>`).join('');
+  $('notes').innerHTML = (s.notes || []).map(n => `<li>${n}</li>`).join('') || '<li class="muted">无</li>';
+}
+
+async function tick() {
+  try {
+    const r = await fetch('api/state', { cache: 'no-store' });
+    render(await r.json());
+  } catch (e) { $('status').textContent = '连接失败，稍后重试…'; }
+}
+$('phase').addEventListener('change', (e) => { phaseFilter = e.target.value; try { localStorage.setItem('rq_phase', phaseFilter); } catch (err) {} tick(); });
+$('theme').addEventListener('click', () => {
+  const root = document.documentElement;
+  const dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+  root.dataset.theme = dark ? 'light' : 'dark';
+});
+tick(); setInterval(tick, 10000);
+</script>
+</body>
+</html>

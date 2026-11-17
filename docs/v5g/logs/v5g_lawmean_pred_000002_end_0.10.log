@@ -1,0 +1,3 @@
+sim 2 lawmean_pred end:0.10 True 393
+measure end:0.10 {'sag': 0.03656799904250337, 'left': 0.00022345120384336073, 'crush': -0.29353510605044036, 'dent_p95': 2.0573693085295828, 'grip': 11.868714332580566, 'lift': 0.1878126561641693, 'height': 0.6260421872138977, 'n_particles': 17901, 'seg_particles': 2495}
+done 2 lawmean_pred end:0.10 False

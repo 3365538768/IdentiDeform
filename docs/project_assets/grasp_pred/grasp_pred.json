@@ -1,0 +1,175 @@
+{
+ "source": "docs/v5g/PREDICTION.json + data/v5g/runs/val/<sample>/gt (GT simulator), 4096-particle subsets",
+ "twins": {
+  "prior_vt": "video+touch twin",
+  "lawmean_pred": "class-mean twin"
+ },
+ "sample_rule": "GT outcomes over the 8 candidates contain success, drop and damage; maximise video+touch twin accuracy over the 8 candidates; ties by margin over the class-mean twin, then lowest index; distinct objects",
+ "candidate_rule": "one candidate per GT outcome (first where the class-mean twin is wrong, else first), plus one more where the class-mean twin is wrong (balancing grip positions)",
+ "overall": {
+  "prior_vt": {
+   "macro_f1": 0.7702405713139241,
+   "accuracy": 0.8348214285714286
+  },
+  "lawmean_pred": {
+   "macro_f1": 0.6758951241245174,
+   "accuracy": 0.7544642857142857
+  }
+ },
+ "samples": {
+  "000134": {
+   "object": "a_plastic_water_bottle_thin_transparent_plastic_isolated_013020",
+   "law": "plasticine",
+   "vis_law": "jelly",
+   "gt_cache": "a4b596cbb128",
+   "shown": [
+    "end:0.03",
+    "end:0.10",
+    "end:0.25",
+    "centre:0.10"
+   ],
+   "acc_8": {
+    "prior_vt": 8,
+    "lawmean_pred": 2
+   },
+   "candidates": {
+    "end:0.03": {
+     "gt": "drop",
+     "video_touch_twin": "drop",
+     "class_mean_twin": "success",
+     "gt_left_frac": 0.9700537728340419,
+     "gt_crush": 0.07146106247230931
+    },
+    "end:0.10": {
+     "gt": "success",
+     "video_touch_twin": "success",
+     "class_mean_twin": "success",
+     "gt_left_frac": 0.27100149476831087,
+     "gt_crush": 0.04633657675441376
+    },
+    "end:0.25": {
+     "gt": "damage",
+     "video_touch_twin": "damage",
+     "class_mean_twin": "success",
+     "gt_left_frac": 0.0642936734416555,
+     "gt_crush": 0.09893027099490938
+    },
+    "end:0.40": {
+     "gt": "drop",
+     "video_touch_twin": "drop",
+     "class_mean_twin": "success",
+     "gt_left_frac": 0.7109184089453148,
+     "gt_crush": 0.08189920080677998
+    },
+    "centre:0.03": {
+     "gt": "success",
+     "video_touch_twin": "success",
+     "class_mean_twin": "success",
+     "gt_left_frac": 0.0,
+     "gt_crush": 0.030457360482992423
+    },
+    "centre:0.10": {
+     "gt": "damage",
+     "video_touch_twin": "damage",
+     "class_mean_twin": "success",
+     "gt_left_frac": 0.0,
+     "gt_crush": 0.09322112713808312
+    },
+    "centre:0.25": {
+     "gt": "damage",
+     "video_touch_twin": "damage",
+     "class_mean_twin": "success",
+     "gt_left_frac": 0.0,
+     "gt_crush": 0.31545384877532656
+    },
+    "centre:0.40": {
+     "gt": "damage",
+     "video_touch_twin": "damage",
+     "class_mean_twin": "success",
+     "gt_left_frac": 0.0,
+     "gt_crush": 0.411557321384097
+    }
+   },
+   "mp4_bytes": 255425,
+   "frames": 76,
+   "fps": 20
+  },
+  "000037": {
+   "object": "a_brass_telescope_013020",
+   "law": "metal",
+   "vis_law": "metal",
+   "gt_cache": "026ed9c2bfe9",
+   "shown": [
+    "end:0.03",
+    "centre:0.03",
+    "centre:0.10",
+    "centre:0.25"
+   ],
+   "acc_8": {
+    "prior_vt": 8,
+    "lawmean_pred": 6
+   },
+   "candidates": {
+    "end:0.03": {
+     "gt": "drop",
+     "video_touch_twin": "drop",
+     "class_mean_twin": "drop",
+     "gt_left_frac": 0.6125540449028494,
+     "gt_crush": 0.010812150810192848
+    },
+    "end:0.10": {
+     "gt": "drop",
+     "video_touch_twin": "drop",
+     "class_mean_twin": "drop",
+     "gt_left_frac": 0.6148651699050197,
+     "gt_crush": 0.011482114310916185
+    },
+    "end:0.25": {
+     "gt": "drop",
+     "video_touch_twin": "drop",
+     "class_mean_twin": "drop",
+     "gt_left_frac": 0.6149832439096385,
+     "gt_crush": 0.10206561769435171
+    },
+    "end:0.40": {
+     "gt": "drop",
+     "video_touch_twin": "drop",
+     "class_mean_twin": "drop",
+     "gt_left_frac": 0.6206698963379694,
+     "gt_crush": 0.5929865894379943
+    },
+    "centre:0.03": {
+     "gt": "success",
+     "video_touch_twin": "success",
+     "class_mean_twin": "drop",
+     "gt_left_frac": 0.42384226702088873,
+     "gt_crush": 0.009703293283182953
+    },
+    "centre:0.10": {
+     "gt": "success",
+     "video_touch_twin": "success",
+     "class_mean_twin": "damage",
+     "gt_left_frac": 0.3986820857425639,
+     "gt_crush": 0.017653620639708306
+    },
+    "centre:0.25": {
+     "gt": "damage",
+     "video_touch_twin": "damage",
+     "class_mean_twin": "damage",
+     "gt_left_frac": 0.34980465697765273,
+     "gt_crush": 0.08950295053468213
+    },
+    "centre:0.40": {
+     "gt": "damage",
+     "video_touch_twin": "damage",
+     "class_mean_twin": "damage",
+     "gt_left_frac": 0.03587713357989964,
+     "gt_crush": 0.2625818464006989
+    }
+   },
+   "mp4_bytes": 169576,
+   "frames": 76,
+   "fps": 20
+  }
+ }
+}

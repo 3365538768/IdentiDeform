@@ -1,0 +1,516 @@
+{
+ "phase": "v3s",
+ "max_per_gpu": 11,
+ "gpus": [],
+ "note": "V3s transfer with the V3 prior (owner: v3r/v3s agent) | STOPPED 2026-11-15 (switch to V4)",
+ "jobs": [
+  {
+   "id": "v3s_smoke_prior_v2",
+   "kind": "cmd",
+   "group": "v3s-prior",
+   "mem_mib": 6000,
+   "retries": 0,
+   "cmd": "mkdir -p data/v3s/smoke && FB_PRIOR_SOURCES=docs/v3s/PRIOR_SOURCES_V2SMOKE.json .venv/bin/python -I scripts/v3s/prior_v3.py sg data/external_datasets/springgaus_gdrive/mpm_synthetic.zip data/v3s/smoke/prior20_v2.json"
+  },
+  {
+   "id": "v3s_prior_sg",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 8000,
+   "retries": 1,
+   "cmd": "mkdir -p data/v3s && .venv/bin/python -I scripts/v3s/prior_v3.py sg data/external_datasets/springgaus_gdrive/mpm_synthetic.zip data/v3s/prior20.json"
+  },
+  {
+   "id": "v3s_prior_pt",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 8000,
+   "retries": 1,
+   "cmd": "mkdir -p data/v3s/pt && .venv/bin/python -I scripts/v3s/prior_v3.py pt data/external_datasets/v3l_phystwin_rgb/single_push_sloth data/v3s/pt/pt_prior.json"
+  },
+  {
+   "id": "v3s_kA_torus",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip torus --arm prior --prior-json data/v3s/prior20.json --out data/v3s/kA",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_ref_torus",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip torus --arm prior20_refine --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_p20_torus",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip torus --arm prior20 --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_kA_duck",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip duck --arm prior --prior-json data/v3s/prior20.json --out data/v3s/kA",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_ref_duck",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip duck --arm prior20_refine --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_p20_duck",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip duck --arm prior20 --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_kA_apple",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip apple --arm prior --prior-json data/v3s/prior20.json --out data/v3s/kA",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_ref_apple",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip apple --arm prior20_refine --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_p20_apple",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip apple --arm prior20 --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_kA_C",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip C --arm prior --prior-json data/v3s/prior20.json --out data/v3s/kA",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_ref_C",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip C --arm prior20_refine --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_p20_C",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip C --arm prior20 --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_kA_E",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip E --arm prior --prior-json data/v3s/prior20.json --out data/v3s/kA",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_ref_E",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip E --arm prior20_refine --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_p20_E",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip E --arm prior20 --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_kA_V",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip V --arm prior --prior-json data/v3s/prior20.json --out data/v3s/kA",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_ref_V",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip V --arm prior20_refine --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_p20_V",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip V --arm prior20 --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_kA_banana",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip banana --arm prior --prior-json data/v3s/prior20.json --out data/v3s/kA",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_ref_banana",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip banana --arm prior20_refine --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_p20_banana",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip banana --arm prior20 --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_kA_chess",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip chess --arm prior --prior-json data/v3s/prior20.json --out data/v3s/kA",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_ref_chess",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip chess --arm prior20_refine --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_p20_chess",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip chess --arm prior20 --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_kA_cream",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip cream --arm prior --prior-json data/v3s/prior20.json --out data/v3s/kA",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_ref_cream",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip cream --arm prior20_refine --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_p20_cream",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip cream --arm prior20 --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_kA_cross",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip cross --arm prior --prior-json data/v3s/prior20.json --out data/v3s/kA",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_ref_cross",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip cross --arm prior20_refine --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_p20_cross",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip cross --arm prior20 --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_kA_doraemon",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip doraemon --arm prior --prior-json data/v3s/prior20.json --out data/v3s/kA",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_ref_doraemon",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip doraemon --arm prior20_refine --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_p20_doraemon",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip doraemon --arm prior20 --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_kA_droplet",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip droplet --arm prior --prior-json data/v3s/prior20.json --out data/v3s/kA",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_ref_droplet",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip droplet --arm prior20_refine --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_p20_droplet",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip droplet --arm prior20 --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_kA_rope",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip rope --arm prior --prior-json data/v3s/prior20.json --out data/v3s/kA",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_ref_rope",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip rope --arm prior20_refine --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_p20_rope",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip rope --arm prior20 --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_kA_toothpaste",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3k/a_sg_refine.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip toothpaste --arm prior --prior-json data/v3s/prior20.json --out data/v3s/kA",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_ref_toothpaste",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip toothpaste --arm prior20_refine --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_p20_toothpaste",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip toothpaste --arm prior20 --prior data/v3s/prior20.json --out data/v3s/sg",
+   "after": [
+    "v3s_prior_sg"
+   ]
+  },
+  {
+   "id": "v3s_pt_search_prior",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/pt_mpm.py data/external_datasets/v3g_phystwin/single_push_sloth --mode search --budget 12 --start prior --out data/v3s/pt",
+   "after": [
+    "v3s_prior_pt"
+   ]
+  },
+  {
+   "id": "v3s_pt_eval",
+   "kind": "cmd",
+   "group": "v3s",
+   "mem_mib": 3000,
+   "retries": 1,
+   "cmd": "bash scripts/v3s/pt_eval_run.sh data/external_datasets/v3g_phystwin/single_push_sloth",
+   "after": [
+    "v3s_pt_search_prior"
+   ]
+  }
+ ]
+}

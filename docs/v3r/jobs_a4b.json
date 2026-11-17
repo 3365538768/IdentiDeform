@@ -1,0 +1,86 @@
+[
+ {
+  "id": "v3r_gt_000027",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 27 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gt_000040",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 40 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gt_000060",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 60 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gt_000071",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 71 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gt_000112",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 112 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gt_000116",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 116 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gt_000119",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 119 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gt_000134",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 134 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gt_000135",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 135 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gt_000151",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 151 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gt_000164",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 164 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gt_000176",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 176 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gt_000180",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 180 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gt_000186",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 186 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gt_000195",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 195 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gt_000210",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 210 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gt_000226",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 226 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gt_000245",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 245 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gt_000253",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 253 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gt_000261",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 261 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gt_000265",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 265 --method gt --out data/v3r/runs"
+ }
+]

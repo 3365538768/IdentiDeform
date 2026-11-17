@@ -1,0 +1,53 @@
+06:17:29 start v3j_cma_gtmean_000276_b24 gpu 0 slots 4
+06:17:31 start v3j_cma_best3_000276_b24 gpu 1 slots 4
+06:17:33 start v3j_cma_gtmean_000141_b24 gpu 2 slots 4
+06:17:35 start v3j_cma_best3_000141_b24 gpu 3 slots 4
+06:17:37 start v3j_cma_gtmean_000202_b24 gpu 4 slots 4
+06:17:39 start v3j_cma_best3_000202_b24 gpu 5 slots 4
+06:17:41 start v3j_cma_gtmean_000295_b24 gpu 6 slots 4
+06:17:43 start v3j_cma_best3_000295_b24 gpu 7 slots 4
+06:17:45 start v3j_cma_gtmean_000052_b24 gpu 0 slots 4
+06:17:47 start v3j_cma_best3_000052_b24 gpu 1 slots 4
+06:17:49 start v3j_cma_gtmean_000113_b24 gpu 2 slots 4
+06:17:51 start v3j_cma_best3_000113_b24 gpu 3 slots 4
+06:17:53 start v3j_cma_gtmean_000134_b24 gpu 4 slots 4
+06:17:55 start v3j_cma_best3_000134_b24 gpu 5 slots 4
+06:17:57 start v3j_cma_gtmean_000071_b24 gpu 6 slots 4
+06:17:59 start v3j_cma_best3_000071_b24 gpu 7 slots 4
+06:23:31 exit v3j_cma_gtmean_000276_b24 0 gpu 0
+06:23:31 start v3j_cma_gtmean_000228_b24 gpu 0 slots 4
+06:36:48 exit v3j_cma_best3_000113_b24 0 gpu 3
+06:36:48 start v3j_cma_best3_000228_b24 gpu 3 slots 4
+06:37:20 exit v3j_cma_best3_000276_b24 0 gpu 1
+06:37:20 start v3j_cma_prior_000219_b24 gpu 1 slots 4
+06:42:22 exit v3j_cma_best3_000141_b24 0 gpu 3
+06:42:22 start v3j_cma_prior_000276_b24 gpu 3 slots 4
+06:45:09 exit v3j_cma_gtmean_000202_b24 0 gpu 4
+06:45:09 start v3j_cma_prior_000141_b24 gpu 4 slots 4
+06:50:41 exit v3j_cma_best3_000202_b24 0 gpu 5
+06:50:41 exit v3j_cma_gtmean_000113_b24 0 gpu 2
+06:50:41 start v3j_cma_prior_000202_b24 gpu 2 slots 4
+06:50:43 start v3j_cma_prior_000295_b24 gpu 5 slots 4
+06:51:15 exit v3j_cma_gtmean_000141_b24 0 gpu 2
+06:51:15 start v3j_cma_prior_000052_b24 gpu 2 slots 4
+06:51:32 exit v3j_cma_best3_000052_b24 0 gpu 1
+06:51:32 exit v3j_cma_gtmean_000071_b24 0 gpu 6
+06:51:32 exit v3j_cma_best3_000071_b24 0 gpu 7
+06:51:32 start v3j_cma_prior_000113_b24 gpu 1 slots 4
+06:51:34 start v3j_cma_prior_000134_b24 gpu 6 slots 4
+06:51:51 exit v3j_cma_gtmean_000295_b24 0 gpu 6
+06:51:51 exit v3j_cma_best3_000295_b24 0 gpu 7
+06:51:51 exit v3j_cma_best3_000134_b24 0 gpu 5
+06:52:06 exit v3j_cma_gtmean_000052_b24 0 gpu 0
+06:53:51 exit v3j_cma_gtmean_000134_b24 0 gpu 4
+06:56:06 exit v3j_cma_gtmean_000228_b24 0 gpu 0
+07:03:36 exit v3j_cma_prior_000219_b24 0 gpu 1
+07:06:21 exit v3j_cma_best3_000228_b24 0 gpu 3
+07:09:06 exit v3j_cma_prior_000295_b24 0 gpu 5
+07:09:51 exit v3j_cma_prior_000134_b24 0 gpu 6
+07:10:36 exit v3j_cma_prior_000276_b24 0 gpu 3
+07:11:06 exit v3j_cma_prior_000141_b24 0 gpu 4
+07:11:36 exit v3j_cma_prior_000113_b24 0 gpu 1
+07:21:21 exit v3j_cma_prior_000202_b24 0 gpu 2
+07:24:21 exit v3j_cma_prior_000052_b24 0 gpu 2
+all done

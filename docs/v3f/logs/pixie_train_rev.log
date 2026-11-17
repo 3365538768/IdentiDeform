@@ -1,0 +1,90 @@
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/external/pixie/third_party/f3rm/f3rm/features/clip/clip.py:6: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging
+an_empty_aluminum_can_dented_metal_isolated_013020 filled metal 5.95e+08 0.304 3252 {'occupied_voxels': 45435, 'directly_seen_fraction': 0.7807417511940002, 'mean_views_per_seen_voxel': 31.167394638061523}
+an_empty_aluminum_can_dented_metal_isolated_013020 shell metal 5.24e+08 0.304 3199 {'occupied_voxels': 44817, 'directly_seen_fraction': 0.7819131016731262, 'mean_views_per_seen_voxel': 31.401649475097656}
+a_woven_straw_hat_013020 filled sand 6.85e+04 0.380 343 {'occupied_voxels': 20507, 'directly_seen_fraction': 0.723996639251709, 'mean_views_per_seen_voxel': 85.60234069824219}
+a_woven_straw_hat_013020 shell sand 6.89e+04 0.380 343 {'occupied_voxels': 20249, 'directly_seen_fraction': 0.726801335811615, 'mean_views_per_seen_voxel': 86.20799255371094}
+a_wool_sweater_013020 filled jelly 1.41e+05 0.387 391 {'occupied_voxels': 44358, 'directly_seen_fraction': 0.8982821106910706, 'mean_views_per_seen_voxel': 33.15667724609375}
+a_wool_sweater_013020 shell jelly 1.43e+05 0.387 391 {'occupied_voxels': 44155, 'directly_seen_fraction': 0.8985844850540161, 'mean_views_per_seen_voxel': 33.20591354370117}
+a_wooden_gear_013020 filled sand 5.06e+04 0.356 453 {'occupied_voxels': 19947, 'directly_seen_fraction': 0.8674988150596619, 'mean_views_per_seen_voxel': 58.46989059448242}
+a_wooden_gear_013020 shell sand 5.01e+04 0.357 450 {'occupied_voxels': 19835, 'directly_seen_fraction': 0.8683136105537415, 'mean_views_per_seen_voxel': 58.68106460571289}
+a_wooden_fire_013020 filled stationary 8.86e+07 0.305 360 {'occupied_voxels': 17238, 'directly_seen_fraction': 0.8132613897323608, 'mean_views_per_seen_voxel': 60.693058013916016}
+a_wooden_fire_013020 shell stationary 8.85e+07 0.304 359 {'occupied_voxels': 17132, 'directly_seen_fraction': 0.8144991993904114, 'mean_views_per_seen_voxel': 60.83990478515625}
+a_wooden_chair_013020 filled sand 3.22e+06 0.313 413 {'occupied_voxels': 10721, 'directly_seen_fraction': 0.9446880221366882, 'mean_views_per_seen_voxel': 77.55677795410156}
+a_wooden_chair_013020 shell sand 3.22e+06 0.313 413 {'occupied_voxels': 10720, 'directly_seen_fraction': 0.9446828365325928, 'mean_views_per_seen_voxel': 77.56216430664062}
+a_wire_mesh_brain_013020 filled snow 3.65e+04 0.328 107 {'occupied_voxels': 25773, 'directly_seen_fraction': 0.9524308443069458, 'mean_views_per_seen_voxel': 52.63917922973633}
+a_wire_mesh_brain_013020 shell snow 3.66e+04 0.328 107 {'occupied_voxels': 25678, 'directly_seen_fraction': 0.9523327350616455, 'mean_views_per_seen_voxel': 52.67911148071289}
+a_wicker_basket_013020 filled sand 3.75e+04 0.354 426 {'occupied_voxels': 11965, 'directly_seen_fraction': 0.8708733916282654, 'mean_views_per_seen_voxel': 72.91804504394531}
+a_wicker_basket_013020 shell sand 4.02e+04 0.355 419 {'occupied_voxels': 11847, 'directly_seen_fraction': 0.871528685092926, 'mean_views_per_seen_voxel': 73.19651794433594}
+a_velvet_sofa_013020 filled snow 1.12e+05 0.290 735 {'occupied_voxels': 28397, 'directly_seen_fraction': 0.71666020154953, 'mean_views_per_seen_voxel': 57.49628829956055}
+a_velvet_sofa_013020 shell snow 8.98e+04 0.295 693 {'occupied_voxels': 27740, 'directly_seen_fraction': 0.7229271531105042, 'mean_views_per_seen_voxel': 58.087215423583984}
+a_velvet_curtain_013020 filled metal 3.4e+07 0.305 1921 {'occupied_voxels': 16790, 'directly_seen_fraction': 0.9901131391525269, 'mean_views_per_seen_voxel': 74.57320404052734}
+a_velvet_curtain_013020 shell metal 3.41e+07 0.305 1921 {'occupied_voxels': 16778, 'directly_seen_fraction': 0.9901060461997986, 'mean_views_per_seen_voxel': 74.58000183105469}
+a_tin_soldier_bread_013020 filled jelly 4.64e+03 0.367 356 {'occupied_voxels': 8624, 'directly_seen_fraction': 0.9401670098304749, 'mean_views_per_seen_voxel': 60.91736602783203}
+a_tin_soldier_bread_013020 shell jelly 4.78e+03 0.367 353 {'occupied_voxels': 8523, 'directly_seen_fraction': 0.9420391917228699, 'mean_views_per_seen_voxel': 61.36256408691406}
+a_tin_can_013020 filled metal 7.21e+07 0.311 2272 {'occupied_voxels': 58940, 'directly_seen_fraction': 0.7463861703872681, 'mean_views_per_seen_voxel': 28.353927612304688}
+a_tin_can_013020 shell metal 7.14e+07 0.311 2262 {'occupied_voxels': 57955, 'directly_seen_fraction': 0.7473039031028748, 'mean_views_per_seen_voxel': 28.53553581237793}
+a_terracotta_warrior_013020 filled jelly 3.85e+04 0.311 802 {'occupied_voxels': 9886, 'directly_seen_fraction': 0.8887315988540649, 'mean_views_per_seen_voxel': 58.47245407104492}
+a_terracotta_warrior_013020 shell jelly 3.68e+04 0.312 796 {'occupied_voxels': 9831, 'directly_seen_fraction': 0.8911606073379517, 'mean_views_per_seen_voxel': 58.5711669921875}
+a_stone_pillow_013020 filled snow 2.78e+05 0.304 484 {'occupied_voxels': 19846, 'directly_seen_fraction': 0.7129900455474854, 'mean_views_per_seen_voxel': 57.14324951171875}
+a_stone_pillow_013020 shell snow 2.78e+05 0.304 485 {'occupied_voxels': 19762, 'directly_seen_fraction': 0.7131363153457642, 'mean_views_per_seen_voxel': 57.31370162963867}
+a_sponge_porous_soft_material_isolated_013020 filled jelly 1.36e+06 0.341 254 {'occupied_voxels': 26114, 'directly_seen_fraction': 0.7067090272903442, 'mean_views_per_seen_voxel': 52.639068603515625}
+a_sponge_porous_soft_material_isolated_013020 shell jelly 1.38e+06 0.341 254 {'occupied_voxels': 25927, 'directly_seen_fraction': 0.7076406478881836, 'mean_views_per_seen_voxel': 52.85725402832031}
+Traceback (most recent call last):
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/scripts/v3f/pixie_features.py", line 277, in <module>
+    main()
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/scripts/v3f/pixie_features.py", line 246, in main
+    feats = clip_patches(clip_model, pre, imgs, dev)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/scripts/v3f/pixie_features.py", line 136, in clip_patches
+    feats.append(model.get_patch_encodings(x[i:i + 32].to(dev)).float())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/external/pixie/third_party/f3rm/f3rm/features/clip/model.py", line 406, in get_patch_encodings
+    return self.visual(image.type(self.dtype), patch_output=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/external/pixie/third_party/f3rm/f3rm/features/clip/model.py", line 281, in forward
+    x = penultimate(x)
+        ^^^^^^^^^^^^^^
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.venv/lib/python3.12/site-packages/torch/nn/modules/container.py", line 244, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/external/pixie/third_party/f3rm/f3rm/features/clip/model.py", line 230, in forward
+    x = x + self.attention(self.ln_1(x))
+                           ^^^^^^^^^^^^
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/external/pixie/third_party/f3rm/f3rm/features/clip/model.py", line 187, in forward
+    ret = super().forward(x.type(torch.float32))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.venv/lib/python3.12/site-packages/torch/nn/modules/normalization.py", line 217, in forward
+    return F.layer_norm(
+           ^^^^^^^^^^^^^
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.venv/lib/python3.12/site-packages/torch/nn/functional.py", line 2905, in layer_norm
+    return torch.layer_norm(
+           ^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 74.00 MiB. GPU 0 has a total capacity of 79.33 GiB of which 39.19 MiB is free. Process 2017062 has 7.41 GiB memory in use. Process 2751126 has 31.90 GiB memory in use. Process 3208070 has 1.09 GiB memory in use. Process 3208333 has 32.58 GiB memory in use. Process 3213865 has 1014.00 MiB memory in use. Process 3215452 has 2.75 GiB memory in use. Process 3223904 has 2.54 GiB memory in use. Of the allocated memory 1.93 GiB is allocated by PyTorch, and 112.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

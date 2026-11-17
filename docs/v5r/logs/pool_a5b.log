@@ -1,0 +1,20 @@
+03:13:51 start v5r_gt_000145 gpu 0
+03:13:51 start v5r_gt_000164 gpu 1
+03:13:51 start v5r_gt_000180 gpu 2
+03:13:51 start v5r_gt_000186 gpu 3
+03:13:51 start v5r_gt_000210 gpu 4
+03:13:51 start v5r_gt_000228 gpu 5
+03:13:51 start v5r_gt_000258 gpu 6
+03:13:51 start v5r_gt_000265 gpu 7
+03:13:51 start v5r_prior_vision_000029 gpu 0
+03:13:51 start v5r_prior_vision_000068 gpu 1
+03:13:51 start v5r_prior_vision_000182 gpu 2
+03:13:51 start v5r_prior_vision_000254 gpu 3
+03:13:51 start v5r_prior_vision_000064 gpu 4
+03:13:51 start v5r_prior_vision_000133 gpu 5
+03:13:51 start v5r_prior_vision_000214 gpu 6
+03:13:51 start v5r_prior_vision_000250 gpu 7
+03:56:21 exit v5r_prior_vision_000029 0 gpu 0
+03:56:21 start v5r_lawmean_pred_000029 gpu 0
+03:58:36 exit v5r_prior_vision_000068 0 gpu 1
+03:58:36 start v5r_prior_vt_000029 gpu 1

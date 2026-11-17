@@ -1,0 +1,595 @@
+{
+ "phase": "v3l",
+ "max_per_gpu": 2,
+ "gpus": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "jobs": [
+  {
+   "id": "v3l_pt_smoke",
+   "kind": "cmd",
+   "group": "v3l-pt",
+   "mem_mib": 3000,
+   "retries": 0,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/pt_mpm.py data/external_datasets/v3g_phystwin/single_push_sloth --mode smoke --log10E 5.0"
+  },
+  {
+   "id": "v3l_pt_prior",
+   "kind": "cmd",
+   "group": "v3l-pt",
+   "mem_mib": 6000,
+   "retries": 1,
+   "cmd": ".venv/bin/python -I scripts/v3l/pt_prior.py data/external_datasets/v3l_phystwin_rgb/single_push_sloth data/v3l/pt/pt_prior.json"
+  },
+  {
+   "id": "v3l_pt_search",
+   "kind": "cmd",
+   "group": "v3l-pt",
+   "mem_mib": 3000,
+   "retries": 1,
+   "after": [
+    "v3l_pt_smoke"
+   ],
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/pt_mpm.py data/external_datasets/v3g_phystwin/single_push_sloth --mode search --budget 12 --start jellymean"
+  },
+  {
+   "id": "v3l_pt_search_prior",
+   "kind": "cmd",
+   "group": "v3l-pt",
+   "mem_mib": 3000,
+   "retries": 1,
+   "after": [
+    "v3l_pt_smoke",
+    "v3l_pt_prior"
+   ],
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/pt_mpm.py data/external_datasets/v3g_phystwin/single_push_sloth --mode search --budget 12 --start prior"
+  },
+  {
+   "id": "v3l_prior20",
+   "kind": "cmd",
+   "group": "v3l-prior",
+   "mem_mib": 6000,
+   "retries": 2,
+   "cmd": ".venv/bin/python -I scripts/v3l/prior20.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip data/v3l/prior20.json"
+  },
+  {
+   "id": "v3l_ref_torus",
+   "kind": "cmd",
+   "group": "v3l-sg-ref",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip torus --arm prior20_refine",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_ref_duck",
+   "kind": "cmd",
+   "group": "v3l-sg-ref",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip duck --arm prior20_refine",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_ref_apple",
+   "kind": "cmd",
+   "group": "v3l-sg-ref",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip apple --arm prior20_refine",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_gtE_torus",
+   "kind": "cmd",
+   "group": "v3l-sg-gtE",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip torus --arm gtE"
+  },
+  {
+   "id": "v3l_gtE_duck",
+   "kind": "cmd",
+   "group": "v3l-sg-gtE",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip duck --arm gtE"
+  },
+  {
+   "id": "v3l_gtE_apple",
+   "kind": "cmd",
+   "group": "v3l-sg-gtE",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip apple --arm gtE"
+  },
+  {
+   "id": "v3l_p30_torus",
+   "kind": "cmd",
+   "group": "v3l-sg-p30",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip torus --arm prior30_v3f"
+  },
+  {
+   "id": "v3l_p30_duck",
+   "kind": "cmd",
+   "group": "v3l-sg-p30",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip duck --arm prior30_v3f"
+  },
+  {
+   "id": "v3l_p30_apple",
+   "kind": "cmd",
+   "group": "v3l-sg-p30",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip apple --arm prior30_v3f"
+  },
+  {
+   "id": "v3l_p20_torus",
+   "kind": "cmd",
+   "group": "v3l-sg-p20",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip torus --arm prior20",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_p20_duck",
+   "kind": "cmd",
+   "group": "v3l-sg-p20",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip duck --arm prior20",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_p20_apple",
+   "kind": "cmd",
+   "group": "v3l-sg-p20",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip apple --arm prior20",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_ref_C",
+   "kind": "cmd",
+   "group": "v3l-sg-ref",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip C --arm prior20_refine",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_ref_E",
+   "kind": "cmd",
+   "group": "v3l-sg-ref",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip E --arm prior20_refine",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_ref_V",
+   "kind": "cmd",
+   "group": "v3l-sg-ref",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip V --arm prior20_refine",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_ref_banana",
+   "kind": "cmd",
+   "group": "v3l-sg-ref",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip banana --arm prior20_refine",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_ref_chess",
+   "kind": "cmd",
+   "group": "v3l-sg-ref",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip chess --arm prior20_refine",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_ref_cream",
+   "kind": "cmd",
+   "group": "v3l-sg-ref",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip cream --arm prior20_refine",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_ref_cross",
+   "kind": "cmd",
+   "group": "v3l-sg-ref",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip cross --arm prior20_refine",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_ref_doraemon",
+   "kind": "cmd",
+   "group": "v3l-sg-ref",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip doraemon --arm prior20_refine",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_ref_droplet",
+   "kind": "cmd",
+   "group": "v3l-sg-ref",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip droplet --arm prior20_refine",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_ref_rope",
+   "kind": "cmd",
+   "group": "v3l-sg-ref",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip rope --arm prior20_refine",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_ref_toothpaste",
+   "kind": "cmd",
+   "group": "v3l-sg-ref",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip toothpaste --arm prior20_refine",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_gtE_C",
+   "kind": "cmd",
+   "group": "v3l-sg-gtE",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip C --arm gtE"
+  },
+  {
+   "id": "v3l_gtE_E",
+   "kind": "cmd",
+   "group": "v3l-sg-gtE",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip E --arm gtE"
+  },
+  {
+   "id": "v3l_gtE_V",
+   "kind": "cmd",
+   "group": "v3l-sg-gtE",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip V --arm gtE"
+  },
+  {
+   "id": "v3l_gtE_banana",
+   "kind": "cmd",
+   "group": "v3l-sg-gtE",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip banana --arm gtE"
+  },
+  {
+   "id": "v3l_gtE_chess",
+   "kind": "cmd",
+   "group": "v3l-sg-gtE",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip chess --arm gtE"
+  },
+  {
+   "id": "v3l_gtE_cream",
+   "kind": "cmd",
+   "group": "v3l-sg-gtE",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip cream --arm gtE"
+  },
+  {
+   "id": "v3l_gtE_cross",
+   "kind": "cmd",
+   "group": "v3l-sg-gtE",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip cross --arm gtE"
+  },
+  {
+   "id": "v3l_gtE_doraemon",
+   "kind": "cmd",
+   "group": "v3l-sg-gtE",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip doraemon --arm gtE"
+  },
+  {
+   "id": "v3l_gtE_droplet",
+   "kind": "cmd",
+   "group": "v3l-sg-gtE",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip droplet --arm gtE"
+  },
+  {
+   "id": "v3l_gtE_rope",
+   "kind": "cmd",
+   "group": "v3l-sg-gtE",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip rope --arm gtE"
+  },
+  {
+   "id": "v3l_gtE_toothpaste",
+   "kind": "cmd",
+   "group": "v3l-sg-gtE",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip toothpaste --arm gtE"
+  },
+  {
+   "id": "v3l_p30_C",
+   "kind": "cmd",
+   "group": "v3l-sg-p30",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip C --arm prior30_v3f"
+  },
+  {
+   "id": "v3l_p30_E",
+   "kind": "cmd",
+   "group": "v3l-sg-p30",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip E --arm prior30_v3f"
+  },
+  {
+   "id": "v3l_p30_V",
+   "kind": "cmd",
+   "group": "v3l-sg-p30",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip V --arm prior30_v3f"
+  },
+  {
+   "id": "v3l_p30_banana",
+   "kind": "cmd",
+   "group": "v3l-sg-p30",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip banana --arm prior30_v3f"
+  },
+  {
+   "id": "v3l_p30_chess",
+   "kind": "cmd",
+   "group": "v3l-sg-p30",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip chess --arm prior30_v3f"
+  },
+  {
+   "id": "v3l_p30_cream",
+   "kind": "cmd",
+   "group": "v3l-sg-p30",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip cream --arm prior30_v3f"
+  },
+  {
+   "id": "v3l_p30_cross",
+   "kind": "cmd",
+   "group": "v3l-sg-p30",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip cross --arm prior30_v3f"
+  },
+  {
+   "id": "v3l_p30_doraemon",
+   "kind": "cmd",
+   "group": "v3l-sg-p30",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip doraemon --arm prior30_v3f"
+  },
+  {
+   "id": "v3l_p30_droplet",
+   "kind": "cmd",
+   "group": "v3l-sg-p30",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip droplet --arm prior30_v3f"
+  },
+  {
+   "id": "v3l_p30_rope",
+   "kind": "cmd",
+   "group": "v3l-sg-p30",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip rope --arm prior30_v3f"
+  },
+  {
+   "id": "v3l_p30_toothpaste",
+   "kind": "cmd",
+   "group": "v3l-sg-p30",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip toothpaste --arm prior30_v3f"
+  },
+  {
+   "id": "v3l_p20_C",
+   "kind": "cmd",
+   "group": "v3l-sg-p20",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip C --arm prior20",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_p20_E",
+   "kind": "cmd",
+   "group": "v3l-sg-p20",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip E --arm prior20",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_p20_V",
+   "kind": "cmd",
+   "group": "v3l-sg-p20",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip V --arm prior20",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_p20_banana",
+   "kind": "cmd",
+   "group": "v3l-sg-p20",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip banana --arm prior20",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_p20_chess",
+   "kind": "cmd",
+   "group": "v3l-sg-p20",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip chess --arm prior20",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_p20_cream",
+   "kind": "cmd",
+   "group": "v3l-sg-p20",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip cream --arm prior20",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_p20_cross",
+   "kind": "cmd",
+   "group": "v3l-sg-p20",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip cross --arm prior20",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_p20_doraemon",
+   "kind": "cmd",
+   "group": "v3l-sg-p20",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip doraemon --arm prior20",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_p20_droplet",
+   "kind": "cmd",
+   "group": "v3l-sg-p20",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip droplet --arm prior20",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_p20_rope",
+   "kind": "cmd",
+   "group": "v3l-sg-p20",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip rope --arm prior20",
+   "after": [
+    "v3l_prior20"
+   ]
+  },
+  {
+   "id": "v3l_p20_toothpaste",
+   "kind": "cmd",
+   "group": "v3l-sg-p20",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": "scripts/v3f/replay_env.sh scripts/v3l/sg_metric.py data/external_datasets/springgaus_gdrive/mpm_synthetic.zip toothpaste --arm prior20",
+   "after": [
+    "v3l_prior20"
+   ]
+  }
+ ]
+}

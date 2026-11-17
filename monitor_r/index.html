@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FieldBench 实验进度</title>
+<style>
+:root {
+  --bg: #f6f7f9; --panel: #ffffff; --text: #1d2330; --muted: #667085; --line: #e3e6ec;
+  --accent: #2f6fde; --good: #1f8a5b; --warn: #b7791f; --bad: #c2413b; --track: #edf0f5;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12151b; --panel: #1a1f27; --text: #e6e9ef; --muted: #98a2b3; --line: #2a313c;
+    --accent: #6b9cff; --good: #4cc38a; --warn: #e0a84a; --bad: #f07167; --track: #252c36;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12151b; --panel: #1a1f27; --text: #e6e9ef; --muted: #98a2b3; --line: #2a313c;
+  --accent: #6b9cff; --good: #4cc38a; --warn: #e0a84a; --bad: #f07167; --track: #252c36;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 14px/1.5 -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+main { max-width: 1280px; margin: 0 auto; padding: 20px 16px 48px; }
+header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 16px; margin-bottom: 16px; }
+h1 { font-size: 20px; margin: 0; }
+h2 { font-size: 15px; margin: 0 0 10px; }
+.muted { color: var(--muted); }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; border: 1px solid var(--line); }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px; margin-bottom: 14px; overflow-x: auto; }
+.hostgrid { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 6px; margin: 4px 0 12px; }
+.hg { border: 1px solid var(--line); border-radius: 6px; padding: 4px 6px; font-size: 11.5px; min-width: 0; }
+.hg b { font-variant-numeric: tabular-nums; }
+.hosthead { display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: baseline; margin-top: 8px; }
+.hosthead h3 { font-size: 14px; margin: 0; }
+@media (max-width: 760px) { .hostgrid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.gpus { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+.gpu { border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; }
+.gpu b { font-variant-numeric: tabular-nums; }
+.bar { height: 6px; background: var(--track); border-radius: 3px; overflow: hidden; margin: 4px 0; }
+.bar > i { display: block; height: 100%; background: var(--accent); }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th { color: var(--muted); font-weight: 500; font-size: 12px; }
+.running { color: var(--accent); } .done { color: var(--good); } .failed { color: var(--bad); } .pending { color: var(--muted); }
+.best { font-weight: 600; }
+svg.spark { display: block; }
+.notes li { margin: 4px 0; }
+.toolbar { margin-left: auto; display: flex; gap: 8px; align-items: center; }
+select, button { background: var(--panel); color: var(--text); border: 1px solid var(--line); border-radius: 6px; padding: 3px 8px; font: inherit; }
+.gloss summary { cursor: pointer; font-weight: 600; font-size: 15px; }
+.gloss table td { white-space: normal; vertical-align: top; }
+.gloss td:first-child { white-space: nowrap; font-weight: 600; }
+.gloss .tag { font-size: 12px; padding: 0 6px; border-radius: 999px; border: 1px solid var(--line); margin-left: 6px; font-weight: 400; }
+.gloss .now { color: var(--accent); border-color: var(--accent); }
+.gloss .next { color: var(--warn); border-color: var(--warn); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>FieldBench 实验进度</h1>
+    <span id="status" class="muted">加载中…</span>
+    <div class="toolbar">
+      <select id="phase"></select>
+      <button id="theme" type="button">主题</button>
+    </div>
+  </header>
+
+
+  <section class="panel">
+    <h2>进行中与后续实验 <span id="extra_age" class="muted"></span></h2>
+    <table id="extra"></table>
+    <p class="muted" style="margin:6px 0 0">只列出正在运行和后续计划中的实验与写作步骤；已完成、已停止的不再显示。剩余时间：有完成速度的按最近 90 分钟外推，其余为人工估计；页面每次刷新按当前时间重新计算。</p>
+  </section>
+
+  <section class="panel">
+    <h2>A800 集群状态 <span id="hosts_age" class="muted"></span></h2>
+    <table id="hosts"></table>
+    <p class="muted" style="margin:6px 0 10px">每 30 秒由 4090 采集一次（只读：nvidia-smi、负载、内存、磁盘、进程数）。"我们的任务" 按进程命令行归类：v3n 生成 / MPM 仿真 / 修正 / 夹爪 / 先验训练 / 迁移。共享存储 = 能看到项目目录 rsi_real_test。</p>
+    <div id="hostcards"></div>
+    <div id="disk" class="muted" style="margin-top:8px"></div>
+    <div id="gpus" class="gpus" hidden></div><div id="gpus4" hidden></div><span id="remote_age" hidden></span>
+  </section>
+
+  <section class="panel" hidden>
+    <h2>分组汇总 <span class="muted">（各 seed 最佳验证；均值 ± 标准差，括号为已有 seed 数）</span></h2>
+    <table id="summary"></table>
+    <p class="muted" style="margin:8px 0 0">MAE：训练集标准化参数误差，越低越好。族内 r：同一本构族内预测与 GT 的 Pearson 相关（3 族平均），回答“是否真的学到材料”。</p>
+  </section>
+
+  <section class="panel">
+    <h2>正在运行的队列任务</h2>
+    <table id="jobs"></table>
+  </section>
+
+  
+
+  
+</main>
+<script>
+const $ = (id) => document.getElementById(id);
+const fmt = (v, d = 3) => (v === null || v === undefined || Number.isNaN(v)) ? '—' : Number(v).toFixed(d);
+const ago = (t, now) => t ? `${Math.max(0, Math.round((now - t) / 60))} 分钟前` : '—';
+const dur = (s) => s == null ? '—' : s > 3600 ? `${(s / 3600).toFixed(1)} h` : `${Math.round(s / 60)} min`;
+const STATUS = { running: '运行中', done: '完成', failed: '失败', pending: '排队' };
+const ACTIVE = new Set(['v5f', 'v5q', 'v3j', 'v5n', 'v5p', 'v4n', 'v4p', 'v4f', 'v3n', 'v3p', 'v3q', 'v3r', 'v3s', 'v3t', 'v3l', 'v3h', 'v3d', 'v3e', 'v3f', 'v3g', 'v3i']);
+let phaseFilter = '';
+try { phaseFilter = localStorage.getItem('rq_phase') || ''; } catch (e) {}
+
+function spark(points) {
+  const vals = points.filter(p => p[1] != null && p[2] === 'joint_training');
+  if (vals.length < 2) return '<span class="muted">—</span>';
+  const w = 120, h = 28, ys = vals.map(p => p[1]);
+  const lo = Math.min(...ys), hi = Math.max(...ys), span = hi - lo || 1;
+  const xs = vals.map((_, i) => 2 + i * (w - 4) / (vals.length - 1));
+  const path = vals.map((p, i) => `${i ? 'L' : 'M'}${xs[i].toFixed(1)},${(2 + (h - 4) * (p[1] - lo) / span).toFixed(1)}`).join('');
+  const b = ys.indexOf(lo);
+  return `<svg class="spark" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" aria-label="验证 MAE 曲线">
+    <path d="${path}" fill="none" stroke="var(--accent)" stroke-width="1.5"/>
+    <circle cx="${xs[b]}" cy="${2 + (h - 4) * (lo - lo) / span}" r="2.5" fill="var(--good)"/></svg>`;
+}
+const agg = (a, d = 3) => a ? `${fmt(a[0], d)} ± ${fmt(a[1], d)} <span class="muted">(${a[2]})</span>` : '—';
+
+function render(s) {
+  const now = s.now;
+  $('status').textContent = `${s.paused ? '已暂停' : '队列运行中'} · 队列更新 ${ago(s.queue_updated_unix, now)} · 页面 ${new Date(now * 1000).toLocaleTimeString()}`;
+  $('gpus').innerHTML = s.gpus.map(g => `<div class="gpu"><div>GPU ${g.index} · <b>${g.util}%</b></div>
+    <div class="bar"><i style="width:${g.util}%"></i></div>
+    <div class="muted">${(g.mem_used / 1024).toFixed(1)} / ${(g.mem_total / 1024).toFixed(0)} GB · ${g.temp}°C · ${Math.round(g.power)} W</div>
+    <div class="bar"><i style="width:${100 * g.mem_used / g.mem_total}%;background:var(--warn)"></i></div></div>`).join('');
+  const card = g => `<div class="gpu"><div>GPU ${g.index} · <b>${g.util}%</b></div>
+    <div class="bar"><i style="width:${g.util}%"></i></div>
+    <div class="muted">${(g.mem_used / 1024).toFixed(1)} / ${(g.mem_total / 1024).toFixed(0)} GB · ${g.temp}°C · ${Math.round(g.power)} W</div>
+    <div class="bar"><i style="width:${100 * g.mem_used / g.mem_total}%;background:var(--warn)"></i></div></div>`;
+  const r4 = (s.remote_gpus || []).find(r => r.host === 'a800-4');
+  $('gpus4').innerHTML = r4 ? r4.gpus.map(card).join('') : '<span class="muted">无数据</span>';
+  $('remote_age').textContent = r4 ? ` · ${Math.round(r4.age_s)} 秒前${r4.age_s > 120 ? '（数据过期）' : ''}` : '';
+
+  const H = s.hosts || {}; const names = Object.keys(H).sort();
+  const jobsTxt = j => Object.entries(j || {}).filter(([k, v]) => v > 0).map(([k, v]) => `${k} ${v}`).join(' · ') || '<span class="muted">无</span>';
+  let oldest = 0;
+  $('hosts').innerHTML = '<tr><th>机器</th><th>状态</th><th>GPU 忙 / 总</th><th>平均利用率</th><th>显存</th><th>CPU 负载</th><th>内存可用</th><th>磁盘可用</th><th>共享存储</th><th>我们的任务（进程数）</th></tr>' +
+    names.map(h => {
+      const v = H[h]; oldest = Math.max(oldest, now - (v.updated || 0));
+      if (v.error) return `<tr><td><b>${h}</b></td><td class="failed">无法连接</td><td colspan="8" class="muted">${v.error}</td></tr>`;
+      const g = v.gpus || []; const busy = g.filter(x => x.util > 10 || x.procs > 0).length;
+      const util = g.length ? g.reduce((a, x) => a + x.util, 0) / g.length : 0;
+      const mu = g.reduce((a, x) => a + x.mem_used, 0) / 1024, mt = g.reduce((a, x) => a + x.mem_total, 0) / 1024;
+      const stale = now - v.updated > 120;
+      return `<tr><td><b>${h}</b></td><td class="${stale ? 'failed' : (busy ? 'running' : 'done')}">${stale ? '数据过期' : (busy ? '使用中' : '空闲')}</td>
+        <td>${busy} / ${g.length}</td><td>${util.toFixed(0)}%</td><td>${mu.toFixed(0)} / ${mt.toFixed(0)} GB</td>
+        <td>${v.load[0].toFixed(1)} / ${v.ncpu}</td><td>${v.mem_avail_gb.toFixed(0)} / ${v.mem_total_gb.toFixed(0)} GB</td>
+        <td>${(v.disk_free_gb / 1000).toFixed(2)} / ${(v.disk_total_gb / 1000).toFixed(1)} TB</td><td>${v.shared_fs ? '是' : '否'}</td><td>${jobsTxt(v.jobs)}</td></tr>`;
+    }).join('');
+  $('hosts_age').textContent = names.length ? ` · 最旧数据 ${Math.round(oldest)} 秒前` : ' · 无数据';
+  $('hostcards').innerHTML = names.filter(h => !H[h].error).map(h => `<div class="hosthead"><h3>${h}</h3><span class="muted">${H[h].hostname}</span></div>
+    <div class="hostgrid">${(H[h].gpus || []).map(g => `<div class="hg"><div>GPU ${g.index} · <b>${g.util.toFixed(0)}%</b> · ${g.procs} 进程</div>
+      <div class="bar"><i style="width:${g.util}%"></i></div>
+      <div class="muted">${(g.mem_used / 1024).toFixed(1)} / ${(g.mem_total / 1024).toFixed(0)} GB · ${g.temp.toFixed(0)}°C</div>
+      <div class="bar"><i style="width:${100 * g.mem_used / g.mem_total}%;background:var(--warn)"></i></div></div>`).join('')}</div>`).join('');
+  const span = sec => { sec = Math.max(0, sec); const h = Math.floor(sec / 3600), m = Math.round((sec % 3600) / 60); return h ? `${h} 小时${m ? ' ' + m + ' 分' : ''}` : `${m} 分钟`; };
+  const remain = (p, now) => {
+    if (p.eta_lo) {
+      const a = p.eta_lo - now, b = (p.eta_hi || p.eta_lo) - now;
+      const txt = b <= 0 ? '应已完成，待确认' : (Math.abs(b - a) < 600 ? `还需约 ${span(b)}` : `还需约 ${span(a)}–${span(b)}`);
+      return txt + (p.eta_note ? `<div class="muted" style="font-size:11px">${p.eta_note}</div>` : '');
+    }
+    if (p.eta_unix) return p.eta_unix - now <= 0 ? '即将完成' : `还需约 ${span(p.eta_unix - now)} <span class="muted">（按速度）</span>`;
+    return '—';
+  };
+  const ep = (s.extra_progress || {}).phases || {};
+  const hhmm = t => t ? new Date(t * 1000).toISOString().slice(5, 16).replace('T', ' ') + ' UTC' : '—';
+  $('extra').innerHTML = '<tr><th>编号</th><th>状态</th><th>内容</th><th>机器</th><th>进度</th><th>速度</th><th>剩余时间</th></tr>' +
+    Object.entries(ep).filter(([k, p]) => p.show).sort((x, y) => (x[1].order - y[1].order)).map(([k, p]) => {
+      const pct = p.total ? 100 * p.done / p.total : 0;
+      return `<tr><td><b>${k}</b></td><td class="${p.order === 0 ? 'running' : 'pending'}">${p.order === 0 ? '进行中' : '待开始'}</td><td>${p.label}</td><td class="muted">${p.host_live ? '<span class="pill">实时</span> ' : ''}${p.host}</td>
+        <td><div class="bar" style="width:110px"><i style="width:${pct}%"></i></div><span class="muted">${p.done} / ${p.total} ${p.unit}</span></td>
+        <td class="muted">${p.rate_per_h ? p.rate_per_h.toFixed(1) + ' /h' : '—'}</td>
+        <td>${remain(p, now)}</td></tr>`;
+    }).join('');
+  $('extra_age').textContent = s.extra_progress && s.extra_progress.updated ? `· ${Math.round(s.now - s.extra_progress.updated)} 秒前更新` : '';
+  $('disk').textContent = `磁盘可用 ${s.disk.free_gb.toFixed(0)} / ${s.disk.total_gb.toFixed(0)} GB`;
+
+  const phases = [...new Set(s.jobs.map(j => j.phase))].filter(p => ACTIVE.has(p));
+  $('phase').innerHTML = ['<option value="">全部阶段</option>', ...phases.map(p => `<option ${p === phaseFilter ? 'selected' : ''}>${p}</option>`)].join('');
+  const keep = (x) => x.status === 'running' && (!phaseFilter || x.phase === phaseFilter);
+
+  const sum = s.summary.filter(keep).sort((a, b) => (a.mae?.[0] ?? 9) - (b.mae?.[0] ?? 9));
+  const bestMae = sum.length ? sum[0].mae?.[0] : null;
+  $('summary').innerHTML = `<tr><th>阶段</th><th>组</th><th>验证 MAE</th><th>族分类准确率</th><th>族内 r (E)</th><th>族内 r (ν)</th><th>完成 seed</th></tr>` +
+    (sum.length ? sum.map(g => `<tr><td>${g.phase}</td><td class="${g.mae?.[0] === bestMae ? 'best' : ''}">${g.group}</td><td>${agg(g.mae)}</td>
+      <td>${agg(g.law_accuracy)}</td><td>${agg(g.within_law_r_E, 2)}</td><td>${agg(g.within_law_r_nu, 2)}</td><td>${g.finished}</td></tr>`).join('')
+      : '<tr><td colspan="7" class="muted">还没有完成的验证轮</td></tr>');
+
+  const byGroup = {};
+  s.jobs.filter(keep).forEach(j => { (byGroup[j.phase + ':' + j.group] ||= []).push(j); });
+  const aggRows = [], single = [];
+  Object.values(byGroup).forEach(list => {
+    const trained = list.some(j => (j.val_curve || []).length);
+    if (list.length > 4 && !trained) aggRows.push(list); else single.push(...list);
+  });
+  const aggHtml = aggRows.map(list => {
+    const c = { done: 0, running: 0, pending: 0, failed: 0 }; list.forEach(j => c[j.status] = (c[j.status] || 0) + 1);
+    const pct = 100 * c.done / list.length;
+    return `<tr><td>${list[0].phase} · ${list[0].group} <span class="muted">（${list.length} 个任务）</span></td><td class="${c.running ? 'running' : c.done === list.length ? 'done' : 'pending'}">${c.running ? '运行中' : c.done === list.length ? '完成' : '排队'}</td><td>—</td>
+      <td><div class="bar" style="width:90px"><i style="width:${pct}%"></i></div><span class="muted">完成 ${c.done} · 运行 ${c.running} · 排队 ${c.pending}${c.failed ? ' · 失败 ' + c.failed : ''}</span></td><td colspan="7"></td></tr>`;
+  }).join('');
+  const jobs = single.sort((a, b) => (a.status === 'running' ? 0 : 1) - (b.status === 'running' ? 0 : 1) || a.id.localeCompare(b.id));
+  $('jobs').innerHTML = `<tr><th>任务</th><th>状态</th><th>GPU</th><th>进度</th><th>当前阶段</th><th>最佳 MAE</th><th>族准确率</th><th>族内 r(E)</th><th>验证曲线</th><th>剩余≤</th><th>更新</th></tr>` +
+    jobs.map(j => {
+      const pct = j.epochs ? Math.min(100, 100 * j.epoch / j.epochs) : 0;
+      const st = j.status === 'done' && j.stop_reason === 'validation_material_plateau' ? '早停完成' : (STATUS[j.status] || j.status);
+      return `<tr><td>${j.id}</td><td class="${j.status}">${st}</td><td>${j.gpu ?? '—'}</td>
+      <td><div class="bar" style="width:90px"><i style="width:${pct}%"></i></div><span class="muted">${j.epoch}/${j.epochs ?? '—'} ${j.unit || '轮'}</span></td>
+      <td>${j.train_phase === 'field_warmup' ? '场预热' : j.train_phase === 'joint_training' ? '联合训练' : j.train_phase === 'generation' ? '仿真+渲染' : '—'}${j.step ? ` · step ${j.step}` : ''}</td>
+      <td>${fmt(j.best_val_mae)}${j.best_epoch ? ` <span class="muted">@${j.best_epoch}</span>` : ''}</td>
+      <td>${fmt(j.law_accuracy)}</td><td>${fmt(j.within_law_r_E, 2)}</td><td>${spark(j.val_curve)}</td>
+      <td>${dur(j.eta_seconds_upper)}</td><td class="muted">${ago(j.updated_unix, now)}</td></tr>`;
+    }).join('') + aggHtml;
+
+  if ($('caches')) $('caches').innerHTML = `<tr><th>名称</th><th>状态</th><th>完成</th></tr>` +
+    s.caches.map(c => `<tr><td>${c.name}</td><td>${c.status ?? '—'}</td><td>${c.completed ?? '—'} / ${c.total ?? '—'}</td></tr>`).join('');
+  if ($('notes')) $('notes').innerHTML = (s.notes || []).map(n => `<li>${n}</li>`).join('') || '<li class="muted">无</li>';
+}
+
+async function tick() {
+  try {
+    const r = await fetch('api/state', { cache: 'no-store' });
+    render(await r.json());
+  } catch (e) { $('status').textContent = '连接失败，稍后重试…'; }
+}
+$('phase').addEventListener('change', (e) => { phaseFilter = e.target.value; try { localStorage.setItem('rq_phase', phaseFilter); } catch (err) {} tick(); });
+$('theme').addEventListener('click', () => {
+  const root = document.documentElement;
+  const dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+  root.dataset.theme = dark ? 'light' : 'dark';
+});
+tick(); setInterval(tick, 10000);
+</script>
+</body>
+</html>

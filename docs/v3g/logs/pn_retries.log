@@ -1,0 +1,9 @@
+2026-11-14T06:49:57Z torus_v3t0 stopped manually: NaN->dt-halving loop (each forward >1h), nu at -0.345
+2026-11-14T09:11:53Z torus_v11_rs OOM attempt 1, retrying
+2026-11-14T10:07:42Z bird_v11_hy OOM attempt 1, retrying
+2026-11-14T10:11:01Z torus_v11_rs OOM attempt 2, retrying
+2026-11-14T10:14:50Z torus_v11_rs OOM attempt 3, retrying
+2026-11-14T10:34:36Z bird_v11_hy OOM attempt 2, retrying
+2026-11-14T10:46:45Z torus_v11_rs (default-init restart control) abandoned after 3 OOMs on shared GPU 7, to reduce GPU-7 pressure for Spring-Gaus
+2026-11-14T11:47:05Z bird_v11_hy OOM attempt 3, retrying
+2026-11-14T15:31:14Z bird_v11_hy stopped manually at 94/150 dynamic iterations: nu collapsed to -0.42 (bound -0.45), 45 NaN dt-halving retries, ~10 min/iteration and growing

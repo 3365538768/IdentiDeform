@@ -1,0 +1,11 @@
+{
+  "status": "resources_released",
+  "desired": "paused",
+  "stopped_manager_pids": [
+    79058
+  ],
+  "project_python_processes_remaining": [],
+  "checkpoints_preserved": true,
+  "automatic_resume": false,
+  "updated_unix": 1794117288.8869662
+}

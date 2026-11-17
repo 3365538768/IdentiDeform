@@ -1,0 +1,1161 @@
+{
+  "purpose": "engineering_pilot_only",
+  "samples": 240,
+  "seed_count": 1,
+  "backbone": "DINOv2-S",
+  "test_evaluated": false,
+  "variants": {
+    "C_aux_no_feedback": {
+      "status": {
+        "status": "engineering_pilot_finished",
+        "steps": 684,
+        "best_val_standardized_mae": 0.812376552524612,
+        "max_gpu_allocated_bytes": 352977920
+      },
+      "best_epoch": 7,
+      "validation_curve": [
+        {
+          "epoch": 0,
+          "mae": 0.8941607551406259
+        },
+        {
+          "epoch": 1,
+          "mae": 0.8726576075119816
+        },
+        {
+          "epoch": 2,
+          "mae": 0.8655161065575869
+        },
+        {
+          "epoch": 3,
+          "mae": 0.8619389326018079
+        },
+        {
+          "epoch": 4,
+          "mae": 0.8375054060926904
+        },
+        {
+          "epoch": 5,
+          "mae": 0.8134915419530285
+        },
+        {
+          "epoch": 6,
+          "mae": 0.8267880253589955
+        },
+        {
+          "epoch": 7,
+          "mae": 0.812376552524612
+        },
+        {
+          "epoch": 8,
+          "mae": 0.8329819286566066
+        },
+        {
+          "epoch": 9,
+          "mae": 0.8423175171179615
+        },
+        {
+          "epoch": 10,
+          "mae": 0.8679101799169312
+        },
+        {
+          "epoch": 11,
+          "mae": 0.896158008659056
+        }
+      ],
+      "best_validation": {
+        "samples": 14,
+        "filtered": false,
+        "parameters": {
+          "E": {
+            "count": 14,
+            "transformed_mae": 1.5890751848240074,
+            "transformed_median_ae": 0.8656263171257201,
+            "transformed_p90_ae": 4.511827823115388,
+            "raw_mae": 1164095.4232204854,
+            "raw_median_ae": 42991.456328910645,
+            "r2": -0.22600914403852723,
+            "pearson": 0.41550504188854726,
+            "nominal_95_coverage_transformed": 0.8571428571428571
+          },
+          "nu": {
+            "count": 14,
+            "transformed_mae": 0.0536375835539596,
+            "transformed_median_ae": 0.042203286230268644,
+            "transformed_p90_ae": 0.1113998086034121,
+            "raw_mae": 0.0536375835539596,
+            "raw_median_ae": 0.042203286230268644,
+            "r2": 0.1745281498540706,
+            "pearson": 0.5329531683125175,
+            "nominal_95_coverage_transformed": 0.8571428571428571
+          },
+          "rho": {
+            "count": 14,
+            "transformed_mae": 0.5110543832120257,
+            "transformed_median_ae": 0.2607163950038185,
+            "transformed_p90_ae": 1.4902427328086225,
+            "raw_mae": 1836.7263306709226,
+            "raw_median_ae": 1457.2728838057494,
+            "r2": -0.08388261187108648,
+            "pearson": 0.0936694984883729,
+            "nominal_95_coverage_transformed": 0.8571428571428571
+          },
+          "sigma_y": {
+            "count": 4,
+            "transformed_mae": 0.9106568315357944,
+            "transformed_median_ae": 0.8608166497576786,
+            "transformed_p90_ae": 1.0963635712303965,
+            "raw_mae": 4656.405873088256,
+            "raw_median_ae": 4601.731911938059,
+            "r2": -0.307437871604479,
+            "pearson": -0.4979216007430386,
+            "nominal_95_coverage_transformed": 1.0
+          }
+        },
+        "standardized_mae": 0.812376552524612,
+        "note": "Train-standardized ln1p/linear errors; raw outputs are constrained; not the legacy SPE. Coverage is empirical, not guaranteed.",
+        "field_absolute_error_encoded": 0.12275574014818272,
+        "by_source": {
+          "DeformFieldBench": {
+            "samples": 14,
+            "filtered": false,
+            "parameters": {
+              "E": {
+                "count": 14,
+                "transformed_mae": 1.5890751848240074,
+                "transformed_median_ae": 0.8656263171257201,
+                "transformed_p90_ae": 4.511827823115388,
+                "raw_mae": 1164095.4232204854,
+                "raw_median_ae": 42991.456328910645,
+                "r2": -0.22600914403852723,
+                "pearson": 0.41550504188854726,
+                "nominal_95_coverage_transformed": 0.8571428571428571
+              },
+              "nu": {
+                "count": 14,
+                "transformed_mae": 0.0536375835539596,
+                "transformed_median_ae": 0.042203286230268644,
+                "transformed_p90_ae": 0.1113998086034121,
+                "raw_mae": 0.0536375835539596,
+                "raw_median_ae": 0.042203286230268644,
+                "r2": 0.1745281498540706,
+                "pearson": 0.5329531683125175,
+                "nominal_95_coverage_transformed": 0.8571428571428571
+              },
+              "rho": {
+                "count": 14,
+                "transformed_mae": 0.5110543832120257,
+                "transformed_median_ae": 0.2607163950038185,
+                "transformed_p90_ae": 1.4902427328086225,
+                "raw_mae": 1836.7263306709226,
+                "raw_median_ae": 1457.2728838057494,
+                "r2": -0.08388261187108648,
+                "pearson": 0.0936694984883729,
+                "nominal_95_coverage_transformed": 0.8571428571428571
+              },
+              "sigma_y": {
+                "count": 4,
+                "transformed_mae": 0.9106568315357944,
+                "transformed_median_ae": 0.8608166497576786,
+                "transformed_p90_ae": 1.0963635712303965,
+                "raw_mae": 4656.405873088256,
+                "raw_median_ae": 4601.731911938059,
+                "r2": -0.307437871604479,
+                "pearson": -0.4979216007430386,
+                "nominal_95_coverage_transformed": 1.0
+              }
+            },
+            "standardized_mae": 0.812376552524612,
+            "note": "Train-standardized ln1p/linear errors; raw outputs are constrained; not the legacy SPE. Coverage is empirical, not guaranteed."
+          }
+        },
+        "by_action": {
+          "bend": {
+            "samples": 2,
+            "filtered": false,
+            "parameters": {
+              "E": {
+                "count": 2,
+                "transformed_mae": 2.9157861934067437,
+                "transformed_median_ae": 2.9157861934067437,
+                "transformed_p90_ae": 4.008552210948744,
+                "raw_mae": 1590730.8836737683,
+                "raw_median_ae": 1590730.8836737683,
+                "r2": -2.3459542399502364,
+                "pearson": 1.0,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "nu": {
+                "count": 2,
+                "transformed_mae": 0.0651596672798834,
+                "transformed_median_ae": 0.0651596672798834,
+                "transformed_p90_ae": 0.1068219163817451,
+                "raw_mae": 0.0651596672798834,
+                "raw_median_ae": 0.0651596672798834,
+                "r2": -0.08300813250316574,
+                "pearson": 1.0,
+                "nominal_95_coverage_transformed": 0.5
+              },
+              "rho": {
+                "count": 2,
+                "transformed_mae": 0.281772703781205,
+                "transformed_median_ae": 0.281772703781205,
+                "transformed_p90_ae": 0.4107174505086869,
+                "raw_mae": 1101.23342814374,
+                "raw_median_ae": 1101.23342814374,
+                "r2": 0.143131503072355,
+                "pearson": 1.0,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "sigma_y": {
+                "count": 1,
+                "transformed_mae": 0.7726999561086245,
+                "transformed_median_ae": 0.7726999561086245,
+                "transformed_p90_ae": 0.7726999561086245,
+                "raw_mae": 5922.752801680537,
+                "raw_median_ae": 5922.752801680537,
+                "r2": null,
+                "pearson": null,
+                "nominal_95_coverage_transformed": 1.0
+              }
+            },
+            "standardized_mae": 0.8746182259970477,
+            "note": "Train-standardized ln1p/linear errors; raw outputs are constrained; not the legacy SPE. Coverage is empirical, not guaranteed."
+          },
+          "drop": {
+            "samples": 3,
+            "filtered": false,
+            "parameters": {
+              "E": {
+                "count": 3,
+                "transformed_mae": 0.5145128044736751,
+                "transformed_median_ae": 0.4204845267214381,
+                "transformed_p90_ae": 0.8811328390564569,
+                "raw_mae": 8468.230927102484,
+                "raw_median_ae": 5515.946316201987,
+                "r2": -1.4139862917599104,
+                "pearson": 0.4681466577828971,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "nu": {
+                "count": 3,
+                "transformed_mae": 0.059666616148785954,
+                "transformed_median_ae": 0.06272638003810926,
+                "transformed_p90_ae": 0.0733752880023077,
+                "raw_mae": 0.059666616148785954,
+                "raw_median_ae": 0.06272638003810926,
+                "r2": -61.95509136850163,
+                "pearson": -0.6531414104661595,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "rho": {
+                "count": 3,
+                "transformed_mae": 0.14579080662650057,
+                "transformed_median_ae": 0.04425205601068427,
+                "transformed_p90_ae": 0.3006409784385767,
+                "raw_mae": 922.1560679881504,
+                "raw_median_ae": 255.88075565680992,
+                "r2": -0.7320295737034073,
+                "pearson": -0.32026727580506675,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "sigma_y": {
+                "count": 0
+              }
+            },
+            "standardized_mae": 0.5049083224601216,
+            "note": "Train-standardized ln1p/linear errors; raw outputs are constrained; not the legacy SPE. Coverage is empirical, not guaranteed."
+          },
+          "press": {
+            "samples": 2,
+            "filtered": false,
+            "parameters": {
+              "E": {
+                "count": 2,
+                "transformed_mae": 3.6022149398242824,
+                "transformed_median_ae": 3.6022149398242824,
+                "transformed_p90_ae": 4.4087912262678435,
+                "raw_mae": 3249043.330004481,
+                "raw_median_ae": 3249043.330004481,
+                "r2": -20.634799979900073,
+                "pearson": -1.0,
+                "nominal_95_coverage_transformed": 0.5
+              },
+              "nu": {
+                "count": 2,
+                "transformed_mae": 0.10955606729413217,
+                "transformed_median_ae": 0.10955606729413217,
+                "transformed_p90_ae": 0.11897805834713199,
+                "raw_mae": 0.10955606729413217,
+                "raw_median_ae": 0.10955606729413217,
+                "r2": -18260.539511021838,
+                "pearson": -1.0,
+                "nominal_95_coverage_transformed": 0.5
+              },
+              "rho": {
+                "count": 2,
+                "transformed_mae": 0.14448887490394924,
+                "transformed_median_ae": 0.14448887490394924,
+                "transformed_p90_ae": 0.19108114501238588,
+                "raw_mae": 628.3289082008148,
+                "raw_median_ae": 628.3289082008148,
+                "r2": 0.5511327760470299,
+                "pearson": 1.0,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "sigma_y": {
+                "count": 2,
+                "transformed_mae": 0.9604970133139101,
+                "transformed_median_ae": 0.9604970133139101,
+                "transformed_p90_ae": 1.1197377663294983,
+                "raw_mae": 4184.4484874204345,
+                "raw_median_ae": 4184.4484874204345,
+                "r2": -0.2670888428081106,
+                "pearson": -1.0,
+                "nominal_95_coverage_transformed": 1.0
+              }
+            },
+            "standardized_mae": 1.0346338218078017,
+            "note": "Train-standardized ln1p/linear errors; raw outputs are constrained; not the legacy SPE. Coverage is empirical, not guaranteed."
+          },
+          "shear": {
+            "samples": 6,
+            "filtered": false,
+            "parameters": {
+              "E": {
+                "count": 6,
+                "transformed_mae": 1.2060030347037953,
+                "transformed_median_ae": 0.38629854975690936,
+                "transformed_p90_ae": 3.22434954479092,
+                "raw_mae": 1094121.2808585756,
+                "raw_median_ae": 30971.722005244577,
+                "r2": -0.5358815741566214,
+                "pearson": 0.017180022864926644,
+                "nominal_95_coverage_transformed": 0.8333333333333334
+              },
+              "nu": {
+                "count": 6,
+                "transformed_mae": 0.031193364625488707,
+                "transformed_median_ae": 0.02799833466716567,
+                "transformed_p90_ae": 0.05283218658516545,
+                "raw_mae": 0.031193364625488707,
+                "raw_median_ae": 0.02799833466716567,
+                "r2": -0.6046689899717093,
+                "pearson": -0.21051359300596462,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "rho": {
+                "count": 6,
+                "transformed_mae": 0.9365124372881469,
+                "transformed_median_ae": 0.5040127140598969,
+                "transformed_p90_ae": 2.0448082028007253,
+                "raw_mae": 3022.4820268022436,
+                "raw_median_ae": 3100.466705988103,
+                "r2": -0.26064998068570655,
+                "pearson": -0.3077865968442345,
+                "nominal_95_coverage_transformed": 0.6666666666666666
+              },
+              "sigma_y": {
+                "count": 1,
+                "transformed_mae": 0.9489333434067326,
+                "transformed_median_ae": 0.9489333434067326,
+                "transformed_p90_ae": 0.9489333434067326,
+                "raw_mae": 4333.973715831617,
+                "raw_median_ae": 4333.973715831617,
+                "r2": null,
+                "pearson": null,
+                "nominal_95_coverage_transformed": 1.0
+              }
+            },
+            "standardized_mae": 0.904148924213491,
+            "note": "Train-standardized ln1p/linear errors; raw outputs are constrained; not the legacy SPE. Coverage is empirical, not guaranteed."
+          },
+          "stretch": {
+            "samples": 1,
+            "filtered": false,
+            "parameters": {
+              "E": {
+                "count": 1,
+                "transformed_mae": 0.43149369943025206,
+                "transformed_median_ae": 0.43149369943025206,
+                "transformed_p90_ae": 0.43149369943025206,
+                "raw_mae": 27655.11979753644,
+                "raw_median_ae": 27655.11979753644,
+                "r2": null,
+                "pearson": null,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "nu": {
+                "count": 1,
+                "transformed_mae": 0.03533466440811328,
+                "transformed_median_ae": 0.03533466440811328,
+                "transformed_p90_ae": 0.03533466440811328,
+                "raw_mae": 0.03533466440811328,
+                "raw_median_ae": 0.03533466440811328,
+                "r2": null,
+                "pearson": null,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "rho": {
+                "count": 1,
+                "transformed_mae": 0.2457911639896686,
+                "transformed_median_ae": 0.2457911639896686,
+                "transformed_p90_ae": 0.2457911639896686,
+                "raw_mae": 1353.6835919258938,
+                "raw_median_ae": 1353.6835919258938,
+                "r2": null,
+                "pearson": null,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "sigma_y": {
+                "count": 0
+              }
+            },
+            "standardized_mae": 0.41563959916432697,
+            "note": "Train-standardized ln1p/linear errors; raw outputs are constrained; not the legacy SPE. Coverage is empirical, not guaranteed."
+          }
+        },
+        "by_law": {
+          "0": {
+            "samples": 2,
+            "filtered": false,
+            "parameters": {
+              "E": {
+                "count": 2,
+                "transformed_mae": 0.7083897219308248,
+                "transformed_median_ae": 0.7083897219308248,
+                "transformed_p90_ae": 0.9387138780983342,
+                "raw_mae": 11089.408819442102,
+                "raw_median_ae": 11089.408819442102,
+                "r2": -376.9342178386821,
+                "pearson": -1.0,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "nu": {
+                "count": 2,
+                "transformed_mae": 0.05148116672650027,
+                "transformed_median_ae": 0.05148116672650027,
+                "transformed_p90_ae": 0.06047733737578746,
+                "raw_mae": 0.05148116672650027,
+                "raw_median_ae": 0.05148116672650027,
+                "r2": -647.9164572870974,
+                "pearson": -1.0,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "rho": {
+                "count": 2,
+                "transformed_mae": 0.20449513252811702,
+                "transformed_median_ae": 0.20449513252811702,
+                "transformed_p90_ae": 0.3326895937420632,
+                "raw_mae": 1307.7442351081536,
+                "raw_median_ae": 1307.7442351081536,
+                "r2": -2.78579745369205,
+                "pearson": -1.0,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "sigma_y": {
+                "count": 0
+              }
+            },
+            "standardized_mae": 0.5215402419368426,
+            "note": "Train-standardized ln1p/linear errors; raw outputs are constrained; not the legacy SPE. Coverage is empirical, not guaranteed."
+          },
+          "1": {
+            "samples": 4,
+            "filtered": false,
+            "parameters": {
+              "E": {
+                "count": 4,
+                "transformed_mae": 4.151125957168736,
+                "transformed_median_ae": 4.446089506606489,
+                "transformed_p90_ae": 4.965961752948115,
+                "raw_mae": 4011954.894804771,
+                "raw_median_ae": 4290957.605331127,
+                "r2": -36.838354319399016,
+                "pearson": -0.8337581848188724,
+                "nominal_95_coverage_transformed": 0.5
+              },
+              "nu": {
+                "count": 4,
+                "transformed_mae": 0.09086472719759615,
+                "transformed_median_ae": 0.10750802856754646,
+                "transformed_p90_ae": 0.1201047328744305,
+                "raw_mae": 0.09086472719759615,
+                "raw_median_ae": 0.10750802856754646,
+                "r2": -3.9916239805946887,
+                "pearson": 0.6363325327675715,
+                "nominal_95_coverage_transformed": 0.5
+              },
+              "rho": {
+                "count": 4,
+                "transformed_mae": 0.16489551797283708,
+                "transformed_median_ae": 0.16166049145567385,
+                "transformed_p90_ae": 0.23582754995996658,
+                "raw_mae": 749.7740387065419,
+                "raw_median_ae": 717.1275799557491,
+                "r2": 0.3081797309087071,
+                "pearson": 0.7701971118651566,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "sigma_y": {
+                "count": 4,
+                "transformed_mae": 0.9106568315357944,
+                "transformed_median_ae": 0.8608166497576786,
+                "transformed_p90_ae": 1.0963635712303965,
+                "raw_mae": 4656.405873088256,
+                "raw_median_ae": 4601.731911938059,
+                "r2": -0.307437871604479,
+                "pearson": -0.4979216007430386,
+                "nominal_95_coverage_transformed": 1.0
+              }
+            },
+            "standardized_mae": 1.0153975519933738,
+            "note": "Train-standardized ln1p/linear errors; raw outputs are constrained; not the legacy SPE. Coverage is empirical, not guaranteed."
+          },
+          "2": {
+            "samples": 8,
+            "filtered": false,
+            "parameters": {
+              "E": {
+                "count": 8,
+                "transformed_mae": 0.5282211643749386,
+                "transformed_median_ae": 0.27912633449481383,
+                "transformed_p90_ae": 1.396206800566567,
+                "raw_mae": 28417.191028603538,
+                "raw_median_ae": 15635.385473870378,
+                "r2": -1.1020888738438934,
+                "pearson": 0.2399898800568734,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "nu": {
+                "count": 8,
+                "transformed_mae": 0.03556311593900617,
+                "transformed_median_ae": 0.03211101909876743,
+                "transformed_p90_ae": 0.06585688238528661,
+                "raw_mae": 0.03556311593900617,
+                "raw_median_ae": 0.03211101909876743,
+                "r2": -2.8766472546187494,
+                "pearson": -0.6182214253713143,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "rho": {
+                "count": 8,
+                "transformed_mae": 0.7607736285025972,
+                "transformed_median_ae": 0.40352985577763434,
+                "transformed_p90_ae": 1.968066022641633,
+                "raw_mae": 2512.4480005438054,
+                "raw_median_ae": 1743.8981711656015,
+                "r2": -0.21551378535863508,
+                "pearson": 0.0033266330266818168,
+                "nominal_95_coverage_transformed": 0.75
+              },
+              "sigma_y": {
+                "count": 0
+              }
+            },
+            "standardized_mae": 0.7497382971923798,
+            "note": "Train-standardized ln1p/linear errors; raw outputs are constrained; not the legacy SPE. Coverage is empirical, not guaranteed."
+          }
+        }
+      },
+      "fields": {
+        "split": "val",
+        "samples": 14,
+        "contact_gt_positive_fraction": 0.004977716533041788,
+        "contact_iou": 0.04317685521665085,
+        "contact_precision": 0.04318938254104442,
+        "contact_recall": 0.9933269780743565,
+        "contact_positive_bce": 0.0717482402281493,
+        "contact_negative_bce": 0.2511242259302354,
+        "foreground_flow_encoded_mae": 0.12986442846302834,
+        "foreground_stress_encoded_mae": 0.16966176371058875,
+        "note": "Contact support and visual-field errors only; no SI force/stress/velocity claim."
+      }
+    },
+    "D_field_bridge": {
+      "status": {
+        "status": "engineering_pilot_finished",
+        "steps": 684,
+        "best_val_standardized_mae": 0.8263733378894951,
+        "max_gpu_allocated_bytes": 352977920
+      },
+      "best_epoch": 8,
+      "validation_curve": [
+        {
+          "epoch": 0,
+          "mae": 0.8953200254751288
+        },
+        {
+          "epoch": 1,
+          "mae": 0.8767859674990177
+        },
+        {
+          "epoch": 2,
+          "mae": 0.8638795741793254
+        },
+        {
+          "epoch": 3,
+          "mae": 0.8589263630059102
+        },
+        {
+          "epoch": 4,
+          "mae": 0.8380621067936653
+        },
+        {
+          "epoch": 5,
+          "mae": 0.8505341958902453
+        },
+        {
+          "epoch": 6,
+          "mae": 0.8342580975883681
+        },
+        {
+          "epoch": 7,
+          "mae": 0.826600675187681
+        },
+        {
+          "epoch": 8,
+          "mae": 0.8263733378894951
+        },
+        {
+          "epoch": 9,
+          "mae": 0.8520500625119262
+        },
+        {
+          "epoch": 10,
+          "mae": 0.8845585084965696
+        },
+        {
+          "epoch": 11,
+          "mae": 0.8773994888583927
+        }
+      ],
+      "best_validation": {
+        "samples": 14,
+        "filtered": false,
+        "parameters": {
+          "E": {
+            "count": 14,
+            "transformed_mae": 1.5803594057857009,
+            "transformed_median_ae": 0.8938115976499459,
+            "transformed_p90_ae": 4.2343698392405535,
+            "raw_mae": 1166381.6159391953,
+            "raw_median_ae": 46329.071571445456,
+            "r2": -0.03438124838518197,
+            "pearson": 0.4619631807999088,
+            "nominal_95_coverage_transformed": 0.8571428571428571
+          },
+          "nu": {
+            "count": 14,
+            "transformed_mae": 0.05602387321876074,
+            "transformed_median_ae": 0.045886008104124215,
+            "transformed_p90_ae": 0.10390663462599245,
+            "raw_mae": 0.05602387321876074,
+            "raw_median_ae": 0.045886008104124215,
+            "r2": 0.14581176689491793,
+            "pearson": 0.5141049108928125,
+            "nominal_95_coverage_transformed": 0.9285714285714286
+          },
+          "rho": {
+            "count": 14,
+            "transformed_mae": 0.520687960585373,
+            "transformed_median_ae": 0.2920124075569168,
+            "transformed_p90_ae": 1.4902376357690073,
+            "raw_mae": 1894.0221060260835,
+            "raw_median_ae": 1567.4872307584594,
+            "r2": -0.10590440730165462,
+            "pearson": 0.03676441972275422,
+            "nominal_95_coverage_transformed": 0.8571428571428571
+          },
+          "sigma_y": {
+            "count": 4,
+            "transformed_mae": 0.8435830387903964,
+            "transformed_median_ae": 0.9117510837177711,
+            "transformed_p90_ae": 1.3918715023998995,
+            "raw_mae": 4601.622602383999,
+            "raw_median_ae": 4361.578130237482,
+            "r2": -0.5477079590252958,
+            "pearson": -0.05399609664192696,
+            "nominal_95_coverage_transformed": 1.0
+          }
+        },
+        "standardized_mae": 0.8263733378894951,
+        "note": "Train-standardized ln1p/linear errors; raw outputs are constrained; not the legacy SPE. Coverage is empirical, not guaranteed.",
+        "field_absolute_error_encoded": 0.1047191015435017,
+        "by_source": {
+          "DeformFieldBench": {
+            "samples": 14,
+            "filtered": false,
+            "parameters": {
+              "E": {
+                "count": 14,
+                "transformed_mae": 1.5803594057857009,
+                "transformed_median_ae": 0.8938115976499459,
+                "transformed_p90_ae": 4.2343698392405535,
+                "raw_mae": 1166381.6159391953,
+                "raw_median_ae": 46329.071571445456,
+                "r2": -0.03438124838518197,
+                "pearson": 0.4619631807999088,
+                "nominal_95_coverage_transformed": 0.8571428571428571
+              },
+              "nu": {
+                "count": 14,
+                "transformed_mae": 0.05602387321876074,
+                "transformed_median_ae": 0.045886008104124215,
+                "transformed_p90_ae": 0.10390663462599245,
+                "raw_mae": 0.05602387321876074,
+                "raw_median_ae": 0.045886008104124215,
+                "r2": 0.14581176689491793,
+                "pearson": 0.5141049108928125,
+                "nominal_95_coverage_transformed": 0.9285714285714286
+              },
+              "rho": {
+                "count": 14,
+                "transformed_mae": 0.520687960585373,
+                "transformed_median_ae": 0.2920124075569168,
+                "transformed_p90_ae": 1.4902376357690073,
+                "raw_mae": 1894.0221060260835,
+                "raw_median_ae": 1567.4872307584594,
+                "r2": -0.10590440730165462,
+                "pearson": 0.03676441972275422,
+                "nominal_95_coverage_transformed": 0.8571428571428571
+              },
+              "sigma_y": {
+                "count": 4,
+                "transformed_mae": 0.8435830387903964,
+                "transformed_median_ae": 0.9117510837177711,
+                "transformed_p90_ae": 1.3918715023998995,
+                "raw_mae": 4601.622602383999,
+                "raw_median_ae": 4361.578130237482,
+                "r2": -0.5477079590252958,
+                "pearson": -0.05399609664192696,
+                "nominal_95_coverage_transformed": 1.0
+              }
+            },
+            "standardized_mae": 0.8263733378894951,
+            "note": "Train-standardized ln1p/linear errors; raw outputs are constrained; not the legacy SPE. Coverage is empirical, not guaranteed."
+          }
+        },
+        "by_action": {
+          "bend": {
+            "samples": 2,
+            "filtered": false,
+            "parameters": {
+              "E": {
+                "count": 2,
+                "transformed_mae": 2.518395214454558,
+                "transformed_median_ae": 2.518395214454558,
+                "transformed_p90_ae": 3.469693119794191,
+                "raw_mae": 1571396.7186216735,
+                "raw_median_ae": 1571396.7186216735,
+                "r2": -1.5032013842283622,
+                "pearson": 1.0,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "nu": {
+                "count": 2,
+                "transformed_mae": 0.06316442616468673,
+                "transformed_median_ae": 0.06316442616468673,
+                "transformed_p90_ae": 0.09654979333909972,
+                "raw_mae": 0.06316442616468673,
+                "raw_median_ae": 0.06316442616468673,
+                "r2": 0.10791469052033087,
+                "pearson": 1.0,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "rho": {
+                "count": 2,
+                "transformed_mae": 0.30836862798575915,
+                "transformed_median_ae": 0.30836862798575915,
+                "transformed_p90_ae": 0.43468656527444444,
+                "raw_mae": 1226.3541991453496,
+                "raw_median_ae": 1226.3541991453496,
+                "r2": 0.024022628773165078,
+                "pearson": 1.0,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "sigma_y": {
+                "count": 1,
+                "transformed_mae": 0.4787600393250102,
+                "transformed_median_ae": 0.4787600393250102,
+                "transformed_p90_ae": 0.4787600393250102,
+                "raw_mae": 4186.467013611057,
+                "raw_median_ae": 4186.467013611057,
+                "r2": null,
+                "pearson": null,
+                "nominal_95_coverage_transformed": 1.0
+              }
+            },
+            "standardized_mae": 0.8106937392481736,
+            "note": "Train-standardized ln1p/linear errors; raw outputs are constrained; not the legacy SPE. Coverage is empirical, not guaranteed."
+          },
+          "drop": {
+            "samples": 3,
+            "filtered": false,
+            "parameters": {
+              "E": {
+                "count": 3,
+                "transformed_mae": 0.6757750942729851,
+                "transformed_median_ae": 0.8577716264172324,
+                "transformed_p90_ae": 0.915435580389574,
+                "raw_mae": 17574.610905359325,
+                "raw_median_ae": 13245.602382955296,
+                "r2": -2.37588106967161,
+                "pearson": 0.9044844331348503,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "nu": {
+                "count": 3,
+                "transformed_mae": 0.06317176950533115,
+                "transformed_median_ae": 0.0629497055221746,
+                "transformed_p90_ae": 0.08118632753316768,
+                "raw_mae": 0.06317176950533115,
+                "raw_median_ae": 0.0629497055221746,
+                "r2": -71.09686521310876,
+                "pearson": -0.8782243517557689,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "rho": {
+                "count": 3,
+                "transformed_mae": 0.14105529629333566,
+                "transformed_median_ae": 0.036867620953838554,
+                "transformed_p90_ae": 0.2941224058661952,
+                "raw_mae": 897.2728617901397,
+                "raw_median_ae": 222.0001968633096,
+                "r2": -0.6658875081324329,
+                "pearson": 0.08501229498543968,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "sigma_y": {
+                "count": 0
+              }
+            },
+            "standardized_mae": 0.5447143680519528,
+            "note": "Train-standardized ln1p/linear errors; raw outputs are constrained; not the legacy SPE. Coverage is empirical, not guaranteed."
+          },
+          "press": {
+            "samples": 2,
+            "filtered": false,
+            "parameters": {
+              "E": {
+                "count": 2,
+                "transformed_mae": 3.5255262831846537,
+                "transformed_median_ae": 3.5255262831846537,
+                "transformed_p90_ae": 4.273236182810443,
+                "raw_mae": 3244455.689022298,
+                "raw_median_ae": 3244455.689022298,
+                "r2": -19.568591113336282,
+                "pearson": -1.0,
+                "nominal_95_coverage_transformed": 0.5
+              },
+              "nu": {
+                "count": 2,
+                "transformed_mae": 0.11058739106313453,
+                "transformed_median_ae": 0.11058739106313453,
+                "transformed_p90_ae": 0.11777906382537448,
+                "raw_mae": 0.11058739106313453,
+                "raw_median_ae": 0.11058739106313453,
+                "r2": -18514.945611115993,
+                "pearson": -1.0,
+                "nominal_95_coverage_transformed": 0.5
+              },
+              "rho": {
+                "count": 2,
+                "transformed_mae": 0.15052934463952727,
+                "transformed_median_ae": 0.15052934463952727,
+                "transformed_p90_ae": 0.17087883106915402,
+                "raw_mae": 669.4213518377944,
+                "raw_median_ae": 669.4213518377944,
+                "r2": 0.5689412704798998,
+                "pearson": 1.0,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "sigma_y": {
+                "count": 2,
+                "transformed_mae": 0.7417511550849021,
+                "transformed_median_ae": 0.7417511550849021,
+                "transformed_p90_ae": 1.224143933505406,
+                "raw_mae": 2860.1794094674615,
+                "raw_median_ae": 2860.1794094674615,
+                "r2": -0.20337342442332917,
+                "pearson": 1.0,
+                "nominal_95_coverage_transformed": 1.0
+              }
+            },
+            "standardized_mae": 1.0071863449411467,
+            "note": "Train-standardized ln1p/linear errors; raw outputs are constrained; not the legacy SPE. Coverage is empirical, not guaranteed."
+          },
+          "shear": {
+            "samples": 6,
+            "filtered": false,
+            "parameters": {
+              "E": {
+                "count": 6,
+                "transformed_mae": 1.2293280795714434,
+                "transformed_median_ae": 0.48379373591227726,
+                "transformed_p90_ae": 2.8254018668657066,
+                "raw_mae": 1099926.0234833092,
+                "raw_median_ae": 43627.75061253913,
+                "r2": -0.19261532665786052,
+                "pearson": 0.17907351645167255,
+                "nominal_95_coverage_transformed": 0.8333333333333334
+              },
+              "nu": {
+                "count": 6,
+                "transformed_mae": 0.03420217958914165,
+                "transformed_median_ae": 0.028148534553966348,
+                "transformed_p90_ae": 0.06050101635962302,
+                "raw_mae": 0.03420217958914165,
+                "raw_median_ae": 0.028148534553966348,
+                "r2": -1.0131441057471444,
+                "pearson": -0.24826622334214368,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "rho": {
+                "count": 6,
+                "transformed_mae": 0.9361970525780187,
+                "transformed_median_ae": 0.5122349954123457,
+                "transformed_p90_ae": 2.054864056660005,
+                "raw_mae": 3020.572758057982,
+                "raw_median_ae": 3138.3724952699467,
+                "r2": -0.27763729271350623,
+                "pearson": -0.5264632045757327,
+                "nominal_95_coverage_transformed": 0.6666666666666666
+              },
+              "sigma_y": {
+                "count": 1,
+                "transformed_mae": 1.4120698056667713,
+                "transformed_median_ae": 1.4120698056667713,
+                "transformed_p90_ae": 1.4120698056667713,
+                "raw_mae": 8499.664576990015,
+                "raw_median_ae": 8499.664576990015,
+                "r2": null,
+                "pearson": null,
+                "nominal_95_coverage_transformed": 1.0
+              }
+            },
+            "standardized_mae": 0.9352854748599624,
+            "note": "Train-standardized ln1p/linear errors; raw outputs are constrained; not the legacy SPE. Coverage is empirical, not guaranteed."
+          },
+          "stretch": {
+            "samples": 1,
+            "filtered": false,
+            "parameters": {
+              "E": {
+                "count": 1,
+                "transformed_mae": 0.6338949254737702,
+                "transformed_median_ae": 0.6338949254737702,
+                "transformed_p90_ae": 0.6338949254737702,
+                "raw_mae": 45357.83424485659,
+                "raw_median_ae": 45357.83424485659,
+                "r2": null,
+                "pearson": null,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "nu": {
+                "count": 1,
+                "transformed_mae": 0.04210220455616437,
+                "transformed_median_ae": 0.04210220455616437,
+                "transformed_p90_ae": 0.04210220455616437,
+                "raw_mae": 0.04210220455616437,
+                "raw_median_ae": 0.04210220455616437,
+                "r2": null,
+                "pearson": null,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "rho": {
+                "count": 1,
+                "transformed_mae": 0.3314872985965316,
+                "transformed_median_ae": 0.3314872985965316,
+                "transformed_p90_ae": 0.3314872985965316,
+                "raw_mae": 1909.5032486805749,
+                "raw_median_ae": 1909.5032486805749,
+                "r2": null,
+                "pearson": null,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "sigma_y": {
+                "count": 0
+              }
+            },
+            "standardized_mae": 0.5359910912811756,
+            "note": "Train-standardized ln1p/linear errors; raw outputs are constrained; not the legacy SPE. Coverage is empirical, not guaranteed."
+          }
+        },
+        "by_law": {
+          "0": {
+            "samples": 2,
+            "filtered": false,
+            "parameters": {
+              "E": {
+                "count": 2,
+                "transformed_mae": 0.5487368569681479,
+                "transformed_median_ae": 0.5487368569681479,
+                "transformed_p90_ae": 0.7959646725274154,
+                "raw_mae": 8052.023923264449,
+                "raw_median_ae": 8052.023923264449,
+                "r2": -255.35856778664117,
+                "pearson": -1.0,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "nu": {
+                "count": 2,
+                "transformed_mae": 0.05188491274003876,
+                "transformed_median_ae": 0.05188491274003876,
+                "transformed_p90_ae": 0.060736746965747435,
+                "raw_mae": 0.05188491274003876,
+                "raw_median_ae": 0.05188491274003876,
+                "r2": -656.7287394949201,
+                "pearson": -1.0,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "rho": {
+                "count": 2,
+                "transformed_mae": 0.19765186152406145,
+                "transformed_median_ae": 0.19765186152406145,
+                "transformed_p90_ae": 0.32627925398023977,
+                "raw_mae": 1273.8575749141614,
+                "raw_median_ae": 1273.8575749141614,
+                "r2": -2.641184405576068,
+                "pearson": -1.0,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "sigma_y": {
+                "count": 0
+              }
+            },
+            "standardized_mae": 0.4972101015349229,
+            "note": "Train-standardized ln1p/linear errors; raw outputs are constrained; not the legacy SPE. Coverage is empirical, not guaranteed."
+          },
+          "1": {
+            "samples": 4,
+            "filtered": false,
+            "parameters": {
+              "E": {
+                "count": 4,
+                "transformed_mae": 3.807082180258046,
+                "transformed_median_ae": 4.083840626922995,
+                "transformed_p90_ae": 4.466880088288712,
+                "raw_mae": 3992362.5268583996,
+                "raw_median_ae": 4269606.469811964,
+                "r2": -30.480076689642164,
+                "pearson": -0.7603014135599102,
+                "nominal_95_coverage_transformed": 0.5
+              },
+              "nu": {
+                "count": 4,
+                "transformed_mae": 0.08582766162101994,
+                "transformed_median_ae": 0.10324696762151878,
+                "transformed_p90_ae": 0.11517272795096502,
+                "raw_mae": 0.08582766162101994,
+                "raw_median_ae": 0.10324696762151878,
+                "r2": -3.6257905792541187,
+                "pearson": 0.5840530714503113,
+                "nominal_95_coverage_transformed": 0.75
+              },
+              "rho": {
+                "count": 4,
+                "transformed_mae": 0.17049414761501636,
+                "transformed_median_ae": 0.16321870452573162,
+                "transformed_p90_ae": 0.21410254716724408,
+                "raw_mae": 783.0565688599233,
+                "raw_median_ae": 733.7750075115775,
+                "r2": 0.32595687656748795,
+                "pearson": 0.7166823730823919,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "sigma_y": {
+                "count": 4,
+                "transformed_mae": 0.8435830387903964,
+                "transformed_median_ae": 0.9117510837177711,
+                "transformed_p90_ae": 1.3918715023998995,
+                "raw_mae": 4601.622602383999,
+                "raw_median_ae": 4361.578130237482,
+                "r2": -0.5477079590252958,
+                "pearson": -0.05399609664192696,
+                "nominal_95_coverage_transformed": 1.0
+              }
+            },
+            "standardized_mae": 0.9519513265695423,
+            "note": "Train-standardized ln1p/linear errors; raw outputs are constrained; not the legacy SPE. Coverage is empirical, not guaranteed."
+          },
+          "2": {
+            "samples": 8,
+            "filtered": false,
+            "parameters": {
+              "E": {
+                "count": 8,
+                "transformed_mae": 0.7249036557539161,
+                "transformed_median_ae": 0.5906894014241733,
+                "transformed_p90_ae": 1.2255134724723498,
+                "raw_mae": 42973.55848357592,
+                "raw_median_ae": 42656.51328595026,
+                "r2": -1.2201348788789428,
+                "pearson": 0.018490574503234932,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "nu": {
+                "count": 8,
+                "transformed_mae": 0.04215671913731162,
+                "transformed_median_ae": 0.04057977221949466,
+                "transformed_p90_ae": 0.07565619965778816,
+                "raw_mae": 0.04215671913731162,
+                "raw_median_ae": 0.04057977221949466,
+                "r2": -4.182892174688048,
+                "pearson": -0.6811261414365357,
+                "nominal_95_coverage_transformed": 1.0
+              },
+              "rho": {
+                "count": 8,
+                "transformed_mae": 0.7765438918358794,
+                "transformed_median_ae": 0.40300688384713723,
+                "transformed_p90_ae": 1.9671018362536579,
+                "raw_mae": 2604.5460073871445,
+                "raw_median_ae": 1861.2197958512447,
+                "r2": -0.24199494895777907,
+                "pearson": -0.056154481154853136,
+                "nominal_95_coverage_transformed": 0.75
+              },
+              "sigma_y": {
+                "count": 0
+              }
+            },
+            "standardized_mae": 0.8249454878581067,
+            "note": "Train-standardized ln1p/linear errors; raw outputs are constrained; not the legacy SPE. Coverage is empirical, not guaranteed."
+          }
+        }
+      },
+      "fields": {
+        "split": "val",
+        "samples": 14,
+        "contact_gt_positive_fraction": 0.004977716533041788,
+        "contact_iou": 0.056621227426988864,
+        "contact_precision": 0.05678655381830807,
+        "contact_recall": 0.9510962821734986,
+        "contact_positive_bce": 0.2366468831399603,
+        "contact_negative_bce": 0.1497070472706581,
+        "foreground_flow_encoded_mae": 0.1368579570085851,
+        "foreground_stress_encoded_mae": 0.16979774149620955,
+        "note": "Contact support and visual-field errors only; no SI force/stress/velocity claim."
+      }
+    }
+  },
+  "constant_baselines": {
+    "train_mean_standardized_mae": 0.8740153875160995,
+    "train_median_standardized_mae": 0.8620330297082175
+  },
+  "relative_error_reduction_D_vs_C": -0.01722943051640935,
+  "exploratory_paired_object_interval": {
+    "objects": 8,
+    "mean_object_delta_B_minus_A": 0.014782904231752686,
+    "paired_bootstrap_95_ci": [
+      -0.028169786201356656,
+      0.04981598420611892
+    ],
+    "draws": 2000,
+    "seed": 17,
+    "negative_favors": "B",
+    "score": "object-macro standardized MAE"
+  },
+  "limitation": "Nonrandom 240-sample pilot, 14 validation clips, best epoch selected on this same validation set. Interval is descriptive only; not confirmatory evidence."
+}

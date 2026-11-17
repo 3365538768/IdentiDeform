@@ -1,0 +1,21 @@
+
+== 2026-11-15 09:18:05 host a4 gpu 3 attempt 1
+
+== 2026-11-15 09:20:25 host a2 gpu 4 attempt 2
+Traceback (most recent call last):
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/scripts/v3q/c1_refine.py", line 315, in <module>
+    main()
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/scripts/v3q/c1_refine.py", line 279, in main
+    best = evaluate(law, x0_law, nu); step = [STEP0, STEP0]; last = None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/scripts/v3q/c1_refine.py", line 246, in evaluate
+    frames, seconds, _ = simulate(work, f'obs_{len(state["evals"]):02d}', params, s)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/scripts/v3q/c1_refine.py", line 112, in simulate
+    shutil.rmtree(dst, ignore_errors=True); dst.mkdir(parents=True)
+                                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/tools/fieldbridge-python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/v3q_refine/val/000002/lawmean_gt/obs_00'
+
+== 2026-11-15 09:21:11 host a2 gpu 7 attempt 3

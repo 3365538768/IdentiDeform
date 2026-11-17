@@ -1,0 +1,123 @@
+{
+ "phase": "P3",
+ "max_per_gpu": 2,
+ "gpus": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "jobs": [
+  {
+   "id": "p3_cache_shard0",
+   "kind": "cmd",
+   "group": "b20-cache",
+   "mem_mib": 20000,
+   "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/p3/p3_cache.json --hidden-layer 20 --shard 0 --num-shards 4 --status-output docs/p3/cache_shard0.json"
+  },
+  {
+   "id": "p3_cache_shard1",
+   "kind": "cmd",
+   "group": "b20-cache",
+   "mem_mib": 20000,
+   "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/p3/p3_cache.json --hidden-layer 20 --shard 1 --num-shards 4 --status-output docs/p3/cache_shard1.json"
+  },
+  {
+   "id": "p3_cache_shard2",
+   "kind": "cmd",
+   "group": "b20-cache",
+   "mem_mib": 20000,
+   "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/p3/p3_cache.json --hidden-layer 20 --shard 2 --num-shards 4 --status-output docs/p3/cache_shard2.json"
+  },
+  {
+   "id": "p3_cache_shard3",
+   "kind": "cmd",
+   "group": "b20-cache",
+   "mem_mib": 20000,
+   "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/p3/p3_cache.json --hidden-layer 20 --shard 3 --num-shards 4 --status-output docs/p3/cache_shard3.json"
+  },
+  {
+   "id": "p3_cache_merge",
+   "kind": "cmd",
+   "group": "b20-cache",
+   "mem_mib": 0,
+   "after": [
+    "p3_cache_shard0",
+    "p3_cache_shard1",
+    "p3_cache_shard2",
+    "p3_cache_shard3"
+   ],
+   "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/p3/p3_cache.json --hidden-layer 20 --status-output docs/p3/cache_merge.json"
+  },
+  {
+   "id": "p3_Ct4lr1e5_seed17",
+   "config": "configs/p3/p3_Ct4lr1e5_seed17.json",
+   "group": "C-tail4-lr1e5",
+   "seed": 17,
+   "kind": "train",
+   "after": [
+    "p3_cache_merge"
+   ],
+   "mem_mib": 30000
+  },
+  {
+   "id": "p3_Ct4lr1e5_seed29",
+   "config": "configs/p3/p3_Ct4lr1e5_seed29.json",
+   "group": "C-tail4-lr1e5",
+   "seed": 29,
+   "kind": "train",
+   "after": [
+    "p3_cache_merge"
+   ],
+   "mem_mib": 30000
+  },
+  {
+   "id": "p3_Ct4lr1e5_seed43",
+   "config": "configs/p3/p3_Ct4lr1e5_seed43.json",
+   "group": "C-tail4-lr1e5",
+   "seed": 43,
+   "kind": "train",
+   "after": [
+    "p3_cache_merge"
+   ],
+   "mem_mib": 30000
+  },
+  {
+   "id": "p3_Ct4lr3e5_seed17",
+   "config": "configs/p3/p3_Ct4lr3e5_seed17.json",
+   "group": "C-tail4-lr3e5",
+   "seed": 17,
+   "kind": "train",
+   "after": [
+    "p3_cache_merge"
+   ],
+   "mem_mib": 30000
+  },
+  {
+   "id": "p3_Ct4lr3e5_seed29",
+   "config": "configs/p3/p3_Ct4lr3e5_seed29.json",
+   "group": "C-tail4-lr3e5",
+   "seed": 29,
+   "kind": "train",
+   "after": [
+    "p3_cache_merge"
+   ],
+   "mem_mib": 30000
+  },
+  {
+   "id": "p3_Ct4lr3e5_seed43",
+   "config": "configs/p3/p3_Ct4lr3e5_seed43.json",
+   "group": "C-tail4-lr3e5",
+   "seed": 43,
+   "kind": "train",
+   "after": [
+    "p3_cache_merge"
+   ],
+   "mem_mib": 30000
+  }
+ ]
+}

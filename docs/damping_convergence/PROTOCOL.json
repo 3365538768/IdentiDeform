@@ -1,0 +1,21 @@
+{
+  "hypothesis": "Previous dt comparison changed damping per physical second, confounding convergence",
+  "grid_decay": "scale(dt)=scale(100us) ** (dt/100us)",
+  "rpic": 0,
+  "scope": "Controlled APIC test; not numerically equivalent to legacy RPIC and must not replace legacy results",
+  "expected_minutes_per_job": {
+    "25us": [
+      2,
+      5
+    ],
+    "12us": [
+      3,
+      8
+    ],
+    "6us": [
+      5,
+      15
+    ]
+  },
+  "bulk_generation_allowed": false
+}

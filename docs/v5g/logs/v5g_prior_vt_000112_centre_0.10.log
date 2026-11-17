@@ -1,0 +1,3 @@
+sim 112 prior_vt centre:0.10 True 527
+measure centre:0.10 {'sag': 0.38505168751221175, 'left': 0.97865511501167, 'crush': 0.1087081109395966, 'dent_p95': 0.06203454240444218, 'grip': 7.834838390350342, 'lift': 0.1700256586074829, 'height': 0.5667521953582764, 'n_particles': 115539, 'seg_particles': 41832}
+done 112 prior_vt centre:0.10 False

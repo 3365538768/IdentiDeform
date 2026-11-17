@@ -1,0 +1,232 @@
+{
+ "phase": "F1",
+ "max_per_gpu": 2,
+ "gpus": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "jobs": [
+  {
+   "id": "f1_B_f05_seed17",
+   "config": "configs/f1/f1_B_f05_seed17.json",
+   "group": "B-f05",
+   "seed": 17,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "f1_B_f05_seed29",
+   "config": "configs/f1/f1_B_f05_seed29.json",
+   "group": "B-f05",
+   "seed": 29,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "f1_B_f05_seed43",
+   "config": "configs/f1/f1_B_f05_seed43.json",
+   "group": "B-f05",
+   "seed": 43,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "f1_B_f10_seed17",
+   "config": "configs/f1/f1_B_f10_seed17.json",
+   "group": "B-f10",
+   "seed": 17,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "f1_B_f10_seed29",
+   "config": "configs/f1/f1_B_f10_seed29.json",
+   "group": "B-f10",
+   "seed": 29,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "f1_B_f10_seed43",
+   "config": "configs/f1/f1_B_f10_seed43.json",
+   "group": "B-f10",
+   "seed": 43,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "f1_B_f25_seed17",
+   "config": "configs/f1/f1_B_f25_seed17.json",
+   "group": "B-f25",
+   "seed": 17,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "f1_B_f25_seed29",
+   "config": "configs/f1/f1_B_f25_seed29.json",
+   "group": "B-f25",
+   "seed": 29,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "f1_B_f25_seed43",
+   "config": "configs/f1/f1_B_f25_seed43.json",
+   "group": "B-f25",
+   "seed": 43,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "f1_B_f50_seed17",
+   "config": "configs/f1/f1_B_f50_seed17.json",
+   "group": "B-f50",
+   "seed": 17,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "f1_B_f50_seed29",
+   "config": "configs/f1/f1_B_f50_seed29.json",
+   "group": "B-f50",
+   "seed": 29,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "f1_B_f50_seed43",
+   "config": "configs/f1/f1_B_f50_seed43.json",
+   "group": "B-f50",
+   "seed": 43,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "f1_C_f05_seed17",
+   "config": "configs/f1/f1_C_f05_seed17.json",
+   "group": "C-f05",
+   "seed": 17,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "f1_C_f05_seed29",
+   "config": "configs/f1/f1_C_f05_seed29.json",
+   "group": "C-f05",
+   "seed": 29,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "f1_C_f05_seed43",
+   "config": "configs/f1/f1_C_f05_seed43.json",
+   "group": "C-f05",
+   "seed": 43,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "f1_C_f10_seed17",
+   "config": "configs/f1/f1_C_f10_seed17.json",
+   "group": "C-f10",
+   "seed": 17,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "f1_C_f10_seed29",
+   "config": "configs/f1/f1_C_f10_seed29.json",
+   "group": "C-f10",
+   "seed": 29,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "f1_C_f10_seed43",
+   "config": "configs/f1/f1_C_f10_seed43.json",
+   "group": "C-f10",
+   "seed": 43,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "f1_C_f25_seed17",
+   "config": "configs/f1/f1_C_f25_seed17.json",
+   "group": "C-f25",
+   "seed": 17,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "f1_C_f25_seed29",
+   "config": "configs/f1/f1_C_f25_seed29.json",
+   "group": "C-f25",
+   "seed": 29,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "f1_C_f25_seed43",
+   "config": "configs/f1/f1_C_f25_seed43.json",
+   "group": "C-f25",
+   "seed": 43,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "f1_C_f50_seed17",
+   "config": "configs/f1/f1_C_f50_seed17.json",
+   "group": "C-f50",
+   "seed": 17,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "f1_C_f50_seed29",
+   "config": "configs/f1/f1_C_f50_seed29.json",
+   "group": "C-f50",
+   "seed": 29,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "f1_C_f50_seed43",
+   "config": "configs/f1/f1_C_f50_seed43.json",
+   "group": "C-f50",
+   "seed": 43,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "p4d_Blow_seed17",
+   "config": "configs/p4d/p4d_Blow_seed17.json",
+   "group": "B-v2low",
+   "seed": 17,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "p4d_Blow_seed29",
+   "config": "configs/p4d/p4d_Blow_seed29.json",
+   "group": "B-v2low",
+   "seed": 29,
+   "kind": "train",
+   "mem_mib": 20000
+  },
+  {
+   "id": "p4d_Blow_seed43",
+   "config": "configs/p4d/p4d_Blow_seed43.json",
+   "group": "B-v2low",
+   "seed": 43,
+   "kind": "train",
+   "mem_mib": 20000
+  }
+ ]
+}

@@ -1,0 +1,2925 @@
+{
+ "stage": "v3p",
+ "written_utc": "2026-11-15T18:14:24Z",
+ "protocol": "V3p: V3 vs V2 feed-forward prior comparison -> docs/v3p/RESULTS.json.\n\nEvery method is scored from evaluation-format predictions.jsonl (fieldbridge.evaluation output):\n  * z-MAE (V2 tab:prior metric): pooled MAE over all scored (sample, parameter) entries in standardized specific\n    space (E/rho, nu, rho, sigma_y/rho; ln1p + train z-score of THAT dataset's train split);\n  * identifiable z-MAE: pooled over E/rho and sigma_y/rho entries only (refinement metric);\n  * per-parameter z-MAE; class (law) accuracy;\n  * within-class Pearson r (V2 protocol) and Spearman rho for E/rho and sigma_y/rho, mean over GT laws with >=6 entries;\n  * decade errors: |log10(pred) - log10(GT)| of E/rho and sigma_y/rho (z decoded with the dataset's train stats),\n    comparable across V2/V3 although their z-units differ (V3 ranges are narrower).\nCIs: 95% percentile object bootstrap (2000 draws, seed 17): objects are resampled, every metric recomputed on the\npooled resample. For a 3-seed group the statistic is the mean over seeds of the per-seed metric on the same resample.\nTrained runs: val = best-val epoch dir (scripts/r1_report.best_dir, = best_material.pt); test = <run>/test_once.\n  .venv/bin/python scripts/v3p/report.py --v3-prefix v3main --v3-stats data/manifests/v3main_t2000.specific.stats.json [--v3-prefix-4k v3main4k ...]\n",
+ "train_stats": {
+  "V2": {
+   "stats": "data/manifests/v2main.specific.stats.json",
+   "train_count": [
+    1955,
+    1955,
+    1955,
+    1264
+   ],
+   "train_std_decades": {
+    "E_over_rho": 1.0676212369707143,
+    "sigma_y_over_rho": 1.1657693142546453
+   }
+  },
+  "V3": {
+   "stats": "data/manifests/v3main_t2000.specific.stats.json",
+   "train_count": [
+    2000,
+    2000,
+    2000,
+    1098
+   ],
+   "train_std_decades": {
+    "E_over_rho": 0.665769333760218,
+    "sigma_y_over_rho": 0.36916081214023955
+   }
+  }
+ },
+ "table": [
+  {
+   "dataset": "V2",
+   "split": "val",
+   "method": "B (3 seeds)",
+   "samples": 283,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.6453338530963977,
+    "ci95": [
+     0.6168749336774786,
+     0.6759971475961197
+    ],
+    "sd_over_seeds": 0.006614638221629403
+   },
+   "ident_z_mae": {
+    "value": 0.40081026892389304,
+    "ci95": [
+     0.3587723812258369,
+     0.44962114220501237
+    ],
+    "sd_over_seeds": 0.005037920877010668
+   },
+   "law_accuracy": {
+    "value": 0.6878680800942285,
+    "ci95": [
+     0.6459643758493496,
+     0.7268376916621151
+    ],
+    "sd_over_seeds": 0.01946138002574597
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": 0.6462246373817283,
+    "ci95": [
+     0.5720801666662182,
+     0.7355134655039982
+    ],
+    "sd_over_seeds": 0.02427755320568136
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": 0.6685203001181158,
+    "ci95": [
+     0.5880348732900039,
+     0.7375019946418662
+    ],
+    "sd_over_seeds": 0.020521458825299755
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": 0.8683126748457917,
+    "ci95": [
+     0.8411415376500404,
+     0.8919775324385865
+    ],
+    "sd_over_seeds": 0.009052625179656024
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": 0.8574309775466356,
+    "ci95": [
+     0.8100791840481387,
+     0.882717913119847
+    ],
+    "sd_over_seeds": 0.004743287396276921
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.43824788211716065,
+    "ci95": [
+     0.3815090130268229,
+     0.5049795884233202
+    ],
+    "sd_over_seeds": 0.007922891266847249
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.4757904536970643,
+    "ci95": [
+     0.4066101144920738,
+     0.5487639049050552
+    ],
+    "sd_over_seeds": 0.026833018776435288
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.41021992369717836,
+    "nu": 0.8598162800444397,
+    "rho": 0.8309023783457751,
+    "sigma_y_over_rho": 0.3860162005858945
+   }
+  },
+  {
+   "dataset": "V2",
+   "split": "val",
+   "method": "C (3 seeds)",
+   "samples": 283,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.6440708240609001,
+    "ci95": [
+     0.6157551567190724,
+     0.6745544739182683
+    ],
+    "sd_over_seeds": 0.009443692692067377
+   },
+   "ident_z_mae": {
+    "value": 0.39362644655400353,
+    "ci95": [
+     0.3610366343069185,
+     0.43034263590773
+    ],
+    "sd_over_seeds": 0.011031797865025075
+   },
+   "law_accuracy": {
+    "value": 0.6607773851590106,
+    "ci95": [
+     0.6212108284207261,
+     0.701113213811421
+    ],
+    "sd_over_seeds": 0.030190825955185616
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": 0.6342172708404524,
+    "ci95": [
+     0.5753105035588979,
+     0.697137210532032
+    ],
+    "sd_over_seeds": 0.02214660689882305
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": 0.6403833053727588,
+    "ci95": [
+     0.5785049975072797,
+     0.694277733133764
+    ],
+    "sd_over_seeds": 0.021235201208064738
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": 0.8749142260373447,
+    "ci95": [
+     0.8434172981775913,
+     0.8913972588298145
+    ],
+    "sd_over_seeds": 0.013259163430727815
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": 0.8617016386174786,
+    "ci95": [
+     0.8186150933619254,
+     0.8810550276973387
+    ],
+    "sd_over_seeds": 0.014147335804297367
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.4412774702896622,
+    "ci95": [
+     0.3962342173114949,
+     0.4916381515385344
+    ],
+    "sd_over_seeds": 0.012474528298716784
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.4501200452691048,
+    "ci95": [
+     0.3955986668822,
+     0.508267438456917
+    ],
+    "sd_over_seeds": 0.015630726943967943
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.41306085856337965,
+    "nu": 0.8765085409016944,
+    "rho": 0.8213707283709649,
+    "sigma_y_over_rho": 0.3630712321170399
+   }
+  },
+  {
+   "dataset": "V2",
+   "split": "val",
+   "method": "D (3 seeds)",
+   "samples": 283,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.6394853802513772,
+    "ci95": [
+     0.6106063057612603,
+     0.6694610071640495
+    ],
+    "sd_over_seeds": 0.005571003089561682
+   },
+   "ident_z_mae": {
+    "value": 0.3842599699103566,
+    "ci95": [
+     0.3480989947851896,
+     0.4220197546008434
+    ],
+    "sd_over_seeds": 0.002778407993586309
+   },
+   "law_accuracy": {
+    "value": 0.6878680800942285,
+    "ci95": [
+     0.6463060533982373,
+     0.7228808446455505
+    ],
+    "sd_over_seeds": 0.01946138002574597
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": 0.6684777783344512,
+    "ci95": [
+     0.6111565710700769,
+     0.7354377102516277
+    ],
+    "sd_over_seeds": 0.006317437765873504
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": 0.6830408566675187,
+    "ci95": [
+     0.623508259736435,
+     0.7424616200916251
+    ],
+    "sd_over_seeds": 0.01314262466675467
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": 0.876782294717442,
+    "ci95": [
+     0.8471984575125137,
+     0.8968741743237586
+    ],
+    "sd_over_seeds": 0.007283218458349201
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": 0.8633302278121363,
+    "ci95": [
+     0.8201929298885511,
+     0.882911471581979
+    ],
+    "sd_over_seeds": 0.007610419873121226
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.41809808460538195,
+    "ci95": [
+     0.3665491546615368,
+     0.47179868020301197
+    ],
+    "sd_over_seeds": 0.0038296525987041447
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.4597273967861941,
+    "ci95": [
+     0.41824361127768017,
+     0.5052596056768616
+    ],
+    "sd_over_seeds": 0.012886975835449977
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.391360220853519,
+    "nu": 0.8674735617609991,
+    "rho": 0.8290567923385487,
+    "sigma_y_over_rho": 0.3730967975941624
+   }
+  },
+  {
+   "dataset": "V2",
+   "split": "val",
+   "method": "ensemble_BCD9",
+   "samples": 283,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.616246852638067,
+    "ci95": [
+     0.5865065351242834,
+     0.6476156640080216
+    ]
+   },
+   "ident_z_mae": {
+    "value": 0.3507024887738301,
+    "ci95": [
+     0.3095169379161676,
+     0.3978153480286397
+    ]
+   },
+   "law_accuracy": {
+    "value": 0.6996466431095406,
+    "ci95": [
+     0.6433811274509804,
+     0.7528980602685782
+    ]
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": 0.685693981149842,
+    "ci95": [
+     0.6165826772481425,
+     0.7661740115061862
+    ]
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": 0.7135210767541048,
+    "ci95": [
+     0.6433595547343341,
+     0.7786569023239354
+    ]
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": 0.8946324071928032,
+    "ci95": [
+     0.8686353111674822,
+     0.910538395619551
+    ]
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": 0.8841559297993542,
+    "ci95": [
+     0.8415815900420848,
+     0.9017121871021067
+    ]
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.3813701358282338,
+    "ci95": [
+     0.3230314837918337,
+     0.44768721200251466
+    ]
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.4210423182656892,
+    "ci95": [
+     0.3631762700945898,
+     0.481173969089513
+    ]
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.3569983854808238,
+    "nu": 0.8609466992979004,
+    "rho": 0.8059888450918089,
+    "sigma_y_over_rho": 0.3408039400622789
+   }
+  },
+  {
+   "dataset": "V2",
+   "split": "val",
+   "method": "dinov3_first_frame_B (3 seeds)",
+   "samples": 283,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.8568534395692703,
+    "ci95": [
+     0.8365078122458756,
+     0.8805271879483211
+    ],
+    "sd_over_seeds": 0.0005318853959841363
+   },
+   "ident_z_mae": {
+    "value": 0.8644836929698339,
+    "ci95": [
+     0.8365750316313725,
+     0.8948044453217371
+    ],
+    "sd_over_seeds": 0.0010702431809587226
+   },
+   "law_accuracy": {
+    "value": 0.33451118963486454,
+    "ci95": [
+     0.3010723679121219,
+     0.3738095238095238
+    ],
+    "sd_over_seeds": 0.011358834818601829
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": 0.024013868938431618,
+    "ci95": [
+     -0.024599821395185125,
+     0.0817246804472973
+    ],
+    "sd_over_seeds": 0.027148404276254347
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": 0.023508558275136936,
+    "ci95": [
+     -0.044201935875917635,
+     0.08455967093173962
+    ],
+    "sd_over_seeds": 0.014186904083143796
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": 0.03427563206896624,
+    "ci95": [
+     -0.10987843705871861,
+     0.17335785249631203
+    ],
+    "sd_over_seeds": 0.047377839749265134
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": 0.03249842195174022,
+    "ci95": [
+     -0.1040296713867283,
+     0.17699935037555822
+    ],
+    "sd_over_seeds": 0.05394523297212086
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.9006396392830537,
+    "ci95": [
+     0.8561669380488179,
+     0.9446590951889947
+    ],
+    "sd_over_seeds": 0.0010930885853031923
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 1.0793629767871475,
+    "ci95": [
+     1.0029865402792417,
+     1.1750855723674483
+    ],
+    "sd_over_seeds": 0.002602350418478201
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.8431228040038796,
+    "nu": 0.8618145778180661,
+    "rho": 0.8394088832128385,
+    "sigma_y_over_rho": 0.8980677572885286
+   }
+  },
+  {
+   "dataset": "V2",
+   "split": "val",
+   "method": "constant_train_mean",
+   "samples": 283,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.8575882477086423,
+    "ci95": [
+     0.8367371057486052,
+     0.8814373538824163
+    ]
+   },
+   "ident_z_mae": {
+    "value": 0.8645883095971174,
+    "ci95": [
+     0.8365829556752302,
+     0.8945546560951759
+    ]
+   },
+   "law_accuracy": {
+    "value": 0.3286219081272085,
+    "ci95": [
+     0.25099384281057585,
+     0.4
+    ]
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.9018672145663311,
+    "ci95": [
+     0.8568434489050575,
+     0.946409255525075
+    ]
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 1.077553450012657,
+    "ci95": [
+     1.0021290153727593,
+     1.1738715938503155
+    ]
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.8442724846840701,
+    "nu": 0.8615468427795562,
+    "rho": 0.842177254565771,
+    "sigma_y_over_rho": 0.8965293009881862
+   }
+  },
+  {
+   "dataset": "V2",
+   "split": "val",
+   "method": "class_mean_gt_privileged",
+   "samples": 283,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.7859548133654816,
+    "ci95": [
+     0.7687158583896452,
+     0.8040590295197622
+    ]
+   },
+   "ident_z_mae": {
+    "value": 0.7051002583306754,
+    "ci95": [
+     0.6873954541120085,
+     0.7255222096856478
+    ]
+   },
+   "law_accuracy": {
+    "value": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ]
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.6293528125417607,
+    "ci95": [
+     0.5695424917061405,
+     0.6833278924005879
+    ]
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 1.0670392856236868,
+    "ci95": [
+     0.9878154464037391,
+     1.1647386689847856
+    ]
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.5890431127894309,
+    "nu": 0.8636668760707209,
+    "rho": 0.8405242311588833,
+    "sigma_y_over_rho": 0.8875678815982989
+   }
+  },
+  {
+   "dataset": "V2",
+   "split": "test",
+   "method": "B (3 seeds)",
+   "samples": 300,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.6670882773410871,
+    "ci95": [
+     0.6276232344930133,
+     0.711746686085061
+    ],
+    "sd_over_seeds": 0.0015701572178164445
+   },
+   "ident_z_mae": {
+    "value": 0.44436800593225906,
+    "ci95": [
+     0.38738657514891456,
+     0.5101565573117728
+    ],
+    "sd_over_seeds": 0.008931206945125067
+   },
+   "law_accuracy": {
+    "value": 0.7311111111111112,
+    "ci95": [
+     0.6787241541353384,
+     0.7838452787258249
+    ],
+    "sd_over_seeds": 0.02912298316018033
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": 0.5909362310396237,
+    "ci95": [
+     0.5404473592638867,
+     0.6547385528057247
+    ],
+    "sd_over_seeds": 0.02747184811838518
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": 0.6129210682588306,
+    "ci95": [
+     0.555647668042867,
+     0.6721590916495964
+    ],
+    "sd_over_seeds": 0.041370989709002756
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": 0.7704297999222715,
+    "ci95": [
+     0.6853805456800924,
+     0.8497202427854135
+    ],
+    "sd_over_seeds": 0.01041814784252442
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": 0.762847311460182,
+    "ci95": [
+     0.6590897135706801,
+     0.8456769599678232
+    ],
+    "sd_over_seeds": 0.018425536229061627
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.4637525338104786,
+    "ci95": [
+     0.4004914441796446,
+     0.5373456769143308
+    ],
+    "sd_over_seeds": 0.017452233337973463
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.5657688263884448,
+    "ci95": [
+     0.47330097550829775,
+     0.6549152689687708
+    ],
+    "sd_over_seeds": 0.016915081907965035
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.43413954716958364,
+    "nu": 0.8439336080695243,
+    "rho": 0.8547617908184314,
+    "sigma_y_over_rho": 0.460433647967875
+   }
+  },
+  {
+   "dataset": "V2",
+   "split": "test",
+   "method": "C (3 seeds)",
+   "samples": 300,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.6759782702168682,
+    "ci95": [
+     0.6393181882081657,
+     0.7167804672106037
+    ],
+    "sd_over_seeds": 0.011825811790027245
+   },
+   "ident_z_mae": {
+    "value": 0.44926292180125255,
+    "ci95": [
+     0.3938925067591565,
+     0.5140937878688259
+    ],
+    "sd_over_seeds": 0.018979294698136133
+   },
+   "law_accuracy": {
+    "value": 0.7177777777777777,
+    "ci95": [
+     0.6655655369538588,
+     0.7725803620681009
+    ],
+    "sd_over_seeds": 0.02589151155051346
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": 0.607699057917241,
+    "ci95": [
+     0.5625326890750082,
+     0.6706403025536829
+    ],
+    "sd_over_seeds": 0.04123950620065492
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": 0.6247390390748707,
+    "ci95": [
+     0.5674429181555212,
+     0.6853120487982018
+    ],
+    "sd_over_seeds": 0.03834453389852971
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": 0.7537636930223052,
+    "ci95": [
+     0.6580280221499881,
+     0.8346351526141476
+    ],
+    "sd_over_seeds": 0.021757861339887927
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": 0.7416971894002004,
+    "ci95": [
+     0.6368742690431146,
+     0.8223105798636511
+    ],
+    "sd_over_seeds": 0.03304839704286722
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.46505569838145294,
+    "ci95": [
+     0.39968782095253635,
+     0.541467509733246
+    ],
+    "sd_over_seeds": 0.013106733146389276
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.5783398390215814,
+    "ci95": [
+     0.5085736008344668,
+     0.6503746144701786
+    ],
+    "sd_over_seeds": 0.03668866700183059
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.4353490282540184,
+    "nu": 0.855861601119266,
+    "rho": 0.8671523928880278,
+    "sigma_y_over_rho": 0.4711172048597358
+   }
+  },
+  {
+   "dataset": "V2",
+   "split": "test",
+   "method": "D (3 seeds)",
+   "samples": 300,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.6673247304538473,
+    "ci95": [
+     0.6291639479088674,
+     0.7116847096048877
+    ],
+    "sd_over_seeds": 0.0060047020314985
+   },
+   "ident_z_mae": {
+    "value": 0.43489831864171696,
+    "ci95": [
+     0.3751616879538325,
+     0.5037296945874878
+    ],
+    "sd_over_seeds": 0.006276808870741642
+   },
+   "law_accuracy": {
+    "value": 0.7511111111111112,
+    "ci95": [
+     0.7011343508573582,
+     0.8082303051283318
+    ],
+    "sd_over_seeds": 0.025458753860865747
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": 0.6113198224768327,
+    "ci95": [
+     0.5697229257004564,
+     0.6734702329936035
+    ],
+    "sd_over_seeds": 0.015190890259383813
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": 0.6337424013875061,
+    "ci95": [
+     0.5831266695613646,
+     0.6854734473470112
+    ],
+    "sd_over_seeds": 0.01525678113428514
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": 0.7711105264333263,
+    "ci95": [
+     0.6737239098914268,
+     0.8481170814383524
+    ],
+    "sd_over_seeds": 0.00891104536609699
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": 0.7617677493111694,
+    "ci95": [
+     0.6473412060165238,
+     0.843261291907799
+    ],
+    "sd_over_seeds": 0.0059033861204846536
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.44973363838155955,
+    "ci95": [
+     0.37965820800108846,
+     0.5271364347280872
+    ],
+    "sd_over_seeds": 0.003744876064190117
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.5613287702416386,
+    "ci95": [
+     0.48985093350277376,
+     0.6402550273945061
+    ],
+    "sd_over_seeds": 0.01276774838099376
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.42103768607879627,
+    "nu": 0.8441629671756851,
+    "rho": 0.8708910543978629,
+    "sigma_y_over_rho": 0.456668945703896
+   }
+  },
+  {
+   "dataset": "V2",
+   "split": "test",
+   "method": "ensemble_BCD9",
+   "samples": 300,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.6460587754369654,
+    "ci95": [
+     0.6079206782483056,
+     0.6902127191292192
+    ]
+   },
+   "ident_z_mae": {
+    "value": 0.40407274116142206,
+    "ci95": [
+     0.3440458942125673,
+     0.4748161571633292
+    ]
+   },
+   "law_accuracy": {
+    "value": 0.7433333333333333,
+    "ci95": [
+     0.6860794747323873,
+     0.8020142817875713
+    ]
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": 0.6292136249010583,
+    "ci95": [
+     0.5826034050716621,
+     0.6976363545969175
+    ]
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": 0.653113311331133,
+    "ci95": [
+     0.5971455344181353,
+     0.7119681422415846
+    ]
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": 0.7934126762077227,
+    "ci95": [
+     0.7026442230064835,
+     0.8641295736349877
+    ]
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": 0.788155146250547,
+    "ci95": [
+     0.6809479203318975,
+     0.866529927688581
+    ]
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.413424263736403,
+    "ci95": [
+     0.34292124413007335,
+     0.4946184060854456
+    ]
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.5301771510364947,
+    "ci95": [
+     0.45159603684246685,
+     0.6088727330858844
+    ]
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.3870552829377293,
+    "nu": 0.8406513901338136,
+    "rho": 0.8475166368377567,
+    "sigma_y_over_rho": 0.4308017331358087
+   }
+  },
+  {
+   "dataset": "V2",
+   "split": "test",
+   "method": "dinov3_first_frame_B (3 seeds)",
+   "samples": 300,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.851947402587459,
+    "ci95": [
+     0.8222524816358333,
+     0.8799340560994869
+    ],
+    "sd_over_seeds": 0.0006800631846107718
+   },
+   "ident_z_mae": {
+    "value": 0.8337481254821207,
+    "ci95": [
+     0.7871689858931081,
+     0.8780462866180894
+    ],
+    "sd_over_seeds": 0.0013816317505240532
+   },
+   "law_accuracy": {
+    "value": 0.3422222222222222,
+    "ci95": [
+     0.31782686474294153,
+     0.3690950411728536
+    ],
+    "sd_over_seeds": 0.024570382652773323
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": 0.02885431573175044,
+    "ci95": [
+     -0.031088794383364694,
+     0.09292413316124071
+    ],
+    "sd_over_seeds": 0.036615619343281676
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": 0.03693005357838603,
+    "ci95": [
+     -0.03791997962519698,
+     0.10602440730664027
+    ],
+    "sd_over_seeds": 0.04041097594378372
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": 0.08069674167863163,
+    "ci95": [
+     0.003455747977918043,
+     0.142772274428474
+    ],
+    "sd_over_seeds": 0.01219828701107307
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": 0.08647650529070237,
+    "ci95": [
+     0.004683023040492799,
+     0.13901550721057476
+    ],
+    "sd_over_seeds": 0.022399607982921056
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.8630307453858014,
+    "ci95": [
+     0.8008604126415255,
+     0.9180832831453815
+    ],
+    "sd_over_seeds": 0.0016798443705403547
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 1.0536244260107732,
+    "ci95": [
+     1.003704512249228,
+     1.1047154008628601
+    ],
+    "sd_over_seeds": 0.004072688515956579
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.8079898066873689,
+    "nu": 0.8334665798016875,
+    "rho": 0.9002143755689677,
+    "sigma_y_over_rho": 0.8742062178298986
+   }
+  },
+  {
+   "dataset": "V2",
+   "split": "test",
+   "method": "constant_train_mean",
+   "samples": 300,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.8531698527522141,
+    "ci95": [
+     0.8222853953801817,
+     0.8826502154804333
+    ]
+   },
+   "ident_z_mae": {
+    "value": 0.8354040698335381,
+    "ci95": [
+     0.7885120562831667,
+     0.8808155108392197
+    ]
+   },
+   "law_accuracy": {
+    "value": 0.3333333333333333,
+    "ci95": [
+     0.287075151940159,
+     0.3741727195043794
+    ]
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.8656101941647095,
+    "ci95": [
+     0.8035908464535519,
+     0.9215471847025123
+    ]
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 1.0541655441884146,
+    "ci95": [
+     1.0036423969035495,
+     1.1055525318169497
+    ]
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.8104055944630333,
+    "nu": 0.833102230290339,
+    "rho": 0.9023141399243225,
+    "sigma_y_over_rho": 0.874668690834331
+   }
+  },
+  {
+   "dataset": "V2",
+   "split": "test",
+   "method": "class_mean_gt_privileged",
+   "samples": 300,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.7918817203839794,
+    "ci95": [
+     0.7721437529543095,
+     0.8136891958582462
+    ]
+   },
+   "ident_z_mae": {
+    "value": 0.6987201998256259,
+    "ci95": [
+     0.6659494106906219,
+     0.7308761049929017
+    ]
+   },
+   "law_accuracy": {
+    "value": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ]
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.6293116508508038,
+    "ci95": [
+     0.5886174940479463,
+     0.6722107675571687
+    ]
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 1.0497434566682442,
+    "ci95": [
+     1.002674380219891,
+     1.0973803028452398
+    ]
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.589098124842906,
+    "nu": 0.8336564018387241,
+    "rho": 0.9025813942430727,
+    "sigma_y_over_rho": 0.8709014694319921
+   }
+  },
+  {
+   "dataset": "V3",
+   "split": "val",
+   "method": "B (3 seeds)",
+   "samples": 283,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.796296087961872,
+    "ci95": [
+     0.7781146268989035,
+     0.8143554812542249
+    ],
+    "sd_over_seeds": 0.007600270612629507
+   },
+   "ident_z_mae": {
+    "value": 0.7525131862407584,
+    "ci95": [
+     0.726801163960662,
+     0.780305223675058
+    ],
+    "sd_over_seeds": 0.008708809451806264
+   },
+   "law_accuracy": {
+    "value": 0.5170789163722026,
+    "ci95": [
+     0.47452482218377545,
+     0.5591026080988332
+    ],
+    "sd_over_seeds": 0.014711420490926731
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": 0.370720687569474,
+    "ci95": [
+     0.2947472646969213,
+     0.46215406677013937
+    ],
+    "sd_over_seeds": 0.03899291581013201
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": 0.3702269755368825,
+    "ci95": [
+     0.27440497843139455,
+     0.46598599813603647
+    ],
+    "sd_over_seeds": 0.031293383973805045
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": 0.4525057906792615,
+    "ci95": [
+     0.352657811408958,
+     0.5435999630235143
+    ],
+    "sd_over_seeds": 0.040250876853301684
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": 0.44098690562282283,
+    "ci95": [
+     0.32871788837929894,
+     0.5247414468054595
+    ],
+    "sd_over_seeds": 0.029780970005436946
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.4841115627938817,
+    "ci95": [
+     0.4582804775883629,
+     0.5138884041653399
+    ],
+    "sd_over_seeds": 0.0006465315202654503
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.2950776271936156,
+    "ci95": [
+     0.2684683670444975,
+     0.32413474614959864
+    ],
+    "sd_over_seeds": 0.009371042126138646
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.7271194228924672,
+    "nu": 0.8728399898563989,
+    "rho": 0.7873604123999481,
+    "sigma_y_over_rho": 0.7991783487574233
+   }
+  },
+  {
+   "dataset": "V3",
+   "split": "val",
+   "method": "C (3 seeds)",
+   "samples": 283,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.8047086180729949,
+    "ci95": [
+     0.7807511997131608,
+     0.8288228065797237
+    ],
+    "sd_over_seeds": 0.0037340454941476695
+   },
+   "ident_z_mae": {
+    "value": 0.7698438104406718,
+    "ci95": [
+     0.7269398262717758,
+     0.817310543585933
+    ],
+    "sd_over_seeds": 0.00965468341644579
+   },
+   "law_accuracy": {
+    "value": 0.5053003533568905,
+    "ci95": [
+     0.46643497701838527,
+     0.5494522084195996
+    ],
+    "sd_over_seeds": 0.03180212014134279
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": 0.3585180848778416,
+    "ci95": [
+     0.24338835209117007,
+     0.4742439913856817
+    ],
+    "sd_over_seeds": 0.05860762489130979
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": 0.3644101863867475,
+    "ci95": [
+     0.23796856825186577,
+     0.4746549594164382
+    ],
+    "sd_over_seeds": 0.06577862935888845
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": 0.4214103404454062,
+    "ci95": [
+     0.3252630510759788,
+     0.5143020796458603
+    ],
+    "sd_over_seeds": 0.018950688239465857
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": 0.41382752051648586,
+    "ci95": [
+     0.30751299063538884,
+     0.5054845405207089
+    ],
+    "sd_over_seeds": 0.02905947412466607
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.49803377614364547,
+    "ci95": [
+     0.45787997771392847,
+     0.5460196504103845
+    ],
+    "sd_over_seeds": 0.013156457363359199
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.2990466092721279,
+    "ci95": [
+     0.2757906318376278,
+     0.32571267643423
+    ],
+    "sd_over_seeds": 0.00709347341742885
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.7480304965882939,
+    "nu": 0.8761683406787667,
+    "rho": 0.7870860719171356,
+    "sigma_y_over_rho": 0.8099293157667954
+   }
+  },
+  {
+   "dataset": "V3",
+   "split": "val",
+   "method": "D (3 seeds)",
+   "samples": 283,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.7995457361541188,
+    "ci95": [
+     0.7722283074855788,
+     0.8269346692844242
+    ],
+    "sd_over_seeds": 0.011073936902416344
+   },
+   "ident_z_mae": {
+    "value": 0.7537584189762638,
+    "ci95": [
+     0.7044988744193669,
+     0.8091080893649176
+    ],
+    "sd_over_seeds": 0.02622168246142076
+   },
+   "law_accuracy": {
+    "value": 0.5041224970553593,
+    "ci95": [
+     0.47251230594471794,
+     0.5373484176279206
+    ],
+    "sd_over_seeds": 0.011358834818601816
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": 0.370044210401848,
+    "ci95": [
+     0.2414691789497009,
+     0.49305330737247544
+    ],
+    "sd_over_seeds": 0.0776580454394133
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": 0.37777870984491163,
+    "ci95": [
+     0.23286485763431156,
+     0.49532503959998847
+    ],
+    "sd_over_seeds": 0.05865996727833702
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": 0.42256408771939685,
+    "ci95": [
+     0.3204302174876659,
+     0.533692366333366
+    ],
+    "sd_over_seeds": 0.015070742772398114
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": 0.42628513353613734,
+    "ci95": [
+     0.3110740016859178,
+     0.530870717628396
+    ],
+    "sd_over_seeds": 0.02192359246749721
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.4879014197560496,
+    "ci95": [
+     0.437186992927096,
+     0.5421565144984546
+    ],
+    "sd_over_seeds": 0.0217976905443978
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.2925198226829328,
+    "ci95": [
+     0.2646364261650973,
+     0.32429992686127673
+    ],
+    "sd_over_seeds": 0.007042118175543052
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.7328117730457158,
+    "nu": 0.8730495637321122,
+    "rho": 0.7967452923454634,
+    "sigma_y_over_rho": 0.7922512813031802
+   }
+  },
+  {
+   "dataset": "V3",
+   "split": "val",
+   "method": "ensemble_BCD9",
+   "samples": 283,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.7790386691326254,
+    "ci95": [
+     0.756789412043204,
+     0.8012144561847274
+    ]
+   },
+   "ident_z_mae": {
+    "value": 0.7293921211395379,
+    "ci95": [
+     0.6912466490869283,
+     0.7718324261736947
+    ]
+   },
+   "law_accuracy": {
+    "value": 0.5477031802120141,
+    "ci95": [
+     0.5018050541516246,
+     0.5869623239981433
+    ]
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": 0.4382598736598579,
+    "ci95": [
+     0.30764049981416813,
+     0.5800121850571207
+    ]
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": 0.457949674288673,
+    "ci95": [
+     0.3006470777592845,
+     0.5954872353214354
+    ]
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": 0.4886592068074554,
+    "ci95": [
+     0.38986040898925517,
+     0.5803154454905607
+    ]
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": 0.4846319528998352,
+    "ci95": [
+     0.3676800673502984,
+     0.5638377075620697
+    ]
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.4666825144342872,
+    "ci95": [
+     0.425468478640408,
+     0.5118952336035036
+    ]
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.28861505266468407,
+    "ci95": [
+     0.2619224287129284,
+     0.31866434484446154
+    ]
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.7009411329127176,
+    "nu": 0.8639624165555717,
+    "rho": 0.7707776124269197,
+    "sigma_y_over_rho": 0.7816754306732404
+   }
+  },
+  {
+   "dataset": "V3",
+   "split": "val",
+   "method": "dinov3_first_frame_B (3 seeds)",
+   "samples": 283,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.8561207723150979,
+    "ci95": [
+     0.8395640774790176,
+     0.8745156576557771
+    ],
+    "sd_over_seeds": 0.0006110193289508427
+   },
+   "ident_z_mae": {
+    "value": 0.8607886112326172,
+    "ci95": [
+     0.8180569226334073,
+     0.9038157508635494
+    ],
+    "sd_over_seeds": 0.0019854496208127456
+   },
+   "law_accuracy": {
+    "value": 0.32391048292108365,
+    "ci95": [
+     0.2844932844932845,
+     0.3582809151057683
+    ],
+    "sd_over_seeds": 0.007355710245463357
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": 0.01943105325638568,
+    "ci95": [
+     -0.028012895648486007,
+     0.067175078400478
+    ],
+    "sd_over_seeds": 0.021197594326673015
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": 0.018350551159493952,
+    "ci95": [
+     -0.030347505680556885,
+     0.07686812052348371
+    ],
+    "sd_over_seeds": 0.0029557611662299203
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": 0.0653894136024122,
+    "ci95": [
+     -0.049944895399973516,
+     0.20168326594476668
+    ],
+    "sd_over_seeds": 0.06089492327826782
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": 0.08094471230776935,
+    "ci95": [
+     -0.053501074186939036,
+     0.21858781666189284
+    ],
+    "sd_over_seeds": 0.06313076791085556
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.5586708904763412,
+    "ci95": [
+     0.5151514488509743,
+     0.6032993751461273
+    ],
+    "sd_over_seeds": 0.000576239429068236
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.33253546635601056,
+    "ci95": [
+     0.30930171688133234,
+     0.36003214373817705
+    ],
+    "sd_over_seeds": 0.0022907032065462517
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.8391074702105001,
+    "nu": 0.8717312827444162,
+    "rho": 0.8333023268788685,
+    "sigma_y_over_rho": 0.9006312275265073
+   }
+  },
+  {
+   "dataset": "V3",
+   "split": "val",
+   "method": "constant_train_mean",
+   "samples": 283,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.8570497321021341,
+    "ci95": [
+     0.839747857809295,
+     0.8761805517764807
+    ]
+   },
+   "ident_z_mae": {
+    "value": 0.8606043800962577,
+    "ci95": [
+     0.8176530136081632,
+     0.903311267127849
+    ]
+   },
+   "law_accuracy": {
+    "value": 0.33568904593639576,
+    "ci95": [
+     0.27368332147937413,
+     0.42264532463928967
+    ]
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.5591838767594132,
+    "ci95": [
+     0.514905853195398,
+     0.6040293774698207
+    ]
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.3318196443732536,
+    "ci95": [
+     0.30866416031138527,
+     0.35874498214397565
+    ]
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.8398779756023447,
+    "nu": 0.8735404815903269,
+    "rho": 0.8350700032025207,
+    "sigma_y_over_rho": 0.8986925130298773
+   }
+  },
+  {
+   "dataset": "V3",
+   "split": "val",
+   "method": "class_mean_gt_privileged",
+   "samples": 283,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.827442223129494,
+    "ci95": [
+     0.8076325896010011,
+     0.8461718899994534
+    ]
+   },
+   "ident_z_mae": {
+    "value": 0.7916171482143834,
+    "ci95": [
+     0.7560693242858307,
+     0.830451002370765
+    ]
+   },
+   "law_accuracy": {
+    "value": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ]
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.4919969977703714,
+    "ci95": [
+     0.44406732993642506,
+     0.539957085275491
+    ]
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.32801109318476307,
+    "ci95": [
+     0.30546071977214273,
+     0.3550588582907901
+    ]
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.7389632053627981,
+    "nu": 0.8763560482501828,
+    "rho": 0.8338483900155303,
+    "sigma_y_over_rho": 0.8883773159221668
+   }
+  },
+  {
+   "dataset": "V3",
+   "split": "test",
+   "method": "B (3 seeds)",
+   "samples": 300,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.7927483729867784,
+    "ci95": [
+     0.7649599365213036,
+     0.8222541618517406
+    ],
+    "sd_over_seeds": 0.010380927273890787
+   },
+   "ident_z_mae": {
+    "value": 0.7392733492730891,
+    "ci95": [
+     0.6824211499686239,
+     0.798966464588486
+    ],
+    "sd_over_seeds": 0.019196888814645423
+   },
+   "law_accuracy": {
+    "value": 0.5255555555555556,
+    "ci95": [
+     0.4799519707557831,
+     0.5732163273440531
+    ],
+    "sd_over_seeds": 0.01924500897298752
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": 0.3919441934769203,
+    "ci95": [
+     0.32012409265881114,
+     0.48638004188964884
+    ],
+    "sd_over_seeds": 0.04790484610170777
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": 0.37210714459563404,
+    "ci95": [
+     0.28366152816459245,
+     0.4712867888662084
+    ],
+    "sd_over_seeds": 0.042045361760923425
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": 0.4357586916629699,
+    "ci95": [
+     0.3074801491786324,
+     0.5309865170039788
+    ],
+    "sd_over_seeds": 0.016130205925832242
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": 0.4372230678460789,
+    "ci95": [
+     0.26477929156718955,
+     0.5399399699780504
+    ],
+    "sd_over_seeds": 0.026594404032256137
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.48409610493699873,
+    "ci95": [
+     0.4373051521511379,
+     0.5319537586438718
+    ],
+    "sd_over_seeds": 0.018020697190727537
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.2817737898138047,
+    "ci95": [
+     0.25879179008747966,
+     0.30572858501737904
+    ],
+    "sd_over_seeds": 0.0014154613832721666
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.7271009417162794,
+    "nu": 0.833333292714734,
+    "rho": 0.8329107390664933,
+    "sigma_y_over_rho": 0.7631408150707552
+   }
+  },
+  {
+   "dataset": "V3",
+   "split": "test",
+   "method": "C (3 seeds)",
+   "samples": 300,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.7987215795898269,
+    "ci95": [
+     0.7697569189209472,
+     0.8309127882077697
+    ],
+    "sd_over_seeds": 0.008741823286871933
+   },
+   "ident_z_mae": {
+    "value": 0.7564329815520668,
+    "ci95": [
+     0.697312693530766,
+     0.8273196536918223
+    ],
+    "sd_over_seeds": 0.0187462221946127
+   },
+   "law_accuracy": {
+    "value": 0.5144444444444445,
+    "ci95": [
+     0.4807204700061843,
+     0.5479321340186559
+    ],
+    "sd_over_seeds": 0.028349668493717926
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": 0.3579196811781498,
+    "ci95": [
+     0.2680823999874963,
+     0.47543573711475084
+    ],
+    "sd_over_seeds": 0.102327001587316
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": 0.3497199815337319,
+    "ci95": [
+     0.24465715663750415,
+     0.465234101801066
+    ],
+    "sd_over_seeds": 0.09033653535006064
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": 0.4307375094983415,
+    "ci95": [
+     0.32949236668445087,
+     0.5022183264835345
+    ],
+    "sd_over_seeds": 0.016813405512220176
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": 0.4211339191450854,
+    "ci95": [
+     0.29450313020148955,
+     0.500447963391916
+    ],
+    "sd_over_seeds": 0.007038865742007394
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.4972864787703514,
+    "ci95": [
+     0.45035472602714344,
+     0.5523916284379392
+    ],
+    "sd_over_seeds": 0.014954398832751637
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.2861894784796471,
+    "ci95": [
+     0.2658151223683192,
+     0.30962128437646774
+    ],
+    "sd_over_seeds": 0.00427590121538209
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.7469120784057305,
+    "nu": 0.8419831803891187,
+    "rho": 0.8193157618275534,
+    "sigma_y_over_rho": 0.775101419093903
+   }
+  },
+  {
+   "dataset": "V3",
+   "split": "test",
+   "method": "D (3 seeds)",
+   "samples": 300,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.8034250358551217,
+    "ci95": [
+     0.7682007911048239,
+     0.8425967123672325
+    ],
+    "sd_over_seeds": 0.010274081591005457
+   },
+   "ident_z_mae": {
+    "value": 0.7508093720151905,
+    "ci95": [
+     0.686076472335527,
+     0.8235666323643195
+    ],
+    "sd_over_seeds": 0.016911912075009642
+   },
+   "law_accuracy": {
+    "value": 0.5044444444444444,
+    "ci95": [
+     0.44952293784783753,
+     0.5634941089837998
+    ],
+    "sd_over_seeds": 0.027755546659548415
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": 0.3736653363634095,
+    "ci95": [
+     0.2881161496306782,
+     0.4922247753696208
+    ],
+    "sd_over_seeds": 0.06304944633924042
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": 0.36684439591081724,
+    "ci95": [
+     0.26777556477056896,
+     0.48465066515179395
+    ],
+    "sd_over_seeds": 0.05654748438015507
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": 0.39832164891802524,
+    "ci95": [
+     0.25920838872392066,
+     0.5054644185871835
+    ],
+    "sd_over_seeds": 0.036140974616716094
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": 0.3979854267275358,
+    "ci95": [
+     0.22786238006051263,
+     0.5261616708825301
+    ],
+    "sd_over_seeds": 0.024709976053158077
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.48922314483372387,
+    "ci95": [
+     0.4370825487130486,
+     0.5492106942854832
+    ],
+    "sd_over_seeds": 0.019135367234334778
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.2888100558705704,
+    "ci95": [
+     0.26711553369588054,
+     0.31212593859649906
+    ],
+    "sd_over_seeds": 0.0029762429123656943
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.7348012017215498,
+    "nu": 0.8526609190289552,
+    "rho": 0.8336388050795843,
+    "sigma_y_over_rho": 0.7821979412184076
+   }
+  },
+  {
+   "dataset": "V3",
+   "split": "test",
+   "method": "ensemble_BCD9",
+   "samples": 300,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.77542033814292,
+    "ci95": [
+     0.7453447340290125,
+     0.8076022685641043
+    ]
+   },
+   "ident_z_mae": {
+    "value": 0.7162768948702829,
+    "ci95": [
+     0.6545848733801287,
+     0.7849255496934314
+    ]
+   },
+   "law_accuracy": {
+    "value": 0.5466666666666666,
+    "ci95": [
+     0.4936285185946168,
+     0.6
+    ]
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": 0.4362868835197988,
+    "ci95": [
+     0.3435662920447692,
+     0.5651987244619565
+    ]
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": 0.4218986575426264,
+    "ci95": [
+     0.3052783913373136,
+     0.5542159758440022
+    ]
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": 0.46966608379056496,
+    "ci95": [
+     0.34586244561689716,
+     0.5593361266558512
+    ]
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": 0.473612678435948,
+    "ci95": [
+     0.30741800173380895,
+     0.564932792448193
+    ]
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.4637045203323675,
+    "ci95": [
+     0.41367314436848357,
+     0.5197191255385114
+    ]
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.2788078106796032,
+    "ci95": [
+     0.2579932927108062,
+     0.30255105160226425
+    ]
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.6964730232579771,
+    "nu": 0.8307117211844565,
+    "rho": 0.8094355544430653,
+    "sigma_y_over_rho": 0.7551080156787257
+   }
+  },
+  {
+   "dataset": "V3",
+   "split": "test",
+   "method": "dinov3_first_frame_B (3 seeds)",
+   "samples": 300,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.8576389037293181,
+    "ci95": [
+     0.8279587674174212,
+     0.8867356923157573
+    ],
+    "sd_over_seeds": 0.0012530793729723648
+   },
+   "ident_z_mae": {
+    "value": 0.8446523784694069,
+    "ci95": [
+     0.7915778689642841,
+     0.9005346545778493
+    ],
+    "sd_over_seeds": 0.0026342603402509553
+   },
+   "law_accuracy": {
+    "value": 0.3344444444444444,
+    "ci95": [
+     0.3074963996970931,
+     0.3569230769230769
+    ],
+    "sd_over_seeds": 0.011706281947614174
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": 0.004526616853191793,
+    "ci95": [
+     -0.06709463233983382,
+     0.07606016142630095
+    ],
+    "sd_over_seeds": 0.03044413767628957
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": 0.006696512011880398,
+    "ci95": [
+     -0.07653300996501673,
+     0.07655362835334752
+    ],
+    "sd_over_seeds": 0.034249806200287815
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": -0.06719664820768656,
+    "ci95": [
+     -0.1984396412736522,
+     0.13372259896556174
+    ],
+    "sd_over_seeds": 0.02350547112371684
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": -0.020473322502141487,
+    "ci95": [
+     -0.15118096457392344,
+     0.12421291586024885
+    ],
+    "sd_over_seeds": 0.06279079229268546
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.553071359968972,
+    "ci95": [
+     0.5043742139521221,
+     0.601083588023358
+    ],
+    "sd_over_seeds": 0.002243704324937184
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.3219691215122721,
+    "ci95": [
+     0.30532713898207203,
+     0.3383216390866051
+    ],
+    "sd_over_seeds": 0.0005148702935613088
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.8307018022782481,
+    "nu": 0.836942812543259,
+    "rho": 0.8979446480578432,
+    "sigma_y_over_rho": 0.8720064494324632
+   }
+  },
+  {
+   "dataset": "V3",
+   "split": "test",
+   "method": "constant_train_mean",
+   "samples": 300,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.8584833334289413,
+    "ci95": [
+     0.828908757217137,
+     0.8878482893013737
+    ]
+   },
+   "ident_z_mae": {
+    "value": 0.8466152453591541,
+    "ci95": [
+     0.7921498713016809,
+     0.9040977513731007
+    ]
+   },
+   "law_accuracy": {
+    "value": 0.3333333333333333,
+    "ci95": [
+     0.26885366923301823,
+     0.39790577658390197
+    ]
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.5553508584934879,
+    "ci95": [
+     0.5049389077995299,
+     0.6055652141678739
+    ]
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.32163618938360566,
+    "ci95": [
+     0.3044059631896499,
+     0.3382801271641435
+    ]
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.8341256094242756,
+    "nu": 0.834019444794394,
+    "rho": 0.9008680350488673,
+    "sigma_y_over_rho": 0.871104727584406
+   }
+  },
+  {
+   "dataset": "V3",
+   "split": "test",
+   "method": "class_mean_gt_privileged",
+   "samples": 300,
+   "objects": 10,
+   "z_mae": {
+    "value": 0.8339418928080864,
+    "ci95": [
+     0.8144308568031449,
+     0.8533075271047077
+    ]
+   },
+   "ident_z_mae": {
+    "value": 0.7887674407969489,
+    "ci95": [
+     0.7454449465506846,
+     0.8292470915685457
+    ]
+   },
+   "law_accuracy": {
+    "value": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ]
+   },
+   "within_law_pearson_E_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "within_law_spearman_E_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "within_law_pearson_sigma_y_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "within_law_spearman_sigma_y_over_rho": {
+    "value": null,
+    "ci95": null
+   },
+   "decade_mae_E_over_rho": {
+    "value": 0.5029172731608141,
+    "ci95": [
+     0.4704244120299958,
+     0.5381704374505833
+    ]
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.3154136912735501,
+    "ci95": [
+     0.29919029632191785,
+     0.33108080303123255
+    ]
+   },
+   "z_mae_per_parameter": {
+    "E_over_rho": 0.7553704300291328,
+    "nu": 0.8350221991228078,
+    "rho": 0.9010750090301822,
+    "sigma_y_over_rho": 0.8542517756358039
+   }
+  }
+ ],
+ "headline": {
+  "V2/val": {
+   "C (3 seeds)": {
+    "z_mae": {
+     "value": 0.6440708240609001,
+     "ci95": [
+      0.6157551567190724,
+      0.6745544739182683
+     ]
+    },
+    "ident_z_mae": {
+     "value": 0.39362644655400353,
+     "ci95": [
+      0.3610366343069185,
+      0.43034263590773
+     ]
+    },
+    "law_accuracy": {
+     "value": 0.6607773851590106,
+     "ci95": [
+      0.6212108284207261,
+      0.701113213811421
+     ]
+    },
+    "within_law_pearson_E_over_rho": {
+     "value": 0.6342172708404524,
+     "ci95": [
+      0.5753105035588979,
+      0.697137210532032
+     ]
+    },
+    "within_law_spearman_E_over_rho": {
+     "value": 0.6403833053727588,
+     "ci95": [
+      0.5785049975072797,
+      0.694277733133764
+     ]
+    },
+    "within_law_pearson_sigma_y_over_rho": {
+     "value": 0.8749142260373447,
+     "ci95": [
+      0.8434172981775913,
+      0.8913972588298145
+     ]
+    },
+    "within_law_spearman_sigma_y_over_rho": {
+     "value": 0.8617016386174786,
+     "ci95": [
+      0.8186150933619254,
+      0.8810550276973387
+     ]
+    },
+    "decade_mae_E_over_rho": {
+     "value": 0.4412774702896622,
+     "ci95": [
+      0.3962342173114949,
+      0.4916381515385344
+     ]
+    },
+    "decade_mae_sigma_y_over_rho": {
+     "value": 0.4501200452691048,
+     "ci95": [
+      0.3955986668822,
+      0.508267438456917
+     ]
+    }
+   },
+   "ensemble_BCD9": {
+    "z_mae": {
+     "value": 0.616246852638067,
+     "ci95": [
+      0.5865065351242834,
+      0.6476156640080216
+     ]
+    },
+    "ident_z_mae": {
+     "value": 0.3507024887738301,
+     "ci95": [
+      0.3095169379161676,
+      0.3978153480286397
+     ]
+    },
+    "law_accuracy": {
+     "value": 0.6996466431095406,
+     "ci95": [
+      0.6433811274509804,
+      0.7528980602685782
+     ]
+    },
+    "within_law_pearson_E_over_rho": {
+     "value": 0.685693981149842,
+     "ci95": [
+      0.6165826772481425,
+      0.7661740115061862
+     ]
+    },
+    "within_law_spearman_E_over_rho": {
+     "value": 0.7135210767541048,
+     "ci95": [
+      0.6433595547343341,
+      0.7786569023239354
+     ]
+    },
+    "within_law_pearson_sigma_y_over_rho": {
+     "value": 0.8946324071928032,
+     "ci95": [
+      0.8686353111674822,
+      0.910538395619551
+     ]
+    },
+    "within_law_spearman_sigma_y_over_rho": {
+     "value": 0.8841559297993542,
+     "ci95": [
+      0.8415815900420848,
+      0.9017121871021067
+     ]
+    },
+    "decade_mae_E_over_rho": {
+     "value": 0.3813701358282338,
+     "ci95": [
+      0.3230314837918337,
+      0.44768721200251466
+     ]
+    },
+    "decade_mae_sigma_y_over_rho": {
+     "value": 0.4210423182656892,
+     "ci95": [
+      0.3631762700945898,
+      0.481173969089513
+     ]
+    }
+   },
+   "constant_train_mean": {
+    "decade_mae_E_over_rho": 0.9018672145663311,
+    "decade_mae_sigma_y_over_rho": 1.077553450012657,
+    "z_mae": 0.8575882477086423,
+    "ident_z_mae": 0.8645883095971174
+   },
+   "ensemble_gain_over_constant_rel": {
+    "decade_mae_E_over_rho": 0.5771327201292951,
+    "decade_mae_sigma_y_over_rho": 0.6092608508090771,
+    "z_mae": 0.2814187294606779,
+    "ident_z_mae": 0.5943705404283675
+   }
+  },
+  "V2/test": {
+   "C (3 seeds)": {
+    "z_mae": {
+     "value": 0.6759782702168682,
+     "ci95": [
+      0.6393181882081657,
+      0.7167804672106037
+     ]
+    },
+    "ident_z_mae": {
+     "value": 0.44926292180125255,
+     "ci95": [
+      0.3938925067591565,
+      0.5140937878688259
+     ]
+    },
+    "law_accuracy": {
+     "value": 0.7177777777777777,
+     "ci95": [
+      0.6655655369538588,
+      0.7725803620681009
+     ]
+    },
+    "within_law_pearson_E_over_rho": {
+     "value": 0.607699057917241,
+     "ci95": [
+      0.5625326890750082,
+      0.6706403025536829
+     ]
+    },
+    "within_law_spearman_E_over_rho": {
+     "value": 0.6247390390748707,
+     "ci95": [
+      0.5674429181555212,
+      0.6853120487982018
+     ]
+    },
+    "within_law_pearson_sigma_y_over_rho": {
+     "value": 0.7537636930223052,
+     "ci95": [
+      0.6580280221499881,
+      0.8346351526141476
+     ]
+    },
+    "within_law_spearman_sigma_y_over_rho": {
+     "value": 0.7416971894002004,
+     "ci95": [
+      0.6368742690431146,
+      0.8223105798636511
+     ]
+    },
+    "decade_mae_E_over_rho": {
+     "value": 0.46505569838145294,
+     "ci95": [
+      0.39968782095253635,
+      0.541467509733246
+     ]
+    },
+    "decade_mae_sigma_y_over_rho": {
+     "value": 0.5783398390215814,
+     "ci95": [
+      0.5085736008344668,
+      0.6503746144701786
+     ]
+    }
+   },
+   "ensemble_BCD9": {
+    "z_mae": {
+     "value": 0.6460587754369654,
+     "ci95": [
+      0.6079206782483056,
+      0.6902127191292192
+     ]
+    },
+    "ident_z_mae": {
+     "value": 0.40407274116142206,
+     "ci95": [
+      0.3440458942125673,
+      0.4748161571633292
+     ]
+    },
+    "law_accuracy": {
+     "value": 0.7433333333333333,
+     "ci95": [
+      0.6860794747323873,
+      0.8020142817875713
+     ]
+    },
+    "within_law_pearson_E_over_rho": {
+     "value": 0.6292136249010583,
+     "ci95": [
+      0.5826034050716621,
+      0.6976363545969175
+     ]
+    },
+    "within_law_spearman_E_over_rho": {
+     "value": 0.653113311331133,
+     "ci95": [
+      0.5971455344181353,
+      0.7119681422415846
+     ]
+    },
+    "within_law_pearson_sigma_y_over_rho": {
+     "value": 0.7934126762077227,
+     "ci95": [
+      0.7026442230064835,
+      0.8641295736349877
+     ]
+    },
+    "within_law_spearman_sigma_y_over_rho": {
+     "value": 0.788155146250547,
+     "ci95": [
+      0.6809479203318975,
+      0.866529927688581
+     ]
+    },
+    "decade_mae_E_over_rho": {
+     "value": 0.413424263736403,
+     "ci95": [
+      0.34292124413007335,
+      0.4946184060854456
+     ]
+    },
+    "decade_mae_sigma_y_over_rho": {
+     "value": 0.5301771510364947,
+     "ci95": [
+      0.45159603684246685,
+      0.6088727330858844
+     ]
+    }
+   },
+   "constant_train_mean": {
+    "decade_mae_E_over_rho": 0.8656101941647095,
+    "decade_mae_sigma_y_over_rho": 1.0541655441884146,
+    "z_mae": 0.8531698527522141,
+    "ident_z_mae": 0.8354040698335381
+   },
+   "ensemble_gain_over_constant_rel": {
+    "decade_mae_E_over_rho": 0.522389793323372,
+    "decade_mae_sigma_y_over_rho": 0.49706461764061005,
+    "z_mae": 0.24275480040361896,
+    "ident_z_mae": 0.5163146125898845
+   }
+  },
+  "V3/val": {
+   "C (3 seeds)": {
+    "z_mae": {
+     "value": 0.8047086180729949,
+     "ci95": [
+      0.7807511997131608,
+      0.8288228065797237
+     ]
+    },
+    "ident_z_mae": {
+     "value": 0.7698438104406718,
+     "ci95": [
+      0.7269398262717758,
+      0.817310543585933
+     ]
+    },
+    "law_accuracy": {
+     "value": 0.5053003533568905,
+     "ci95": [
+      0.46643497701838527,
+      0.5494522084195996
+     ]
+    },
+    "within_law_pearson_E_over_rho": {
+     "value": 0.3585180848778416,
+     "ci95": [
+      0.24338835209117007,
+      0.4742439913856817
+     ]
+    },
+    "within_law_spearman_E_over_rho": {
+     "value": 0.3644101863867475,
+     "ci95": [
+      0.23796856825186577,
+      0.4746549594164382
+     ]
+    },
+    "within_law_pearson_sigma_y_over_rho": {
+     "value": 0.4214103404454062,
+     "ci95": [
+      0.3252630510759788,
+      0.5143020796458603
+     ]
+    },
+    "within_law_spearman_sigma_y_over_rho": {
+     "value": 0.41382752051648586,
+     "ci95": [
+      0.30751299063538884,
+      0.5054845405207089
+     ]
+    },
+    "decade_mae_E_over_rho": {
+     "value": 0.49803377614364547,
+     "ci95": [
+      0.45787997771392847,
+      0.5460196504103845
+     ]
+    },
+    "decade_mae_sigma_y_over_rho": {
+     "value": 0.2990466092721279,
+     "ci95": [
+      0.2757906318376278,
+      0.32571267643423
+     ]
+    }
+   },
+   "ensemble_BCD9": {
+    "z_mae": {
+     "value": 0.7790386691326254,
+     "ci95": [
+      0.756789412043204,
+      0.8012144561847274
+     ]
+    },
+    "ident_z_mae": {
+     "value": 0.7293921211395379,
+     "ci95": [
+      0.6912466490869283,
+      0.7718324261736947
+     ]
+    },
+    "law_accuracy": {
+     "value": 0.5477031802120141,
+     "ci95": [
+      0.5018050541516246,
+      0.5869623239981433
+     ]
+    },
+    "within_law_pearson_E_over_rho": {
+     "value": 0.4382598736598579,
+     "ci95": [
+      0.30764049981416813,
+      0.5800121850571207
+     ]
+    },
+    "within_law_spearman_E_over_rho": {
+     "value": 0.457949674288673,
+     "ci95": [
+      0.3006470777592845,
+      0.5954872353214354
+     ]
+    },
+    "within_law_pearson_sigma_y_over_rho": {
+     "value": 0.4886592068074554,
+     "ci95": [
+      0.38986040898925517,
+      0.5803154454905607
+     ]
+    },
+    "within_law_spearman_sigma_y_over_rho": {
+     "value": 0.4846319528998352,
+     "ci95": [
+      0.3676800673502984,
+      0.5638377075620697
+     ]
+    },
+    "decade_mae_E_over_rho": {
+     "value": 0.4666825144342872,
+     "ci95": [
+      0.425468478640408,
+      0.5118952336035036
+     ]
+    },
+    "decade_mae_sigma_y_over_rho": {
+     "value": 0.28861505266468407,
+     "ci95": [
+      0.2619224287129284,
+      0.31866434484446154
+     ]
+    }
+   },
+   "constant_train_mean": {
+    "decade_mae_E_over_rho": 0.5591838767594132,
+    "decade_mae_sigma_y_over_rho": 0.3318196443732536,
+    "z_mae": 0.8570497321021341,
+    "ident_z_mae": 0.8606043800962577
+   },
+   "ensemble_gain_over_constant_rel": {
+    "decade_mae_E_over_rho": 0.16542208416521342,
+    "decade_mae_sigma_y_over_rho": 0.13020504494293905,
+    "z_mae": 0.09102279604961372,
+    "ident_z_mae": 0.152465246507395
+   }
+  },
+  "V3/test": {
+   "C (3 seeds)": {
+    "z_mae": {
+     "value": 0.7987215795898269,
+     "ci95": [
+      0.7697569189209472,
+      0.8309127882077697
+     ]
+    },
+    "ident_z_mae": {
+     "value": 0.7564329815520668,
+     "ci95": [
+      0.697312693530766,
+      0.8273196536918223
+     ]
+    },
+    "law_accuracy": {
+     "value": 0.5144444444444445,
+     "ci95": [
+      0.4807204700061843,
+      0.5479321340186559
+     ]
+    },
+    "within_law_pearson_E_over_rho": {
+     "value": 0.3579196811781498,
+     "ci95": [
+      0.2680823999874963,
+      0.47543573711475084
+     ]
+    },
+    "within_law_spearman_E_over_rho": {
+     "value": 0.3497199815337319,
+     "ci95": [
+      0.24465715663750415,
+      0.465234101801066
+     ]
+    },
+    "within_law_pearson_sigma_y_over_rho": {
+     "value": 0.4307375094983415,
+     "ci95": [
+      0.32949236668445087,
+      0.5022183264835345
+     ]
+    },
+    "within_law_spearman_sigma_y_over_rho": {
+     "value": 0.4211339191450854,
+     "ci95": [
+      0.29450313020148955,
+      0.500447963391916
+     ]
+    },
+    "decade_mae_E_over_rho": {
+     "value": 0.4972864787703514,
+     "ci95": [
+      0.45035472602714344,
+      0.5523916284379392
+     ]
+    },
+    "decade_mae_sigma_y_over_rho": {
+     "value": 0.2861894784796471,
+     "ci95": [
+      0.2658151223683192,
+      0.30962128437646774
+     ]
+    }
+   },
+   "ensemble_BCD9": {
+    "z_mae": {
+     "value": 0.77542033814292,
+     "ci95": [
+      0.7453447340290125,
+      0.8076022685641043
+     ]
+    },
+    "ident_z_mae": {
+     "value": 0.7162768948702829,
+     "ci95": [
+      0.6545848733801287,
+      0.7849255496934314
+     ]
+    },
+    "law_accuracy": {
+     "value": 0.5466666666666666,
+     "ci95": [
+      0.4936285185946168,
+      0.6
+     ]
+    },
+    "within_law_pearson_E_over_rho": {
+     "value": 0.4362868835197988,
+     "ci95": [
+      0.3435662920447692,
+      0.5651987244619565
+     ]
+    },
+    "within_law_spearman_E_over_rho": {
+     "value": 0.4218986575426264,
+     "ci95": [
+      0.3052783913373136,
+      0.5542159758440022
+     ]
+    },
+    "within_law_pearson_sigma_y_over_rho": {
+     "value": 0.46966608379056496,
+     "ci95": [
+      0.34586244561689716,
+      0.5593361266558512
+     ]
+    },
+    "within_law_spearman_sigma_y_over_rho": {
+     "value": 0.473612678435948,
+     "ci95": [
+      0.30741800173380895,
+      0.564932792448193
+     ]
+    },
+    "decade_mae_E_over_rho": {
+     "value": 0.4637045203323675,
+     "ci95": [
+      0.41367314436848357,
+      0.5197191255385114
+     ]
+    },
+    "decade_mae_sigma_y_over_rho": {
+     "value": 0.2788078106796032,
+     "ci95": [
+      0.2579932927108062,
+      0.30255105160226425
+     ]
+    }
+   },
+   "constant_train_mean": {
+    "decade_mae_E_over_rho": 0.5553508584934879,
+    "decade_mae_sigma_y_over_rho": 0.32163618938360566,
+    "z_mae": 0.8584833334289413,
+    "ident_z_mae": 0.8466152453591541
+   },
+   "ensemble_gain_over_constant_rel": {
+    "decade_mae_E_over_rho": 0.1650242126387116,
+    "decade_mae_sigma_y_over_rho": 0.13315783521151714,
+    "z_mae": 0.09675551295125595,
+    "ident_z_mae": 0.1539522837597599
+   }
+  }
+ },
+ "per_action_val_ensemble": {
+  "V2": {
+   "bend": {
+    "n": 45,
+    "law_acc": 0.84,
+    "r_E": 0.67,
+    "r_sig": 0.97,
+    "ident_zmae": 0.294
+   },
+   "drop": {
+    "n": 48,
+    "law_acc": 0.65,
+    "r_E": 0.75,
+    "r_sig": 0.85,
+    "ident_zmae": 0.332
+   },
+   "press": {
+    "n": 48,
+    "law_acc": 0.6,
+    "r_E": 0.61,
+    "r_sig": 0.82,
+    "ident_zmae": 0.471
+   },
+   "shear": {
+    "n": 49,
+    "law_acc": 0.71,
+    "r_E": 0.81,
+    "r_sig": 0.96,
+    "ident_zmae": 0.31
+   },
+   "stretch": {
+    "n": 50,
+    "law_acc": 0.76,
+    "r_E": 0.65,
+    "r_sig": 0.93,
+    "ident_zmae": 0.314
+   },
+   "tap30hold": {
+    "n": 43,
+    "law_acc": 0.63,
+    "r_E": 0.72,
+    "r_sig": 0.82,
+    "ident_zmae": 0.385
+   }
+  },
+  "V3": {
+   "bend": {
+    "n": 46,
+    "law_acc": 0.54,
+    "r_E": 0.4,
+    "r_sig": 0.71,
+    "ident_zmae": 0.62
+   },
+   "drop": {
+    "n": 48,
+    "law_acc": 0.54,
+    "r_E": 0.42,
+    "r_sig": 0.63,
+    "ident_zmae": 0.663
+   },
+   "press": {
+    "n": 48,
+    "law_acc": 0.6,
+    "r_E": 0.39,
+    "r_sig": 0.53,
+    "ident_zmae": 0.821
+   },
+   "shear": {
+    "n": 48,
+    "law_acc": 0.48,
+    "r_E": 0.44,
+    "r_sig": 0.04,
+    "ident_zmae": 0.791
+   },
+   "stretch": {
+    "n": 48,
+    "law_acc": 0.56,
+    "r_E": 0.57,
+    "r_sig": 0.51,
+    "ident_zmae": 0.679
+   },
+   "tap30hold": {
+    "n": 45,
+    "law_acc": 0.56,
+    "r_E": 0.47,
+    "r_sig": 0.65,
+    "ident_zmae": 0.802
+   }
+  }
+ },
+ "differences_vs_v2": [
+  "Data: V3 = contact through external rigid plates/grippers; gravity 2 (press/tap30hold/drop) else 0; narrower log10 ranges (E/rho jelly 3.5-6, plasticine 3.5-5.5, metal 4.5-6; sigma_y/rho 3.2-4.5); per-sample censoring sigma/rho > 0.5 E/rho (any law); screened objects v3_split (57/10/10).",
+  "Train set: 2000 V3 samples (V2: 1955); val 283 / test 300 (V2: 283 / 300).",
+  "Standardization from V3 train: std(ln E/rho) = 0.666 decades (V2 1.068), std(ln sigma_y/rho) = 0.369 decades (V2 1.166); 1098/2000 train samples carry a sigma label (V2 1264/1955). z-units therefore differ; decade errors are the cross-dataset comparison.",
+  "Class information is much weaker in V3: privileged GT-class mean reaches z-MAE 0.827 vs constant 0.857 (V2: 0.786 vs 0.858), because the per-law ranges overlap."
+ ],
+ "protocol_identical_to_v2": "Same V-JEPA 2 ViT-L frozen 32-step features (64 frames, tubelet 2, 3 views, 224 px), same 2-layer transformer head and hyper-parameters (configs/v2main/* with only data paths/output changed), same loss weights (smooth-l1 + 0.05 NLL + 0.1 class CE; C/D field weight 0.1, 2 field-warmup epochs, D feedback=fields), seeds 17/29/43, best-val-epoch selection (best_material.pt), early stop patience 5 / min 8 joint epochs, test evaluated once.",
+ "deviations": [
+  "Feature cache built incrementally into one shared directory (scripts/v3p/cache_v3.py, same encoder code path as scripts/prepare_vjepa_cache.py); per-manifest index.json files point into it. No change to features.",
+  "IO fix during training (14:31-14:45 UTC): 8 of 9 runs were paused at an epoch boundary (control.json, built-in mechanism) and resumed from last.pt with scripts/v3p/train_job.py --preload (features read once into RAM; identical math/sampling; verified on a smoke run: val MAE identical to 1e-4). C_seed29 was not paused.",
+  "First-frame DINOv3 baseline uses a first-frame-only DINOv3 cache (frames 1..15 stored as a stride-0 copy of frame 0; they are masked by static_first_frame anyway), not the full 16-frame cache.",
+  "Within-class correlation: V2 tables use Pearson; both Pearson and Spearman are reported here.",
+  "C/D were trainable: V3 packs contain the same stress/flow/force_mask fields as V2 (contact channel is empty in both V2 and V3).",
+  "4000-sample data-scaling point not run: cancelled 15:45 UTC when the user switched to V4 data (train 2000-3999 generation was ~3300/4000 then); V3 train 0-999 was trained instead as the V4/V5 control (docs/v4/PRIOR_CHECK*)."
+ ],
+ "hand_off": "docs/v3p/HANDOFF.json: main_run v3main_C_seed29 (2000-sample prior) + 9-run B/C/D ensemble (docs/v3p/ENSEMBLE_BCD9_{VAL,TEST}.json, runs/v3main_ens_bcd9_{val,test}).",
+ "zh_sections": [
+  "## 结论（2000 条训练样本，V2 原管线原超参）",
+  "- **V3 上前馈先验明显变弱。** 9 头集成 test：z-MAE 0.775（V2 0.646），类别准确率 0.55（V2 0.74），族内 Spearman r(E/ρ) 0.42（V2 0.65），r(σ/ρ) 0.47（V2 0.79）。单个 C 头 test z-MAE 0.799（V2 0.676）。",
+  "- **按 decade 比较（跨数据集公平口径）：** V3 test E/ρ 误差 0.464 dec（V2 0.413），σ/ρ 0.279 dec（V2 0.530）。绝对误差看似相近甚至更小，是因为 V3 的范围窄：常数基线本身就只有 0.555 / 0.322 dec（V2 0.866 / 1.054）。相对常数基线，V3 先验只把 E/ρ 误差降低 17%、σ/ρ 降低 13%（V2 为 52% / 50%）。",
+  "- 仍明显优于外观基线：首帧 DINOv3 ≈ 常数（V3 test z-MAE 0.858 vs 常数 0.858），视频先验也优于特权的 GT 类均值（0.834）。B/C/D 之间仍无可分辨差异（与 V2 一致，场监督/反馈无收益）。",
+  "- 每种动作都退化（docs/v3p/PER_ACTION_VAL.json，val 集成）：族准确率从 0.60–0.84 降到 0.48–0.60，plasticine 最难（val 仅 26/94 判对）；shear 下 r(σ/ρ) 几乎为 0。drop 不经过夹板也退化，说明不只是接触方式的问题：可能与重力减小（drop 重力 2）、族间参数范围重叠（GT 类均值仅比常数好 0.030 z）、以及物体在画面中更小有关（抽查 val 前 24 个样本，物体像素占比约为 V2 的 1/3）。这些是推测，未做受控验证。",
+  "",
+  "## V2 vs V3 主表（9 头集成；方括号为物体 bootstrap 95% CI）",
+  "",
+  "| split | 数据 | z-MAE(4) | 可辨识 z-MAE | 类别准确率 | 族内 r_S(E/ρ) | 族内 r_S(σ/ρ) | E/ρ 误差 dec | 常数 E/ρ dec | σ/ρ 误差 dec | 常数 σ/ρ dec |",
+  "|---|---|---|---|---|---|---|---|---|---|---|",
+  "| val | V2 | 0.616 [0.587, 0.648] | 0.351 [0.310, 0.398] | 0.700 [0.643, 0.753] | 0.714 [0.643, 0.779] | 0.884 [0.842, 0.902] | 0.381 [0.323, 0.448] | 0.902 | 0.421 [0.363, 0.481] | 1.078 |",
+  "| val | V3 | 0.779 [0.757, 0.801] | 0.729 [0.691, 0.772] | 0.548 [0.502, 0.587] | 0.458 [0.301, 0.595] | 0.485 [0.368, 0.564] | 0.467 [0.425, 0.512] | 0.559 | 0.289 [0.262, 0.319] | 0.332 |",
+  "| test | V2 | 0.646 [0.608, 0.690] | 0.404 [0.344, 0.475] | 0.743 [0.686, 0.802] | 0.653 [0.597, 0.712] | 0.788 [0.681, 0.867] | 0.413 [0.343, 0.495] | 0.866 | 0.530 [0.452, 0.609] | 1.054 |",
+  "| test | V3 | 0.775 [0.745, 0.808] | 0.716 [0.655, 0.785] | 0.547 [0.494, 0.600] | 0.422 [0.305, 0.554] | 0.474 [0.307, 0.565] | 0.464 [0.414, 0.520] | 0.555 | 0.279 [0.258, 0.303] | 0.322 |",
+  "",
+  "## 与 V2 的差异 / 偏离",
+  "- Data: V3 = contact through external rigid plates/grippers; gravity 2 (press/tap30hold/drop) else 0; narrower log10 ranges (E/rho jelly 3.5-6, plasticine 3.5-5.5, metal 4.5-6; sigma_y/rho 3.2-4.5); per-sample censoring sigma/rho > 0.5 E/rho (any law); screened objects v3_split (57/10/10).",
+  "- Train set: 2000 V3 samples (V2: 1955); val 283 / test 300 (V2: 283 / 300).",
+  "- Standardization from V3 train: std(ln E/rho) = 0.666 decades (V2 1.068), std(ln sigma_y/rho) = 0.369 decades (V2 1.166); 1098/2000 train samples carry a sigma label (V2 1264/1955). z-units therefore differ; decade errors are the cross-dataset comparison.",
+  "- Class information is much weaker in V3: privileged GT-class mean reaches z-MAE 0.827 vs constant 0.857 (V2: 0.786 vs 0.858), because the per-law ranges overlap.",
+  "- 协议：Same V-JEPA 2 ViT-L frozen 32-step features (64 frames, tubelet 2, 3 views, 224 px), same 2-layer transformer head and hyper-parameters (configs/v2main/* with only data paths/output changed), same loss weights (smooth-l1 + 0.05 NLL + 0.1 class CE; C/D field weight 0.1, 2 field-warmup epochs, D feedback=fields), seeds 17/29/43, best-val-epoch selection (best_material.pt), early stop patience 5 / min 8 joint epochs, test evaluated once.",
+  "- 偏离：Feature cache built incrementally into one shared directory (scripts/v3p/cache_v3.py, same encoder code path as scripts/prepare_vjepa_cache.py); per-manifest index.json files point into it. No change to features.",
+  "- 偏离：IO fix during training (14:31-14:45 UTC): 8 of 9 runs were paused at an epoch boundary (control.json, built-in mechanism) and resumed from last.pt with scripts/v3p/train_job.py --preload (features read once into RAM; identical math/sampling; verified on a smoke run: val MAE identical to 1e-4). C_seed29 was not paused.",
+  "- 偏离：First-frame DINOv3 baseline uses a first-frame-only DINOv3 cache (frames 1..15 stored as a stride-0 copy of frame 0; they are masked by static_first_frame anyway), not the full 16-frame cache.",
+  "- 偏离：Within-class correlation: V2 tables use Pearson; both Pearson and Spearman are reported here.",
+  "- 偏离：C/D were trainable: V3 packs contain the same stress/flow/force_mask fields as V2 (contact channel is empty in both V2 and V3).",
+  "- 偏离：4000 样本数据扩展点未做（15:45 UTC 用户改用 V4 数据后取消）；改为训练 V3 train 0–999 作为 V4/V5 对照（见 docs/v4/PRIOR_CHECK_ZH.md）。",
+  "- 交接：docs/v3p/HANDOFF.json: main_run v3main_C_seed29 (2000-sample prior) + 9-run B/C/D ensemble (docs/v3p/ENSEMBLE_BCD9_{VAL,TEST}.json, runs/v3main_ens_bcd9_{val,test})."
+ ]
+}

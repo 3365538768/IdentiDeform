@@ -1,0 +1,304 @@
+{
+ "method": "Spring-Gaus (official code, github.com/Colmar-zlicheng/Spring-Gaus @ 62a1bb5, Apache-2.0)",
+ "protocol": {
+  "data": "Spring-Gaus mpm_synthetic (official Google Drive zip downloaded by v3f; 3 scenes extracted to data/external_datasets/v3g_springgaus_extract)",
+  "config": "official config/mpm_synthetic/<scene>.yaml + default.yaml unchanged; train.py -g <gpu> --cfg ... --eval_cam 5",
+  "views": "all 10 cameras used for training (official protocol); eval_cam 5 is one of the training cameras (render-only)",
+  "frames": "first 20 of 30 frames (N_FRAME 20, dt 0.03 s) observed; frames 20-29 (0.60-0.87 s) are future prediction",
+  "stages": "static 3DGS 30000 it -> velocity 100 it (+3000 Gaussian refine) -> dynamic spring-mass 300 it (+3000 refine first; n_step 100->150->200 at it 100/200) -> eval",
+  "metrics": "Chamfer distance (mean of the two directed mean NN L2 distances, 8192-pt subsample, scene units; also squared x1e3) between Spring-Gaus anchor-interpolated Gaussian centres and GT MPM particles. Fit = frames 0-19 at training dt; future = frames 20-29 from its 60 Hz prediction rollout linearly interpolated in time; static baseline = GT frame 0 vs GT frame k. PSNR on eval cam 5 fit renders vs GT images. Metric code is ours (scripts/v3g/sg_eval.py): the official repo writes point clouds but ships no CD/EMD script, so numbers are not directly comparable to the paper table.",
+  "params": "Spring-Gaus does not output E or nu: it learns per-anchor spring stiffness log10 k (2048 anchors, unit mass per anchor, init 3.0), friction, rebound, soft-k. Only the ranking of median log10 k vs GT E can be compared.",
+  "patches": "build-compat only: #include <cfloat> added to submodules/simple-knn/simple_knn.cu (CUDA 12.6); env torch 2.4.1+cu121, pytorch3d 0.7.8, open3d 0.17.0, pillow 9.5.0 (pillow>=10 breaks its np.byte image loader); no algorithmic change",
+  "hardware": "1x NVIDIA A800-SXM4-80GB (GPU 7), shared with other jobs at ~100% util, so wall-clock is an upper bound",
+  "restart_note": "torus was first started on GPU 0 at 01:30Z and aborted in the dynamic stage (GPU reassignment); restarted from scratch on GPU 7; the GPU-7 run is the one reported"
+ },
+ "scenes": {
+  "torus": {
+   "gt": {
+    "TYPE": "elastic",
+    "E": 1000000,
+    "NU": 0.3
+   },
+   "status": "completed",
+   "wall_clock_total_s": 18334,
+   "stage_wall_clock_s": {
+    "static_30000it": 1771,
+    "static_source_log": "sg_train_torus.log",
+    "velocity_100it": 624,
+    "velocity_source_log": "sg_train_torus.log",
+    "dynamic_300it": 15292,
+    "refines_3000it": {
+     "sg_train_torus.log": [
+      174,
+      177
+     ],
+     "sg_train_torus_gpu0_aborted.log": [
+      72,
+      77
+     ]
+    }
+   },
+   "iterations": {
+    "static": 30000,
+    "velocity": 100,
+    "velocity_refine": 3000,
+    "dynamic": 300,
+    "dynamic_refine": 3000
+   },
+   "metrics": {
+    "fit_cd_mean": 0.008430062088432024,
+    "fit_cd2_x1e3_mean": 0.12419303499750552,
+    "fit_n_frames": 20,
+    "future_cd_mean": 0.011019740046435153,
+    "future_cd2_x1e3_mean": 0.2004202726948328,
+    "future_n_frames": 10,
+    "future_cd_static_baseline_mean": 0.24365675400798686,
+    "fit_psnr_mean_eval_cam": 26.86902113455186,
+    "fit_psnr_n_images": 20
+   },
+   "learned_params": {
+    "n_anchors": 2048,
+    "log10_k_median": 3.495373249053955,
+    "log10_k_mean": 3.4557809829711914,
+    "log10_k_p10": 3.0289026498794556,
+    "log10_k_p90": 3.862188696861267,
+    "fric_k_eff": 0.04924008287190515,
+    "rebound_k_sigmoid": 0.2689414213699951,
+    "soft_vector": -0.5105008482933044
+   },
+   "our_model_v3f": {
+    "source": "docs/v3f/SPRINGGAUS_SYN.json ensemble9 (V2 main B/C/D x 3 seeds), canonical 3-view triplet t0, 30 frames; offset/ridge = leave-one-scene-out over 14 scenes; support_mean_baseline ignores the video; cost = one forward pass per run, no per-scene optimisation",
+    "K0": {
+     "E_Pa_at_rho1000": 92030.46875,
+     "nu": 0.28192296624183655,
+     "abs_log10_E_err": 1.0360683659228065,
+     "abs_nu_err": 0.01807703375816344
+    },
+    "offset": {
+     "E_Pa_at_rho1000": 616439.75,
+     "nu": 0.29236939549446106,
+     "abs_log10_E_err": 0.21010936435814392,
+     "abs_nu_err": 0.007630604505538929
+    },
+    "ridge_last_layer": {
+     "E_Pa_at_rho1000": 547106.4375,
+     "nu": 0.2885339558124542,
+     "abs_log10_E_err": 0.2619281750885899,
+     "abs_nu_err": 0.011466044187545765
+    },
+    "support_mean_baseline": {
+     "E_Pa_at_rho1000": 455453.375,
+     "nu": 0.2853846251964569,
+     "abs_log10_E_err": 0.34155607536855204,
+     "abs_nu_err": 0.01461537480354308
+    }
+   }
+  },
+  "duck": {
+   "gt": {
+    "TYPE": "elastic",
+    "E": 300000,
+    "NU": 0.3
+   },
+   "status": "completed",
+   "wall_clock_total_s": 12134,
+   "stage_wall_clock_s": {
+    "static_30000it": 2417,
+    "static_source_log": "sg_train_duck_try1_oom.log",
+    "velocity_100it": 605,
+    "velocity_source_log": "sg_train_duck_try1_oom.log",
+    "dynamic_300it": 8662,
+    "refines_3000it": {
+     "sg_train_duck.log": [
+      140
+     ],
+     "sg_train_duck_fail1.log": [
+      143
+     ],
+     "sg_train_duck_fail2.log": [
+      115
+     ],
+     "sg_train_duck_try1_oom.log": [
+      156,
+      169
+     ],
+     "sg_train_duck_try2_fail.log": [
+      135
+     ]
+    }
+   },
+   "wall_clock_successful_attempt_s": 8943,
+   "wall_clock_note": "static+velocity(+its refine) ran in an earlier attempt that later hit CUDA OOM in the dynamic stage (GPU co-located with other jobs); their checkpoints were reused, so total = successful attempt + those stage times. Failed attempts' wasted compute is excluded; see logs/sg_time_<scene>_*.txt",
+   "iterations": {
+    "static": 30000,
+    "velocity": 100,
+    "velocity_refine": 3000,
+    "dynamic": 300,
+    "dynamic_refine": 3000
+   },
+   "metrics": {
+    "fit_cd_mean": 0.014073589660500218,
+    "fit_cd2_x1e3_mean": 0.3339808811395189,
+    "fit_n_frames": 20,
+    "future_cd_mean": 0.02074476424001174,
+    "future_cd2_x1e3_mean": 0.7855708965028491,
+    "future_n_frames": 10,
+    "future_cd_static_baseline_mean": 0.029119800216099744,
+    "fit_psnr_mean_eval_cam": 20.46415959118298,
+    "fit_psnr_n_images": 20
+   },
+   "learned_params": {
+    "n_anchors": 2048,
+    "log10_k_median": 3.277707576751709,
+    "log10_k_mean": 3.2603530883789062,
+    "log10_k_p10": 2.830472493171692,
+    "log10_k_p90": 3.691026210784912,
+    "fric_k_eff": 0.28605440184250064,
+    "rebound_k_sigmoid": 0.2689414213699951,
+    "soft_vector": 0.204305961728096
+   },
+   "our_model_v3f": {
+    "source": "docs/v3f/SPRINGGAUS_SYN.json ensemble9 (V2 main B/C/D x 3 seeds), canonical 3-view triplet t0, 30 frames; offset/ridge = leave-one-scene-out over 14 scenes; support_mean_baseline ignores the video; cost = one forward pass per run, no per-scene optimisation",
+    "K0": {
+     "E_Pa_at_rho1000": 102052.1328125,
+     "nu": 0.2797461748123169,
+     "abs_log10_E_err": 0.46829916914605957,
+     "abs_nu_err": 0.020253825187683094
+    },
+    "offset": {
+     "E_Pa_at_rho1000": 743366.4375,
+     "nu": 0.2897354066371918,
+     "abs_log10_E_err": 0.3940816943758095,
+     "abs_nu_err": 0.010264593362808216
+    },
+    "ridge_last_layer": {
+     "E_Pa_at_rho1000": 469126.5625,
+     "nu": 0.2813494801521301,
+     "abs_log10_E_err": 0.1941687691901476,
+     "abs_nu_err": 0.018650519847869862
+    },
+    "support_mean_baseline": {
+     "E_Pa_at_rho1000": 499649.46875,
+     "nu": 0.2853846251964569,
+     "abs_log10_E_err": 0.2215441752658303,
+     "abs_nu_err": 0.01461537480354308
+    }
+   }
+  },
+  "apple": {
+   "gt": {
+    "TYPE": "elastic",
+    "E": 100000,
+    "NU": 0.01
+   },
+   "status": "completed",
+   "wall_clock_total_s": 8672,
+   "stage_wall_clock_s": {
+    "static_30000it": 2694,
+    "static_source_log": "sg_train_apple_try1_fail.log",
+    "velocity_100it": 487,
+    "velocity_source_log": "sg_train_apple_try1_fail.log",
+    "dynamic_300it": 5104,
+    "refines_3000it": {
+     "sg_train_apple.log": [
+      77
+     ],
+     "sg_train_apple_fail1.log": [
+      154
+     ],
+     "sg_train_apple_try1_fail.log": [
+      163,
+      221
+     ],
+     "sg_train_apple_try2_fail.log": [
+      147
+     ]
+    }
+   },
+   "wall_clock_successful_attempt_s": 5270,
+   "wall_clock_note": "static+velocity(+its refine) ran in an earlier attempt that later hit CUDA OOM in the dynamic stage (GPU co-located with other jobs); their checkpoints were reused, so total = successful attempt + those stage times. Failed attempts' wasted compute is excluded; see logs/sg_time_<scene>_*.txt",
+   "iterations": {
+    "static": 30000,
+    "velocity": 100,
+    "velocity_refine": 3000,
+    "dynamic": 300,
+    "dynamic_refine": 3000
+   },
+   "metrics": {
+    "fit_cd_mean": 0.010503739908712065,
+    "fit_cd2_x1e3_mean": 0.16597475416125176,
+    "fit_n_frames": 20,
+    "future_cd_mean": 0.02007180908538273,
+    "future_cd2_x1e3_mean": 0.8498227750411171,
+    "future_n_frames": 10,
+    "future_cd_static_baseline_mean": 0.038849997605895706,
+    "fit_psnr_mean_eval_cam": 29.495850902915425,
+    "fit_psnr_n_images": 20
+   },
+   "learned_params": {
+    "n_anchors": 2048,
+    "log10_k_median": 2.8047637939453125,
+    "log10_k_mean": 2.7786712646484375,
+    "log10_k_p10": 2.397093963623047,
+    "log10_k_p90": 3.0692524909973145,
+    "fric_k_eff": 0.3599727034486866,
+    "rebound_k_sigmoid": 0.2689414213699951,
+    "soft_vector": 0.43182578682899475
+   },
+   "our_model_v3f": {
+    "source": "docs/v3f/SPRINGGAUS_SYN.json ensemble9 (V2 main B/C/D x 3 seeds), canonical 3-view triplet t0, 30 frames; offset/ridge = leave-one-scene-out over 14 scenes; support_mean_baseline ignores the video; cost = one forward pass per run, no per-scene optimisation",
+    "K0": {
+     "E_Pa_at_rho1000": 82090.59375,
+     "nu": 0.2668592631816864,
+     "abs_log10_E_err": 0.08570660313029793,
+     "abs_nu_err": 0.2568592631816864
+    },
+    "offset": {
+     "E_Pa_at_rho1000": 637408.5,
+     "nu": 0.2980543375015259,
+     "abs_log10_E_err": 0.8044178506006611,
+     "abs_nu_err": 0.28805433750152587
+    },
+    "ridge_last_layer": {
+     "E_Pa_at_rho1000": 618523.8125,
+     "nu": 0.3121125102043152,
+     "abs_log10_E_err": 0.7913564241563712,
+     "abs_nu_err": 0.3021125102043152
+    },
+    "support_mean_baseline": {
+     "E_Pa_at_rho1000": 543708.875,
+     "nu": 0.3076923191547394,
+     "abs_log10_E_err": 0.735366422080374,
+     "abs_nu_err": 0.29769231915473937
+    }
+   }
+  }
+ },
+ "ranking_check": {
+  "scenes": [
+   "torus",
+   "duck",
+   "apple"
+  ],
+  "gt_E": [
+   1000000,
+   300000,
+   100000
+  ],
+  "springgaus_median_log10_k": [
+   3.495373249053955,
+   3.277707576751709,
+   2.8047637939453125
+  ],
+  "ours_K0_E": [
+   92030.46875,
+   102052.1328125,
+   82090.59375
+  ],
+  "note": "GT E order torus(1e6) > duck(3e5) > apple(1e5). Spring-Gaus median log10 spring k 3.50 > 3.28 > 2.80: same order (3/3 pairs) although k is not convertible to Pa. Our K0 ensemble E/rho: duck 1.02e5 > torus 9.2e4 > apple 8.2e4 (2/3 pairs; torus-vs-duck wrong), all ~5-10x low; on the full 14-scene set (docs/v3f) our K0 E Spearman is -0.21, i.e. no ranking signal there.",
+  "pairs_correct": {
+   "springgaus_k": "3/3",
+   "ours_K0": "2/3"
+  }
+ }
+}

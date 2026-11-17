@@ -1,0 +1,74 @@
+[
+ {
+  "method": "vjepa2_32f_D (reference)",
+  "standardized_mae": 0.6394853802513772,
+  "law_accuracy": 0.6878680800942285,
+  "E_over_rho_within_law_r": 0.6684777783344512,
+  "sigma_y_over_rho_within_law_r": 0.876782294717442,
+  "seeds": 3
+ },
+ {
+  "method": "vjepa2_32f_C (reference)",
+  "standardized_mae": 0.6440708240609001,
+  "law_accuracy": 0.6607773851590106,
+  "E_over_rho_within_law_r": 0.6342172708404524,
+  "sigma_y_over_rho_within_law_r": 0.8749142260373447,
+  "seeds": 3
+ },
+ {
+  "method": "vjepa2_32f_B (reference)",
+  "standardized_mae": 0.6453338530963977,
+  "law_accuracy": 0.6878680800942285,
+  "E_over_rho_within_law_r": 0.6462246373817283,
+  "sigma_y_over_rho_within_law_r": 0.8683126748457917,
+  "seeds": 3
+ },
+ {
+  "method": "dinov3_16f_B",
+  "standardized_mae": 0.6594603606573268,
+  "law_accuracy": 0.6749116607773851,
+  "E_over_rho_within_law_r": 0.5799077217738358,
+  "sigma_y_over_rho_within_law_r": 0.8962767713657862,
+  "seeds": 2
+ },
+ {
+  "method": "dinov3_16f_C",
+  "standardized_mae": 0.6615407980307149,
+  "law_accuracy": 0.6413427561837456,
+  "E_over_rho_within_law_r": 0.5716444008498623,
+  "sigma_y_over_rho_within_law_r": 0.8897904686315042,
+  "seeds": 2
+ },
+ {
+  "method": "law_mean_gt_privileged",
+  "standardized_mae": 0.7859548133654816,
+  "law_accuracy": null,
+  "E_over_rho_within_law_r": null,
+  "sigma_y_over_rho_within_law_r": null,
+  "seeds": null
+ },
+ {
+  "method": "dinov3_static_first_frame_B",
+  "standardized_mae": 0.8568534395692703,
+  "law_accuracy": 0.33451118963486454,
+  "E_over_rho_within_law_r": 0.024013868938431618,
+  "sigma_y_over_rho_within_law_r": 0.03427563206896624,
+  "seeds": 3
+ },
+ {
+  "method": "constant_train_mean",
+  "standardized_mae": 0.8575882477086423,
+  "law_accuracy": 0.3286219081272085,
+  "E_over_rho_within_law_r": null,
+  "sigma_y_over_rho_within_law_r": null,
+  "seeds": null
+ },
+ {
+  "method": "qwen3vl8b_zeroshot",
+  "standardized_mae": 1.601299463183324,
+  "law_accuracy": 0.36395759717314485,
+  "E_over_rho_within_law_r": 0.04743682246711307,
+  "sigma_y_over_rho_within_law_r": -0.17085592946253364,
+  "seeds": null
+ }
+]

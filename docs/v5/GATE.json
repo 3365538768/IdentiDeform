@@ -1,0 +1,1534 @@
+{
+ "written_utc": "2026-11-16T01:23:56Z",
+ "doc": "V5b gate report (paper-line decision): full V5b prior (train 0-1999, B/C/D x3, 9-run ensemble) on V5b val vs the\nprivileged GT-class-mean oracle and the constant (train-mean) baseline, in log10 decades; within-class Spearman;\nclass accuracy; V2 main val as reference (prior vs V2's own class-mean oracle). Scoring = scripts/v3p/report.py\n(object bootstrap 2000, seed 17). Writes docs/v5/GATE.json and docs/v5/GATE_ZH.md.\n  .venv/bin/python scripts/v5p/gate.py [--prefix v5b2k --stats data/manifests/v5bmain_t2000.specific.stats.json]\n",
+ "splits": {
+  "val": {
+   "V5b_2000": {
+    "prior_ensemble": {
+     "decade_mae_E_over_rho": {
+      "value": 0.48510744225725944,
+      "ci95": [
+       0.4159650630491978,
+       0.5490971636113375
+      ]
+     },
+     "decade_mae_sigma_y_over_rho": {
+      "value": 0.33140156459276887,
+      "ci95": [
+       0.30243929467653347,
+       0.3610695713326293
+      ]
+     },
+     "within_law_spearman_E_over_rho": {
+      "value": 0.4809114197642355,
+      "ci95": [
+       0.33757743251027905,
+       0.612988714128637
+      ]
+     },
+     "within_law_spearman_sigma_y_over_rho": {
+      "value": 0.49175431169257566,
+      "ci95": [
+       0.36934131958516786,
+       0.6100946478553841
+      ]
+     },
+     "within_law_pearson_E_over_rho": {
+      "value": 0.47371935748816335,
+      "ci95": [
+       0.3507760914725021,
+       0.5961214600753416
+      ]
+     },
+     "within_law_pearson_sigma_y_over_rho": {
+      "value": 0.5058389401550819,
+      "ci95": [
+       0.40820759375979015,
+       0.6240259541166061
+      ]
+     },
+     "law_accuracy": {
+      "value": 0.5971731448763251,
+      "ci95": [
+       0.5520743534482759,
+       0.6421052631578947
+      ]
+     },
+     "z_mae": {
+      "value": 0.7171966819061055,
+      "ci95": [
+       0.6828100157518048,
+       0.7470067117048061
+      ]
+     },
+     "ident_z_mae": {
+      "value": 0.597363924674521,
+      "ci95": [
+       0.5307957719298197,
+       0.6544905256676239
+      ]
+     }
+    },
+    "class_mean_oracle": {
+     "decade_mae_E_over_rho": {
+      "value": 0.45004408460388134,
+      "ci95": [
+       0.40600497678512015,
+       0.4937144514373585
+      ]
+     },
+     "decade_mae_sigma_y_over_rho": {
+      "value": 0.35935089886461774,
+      "ci95": [
+       0.32672736725345525,
+       0.3943264166949279
+      ]
+     },
+     "within_law_spearman_E_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "within_law_spearman_sigma_y_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "within_law_pearson_E_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "within_law_pearson_sigma_y_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "law_accuracy": {
+      "value": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "z_mae": {
+      "value": 0.7399034530462678,
+      "ci95": [
+       0.7155324448115613,
+       0.7642614670596515
+      ]
+     },
+     "ident_z_mae": {
+      "value": 0.5872043860556139,
+      "ci95": [
+       0.5490734328542569,
+       0.6274393193647442
+      ]
+     }
+    },
+    "constant": {
+     "decade_mae_E_over_rho": {
+      "value": 0.7235647811181765,
+      "ci95": [
+       0.6834870119382485,
+       0.7627231502769837
+      ]
+     },
+     "decade_mae_sigma_y_over_rho": {
+      "value": 0.46963529816433414,
+      "ci95": [
+       0.43229170824994134,
+       0.5210432898593269
+      ]
+     },
+     "within_law_spearman_E_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "within_law_spearman_sigma_y_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "within_law_pearson_E_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "within_law_pearson_sigma_y_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "law_accuracy": {
+      "value": 0.33568904593639576,
+      "ci95": [
+       0.27368332147937413,
+       0.42264532463928967
+      ]
+     },
+     "z_mae": {
+      "value": 0.8633406838014804,
+      "ci95": [
+       0.843343917156932,
+       0.8858467346218593
+      ]
+     },
+     "ident_z_mae": {
+      "value": 0.8753174047271527,
+      "ci95": [
+       0.839919847642602,
+       0.9114004243906524
+      ]
+     }
+    },
+    "groups": {
+     "B (3 seeds)": {
+      "decade_mae_E_over_rho": {
+       "value": 0.5388737541061703,
+       "ci95": [
+        0.4753473899972455,
+        0.5978953184115875
+       ]
+      },
+      "decade_mae_sigma_y_over_rho": {
+       "value": 0.35419586410965137,
+       "ci95": [
+        0.32399627729546926,
+        0.3892546589700325
+       ]
+      },
+      "within_law_spearman_E_over_rho": {
+       "value": 0.41385772845517593,
+       "ci95": [
+        0.2872740792689454,
+        0.5492021255953062
+       ]
+      },
+      "within_law_spearman_sigma_y_over_rho": {
+       "value": 0.46255946059960334,
+       "ci95": [
+        0.3294525569459583,
+        0.5890748215449989
+       ]
+      },
+      "within_law_pearson_E_over_rho": {
+       "value": 0.40933138549966386,
+       "ci95": [
+        0.30554322154704466,
+        0.5304688392543698
+       ]
+      },
+      "within_law_pearson_sigma_y_over_rho": {
+       "value": 0.46926984950259953,
+       "ci95": [
+        0.3523247493681476,
+        0.5861963340110687
+       ]
+      },
+      "law_accuracy": {
+       "value": 0.5700824499411072,
+       "ci95": [
+        0.5279621266934458,
+        0.6142922077922078
+       ]
+      },
+      "z_mae": {
+       "value": 0.7515858492539516,
+       "ci95": [
+        0.7192270020464618,
+        0.7812785666157694
+       ]
+      },
+      "ident_z_mae": {
+       "value": 0.6547087950793377,
+       "ci95": [
+        0.5938081231103011,
+        0.7091962793833764
+       ]
+      }
+     },
+     "C (3 seeds)": {
+      "decade_mae_E_over_rho": {
+       "value": 0.4951930509949816,
+       "ci95": [
+        0.4298965609671413,
+        0.5540890208649034
+       ]
+      },
+      "decade_mae_sigma_y_over_rho": {
+       "value": 0.3438028487753504,
+       "ci95": [
+        0.31272637305832574,
+        0.373976124783648
+       ]
+      },
+      "within_law_spearman_E_over_rho": {
+       "value": 0.4472685610503491,
+       "ci95": [
+        0.3171260380459646,
+        0.5629658911161679
+       ]
+      },
+      "within_law_spearman_sigma_y_over_rho": {
+       "value": 0.43605643855994486,
+       "ci95": [
+        0.3084405480980446,
+        0.5714085683766708
+       ]
+      },
+      "within_law_pearson_E_over_rho": {
+       "value": 0.4418706556300811,
+       "ci95": [
+        0.32413374607121737,
+        0.560636649823426
+       ]
+      },
+      "within_law_pearson_sigma_y_over_rho": {
+       "value": 0.4448383342101429,
+       "ci95": [
+        0.3388918798643755,
+        0.5825343311083284
+       ]
+      },
+      "law_accuracy": {
+       "value": 0.5936395759717313,
+       "ci95": [
+        0.5629336846728152,
+        0.6236993358944578
+       ]
+      },
+      "z_mae": {
+       "value": 0.732902466250254,
+       "ci95": [
+        0.6971105050555686,
+        0.7626338837228469
+       ]
+      },
+      "ident_z_mae": {
+       "value": 0.6132900824524595,
+       "ci95": [
+        0.5480705501485666,
+        0.6714296954991461
+       ]
+      }
+     },
+     "D (3 seeds)": {
+      "decade_mae_E_over_rho": {
+       "value": 0.527552580796251,
+       "ci95": [
+        0.4611752157504756,
+        0.5874885507920006
+       ]
+      },
+      "decade_mae_sigma_y_over_rho": {
+       "value": 0.34785678574315543,
+       "ci95": [
+        0.32179134499178713,
+        0.3719740808224241
+       ]
+      },
+      "within_law_spearman_E_over_rho": {
+       "value": 0.41684711368603633,
+       "ci95": [
+        0.28532444863090906,
+        0.5351976245845352
+       ]
+      },
+      "within_law_spearman_sigma_y_over_rho": {
+       "value": 0.4435227686083109,
+       "ci95": [
+        0.335638869956006,
+        0.541295910391062
+       ]
+      },
+      "within_law_pearson_E_over_rho": {
+       "value": 0.4106124527150566,
+       "ci95": [
+        0.2899149505942248,
+        0.5210480346216101
+       ]
+      },
+      "within_law_pearson_sigma_y_over_rho": {
+       "value": 0.4408211860293683,
+       "ci95": [
+        0.34584994525294027,
+        0.5432038696643631
+       ]
+      },
+      "law_accuracy": {
+       "value": 0.5877502944640755,
+       "ci95": [
+        0.5632450259702163,
+        0.6129426129426129
+       ]
+      },
+      "z_mae": {
+       "value": 0.7432739215980516,
+       "ci95": [
+        0.714849355615673,
+        0.7685610593019531
+       ]
+      },
+      "ident_z_mae": {
+       "value": 0.6416551543357524,
+       "ci95": [
+        0.5809992900676235,
+        0.6925694819838207
+       ]
+      }
+     }
+    },
+    "gain_over_constant_E_over_rho": 0.3295590734701208,
+    "oracle_gain_over_constant_E_over_rho": 0.37801825579681203,
+    "prior_minus_oracle_decades_E_over_rho": 0.03506335765337809,
+    "gain_over_constant_sigma_y_over_rho": 0.2943427253272489,
+    "oracle_gain_over_constant_sigma_y_over_rho": 0.2348298769934577,
+    "prior_minus_oracle_decades_sigma_y_over_rho": -0.02794933427184887
+   },
+   "V2_main": {
+    "prior_ensemble": {
+     "decade_mae_E_over_rho": {
+      "value": 0.3813701358282338,
+      "ci95": [
+       0.3230314837918337,
+       0.44768721200251466
+      ]
+     },
+     "decade_mae_sigma_y_over_rho": {
+      "value": 0.4210423182656892,
+      "ci95": [
+       0.3631762700945898,
+       0.481173969089513
+      ]
+     },
+     "within_law_spearman_E_over_rho": {
+      "value": 0.7135210767541048,
+      "ci95": [
+       0.6433595547343341,
+       0.7786569023239354
+      ]
+     },
+     "within_law_spearman_sigma_y_over_rho": {
+      "value": 0.8841559297993542,
+      "ci95": [
+       0.8415815900420848,
+       0.9017121871021067
+      ]
+     },
+     "within_law_pearson_E_over_rho": {
+      "value": 0.685693981149842,
+      "ci95": [
+       0.6165826772481425,
+       0.7661740115061862
+      ]
+     },
+     "within_law_pearson_sigma_y_over_rho": {
+      "value": 0.8946324071928032,
+      "ci95": [
+       0.8686353111674822,
+       0.910538395619551
+      ]
+     },
+     "law_accuracy": {
+      "value": 0.6996466431095406,
+      "ci95": [
+       0.6433811274509804,
+       0.7528980602685782
+      ]
+     },
+     "z_mae": {
+      "value": 0.616246852638067,
+      "ci95": [
+       0.5865065351242834,
+       0.6476156640080216
+      ]
+     },
+     "ident_z_mae": {
+      "value": 0.3507024887738301,
+      "ci95": [
+       0.3095169379161676,
+       0.3978153480286397
+      ]
+     }
+    },
+    "class_mean_oracle": {
+     "decade_mae_E_over_rho": {
+      "value": 0.6293528125417607,
+      "ci95": [
+       0.5695424917061405,
+       0.6833278924005879
+      ]
+     },
+     "decade_mae_sigma_y_over_rho": {
+      "value": 1.0670392856236868,
+      "ci95": [
+       0.9878154464037391,
+       1.1647386689847856
+      ]
+     },
+     "within_law_spearman_E_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "within_law_spearman_sigma_y_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "within_law_pearson_E_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "within_law_pearson_sigma_y_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "law_accuracy": {
+      "value": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "z_mae": {
+      "value": 0.7859548133654816,
+      "ci95": [
+       0.7687158583896452,
+       0.8040590295197622
+      ]
+     },
+     "ident_z_mae": {
+      "value": 0.7051002583306754,
+      "ci95": [
+       0.6873954541120085,
+       0.7255222096856478
+      ]
+     }
+    },
+    "constant": {
+     "decade_mae_E_over_rho": {
+      "value": 0.9018672145663311,
+      "ci95": [
+       0.8568434489050575,
+       0.946409255525075
+      ]
+     },
+     "decade_mae_sigma_y_over_rho": {
+      "value": 1.077553450012657,
+      "ci95": [
+       1.0021290153727593,
+       1.1738715938503155
+      ]
+     },
+     "within_law_spearman_E_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "within_law_spearman_sigma_y_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "within_law_pearson_E_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "within_law_pearson_sigma_y_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "law_accuracy": {
+      "value": 0.3286219081272085,
+      "ci95": [
+       0.25099384281057585,
+       0.4
+      ]
+     },
+     "z_mae": {
+      "value": 0.8575882477086423,
+      "ci95": [
+       0.8367371057486052,
+       0.8814373538824163
+      ]
+     },
+     "ident_z_mae": {
+      "value": 0.8645883095971174,
+      "ci95": [
+       0.8365829556752302,
+       0.8945546560951759
+      ]
+     }
+    },
+    "groups": {
+     "B (3 seeds)": {
+      "decade_mae_E_over_rho": {
+       "value": 0.43824788211716065,
+       "ci95": [
+        0.3815090130268229,
+        0.5049795884233202
+       ]
+      },
+      "decade_mae_sigma_y_over_rho": {
+       "value": 0.4757904536970643,
+       "ci95": [
+        0.4066101144920738,
+        0.5487639049050552
+       ]
+      },
+      "within_law_spearman_E_over_rho": {
+       "value": 0.6685203001181158,
+       "ci95": [
+        0.5880348732900039,
+        0.7375019946418662
+       ]
+      },
+      "within_law_spearman_sigma_y_over_rho": {
+       "value": 0.8574309775466356,
+       "ci95": [
+        0.8100791840481387,
+        0.882717913119847
+       ]
+      },
+      "within_law_pearson_E_over_rho": {
+       "value": 0.6462246373817283,
+       "ci95": [
+        0.5720801666662182,
+        0.7355134655039982
+       ]
+      },
+      "within_law_pearson_sigma_y_over_rho": {
+       "value": 0.8683126748457917,
+       "ci95": [
+        0.8411415376500404,
+        0.8919775324385865
+       ]
+      },
+      "law_accuracy": {
+       "value": 0.6878680800942285,
+       "ci95": [
+        0.6459643758493496,
+        0.7268376916621151
+       ]
+      },
+      "z_mae": {
+       "value": 0.6453338530963977,
+       "ci95": [
+        0.6168749336774786,
+        0.6759971475961197
+       ]
+      },
+      "ident_z_mae": {
+       "value": 0.40081026892389304,
+       "ci95": [
+        0.3587723812258369,
+        0.44962114220501237
+       ]
+      }
+     },
+     "C (3 seeds)": {
+      "decade_mae_E_over_rho": {
+       "value": 0.4412774702896622,
+       "ci95": [
+        0.3962342173114949,
+        0.4916381515385344
+       ]
+      },
+      "decade_mae_sigma_y_over_rho": {
+       "value": 0.4501200452691048,
+       "ci95": [
+        0.3955986668822,
+        0.508267438456917
+       ]
+      },
+      "within_law_spearman_E_over_rho": {
+       "value": 0.6403833053727588,
+       "ci95": [
+        0.5785049975072797,
+        0.694277733133764
+       ]
+      },
+      "within_law_spearman_sigma_y_over_rho": {
+       "value": 0.8617016386174786,
+       "ci95": [
+        0.8186150933619254,
+        0.8810550276973387
+       ]
+      },
+      "within_law_pearson_E_over_rho": {
+       "value": 0.6342172708404524,
+       "ci95": [
+        0.5753105035588979,
+        0.697137210532032
+       ]
+      },
+      "within_law_pearson_sigma_y_over_rho": {
+       "value": 0.8749142260373447,
+       "ci95": [
+        0.8434172981775913,
+        0.8913972588298145
+       ]
+      },
+      "law_accuracy": {
+       "value": 0.6607773851590106,
+       "ci95": [
+        0.6212108284207261,
+        0.701113213811421
+       ]
+      },
+      "z_mae": {
+       "value": 0.6440708240609001,
+       "ci95": [
+        0.6157551567190724,
+        0.6745544739182683
+       ]
+      },
+      "ident_z_mae": {
+       "value": 0.39362644655400353,
+       "ci95": [
+        0.3610366343069185,
+        0.43034263590773
+       ]
+      }
+     },
+     "D (3 seeds)": {
+      "decade_mae_E_over_rho": {
+       "value": 0.41809808460538195,
+       "ci95": [
+        0.3665491546615368,
+        0.47179868020301197
+       ]
+      },
+      "decade_mae_sigma_y_over_rho": {
+       "value": 0.4597273967861941,
+       "ci95": [
+        0.41824361127768017,
+        0.5052596056768616
+       ]
+      },
+      "within_law_spearman_E_over_rho": {
+       "value": 0.6830408566675187,
+       "ci95": [
+        0.623508259736435,
+        0.7424616200916251
+       ]
+      },
+      "within_law_spearman_sigma_y_over_rho": {
+       "value": 0.8633302278121363,
+       "ci95": [
+        0.8201929298885511,
+        0.882911471581979
+       ]
+      },
+      "within_law_pearson_E_over_rho": {
+       "value": 0.6684777783344512,
+       "ci95": [
+        0.6111565710700769,
+        0.7354377102516277
+       ]
+      },
+      "within_law_pearson_sigma_y_over_rho": {
+       "value": 0.876782294717442,
+       "ci95": [
+        0.8471984575125137,
+        0.8968741743237586
+       ]
+      },
+      "law_accuracy": {
+       "value": 0.6878680800942285,
+       "ci95": [
+        0.6463060533982373,
+        0.7228808446455505
+       ]
+      },
+      "z_mae": {
+       "value": 0.6394853802513772,
+       "ci95": [
+        0.6106063057612603,
+        0.6694610071640495
+       ]
+      },
+      "ident_z_mae": {
+       "value": 0.3842599699103566,
+       "ci95": [
+        0.3480989947851896,
+        0.4220197546008434
+       ]
+      }
+     }
+    },
+    "gain_over_constant_E_over_rho": 0.5771327201292951,
+    "oracle_gain_over_constant_E_over_rho": 0.3021668795839427,
+    "prior_minus_oracle_decades_E_over_rho": -0.24798267671352686,
+    "gain_over_constant_sigma_y_over_rho": 0.6092608508090771,
+    "oracle_gain_over_constant_sigma_y_over_rho": 0.009757441163449121,
+    "prior_minus_oracle_decades_sigma_y_over_rho": -0.6459969673579975
+   },
+   "train_std_decades": {
+    "V5b": {
+     "E_over_rho": 0.8317433513002167,
+     "sigma_y_over_rho": 0.5298022878505974
+    },
+    "V2": {
+     "E_over_rho": 1.0676212369707143,
+     "sigma_y_over_rho": 1.1657693142546453
+    }
+   }
+  },
+  "test": {
+   "V5b_2000": {
+    "prior_ensemble": {
+     "decade_mae_E_over_rho": {
+      "value": 0.44134330921818465,
+      "ci95": [
+       0.38760254512770503,
+       0.5087913794518625
+      ]
+     },
+     "decade_mae_sigma_y_over_rho": {
+      "value": 0.29608169528484723,
+      "ci95": [
+       0.25433164828812765,
+       0.34432447232894453
+      ]
+     },
+     "within_law_spearman_E_over_rho": {
+      "value": 0.49181370812985925,
+      "ci95": [
+       0.3797927109957371,
+       0.6076471966347529
+      ]
+     },
+     "within_law_spearman_sigma_y_over_rho": {
+      "value": 0.6055564285366223,
+      "ci95": [
+       0.45551663331789827,
+       0.7191319535540405
+      ]
+     },
+     "within_law_pearson_E_over_rho": {
+      "value": 0.5083986739403986,
+      "ci95": [
+       0.4125359023010092,
+       0.6249042675184534
+      ]
+     },
+     "within_law_pearson_sigma_y_over_rho": {
+      "value": 0.6143926430479685,
+      "ci95": [
+       0.5035477935254156,
+       0.7112345194956718
+      ]
+     },
+     "law_accuracy": {
+      "value": 0.5766666666666667,
+      "ci95": [
+       0.5145561719833565,
+       0.625
+      ]
+     },
+     "z_mae": {
+      "value": 0.7063342471440969,
+      "ci95": [
+       0.6796365850780592,
+       0.7437433893320364
+      ]
+     },
+     "ident_z_mae": {
+      "value": 0.5399156667954392,
+      "ci95": [
+       0.48132451416033384,
+       0.6107837909311536
+      ]
+     }
+    },
+    "class_mean_oracle": {
+     "decade_mae_E_over_rho": {
+      "value": 0.4621481057087473,
+      "ci95": [
+       0.4305697633737525,
+       0.49855145693251135
+      ]
+     },
+     "decade_mae_sigma_y_over_rho": {
+      "value": 0.3453877854703764,
+      "ci95": [
+       0.3282663465679727,
+       0.3622754368624141
+      ]
+     },
+     "within_law_spearman_E_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "within_law_spearman_sigma_y_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "within_law_pearson_E_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "within_law_pearson_sigma_y_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "law_accuracy": {
+      "value": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "z_mae": {
+      "value": 0.7478536353184594,
+      "ci95": [
+       0.7309158677897861,
+       0.7654803248635553
+      ]
+     },
+     "ident_z_mae": {
+      "value": 0.5875936769744117,
+      "ci95": [
+       0.557967160630028,
+       0.6205225823069987
+      ]
+     }
+    },
+    "constant": {
+     "decade_mae_E_over_rho": {
+      "value": 0.6978637749100721,
+      "ci95": [
+       0.6532268921068893,
+       0.7393514082525819
+      ]
+     },
+     "decade_mae_sigma_y_over_rho": {
+      "value": 0.44311154323862617,
+      "ci95": [
+       0.3968700388127463,
+       0.49284253661235955
+      ]
+     },
+     "within_law_spearman_E_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "within_law_spearman_sigma_y_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "within_law_pearson_E_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "within_law_pearson_sigma_y_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "law_accuracy": {
+      "value": 0.3333333333333333,
+      "ci95": [
+       0.26885366923301823,
+       0.39790577658390197
+      ]
+     },
+     "z_mae": {
+      "value": 0.8548141957132057,
+      "ci95": [
+       0.8207226163683259,
+       0.8885864682580229
+      ]
+     },
+     "ident_z_mae": {
+      "value": 0.8379748034353057,
+      "ci95": [
+       0.7804423729318944,
+       0.8942471067931222
+      ]
+     }
+    },
+    "groups": {
+     "B (3 seeds)": {
+      "decade_mae_E_over_rho": {
+       "value": 0.495793400685187,
+       "ci95": [
+        0.4406990242186717,
+        0.5646009314539199
+       ]
+      },
+      "decade_mae_sigma_y_over_rho": {
+       "value": 0.31956839341491855,
+       "ci95": [
+        0.28457588820208085,
+        0.3636833118144084
+       ]
+      },
+      "within_law_spearman_E_over_rho": {
+       "value": 0.4256375513131136,
+       "ci95": [
+        0.3078430011842473,
+        0.5450825649118454
+       ]
+      },
+      "within_law_spearman_sigma_y_over_rho": {
+       "value": 0.5522932293167611,
+       "ci95": [
+        0.4091125875002047,
+        0.6696320148069153
+       ]
+      },
+      "within_law_pearson_E_over_rho": {
+       "value": 0.4367053179723997,
+       "ci95": [
+        0.32768186031803503,
+        0.5541279030828017
+       ]
+      },
+      "within_law_pearson_sigma_y_over_rho": {
+       "value": 0.5672565627376972,
+       "ci95": [
+        0.43300445430766404,
+        0.6694606062375813
+       ]
+      },
+      "law_accuracy": {
+       "value": 0.548888888888889,
+       "ci95": [
+        0.5117509754738016,
+        0.5800245621951992
+       ]
+      },
+      "z_mae": {
+       "value": 0.7398279227436121,
+       "ci95": [
+        0.7134373751161759,
+        0.7749326184765245
+       ]
+      },
+      "ident_z_mae": {
+       "value": 0.5983252225526505,
+       "ci95": [
+        0.5440795358313254,
+        0.6672778896129716
+       ]
+      }
+     },
+     "C (3 seeds)": {
+      "decade_mae_E_over_rho": {
+       "value": 0.4747694502217627,
+       "ci95": [
+        0.41058558117122756,
+        0.5395183785886872
+       ]
+      },
+      "decade_mae_sigma_y_over_rho": {
+       "value": 0.32031749435842666,
+       "ci95": [
+        0.27193919434600516,
+        0.3739331471319766
+       ]
+      },
+      "within_law_spearman_E_over_rho": {
+       "value": 0.45120186216063285,
+       "ci95": [
+        0.35740018419135333,
+        0.5577748874236041
+       ]
+      },
+      "within_law_spearman_sigma_y_over_rho": {
+       "value": 0.525372265457232,
+       "ci95": [
+        0.3877280332308948,
+        0.6541257451189273
+       ]
+      },
+      "within_law_pearson_E_over_rho": {
+       "value": 0.4693287768415814,
+       "ci95": [
+        0.3830293795942189,
+        0.5784487212273686
+       ]
+      },
+      "within_law_pearson_sigma_y_over_rho": {
+       "value": 0.5370835703693934,
+       "ci95": [
+        0.4263397292647778,
+        0.6533711677576212
+       ]
+      },
+      "law_accuracy": {
+       "value": 0.5566666666666666,
+       "ci95": [
+        0.5215919833616941,
+        0.592948717948718
+       ]
+      },
+      "z_mae": {
+       "value": 0.7313610132794,
+       "ci95": [
+        0.6982126570173937,
+        0.7737560001647579
+       ]
+      },
+      "ident_z_mae": {
+       "value": 0.5819468717815147,
+       "ci95": [
+        0.5080732957157006,
+        0.6569274826243057
+       ]
+      }
+     },
+     "D (3 seeds)": {
+      "decade_mae_E_over_rho": {
+       "value": 0.4871401037536714,
+       "ci95": [
+        0.4389222551188227,
+        0.5492196106682817
+       ]
+      },
+      "decade_mae_sigma_y_over_rho": {
+       "value": 0.31932803591499676,
+       "ci95": [
+        0.2822512192656749,
+        0.36401591089788826
+       ]
+      },
+      "within_law_spearman_E_over_rho": {
+       "value": 0.436944510539969,
+       "ci95": [
+        0.35095576436223785,
+        0.530960916233398
+       ]
+      },
+      "within_law_spearman_sigma_y_over_rho": {
+       "value": 0.5509298908169794,
+       "ci95": [
+        0.4160226566807915,
+        0.6649982038738994
+       ]
+      },
+      "within_law_pearson_E_over_rho": {
+       "value": 0.44370132374096505,
+       "ci95": [
+        0.36323747388983535,
+        0.5442998787474449
+       ]
+      },
+      "within_law_pearson_sigma_y_over_rho": {
+       "value": 0.5658291131796218,
+       "ci95": [
+        0.4605301663151174,
+        0.6632925633197124
+       ]
+      },
+      "law_accuracy": {
+       "value": 0.5588888888888889,
+       "ci95": [
+        0.5027861481800354,
+        0.6107401065449011
+       ]
+      },
+      "z_mae": {
+       "value": 0.7345469844558586,
+       "ci95": [
+        0.7092933324022361,
+        0.7659759419744265
+       ]
+      },
+      "ident_z_mae": {
+       "value": 0.5912381223147666,
+       "ci95": [
+        0.5389393469209617,
+        0.656529032895523
+       ]
+      }
+     }
+    },
+    "gain_over_constant_E_over_rho": 0.36757956912857825,
+    "oracle_gain_over_constant_E_over_rho": 0.33776745215310755,
+    "prior_minus_oracle_decades_E_over_rho": -0.02080479649056266,
+    "gain_over_constant_sigma_y_over_rho": 0.33181227209556097,
+    "oracle_gain_over_constant_sigma_y_over_rho": 0.22053986013093585,
+    "prior_minus_oracle_decades_sigma_y_over_rho": -0.04930609018552917
+   },
+   "V2_main": {
+    "prior_ensemble": {
+     "decade_mae_E_over_rho": {
+      "value": 0.413424263736403,
+      "ci95": [
+       0.34292124413007335,
+       0.4946184060854456
+      ]
+     },
+     "decade_mae_sigma_y_over_rho": {
+      "value": 0.5301771510364947,
+      "ci95": [
+       0.45159603684246685,
+       0.6088727330858844
+      ]
+     },
+     "within_law_spearman_E_over_rho": {
+      "value": 0.653113311331133,
+      "ci95": [
+       0.5971455344181353,
+       0.7119681422415846
+      ]
+     },
+     "within_law_spearman_sigma_y_over_rho": {
+      "value": 0.788155146250547,
+      "ci95": [
+       0.6809479203318975,
+       0.866529927688581
+      ]
+     },
+     "within_law_pearson_E_over_rho": {
+      "value": 0.6292136249010583,
+      "ci95": [
+       0.5826034050716621,
+       0.6976363545969175
+      ]
+     },
+     "within_law_pearson_sigma_y_over_rho": {
+      "value": 0.7934126762077227,
+      "ci95": [
+       0.7026442230064835,
+       0.8641295736349877
+      ]
+     },
+     "law_accuracy": {
+      "value": 0.7433333333333333,
+      "ci95": [
+       0.6860794747323873,
+       0.8020142817875713
+      ]
+     },
+     "z_mae": {
+      "value": 0.6460587754369654,
+      "ci95": [
+       0.6079206782483056,
+       0.6902127191292192
+      ]
+     },
+     "ident_z_mae": {
+      "value": 0.40407274116142206,
+      "ci95": [
+       0.3440458942125673,
+       0.4748161571633292
+      ]
+     }
+    },
+    "class_mean_oracle": {
+     "decade_mae_E_over_rho": {
+      "value": 0.6293116508508038,
+      "ci95": [
+       0.5886174940479463,
+       0.6722107675571687
+      ]
+     },
+     "decade_mae_sigma_y_over_rho": {
+      "value": 1.0497434566682442,
+      "ci95": [
+       1.002674380219891,
+       1.0973803028452398
+      ]
+     },
+     "within_law_spearman_E_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "within_law_spearman_sigma_y_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "within_law_pearson_E_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "within_law_pearson_sigma_y_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "law_accuracy": {
+      "value": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "z_mae": {
+      "value": 0.7918817203839794,
+      "ci95": [
+       0.7721437529543095,
+       0.8136891958582462
+      ]
+     },
+     "ident_z_mae": {
+      "value": 0.6987201998256259,
+      "ci95": [
+       0.6659494106906219,
+       0.7308761049929017
+      ]
+     }
+    },
+    "constant": {
+     "decade_mae_E_over_rho": {
+      "value": 0.8656101941647095,
+      "ci95": [
+       0.8035908464535519,
+       0.9215471847025123
+      ]
+     },
+     "decade_mae_sigma_y_over_rho": {
+      "value": 1.0541655441884146,
+      "ci95": [
+       1.0036423969035495,
+       1.1055525318169497
+      ]
+     },
+     "within_law_spearman_E_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "within_law_spearman_sigma_y_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "within_law_pearson_E_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "within_law_pearson_sigma_y_over_rho": {
+      "value": null,
+      "ci95": null
+     },
+     "law_accuracy": {
+      "value": 0.3333333333333333,
+      "ci95": [
+       0.287075151940159,
+       0.3741727195043794
+      ]
+     },
+     "z_mae": {
+      "value": 0.8531698527522141,
+      "ci95": [
+       0.8222853953801817,
+       0.8826502154804333
+      ]
+     },
+     "ident_z_mae": {
+      "value": 0.8354040698335381,
+      "ci95": [
+       0.7885120562831667,
+       0.8808155108392197
+      ]
+     }
+    },
+    "groups": {
+     "B (3 seeds)": {
+      "decade_mae_E_over_rho": {
+       "value": 0.4637525338104786,
+       "ci95": [
+        0.4004914441796446,
+        0.5373456769143308
+       ]
+      },
+      "decade_mae_sigma_y_over_rho": {
+       "value": 0.5657688263884448,
+       "ci95": [
+        0.47330097550829775,
+        0.6549152689687708
+       ]
+      },
+      "within_law_spearman_E_over_rho": {
+       "value": 0.6129210682588306,
+       "ci95": [
+        0.555647668042867,
+        0.6721590916495964
+       ]
+      },
+      "within_law_spearman_sigma_y_over_rho": {
+       "value": 0.762847311460182,
+       "ci95": [
+        0.6590897135706801,
+        0.8456769599678232
+       ]
+      },
+      "within_law_pearson_E_over_rho": {
+       "value": 0.5909362310396237,
+       "ci95": [
+        0.5404473592638867,
+        0.6547385528057247
+       ]
+      },
+      "within_law_pearson_sigma_y_over_rho": {
+       "value": 0.7704297999222715,
+       "ci95": [
+        0.6853805456800924,
+        0.8497202427854135
+       ]
+      },
+      "law_accuracy": {
+       "value": 0.7311111111111112,
+       "ci95": [
+        0.6787241541353384,
+        0.7838452787258249
+       ]
+      },
+      "z_mae": {
+       "value": 0.6670882773410871,
+       "ci95": [
+        0.6276232344930133,
+        0.711746686085061
+       ]
+      },
+      "ident_z_mae": {
+       "value": 0.44436800593225906,
+       "ci95": [
+        0.38738657514891456,
+        0.5101565573117728
+       ]
+      }
+     },
+     "C (3 seeds)": {
+      "decade_mae_E_over_rho": {
+       "value": 0.46505569838145294,
+       "ci95": [
+        0.39968782095253635,
+        0.541467509733246
+       ]
+      },
+      "decade_mae_sigma_y_over_rho": {
+       "value": 0.5783398390215814,
+       "ci95": [
+        0.5085736008344668,
+        0.6503746144701786
+       ]
+      },
+      "within_law_spearman_E_over_rho": {
+       "value": 0.6247390390748707,
+       "ci95": [
+        0.5674429181555212,
+        0.6853120487982018
+       ]
+      },
+      "within_law_spearman_sigma_y_over_rho": {
+       "value": 0.7416971894002004,
+       "ci95": [
+        0.6368742690431146,
+        0.8223105798636511
+       ]
+      },
+      "within_law_pearson_E_over_rho": {
+       "value": 0.607699057917241,
+       "ci95": [
+        0.5625326890750082,
+        0.6706403025536829
+       ]
+      },
+      "within_law_pearson_sigma_y_over_rho": {
+       "value": 0.7537636930223052,
+       "ci95": [
+        0.6580280221499881,
+        0.8346351526141476
+       ]
+      },
+      "law_accuracy": {
+       "value": 0.7177777777777777,
+       "ci95": [
+        0.6655655369538588,
+        0.7725803620681009
+       ]
+      },
+      "z_mae": {
+       "value": 0.6759782702168682,
+       "ci95": [
+        0.6393181882081657,
+        0.7167804672106037
+       ]
+      },
+      "ident_z_mae": {
+       "value": 0.44926292180125255,
+       "ci95": [
+        0.3938925067591565,
+        0.5140937878688259
+       ]
+      }
+     },
+     "D (3 seeds)": {
+      "decade_mae_E_over_rho": {
+       "value": 0.44973363838155955,
+       "ci95": [
+        0.37965820800108846,
+        0.5271364347280872
+       ]
+      },
+      "decade_mae_sigma_y_over_rho": {
+       "value": 0.5613287702416386,
+       "ci95": [
+        0.48985093350277376,
+        0.6402550273945061
+       ]
+      },
+      "within_law_spearman_E_over_rho": {
+       "value": 0.6337424013875061,
+       "ci95": [
+        0.5831266695613646,
+        0.6854734473470112
+       ]
+      },
+      "within_law_spearman_sigma_y_over_rho": {
+       "value": 0.7617677493111694,
+       "ci95": [
+        0.6473412060165238,
+        0.843261291907799
+       ]
+      },
+      "within_law_pearson_E_over_rho": {
+       "value": 0.6113198224768327,
+       "ci95": [
+        0.5697229257004564,
+        0.6734702329936035
+       ]
+      },
+      "within_law_pearson_sigma_y_over_rho": {
+       "value": 0.7711105264333263,
+       "ci95": [
+        0.6737239098914268,
+        0.8481170814383524
+       ]
+      },
+      "law_accuracy": {
+       "value": 0.7511111111111112,
+       "ci95": [
+        0.7011343508573582,
+        0.8082303051283318
+       ]
+      },
+      "z_mae": {
+       "value": 0.6673247304538473,
+       "ci95": [
+        0.6291639479088674,
+        0.7116847096048877
+       ]
+      },
+      "ident_z_mae": {
+       "value": 0.43489831864171696,
+       "ci95": [
+        0.3751616879538325,
+        0.5037296945874878
+       ]
+      }
+     }
+    },
+    "gain_over_constant_E_over_rho": 0.522389793323372,
+    "oracle_gain_over_constant_E_over_rho": 0.27298493583699934,
+    "prior_minus_oracle_decades_E_over_rho": -0.21588738711440075,
+    "gain_over_constant_sigma_y_over_rho": 0.49706461764061005,
+    "oracle_gain_over_constant_sigma_y_over_rho": 0.004194870098486181,
+    "prior_minus_oracle_decades_sigma_y_over_rho": -0.5195663056317495
+   },
+   "train_std_decades": {
+    "V5b": {
+     "E_over_rho": 0.8317433513002167,
+     "sigma_y_over_rho": 0.5298022878505974
+    },
+    "V2": {
+     "E_over_rho": 1.0676212369707143,
+     "sigma_y_over_rho": 1.1657693142546453
+    }
+   }
+  }
+ }
+}

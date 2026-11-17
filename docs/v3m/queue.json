@@ -1,0 +1,230 @@
+{
+ "phase": "v3m",
+ "max_per_gpu": 1,
+ "jobs": [
+  {
+   "id": "v3m_site_000005_lawmean_gt",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 6000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_params.py --index 5 --tag lawmean_gt"
+  },
+  {
+   "id": "v3m_site_000005_prior",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 6000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_params.py --index 5 --tag prior"
+  },
+  {
+   "id": "v3m_site_000005_refined",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 6000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_params.py --index 5 --tag refined"
+  },
+  {
+   "id": "v3m_site_000210_lawmean_gt",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 6000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_params.py --index 210 --tag lawmean_gt"
+  },
+  {
+   "id": "v3m_site_000210_prior",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 6000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_params.py --index 210 --tag prior"
+  },
+  {
+   "id": "v3m_site_000210_refined",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 6000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_params.py --index 210 --tag refined"
+  },
+  {
+   "id": "v3m_grasp_gs_000071_0.32",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 8000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_grasp.py --index 71 --d 0.32"
+  },
+  {
+   "id": "v3m_grasp_gs_000071_0.24",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 8000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_grasp.py --index 71 --d 0.24"
+  },
+  {
+   "id": "v3m_grasp_gs_000181_0.24",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 8000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_grasp.py --index 181 --d 0.24"
+  },
+  {
+   "id": "v3m_grasp_gs_000181_0.14",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 8000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_grasp.py --index 181 --d 0.14"
+  },
+  {
+   "id": "v3m_grasp_gs_000182_0.32",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 8000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_grasp.py --index 182 --d 0.32"
+  },
+  {
+   "id": "v3m_grasp_gs_000182_0.10",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 8000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_grasp.py --index 182 --d 0.1"
+  },
+  {
+   "id": "v3m_site_000005_prior4",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 6000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_params.py --index 5 --tag prior4"
+  },
+  {
+   "id": "v3m_site_000005_best3_24",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 6000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_params.py --index 5 --tag best3_24"
+  },
+  {
+   "id": "v3m_site_000005_pixie",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 6000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_params.py --index 5 --tag pixie"
+  },
+  {
+   "id": "v3m_site_000210_prior4",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 6000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_params.py --index 210 --tag prior4"
+  },
+  {
+   "id": "v3m_site_000210_best3_24",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 6000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_params.py --index 210 --tag best3_24"
+  },
+  {
+   "id": "v3m_site_000210_pixie",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 6000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_params.py --index 210 --tag pixie"
+  },
+  {
+   "id": "v3m_site_000159_prior",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 6000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_params.py --index 159 --tag prior"
+  },
+  {
+   "id": "v3m_site_000159_best3_24",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 6000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_params.py --index 159 --tag best3_24"
+  },
+  {
+   "id": "v3m_site_000159_pixie",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 6000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_params.py --index 159 --tag pixie"
+  },
+  {
+   "id": "v3m_site_000219_prior",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 6000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_params.py --index 219 --tag prior"
+  },
+  {
+   "id": "v3m_site_000219_best3_24",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 6000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_params.py --index 219 --tag best3_24"
+  },
+  {
+   "id": "v3m_site_000219_pixie",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 6000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_params.py --index 219 --tag pixie"
+  },
+  {
+   "id": "v3m_site_000106_prior",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 6000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_params.py --index 106 --tag prior"
+  },
+  {
+   "id": "v3m_site_000106_prior4",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 6000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_params.py --index 106 --tag prior4"
+  },
+  {
+   "id": "v3m_site_000106_best3_24",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 6000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_params.py --index 106 --tag best3_24"
+  },
+  {
+   "id": "v3m_site_000106_pixie",
+   "kind": "cmd",
+   "group": "v3m-site",
+   "mem_mib": 6000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3m/render_params.py --index 106 --tag pixie"
+  }
+ ]
+}

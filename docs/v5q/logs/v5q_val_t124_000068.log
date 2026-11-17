@@ -1,0 +1,6 @@
+
+== 2026-11-16 02:53:23 host a4 gpu 3 attempt 1
+eval {'n': 1, 'law': 'plasticine', 'x': [4.23144, 2.997798], 'nu': 0.26957480607693346, 'cache': '15a6025a3dfca7bc', 'simulated_by': 'prior_top1', 'iou': 0.7722206681596259, 'iou_last': 0.7169289531793529, 'rgb_mae_union': 32.956049380930075, 'loss': 0.3570187411773548, 'seconds': 677.6847817897797}
+eval {'n': 2, 'law': 'plasticine', 'x': [4.5, 2.997798], 'nu': 0.26957480607693346, 'cache': 'c0b9f499d76eab89', 'simulated_by': 'prior_top1', 'iou': 0.7567544226780775, 'iou_last': 0.700218004458247, 'rgb_mae_union': 34.015217189497214, 'loss': 0.3766385859081861, 'seconds': 689.7999613285065}
+eval {'n': 3, 'law': 'plasticine', 'x': [3.73144, 2.997798], 'nu': 0.26957480607693346, 'cache': '6b0def289ba688ef', 'simulated_by': 'prior_top1', 'iou': 0.8210525726471319, 'iou_last': 0.7702919765218373, 'rgb_mae_union': 27.346089013196178, 'loss': 0.28618699211050014, 'seconds': 677.9411952495575}
+eval {'n': 4, 'law': 'plasticine', 'x': [3.23144, 2.997798], 'nu': 0.26957480607693346, 'cache': 'e9df5fac1cb779cc', 'simulated_by': 'prior_top1', 'iou': 0.7654817344794488, 'iou_last': 0.687881881792688, 'rgb_mae_union': 30.601130965506673, 'loss': 0.35452270067940095, 'seconds': 687.5091831684113}

@@ -1,0 +1,20 @@
+quick failure /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/v3e/runs/000139/cache/b658847dd21a/0.000 0
+quick failure /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/v3e/runs/000139/cache/b658847dd21a/0.000 1
+quick failure /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/v3e/runs/000139/cache/b658847dd21a/0.000 2
+quick failure /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/v3e/runs/000139/cache/b658847dd21a/0.000 3
+quick failure /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/v3e/runs/000139/cache/b658847dd21a/0.000 4
+quick failure /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/v3e/runs/000139/cache/b658847dd21a/0.000 5
+simulation failed /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/v3e/runs/000139/cache/b658847dd21a/0.000 1
+sim 139 ensemble_prior 0.0 False 134
+sim 139 ensemble_prior 0.06 True 289
+simulation failed /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/v3e/runs/000139/cache/b658847dd21a/0.100 1
+sim 139 ensemble_prior 0.1 False 110
+simulation failed /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/v3e/runs/000139/cache/b658847dd21a/0.140 1
+sim 139 ensemble_prior 0.14 False 181
+simulation failed /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/v3e/runs/000139/cache/b658847dd21a/0.180 1
+sim 139 ensemble_prior 0.18 False 180
+simulation failed /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/v3e/runs/000139/cache/b658847dd21a/0.240 1
+sim 139 ensemble_prior 0.24 False 135
+simulation failed /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/v3e/runs/000139/cache/b658847dd21a/0.320 1
+sim 139 ensemble_prior 0.32 False 154
+done 139 ensemble_prior

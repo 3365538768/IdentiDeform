@@ -1,0 +1,28 @@
+{
+  "material": "metal",
+  "sweep": "E",
+  "specific_values": [
+    10000000.0
+  ],
+  "density": 5000.0,
+  "px_per_unit_assumed": 240.0,
+  "frame_dt": 0.016666666666666666,
+  "substep_dt": 2.5e-05,
+  "actions": {
+    "press": [
+      {
+        "value": 10000000.0,
+        "dominant_height_hz": 0.3314917127071823,
+        "height_change_px": 75.56722354888916
+      }
+    ],
+    "drop": [
+      {
+        "value": 10000000.0,
+        "dominant_height_hz": 0.6593406593406593,
+        "height_change_px": 13.835224914550786
+      }
+    ]
+  },
+  "status": "complete"
+}

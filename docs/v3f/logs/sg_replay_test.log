@@ -1,0 +1,32 @@
+2026-11-14T01:17:51+00:00 START scripts/v3f/replay_env.sh scripts/v3f/springgaus_replay.py data/external_datasets/springgaus_gdrive/real_capture.zip data/prepared/v3f_springgaus_real_vjl docs/v3f/SPRINGGAUS_REAL_PRED.json data/v3f_tmp/replay_test --objs bun
+Warp 1.11.1 initialized:
+   CUDA Toolkit 12.9, Driver 12.6
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA A800-SXM4-80GB" (79 GiB, sm_80, mempool enabled)
+   Kernel cache:
+     /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.cache/warp
+Warp DeprecationWarning: The namespace `warp.torch` will soon be removed from the public API. It can still be accessed from `warp._src.torch` but might be changed or removed without notice.
+Warp DeprecationWarning: The symbol `warp.types.float32` will soon be removed from the public API. Use `warp.float32` instead.
+Module warp_utils 5598e36 load on device 'cuda:0' took 0.84 ms  (cached)
+Particles initialized from torch data.
+Total particles:  16233
+Module mpm_utils 8c60f93 load on device 'cuda:0' took 1.58 ms  (cached)
+Module mpm_solver_warp 3dca6b4 load on device 'cuda:0' took 1123.10 ms  (compiled)
+bun predicted 4.27 {'centroid_err_cm_mean': 2.684, 'post_hit_up_rmse_cm': 4.776, 'mask_iou_mean': 0.546} 0.6815325003024867
+Particles initialized from torch data.
+Total particles:  16233
+bun grid_3.0 3.0 {'centroid_err_cm_mean': 4.213, 'post_hit_up_rmse_cm': 6.729, 'mask_iou_mean': 0.377} 0.11889228790602506
+Particles initialized from torch data.
+Total particles:  16233
+bun grid_3.5 3.5 {'centroid_err_cm_mean': 3.602, 'post_hit_up_rmse_cm': 5.572, 'mask_iou_mean': 0.404} 0.200614630477178
+Particles initialized from torch data.
+Total particles:  16233
+bun grid_4.0 4.0 {'centroid_err_cm_mean': 1.423, 'post_hit_up_rmse_cm': 1.785, 'mask_iou_mean': 0.645} 0.49461167793633887
+Particles initialized from torch data.
+Total particles:  16233
+bun grid_4.5 4.5 {'centroid_err_cm_mean': 3.742, 'post_hit_up_rmse_cm': 6.72, 'mask_iou_mean': 0.502} 0.7311912523692383
+Particles initialized from torch data.
+Total particles:  16233
+bun grid_5.0 5.0 {'centroid_err_cm_mean': 5.928, 'post_hit_up_rmse_cm': 10.103, 'mask_iou_mean': 0.42} 0.83613058275278
+2026-11-14T01:24:05+00:00 END rc=143

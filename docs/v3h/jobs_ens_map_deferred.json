@@ -1,0 +1,122 @@
+[
+ {
+  "id": "v3h_ens_map_000021",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 21 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000052",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 52 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000053",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 53 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000071",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 71 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000073",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 73 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000096",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 96 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000113",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 113 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000118",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 118 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000119",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 119 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000134",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 134 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000139",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 139 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000141",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 141 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000180",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 180 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000181",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 181 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000182",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 182 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000184",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 184 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000202",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 202 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000210",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 210 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000212",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 212 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000219",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 219 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000228",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 228 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000231",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 231 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000241",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 241 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000248",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 248 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000272",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 272 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000276",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 276 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000283",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 283 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000293",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 293 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000295",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 295 --arm ens_map --budget 12"
+ },
+ {
+  "id": "v3h_ens_map_000297",
+  "cmd": ".venv/bin/python scripts/v3h/c1h_refine.py --index 297 --arm ens_map --budget 12"
+ }
+]

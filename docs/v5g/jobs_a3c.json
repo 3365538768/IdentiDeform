@@ -1,0 +1,446 @@
+[
+ {
+  "id": "v5g_prior_vt_000210_centre_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method prior_vt --cands centre:0.03 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000210_centre_0.06",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method prior_vt --cands centre:0.06 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000210_centre_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method prior_vt --cands centre:0.10 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000210_centre_0.16",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method prior_vt --cands centre:0.16 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000210_centre_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method prior_vt --cands centre:0.25 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000210_centre_0.40",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method prior_vt --cands centre:0.40 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000210_end_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method prior_vt --cands end:0.03 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000210_end_0.06",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method prior_vt --cands end:0.06 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000210_end_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method prior_vt --cands end:0.10 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000210_end_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method prior_vt --cands end:0.25 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000210_end_0.40",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method prior_vt --cands end:0.40 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000210_none_0",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method prior_vt --cands none:0 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000210_centre_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method prior_vision --cands centre:0.03 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000210_centre_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method prior_vision --cands centre:0.10 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000210_centre_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method prior_vision --cands centre:0.25 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000210_centre_0.40",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method prior_vision --cands centre:0.40 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000210_end_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method prior_vision --cands end:0.03 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000210_end_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method prior_vision --cands end:0.10 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000210_end_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method prior_vision --cands end:0.25 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000210_end_0.40",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method prior_vision --cands end:0.40 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000210_none_0",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method prior_vision --cands none:0 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000210_centre_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method lawmean_pred --cands centre:0.03 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000210_centre_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method lawmean_pred --cands centre:0.10 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000210_centre_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method lawmean_pred --cands centre:0.25 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000210_centre_0.40",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method lawmean_pred --cands centre:0.40 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000210_end_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method lawmean_pred --cands end:0.03 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000210_end_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method lawmean_pred --cands end:0.10 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000210_end_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method lawmean_pred --cands end:0.25 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000210_end_0.40",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method lawmean_pred --cands end:0.40 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000210_none_0",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 210 --method lawmean_pred --cands none:0 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000226_centre_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method prior_vt --cands centre:0.03 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000226_centre_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method prior_vt --cands centre:0.10 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000226_centre_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method prior_vt --cands centre:0.25 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000226_centre_0.40",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method prior_vt --cands centre:0.40 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000226_end_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method prior_vt --cands end:0.03 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000226_end_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method prior_vt --cands end:0.10 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000226_end_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method prior_vt --cands end:0.25 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000226_end_0.40",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method prior_vt --cands end:0.40 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000226_none_0",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method prior_vt --cands none:0 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000226_centre_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method prior_vision --cands centre:0.03 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000226_centre_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method prior_vision --cands centre:0.10 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000226_centre_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method prior_vision --cands centre:0.25 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000226_centre_0.40",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method prior_vision --cands centre:0.40 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000226_end_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method prior_vision --cands end:0.03 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000226_end_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method prior_vision --cands end:0.10 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000226_end_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method prior_vision --cands end:0.25 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000226_end_0.40",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method prior_vision --cands end:0.40 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000226_none_0",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method prior_vision --cands none:0 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000226_centre_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method lawmean_pred --cands centre:0.03 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000226_centre_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method lawmean_pred --cands centre:0.10 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000226_centre_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method lawmean_pred --cands centre:0.25 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000226_centre_0.40",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method lawmean_pred --cands centre:0.40 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000226_end_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method lawmean_pred --cands end:0.03 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000226_end_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method lawmean_pred --cands end:0.10 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000226_end_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method lawmean_pred --cands end:0.25 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000226_end_0.40",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method lawmean_pred --cands end:0.40 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000226_none_0",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 226 --method lawmean_pred --cands none:0 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000253_centre_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method prior_vt --cands centre:0.03 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000253_centre_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method prior_vt --cands centre:0.10 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000253_centre_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method prior_vt --cands centre:0.25 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000253_centre_0.40",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method prior_vt --cands centre:0.40 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000253_end_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method prior_vt --cands end:0.03 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000253_end_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method prior_vt --cands end:0.10 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000253_end_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method prior_vt --cands end:0.25 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000253_end_0.40",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method prior_vt --cands end:0.40 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000253_none_0",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method prior_vt --cands none:0 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000253_centre_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method prior_vision --cands centre:0.03 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000253_centre_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method prior_vision --cands centre:0.10 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000253_centre_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method prior_vision --cands centre:0.25 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000253_centre_0.40",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method prior_vision --cands centre:0.40 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000253_end_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method prior_vision --cands end:0.03 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000253_end_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method prior_vision --cands end:0.10 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000253_end_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method prior_vision --cands end:0.25 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000253_end_0.40",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method prior_vision --cands end:0.40 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000253_none_0",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method prior_vision --cands none:0 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000253_centre_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method lawmean_pred --cands centre:0.03 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000253_centre_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method lawmean_pred --cands centre:0.10 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000253_centre_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method lawmean_pred --cands centre:0.25 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000253_centre_0.40",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method lawmean_pred --cands centre:0.40 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000253_end_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method lawmean_pred --cands end:0.03 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000253_end_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method lawmean_pred --cands end:0.10 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000253_end_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method lawmean_pred --cands end:0.25 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000253_end_0.40",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method lawmean_pred --cands end:0.40 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000253_none_0",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 253 --method lawmean_pred --cands none:0 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000261_centre_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method prior_vt --cands centre:0.03 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000261_centre_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method prior_vt --cands centre:0.10 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000261_centre_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method prior_vt --cands centre:0.25 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000261_centre_0.40",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method prior_vt --cands centre:0.40 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000261_end_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method prior_vt --cands end:0.03 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000261_end_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method prior_vt --cands end:0.10 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000261_end_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method prior_vt --cands end:0.25 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000261_end_0.40",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method prior_vt --cands end:0.40 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vt_000261_none_0",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method prior_vt --cands none:0 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000261_centre_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method prior_vision --cands centre:0.03 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000261_centre_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method prior_vision --cands centre:0.10 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000261_centre_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method prior_vision --cands centre:0.25 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000261_centre_0.40",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method prior_vision --cands centre:0.40 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000261_end_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method prior_vision --cands end:0.03 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000261_end_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method prior_vision --cands end:0.10 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000261_end_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method prior_vision --cands end:0.25 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000261_end_0.40",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method prior_vision --cands end:0.40 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_prior_vision_000261_none_0",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method prior_vision --cands none:0 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000261_centre_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method lawmean_pred --cands centre:0.03 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000261_centre_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method lawmean_pred --cands centre:0.10 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000261_centre_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method lawmean_pred --cands centre:0.25 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000261_centre_0.40",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method lawmean_pred --cands centre:0.40 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000261_end_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method lawmean_pred --cands end:0.03 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000261_end_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method lawmean_pred --cands end:0.10 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000261_end_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method lawmean_pred --cands end:0.25 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000261_end_0.40",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method lawmean_pred --cands end:0.40 --out data/v5g/runs"
+ },
+ {
+  "id": "v5g_lawmean_pred_000261_none_0",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,end:0.40,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25,centre:0.40 && .venv/bin/python scripts/v5g/grasp_run.py --index 261 --method lawmean_pred --cands none:0 --out data/v5g/runs"
+ }
+]

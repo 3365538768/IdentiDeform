@@ -1,0 +1,216 @@
+{
+  "scope": "Original DeformFieldBench Warp-MPM on a 0.5-unit cube (not GS assets); trajectories of all particles at frame_dt; relative_rms normalised by the reference motion RMS.",
+  "frame_dt": 0.03333333333333333,
+  "substep_dt": 0.0001,
+  "results": [
+    {
+      "material": "jelly",
+      "action": "press",
+      "case": "reference",
+      "overrides": {},
+      "relative_rms": 0.0,
+      "relative_rms_deformation": 0.0,
+      "rms_grid_units": 0.0,
+      "reference_motion_rms": 0.06776822517814625,
+      "reference_deformation_rms": 0.03184564747068425
+    },
+    {
+      "material": "jelly",
+      "action": "press",
+      "case": "E_x4",
+      "overrides": {
+        "E": 40000.0
+      },
+      "relative_rms": 0.47279541382444645,
+      "relative_rms_deformation": 0.2528146974859392,
+      "rms_grid_units": 0.032040506067249924,
+      "reference_motion_rms": 0.06776822517814625,
+      "reference_deformation_rms": 0.03184564747068425
+    },
+    {
+      "material": "jelly",
+      "action": "press",
+      "case": "rho_x4",
+      "overrides": {
+        "density": 4000.0
+      },
+      "relative_rms": 0.3947919896045559,
+      "relative_rms_deformation": 0.3656481938385589,
+      "rms_grid_units": 0.026754352450049916,
+      "reference_motion_rms": 0.06776822517814625,
+      "reference_deformation_rms": 0.03184564747068425
+    },
+    {
+      "material": "jelly",
+      "action": "press",
+      "case": "E_rho_sigma_x4",
+      "overrides": {
+        "E": 40000.0,
+        "density": 4000.0
+      },
+      "relative_rms": 1.2038541433337551e-06,
+      "relative_rms_deformation": 2.5608821063142026e-06,
+      "rms_grid_units": 8.158305866708627e-08,
+      "reference_motion_rms": 0.06776822517814625,
+      "reference_deformation_rms": 0.03184564747068425
+    },
+    {
+      "material": "jelly",
+      "action": "press",
+      "case": "E_x0.25",
+      "overrides": {
+        "E": 2500.0
+      },
+      "relative_rms": 0.3947919829019166,
+      "relative_rms_deformation": 0.3656481958303648,
+      "rms_grid_units": 0.026754351995823943,
+      "reference_motion_rms": 0.06776822517814625,
+      "reference_deformation_rms": 0.03184564747068425
+    },
+    {
+      "material": "jelly",
+      "action": "press",
+      "case": "rho_x0.25",
+      "overrides": {
+        "density": 250.0
+      },
+      "relative_rms": 0.4727960560788219,
+      "relative_rms_deformation": 0.25281421259004927,
+      "rms_grid_units": 0.03204054959168906,
+      "reference_motion_rms": 0.06776822517814625,
+      "reference_deformation_rms": 0.03184564747068425
+    },
+    {
+      "material": "jelly",
+      "action": "press",
+      "case": "E_rho_sigma_x0.25",
+      "overrides": {
+        "E": 2500.0,
+        "density": 250.0
+      },
+      "relative_rms": 1.3362735734024882e-06,
+      "relative_rms_deformation": 2.8368574069200774e-06,
+      "rms_grid_units": 9.055688842194595e-08,
+      "reference_motion_rms": 0.06776822517814625,
+      "reference_deformation_rms": 0.03184564747068425
+    },
+    {
+      "material": "jelly",
+      "action": "press",
+      "case": "nu_0.4",
+      "overrides": {
+        "nu": 0.4
+      },
+      "relative_rms": 0.178656023261848,
+      "relative_rms_deformation": 0.3720805708135045,
+      "rms_grid_units": 0.012107201613841049,
+      "reference_motion_rms": 0.06776822517814625,
+      "reference_deformation_rms": 0.03184564747068425
+    },
+    {
+      "material": "jelly",
+      "action": "drop",
+      "case": "reference",
+      "overrides": {},
+      "relative_rms": 0.0,
+      "relative_rms_deformation": 0.0,
+      "rms_grid_units": 0.0,
+      "reference_motion_rms": 0.17283646836615701,
+      "reference_deformation_rms": 0.0182281591617645
+    },
+    {
+      "material": "jelly",
+      "action": "drop",
+      "case": "E_x4",
+      "overrides": {
+        "E": 40000.0
+      },
+      "relative_rms": 0.18669794884111413,
+      "relative_rms_deformation": 0.7395252524626568,
+      "rms_grid_units": 0.03226821412890363,
+      "reference_motion_rms": 0.17283646836615701,
+      "reference_deformation_rms": 0.0182281591617645
+    },
+    {
+      "material": "jelly",
+      "action": "drop",
+      "case": "rho_x4",
+      "overrides": {
+        "density": 4000.0
+      },
+      "relative_rms": 0.3472100808343727,
+      "relative_rms_deformation": 1.5027225098924264,
+      "rms_grid_units": 0.06001056415254088,
+      "reference_motion_rms": 0.17283646836615701,
+      "reference_deformation_rms": 0.0182281591617645
+    },
+    {
+      "material": "jelly",
+      "action": "drop",
+      "case": "E_rho_sigma_x4",
+      "overrides": {
+        "E": 40000.0,
+        "density": 4000.0
+      },
+      "relative_rms": 0.007784034867000169,
+      "relative_rms_deformation": 0.015384844951547181,
+      "rms_grid_units": 0.001345365096051338,
+      "reference_motion_rms": 0.17283646836615701,
+      "reference_deformation_rms": 0.0182281591617645
+    },
+    {
+      "material": "jelly",
+      "action": "drop",
+      "case": "E_x0.25",
+      "overrides": {
+        "E": 2500.0
+      },
+      "relative_rms": 0.34618109581853096,
+      "relative_rms_deformation": 1.4989362017834398,
+      "rms_grid_units": 0.059832718016401096,
+      "reference_motion_rms": 0.17283646836615701,
+      "reference_deformation_rms": 0.0182281591617645
+    },
+    {
+      "material": "jelly",
+      "action": "drop",
+      "case": "rho_x0.25",
+      "overrides": {
+        "density": 250.0
+      },
+      "relative_rms": 0.18827378608078724,
+      "relative_rms_deformation": 0.7355653049569436,
+      "rms_grid_units": 0.03254057627212859,
+      "reference_motion_rms": 0.17283646836615701,
+      "reference_deformation_rms": 0.0182281591617645
+    },
+    {
+      "material": "jelly",
+      "action": "drop",
+      "case": "E_rho_sigma_x0.25",
+      "overrides": {
+        "E": 2500.0,
+        "density": 250.0
+      },
+      "relative_rms": 0.03201683578498999,
+      "relative_rms_deformation": 0.060724715442341114,
+      "rms_grid_units": 0.005533676825336867,
+      "reference_motion_rms": 0.17283646836615701,
+      "reference_deformation_rms": 0.0182281591617645
+    },
+    {
+      "material": "jelly",
+      "action": "drop",
+      "case": "nu_0.4",
+      "overrides": {
+        "nu": 0.4
+      },
+      "relative_rms": 0.035495302548689905,
+      "relative_rms_deformation": 0.17267430644172532,
+      "rms_grid_units": 0.006134882736103815,
+      "reference_motion_rms": 0.17283646836615701,
+      "reference_deformation_rms": 0.0182281591617645
+    }
+  ],
+  "status": "complete"
+}

@@ -1,0 +1,127 @@
+V3G_START 1794647306 2026-11-14T09:08:26Z host=di-20261103141208-krk4l gpu=7 NVIDIA A800-SXM4-80GB
+1794647307 [Taichi] version 1.2.0, llvm 10.0.0, commit f189fd79, linux, python 3.10.22
+1794647308 /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.engine-envs/pacnerf/lib/python3.10/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+1794647308 If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+1794647308   warnings.warn(
+1794647308 /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.engine-envs/pacnerf/lib/python3.10/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+1794647308 If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+1794647308   warnings.warn(
+1794647308 /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.engine-envs/pacnerf/lib/python3.10/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+1794647308   warnings.warn(
+1794647309 /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/external/pacnerf/train.py:23: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+1794647309   checkpoint = torch.load(os.path.join(data_folder, "data.pt"))
+1794647310 /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/external/pacnerf/train.py:133: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+1794647310   checkpoint = torch.load(os.path.join(base_dir, f"model/train_{stage}.pt"))
+1794647310 ======= static Train from epoch 6001 =======
+1794647310 dvgo: set density bias shift to tensor([-9.2102])
+1794647310 dvgo: feature voxel grid torch.Size([1, 12, 49, 57, 49])
+1794647310 dvgo: mlp Sequential(
+1794647310   (0): Linear(in_features=39, out_features=128, bias=True)
+1794647310   (1): ReLU(inplace=True)
+1794647310   (2): Sequential(
+1794647310     (0): Linear(in_features=128, out_features=128, bias=True)
+1794647310     (1): ReLU(inplace=True)
+1794647310   )
+1794647310   (3): Linear(in_features=128, out_features=3, bias=True)
+1794647310 )
+1794647310 [Taichi] Starting on arch=cuda
+1794647313 cuda_chunk_size:  100
+1794647313 0it [00:00, ?it/s]
+1794647313 0it [00:00, ?it/s]
+1794647313 ======= velocity Train from epoch 6 =======
+1794647314 ======= dynamic Train from Scratch =======
+1794647314 /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.engine-envs/pacnerf/lib/python3.10/site-packages/torch/functional.py:513: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3609.)
+1794647314   return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+1794647314 velocity: [-0.1999898999929428, -0.5000101327896118, -0.1988045573234558]; rho: 1000.0; E: 100000.0; nu: 0.10000000894069672
+1794647331   0%|          | 0/8 [00:00<?, ?it/s]
+1794647335 [Forward]:   0%|          | 0/8 [00:00<?, ?it/s]
+1794647335 [Forward] loss: 3.399676279514097e-05:   0%|          | 0/8 [00:03<?, ?it/s]
+1794647352 [Forward] loss: 3.399676279514097e-05:  12%|█▎        | 1/8 [00:03<00:26,  3.72s/it]
+1794647352 [Forward] loss: 7.401675247820094e-05:  12%|█▎        | 1/8 [00:20<00:26,  3.72s/it]
+1794647355 [Forward] loss: 7.401675247820094e-05:  25%|██▌       | 2/8 [00:20<01:07, 11.31s/it]
+1794647355 [Forward] loss: 0.0001533778995508328:  25%|██▌       | 2/8 [00:23<01:07, 11.31s/it]
+1794647358 [Forward] loss: 0.0001533778995508328:  38%|███▊      | 3/8 [00:23<00:38,  7.62s/it]
+1794647358 [Forward] loss: 0.0001930098223965615:  38%|███▊      | 3/8 [00:26<00:38,  7.62s/it]
+1794647361 [Forward] loss: 0.0001930098223965615:  50%|█████     | 4/8 [00:26<00:23,  5.85s/it]
+1794647361 [Forward] loss: 0.0002476078807376325:  50%|█████     | 4/8 [00:30<00:23,  5.85s/it]
+1794647365 [Forward] loss: 0.0002476078807376325:  62%|██████▎   | 5/8 [00:30<00:14,  4.94s/it]
+1794647365 [Forward] loss: 0.000994169502519071:  62%|██████▎   | 5/8 [00:33<00:14,  4.94s/it] 
+1794647368 [Forward] loss: 0.000994169502519071:  75%|███████▌  | 6/8 [00:33<00:08,  4.38s/it]
+1794647368 [Forward] loss: 0.003121958114206791:  75%|███████▌  | 6/8 [00:36<00:08,  4.38s/it]
+1794647371 [Forward] loss: 0.003121958114206791:  88%|████████▊ | 7/8 [00:36<00:04,  4.05s/it]
+1794647371 [Forward] loss: 0.005860402248799801:  88%|████████▊ | 7/8 [00:39<00:04,  4.05s/it]
+1794647371 [Forward] loss: 0.005860402248799801: 100%|██████████| 8/8 [00:39<00:00,  3.80s/it]
+1794647371 [Forward] loss: 0.005860402248799801: 100%|██████████| 8/8 [00:39<00:00,  5.00s/it]
+1794647371 Time elaspsed: 62.256306886672974
+1794647371   0%|          | 0/8 [00:00<?, ?it/s]
+1794647399 [Backward]:   0%|          | 0/8 [00:00<?, ?it/s]
+1794647405 [Backward]:  12%|█▎        | 1/8 [00:27<03:15, 27.92s/it]
+1794647410 [Backward]:  25%|██▌       | 2/8 [00:33<01:28, 14.75s/it]
+1794647416 [Backward]:  38%|███▊      | 3/8 [00:38<00:52, 10.49s/it]
+1794647421 [Backward]:  50%|█████     | 4/8 [00:44<00:34,  8.52s/it]
+1794647427 [Backward]:  62%|██████▎   | 5/8 [00:49<00:22,  7.43s/it]
+1794647432 [Backward]:  75%|███████▌  | 6/8 [00:55<00:13,  6.71s/it]
+1794647433 [Backward]:  88%|████████▊ | 7/8 [01:00<00:06,  6.33s/it]
+1794647433 [Backward]: 100%|██████████| 8/8 [01:01<00:00,  4.48s/it]
+1794647433 [Backward]: 100%|██████████| 8/8 [01:01<00:00,  7.66s/it]
+1794647433 velocity: [-0.1999898999929428, -0.5000101327896118, -0.1988045573234558]; rho: 1000.0; E: 125892.23708535735; nu: 0.10945753753185272
+1794647433   0%|          | 0/8 [00:00<?, ?it/s]
+1794647434 [Forward]:   0%|          | 0/8 [00:00<?, ?it/s]
+1794647434 [Forward] loss: 3.399675915716216e-05:   0%|          | 0/8 [00:00<?, ?it/s]
+1794647438 [Forward] loss: 3.399675915716216e-05:  12%|█▎        | 1/8 [00:00<00:06,  1.03it/s]
+1794647438 [Forward] loss: 7.401677430607378e-05:  12%|█▎        | 1/8 [00:04<00:06,  1.03it/s]
+1794647442 [Forward] loss: 7.401677430607378e-05:  25%|██▌       | 2/8 [00:04<00:16,  2.71s/it]
+1794647442 [Forward] loss: 0.00015337792865466326:  25%|██▌       | 2/8 [00:09<00:16,  2.71s/it]
+1794647446 [Forward] loss: 0.00015337792865466326:  38%|███▊      | 3/8 [00:09<00:17,  3.41s/it]
+1794647446 [Forward] loss: 0.00019300985150039196:  38%|███▊      | 3/8 [00:12<00:17,  3.41s/it]
+1794647450 [Forward] loss: 0.00019300985150039196:  50%|█████     | 4/8 [00:12<00:14,  3.57s/it]
+1794647450 [Forward] loss: 0.0002476270601619035:  50%|█████     | 4/8 [00:16<00:14,  3.57s/it] 
+1794647453 [Forward] loss: 0.0002476270601619035:  62%|██████▎   | 5/8 [00:16<00:10,  3.55s/it]
+1794647453 [Forward] loss: 0.0009526419453322887:  62%|██████▎   | 5/8 [00:19<00:10,  3.55s/it]
+1794647456 [Forward] loss: 0.0009526419453322887:  75%|███████▌  | 6/8 [00:19<00:06,  3.48s/it]
+1794647456 [Forward] loss: 0.0030462092254310846:  75%|███████▌  | 6/8 [00:23<00:06,  3.48s/it]
+1794647459 [Forward] loss: 0.0030462092254310846:  88%|████████▊ | 7/8 [00:23<00:03,  3.39s/it]
+1794647459 [Forward] loss: 0.00574550312012434:  88%|████████▊ | 7/8 [00:26<00:03,  3.39s/it]  
+1794647459 [Forward] loss: 0.00574550312012434: 100%|██████████| 8/8 [00:26<00:00,  3.37s/it]
+1794647459 [Forward] loss: 0.00574550312012434: 100%|██████████| 8/8 [00:26<00:00,  3.30s/it]
+1794647459 Time elaspsed: 150.26251816749573
+1794647459   0%|          | 0/8 [00:00<?, ?it/s]
+1794647465 [Backward]:   0%|          | 0/8 [00:00<?, ?it/s]
+1794647470 [Backward]:  12%|█▎        | 1/8 [00:05<00:38,  5.54s/it]
+1794647476 [Backward]:  25%|██▌       | 2/8 [00:11<00:33,  5.51s/it]
+1794647481 [Backward]:  38%|███▊      | 3/8 [00:16<00:27,  5.48s/it]
+1794647487 [Backward]:  50%|█████     | 4/8 [00:21<00:21,  5.50s/it]
+1794647492 [Backward]:  62%|██████▎   | 5/8 [00:27<00:16,  5.44s/it]
+1794647498 [Backward]:  75%|███████▌  | 6/8 [00:32<00:10,  5.47s/it]
+1794647498 [Backward]:  88%|████████▊ | 7/8 [00:38<00:05,  5.51s/it]
+1794647498 [Backward]: 100%|██████████| 8/8 [00:38<00:00,  3.79s/it]
+1794647498 [Backward]: 100%|██████████| 8/8 [00:38<00:00,  4.82s/it]
+1794647498 velocity: [-0.1999898999929428, -0.5000101327896118, -0.1988045573234558]; rho: 1000.0; E: 158523.8823211881; nu: 0.11856236308813095
+1794647498   0%|          | 0/8 [00:00<?, ?it/s]
+1794647499 [Forward]:   0%|          | 0/8 [00:00<?, ?it/s]
+1794647499 [Forward] loss: 3.399675915716216e-05:   0%|          | 0/8 [00:00<?, ?it/s]
+1794647502 [Forward] loss: 3.399675915716216e-05:  12%|█▎        | 1/8 [00:00<00:03,  2.07it/s]
+1794647502 [Forward] loss: 7.401677430607378e-05:  12%|█▎        | 1/8 [00:03<00:03,  2.07it/s]
+1794647505 [Forward] loss: 7.401677430607378e-05:  25%|██▌       | 2/8 [00:03<00:12,  2.14s/it]
+1794647505 [Forward] loss: 0.00015337785589508712:  25%|██▌       | 2/8 [00:07<00:12,  2.14s/it]
+1794647509 [Forward] loss: 0.00015337785589508712:  38%|███▊      | 3/8 [00:07<00:13,  2.69s/it]
+1794647509 [Forward] loss: 0.00019300977874081582:  38%|███▊      | 3/8 [00:10<00:13,  2.69s/it]
+1794647512 [Forward] loss: 0.00019300977874081582:  50%|█████     | 4/8 [00:10<00:11,  2.96s/it]
+1794647512 [Forward] loss: 0.00019300977874081582:  50%|█████     | 4/8 [00:13<00:13,  3.44s/it]
+1794647512 Traceback (most recent call last):
+1794647512   File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/external/pacnerf/train.py", line 295, in <module>
+1794647512     train_dynamic(cfg, pnerf, optimizer, start, rays_o_all, rays_d_all, viewdirs_all, rgb_all, ray_mask_all)
+1794647512   File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/external/pacnerf/train.py", line 261, in train_dynamic
+1794647512     obj = evaluate(max_f, optimizer, False)
+1794647512   File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/external/pacnerf/train.py", line 245, in evaluate
+1794647512     loss = pnerf.forward(max_f, rays_o_all, 
+1794647512   File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/external/pacnerf/lib/pac_nerf.py", line 264, in forward
+1794647512     loss.backward()
+1794647512   File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.engine-envs/pacnerf/lib/python3.10/site-packages/torch/_tensor.py", line 521, in backward
+1794647512     torch.autograd.backward(
+1794647512   File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.engine-envs/pacnerf/lib/python3.10/site-packages/torch/autograd/__init__.py", line 289, in backward
+1794647512     _engine_run_backward(
+1794647512   File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.engine-envs/pacnerf/lib/python3.10/site-packages/torch/autograd/graph.py", line 769, in _engine_run_backward
+1794647512     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+1794647512 torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 228.00 MiB. GPU 0 has a total capacity of 79.33 GiB of which 211.81 MiB is free. Process 2021696 has 7.41 GiB memory in use. Process 2774987 has 31.90 GiB memory in use. Process 987886 has 8.00 GiB memory in use. Process 1212317 has 10.79 GiB memory in use. Process 1588370 has 860.00 MiB memory in use. Process 1591660 has 860.00 MiB memory in use. Process 1599415 has 1016.00 MiB memory in use. Process 1607485 has 1.57 GiB memory in use. Process 1633049 has 4.14 GiB memory in use. Process 1681317 has 994.00 MiB memory in use. Process 1688959 has 11.61 GiB memory in use. Of the allocated memory 910.17 MiB is allocated by PyTorch, and 65.83 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+V3G_END 1794647513 rc=1

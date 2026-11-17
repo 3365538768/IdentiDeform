@@ -1,0 +1,68 @@
+{
+ "created_utc": "2026-11-15T02:03",
+ "phase": "v3l: protocol-matched comparison with Spring-Gaus and PhysTwin on THEIR metrics (they output no Young's modulus)",
+ "part1_springgaus_synthetic": {
+  "scenes_primary": [
+   "torus",
+   "duck",
+   "apple"
+  ],
+  "scenes_extra": [
+   "C",
+   "E",
+   "V",
+   "banana",
+   "chess",
+   "cream",
+   "cross",
+   "doraemon",
+   "droplet",
+   "rope",
+   "toothpaste"
+  ],
+  "excluded": {
+   "torus_heterogeneous": "no scalar GT E"
+  },
+  "data": "Spring-Gaus released mpm_synthetic.zip (untrusted; read directly from the zip with python -I, only PLY/PNG/JSON decoded)",
+  "observation_window": "frames 0-19 only (t = 0-0.57 s), the Spring-Gaus training window; frames 20-29 are future and are never used by any estimator arm",
+  "views_observed": "our canonical 3-view triplet t0 (cameras [2,3,8]) - Spring-Gaus uses all 10 cameras; eval camera 5 is NOT in our triplet (held out for us, a training camera for Spring-Gaus)",
+  "geometry": "PRIVILEGED: the dataset's frame-0 GT MPM particles (simulation/<scene>/000.ply), random subsample seed 0 to <= 150000 (as v3k-A). Spring-Gaus reconstructs geometry from images; we do not.",
+  "engine": "our mpm_solver_warp, jelly (fixed corotated), rho 1000 assumed, identical to scripts/v3k/a_sg_refine.py simulate() (imported unchanged). Differs from Spring-Gaus's spring-mass model and from the data's MPM solver (constitutive model/friction unknown).",
+  "arms": {
+   "prior20": "estimator: 9-run V2-main ensemble K0 zero-shot (same models/code path as v3f springgaus_fewshot.py) on the t0 triplet using frames 0-19 only (20 frames -> 64 by nearest repetition, times 0-0.57 s); E/rho and nu decoded; no simulation",
+   "prior20_refine": "estimator: prior20 + 1-D compass search on log10 E exactly as v3k-A (step 0.5 halved, min 0.02, bounds [1.5,6.5], failed sim loss 9, nu fixed to prior20 nu), objective C1 (1 - mean mask IoU + RGB-MAE/255) over t0 triplet x frames 0-19 at 128 px; budget 12 simulations (each 20 frames)",
+   "prior30_v3f": "reference only (NOT protocol-clean): v3f ensemble9 K0 z_t0 (input video covered frames 0-29, i.e. includes the future window)",
+   "gtE": "diagnostic only (not an estimator): GT E and nu replayed in our engine = engine-mismatch floor"
+  },
+  "rollout": "each arm's final (E, nu) simulated from frame 0 for all 30 frames (dt_frame 0.03 s) with the same initial velocity / gravity / ground as v3k-A",
+  "metrics_geometry": "identical to scripts/v3g/sg_eval.py (functions copied verbatim): per-frame Chamfer = 0.5*(mean NN L2 a->b + mean NN L2 b->a) with both clouds subsampled to 8192 points (numpy default_rng seed 0); also squared variant x1e3. GT = full simulation/<scene>/<k>.ply. fit = mean over frames 0-19 (frame 0 included, as v3g), future = mean over frames 20-29. Static baseline GT0 vs GTk as in v3g. Extra (not in Spring-Gaus eval): per-particle track error using the 1:1 particle correspondence of the GT PLYs.",
+  "metrics_image": "eval camera 5 (camera.json index 5, as Spring-Gaus --eval_cam 5), 512x512, GT = RGB*alpha on black (as the Spring-Gaus loader). Ours: z-buffered disk splats of un-shaded PLY particle colours (render() of scripts/v3k/a_sg_refine.py generalised to 512 px), splat radius r in {0..4} chosen by frame-0 mask IoU of the GT particles on the OBSERVED t0 views at 512 px (geometry only). PSNR = 10 log10(1/MSE) over the full image in [0,1] (as sg_eval.py), SSIM = Gaussian-window SSIM (11x11, sigma 1.5, K1 0.01, K2 0.03, per channel, mean; own implementation, no skimage in env), mask IoU vs GT alpha>0.5 with predicted mask = max(rgb) > 0.02 for both methods (also our exact splat mask). Reported for fit frames 0-19 and future frames 20-29.",
+  "springgaus_image_metrics": "recomputed from the official run outputs with the same PSNR/SSIM/IoU code: fit = evaluations/images_fit/5_kk.png (left half = render at frame k); future = evaluations/images_pred/5_jj.png (60 Hz rollout, frame j at j/60 s) at the nearest time j = round(1.8 k) to GT frame k (|time offset| <= 6.7 ms); also reported on the exact-time subset k in {20, 25}. Spring-Gaus CD numbers are taken from docs/v3g/logs/sg_eval_<scene>.json unchanged.",
+  "renderer_ceiling": "GT particles (same subsample) of every frame rendered with our splatter at cam 5 vs GT images: the image-metric ceiling of our renderer (unshaded colours vs Blender shading)",
+  "wall_clock": "ours: prior forward (V-JEPA + 9 heads; measured here) + compass simulations (sum of measured sim seconds on the shared A800) + final rollout; Spring-Gaus: docs/v3g/SPRINGGAUS_OFFICIAL.json wall_clock_total_s (shared GPU, upper bound)",
+  "selection": "no arm/hyperparameter selection on future frames or on Spring-Gaus metrics; all arms reported"
+ },
+ "part2_phystwin_stretch": {
+  "timebox": "4 h wall, 1 GPU",
+  "case": "single_push_sloth (released processed data, data/external_datasets/v3g_phystwin)",
+  "plan": "MPM (our jelly engine) on the released object particles (object_points[0] + surface_points + interior_points as in PhysTwin's vertices), hand/controller points as a moving kinematic boundary (object particles within radius r of a controller point at their first contact are driven with that controller point's displacement), ground plane from PhysTwin's convention; E by compass search on train frames 1-46 (PhysTwin train chamfer), then evaluate on test frames 47-67 with PhysTwin's evaluate_chamfer.py / evaluate_track.py definitions (single-direction L1 chamfer of visible GT object points to predicted surface points; track = mean L2 error of KD-matched GT tracks).",
+  "prior": "our model on its RGB views only if raw RGB is obtainable within the timebox (not in the released processed files); otherwise jelly train-mean start, stated explicitly",
+  "stop_rule": "if no working rollout with a plausible train chamfer within the timebox, stop and record exactly why"
+ },
+ "queue": "a800-2 shared queue docs/v3l/queue.json (ids v3l_), GPUs 0-7, max_per_gpu 2",
+ "addendum_1_part2_before_any_sim": {
+  "utc": "2026-11-15T02:12",
+  "spec": "scripts/v3l/pt_mpm.py docstring is the full spec: 6270 PhysTwin vertices (object_points[0]+surface+interior) as massless tracers; mass on h=dx/2 voxel fillers (dilate 2/fill/erode 1) -> 30733 particles; dx 7.1 mm; jelly, rho 1000, nu 0.3; ground z=0 slip friction 0.3; gravity +z_world (PhysTwin reverse_z)",
+  "boundary": "42 filler particles within 0.02 m of a controller point at frame 0 follow the controller-centroid translation (x and v overridden before every substep)",
+  "search": "compass on log10 E in [2.5,7.0] from the V2 jelly train mean (our RGB prior not applicable: the released processed case contains no RGB frames), objective = PhysTwin train chamfer frames 1-46 (cKDTree p=1, equal to pytorch3d single-direction norm=1), budget 12; report budget 0 and 12",
+  "evaluation": "scripts/v3l/pt_eval.py = PhysTwin evaluate_chamfer/evaluate_track functions verbatim; reproduces the official run exactly (0.015509/0.037271/0.027188/0.089164) on runs/v3g_phystwin/experiments/single_push_sloth/inference.pkl",
+  "diagnostic_baselines_no_physics": "static (frame-0 vertices repeated) and rigid_follow (vertices translated by the controller-centroid displacement); computed before any simulation: rigid_follow chamfer train/test 0.0187/0.0350, track 0.0271/0.0548; static 0.0229/0.1129, 0.0560/0.2320"
+ },
+ "addendum_1_part1_note": "v3k-A queue jobs (all 42) are complete; its data/v3k/sg outputs used read-only for the budget-0/12 all-frames reference only",
+ "addendum_2_part2_rgb_prior_before_any_sim": {
+  "utc": "2026-11-15T02:29",
+  "change": "RGB colour frames and object/hand masks of the case ARE in the official HF data.zip (not in the processed files used by v3g); downloaded for train frames 0-46 only into data/external_datasets/v3l_phystwin_rgb (scripts/v3l/pt_rgb_download.py, range download, no execution).",
+  "prior": "scripts/v3l/pt_prior.py: 9-run K0 ensemble on the 3 RGB views (object mask sloth on black, hand removed, square crop around the union bbox, 224 px, 47 frames -> 64), log10 E at rho 1000",
+  "arms": "two searches, both pre-registered: start=prior (primary, as requested) and start=jellymean (uninformed control, addendum 1); same budget 12 and objective; nu fixed 0.3 in both (the prior nu is reported, not used, to keep the arms comparable)"
+ }
+}

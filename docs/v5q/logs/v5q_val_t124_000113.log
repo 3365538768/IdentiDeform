@@ -1,0 +1,5 @@
+
+== 2026-11-16 02:57:16 host a2 gpu 0 attempt 1
+eval {'n': 1, 'law': 'plasticine', 'x': [4.400576, 2.949918], 'nu': 0.27131684411251394, 'cache': '72482edcfdc02ce1', 'simulated_by': 'prior_top1', 'iou': 0.5995557189353792, 'iou_last': 0.6571819676851568, 'rgb_mae_union': 46.04563135468084, 'loss': 0.5810153844163104, 'seconds': 722.9338855743408}
+eval {'n': 2, 'law': 'plasticine', 'x': [4.5, 2.949918], 'nu': 0.27131684411251394, 'cache': 'e0b0c6d16594ace2', 'simulated_by': 'prior_top1', 'iou': 0.5973743869265516, 'iou_last': 0.6533330506502513, 'rgb_mae_union': 46.21595346712447, 'loss': 0.5838646462778581, 'seconds': 708.54767370224}
+eval {'n': 3, 'law': 'plasticine', 'x': [3.900576, 2.949918], 'nu': 0.27131684411251394, 'cache': 'ba2c648c0cc8abe9', 'simulated_by': 'prior_top1', 'iou': 0.6140296145381703, 'iou_last': 0.6821212223603387, 'rgb_mae_union': 44.83345652596771, 'loss': 0.5617878620342521, 'seconds': 707.8535406589508}

@@ -1,0 +1,153 @@
+{
+ "phase": "v3a",
+ "max_per_gpu": 8,
+ "jobs": [
+  {
+   "id": "v3a_gen_train_s0",
+   "kind": "cmd",
+   "group": "v3a-gen",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": ".engine-envs/uipc/bin/python scripts/v3/gen_uipc_video.py --split train --shard 0 --num-shards 4"
+  },
+  {
+   "id": "v3a_gen_train_s1",
+   "kind": "cmd",
+   "group": "v3a-gen",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": ".engine-envs/uipc/bin/python scripts/v3/gen_uipc_video.py --split train --shard 1 --num-shards 4"
+  },
+  {
+   "id": "v3a_gen_train_s2",
+   "kind": "cmd",
+   "group": "v3a-gen",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": ".engine-envs/uipc/bin/python scripts/v3/gen_uipc_video.py --split train --shard 2 --num-shards 4"
+  },
+  {
+   "id": "v3a_gen_train_s3",
+   "kind": "cmd",
+   "group": "v3a-gen",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": ".engine-envs/uipc/bin/python scripts/v3/gen_uipc_video.py --split train --shard 3 --num-shards 4"
+  },
+  {
+   "id": "v3a_gen_val_s0",
+   "kind": "cmd",
+   "group": "v3a-gen",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": ".engine-envs/uipc/bin/python scripts/v3/gen_uipc_video.py --split val --shard 0 --num-shards 2"
+  },
+  {
+   "id": "v3a_gen_val_s1",
+   "kind": "cmd",
+   "group": "v3a-gen",
+   "mem_mib": 3000,
+   "retries": 2,
+   "cmd": ".engine-envs/uipc/bin/python scripts/v3/gen_uipc_video.py --split val --shard 1 --num-shards 2"
+  },
+  {
+   "id": "v3a_manifest",
+   "kind": "cmd",
+   "group": "v3a-data",
+   "mem_mib": 1000,
+   "retries": 1,
+   "after": [
+    "v3a_gen_train_s0",
+    "v3a_gen_train_s1",
+    "v3a_gen_train_s2",
+    "v3a_gen_train_s3",
+    "v3a_gen_val_s0",
+    "v3a_gen_val_s1"
+   ],
+   "cmd": ".venv/bin/python scripts/v3/build_uipc_manifest.py"
+  },
+  {
+   "id": "v3a_cache",
+   "kind": "cmd",
+   "group": "v3a-data",
+   "mem_mib": 12000,
+   "retries": 2,
+   "after": [
+    "v3a_manifest"
+   ],
+   "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/v3/v3_uipc_cache.json --splits train,val --status-output runs/v3a_cache/status.json"
+  },
+  {
+   "id": "v3a_fewshot_prelim",
+   "kind": "cmd",
+   "group": "v3a-fewshot",
+   "mem_mib": 16000,
+   "retries": 1,
+   "after": [
+    "v3a_cache"
+   ],
+   "cmd": ".venv/bin/python scripts/v3/uipc_fewshot.py --out docs/v3a/UIPC_FEWSHOT_prelim.json --tag prelim_v2main_C_still_training"
+  },
+  {
+   "id": "v3a_fewshot_final",
+   "kind": "cmd",
+   "group": "v3a-fewshot",
+   "mem_mib": 16000,
+   "retries": 1,
+   "after": [
+    "v3a_cache",
+    "v3a_fewshot_prelim",
+    "v2main_C_seed17",
+    "v2main_C_seed29",
+    "v2main_C_seed43"
+   ],
+   "cmd": ".venv/bin/python scripts/v3/uipc_fewshot.py --out docs/v3a/UIPC_FEWSHOT.json --tag final_v2main_C_finished"
+  },
+  {
+   "id": "v3a_resim_s17",
+   "kind": "cmd",
+   "group": "v3a-resim",
+   "mem_mib": 3000,
+   "retries": 1,
+   "after": [
+    "v3a_fewshot_final"
+   ],
+   "cmd": ".engine-envs/uipc/bin/python scripts/v3/uipc_resim.py --seed 17 --out docs/v3a/resim/seed17.json"
+  },
+  {
+   "id": "v3a_resim_s29",
+   "kind": "cmd",
+   "group": "v3a-resim",
+   "mem_mib": 3000,
+   "retries": 1,
+   "after": [
+    "v3a_fewshot_final"
+   ],
+   "cmd": ".engine-envs/uipc/bin/python scripts/v3/uipc_resim.py --seed 29 --out docs/v3a/resim/seed29.json"
+  },
+  {
+   "id": "v3a_resim_s43",
+   "kind": "cmd",
+   "group": "v3a-resim",
+   "mem_mib": 3000,
+   "retries": 1,
+   "after": [
+    "v3a_fewshot_final"
+   ],
+   "cmd": ".engine-envs/uipc/bin/python scripts/v3/uipc_resim.py --seed 43 --out docs/v3a/resim/seed43.json"
+  },
+  {
+   "id": "v3a_resim_merge",
+   "kind": "cmd",
+   "group": "v3a-resim",
+   "mem_mib": 500,
+   "retries": 1,
+   "after": [
+    "v3a_resim_s17",
+    "v3a_resim_s29",
+    "v3a_resim_s43"
+   ],
+   "cmd": ".engine-envs/uipc/bin/python scripts/v3/uipc_resim.py --merge docs/v3a/resim --into docs/v3a/UIPC_FEWSHOT.json"
+  }
+ ]
+}

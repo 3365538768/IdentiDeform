@@ -1,0 +1,1362 @@
+07:31:33 start v5g_gt_000151_centre_0.40 gpu 0
+07:31:33 start v5g_gt_000151_end_0.03 gpu 1
+07:31:33 start v5g_gt_000151_end_0.06 gpu 3
+07:31:33 start v5g_gt_000151_end_0.10 gpu 4
+07:31:33 start v5g_gt_000151_end_0.16 gpu 0
+07:31:33 start v5g_gt_000151_end_0.25 gpu 1
+07:31:33 start v5g_gt_000151_end_0.40 gpu 3
+07:31:33 start v5g_gt_000151_none_0 gpu 4
+07:31:33 start v5g_gt_000169_centre_0.03 gpu 0
+07:31:33 start v5g_gt_000169_centre_0.06 gpu 1
+07:31:33 start v5g_gt_000169_centre_0.10 gpu 3
+07:31:33 start v5g_gt_000169_centre_0.16 gpu 4
+07:31:33 start v5g_gt_000169_centre_0.25 gpu 0
+07:31:33 start v5g_gt_000169_centre_0.40 gpu 1
+07:31:33 start v5g_gt_000169_end_0.03 gpu 3
+07:31:33 start v5g_gt_000169_end_0.06 gpu 4
+07:31:33 start v5g_gt_000169_end_0.10 gpu 0
+07:31:33 start v5g_gt_000169_end_0.16 gpu 1
+07:31:33 start v5g_gt_000169_end_0.25 gpu 3
+07:31:33 start v5g_gt_000169_end_0.40 gpu 4
+07:31:33 start v5g_gt_000169_none_0 gpu 0
+07:31:33 start v5g_gt_000180_centre_0.03 gpu 1
+07:31:33 start v5g_gt_000180_centre_0.06 gpu 3
+07:31:33 start v5g_gt_000180_centre_0.10 gpu 4
+07:31:33 start v5g_gt_000180_centre_0.16 gpu 0
+07:31:33 start v5g_gt_000180_centre_0.25 gpu 1
+07:31:33 start v5g_gt_000180_centre_0.40 gpu 3
+07:31:33 start v5g_gt_000180_end_0.03 gpu 4
+07:31:33 start v5g_gt_000180_end_0.06 gpu 0
+07:31:33 start v5g_gt_000180_end_0.10 gpu 1
+07:31:33 start v5g_gt_000180_end_0.16 gpu 3
+07:31:33 start v5g_gt_000180_end_0.25 gpu 4
+07:31:33 start v5g_gt_000180_end_0.40 gpu 0
+07:31:33 start v5g_gt_000180_none_0 gpu 1
+07:31:33 start v5g_gt_000184_centre_0.03 gpu 3
+07:31:33 start v5g_gt_000184_centre_0.06 gpu 4
+07:32:49 exit v5g_gt_000184_centre_0.06 0 gpu 4
+07:32:49 start v5g_gt_000184_centre_0.10 gpu 4
+07:33:19 exit v5g_gt_000184_centre_0.10 0 gpu 4
+07:33:19 start v5g_gt_000184_centre_0.16 gpu 4
+07:33:49 exit v5g_gt_000184_centre_0.16 0 gpu 4
+07:33:49 start v5g_gt_000184_centre_0.25 gpu 4
+07:34:19 exit v5g_gt_000184_centre_0.25 0 gpu 4
+07:34:19 start v5g_gt_000184_centre_0.40 gpu 4
+07:34:49 exit v5g_gt_000184_centre_0.40 0 gpu 4
+07:34:49 start v5g_gt_000184_end_0.03 gpu 4
+07:35:19 exit v5g_gt_000151_none_0 0 gpu 4
+07:35:19 exit v5g_gt_000184_end_0.03 0 gpu 4
+07:35:19 start v5g_gt_000184_end_0.06 gpu 4
+07:35:19 start v5g_gt_000184_end_0.10 gpu 4
+07:35:49 exit v5g_gt_000169_none_0 0 gpu 0
+07:35:49 start v5g_gt_000184_end_0.16 gpu 0
+07:39:05 exit v5g_gt_000180_none_0 0 gpu 1
+07:39:05 start v5g_gt_000184_end_0.25 gpu 1
+07:39:20 exit v5g_gt_000184_centre_0.03 0 gpu 3
+07:39:20 start v5g_gt_000184_end_0.40 gpu 3
+07:39:50 exit v5g_gt_000151_end_0.10 0 gpu 4
+07:39:50 start v5g_gt_000184_none_0 gpu 4
+07:40:05 exit v5g_gt_000184_none_0 0 gpu 4
+07:40:05 start v5g_gt_000195_centre_0.03 gpu 4
+07:41:36 exit v5g_gt_000184_end_0.06 0 gpu 4
+07:41:36 exit v5g_gt_000184_end_0.10 0 gpu 4
+07:41:36 start v5g_gt_000195_centre_0.06 gpu 4
+07:41:36 start v5g_gt_000195_centre_0.10 gpu 4
+07:42:36 exit v5g_gt_000169_centre_0.16 0 gpu 4
+07:42:36 exit v5g_gt_000169_end_0.06 0 gpu 4
+07:42:36 exit v5g_gt_000169_end_0.40 0 gpu 4
+07:42:36 start v5g_gt_000195_centre_0.16 gpu 4
+07:42:36 start v5g_gt_000195_centre_0.25 gpu 4
+07:42:36 start v5g_gt_000195_centre_0.40 gpu 4
+07:44:52 exit v5g_gt_000180_centre_0.10 0 gpu 4
+07:44:52 exit v5g_gt_000180_end_0.03 0 gpu 4
+07:44:52 exit v5g_gt_000180_end_0.25 0 gpu 4
+07:44:52 start v5g_gt_000195_end_0.03 gpu 4
+07:44:52 start v5g_gt_000195_end_0.06 gpu 4
+07:44:52 start v5g_gt_000195_end_0.10 gpu 4
+07:45:22 exit v5g_gt_000151_end_0.06 0 gpu 3
+07:45:22 exit v5g_gt_000151_end_0.40 0 gpu 3
+07:45:22 start v5g_gt_000195_end_0.16 gpu 3
+07:45:22 start v5g_gt_000195_end_0.25 gpu 3
+07:45:37 exit v5g_gt_000169_centre_0.10 0 gpu 3
+07:45:37 exit v5g_gt_000169_end_0.03 0 gpu 3
+07:45:37 exit v5g_gt_000169_end_0.25 0 gpu 3
+07:45:37 start v5g_gt_000195_end_0.40 gpu 3
+07:45:37 start v5g_gt_000195_none_0 gpu 3
+07:45:37 start v5g_gt_000205_centre_0.03 gpu 3
+07:45:52 exit v5g_gt_000151_centre_0.40 0 gpu 0
+07:45:52 exit v5g_gt_000151_end_0.16 0 gpu 0
+07:45:52 exit v5g_gt_000195_none_0 0 gpu 3
+07:45:52 start v5g_gt_000205_centre_0.06 gpu 0
+07:45:52 start v5g_gt_000205_centre_0.10 gpu 0
+07:45:52 start v5g_gt_000205_centre_0.16 gpu 3
+07:46:07 exit v5g_gt_000169_end_0.10 0 gpu 0
+07:46:07 start v5g_gt_000205_centre_0.25 gpu 0
+07:46:22 exit v5g_gt_000169_centre_0.03 0 gpu 0
+07:46:22 exit v5g_gt_000169_centre_0.25 0 gpu 0
+07:46:22 exit v5g_gt_000184_end_0.16 0 gpu 0
+07:46:22 start v5g_gt_000205_centre_0.40 gpu 0
+07:46:22 start v5g_gt_000205_end_0.03 gpu 0
+07:46:22 start v5g_gt_000205_end_0.06 gpu 0
+07:47:07 exit v5g_gt_000180_centre_0.16 0 gpu 0
+07:47:07 exit v5g_gt_000180_end_0.06 0 gpu 0
+07:47:07 exit v5g_gt_000180_end_0.40 0 gpu 0
+07:47:07 start v5g_gt_000205_end_0.10 gpu 0
+07:47:07 start v5g_gt_000205_end_0.16 gpu 0
+07:47:07 start v5g_gt_000205_end_0.25 gpu 0
+07:47:22 exit v5g_gt_000151_end_0.03 0 gpu 1
+07:47:22 exit v5g_gt_000151_end_0.25 0 gpu 1
+07:47:23 start v5g_gt_000205_end_0.40 gpu 1
+07:47:23 start v5g_gt_000205_none_0 gpu 1
+07:47:38 exit v5g_gt_000169_centre_0.06 0 gpu 1
+07:47:38 exit v5g_gt_000169_centre_0.40 0 gpu 1
+07:47:38 exit v5g_gt_000169_end_0.16 0 gpu 1
+07:47:38 start v5g_gt_000210_centre_0.03 gpu 1
+07:47:38 start v5g_gt_000210_centre_0.06 gpu 1
+07:47:38 start v5g_gt_000210_centre_0.10 gpu 1
+07:48:23 exit v5g_gt_000180_centre_0.06 0 gpu 3
+07:48:23 exit v5g_gt_000180_centre_0.40 0 gpu 3
+07:48:23 exit v5g_gt_000180_end_0.16 0 gpu 3
+07:48:23 start v5g_gt_000210_centre_0.16 gpu 3
+07:48:23 start v5g_gt_000210_centre_0.25 gpu 3
+07:48:23 start v5g_gt_000210_centre_0.40 gpu 3
+07:48:38 exit v5g_gt_000184_end_0.40 0 gpu 3
+07:48:38 start v5g_gt_000210_end_0.03 gpu 3
+07:48:53 exit v5g_gt_000180_centre_0.03 0 gpu 1
+07:48:53 exit v5g_gt_000180_centre_0.25 0 gpu 1
+07:48:53 exit v5g_gt_000180_end_0.10 0 gpu 1
+07:48:53 exit v5g_gt_000184_end_0.25 0 gpu 1
+07:48:53 start v5g_gt_000210_end_0.06 gpu 1
+07:48:53 start v5g_gt_000210_end_0.10 gpu 1
+07:48:53 start v5g_gt_000210_end_0.16 gpu 1
+07:48:53 start v5g_gt_000210_end_0.25 gpu 1
+07:50:54 exit v5g_gt_000205_none_0 0 gpu 1
+07:50:55 start v5g_gt_000210_end_0.40 gpu 1
+07:52:40 exit v5g_gt_000195_end_0.16 0 gpu 3
+07:52:40 exit v5g_gt_000195_end_0.25 0 gpu 3
+07:52:40 start v5g_gt_000210_none_0 gpu 3
+07:52:40 start v5g_gt_000226_centre_0.03 gpu 3
+07:52:55 exit v5g_gt_000195_end_0.40 0 gpu 3
+07:52:55 exit v5g_gt_000210_none_0 0 gpu 3
+07:52:55 start v5g_gt_000226_centre_0.06 gpu 3
+07:52:55 start v5g_gt_000226_centre_0.10 gpu 3
+07:53:25 exit v5g_gt_000195_centre_0.03 0 gpu 4
+07:53:25 exit v5g_gt_000195_centre_0.06 0 gpu 4
+07:53:25 exit v5g_gt_000195_centre_0.10 0 gpu 4
+07:53:25 exit v5g_gt_000195_centre_0.16 0 gpu 4
+07:53:25 exit v5g_gt_000195_centre_0.25 0 gpu 4
+07:53:25 exit v5g_gt_000195_centre_0.40 0 gpu 4
+07:53:25 start v5g_gt_000226_centre_0.16 gpu 4
+07:53:25 start v5g_gt_000226_centre_0.25 gpu 4
+07:53:25 start v5g_gt_000226_centre_0.40 gpu 4
+07:53:25 start v5g_gt_000226_end_0.03 gpu 4
+07:53:25 start v5g_gt_000226_end_0.06 gpu 4
+07:53:25 start v5g_gt_000226_end_0.10 gpu 4
+07:53:40 exit v5g_gt_000195_end_0.03 0 gpu 4
+07:53:40 exit v5g_gt_000195_end_0.06 0 gpu 4
+07:53:40 exit v5g_gt_000195_end_0.10 0 gpu 4
+07:53:40 start v5g_gt_000226_end_0.16 gpu 4
+07:53:40 start v5g_gt_000226_end_0.25 gpu 4
+07:53:40 start v5g_gt_000226_end_0.40 gpu 4
+07:56:27 exit v5g_gt_000210_centre_0.16 0 gpu 3
+07:56:27 exit v5g_gt_000210_centre_0.25 0 gpu 3
+07:56:27 exit v5g_gt_000210_centre_0.40 0 gpu 3
+07:56:27 exit v5g_gt_000210_end_0.03 0 gpu 3
+07:56:27 start v5g_gt_000226_none_0 gpu 3
+07:56:27 start v5g_gt_000231_centre_0.03 gpu 3
+07:56:27 start v5g_gt_000231_centre_0.06 gpu 3
+07:56:27 start v5g_gt_000231_centre_0.10 gpu 3
+07:57:12 exit v5g_gt_000210_centre_0.03 0 gpu 1
+07:57:12 exit v5g_gt_000210_centre_0.06 0 gpu 1
+07:57:12 exit v5g_gt_000210_centre_0.10 0 gpu 1
+07:57:12 exit v5g_gt_000210_end_0.06 0 gpu 1
+07:57:12 exit v5g_gt_000210_end_0.10 0 gpu 1
+07:57:12 exit v5g_gt_000210_end_0.16 0 gpu 1
+07:57:12 exit v5g_gt_000210_end_0.25 0 gpu 1
+07:57:12 start v5g_gt_000231_centre_0.16 gpu 1
+07:57:12 start v5g_gt_000231_centre_0.25 gpu 1
+07:57:12 start v5g_gt_000231_centre_0.40 gpu 1
+07:57:12 start v5g_gt_000231_end_0.03 gpu 1
+07:57:12 start v5g_gt_000231_end_0.06 gpu 1
+07:57:12 start v5g_gt_000231_end_0.10 gpu 1
+07:57:12 start v5g_gt_000231_end_0.16 gpu 1
+07:57:27 exit v5g_gt_000205_centre_0.03 0 gpu 3
+07:57:27 exit v5g_gt_000205_centre_0.16 0 gpu 3
+07:57:27 exit v5g_gt_000226_none_0 0 gpu 3
+07:57:27 start v5g_gt_000231_end_0.25 gpu 3
+07:57:27 start v5g_gt_000231_end_0.40 gpu 3
+07:57:27 start v5g_gt_000231_none_0 gpu 3
+07:57:57 exit v5g_gt_000205_end_0.40 0 gpu 1
+07:57:57 exit v5g_gt_000210_end_0.40 0 gpu 1
+07:57:57 start v5g_gt_000244_centre_0.03 gpu 1
+07:57:57 start v5g_gt_000244_centre_0.06 gpu 1
+07:59:12 exit v5g_gt_000231_none_0 0 gpu 3
+07:59:12 start v5g_gt_000244_centre_0.10 gpu 3
+07:59:27 exit v5g_gt_000205_centre_0.06 0 gpu 0
+07:59:27 exit v5g_gt_000205_centre_0.10 0 gpu 0
+07:59:27 exit v5g_gt_000205_centre_0.25 0 gpu 0
+07:59:27 exit v5g_gt_000205_centre_0.40 0 gpu 0
+07:59:27 exit v5g_gt_000205_end_0.03 0 gpu 0
+07:59:27 exit v5g_gt_000205_end_0.06 0 gpu 0
+07:59:27 exit v5g_gt_000205_end_0.10 0 gpu 0
+07:59:27 exit v5g_gt_000205_end_0.16 0 gpu 0
+07:59:27 exit v5g_gt_000205_end_0.25 0 gpu 0
+07:59:27 start v5g_gt_000244_centre_0.16 gpu 0
+07:59:27 start v5g_gt_000244_centre_0.25 gpu 0
+07:59:27 start v5g_gt_000244_centre_0.40 gpu 0
+07:59:27 start v5g_gt_000244_end_0.03 gpu 0
+07:59:27 start v5g_gt_000244_end_0.06 gpu 0
+07:59:27 start v5g_gt_000244_end_0.10 gpu 0
+07:59:27 start v5g_gt_000244_end_0.16 gpu 0
+07:59:27 start v5g_gt_000244_end_0.25 gpu 0
+07:59:27 start v5g_gt_000244_end_0.40 gpu 0
+08:04:14 exit v5g_gt_000226_centre_0.03 0 gpu 3
+08:04:14 exit v5g_gt_000226_centre_0.06 0 gpu 3
+08:04:14 exit v5g_gt_000226_centre_0.10 0 gpu 3
+08:04:14 start v5g_gt_000244_none_0 gpu 3
+08:04:14 start v5g_gt_000250_centre_0.03 gpu 3
+08:04:14 start v5g_gt_000250_centre_0.06 gpu 3
+08:04:29 exit v5g_gt_000244_none_0 0 gpu 3
+08:04:29 start v5g_gt_000250_centre_0.10 gpu 3
+08:05:14 exit v5g_gt_000244_centre_0.03 0 gpu 1
+08:05:14 exit v5g_gt_000244_centre_0.06 0 gpu 1
+08:05:15 start v5g_gt_000250_centre_0.16 gpu 1
+08:05:15 start v5g_gt_000250_centre_0.25 gpu 1
+08:06:00 exit v5g_gt_000226_centre_0.16 0 gpu 4
+08:06:00 exit v5g_gt_000226_centre_0.25 0 gpu 4
+08:06:00 exit v5g_gt_000226_centre_0.40 0 gpu 4
+08:06:00 start v5g_gt_000250_centre_0.40 gpu 4
+08:06:00 start v5g_gt_000250_end_0.03 gpu 4
+08:06:00 start v5g_gt_000250_end_0.06 gpu 4
+08:06:15 exit v5g_gt_000226_end_0.03 0 gpu 4
+08:06:15 exit v5g_gt_000226_end_0.06 0 gpu 4
+08:06:15 exit v5g_gt_000226_end_0.10 0 gpu 4
+08:06:15 exit v5g_gt_000226_end_0.16 0 gpu 4
+08:06:15 exit v5g_gt_000226_end_0.25 0 gpu 4
+08:06:15 exit v5g_gt_000226_end_0.40 0 gpu 4
+08:06:15 start v5g_gt_000250_end_0.10 gpu 4
+08:06:15 start v5g_gt_000250_end_0.16 gpu 4
+08:06:15 start v5g_gt_000250_end_0.25 gpu 4
+08:06:15 start v5g_gt_000250_end_0.40 gpu 4
+08:06:15 start v5g_gt_000250_none_0 gpu 4
+08:06:15 start v5g_gt_000253_centre_0.03 gpu 4
+08:07:15 exit v5g_gt_000231_centre_0.03 0 gpu 3
+08:07:15 exit v5g_gt_000231_centre_0.06 0 gpu 3
+08:07:15 exit v5g_gt_000231_centre_0.10 0 gpu 3
+08:07:15 exit v5g_gt_000231_end_0.25 0 gpu 3
+08:07:15 exit v5g_gt_000231_end_0.40 0 gpu 3
+08:07:15 start v5g_gt_000253_centre_0.06 gpu 3
+08:07:15 start v5g_gt_000253_centre_0.10 gpu 3
+08:07:15 start v5g_gt_000253_centre_0.16 gpu 3
+08:07:15 start v5g_gt_000253_centre_0.25 gpu 3
+08:07:15 start v5g_gt_000253_centre_0.40 gpu 3
+08:07:30 exit v5g_gt_000244_centre_0.10 0 gpu 3
+08:07:30 exit v5g_gt_000253_centre_0.03 0 gpu 4
+08:07:30 start v5g_gt_000253_end_0.03 gpu 3
+08:07:30 start v5g_gt_000253_end_0.06 gpu 4
+08:07:45 exit v5g_gt_000231_centre_0.16 0 gpu 1
+08:07:45 exit v5g_gt_000231_centre_0.25 0 gpu 1
+08:07:45 exit v5g_gt_000231_centre_0.40 0 gpu 1
+08:07:45 exit v5g_gt_000231_end_0.03 0 gpu 1
+08:07:45 exit v5g_gt_000231_end_0.06 0 gpu 1
+08:07:45 exit v5g_gt_000231_end_0.10 0 gpu 1
+08:07:45 exit v5g_gt_000231_end_0.16 0 gpu 1
+08:07:45 start v5g_gt_000253_end_0.10 gpu 1
+08:07:45 start v5g_gt_000253_end_0.16 gpu 1
+08:07:45 start v5g_gt_000253_end_0.25 gpu 1
+08:07:45 start v5g_gt_000253_end_0.40 gpu 1
+08:07:45 start v5g_gt_000253_none_0 gpu 1
+08:07:45 start v5g_gt_000261_centre_0.03 gpu 1
+08:07:45 start v5g_gt_000261_centre_0.06 gpu 1
+08:08:00 exit v5g_gt_000253_none_0 0 gpu 1
+08:08:00 start v5g_gt_000261_centre_0.10 gpu 1
+08:08:15 exit v5g_gt_000244_centre_0.16 0 gpu 0
+08:08:15 exit v5g_gt_000244_centre_0.25 0 gpu 0
+08:08:15 exit v5g_gt_000244_centre_0.40 0 gpu 0
+08:08:15 exit v5g_gt_000244_end_0.03 0 gpu 0
+08:08:15 exit v5g_gt_000244_end_0.06 0 gpu 0
+08:08:15 exit v5g_gt_000244_end_0.10 0 gpu 0
+08:08:15 exit v5g_gt_000244_end_0.16 0 gpu 0
+08:08:15 exit v5g_gt_000244_end_0.25 0 gpu 0
+08:08:15 exit v5g_gt_000244_end_0.40 0 gpu 0
+08:08:15 exit v5g_gt_000253_end_0.06 0 gpu 4
+08:08:15 start v5g_gt_000261_centre_0.16 gpu 0
+08:08:15 start v5g_gt_000261_centre_0.25 gpu 0
+08:08:15 start v5g_gt_000261_centre_0.40 gpu 0
+08:08:15 start v5g_gt_000261_end_0.03 gpu 0
+08:08:15 start v5g_gt_000261_end_0.06 gpu 0
+08:08:15 start v5g_gt_000261_end_0.10 gpu 0
+08:08:15 start v5g_gt_000261_end_0.16 gpu 0
+08:08:15 start v5g_gt_000261_end_0.25 gpu 0
+08:08:15 start v5g_gt_000261_end_0.40 gpu 0
+08:08:15 start v5g_gt_000261_none_0 gpu 4
+08:08:46 exit v5g_gt_000250_none_0 0 gpu 4
+08:08:46 start v5g_gt_000271_centre_0.03 gpu 4
+08:13:02 exit v5g_gt_000261_none_0 0 gpu 4
+08:13:02 start v5g_gt_000271_centre_0.06 gpu 4
+08:15:03 exit v5g_gt_000253_end_0.10 0 gpu 1
+08:15:03 exit v5g_gt_000253_end_0.16 0 gpu 1
+08:15:03 exit v5g_gt_000253_end_0.25 0 gpu 1
+08:15:03 exit v5g_gt_000253_end_0.40 0 gpu 1
+08:15:03 start v5g_gt_000271_centre_0.10 gpu 1
+08:15:03 start v5g_gt_000271_centre_0.16 gpu 1
+08:15:03 start v5g_gt_000271_centre_0.25 gpu 1
+08:15:03 start v5g_gt_000271_centre_0.40 gpu 1
+08:16:19 exit v5g_gt_000253_centre_0.06 0 gpu 3
+08:16:19 exit v5g_gt_000253_centre_0.10 0 gpu 3
+08:16:19 exit v5g_gt_000253_centre_0.16 0 gpu 3
+08:16:19 exit v5g_gt_000253_centre_0.25 0 gpu 3
+08:16:19 exit v5g_gt_000253_centre_0.40 0 gpu 3
+08:16:19 exit v5g_gt_000253_end_0.03 0 gpu 3
+08:16:20 start v5g_gt_000271_end_0.03 gpu 3
+08:16:20 start v5g_gt_000271_end_0.06 gpu 3
+08:16:20 start v5g_gt_000271_end_0.10 gpu 3
+08:16:20 start v5g_gt_000271_end_0.16 gpu 3
+08:16:20 start v5g_gt_000271_end_0.25 gpu 3
+08:16:20 start v5g_gt_000271_end_0.40 gpu 3
+08:16:35 exit v5g_gt_000250_centre_0.16 0 gpu 1
+08:16:35 exit v5g_gt_000250_centre_0.25 0 gpu 1
+08:16:35 start v5g_gt_000271_none_0 gpu 1
+08:16:35 start v5g_prior_vision_000021_centre_0.03 gpu 1
+08:16:50 exit v5g_gt_000271_none_0 0 gpu 1
+08:16:50 start v5g_prior_vt_000088_centre_0.03 gpu 1
+08:17:05 exit v5g_gt_000250_centre_0.40 0 gpu 4
+08:17:05 exit v5g_gt_000250_end_0.03 0 gpu 4
+08:17:05 exit v5g_gt_000250_end_0.06 0 gpu 4
+08:17:05 exit v5g_gt_000250_end_0.10 0 gpu 4
+08:17:05 exit v5g_gt_000250_end_0.16 0 gpu 4
+08:17:05 exit v5g_gt_000250_end_0.25 0 gpu 4
+08:17:05 exit v5g_gt_000250_end_0.40 0 gpu 4
+08:17:05 start v5g_prior_vt_000088_centre_0.06 gpu 4
+08:17:05 start v5g_prior_vt_000088_centre_0.10 gpu 4
+08:17:05 start v5g_prior_vt_000088_centre_0.16 gpu 4
+08:17:05 start v5g_prior_vt_000088_centre_0.25 gpu 4
+08:17:05 start v5g_prior_vt_000088_centre_0.40 gpu 4
+08:17:05 start v5g_prior_vt_000088_end_0.03 gpu 4
+08:17:05 start v5g_prior_vt_000088_end_0.06 gpu 4
+08:17:35 exit v5g_gt_000250_centre_0.03 0 gpu 3
+08:17:35 exit v5g_gt_000250_centre_0.06 0 gpu 3
+08:17:35 exit v5g_gt_000250_centre_0.10 0 gpu 3
+08:17:35 start v5g_prior_vt_000088_end_0.10 gpu 3
+08:17:35 start v5g_prior_vt_000088_end_0.16 gpu 3
+08:17:35 start v5g_prior_vt_000088_end_0.25 gpu 3
+08:18:36 exit v5g_gt_000271_centre_0.03 0 gpu 4
+08:18:36 exit v5g_gt_000271_centre_0.06 0 gpu 4
+08:18:36 start v5g_prior_vt_000088_end_0.40 gpu 4
+08:18:36 start v5g_prior_vt_000088_none_0 gpu 4
+08:21:38 exit v5g_gt_000261_centre_0.03 0 gpu 1
+08:21:38 exit v5g_gt_000261_centre_0.06 0 gpu 1
+08:21:38 exit v5g_gt_000261_centre_0.10 0 gpu 1
+08:21:38 start v5g_prior_vision_000088_centre_0.03 gpu 1
+08:21:38 start v5g_prior_vision_000088_centre_0.06 gpu 1
+08:21:38 start v5g_prior_vision_000088_centre_0.10 gpu 1
+08:21:53 exit v5g_gt_000261_centre_0.16 0 gpu 0
+08:21:53 exit v5g_gt_000261_centre_0.25 0 gpu 0
+08:21:53 exit v5g_gt_000261_centre_0.40 0 gpu 0
+08:21:53 exit v5g_gt_000261_end_0.03 0 gpu 0
+08:21:53 exit v5g_gt_000261_end_0.06 0 gpu 0
+08:21:53 exit v5g_gt_000261_end_0.10 0 gpu 0
+08:21:53 exit v5g_gt_000261_end_0.16 0 gpu 0
+08:21:53 exit v5g_gt_000261_end_0.25 0 gpu 0
+08:21:53 exit v5g_gt_000261_end_0.40 0 gpu 0
+08:21:53 start v5g_prior_vision_000088_centre_0.16 gpu 0
+08:21:53 start v5g_prior_vision_000088_centre_0.25 gpu 0
+08:21:53 start v5g_prior_vision_000088_centre_0.40 gpu 0
+08:21:53 start v5g_prior_vision_000088_end_0.03 gpu 0
+08:21:53 start v5g_prior_vision_000088_end_0.06 gpu 0
+08:21:53 start v5g_prior_vision_000088_end_0.10 gpu 0
+08:21:53 start v5g_prior_vision_000088_end_0.16 gpu 0
+08:21:53 start v5g_prior_vision_000088_end_0.25 gpu 0
+08:21:53 start v5g_prior_vision_000088_end_0.40 gpu 0
+08:22:23 exit v5g_gt_000271_end_0.03 0 gpu 3
+08:22:23 exit v5g_gt_000271_end_0.06 0 gpu 3
+08:22:23 exit v5g_gt_000271_end_0.10 0 gpu 3
+08:22:23 exit v5g_gt_000271_end_0.16 0 gpu 3
+08:22:23 exit v5g_gt_000271_end_0.25 0 gpu 3
+08:22:23 exit v5g_gt_000271_end_0.40 0 gpu 3
+08:22:23 start v5g_prior_vision_000088_none_0 gpu 3
+08:22:23 start v5g_lawmean_pred_000088_centre_0.03 gpu 3
+08:22:23 start v5g_lawmean_pred_000088_centre_0.06 gpu 3
+08:22:23 start v5g_lawmean_pred_000088_centre_0.10 gpu 3
+08:22:23 start v5g_lawmean_pred_000088_centre_0.16 gpu 3
+08:22:23 start v5g_lawmean_pred_000088_centre_0.25 gpu 3
+08:23:24 exit v5g_gt_000271_centre_0.10 0 gpu 1
+08:23:24 exit v5g_gt_000271_centre_0.16 0 gpu 1
+08:23:24 exit v5g_gt_000271_centre_0.25 0 gpu 1
+08:23:24 exit v5g_gt_000271_centre_0.40 0 gpu 1
+08:23:24 exit v5g_prior_vt_000088_none_0 0 gpu 4
+08:23:24 start v5g_lawmean_pred_000088_centre_0.40 gpu 1
+08:23:24 start v5g_lawmean_pred_000088_end_0.03 gpu 1
+08:23:24 start v5g_lawmean_pred_000088_end_0.06 gpu 1
+08:23:24 start v5g_lawmean_pred_000088_end_0.10 gpu 1
+08:23:24 start v5g_lawmean_pred_000088_end_0.16 gpu 4
+08:26:55 exit v5g_prior_vision_000088_none_0 0 gpu 3
+08:26:55 start v5g_lawmean_pred_000088_end_0.25 gpu 3
+08:30:26 exit v5g_prior_vision_000021_centre_0.03 0 gpu 1
+08:30:26 start v5g_lawmean_pred_000088_end_0.40 gpu 1
+08:30:56 exit v5g_prior_vt_000088_centre_0.03 0 gpu 1
+08:30:56 start v5g_lawmean_pred_000088_none_0 gpu 1
+08:31:11 exit v5g_lawmean_pred_000088_none_0 0 gpu 1
+08:31:11 start v5g_prior_vt_000184_centre_0.03 gpu 1
+08:31:26 exit v5g_lawmean_pred_000088_centre_0.03 0 gpu 3
+08:31:26 exit v5g_lawmean_pred_000088_centre_0.06 0 gpu 3
+08:31:26 exit v5g_lawmean_pred_000088_centre_0.10 0 gpu 3
+08:31:26 exit v5g_lawmean_pred_000088_centre_0.16 0 gpu 3
+08:31:26 exit v5g_lawmean_pred_000088_centre_0.25 0 gpu 3
+08:31:26 start v5g_prior_vt_000184_centre_0.06 gpu 3
+08:31:26 start v5g_prior_vt_000184_centre_0.10 gpu 3
+08:31:26 start v5g_prior_vt_000184_centre_0.16 gpu 3
+08:31:26 start v5g_prior_vt_000184_centre_0.25 gpu 3
+08:31:26 start v5g_prior_vt_000184_centre_0.40 gpu 3
+08:31:41 exit v5g_prior_vt_000088_end_0.10 0 gpu 3
+08:31:41 exit v5g_prior_vt_000088_end_0.16 0 gpu 3
+08:31:41 exit v5g_prior_vt_000088_end_0.25 0 gpu 3
+08:31:41 exit v5g_lawmean_pred_000088_centre_0.40 0 gpu 1
+08:31:41 exit v5g_lawmean_pred_000088_end_0.03 0 gpu 1
+08:31:41 exit v5g_lawmean_pred_000088_end_0.06 0 gpu 1
+08:31:41 exit v5g_lawmean_pred_000088_end_0.10 0 gpu 1
+08:31:41 start v5g_prior_vt_000184_end_0.03 gpu 1
+08:31:41 start v5g_prior_vt_000184_end_0.06 gpu 1
+08:31:41 start v5g_prior_vt_000184_end_0.10 gpu 3
+08:31:41 start v5g_prior_vt_000184_end_0.16 gpu 1
+08:31:41 start v5g_prior_vt_000184_end_0.25 gpu 3
+08:31:41 start v5g_prior_vt_000184_end_0.40 gpu 1
+08:31:41 start v5g_prior_vt_000184_none_0 gpu 3
+08:31:56 exit v5g_lawmean_pred_000088_end_0.25 0 gpu 3
+08:31:56 start v5g_prior_vision_000184_centre_0.03 gpu 3
+08:32:26 exit v5g_prior_vt_000088_centre_0.06 0 gpu 4
+08:32:26 exit v5g_prior_vt_000088_centre_0.10 0 gpu 4
+08:32:26 exit v5g_prior_vt_000088_centre_0.16 0 gpu 4
+08:32:26 exit v5g_prior_vt_000088_centre_0.25 0 gpu 4
+08:32:26 exit v5g_prior_vt_000088_centre_0.40 0 gpu 4
+08:32:26 exit v5g_prior_vt_000088_end_0.03 0 gpu 4
+08:32:26 exit v5g_prior_vt_000088_end_0.06 0 gpu 4
+08:32:26 exit v5g_prior_vt_000088_end_0.40 0 gpu 4
+08:32:26 exit v5g_lawmean_pred_000088_end_0.16 0 gpu 4
+08:32:27 start v5g_prior_vision_000184_centre_0.06 gpu 4
+08:32:27 start v5g_prior_vision_000184_centre_0.10 gpu 4
+08:32:27 start v5g_prior_vision_000184_centre_0.16 gpu 4
+08:32:27 start v5g_prior_vision_000184_centre_0.25 gpu 4
+08:32:27 start v5g_prior_vision_000184_centre_0.40 gpu 4
+08:32:27 start v5g_prior_vision_000184_end_0.03 gpu 4
+08:32:27 start v5g_prior_vision_000184_end_0.06 gpu 4
+08:32:27 start v5g_prior_vision_000184_end_0.10 gpu 4
+08:32:27 start v5g_prior_vision_000184_end_0.16 gpu 4
+08:32:57 exit v5g_prior_vision_000184_centre_0.03 0 gpu 3
+08:32:57 start v5g_prior_vision_000184_end_0.25 gpu 3
+08:33:27 exit v5g_prior_vision_000184_end_0.25 0 gpu 3
+08:33:27 start v5g_prior_vision_000184_end_0.40 gpu 3
+08:33:57 exit v5g_prior_vision_000088_centre_0.03 0 gpu 1
+08:33:57 exit v5g_prior_vision_000088_centre_0.06 0 gpu 1
+08:33:57 exit v5g_prior_vision_000088_centre_0.10 0 gpu 1
+08:33:57 exit v5g_prior_vision_000184_end_0.40 0 gpu 3
+08:33:57 start v5g_prior_vision_000184_none_0 gpu 1
+08:33:57 start v5g_lawmean_pred_000184_centre_0.03 gpu 1
+08:33:57 start v5g_lawmean_pred_000184_centre_0.06 gpu 1
+08:33:57 start v5g_lawmean_pred_000184_centre_0.10 gpu 3
+08:34:12 exit v5g_prior_vision_000184_none_0 0 gpu 1
+08:34:12 start v5g_lawmean_pred_000184_centre_0.16 gpu 1
+08:34:42 exit v5g_prior_vt_000184_none_0 0 gpu 3
+08:34:42 start v5g_lawmean_pred_000184_centre_0.25 gpu 3
+08:35:27 exit v5g_lawmean_pred_000088_end_0.40 0 gpu 1
+08:35:27 start v5g_lawmean_pred_000184_centre_0.40 gpu 1
+08:35:58 exit v5g_prior_vision_000088_centre_0.16 0 gpu 0
+08:35:58 exit v5g_prior_vision_000088_centre_0.25 0 gpu 0
+08:35:58 exit v5g_prior_vision_000088_centre_0.40 0 gpu 0
+08:35:58 exit v5g_prior_vision_000088_end_0.03 0 gpu 0
+08:35:58 exit v5g_prior_vision_000088_end_0.06 0 gpu 0
+08:35:58 exit v5g_prior_vision_000088_end_0.10 0 gpu 0
+08:35:58 exit v5g_prior_vision_000088_end_0.16 0 gpu 0
+08:35:58 exit v5g_prior_vision_000088_end_0.25 0 gpu 0
+08:35:58 exit v5g_prior_vision_000088_end_0.40 0 gpu 0
+08:35:58 start v5g_lawmean_pred_000184_end_0.03 gpu 0
+08:35:58 start v5g_lawmean_pred_000184_end_0.06 gpu 0
+08:35:58 start v5g_lawmean_pred_000184_end_0.10 gpu 0
+08:35:58 start v5g_lawmean_pred_000184_end_0.16 gpu 0
+08:35:58 start v5g_lawmean_pred_000184_end_0.25 gpu 0
+08:35:58 start v5g_lawmean_pred_000184_end_0.40 gpu 0
+08:35:58 start v5g_lawmean_pred_000184_none_0 gpu 0
+08:35:58 start v5g_prior_vt_000205_centre_0.03 gpu 0
+08:35:58 start v5g_prior_vt_000205_centre_0.06 gpu 0
+08:37:58 exit v5g_lawmean_pred_000184_none_0 0 gpu 0
+08:37:58 start v5g_prior_vt_000205_centre_0.10 gpu 0
+08:39:43 exit v5g_prior_vt_000205_centre_0.03 0 gpu 0
+08:39:43 exit v5g_prior_vt_000205_centre_0.06 0 gpu 0
+08:39:43 start v5g_prior_vt_000205_centre_0.25 gpu 0
+08:39:43 start v5g_prior_vt_000205_centre_0.40 gpu 0
+08:41:14 exit v5g_prior_vision_000184_centre_0.06 0 gpu 4
+08:41:14 exit v5g_prior_vision_000184_centre_0.10 0 gpu 4
+08:41:14 exit v5g_prior_vision_000184_centre_0.16 0 gpu 4
+08:41:14 exit v5g_prior_vision_000184_centre_0.25 0 gpu 4
+08:41:14 exit v5g_prior_vision_000184_centre_0.40 0 gpu 4
+08:41:14 exit v5g_prior_vision_000184_end_0.03 0 gpu 4
+08:41:14 exit v5g_prior_vision_000184_end_0.06 0 gpu 4
+08:41:14 exit v5g_prior_vision_000184_end_0.10 0 gpu 4
+08:41:14 exit v5g_prior_vision_000184_end_0.16 0 gpu 4
+08:41:14 start v5g_prior_vt_000205_end_0.03 gpu 4
+08:41:14 start v5g_prior_vt_000205_end_0.10 gpu 4
+08:41:14 start v5g_prior_vt_000205_end_0.25 gpu 4
+08:41:14 start v5g_prior_vt_000205_end_0.40 gpu 4
+08:41:14 start v5g_prior_vt_000205_none_0 gpu 4
+08:41:14 start v5g_prior_vision_000205_centre_0.03 gpu 4
+08:41:14 start v5g_prior_vision_000205_centre_0.10 gpu 4
+08:41:14 start v5g_prior_vision_000205_centre_0.25 gpu 4
+08:41:14 start v5g_prior_vision_000205_centre_0.40 gpu 4
+08:41:29 exit v5g_prior_vt_000205_none_0 0 gpu 4
+08:41:29 start v5g_prior_vision_000205_end_0.03 gpu 4
+08:41:59 exit v5g_prior_vt_000184_centre_0.03 0 gpu 1
+08:41:59 exit v5g_prior_vt_000184_end_0.03 0 gpu 1
+08:41:59 exit v5g_prior_vt_000184_end_0.06 0 gpu 1
+08:41:59 exit v5g_prior_vt_000184_end_0.16 0 gpu 1
+08:41:59 exit v5g_prior_vt_000184_end_0.40 0 gpu 1
+08:41:59 start v5g_prior_vision_000205_end_0.10 gpu 1
+08:41:59 start v5g_prior_vision_000205_end_0.25 gpu 1
+08:41:59 start v5g_prior_vision_000205_end_0.40 gpu 1
+08:41:59 start v5g_prior_vision_000205_none_0 gpu 1
+08:41:59 start v5g_lawmean_pred_000205_centre_0.03 gpu 1
+08:42:29 exit v5g_prior_vt_000184_centre_0.06 0 gpu 3
+08:42:29 exit v5g_prior_vt_000184_centre_0.10 0 gpu 3
+08:42:29 exit v5g_prior_vt_000184_centre_0.16 0 gpu 3
+08:42:29 exit v5g_prior_vt_000184_centre_0.25 0 gpu 3
+08:42:29 exit v5g_prior_vt_000184_centre_0.40 0 gpu 3
+08:42:29 exit v5g_prior_vt_000184_end_0.10 0 gpu 3
+08:42:29 exit v5g_prior_vt_000184_end_0.25 0 gpu 3
+08:42:29 start v5g_lawmean_pred_000205_centre_0.10 gpu 3
+08:42:29 start v5g_lawmean_pred_000205_centre_0.25 gpu 3
+08:42:29 start v5g_lawmean_pred_000205_centre_0.40 gpu 3
+08:42:29 start v5g_lawmean_pred_000205_end_0.03 gpu 3
+08:42:29 start v5g_lawmean_pred_000205_end_0.10 gpu 3
+08:42:29 start v5g_lawmean_pred_000205_end_0.25 gpu 3
+08:42:29 start v5g_lawmean_pred_000205_end_0.40 gpu 3
+08:43:14 exit v5g_lawmean_pred_000184_centre_0.10 0 gpu 3
+08:43:14 exit v5g_lawmean_pred_000184_centre_0.25 0 gpu 3
+08:43:14 start v5g_lawmean_pred_000205_none_0 gpu 3
+08:43:14 start v5g_prior_vt_000244_centre_0.03 gpu 3
+08:44:14 exit v5g_lawmean_pred_000184_centre_0.03 0 gpu 1
+08:44:14 exit v5g_lawmean_pred_000184_centre_0.06 0 gpu 1
+08:44:14 exit v5g_lawmean_pred_000184_centre_0.16 0 gpu 1
+08:44:14 exit v5g_lawmean_pred_000184_centre_0.40 0 gpu 1
+08:44:14 exit v5g_prior_vt_000244_centre_0.03 0 gpu 3
+08:44:14 start v5g_prior_vt_000244_centre_0.10 gpu 1
+08:44:14 start v5g_prior_vt_000244_centre_0.25 gpu 1
+08:44:14 start v5g_prior_vt_000244_centre_0.40 gpu 1
+08:44:14 start v5g_prior_vt_000244_end_0.03 gpu 1
+08:44:14 start v5g_prior_vt_000244_end_0.10 gpu 3
+08:44:29 exit v5g_lawmean_pred_000205_none_0 0 gpu 3
+08:44:30 start v5g_prior_vt_000244_end_0.25 gpu 3
+08:45:00 exit v5g_prior_vision_000205_none_0 0 gpu 1
+08:45:00 start v5g_prior_vt_000244_end_0.40 gpu 1
+08:46:15 exit v5g_lawmean_pred_000184_end_0.03 0 gpu 0
+08:46:15 exit v5g_lawmean_pred_000184_end_0.06 0 gpu 0
+08:46:15 exit v5g_lawmean_pred_000184_end_0.10 0 gpu 0
+08:46:15 exit v5g_lawmean_pred_000184_end_0.16 0 gpu 0
+08:46:15 exit v5g_lawmean_pred_000184_end_0.25 0 gpu 0
+08:46:15 exit v5g_lawmean_pred_000184_end_0.40 0 gpu 0
+08:46:15 exit v5g_prior_vt_000205_centre_0.10 0 gpu 0
+08:46:15 start v5g_prior_vt_000244_none_0 gpu 0
+08:46:15 start v5g_prior_vision_000244_centre_0.03 gpu 0
+08:46:15 start v5g_prior_vision_000244_centre_0.10 gpu 0
+08:46:15 start v5g_prior_vision_000244_centre_0.25 gpu 0
+08:46:15 start v5g_prior_vision_000244_centre_0.40 gpu 0
+08:46:15 start v5g_prior_vision_000244_end_0.03 gpu 0
+08:46:15 start v5g_prior_vision_000244_end_0.10 gpu 0
+08:46:30 exit v5g_prior_vt_000244_none_0 0 gpu 0
+08:46:30 start v5g_prior_vision_000244_end_0.25 gpu 0
+08:46:45 exit v5g_prior_vt_000205_centre_0.25 0 gpu 0
+08:46:45 exit v5g_prior_vt_000205_centre_0.40 0 gpu 0
+08:46:45 exit v5g_prior_vt_000205_end_0.03 0 gpu 4
+08:46:45 exit v5g_prior_vt_000205_end_0.10 0 gpu 4
+08:46:45 exit v5g_prior_vt_000205_end_0.25 0 gpu 4
+08:46:45 exit v5g_prior_vt_000205_end_0.40 0 gpu 4
+08:46:45 start v5g_prior_vision_000244_end_0.40 gpu 4
+08:46:45 start v5g_prior_vision_000244_none_0 gpu 4
+08:46:45 start v5g_lawmean_pred_000244_centre_0.03 gpu 0
+08:46:45 start v5g_lawmean_pred_000244_centre_0.10 gpu 4
+08:46:45 start v5g_lawmean_pred_000244_centre_0.25 gpu 0
+08:46:45 start v5g_lawmean_pred_000244_centre_0.40 gpu 4
+08:47:45 exit v5g_prior_vision_000244_none_0 0 gpu 4
+08:47:46 start v5g_lawmean_pred_000244_end_0.03 gpu 4
+08:51:01 exit v5g_prior_vt_000244_end_0.10 0 gpu 3
+08:51:01 start v5g_lawmean_pred_000244_end_0.10 gpu 3
+08:52:02 exit v5g_prior_vision_000205_centre_0.03 0 gpu 4
+08:52:02 exit v5g_prior_vision_000205_centre_0.10 0 gpu 4
+08:52:02 exit v5g_prior_vision_000205_centre_0.25 0 gpu 4
+08:52:02 exit v5g_prior_vision_000205_centre_0.40 0 gpu 4
+08:52:02 exit v5g_prior_vision_000205_end_0.03 0 gpu 4
+08:52:02 start v5g_lawmean_pred_000244_end_0.25 gpu 4
+08:52:02 start v5g_lawmean_pred_000244_end_0.40 gpu 4
+08:52:02 start v5g_lawmean_pred_000244_none_0 gpu 4
+08:52:02 start v5g_prior_vt_000250_centre_0.03 gpu 4
+08:52:02 start v5g_prior_vt_000250_centre_0.10 gpu 4
+08:52:17 exit v5g_prior_vt_000244_centre_0.10 0 gpu 1
+08:52:17 exit v5g_prior_vt_000244_centre_0.25 0 gpu 1
+08:52:17 exit v5g_prior_vt_000244_centre_0.40 0 gpu 1
+08:52:17 exit v5g_prior_vt_000244_end_0.03 0 gpu 1
+08:52:17 exit v5g_lawmean_pred_000244_none_0 0 gpu 4
+08:52:17 start v5g_prior_vt_000250_centre_0.25 gpu 1
+08:52:17 start v5g_prior_vt_000250_centre_0.40 gpu 1
+08:52:17 start v5g_prior_vt_000250_end_0.03 gpu 1
+08:52:17 start v5g_prior_vt_000250_end_0.10 gpu 1
+08:52:17 start v5g_prior_vt_000250_end_0.25 gpu 4
+08:52:32 exit v5g_lawmean_pred_000205_centre_0.03 0 gpu 1
+08:52:32 start v5g_prior_vt_000250_end_0.40 gpu 1
+08:52:47 exit v5g_prior_vision_000205_end_0.10 0 gpu 1
+08:52:47 exit v5g_prior_vision_000205_end_0.25 0 gpu 1
+08:52:47 exit v5g_prior_vision_000205_end_0.40 0 gpu 1
+08:52:47 exit v5g_lawmean_pred_000205_centre_0.10 0 gpu 3
+08:52:47 exit v5g_lawmean_pred_000205_centre_0.25 0 gpu 3
+08:52:47 exit v5g_lawmean_pred_000205_centre_0.40 0 gpu 3
+08:52:47 exit v5g_lawmean_pred_000205_end_0.03 0 gpu 3
+08:52:47 exit v5g_lawmean_pred_000205_end_0.10 0 gpu 3
+08:52:47 exit v5g_lawmean_pred_000205_end_0.25 0 gpu 3
+08:52:47 exit v5g_lawmean_pred_000205_end_0.40 0 gpu 3
+08:52:47 exit v5g_prior_vt_000244_end_0.25 0 gpu 3
+08:52:47 exit v5g_prior_vt_000244_end_0.40 0 gpu 1
+08:52:47 start v5g_prior_vt_000250_none_0 gpu 3
+08:52:47 start v5g_prior_vision_000250_centre_0.03 gpu 3
+08:52:47 start v5g_prior_vision_000250_centre_0.10 gpu 3
+08:52:47 start v5g_prior_vision_000250_centre_0.25 gpu 3
+08:52:47 start v5g_prior_vision_000250_centre_0.40 gpu 1
+08:52:47 start v5g_prior_vision_000250_end_0.03 gpu 3
+08:52:47 start v5g_prior_vision_000250_end_0.10 gpu 1
+08:52:47 start v5g_prior_vision_000250_end_0.25 gpu 3
+08:52:47 start v5g_prior_vision_000250_end_0.40 gpu 1
+08:52:47 start v5g_prior_vision_000250_none_0 gpu 3
+08:52:47 start v5g_lawmean_pred_000250_centre_0.03 gpu 1
+08:52:47 start v5g_lawmean_pred_000250_centre_0.10 gpu 3
+08:53:17 exit v5g_lawmean_pred_000244_end_0.10 0 gpu 3
+08:53:17 start v5g_lawmean_pred_000250_centre_0.25 gpu 3
+08:54:47 exit v5g_prior_vision_000244_end_0.40 0 gpu 4
+08:54:47 exit v5g_prior_vision_000250_none_0 0 gpu 3
+08:54:47 start v5g_lawmean_pred_000250_centre_0.40 gpu 3
+08:54:47 start v5g_lawmean_pred_000250_end_0.03 gpu 4
+08:56:03 exit v5g_lawmean_pred_000244_centre_0.10 0 gpu 4
+08:56:03 exit v5g_lawmean_pred_000244_centre_0.40 0 gpu 4
+08:56:03 exit v5g_lawmean_pred_000244_end_0.03 0 gpu 4
+08:56:03 start v5g_lawmean_pred_000250_end_0.10 gpu 4
+08:56:03 start v5g_lawmean_pred_000250_end_0.25 gpu 4
+08:56:03 start v5g_lawmean_pred_000250_end_0.40 gpu 4
+08:56:18 exit v5g_prior_vision_000244_centre_0.03 0 gpu 0
+08:56:18 exit v5g_prior_vision_000244_centre_0.10 0 gpu 0
+08:56:18 exit v5g_prior_vision_000244_centre_0.25 0 gpu 0
+08:56:18 exit v5g_prior_vision_000244_centre_0.40 0 gpu 0
+08:56:18 exit v5g_prior_vision_000244_end_0.03 0 gpu 0
+08:56:18 exit v5g_prior_vision_000244_end_0.10 0 gpu 0
+08:56:18 exit v5g_prior_vision_000244_end_0.25 0 gpu 0
+08:56:18 start v5g_lawmean_pred_000250_none_0 gpu 0
+08:56:18 start v5g_prior_vt_000271_centre_0.03 gpu 0
+08:56:18 start v5g_prior_vt_000271_centre_0.10 gpu 0
+08:56:18 start v5g_prior_vt_000271_centre_0.25 gpu 0
+08:56:18 start v5g_prior_vt_000271_centre_0.40 gpu 0
+08:56:18 start v5g_prior_vt_000271_end_0.03 gpu 0
+08:56:18 start v5g_prior_vt_000271_end_0.10 gpu 0
+08:56:33 exit v5g_lawmean_pred_000244_centre_0.03 0 gpu 0
+08:56:33 exit v5g_lawmean_pred_000244_centre_0.25 0 gpu 0
+08:56:33 exit v5g_lawmean_pred_000250_none_0 0 gpu 0
+08:56:33 start v5g_prior_vt_000271_end_0.25 gpu 0
+08:56:33 start v5g_prior_vt_000271_end_0.40 gpu 0
+08:56:33 start v5g_prior_vt_000271_none_0 gpu 0
+08:56:48 exit v5g_prior_vt_000271_none_0 0 gpu 0
+08:56:48 start v5g_prior_vision_000271_centre_0.03 gpu 0
+08:57:33 exit v5g_prior_vt_000250_none_0 0 gpu 3
+08:57:33 start v5g_prior_vision_000271_centre_0.10 gpu 3
+08:59:18 exit v5g_lawmean_pred_000244_end_0.25 0 gpu 4
+08:59:18 exit v5g_lawmean_pred_000244_end_0.40 0 gpu 4
+08:59:18 start v5g_prior_vision_000271_centre_0.25 gpu 4
+08:59:18 start v5g_prior_vision_000271_centre_0.40 gpu 4
+09:00:33 exit v5g_prior_vision_000250_centre_0.40 0 gpu 1
+09:00:33 exit v5g_prior_vision_000250_end_0.10 0 gpu 1
+09:00:33 exit v5g_prior_vision_000250_end_0.40 0 gpu 1
+09:00:33 exit v5g_lawmean_pred_000250_centre_0.03 0 gpu 1
+09:00:33 start v5g_prior_vision_000271_end_0.03 gpu 1
+09:00:33 start v5g_prior_vision_000271_end_0.10 gpu 1
+09:00:33 start v5g_prior_vision_000271_end_0.25 gpu 1
+09:00:33 start v5g_prior_vision_000271_end_0.40 gpu 1
+09:02:19 exit v5g_lawmean_pred_000250_end_0.03 0 gpu 4
+09:02:19 start v5g_prior_vision_000271_none_0 gpu 4
+09:03:04 exit v5g_prior_vision_000250_centre_0.03 0 gpu 3
+09:03:04 exit v5g_prior_vision_000250_centre_0.10 0 gpu 3
+09:03:04 exit v5g_prior_vision_000250_centre_0.25 0 gpu 3
+09:03:04 exit v5g_prior_vision_000250_end_0.03 0 gpu 3
+09:03:04 exit v5g_prior_vision_000250_end_0.25 0 gpu 3
+09:03:04 exit v5g_lawmean_pred_000250_centre_0.10 0 gpu 3
+09:03:04 exit v5g_lawmean_pred_000250_centre_0.25 0 gpu 3
+09:03:04 exit v5g_lawmean_pred_000250_centre_0.40 0 gpu 3
+09:03:04 start v5g_lawmean_pred_000271_centre_0.03 gpu 3
+09:03:04 start v5g_lawmean_pred_000271_centre_0.10 gpu 3
+09:03:04 start v5g_lawmean_pred_000271_centre_0.25 gpu 3
+09:03:04 start v5g_lawmean_pred_000271_centre_0.40 gpu 3
+09:03:04 start v5g_lawmean_pred_000271_end_0.03 gpu 3
+09:03:04 start v5g_lawmean_pred_000271_end_0.10 gpu 3
+09:03:04 start v5g_lawmean_pred_000271_end_0.25 gpu 3
+09:03:04 start v5g_lawmean_pred_000271_end_0.40 gpu 3
+09:03:19 exit v5g_prior_vision_000271_none_0 0 gpu 4
+09:03:19 start v5g_lawmean_pred_000271_none_0 gpu 4
+09:03:34 exit v5g_lawmean_pred_000250_end_0.10 0 gpu 4
+09:03:34 exit v5g_lawmean_pred_000250_end_0.25 0 gpu 4
+09:03:34 exit v5g_lawmean_pred_000250_end_0.40 0 gpu 4
+09:03:34 start v5g_prior_vt_000141_centre_0.03 gpu 4
+09:03:34 start v5g_prior_vt_000141_centre_0.10 gpu 4
+09:03:34 start v5g_prior_vt_000141_centre_0.25 gpu 4
+09:03:49 exit v5g_lawmean_pred_000271_none_0 0 gpu 4
+09:03:49 start v5g_prior_vt_000141_centre_0.40 gpu 4
+09:04:34 exit v5g_prior_vt_000250_centre_0.03 0 gpu 4
+09:04:34 exit v5g_prior_vt_000250_centre_0.10 0 gpu 4
+09:04:34 exit v5g_prior_vt_000250_centre_0.25 0 gpu 1
+09:04:34 exit v5g_prior_vt_000250_centre_0.40 0 gpu 1
+09:04:34 exit v5g_prior_vt_000250_end_0.03 0 gpu 1
+09:04:34 exit v5g_prior_vt_000250_end_0.10 0 gpu 1
+09:04:34 exit v5g_prior_vt_000250_end_0.40 0 gpu 1
+09:04:34 start v5g_prior_vt_000141_end_0.03 gpu 1
+09:04:34 start v5g_prior_vt_000141_end_0.10 gpu 1
+09:04:34 start v5g_prior_vt_000141_end_0.25 gpu 1
+09:04:34 start v5g_prior_vt_000141_end_0.40 gpu 1
+09:04:34 start v5g_prior_vt_000141_none_0 gpu 4
+09:04:34 start v5g_prior_vision_000141_centre_0.03 gpu 1
+09:04:34 start v5g_prior_vision_000141_centre_0.10 gpu 4
+09:04:49 exit v5g_prior_vt_000250_end_0.25 0 gpu 4
+09:04:49 start v5g_prior_vision_000141_centre_0.25 gpu 4
+09:05:04 exit v5g_prior_vt_000271_centre_0.03 0 gpu 0
+09:05:04 exit v5g_prior_vt_000271_centre_0.10 0 gpu 0
+09:05:04 exit v5g_prior_vt_000271_centre_0.25 0 gpu 0
+09:05:04 exit v5g_prior_vt_000271_centre_0.40 0 gpu 0
+09:05:04 exit v5g_prior_vt_000271_end_0.03 0 gpu 0
+09:05:04 exit v5g_prior_vt_000271_end_0.10 0 gpu 0
+09:05:04 exit v5g_prior_vt_000271_end_0.25 0 gpu 0
+09:05:04 exit v5g_prior_vt_000271_end_0.40 0 gpu 0
+09:05:04 start v5g_prior_vision_000141_centre_0.40 gpu 0
+09:05:04 start v5g_prior_vision_000141_end_0.03 gpu 0
+09:05:04 start v5g_prior_vision_000141_end_0.10 gpu 0
+09:05:04 start v5g_prior_vision_000141_end_0.25 gpu 0
+09:05:04 start v5g_prior_vision_000141_end_0.40 gpu 0
+09:05:04 start v5g_prior_vision_000141_none_0 gpu 0
+09:05:04 start v5g_lawmean_pred_000141_centre_0.03 gpu 0
+09:05:04 start v5g_lawmean_pred_000141_centre_0.10 gpu 0
+09:06:04 exit v5g_prior_vision_000271_centre_0.03 0 gpu 0
+09:06:04 start v5g_lawmean_pred_000141_centre_0.25 gpu 0
+09:06:19 exit v5g_prior_vt_000141_none_0 0 gpu 4
+09:06:19 start v5g_lawmean_pred_000141_centre_0.40 gpu 4
+09:07:20 exit v5g_prior_vision_000271_centre_0.25 0 gpu 4
+09:07:20 exit v5g_prior_vision_000271_centre_0.40 0 gpu 4
+09:07:20 start v5g_lawmean_pred_000141_end_0.03 gpu 4
+09:07:20 start v5g_lawmean_pred_000141_end_0.10 gpu 4
+09:08:20 exit v5g_prior_vision_000271_centre_0.10 0 gpu 3
+09:08:20 start v5g_lawmean_pred_000141_end_0.25 gpu 3
+09:09:05 exit v5g_lawmean_pred_000141_centre_0.03 0 gpu 0
+09:09:05 exit v5g_lawmean_pred_000141_centre_0.10 0 gpu 0
+09:09:05 exit v5g_lawmean_pred_000141_centre_0.25 0 gpu 0
+09:09:05 start v5g_lawmean_pred_000141_end_0.40 gpu 0
+09:09:05 start v5g_lawmean_pred_000141_none_0 gpu 0
+09:09:05 start v5g_prior_vt_000231_centre_0.03 gpu 0
+09:09:20 exit v5g_lawmean_pred_000141_none_0 0 gpu 0
+09:09:20 start v5g_prior_vt_000231_centre_0.10 gpu 0
+09:09:50 exit v5g_prior_vision_000141_none_0 0 gpu 0
+09:09:50 start v5g_prior_vt_000231_centre_0.25 gpu 0
+09:10:05 exit v5g_prior_vision_000271_end_0.03 0 gpu 1
+09:10:05 exit v5g_prior_vision_000271_end_0.10 0 gpu 1
+09:10:05 exit v5g_prior_vision_000271_end_0.25 0 gpu 1
+09:10:05 exit v5g_prior_vision_000271_end_0.40 0 gpu 1
+09:10:05 start v5g_prior_vt_000231_centre_0.40 gpu 1
+09:10:05 start v5g_prior_vt_000231_end_0.03 gpu 1
+09:10:05 start v5g_prior_vt_000231_end_0.10 gpu 1
+09:10:05 start v5g_prior_vt_000231_end_0.25 gpu 1
+09:12:05 exit v5g_lawmean_pred_000271_centre_0.03 0 gpu 3
+09:12:05 exit v5g_lawmean_pred_000271_centre_0.10 0 gpu 3
+09:12:05 exit v5g_lawmean_pred_000271_centre_0.25 0 gpu 3
+09:12:05 exit v5g_lawmean_pred_000271_centre_0.40 0 gpu 3
+09:12:05 exit v5g_lawmean_pred_000271_end_0.03 0 gpu 3
+09:12:05 exit v5g_lawmean_pred_000271_end_0.10 0 gpu 3
+09:12:05 exit v5g_lawmean_pred_000271_end_0.25 0 gpu 3
+09:12:05 exit v5g_lawmean_pred_000271_end_0.40 0 gpu 3
+09:12:05 start v5g_prior_vt_000231_end_0.40 gpu 3
+09:12:05 start v5g_prior_vt_000231_none_0 gpu 3
+09:12:05 start v5g_prior_vision_000231_centre_0.03 gpu 3
+09:12:05 start v5g_prior_vision_000231_centre_0.10 gpu 3
+09:12:05 start v5g_prior_vision_000231_centre_0.25 gpu 3
+09:12:05 start v5g_prior_vision_000231_centre_0.40 gpu 3
+09:12:05 start v5g_prior_vision_000231_end_0.03 gpu 3
+09:12:05 start v5g_prior_vision_000231_end_0.10 gpu 3
+09:12:20 exit v5g_lawmean_pred_000141_end_0.25 0 gpu 3
+09:12:20 start v5g_prior_vision_000231_end_0.25 gpu 3
+09:12:50 exit v5g_prior_vt_000141_end_0.03 0 gpu 1
+09:12:50 exit v5g_prior_vt_000141_end_0.10 0 gpu 1
+09:12:50 exit v5g_prior_vt_000141_end_0.25 0 gpu 1
+09:12:50 exit v5g_prior_vt_000141_end_0.40 0 gpu 1
+09:12:50 exit v5g_prior_vt_000231_none_0 0 gpu 3
+09:12:50 start v5g_prior_vision_000231_end_0.40 gpu 1
+09:12:50 start v5g_prior_vision_000231_none_0 gpu 1
+09:12:50 start v5g_lawmean_pred_000231_centre_0.03 gpu 1
+09:12:50 start v5g_lawmean_pred_000231_centre_0.10 gpu 1
+09:12:50 start v5g_lawmean_pred_000231_centre_0.25 gpu 3
+09:13:05 exit v5g_prior_vision_000231_none_0 0 gpu 1
+09:13:05 start v5g_lawmean_pred_000231_centre_0.40 gpu 1
+09:13:35 exit v5g_prior_vision_000141_centre_0.03 0 gpu 1
+09:13:35 start v5g_lawmean_pred_000231_end_0.03 gpu 1
+09:14:05 exit v5g_prior_vt_000141_centre_0.03 0 gpu 4
+09:14:05 exit v5g_prior_vt_000141_centre_0.10 0 gpu 4
+09:14:05 exit v5g_prior_vt_000141_centre_0.25 0 gpu 4
+09:14:05 exit v5g_prior_vt_000141_centre_0.40 0 gpu 4
+09:14:05 exit v5g_lawmean_pred_000141_centre_0.40 0 gpu 4
+09:14:06 start v5g_lawmean_pred_000231_end_0.10 gpu 4
+09:14:06 start v5g_lawmean_pred_000231_end_0.25 gpu 4
+09:14:06 start v5g_lawmean_pred_000231_end_0.40 gpu 4
+09:14:06 start v5g_lawmean_pred_000231_none_0 gpu 4
+09:14:06 start v5g_prior_vt_000021_centre_0.03 gpu 4
+09:14:36 exit v5g_lawmean_pred_000141_end_0.40 0 gpu 0
+09:14:36 start v5g_prior_vt_000021_centre_0.10 gpu 0
+09:14:51 exit v5g_lawmean_pred_000141_end_0.03 0 gpu 4
+09:14:51 exit v5g_lawmean_pred_000141_end_0.10 0 gpu 4
+09:14:51 start v5g_prior_vt_000021_centre_0.25 gpu 4
+09:14:51 start v5g_prior_vt_000021_centre_0.40 gpu 4
+09:15:51 exit v5g_prior_vision_000141_centre_0.10 0 gpu 4
+09:15:51 exit v5g_prior_vision_000141_centre_0.25 0 gpu 4
+09:15:51 start v5g_prior_vt_000021_end_0.03 gpu 4
+09:15:51 start v5g_prior_vt_000021_end_0.10 gpu 4
+09:17:51 exit v5g_prior_vision_000141_centre_0.40 0 gpu 0
+09:17:51 exit v5g_prior_vision_000141_end_0.03 0 gpu 0
+09:17:51 exit v5g_prior_vision_000141_end_0.10 0 gpu 0
+09:17:51 exit v5g_prior_vision_000141_end_0.25 0 gpu 0
+09:17:51 exit v5g_prior_vision_000141_end_0.40 0 gpu 0
+09:17:51 exit v5g_lawmean_pred_000231_none_0 0 gpu 4
+09:17:51 start v5g_prior_vt_000021_end_0.25 gpu 0
+09:17:51 start v5g_prior_vt_000021_end_0.40 gpu 0
+09:17:51 start v5g_prior_vt_000021_none_0 gpu 0
+09:17:51 start v5g_prior_vision_000021_centre_0.10 gpu 0
+09:17:51 start v5g_prior_vision_000021_centre_0.25 gpu 0
+09:17:51 start v5g_prior_vision_000021_centre_0.40 gpu 4
+09:18:06 exit v5g_prior_vt_000021_none_0 0 gpu 0
+09:18:06 start v5g_prior_vision_000021_end_0.03 gpu 0
+09:19:51 exit v5g_prior_vt_000231_centre_0.40 0 gpu 1
+09:19:51 exit v5g_prior_vt_000231_end_0.03 0 gpu 1
+09:19:51 exit v5g_prior_vt_000231_end_0.10 0 gpu 1
+09:19:51 exit v5g_prior_vt_000231_end_0.25 0 gpu 1
+09:19:51 exit v5g_prior_vision_000231_end_0.40 0 gpu 1
+09:19:51 start v5g_prior_vision_000021_end_0.10 gpu 1
+09:19:51 start v5g_prior_vision_000021_end_0.25 gpu 1
+09:19:51 start v5g_prior_vision_000021_end_0.40 gpu 1
+09:19:51 start v5g_prior_vision_000021_none_0 gpu 1
+09:19:51 start v5g_lawmean_pred_000021_centre_0.03 gpu 1
+09:20:06 exit v5g_prior_vision_000021_none_0 0 gpu 1
+09:20:06 start v5g_lawmean_pred_000021_centre_0.10 gpu 1
+09:21:22 exit v5g_prior_vt_000231_centre_0.03 0 gpu 0
+09:21:22 exit v5g_prior_vt_000231_centre_0.10 0 gpu 0
+09:21:22 exit v5g_prior_vt_000231_centre_0.25 0 gpu 0
+09:21:22 exit v5g_prior_vt_000231_end_0.40 0 gpu 3
+09:21:22 exit v5g_prior_vision_000231_centre_0.03 0 gpu 3
+09:21:22 exit v5g_prior_vision_000231_centre_0.10 0 gpu 3
+09:21:22 exit v5g_prior_vision_000231_centre_0.25 0 gpu 3
+09:21:22 exit v5g_prior_vision_000231_centre_0.40 0 gpu 3
+09:21:22 exit v5g_prior_vision_000231_end_0.03 0 gpu 3
+09:21:22 exit v5g_prior_vision_000231_end_0.10 0 gpu 3
+09:21:22 exit v5g_prior_vision_000231_end_0.25 0 gpu 3
+09:21:22 start v5g_lawmean_pred_000021_centre_0.25 gpu 3
+09:21:22 start v5g_lawmean_pred_000021_centre_0.40 gpu 3
+09:21:22 start v5g_lawmean_pred_000021_end_0.03 gpu 3
+09:21:22 start v5g_lawmean_pred_000021_end_0.10 gpu 3
+09:21:22 start v5g_lawmean_pred_000021_end_0.25 gpu 3
+09:21:22 start v5g_lawmean_pred_000021_end_0.40 gpu 0
+09:21:22 start v5g_lawmean_pred_000021_none_0 gpu 3
+09:21:22 start v5g_prior_vt_000037_centre_0.03 gpu 0
+09:21:22 start v5g_prior_vt_000037_centre_0.10 gpu 3
+09:21:22 start v5g_prior_vt_000037_centre_0.25 gpu 0
+09:21:22 start v5g_prior_vt_000037_centre_0.40 gpu 3
+09:21:37 exit v5g_lawmean_pred_000231_centre_0.25 0 gpu 3
+09:21:37 start v5g_prior_vt_000037_end_0.03 gpu 3
+09:23:07 exit v5g_prior_vt_000021_centre_0.03 0 gpu 4
+09:23:07 exit v5g_prior_vt_000021_centre_0.25 0 gpu 4
+09:23:07 exit v5g_prior_vt_000021_centre_0.40 0 gpu 4
+09:23:07 exit v5g_prior_vt_000021_end_0.03 0 gpu 4
+09:23:07 exit v5g_prior_vt_000021_end_0.10 0 gpu 4
+09:23:07 start v5g_prior_vt_000037_end_0.10 gpu 4
+09:23:07 start v5g_prior_vt_000037_end_0.25 gpu 4
+09:23:07 start v5g_prior_vt_000037_end_0.40 gpu 4
+09:23:07 start v5g_prior_vt_000037_none_0 gpu 4
+09:23:07 start v5g_prior_vision_000037_centre_0.03 gpu 4
+09:23:37 exit v5g_prior_vt_000021_centre_0.10 0 gpu 0
+09:23:37 start v5g_prior_vision_000037_centre_0.10 gpu 0
+09:25:07 exit v5g_lawmean_pred_000231_end_0.10 0 gpu 4
+09:25:07 exit v5g_lawmean_pred_000231_end_0.25 0 gpu 4
+09:25:07 exit v5g_lawmean_pred_000231_end_0.40 0 gpu 4
+09:25:07 exit v5g_prior_vt_000021_end_0.40 0 gpu 0
+09:25:07 exit v5g_prior_vision_000021_centre_0.40 0 gpu 4
+09:25:07 start v5g_prior_vision_000037_centre_0.25 gpu 4
+09:25:07 start v5g_prior_vision_000037_centre_0.40 gpu 4
+09:25:07 start v5g_prior_vision_000037_end_0.03 gpu 4
+09:25:07 start v5g_prior_vision_000037_end_0.10 gpu 0
+09:25:07 start v5g_prior_vision_000037_end_0.25 gpu 4
+09:25:22 exit v5g_prior_vt_000021_end_0.25 0 gpu 0
+09:25:22 exit v5g_prior_vision_000021_centre_0.10 0 gpu 0
+09:25:22 exit v5g_prior_vision_000021_centre_0.25 0 gpu 0
+09:25:22 exit v5g_prior_vision_000021_end_0.03 0 gpu 0
+09:25:22 exit v5g_prior_vt_000037_none_0 0 gpu 4
+09:25:22 start v5g_prior_vision_000037_end_0.40 gpu 0
+09:25:22 start v5g_prior_vision_000037_none_0 gpu 0
+09:25:22 start v5g_lawmean_pred_000037_centre_0.03 gpu 0
+09:25:22 start v5g_lawmean_pred_000037_centre_0.10 gpu 0
+09:25:22 start v5g_lawmean_pred_000037_centre_0.25 gpu 4
+09:25:37 exit v5g_prior_vision_000037_none_0 0 gpu 0
+09:25:37 start v5g_lawmean_pred_000037_centre_0.40 gpu 0
+09:26:07 exit v5g_lawmean_pred_000231_centre_0.03 0 gpu 1
+09:26:07 exit v5g_lawmean_pred_000231_centre_0.10 0 gpu 1
+09:26:07 exit v5g_lawmean_pred_000231_centre_0.40 0 gpu 1
+09:26:07 exit v5g_lawmean_pred_000231_end_0.03 0 gpu 1
+09:26:07 exit v5g_lawmean_pred_000021_none_0 0 gpu 3
+09:26:07 start v5g_lawmean_pred_000037_end_0.03 gpu 1
+09:26:07 start v5g_lawmean_pred_000037_end_0.10 gpu 1
+09:26:07 start v5g_lawmean_pred_000037_end_0.25 gpu 1
+09:26:07 start v5g_lawmean_pred_000037_end_0.40 gpu 1
+09:26:07 start v5g_lawmean_pred_000037_none_0 gpu 3
+09:27:07 exit v5g_prior_vision_000021_end_0.10 0 gpu 1
+09:27:07 exit v5g_prior_vision_000021_end_0.25 0 gpu 1
+09:27:07 exit v5g_prior_vision_000021_end_0.40 0 gpu 1
+09:27:07 start v5g_prior_vt_000060_centre_0.03 gpu 1
+09:27:07 start v5g_prior_vt_000060_centre_0.10 gpu 1
+09:27:07 start v5g_prior_vt_000060_centre_0.25 gpu 1
+09:29:38 exit v5g_lawmean_pred_000021_centre_0.03 0 gpu 1
+09:29:38 exit v5g_lawmean_pred_000021_centre_0.10 0 gpu 1
+09:29:38 start v5g_prior_vt_000060_centre_0.40 gpu 1
+09:29:38 start v5g_prior_vt_000060_end_0.03 gpu 1
+09:30:23 exit v5g_lawmean_pred_000037_none_0 0 gpu 3
+09:30:23 start v5g_prior_vt_000060_end_0.10 gpu 3
+09:31:38 exit v5g_prior_vt_000037_centre_0.10 0 gpu 3
+09:31:38 exit v5g_prior_vt_000037_centre_0.40 0 gpu 3
+09:31:38 exit v5g_prior_vt_000037_end_0.03 0 gpu 3
+09:31:38 start v5g_prior_vt_000060_end_0.25 gpu 3
+09:31:38 start v5g_prior_vt_000060_end_0.40 gpu 3
+09:31:38 start v5g_prior_vt_000060_none_0 gpu 3
+09:31:53 exit v5g_prior_vt_000037_centre_0.03 0 gpu 0
+09:31:53 exit v5g_prior_vt_000037_centre_0.25 0 gpu 0
+09:31:53 exit v5g_prior_vision_000037_centre_0.10 0 gpu 0
+09:31:53 exit v5g_prior_vision_000037_end_0.10 0 gpu 0
+09:31:53 exit v5g_prior_vt_000060_none_0 0 gpu 3
+09:31:53 start v5g_prior_vision_000060_centre_0.03 gpu 0
+09:31:53 start v5g_prior_vision_000060_centre_0.10 gpu 0
+09:31:53 start v5g_prior_vision_000060_centre_0.25 gpu 0
+09:31:53 start v5g_prior_vision_000060_centre_0.40 gpu 0
+09:31:53 start v5g_prior_vision_000060_end_0.03 gpu 3
+09:32:08 exit v5g_prior_vision_000037_end_0.40 0 gpu 0
+09:32:08 start v5g_prior_vision_000060_end_0.10 gpu 0
+09:32:38 exit v5g_lawmean_pred_000021_end_0.40 0 gpu 0
+09:32:38 start v5g_prior_vision_000060_end_0.25 gpu 0
+09:32:53 exit v5g_prior_vt_000037_end_0.10 0 gpu 4
+09:32:53 exit v5g_prior_vt_000037_end_0.25 0 gpu 4
+09:32:53 exit v5g_prior_vt_000037_end_0.40 0 gpu 4
+09:32:53 exit v5g_prior_vision_000037_centre_0.03 0 gpu 4
+09:32:53 exit v5g_prior_vision_000037_centre_0.25 0 gpu 4
+09:32:53 exit v5g_prior_vision_000037_centre_0.40 0 gpu 4
+09:32:53 exit v5g_prior_vision_000037_end_0.03 0 gpu 4
+09:32:53 exit v5g_prior_vision_000037_end_0.25 0 gpu 4
+09:32:53 start v5g_prior_vision_000060_end_0.40 gpu 4
+09:32:53 start v5g_prior_vision_000060_none_0 gpu 4
+09:32:53 start v5g_lawmean_pred_000060_centre_0.03 gpu 4
+09:32:53 start v5g_lawmean_pred_000060_centre_0.10 gpu 4
+09:32:53 start v5g_lawmean_pred_000060_centre_0.25 gpu 4
+09:32:53 start v5g_lawmean_pred_000060_centre_0.40 gpu 4
+09:32:53 start v5g_lawmean_pred_000060_end_0.03 gpu 4
+09:32:53 start v5g_lawmean_pred_000060_end_0.10 gpu 4
+09:33:38 exit v5g_lawmean_pred_000037_centre_0.25 0 gpu 4
+09:33:38 start v5g_lawmean_pred_000060_end_0.25 gpu 4
+09:33:53 exit v5g_lawmean_pred_000021_centre_0.25 0 gpu 3
+09:33:53 exit v5g_lawmean_pred_000021_centre_0.40 0 gpu 3
+09:33:53 exit v5g_lawmean_pred_000021_end_0.03 0 gpu 3
+09:33:53 exit v5g_lawmean_pred_000021_end_0.10 0 gpu 3
+09:33:53 exit v5g_lawmean_pred_000021_end_0.25 0 gpu 3
+09:33:53 start v5g_lawmean_pred_000060_end_0.40 gpu 3
+09:33:53 start v5g_lawmean_pred_000060_none_0 gpu 3
+09:33:53 start v5g_prior_vt_000066_centre_0.03 gpu 3
+09:33:53 start v5g_prior_vt_000066_centre_0.10 gpu 3
+09:33:53 start v5g_prior_vt_000066_centre_0.25 gpu 3
+09:34:08 exit v5g_lawmean_pred_000060_none_0 0 gpu 3
+09:34:08 start v5g_prior_vt_000066_centre_0.40 gpu 3
+09:35:08 exit v5g_lawmean_pred_000037_centre_0.03 0 gpu 0
+09:35:08 exit v5g_lawmean_pred_000037_centre_0.10 0 gpu 0
+09:35:08 exit v5g_lawmean_pred_000037_centre_0.40 0 gpu 0
+09:35:08 exit v5g_prior_vision_000060_none_0 0 gpu 4
+09:35:09 start v5g_prior_vt_000066_end_0.03 gpu 0
+09:35:09 start v5g_prior_vt_000066_end_0.10 gpu 0
+09:35:09 start v5g_prior_vt_000066_end_0.25 gpu 0
+09:35:09 start v5g_prior_vt_000066_end_0.40 gpu 4
+09:36:54 exit v5g_prior_vt_000060_end_0.10 0 gpu 3
+09:36:54 start v5g_prior_vt_000066_none_0 gpu 3
+09:37:39 exit v5g_prior_vt_000060_centre_0.03 0 gpu 1
+09:37:39 exit v5g_prior_vt_000060_centre_0.10 0 gpu 1
+09:37:39 exit v5g_prior_vt_000060_centre_0.25 0 gpu 1
+09:37:39 exit v5g_prior_vt_000060_end_0.25 0 gpu 3
+09:37:39 exit v5g_prior_vt_000060_end_0.40 0 gpu 3
+09:37:39 start v5g_prior_vision_000066_centre_0.03 gpu 1
+09:37:39 start v5g_prior_vision_000066_centre_0.10 gpu 1
+09:37:39 start v5g_prior_vision_000066_centre_0.25 gpu 3
+09:37:39 start v5g_prior_vision_000066_centre_0.40 gpu 1
+09:37:39 start v5g_prior_vision_000066_end_0.03 gpu 3
+09:37:54 exit v5g_prior_vt_000060_centre_0.40 0 gpu 1
+09:37:54 exit v5g_prior_vt_000060_end_0.03 0 gpu 1
+09:37:54 start v5g_prior_vision_000066_end_0.10 gpu 1
+09:37:54 start v5g_prior_vision_000066_end_0.25 gpu 1
+09:38:09 exit v5g_prior_vt_000066_none_0 0 gpu 3
+09:38:09 start v5g_prior_vision_000066_end_0.40 gpu 3
+09:38:24 exit v5g_lawmean_pred_000037_end_0.03 0 gpu 1
+09:38:24 exit v5g_lawmean_pred_000037_end_0.10 0 gpu 1
+09:38:24 exit v5g_lawmean_pred_000037_end_0.25 0 gpu 1
+09:38:24 exit v5g_lawmean_pred_000037_end_0.40 0 gpu 1
+09:38:24 start v5g_prior_vision_000066_none_0 gpu 1
+09:38:24 start v5g_lawmean_pred_000066_centre_0.03 gpu 1
+09:38:24 start v5g_lawmean_pred_000066_centre_0.10 gpu 1
+09:38:24 start v5g_lawmean_pred_000066_centre_0.25 gpu 1
+09:39:24 exit v5g_lawmean_pred_000060_end_0.40 0 gpu 3
+09:39:24 start v5g_lawmean_pred_000066_centre_0.40 gpu 3
+09:40:54 exit v5g_prior_vision_000060_end_0.03 0 gpu 3
+09:40:54 start v5g_lawmean_pred_000066_end_0.03 gpu 3
+09:41:39 exit v5g_lawmean_pred_000066_centre_0.03 0 gpu 1
+09:41:39 exit v5g_lawmean_pred_000066_centre_0.10 0 gpu 1
+09:41:39 exit v5g_lawmean_pred_000066_centre_0.25 0 gpu 1
+09:41:39 start v5g_lawmean_pred_000066_end_0.10 gpu 1
+09:41:39 start v5g_lawmean_pred_000066_end_0.25 gpu 1
+09:41:39 start v5g_lawmean_pred_000066_end_0.40 gpu 1
+09:42:09 exit v5g_lawmean_pred_000060_centre_0.03 0 gpu 4
+09:42:09 exit v5g_lawmean_pred_000060_centre_0.10 0 gpu 4
+09:42:09 exit v5g_lawmean_pred_000060_centre_0.25 0 gpu 4
+09:42:09 exit v5g_lawmean_pred_000060_centre_0.40 0 gpu 4
+09:42:09 exit v5g_lawmean_pred_000060_end_0.03 0 gpu 4
+09:42:09 exit v5g_lawmean_pred_000060_end_0.10 0 gpu 4
+09:42:09 exit v5g_lawmean_pred_000060_end_0.25 0 gpu 4
+09:42:09 start v5g_lawmean_pred_000066_none_0 gpu 4
+09:42:09 start v5g_prior_vt_000112_centre_0.03 gpu 4
+09:42:09 start v5g_prior_vt_000112_centre_0.10 gpu 4
+09:42:09 start v5g_prior_vt_000112_centre_0.25 gpu 4
+09:42:09 start v5g_prior_vt_000112_centre_0.40 gpu 4
+09:42:09 start v5g_prior_vt_000112_end_0.03 gpu 4
+09:42:09 start v5g_prior_vt_000112_end_0.10 gpu 4
+09:42:24 exit v5g_lawmean_pred_000066_none_0 0 gpu 4
+09:42:24 start v5g_prior_vt_000112_end_0.25 gpu 4
+09:42:39 exit v5g_prior_vision_000060_end_0.40 0 gpu 4
+09:42:39 exit v5g_prior_vision_000066_none_0 0 gpu 1
+09:42:39 start v5g_prior_vt_000112_end_0.40 gpu 1
+09:42:39 start v5g_prior_vt_000112_none_0 gpu 4
+09:42:54 exit v5g_prior_vision_000060_centre_0.03 0 gpu 0
+09:42:54 exit v5g_prior_vision_000060_centre_0.10 0 gpu 0
+09:42:54 exit v5g_prior_vision_000060_centre_0.25 0 gpu 0
+09:42:54 exit v5g_prior_vision_000060_centre_0.40 0 gpu 0
+09:42:55 exit v5g_prior_vision_000060_end_0.10 0 gpu 0
+09:42:55 exit v5g_prior_vision_000060_end_0.25 0 gpu 0
+09:42:55 start v5g_prior_vision_000112_centre_0.03 gpu 0
+09:42:55 start v5g_prior_vision_000112_centre_0.10 gpu 0
+09:42:55 start v5g_prior_vision_000112_centre_0.25 gpu 0
+09:42:55 start v5g_prior_vision_000112_centre_0.40 gpu 0
+09:42:55 start v5g_prior_vision_000112_end_0.03 gpu 0
+09:42:55 start v5g_prior_vision_000112_end_0.10 gpu 0
+09:43:25 exit v5g_prior_vt_000066_end_0.40 0 gpu 4
+09:43:25 exit v5g_prior_vt_000112_none_0 0 gpu 4
+09:43:25 start v5g_prior_vision_000112_end_0.25 gpu 4
+09:43:25 start v5g_prior_vision_000112_end_0.40 gpu 4
+09:44:25 exit v5g_prior_vt_000066_end_0.03 0 gpu 0
+09:44:25 exit v5g_prior_vt_000066_end_0.10 0 gpu 0
+09:44:25 exit v5g_prior_vt_000066_end_0.25 0 gpu 0
+09:44:25 start v5g_prior_vision_000112_none_0 gpu 0
+09:44:25 start v5g_lawmean_pred_000112_centre_0.03 gpu 0
+09:44:25 start v5g_lawmean_pred_000112_centre_0.10 gpu 0
+09:44:55 exit v5g_prior_vision_000112_none_0 0 gpu 0
+09:44:55 start v5g_lawmean_pred_000112_centre_0.25 gpu 0
+09:45:10 exit v5g_prior_vt_000066_centre_0.03 0 gpu 3
+09:45:10 exit v5g_prior_vt_000066_centre_0.10 0 gpu 3
+09:45:10 exit v5g_prior_vt_000066_centre_0.25 0 gpu 3
+09:45:10 exit v5g_prior_vt_000066_centre_0.40 0 gpu 3
+09:45:10 start v5g_lawmean_pred_000112_centre_0.40 gpu 3
+09:45:10 start v5g_lawmean_pred_000112_end_0.03 gpu 3
+09:45:10 start v5g_lawmean_pred_000112_end_0.10 gpu 3
+09:45:10 start v5g_lawmean_pred_000112_end_0.25 gpu 3
+09:46:10 exit v5g_lawmean_pred_000066_centre_0.40 0 gpu 3
+09:46:10 start v5g_lawmean_pred_000112_end_0.40 gpu 3
+09:46:55 exit v5g_lawmean_pred_000066_end_0.03 0 gpu 3
+09:46:55 start v5g_lawmean_pred_000112_none_0 gpu 3
+09:47:40 exit v5g_prior_vision_000066_centre_0.25 0 gpu 3
+09:47:40 exit v5g_prior_vision_000066_end_0.03 0 gpu 3
+09:47:40 exit v5g_prior_vision_000066_end_0.40 0 gpu 3
+09:47:40 start v5g_prior_vt_000116_centre_0.03 gpu 3
+09:47:40 start v5g_prior_vt_000116_centre_0.10 gpu 3
+09:47:40 start v5g_prior_vt_000116_centre_0.25 gpu 3
+09:48:10 exit v5g_lawmean_pred_000112_none_0 0 gpu 3
+09:48:10 start v5g_prior_vt_000116_centre_0.40 gpu 3
+09:48:25 exit v5g_lawmean_pred_000066_end_0.10 0 gpu 1
+09:48:25 exit v5g_lawmean_pred_000066_end_0.25 0 gpu 1
+09:48:25 exit v5g_lawmean_pred_000066_end_0.40 0 gpu 1
+09:48:25 start v5g_prior_vt_000116_end_0.03 gpu 1
+09:48:25 start v5g_prior_vt_000116_end_0.10 gpu 1
+09:48:25 start v5g_prior_vt_000116_end_0.25 gpu 1
+09:50:40 exit v5g_prior_vision_000066_centre_0.03 0 gpu 1
+09:50:40 exit v5g_prior_vision_000066_centre_0.10 0 gpu 1
+09:50:40 exit v5g_prior_vision_000066_centre_0.40 0 gpu 1
+09:50:40 exit v5g_prior_vision_000066_end_0.10 0 gpu 1
+09:50:40 exit v5g_prior_vision_000066_end_0.25 0 gpu 1
+09:50:40 start v5g_prior_vt_000116_end_0.40 gpu 1
+09:50:40 start v5g_prior_vt_000116_none_0 gpu 1
+09:50:40 start v5g_prior_vision_000116_centre_0.03 gpu 1
+09:50:40 start v5g_prior_vision_000116_centre_0.10 gpu 1
+09:50:40 start v5g_prior_vision_000116_centre_0.25 gpu 1
+09:50:55 exit v5g_prior_vt_000116_none_0 0 gpu 1
+09:50:56 start v5g_prior_vision_000116_centre_0.40 gpu 1
+09:51:26 exit v5g_prior_vt_000112_end_0.40 0 gpu 1
+09:51:26 start v5g_prior_vision_000116_end_0.03 gpu 1
+09:52:11 exit v5g_prior_vt_000112_centre_0.03 0 gpu 4
+09:52:11 exit v5g_prior_vt_000112_centre_0.10 0 gpu 4
+09:52:11 exit v5g_prior_vt_000112_centre_0.25 0 gpu 4
+09:52:11 exit v5g_prior_vt_000112_centre_0.40 0 gpu 4
+09:52:11 exit v5g_prior_vt_000112_end_0.03 0 gpu 4
+09:52:11 exit v5g_prior_vt_000112_end_0.10 0 gpu 4
+09:52:11 exit v5g_prior_vt_000112_end_0.25 0 gpu 4
+09:52:11 start v5g_prior_vision_000116_end_0.10 gpu 4
+09:52:11 start v5g_prior_vision_000116_end_0.25 gpu 4
+09:52:11 start v5g_prior_vision_000116_end_0.40 gpu 4
+09:52:11 start v5g_prior_vision_000116_none_0 gpu 4
+09:52:11 start v5g_lawmean_pred_000116_centre_0.03 gpu 4
+09:52:11 start v5g_lawmean_pred_000116_centre_0.10 gpu 4
+09:52:11 start v5g_lawmean_pred_000116_centre_0.25 gpu 4
+09:52:41 exit v5g_prior_vision_000112_end_0.25 0 gpu 4
+09:52:41 exit v5g_prior_vision_000112_end_0.40 0 gpu 4
+09:52:41 start v5g_lawmean_pred_000116_centre_0.40 gpu 4
+09:52:41 start v5g_lawmean_pred_000116_end_0.03 gpu 4
+09:53:11 exit v5g_prior_vision_000112_centre_0.03 0 gpu 0
+09:53:11 exit v5g_prior_vision_000112_centre_0.10 0 gpu 0
+09:53:11 exit v5g_prior_vision_000112_centre_0.25 0 gpu 0
+09:53:11 exit v5g_prior_vision_000112_centre_0.40 0 gpu 0
+09:53:11 exit v5g_prior_vision_000112_end_0.03 0 gpu 0
+09:53:11 exit v5g_prior_vision_000112_end_0.10 0 gpu 0
+09:53:11 start v5g_lawmean_pred_000116_end_0.10 gpu 0
+09:53:11 start v5g_lawmean_pred_000116_end_0.25 gpu 0
+09:53:11 start v5g_lawmean_pred_000116_end_0.40 gpu 0
+09:53:11 start v5g_lawmean_pred_000116_none_0 gpu 0
+09:53:11 start v5g_prior_vt_000121_centre_0.03 gpu 0
+09:53:11 start v5g_prior_vt_000121_centre_0.10 gpu 0
+09:53:26 exit v5g_lawmean_pred_000116_none_0 0 gpu 0
+09:53:26 start v5g_prior_vt_000121_centre_0.25 gpu 0
+09:54:11 exit v5g_prior_vt_000116_end_0.03 0 gpu 1
+09:54:11 exit v5g_prior_vt_000116_end_0.10 0 gpu 1
+09:54:11 exit v5g_prior_vt_000116_end_0.25 0 gpu 1
+09:54:11 start v5g_prior_vt_000121_centre_0.40 gpu 1
+09:54:11 start v5g_prior_vt_000121_end_0.03 gpu 1
+09:54:11 start v5g_prior_vt_000121_end_0.10 gpu 1
+09:54:26 exit v5g_prior_vt_000116_end_0.40 0 gpu 1
+09:54:26 exit v5g_prior_vision_000116_none_0 0 gpu 4
+09:54:26 start v5g_prior_vt_000121_end_0.25 gpu 1
+09:54:26 start v5g_prior_vt_000121_end_0.40 gpu 4
+09:55:56 exit v5g_lawmean_pred_000112_centre_0.03 0 gpu 0
+09:55:56 exit v5g_lawmean_pred_000112_centre_0.10 0 gpu 0
+09:55:56 exit v5g_lawmean_pred_000112_centre_0.25 0 gpu 0
+09:55:56 start v5g_prior_vt_000121_none_0 gpu 0
+09:55:56 start v5g_prior_vision_000121_centre_0.03 gpu 0
+09:55:56 start v5g_prior_vision_000121_centre_0.10 gpu 0
+09:56:41 exit v5g_prior_vt_000116_centre_0.03 0 gpu 3
+09:56:41 exit v5g_prior_vt_000116_centre_0.10 0 gpu 3
+09:56:41 exit v5g_prior_vt_000116_centre_0.25 0 gpu 3
+09:56:41 start v5g_prior_vision_000121_centre_0.25 gpu 3
+09:56:41 start v5g_prior_vision_000121_centre_0.40 gpu 3
+09:56:41 start v5g_prior_vision_000121_end_0.03 gpu 3
+09:56:56 exit v5g_lawmean_pred_000112_centre_0.40 0 gpu 3
+09:56:56 exit v5g_lawmean_pred_000112_end_0.03 0 gpu 3
+09:56:56 exit v5g_lawmean_pred_000112_end_0.10 0 gpu 3
+09:56:56 exit v5g_lawmean_pred_000112_end_0.25 0 gpu 3
+09:56:56 exit v5g_lawmean_pred_000112_end_0.40 0 gpu 3
+09:56:56 exit v5g_prior_vt_000116_centre_0.40 0 gpu 3
+09:56:56 start v5g_prior_vision_000121_end_0.10 gpu 3
+09:56:56 start v5g_prior_vision_000121_end_0.25 gpu 3
+09:56:56 start v5g_prior_vision_000121_end_0.40 gpu 3
+09:56:56 start v5g_prior_vision_000121_none_0 gpu 3
+09:56:56 start v5g_lawmean_pred_000121_centre_0.03 gpu 3
+09:56:56 start v5g_lawmean_pred_000121_centre_0.10 gpu 3
+09:57:41 exit v5g_prior_vt_000121_none_0 0 gpu 0
+09:57:41 start v5g_lawmean_pred_000121_centre_0.25 gpu 0
+09:59:27 exit v5g_lawmean_pred_000116_end_0.10 0 gpu 0
+09:59:27 exit v5g_lawmean_pred_000116_end_0.25 0 gpu 0
+09:59:27 exit v5g_lawmean_pred_000116_end_0.40 0 gpu 0
+09:59:27 exit v5g_lawmean_pred_000121_centre_0.03 0 gpu 3
+09:59:27 exit v5g_lawmean_pred_000121_centre_0.10 0 gpu 3
+09:59:27 start v5g_lawmean_pred_000121_centre_0.40 gpu 0
+09:59:27 start v5g_lawmean_pred_000121_end_0.03 gpu 0
+09:59:27 start v5g_lawmean_pred_000121_end_0.10 gpu 3
+09:59:27 start v5g_lawmean_pred_000121_end_0.25 gpu 0
+09:59:27 start v5g_lawmean_pred_000121_end_0.40 gpu 3
+09:59:42 exit v5g_lawmean_pred_000116_centre_0.03 0 gpu 4
+09:59:42 exit v5g_lawmean_pred_000116_centre_0.10 0 gpu 4
+09:59:42 exit v5g_lawmean_pred_000116_centre_0.25 0 gpu 4
+09:59:42 exit v5g_lawmean_pred_000116_centre_0.40 0 gpu 4
+09:59:42 exit v5g_lawmean_pred_000116_end_0.03 0 gpu 4
+09:59:42 start v5g_lawmean_pred_000121_none_0 gpu 4
+09:59:42 start v5g_prior_vt_000134_centre_0.03 gpu 4
+09:59:42 start v5g_prior_vt_000134_centre_0.10 gpu 4
+09:59:42 start v5g_prior_vt_000134_centre_0.25 gpu 4
+09:59:42 start v5g_prior_vt_000134_centre_0.40 gpu 4
+09:59:57 exit v5g_prior_vision_000116_centre_0.03 0 gpu 1
+09:59:57 exit v5g_prior_vision_000116_centre_0.10 0 gpu 1
+09:59:57 exit v5g_prior_vision_000116_centre_0.25 0 gpu 1
+09:59:57 exit v5g_prior_vision_000116_centre_0.40 0 gpu 1
+09:59:57 exit v5g_prior_vision_000116_end_0.03 0 gpu 1
+09:59:57 exit v5g_lawmean_pred_000121_none_0 0 gpu 4
+09:59:57 start v5g_prior_vt_000134_end_0.03 gpu 1
+09:59:57 start v5g_prior_vt_000134_end_0.10 gpu 1
+09:59:57 start v5g_prior_vt_000134_end_0.25 gpu 1
+09:59:57 start v5g_prior_vt_000134_end_0.40 gpu 1
+09:59:57 start v5g_prior_vt_000134_none_0 gpu 1
+09:59:57 start v5g_prior_vision_000134_centre_0.03 gpu 4
+10:00:42 exit v5g_prior_vision_000121_none_0 0 gpu 3
+10:00:42 start v5g_prior_vision_000134_centre_0.10 gpu 3
+10:01:27 exit v5g_prior_vision_000116_end_0.10 0 gpu 4
+10:01:27 exit v5g_prior_vision_000116_end_0.25 0 gpu 4
+10:01:27 exit v5g_prior_vision_000116_end_0.40 0 gpu 4
+10:01:27 start v5g_prior_vision_000134_centre_0.25 gpu 4
+10:01:27 start v5g_prior_vision_000134_centre_0.40 gpu 4
+10:01:27 start v5g_prior_vision_000134_end_0.03 gpu 4
+10:02:57 exit v5g_prior_vt_000121_centre_0.40 0 gpu 1
+10:02:57 exit v5g_prior_vt_000121_end_0.03 0 gpu 1
+10:02:57 exit v5g_prior_vt_000121_end_0.10 0 gpu 1
+10:02:57 exit v5g_prior_vt_000121_end_0.25 0 gpu 1
+10:02:57 exit v5g_prior_vt_000121_end_0.40 0 gpu 4
+10:02:57 exit v5g_prior_vt_000134_none_0 0 gpu 1
+10:02:57 start v5g_prior_vision_000134_end_0.10 gpu 1
+10:02:57 start v5g_prior_vision_000134_end_0.25 gpu 1
+10:02:57 start v5g_prior_vision_000134_end_0.40 gpu 1
+10:02:57 start v5g_prior_vision_000134_none_0 gpu 1
+10:02:57 start v5g_lawmean_pred_000134_centre_0.03 gpu 1
+10:02:57 start v5g_lawmean_pred_000134_centre_0.10 gpu 4
+10:03:12 exit v5g_prior_vision_000134_none_0 0 gpu 1
+10:03:12 start v5g_lawmean_pred_000134_centre_0.25 gpu 1
+10:03:42 exit v5g_lawmean_pred_000121_end_0.10 0 gpu 3
+10:03:42 exit v5g_lawmean_pred_000121_end_0.40 0 gpu 3
+10:03:42 start v5g_lawmean_pred_000134_centre_0.40 gpu 3
+10:03:42 start v5g_lawmean_pred_000134_end_0.03 gpu 3
+10:05:57 exit v5g_prior_vt_000121_centre_0.03 0 gpu 0
+10:05:57 exit v5g_prior_vt_000121_centre_0.10 0 gpu 0
+10:05:57 exit v5g_prior_vt_000121_centre_0.25 0 gpu 0
+10:05:57 exit v5g_lawmean_pred_000121_centre_0.25 0 gpu 0
+10:05:57 start v5g_lawmean_pred_000134_end_0.10 gpu 0
+10:05:57 start v5g_lawmean_pred_000134_end_0.25 gpu 0
+10:05:57 start v5g_lawmean_pred_000134_end_0.40 gpu 0
+10:05:57 start v5g_lawmean_pred_000134_none_0 gpu 0
+10:07:12 exit v5g_lawmean_pred_000121_centre_0.40 0 gpu 0
+10:07:12 exit v5g_lawmean_pred_000121_end_0.03 0 gpu 0
+10:07:12 exit v5g_lawmean_pred_000121_end_0.25 0 gpu 0
+10:07:12 start v5g_prior_vt_000151_centre_0.03 gpu 0
+10:07:12 start v5g_prior_vt_000151_centre_0.10 gpu 0
+10:07:12 start v5g_prior_vt_000151_centre_0.25 gpu 0
+10:07:27 exit v5g_prior_vision_000121_centre_0.03 0 gpu 0
+10:07:27 exit v5g_prior_vision_000121_centre_0.10 0 gpu 0
+10:07:28 start v5g_prior_vt_000151_centre_0.40 gpu 0
+10:07:28 start v5g_prior_vt_000151_end_0.03 gpu 0
+10:07:58 exit v5g_prior_vision_000121_centre_0.25 0 gpu 3
+10:07:58 exit v5g_prior_vision_000121_centre_0.40 0 gpu 3
+10:07:58 exit v5g_prior_vision_000121_end_0.03 0 gpu 3
+10:07:58 exit v5g_prior_vision_000121_end_0.10 0 gpu 3
+10:07:58 exit v5g_prior_vision_000121_end_0.25 0 gpu 3
+10:07:58 exit v5g_prior_vision_000121_end_0.40 0 gpu 3
+10:07:58 start v5g_prior_vt_000151_end_0.10 gpu 3
+10:07:58 start v5g_prior_vt_000151_end_0.25 gpu 3
+10:07:58 start v5g_prior_vt_000151_end_0.40 gpu 3
+10:07:58 start v5g_prior_vt_000151_none_0 gpu 3
+10:07:58 start v5g_prior_vision_000151_centre_0.03 gpu 3
+10:07:58 start v5g_prior_vision_000151_centre_0.10 gpu 3
+10:08:13 exit v5g_prior_vision_000134_centre_0.10 0 gpu 3
+10:08:13 exit v5g_prior_vt_000151_none_0 0 gpu 3
+10:08:13 start v5g_prior_vision_000151_centre_0.25 gpu 3
+10:08:13 start v5g_prior_vision_000151_centre_0.40 gpu 3
+10:09:43 exit v5g_prior_vt_000134_end_0.03 0 gpu 1
+10:09:43 exit v5g_prior_vt_000134_end_0.10 0 gpu 1
+10:09:43 exit v5g_prior_vt_000134_end_0.25 0 gpu 1
+10:09:43 exit v5g_prior_vt_000134_end_0.40 0 gpu 1
+10:09:43 start v5g_prior_vision_000151_end_0.03 gpu 1
+10:09:43 start v5g_prior_vision_000151_end_0.10 gpu 1
+10:09:43 start v5g_prior_vision_000151_end_0.25 gpu 1
+10:09:43 start v5g_prior_vision_000151_end_0.40 gpu 1
+10:09:58 exit v5g_prior_vision_000134_end_0.10 0 gpu 1
+10:09:58 exit v5g_prior_vision_000134_end_0.25 0 gpu 1
+10:09:58 exit v5g_prior_vision_000134_end_0.40 0 gpu 1
+10:09:58 exit v5g_lawmean_pred_000134_none_0 0 gpu 0
+10:09:58 start v5g_prior_vision_000151_none_0 gpu 1
+10:09:58 start v5g_lawmean_pred_000151_centre_0.03 gpu 1
+10:09:58 start v5g_lawmean_pred_000151_centre_0.10 gpu 0
+10:09:58 start v5g_lawmean_pred_000151_centre_0.25 gpu 1
+10:11:43 exit v5g_prior_vt_000134_centre_0.03 0 gpu 4
+10:11:43 exit v5g_prior_vt_000134_centre_0.10 0 gpu 4
+10:11:43 exit v5g_prior_vt_000134_centre_0.25 0 gpu 4
+10:11:43 exit v5g_prior_vt_000134_centre_0.40 0 gpu 4
+10:11:43 exit v5g_prior_vision_000134_centre_0.03 0 gpu 4
+10:11:43 exit v5g_prior_vision_000134_centre_0.25 0 gpu 4
+10:11:43 exit v5g_prior_vision_000134_centre_0.40 0 gpu 4
+10:11:43 exit v5g_prior_vision_000134_end_0.03 0 gpu 4
+10:11:43 exit v5g_prior_vision_000151_none_0 0 gpu 1
+10:11:43 start v5g_lawmean_pred_000151_centre_0.40 gpu 4
+10:11:43 start v5g_lawmean_pred_000151_end_0.03 gpu 4
+10:11:43 start v5g_lawmean_pred_000151_end_0.10 gpu 4
+10:11:43 start v5g_lawmean_pred_000151_end_0.25 gpu 4
+10:11:43 start v5g_lawmean_pred_000151_end_0.40 gpu 4
+10:11:43 start v5g_lawmean_pred_000151_none_0 gpu 4
+10:11:43 start v5g_prior_vt_000169_centre_0.03 gpu 4
+10:11:43 start v5g_prior_vt_000169_centre_0.10 gpu 1
+10:11:43 start v5g_prior_vt_000169_centre_0.25 gpu 4
+10:12:28 exit v5g_lawmean_pred_000134_centre_0.03 0 gpu 1
+10:12:28 exit v5g_lawmean_pred_000134_centre_0.25 0 gpu 1
+10:12:28 start v5g_prior_vt_000169_centre_0.40 gpu 1
+10:12:28 start v5g_prior_vt_000169_end_0.03 gpu 1
+10:12:58 exit v5g_lawmean_pred_000134_centre_0.10 0 gpu 4
+10:12:58 start v5g_prior_vt_000169_end_0.10 gpu 4
+10:13:28 exit v5g_prior_vt_000151_end_0.10 0 gpu 3
+10:13:28 exit v5g_prior_vt_000151_end_0.25 0 gpu 3
+10:13:28 exit v5g_prior_vt_000151_end_0.40 0 gpu 3
+10:13:28 start v5g_prior_vt_000169_end_0.25 gpu 3
+10:13:28 start v5g_prior_vt_000169_end_0.40 gpu 3
+10:13:28 start v5g_prior_vt_000169_none_0 gpu 3
+10:13:43 exit v5g_prior_vt_000169_none_0 0 gpu 3
+10:13:43 start v5g_prior_vision_000169_centre_0.03 gpu 3
+10:14:43 exit v5g_prior_vt_000151_centre_0.03 0 gpu 0
+10:14:43 exit v5g_prior_vt_000151_centre_0.10 0 gpu 0
+10:14:43 exit v5g_prior_vt_000151_centre_0.25 0 gpu 0
+10:14:43 exit v5g_prior_vt_000151_centre_0.40 0 gpu 0
+10:14:43 exit v5g_prior_vt_000151_end_0.03 0 gpu 0
+10:14:43 start v5g_prior_vision_000169_centre_0.10 gpu 0
+10:14:43 start v5g_prior_vision_000169_centre_0.25 gpu 0
+10:14:43 start v5g_prior_vision_000169_centre_0.40 gpu 0
+10:14:43 start v5g_prior_vision_000169_end_0.03 gpu 0
+10:14:43 start v5g_prior_vision_000169_end_0.10 gpu 0
+10:15:43 exit v5g_lawmean_pred_000151_none_0 0 gpu 4
+10:15:43 start v5g_prior_vision_000169_end_0.25 gpu 4
+10:16:13 exit v5g_prior_vt_000169_centre_0.03 0 gpu 4
+10:16:13 exit v5g_prior_vt_000169_centre_0.25 0 gpu 4
+10:16:13 start v5g_prior_vision_000169_end_0.40 gpu 4
+10:16:13 start v5g_prior_vision_000169_none_0 gpu 4
+10:16:28 exit v5g_lawmean_pred_000134_end_0.10 0 gpu 0
+10:16:28 exit v5g_lawmean_pred_000134_end_0.25 0 gpu 0
+10:16:28 exit v5g_lawmean_pred_000134_end_0.40 0 gpu 0
+10:16:28 exit v5g_prior_vt_000169_end_0.10 0 gpu 4
+10:16:28 start v5g_lawmean_pred_000169_centre_0.03 gpu 0
+10:16:28 start v5g_lawmean_pred_000169_centre_0.10 gpu 0
+10:16:28 start v5g_lawmean_pred_000169_centre_0.25 gpu 0
+10:16:28 start v5g_lawmean_pred_000169_centre_0.40 gpu 4
+10:17:43 exit v5g_lawmean_pred_000151_centre_0.10 0 gpu 0
+10:17:43 start v5g_lawmean_pred_000169_end_0.03 gpu 0
+10:17:58 exit v5g_lawmean_pred_000134_centre_0.40 0 gpu 3
+10:17:58 exit v5g_lawmean_pred_000134_end_0.03 0 gpu 3
+10:17:59 start v5g_lawmean_pred_000169_end_0.10 gpu 3
+10:17:59 start v5g_lawmean_pred_000169_end_0.25 gpu 3
+10:18:29 exit v5g_prior_vision_000151_end_0.03 0 gpu 1
+10:18:29 exit v5g_prior_vision_000151_end_0.10 0 gpu 1
+10:18:29 exit v5g_prior_vision_000151_end_0.25 0 gpu 1
+10:18:29 exit v5g_prior_vision_000151_end_0.40 0 gpu 1
+10:18:29 start v5g_lawmean_pred_000169_end_0.40 gpu 1
+10:18:29 start v5g_lawmean_pred_000169_none_0 gpu 1
+10:18:29 start v5g_prior_vt_000180_centre_0.03 gpu 1
+10:18:29 start v5g_prior_vt_000180_centre_0.10 gpu 1
+10:18:44 exit v5g_lawmean_pred_000169_none_0 0 gpu 1
+10:18:44 start v5g_prior_vt_000180_centre_0.25 gpu 1
+10:20:29 exit v5g_prior_vision_000151_centre_0.03 0 gpu 3
+10:20:29 exit v5g_prior_vision_000151_centre_0.10 0 gpu 3
+10:20:29 exit v5g_prior_vision_000151_centre_0.25 0 gpu 3
+10:20:29 exit v5g_prior_vision_000151_centre_0.40 0 gpu 3
+10:20:29 exit v5g_prior_vt_000169_centre_0.10 0 gpu 1
+10:20:29 exit v5g_prior_vt_000169_centre_0.40 0 gpu 1
+10:20:29 exit v5g_prior_vt_000169_end_0.03 0 gpu 1
+10:20:29 exit v5g_prior_vision_000169_none_0 0 gpu 4
+10:20:29 start v5g_prior_vt_000180_centre_0.40 gpu 3
+10:20:29 start v5g_prior_vt_000180_end_0.03 gpu 1
+10:20:29 start v5g_prior_vt_000180_end_0.10 gpu 3
+10:20:29 start v5g_prior_vt_000180_end_0.25 gpu 1
+10:20:29 start v5g_prior_vt_000180_end_0.40 gpu 3
+10:20:29 start v5g_prior_vt_000180_none_0 gpu 1
+10:20:29 start v5g_prior_vision_000180_centre_0.03 gpu 3
+10:20:29 start v5g_prior_vision_000180_centre_0.10 gpu 4

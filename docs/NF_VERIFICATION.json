@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "tests": 122,
+  "command": "python -m pytest tests -q",
+  "elapsed_seconds": 12.782667398452759,
+  "log": "runs/phase_logs/nf_final_tests.log",
+  "updated_unix": 1794115687.0413082,
+  "scope": "Software tests; inference frame-time checks included, not a material accuracy claim.",
+  "tests_passed": 122,
+  "existing_fork_warnings": 8,
+  "test_seconds": 12.09
+}

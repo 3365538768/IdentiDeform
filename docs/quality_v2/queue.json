@@ -1,0 +1,125 @@
+{
+  "phase": "Quality-V2",
+  "gpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "max_per_gpu": 1,
+  "jobs": [
+    {
+      "id": "quality_drop_25us",
+      "kind": "cmd",
+      "group": "fixed-frame-convergence",
+      "mem_mib": 6000,
+      "retries": 0,
+      "cmd": "cd scripts && PYTHONPATH=$PWD/../.venv/lib/python3.12/site-packages ../.engine-envs/warp/bin/python r2b_mpm_sweep.py --material metal --sweep E --decades 7 7 --actions drop --substep-dt 0.000025 --output docs/quality_v2/drop_25us.json"
+    },
+    {
+      "id": "quality_drop_12us",
+      "kind": "cmd",
+      "group": "fixed-frame-convergence",
+      "mem_mib": 6000,
+      "retries": 0,
+      "cmd": "cd scripts && PYTHONPATH=$PWD/../.venv/lib/python3.12/site-packages ../.engine-envs/warp/bin/python r2b_mpm_sweep.py --material metal --sweep E --decades 7 7 --actions drop --substep-dt 0.0000125 --output docs/quality_v2/drop_12us.json"
+    },
+    {
+      "id": "quality_drop_6us",
+      "kind": "cmd",
+      "group": "fixed-frame-convergence",
+      "mem_mib": 6000,
+      "retries": 0,
+      "cmd": "cd scripts && PYTHONPATH=$PWD/../.venv/lib/python3.12/site-packages ../.engine-envs/warp/bin/python r2b_mpm_sweep.py --material metal --sweep E --decades 7 7 --actions drop --substep-dt 0.00000625 --output docs/quality_v2/drop_6us.json"
+    },
+    {
+      "id": "quality_camera_1_0",
+      "kind": "cmd",
+      "group": "paired-camera-pilot",
+      "mem_mib": 12000,
+      "retries": 0,
+      "cmd": ".venv/bin/python -u scripts/v2/b1_camera_quality.py --camera-scale 1.0 --limit 4"
+    },
+    {
+      "id": "quality_camera_0_65",
+      "kind": "cmd",
+      "group": "paired-camera-pilot",
+      "mem_mib": 12000,
+      "retries": 0,
+      "cmd": ".venv/bin/python -u scripts/v2/b1_camera_quality.py --camera-scale 0.65 --limit 4"
+    },
+    {
+      "id": "quality_camera_stretch_1_0",
+      "kind": "cmd",
+      "group": "camera-risk-actions",
+      "mem_mib": 12000,
+      "retries": 0,
+      "cmd": ".venv/bin/python -u scripts/v2/b1_camera_quality.py --camera-scale 1.0 --actions stretch --limit 4"
+    },
+    {
+      "id": "quality_camera_stretch_0_65",
+      "kind": "cmd",
+      "group": "camera-risk-actions",
+      "mem_mib": 12000,
+      "retries": 0,
+      "cmd": ".venv/bin/python -u scripts/v2/b1_camera_quality.py --camera-scale 0.65 --actions stretch --limit 4"
+    },
+    {
+      "id": "quality_camera_drop_1_0",
+      "kind": "cmd",
+      "group": "camera-risk-actions",
+      "mem_mib": 12000,
+      "retries": 0,
+      "cmd": ".venv/bin/python -u scripts/v2/b1_camera_quality.py --camera-scale 1.0 --actions drop --limit 4"
+    },
+    {
+      "id": "quality_camera_drop_0_65",
+      "kind": "cmd",
+      "group": "camera-risk-actions",
+      "mem_mib": 12000,
+      "retries": 0,
+      "cmd": ".venv/bin/python -u scripts/v2/b1_camera_quality.py --camera-scale 0.65 --actions drop --limit 4"
+    },
+    {
+      "id": "quality_camera_press_0_8",
+      "kind": "cmd",
+      "group": "camera-middle-distance",
+      "mem_mib": 12000,
+      "retries": 0,
+      "cmd": ".venv/bin/python -u scripts/v2/b1_camera_quality.py --camera-scale 0.8 --actions press --limit 4"
+    },
+    {
+      "id": "quality_camera_stretch_0_8",
+      "kind": "cmd",
+      "group": "camera-middle-distance",
+      "mem_mib": 12000,
+      "retries": 0,
+      "cmd": ".venv/bin/python -u scripts/v2/b1_camera_quality.py --camera-scale 0.8 --actions stretch --limit 4"
+    },
+    {
+      "id": "quality_gate_report",
+      "kind": "cmd",
+      "group": "quality-report",
+      "mem_mib": 0,
+      "retries": 0,
+      "after": [
+        "quality_drop_25us",
+        "quality_drop_12us",
+        "quality_drop_6us",
+        "quality_camera_1_0",
+        "quality_camera_0_65",
+        "quality_camera_stretch_1_0",
+        "quality_camera_stretch_0_65",
+        "quality_camera_drop_1_0",
+        "quality_camera_drop_0_65",
+        "quality_camera_press_0_8",
+        "quality_camera_stretch_0_8"
+      ],
+      "cmd": ".venv/bin/python -u scripts/report_quality_next.py"
+    }
+  ]
+}

@@ -1,0 +1,589 @@
+22:07:14 start ["data/v5b_main", "test", 16, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+22:07:15 start ["data/v5b_main", "test", 17, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+22:07:16 start ["data/v5b_main", "test", 18, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+22:07:17 start ["data/v5b_main", "test", 19, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+22:07:18 start ["data/v5b_main", "test", 20, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+22:07:19 start ["data/v5b_main", "test", 21, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+22:07:20 start ["data/v5b_main", "test", 22, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:07:21 start ["data/v5b_main", "test", 47, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+22:07:22 start ["data/v5b_main", "test", 48, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+22:07:23 start ["data/v5b_main", "test", 49, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+22:07:24 start ["data/v5b_main", "test", 50, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+22:07:25 start ["data/v5b_main", "test", 51, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+22:07:26 start ["data/v5b_main", "test", 52, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+22:07:27 start ["data/v5b_main", "test", 53, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:07:28 start ["data/v5b_main", "test", 78, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+22:07:29 start ["data/v5b_main", "test", 79, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+22:07:30 start ["data/v5b_main", "test", 80, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+22:07:31 start ["data/v5b_main", "test", 81, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+22:07:32 start ["data/v5b_main", "test", 82, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+22:07:33 start ["data/v5b_main", "test", 83, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+22:07:34 start ["data/v5b_main", "test", 84, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:07:35 start ["data/v5b_main", "test", 109, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+22:07:36 start ["data/v5b_main", "test", 110, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+22:07:37 start ["data/v5b_main", "test", 111, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+22:07:38 start ["data/v5b_main", "test", 112, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+22:07:39 start ["data/v5b_main", "test", 113, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+22:07:40 start ["data/v5b_main", "test", 114, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+22:07:41 start ["data/v5b_main", "test", 115, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:13:12 exit ["data/v5b_main", "test", 22, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+22:13:12 start ["data/v5b_main", "test", 140, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:13:28 exit ["data/v5b_main", "test", 21, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+22:13:28 start ["data/v5b_main", "test", 141, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+22:14:44 exit ["data/v5b_main", "test", 52, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+22:14:44 exit ["data/v5b_main", "test", 53, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+22:14:44 start ["data/v5b_main", "test", 142, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+22:14:45 start ["data/v5b_main", "test", 143, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:15:31 exit ["data/v5b_main", "test", 112, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+22:15:31 start ["data/v5b_main", "test", 144, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+22:15:47 exit ["data/v5b_main", "test", 111, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+22:15:47 start ["data/v5b_main", "test", 145, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+22:16:03 exit ["data/v5b_main", "test", 113, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+22:16:03 start ["data/v5b_main", "test", 146, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+22:16:49 exit ["data/v5b_main", "test", 51, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+22:16:49 start ["data/v5b_main", "test", 171, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+22:17:20 exit ["data/v5b_main", "test", 16, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+22:17:20 exit ["data/v5b_main", "test", 20, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+22:17:20 start ["data/v5b_main", "test", 172, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+22:17:21 start ["data/v5b_main", "test", 173, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+22:17:37 exit ["data/v5b_main", "test", 17, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+22:17:37 exit ["data/v5b_main", "test", 18, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+22:17:37 exit ["data/v5b_main", "test", 19, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+22:17:37 start ["data/v5b_main", "test", 174, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+22:17:38 start ["data/v5b_main", "test", 175, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+22:17:39 start ["data/v5b_main", "test", 176, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+22:18:10 exit ["data/v5b_main", "test", 84, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+22:18:10 exit ["data/v5b_main", "test", 109, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+22:18:10 exit ["data/v5b_main", "test", 110, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+22:18:10 start ["data/v5b_main", "test", 177, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+22:18:11 start ["data/v5b_main", "test", 202, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+22:18:12 start ["data/v5b_main", "test", 203, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:18:28 exit ["data/v5b_main", "test", 48, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+22:18:28 start ["data/v5b_main", "test", 204, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+22:19:29 exit ["data/v5b_main", "test", 49, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+22:19:29 exit ["data/v5b_main", "test", 50, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+22:19:29 start ["data/v5b_main", "test", 205, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+22:19:30 start ["data/v5b_main", "test", 206, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+22:19:46 exit ["data/v5b_main", "test", 82, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+22:19:46 start ["data/v5b_main", "test", 207, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+22:20:02 exit ["data/v5b_main", "test", 79, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+22:20:02 start ["data/v5b_main", "test", 208, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+22:20:48 exit ["data/v5b_main", "test", 115, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+22:20:48 start ["data/v5b_main", "test", 233, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:21:19 exit ["data/v5b_main", "test", 141, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+22:21:19 start ["data/v5b_main", "test", 234, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+22:21:35 exit ["data/v5b_main", "test", 83, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+22:21:35 exit ["data/v5b_main", "test", 114, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+22:21:35 exit ["data/v5b_main", "test", 142, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+22:21:35 exit ["data/v5b_main", "test", 143, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+22:21:35 start ["data/v5b_main", "test", 235, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+22:21:36 start ["data/v5b_main", "test", 236, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+22:21:37 start ["data/v5b_main", "test", 237, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+22:21:38 start ["data/v5b_main", "test", 238, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:21:54 exit ["data/v5b_main", "test", 47, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+22:21:54 start ["data/v5b_main", "test", 239, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+22:22:10 exit ["data/v5b_main", "test", 78, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+22:22:10 exit ["data/v5b_main", "test", 140, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+22:22:10 start ["data/v5b_main", "test", 264, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+22:22:11 start ["data/v5b_main", "test", 265, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:23:27 exit ["data/v5b_main", "test", 203, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+22:23:27 start ["data/v5b_main", "test", 266, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:23:58 exit ["data/v5b_main", "test", 81, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+22:23:58 start ["data/v5b_main", "test", 267, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+22:24:14 exit ["data/v5b_main", "test", 80, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+22:24:14 exit ["data/v5b_main", "test", 202, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+22:24:14 start ["data/v5b_main", "test", 268, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+22:24:15 start ["data/v5b_main", "test", 269, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+22:24:46 exit ["data/v5b_main", "test", 177, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+22:24:46 start ["data/v5b_main", "test", 270, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+22:25:02 exit ["data/v5b_main", "test", 144, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+22:25:02 exit ["data/v5b_main", "test", 145, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+22:25:02 start ["data/v5b_main", "test", 295, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+22:25:03 start ["data/v5b_main", "test", 296, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+22:25:34 exit ["data/v5b_main", "test", 146, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+22:25:34 start ["data/v5b_main", "test", 297, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+22:26:50 exit ["data/v5b_main", "test", 174, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+22:26:50 start ["data/v5b_main", "test", 298, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+22:27:37 exit ["data/v5b_main", "test", 233, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+22:27:37 exit ["data/v5b_main", "test", 238, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+22:27:37 start ["data/v5b_main", "test", 299, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:27:38 start ["data/v5b_main", "train", 1000, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:28:09 exit ["data/v5b_main", "test", 175, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+22:28:09 start ["data/v5b_main", "train", 1001, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+22:28:25 exit ["data/v5b_main", "test", 176, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+22:28:25 exit ["data/v5b_main", "test", 239, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+22:28:25 start ["data/v5b_main", "train", 1026, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+22:28:26 start ["data/v5b_main", "train", 1027, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+22:29:27 exit ["data/v5b_main", "test", 172, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+22:29:27 start ["data/v5b_main", "train", 1028, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+22:30:43 exit ["data/v5b_main", "test", 265, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+22:30:43 start ["data/v5b_main", "train", 1029, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:31:29 exit ["data/v5b_main", "test", 269, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+22:31:29 start ["data/v5b_main", "train", 1030, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+22:31:45 exit ["data/v5b_main", "test", 204, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+22:31:45 exit ["data/v5b_main", "test", 267, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+22:31:45 exit ["data/v5b_main", "test", 268, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+22:31:45 start ["data/v5b_main", "train", 1031, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+22:31:46 start ["data/v5b_main", "train", 1032, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+22:31:47 start ["data/v5b_main", "train", 1057, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+22:32:03 exit ["data/v5b_main", "test", 171, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+22:32:03 exit ["data/v5b_main", "test", 266, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+22:32:03 start ["data/v5b_main", "train", 1058, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+22:32:04 start ["data/v5b_main", "train", 1059, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:32:20 exit ["data/v5b_main", "test", 173, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+22:32:20 start ["data/v5b_main", "train", 1060, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+22:32:36 exit ["data/v5b_main", "test", 205, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+22:32:36 start ["data/v5b_main", "train", 1061, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+22:32:52 exit ["data/v5b_main", "test", 208, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+22:32:52 exit ["data/v5b_main", "test", 237, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+22:32:52 start ["data/v5b_main", "train", 1062, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+22:32:53 start ["data/v5b_main", "train", 1063, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+22:33:24 exit ["data/v5b_main", "test", 207, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+22:33:24 start ["data/v5b_main", "train", 1088, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+22:33:55 exit ["data/v5b_main", "test", 234, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+22:33:55 start ["data/v5b_main", "train", 1089, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+22:34:11 exit ["data/v5b_main", "test", 206, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+22:34:11 exit ["data/v5b_main", "test", 235, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+22:34:11 start ["data/v5b_main", "train", 1090, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+22:34:12 start ["data/v5b_main", "train", 1091, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+22:34:28 exit ["data/v5b_main", "test", 236, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+22:34:28 start ["data/v5b_main", "train", 1092, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+22:35:29 exit ["data/v5b_main", "test", 264, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+22:35:29 start ["data/v5b_main", "train", 1093, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+22:36:30 exit ["data/v5b_main", "test", 270, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+22:36:30 start ["data/v5b_main", "train", 1094, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+22:37:01 exit ["data/v5b_main", "train", 1029, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+22:37:01 start ["data/v5b_main", "train", 1119, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:37:47 exit ["data/v5b_main", "train", 1030, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+22:37:47 start ["data/v5b_main", "train", 1120, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+22:38:03 exit ["data/v5b_main", "test", 295, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+22:38:03 exit ["data/v5b_main", "train", 1027, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+22:38:03 start ["data/v5b_main", "train", 1121, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+22:38:04 start ["data/v5b_main", "train", 1122, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+22:38:35 exit ["data/v5b_main", "test", 297, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+22:38:35 exit ["data/v5b_main", "test", 298, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+22:38:35 start ["data/v5b_main", "train", 1123, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+22:38:36 start ["data/v5b_main", "train", 1124, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+22:38:52 exit ["data/v5b_main", "train", 1031, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+22:38:52 start ["data/v5b_main", "train", 1125, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+22:39:23 exit ["data/v5b_main", "test", 296, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+22:39:23 exit ["data/v5b_main", "train", 1001, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+22:39:23 exit ["data/v5b_main", "train", 1059, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+22:39:23 exit ["data/v5b_main", "train", 1061, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+22:39:23 start ["data/v5b_main", "train", 1150, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+22:39:24 start ["data/v5b_main", "train", 1151, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+22:39:25 start ["data/v5b_main", "train", 1152, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+22:39:26 start ["data/v5b_main", "train", 1153, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:39:57 exit ["data/v5b_main", "train", 1060, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+22:39:57 start ["data/v5b_main", "train", 1154, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+22:40:13 exit ["data/v5b_main", "test", 299, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+22:40:13 exit ["data/v5b_main", "train", 1000, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+22:40:13 start ["data/v5b_main", "train", 1155, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:40:14 start ["data/v5b_main", "train", 1156, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:41:15 exit ["data/v5b_main", "train", 1063, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+22:41:15 start ["data/v5b_main", "train", 1181, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+22:41:31 exit ["data/v5b_main", "train", 1026, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+22:41:31 exit ["data/v5b_main", "train", 1119, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+22:41:31 start ["data/v5b_main", "train", 1182, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+22:41:32 start ["data/v5b_main", "train", 1183, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:42:03 exit ["data/v5b_main", "train", 1058, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+22:42:03 exit ["data/v5b_main", "train", 1062, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+22:42:03 start ["data/v5b_main", "train", 1184, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+22:42:04 start ["data/v5b_main", "train", 1185, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+22:42:20 exit ["data/v5b_main", "train", 1057, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+22:42:20 start ["data/v5b_main", "train", 1186, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+22:42:36 exit ["data/v5b_main", "train", 1028, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+22:42:36 start ["data/v5b_main", "train", 1187, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+22:43:37 exit ["data/v5b_main", "train", 1120, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+22:43:37 start ["data/v5b_main", "train", 1212, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+22:43:53 exit ["data/v5b_main", "train", 1121, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+22:43:54 start ["data/v5b_main", "train", 1213, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+22:45:40 exit ["data/v5b_main", "train", 1092, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+22:45:40 start ["data/v5b_main", "train", 1214, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+22:45:56 exit ["data/v5b_main", "train", 1032, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+22:45:56 start ["data/v5b_main", "train", 1215, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+22:46:12 exit ["data/v5b_main", "train", 1150, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+22:46:12 exit ["data/v5b_main", "train", 1151, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+22:46:12 start ["data/v5b_main", "train", 1216, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+22:46:13 start ["data/v5b_main", "train", 1217, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+22:47:29 exit ["data/v5b_main", "train", 1093, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+22:47:29 start ["data/v5b_main", "train", 1218, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+22:47:45 exit ["data/v5b_main", "train", 1094, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+22:47:45 start ["data/v5b_main", "train", 1243, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+22:48:01 exit ["data/v5b_main", "train", 1089, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+22:48:01 start ["data/v5b_main", "train", 1244, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+22:48:17 exit ["data/v5b_main", "train", 1155, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+22:48:17 exit ["data/v5b_main", "train", 1156, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+22:48:17 start ["data/v5b_main", "train", 1245, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:48:18 start ["data/v5b_main", "train", 1246, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:48:34 exit ["data/v5b_main", "train", 1091, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+22:48:34 exit ["data/v5b_main", "train", 1153, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+22:48:34 start ["data/v5b_main", "train", 1247, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+22:48:35 start ["data/v5b_main", "train", 1248, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:49:06 exit ["data/v5b_main", "train", 1183, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+22:49:06 exit ["data/v5b_main", "train", 1187, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+22:49:06 start ["data/v5b_main", "train", 1249, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+22:49:07 start ["data/v5b_main", "train", 1274, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:49:23 exit ["data/v5b_main", "train", 1088, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+22:49:23 start ["data/v5b_main", "train", 1275, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+22:49:39 exit ["data/v5b_main", "train", 1090, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+22:49:39 exit ["data/v5b_main", "train", 1152, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+22:49:39 start ["data/v5b_main", "train", 1276, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+22:49:40 start ["data/v5b_main", "train", 1277, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+22:50:11 exit ["data/v5b_main", "train", 1182, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+22:50:11 start ["data/v5b_main", "train", 1278, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+22:50:27 exit ["data/v5b_main", "train", 1154, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+22:50:27 start ["data/v5b_main", "train", 1279, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+22:50:43 exit ["data/v5b_main", "train", 1186, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+22:50:43 start ["data/v5b_main", "train", 1280, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+22:51:14 exit ["data/v5b_main", "train", 1122, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+22:51:14 start ["data/v5b_main", "train", 1305, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+22:51:30 exit ["data/v5b_main", "train", 1185, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+22:51:30 start ["data/v5b_main", "train", 1306, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+22:52:01 exit ["data/v5b_main", "train", 1123, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+22:52:01 exit ["data/v5b_main", "train", 1184, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+22:52:01 start ["data/v5b_main", "train", 1307, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+22:52:02 start ["data/v5b_main", "train", 1308, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+22:52:18 exit ["data/v5b_main", "train", 1125, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+22:52:18 start ["data/v5b_main", "train", 1309, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+22:53:34 exit ["data/v5b_main", "train", 1215, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+22:53:34 start ["data/v5b_main", "train", 1310, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+22:54:20 exit ["data/v5b_main", "train", 1245, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+22:54:20 start ["data/v5b_main", "train", 1311, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:54:36 exit ["data/v5b_main", "train", 1124, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+22:54:36 exit ["data/v5b_main", "train", 1246, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+22:54:36 start ["data/v5b_main", "train", 1336, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+22:54:37 start ["data/v5b_main", "train", 1337, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:56:39 exit ["data/v5b_main", "train", 1181, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+22:56:39 exit ["data/v5b_main", "train", 1212, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+22:56:39 exit ["data/v5b_main", "train", 1213, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+22:56:39 start ["data/v5b_main", "train", 1338, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+22:56:40 start ["data/v5b_main", "train", 1339, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+22:56:41 start ["data/v5b_main", "train", 1340, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+22:57:42 exit ["data/v5b_main", "train", 1247, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+22:57:42 start ["data/v5b_main", "train", 1341, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+22:57:58 exit ["data/v5b_main", "train", 1275, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+22:57:58 start ["data/v5b_main", "train", 1342, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+22:58:29 exit ["data/v5b_main", "train", 1243, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+22:58:29 exit ["data/v5b_main", "train", 1274, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+22:58:29 start ["data/v5b_main", "train", 1367, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+22:58:30 start ["data/v5b_main", "train", 1368, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+22:59:01 exit ["data/v5b_main", "train", 1216, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+22:59:01 exit ["data/v5b_main", "train", 1217, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+22:59:01 exit ["data/v5b_main", "train", 1244, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+22:59:01 start ["data/v5b_main", "train", 1369, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+22:59:02 start ["data/v5b_main", "train", 1370, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+22:59:03 start ["data/v5b_main", "train", 1371, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+22:59:19 exit ["data/v5b_main", "train", 1276, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+22:59:19 exit ["data/v5b_main", "train", 1277, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+22:59:19 start ["data/v5b_main", "train", 1372, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+22:59:20 start ["data/v5b_main", "train", 1373, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+22:59:51 exit ["data/v5b_main", "train", 1279, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+22:59:51 start ["data/v5b_main", "train", 1398, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+23:00:07 exit ["data/v5b_main", "train", 1280, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+23:00:07 start ["data/v5b_main", "train", 1399, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+23:00:23 exit ["data/v5b_main", "train", 1218, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:00:23 start ["data/v5b_main", "train", 1400, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+23:01:09 exit ["data/v5b_main", "train", 1248, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+23:01:09 exit ["data/v5b_main", "train", 1278, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:01:09 exit ["data/v5b_main", "train", 1336, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+23:01:09 start ["data/v5b_main", "train", 1401, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+23:01:10 start ["data/v5b_main", "train", 1402, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+23:01:11 start ["data/v5b_main", "train", 1403, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+23:01:42 exit ["data/v5b_main", "train", 1308, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+23:01:42 exit ["data/v5b_main", "train", 1337, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+23:01:42 start ["data/v5b_main", "train", 1404, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+23:01:43 start ["data/v5b_main", "train", 1429, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+23:01:59 exit ["data/v5b_main", "train", 1309, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+23:01:59 start ["data/v5b_main", "train", 1430, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+23:02:15 exit ["data/v5b_main", "train", 1214, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+23:02:15 start ["data/v5b_main", "train", 1431, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+23:02:46 exit ["data/v5b_main", "train", 1310, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+23:02:46 exit ["data/v5b_main", "train", 1311, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+23:02:46 start ["data/v5b_main", "train", 1432, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+23:02:47 start ["data/v5b_main", "train", 1433, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+23:04:03 exit ["data/v5b_main", "train", 1307, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+23:04:03 start ["data/v5b_main", "train", 1434, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+23:05:34 exit ["data/v5b_main", "train", 1249, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:05:34 exit ["data/v5b_main", "train", 1305, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+23:05:34 exit ["data/v5b_main", "train", 1371, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+23:05:34 start ["data/v5b_main", "train", 1435, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+23:05:35 start ["data/v5b_main", "train", 1460, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+23:05:36 start ["data/v5b_main", "train", 1461, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+23:05:52 exit ["data/v5b_main", "train", 1372, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+23:05:52 exit ["data/v5b_main", "train", 1373, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+23:05:52 start ["data/v5b_main", "train", 1462, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+23:05:53 start ["data/v5b_main", "train", 1463, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+23:06:09 exit ["data/v5b_main", "train", 1306, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+23:06:09 exit ["data/v5b_main", "train", 1367, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:06:09 start ["data/v5b_main", "train", 1464, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+23:06:10 start ["data/v5b_main", "train", 1465, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+23:06:41 exit ["data/v5b_main", "train", 1399, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+23:06:41 start ["data/v5b_main", "train", 1466, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+23:08:13 exit ["data/v5b_main", "train", 1368, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+23:08:13 exit ["data/v5b_main", "train", 1401, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:08:13 start ["data/v5b_main", "train", 1491, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+23:08:14 start ["data/v5b_main", "train", 1492, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+23:09:15 exit ["data/v5b_main", "train", 1400, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:09:15 exit ["data/v5b_main", "train", 1402, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+23:09:15 start ["data/v5b_main", "train", 1493, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+23:09:16 start ["data/v5b_main", "train", 1494, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+23:09:32 exit ["data/v5b_main", "train", 1403, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+23:09:32 start ["data/v5b_main", "train", 1495, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+23:10:03 exit ["data/v5b_main", "train", 1398, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+23:10:03 start ["data/v5b_main", "train", 1496, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+23:10:19 exit ["data/v5b_main", "train", 1340, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+23:10:19 start ["data/v5b_main", "train", 1497, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+23:10:35 exit ["data/v5b_main", "train", 1342, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+23:10:35 exit ["data/v5b_main", "train", 1369, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+23:10:35 exit ["data/v5b_main", "train", 1370, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+23:10:35 start ["data/v5b_main", "train", 1522, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+23:10:36 start ["data/v5b_main", "train", 1523, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+23:10:37 start ["data/v5b_main", "train", 1524, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+23:10:53 exit ["data/v5b_main", "train", 1341, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+23:10:53 exit ["data/v5b_main", "train", 1404, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+23:10:53 start ["data/v5b_main", "train", 1525, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+23:10:54 start ["data/v5b_main", "train", 1526, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+23:11:25 exit ["data/v5b_main", "train", 1338, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+23:11:25 exit ["data/v5b_main", "train", 1339, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+23:11:25 exit ["data/v5b_main", "train", 1461, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+23:11:25 start ["data/v5b_main", "train", 1527, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+23:11:26 start ["data/v5b_main", "train", 1528, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+23:11:27 start ["data/v5b_main", "train", 1553, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+23:13:43 exit ["data/v5b_main", "train", 1431, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+23:13:43 exit ["data/v5b_main", "train", 1462, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+23:13:43 exit ["data/v5b_main", "train", 1463, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+23:13:43 start ["data/v5b_main", "train", 1554, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+23:13:44 start ["data/v5b_main", "train", 1555, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+23:13:45 start ["data/v5b_main", "train", 1556, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+23:14:16 exit ["data/v5b_main", "train", 1460, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+23:14:16 start ["data/v5b_main", "train", 1557, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+23:15:17 exit ["data/v5b_main", "train", 1434, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+23:15:17 start ["data/v5b_main", "train", 1558, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+23:15:33 exit ["data/v5b_main", "train", 1435, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:15:33 exit ["data/v5b_main", "train", 1497, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+23:15:33 start ["data/v5b_main", "train", 1559, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+23:15:34 start ["data/v5b_main", "train", 1584, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+23:16:20 exit ["data/v5b_main", "train", 1491, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:16:20 start ["data/v5b_main", "train", 1585, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+23:16:36 exit ["data/v5b_main", "train", 1430, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+23:16:36 exit ["data/v5b_main", "train", 1493, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:16:36 start ["data/v5b_main", "train", 1586, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+23:16:37 start ["data/v5b_main", "train", 1587, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+23:16:53 exit ["data/v5b_main", "train", 1466, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+23:16:53 start ["data/v5b_main", "train", 1588, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+23:17:09 exit ["data/v5b_main", "train", 1432, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+23:17:09 start ["data/v5b_main", "train", 1589, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+23:17:25 exit ["data/v5b_main", "train", 1492, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+23:17:25 start ["data/v5b_main", "train", 1590, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+23:17:41 exit ["data/v5b_main", "train", 1553, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+23:17:41 start ["data/v5b_main", "train", 1615, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+23:17:57 exit ["data/v5b_main", "train", 1429, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+23:17:57 exit ["data/v5b_main", "train", 1464, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:17:58 start ["data/v5b_main", "train", 1616, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+23:17:59 start ["data/v5b_main", "train", 1617, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+23:18:30 exit ["data/v5b_main", "train", 1433, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+23:18:30 exit ["data/v5b_main", "train", 1495, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+23:18:30 start ["data/v5b_main", "train", 1618, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+23:18:31 start ["data/v5b_main", "train", 1619, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+23:19:32 exit ["data/v5b_main", "train", 1527, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+23:19:32 exit ["data/v5b_main", "train", 1528, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+23:19:32 start ["data/v5b_main", "train", 1620, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+23:19:33 start ["data/v5b_main", "train", 1621, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+23:20:04 exit ["data/v5b_main", "train", 1525, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+23:20:04 start ["data/v5b_main", "train", 1646, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+23:20:50 exit ["data/v5b_main", "train", 1494, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+23:20:50 start ["data/v5b_main", "train", 1647, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+23:21:36 exit ["data/v5b_main", "train", 1465, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+23:21:36 exit ["data/v5b_main", "train", 1496, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+23:21:36 start ["data/v5b_main", "train", 1648, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+23:21:37 start ["data/v5b_main", "train", 1649, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+23:21:53 exit ["data/v5b_main", "train", 1524, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+23:21:53 exit ["data/v5b_main", "train", 1526, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+23:21:53 start ["data/v5b_main", "train", 1650, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+23:21:54 start ["data/v5b_main", "train", 1651, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+23:22:25 exit ["data/v5b_main", "train", 1587, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+23:22:25 start ["data/v5b_main", "train", 1652, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+23:22:56 exit ["data/v5b_main", "train", 1589, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+23:22:56 start ["data/v5b_main", "train", 1677, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+23:23:27 exit ["data/v5b_main", "train", 1588, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+23:23:27 start ["data/v5b_main", "train", 1678, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+23:23:58 exit ["data/v5b_main", "train", 1522, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+23:23:58 start ["data/v5b_main", "train", 1679, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+23:24:14 exit ["data/v5b_main", "train", 1523, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+23:24:14 start ["data/v5b_main", "train", 1680, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+23:25:45 exit ["data/v5b_main", "train", 1584, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+23:25:45 start ["data/v5b_main", "train", 1681, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+23:26:16 exit ["data/v5b_main", "train", 1617, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+23:26:16 start ["data/v5b_main", "train", 1682, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+23:26:32 exit ["data/v5b_main", "train", 1619, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+23:26:32 start ["data/v5b_main", "train", 1683, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+23:26:48 exit ["data/v5b_main", "train", 1558, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+23:26:48 exit ["data/v5b_main", "train", 1590, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+23:26:48 exit ["data/v5b_main", "train", 1618, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+23:26:48 start ["data/v5b_main", "train", 1708, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+23:26:49 start ["data/v5b_main", "train", 1709, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+23:26:50 start ["data/v5b_main", "train", 1710, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+23:27:36 exit ["data/v5b_main", "train", 1555, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+23:27:36 start ["data/v5b_main", "train", 1711, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+23:27:52 exit ["data/v5b_main", "train", 1554, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+23:27:52 start ["data/v5b_main", "train", 1712, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+23:28:08 exit ["data/v5b_main", "train", 1557, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+23:28:08 exit ["data/v5b_main", "train", 1585, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:28:08 exit ["data/v5b_main", "train", 1586, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:28:08 exit ["data/v5b_main", "train", 1647, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+23:28:08 start ["data/v5b_main", "train", 1713, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+23:28:09 start ["data/v5b_main", "train", 1714, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+23:28:10 start ["data/v5b_main", "train", 1739, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+23:28:11 start ["data/v5b_main", "train", 1740, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+23:28:27 exit ["data/v5b_main", "train", 1678, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+23:28:27 start ["data/v5b_main", "train", 1741, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+23:29:13 exit ["data/v5b_main", "train", 1677, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+23:29:14 start ["data/v5b_main", "train", 1742, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+23:29:30 exit ["data/v5b_main", "train", 1556, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+23:29:30 exit ["data/v5b_main", "train", 1615, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+23:29:30 start ["data/v5b_main", "train", 1743, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+23:29:31 start ["data/v5b_main", "train", 1744, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+23:30:17 exit ["data/v5b_main", "train", 1616, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:30:17 start ["data/v5b_main", "train", 1745, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+23:30:33 exit ["data/v5b_main", "train", 1559, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:30:33 start ["data/v5b_main", "train", 1770, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+23:30:49 exit ["data/v5b_main", "train", 1651, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+23:30:49 start ["data/v5b_main", "train", 1771, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+23:31:20 exit ["data/v5b_main", "train", 1620, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+23:31:20 exit ["data/v5b_main", "train", 1621, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+23:31:20 start ["data/v5b_main", "train", 1772, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+23:31:21 start ["data/v5b_main", "train", 1773, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+23:31:52 exit ["data/v5b_main", "train", 1679, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+23:31:52 start ["data/v5b_main", "train", 1774, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+23:32:08 exit ["data/v5b_main", "train", 1650, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+23:32:08 start ["data/v5b_main", "train", 1775, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+23:32:24 exit ["data/v5b_main", "train", 1652, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+23:32:24 start ["data/v5b_main", "train", 1776, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+23:32:55 exit ["data/v5b_main", "train", 1646, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+23:32:55 start ["data/v5b_main", "train", 1801, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+23:33:26 exit ["data/v5b_main", "train", 1709, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+23:33:26 exit ["data/v5b_main", "train", 1714, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:33:26 start ["data/v5b_main", "train", 1802, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+23:33:27 start ["data/v5b_main", "train", 1803, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+23:33:43 exit ["data/v5b_main", "train", 1713, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:33:43 start ["data/v5b_main", "train", 1804, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+23:34:44 exit ["data/v5b_main", "train", 1680, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+23:34:44 start ["data/v5b_main", "train", 1805, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+23:35:00 exit ["data/v5b_main", "train", 1648, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+23:35:00 exit ["data/v5b_main", "train", 1649, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+23:35:00 start ["data/v5b_main", "train", 1806, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+23:35:01 start ["data/v5b_main", "train", 1807, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+23:36:32 exit ["data/v5b_main", "train", 1740, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+23:36:32 start ["data/v5b_main", "train", 1832, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+23:37:03 exit ["data/v5b_main", "train", 1708, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+23:37:03 start ["data/v5b_main", "train", 1833, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+23:37:19 exit ["data/v5b_main", "train", 1710, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+23:37:19 start ["data/v5b_main", "train", 1834, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+23:37:35 exit ["data/v5b_main", "train", 1744, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+23:37:35 exit ["data/v5b_main", "train", 1745, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:37:35 start ["data/v5b_main", "train", 1835, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+23:37:36 start ["data/v5b_main", "train", 1836, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+23:37:52 exit ["data/v5b_main", "train", 1681, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+23:37:52 exit ["data/v5b_main", "train", 1743, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+23:37:52 start ["data/v5b_main", "train", 1837, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+23:37:53 start ["data/v5b_main", "train", 1838, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+23:38:39 exit ["data/v5b_main", "train", 1711, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+23:38:39 start ["data/v5b_main", "train", 1863, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+23:38:55 exit ["data/v5b_main", "train", 1742, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+23:38:55 exit ["data/v5b_main", "train", 1771, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+23:38:55 start ["data/v5b_main", "train", 1864, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+23:38:56 start ["data/v5b_main", "train", 1865, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+23:39:12 exit ["data/v5b_main", "train", 1712, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+23:39:12 start ["data/v5b_main", "train", 1866, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+23:40:13 exit ["data/v5b_main", "train", 1682, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+23:40:13 start ["data/v5b_main", "train", 1867, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+23:40:29 exit ["data/v5b_main", "train", 1741, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+23:40:29 start ["data/v5b_main", "train", 1868, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+23:41:00 exit ["data/v5b_main", "train", 1805, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+23:41:01 start ["data/v5b_main", "train", 1869, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+23:41:17 exit ["data/v5b_main", "train", 1803, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+23:41:17 start ["data/v5b_main", "train", 1894, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+23:41:48 exit ["data/v5b_main", "train", 1804, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:41:48 start ["data/v5b_main", "train", 1895, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+23:42:19 exit ["data/v5b_main", "train", 1683, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+23:42:19 exit ["data/v5b_main", "train", 1801, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+23:42:19 start ["data/v5b_main", "train", 1896, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+23:42:20 start ["data/v5b_main", "train", 1897, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+23:42:51 exit ["data/v5b_main", "train", 1776, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+23:42:51 start ["data/v5b_main", "train", 1898, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+23:43:22 exit ["data/v5b_main", "train", 1739, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+23:43:22 exit ["data/v5b_main", "train", 1775, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+23:43:22 exit ["data/v5b_main", "train", 1802, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:43:22 start ["data/v5b_main", "train", 1899, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+23:43:23 start ["data/v5b_main", "train", 1900, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+23:43:24 start ["data/v5b_main", "train", 1925, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+23:44:10 exit ["data/v5b_main", "train", 1770, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:44:10 start ["data/v5b_main", "train", 1926, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+23:44:26 exit ["data/v5b_main", "train", 1772, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+23:44:26 exit ["data/v5b_main", "train", 1773, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+23:44:26 start ["data/v5b_main", "train", 1927, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+23:44:27 start ["data/v5b_main", "train", 1928, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+23:44:58 exit ["data/v5b_main", "train", 1774, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+23:44:58 start ["data/v5b_main", "train", 1929, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+23:45:29 exit ["data/v5b_main", "train", 1835, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:45:29 exit ["data/v5b_main", "train", 1869, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+23:45:29 start ["data/v5b_main", "train", 1930, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+23:45:30 start ["data/v5b_main", "train", 1931, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 2
+23:46:01 exit ["data/v5b_main", "train", 1833, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+23:46:01 exit ["data/v5b_main", "train", 1834, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+23:46:01 start ["data/v5b_main", "train", 1956, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+23:46:02 start ["data/v5b_main", "train", 1957, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+23:46:33 exit ["data/v5b_main", "train", 1894, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+23:46:33 start ["data/v5b_main", "train", 1958, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 1
+23:46:49 exit ["data/v5b_main", "train", 1832, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+23:46:49 start ["data/v5b_main", "train", 1959, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+23:47:05 exit ["data/v5b_main", "train", 1895, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:47:05 start ["data/v5b_main", "train", 1960, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 0
+23:48:21 exit ["data/v5b_main", "train", 1806, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+23:48:21 exit ["data/v5b_main", "train", 1807, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+23:48:21 start ["data/v5b_main", "train", 1961, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+23:48:22 start ["data/v5b_main", "train", 1962, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 5
+23:48:53 exit ["data/v5b_main", "train", 1866, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+23:48:53 start ["data/v5b_main", "train", 1987, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+23:49:39 exit ["data/v5b_main", "train", 1867, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+23:49:39 start ["data/v5b_main", "train", 1988, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 7
+23:49:55 exit ["data/v5b_main", "train", 1868, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+23:49:55 start ["data/v5b_main", "train", 1989, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+23:50:11 exit ["data/v5b_main", "train", 1836, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+23:50:11 start ["data/v5b_main", "train", 1990, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+23:50:42 exit ["data/v5b_main", "train", 1837, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+23:50:43 exit ["data/v5b_main", "train", 1838, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+23:50:43 exit ["data/v5b_main", "train", 1863, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+23:50:43 start ["data/v5b_main", "train", 1991, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+23:50:44 start ["data/v5b_main", "train", 1992, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 3
+23:50:45 start ["data/v5b_main", "train", 1993, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] gpu 6
+23:51:01 exit ["data/v5b_main", "train", 1864, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+23:51:31 exit ["data/v5b_main", "train", 1925, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+23:51:46 exit ["data/v5b_main", "train", 1865, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+23:54:01 exit ["data/v5b_main", "train", 1930, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:54:46 exit ["data/v5b_main", "train", 1926, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:54:46 exit ["data/v5b_main", "train", 1929, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+23:55:01 exit ["data/v5b_main", "train", 1896, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+23:55:01 exit ["data/v5b_main", "train", 1897, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+23:55:01 exit ["data/v5b_main", "train", 1931, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+23:55:16 exit ["data/v5b_main", "train", 1927, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+23:55:16 exit ["data/v5b_main", "train", 1928, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 2
+23:55:31 exit ["data/v5b_main", "train", 1898, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+23:55:31 exit ["data/v5b_main", "train", 1959, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+23:55:46 exit ["data/v5b_main", "train", 1900, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+23:55:46 exit ["data/v5b_main", "train", 1958, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 1
+23:55:46 exit ["data/v5b_main", "train", 1960, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:56:01 exit ["data/v5b_main", "train", 1899, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 0
+23:56:01 exit ["data/v5b_main", "train", 1956, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+23:56:01 exit ["data/v5b_main", "train", 1957, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+23:56:32 exit ["data/v5b_main", "train", 1961, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+23:56:47 exit ["data/v5b_main", "train", 1962, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 5
+23:58:02 exit ["data/v5b_main", "train", 1988, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 7
+23:58:47 exit ["data/v5b_main", "train", 1993, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+23:59:02 exit ["data/v5b_main", "train", 1990, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+23:59:17 exit ["data/v5b_main", "train", 1991, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 6
+23:59:47 exit ["data/v5b_main", "train", 1992, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+00:00:02 exit ["data/v5b_main", "train", 1987, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+00:00:02 exit ["data/v5b_main", "train", 1989, ["--g-all", "-2", "--weak", "hold", "--ranges", "v5"]] 0 gpu 3
+all done

@@ -1,0 +1,3 @@
+sim 228 prior_vision centre:0.10 True 365
+measure centre:0.10 {'sag': 0.30051100657364993, 'left': 0.7850445382090953, 'crush': 0.026686626474414988, 'dent_p95': 0.05789379583630022, 'grip': 2.970681071281433, 'lift': 0.03630942106246948, 'height': 0.12103140354156494, 'n_particles': 19197, 'seg_particles': 5073}
+done 228 prior_vision centre:0.10 False

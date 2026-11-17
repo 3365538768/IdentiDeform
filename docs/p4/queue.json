@@ -1,0 +1,42 @@
+{
+ "phase": "P4a",
+ "max_per_gpu": 2,
+ "gpus": [
+  2,
+  3
+ ],
+ "jobs": [
+  {
+   "id": "p4a_replay32_shard0",
+   "kind": "cmd",
+   "group": "v2-replay32",
+   "mem_mib": 12000,
+   "cmd": ".venv/bin/python scripts/v2/replay_v1.py --per-cell 2 --fps 32 --out data/v2_pilot/replay32 --shard 0 --num-shards 4",
+   "retries": 3
+  },
+  {
+   "id": "p4a_replay32_shard1",
+   "kind": "cmd",
+   "group": "v2-replay32",
+   "mem_mib": 12000,
+   "cmd": ".venv/bin/python scripts/v2/replay_v1.py --per-cell 2 --fps 32 --out data/v2_pilot/replay32 --shard 1 --num-shards 4",
+   "retries": 3
+  },
+  {
+   "id": "p4a_replay32_shard2",
+   "kind": "cmd",
+   "group": "v2-replay32",
+   "mem_mib": 12000,
+   "cmd": ".venv/bin/python scripts/v2/replay_v1.py --per-cell 2 --fps 32 --out data/v2_pilot/replay32 --shard 2 --num-shards 4",
+   "retries": 3
+  },
+  {
+   "id": "p4a_replay32_shard3",
+   "kind": "cmd",
+   "group": "v2-replay32",
+   "mem_mib": 12000,
+   "cmd": ".venv/bin/python scripts/v2/replay_v1.py --per-cell 2 --fps 32 --out data/v2_pilot/replay32 --shard 3 --num-shards 4",
+   "retries": 3
+  }
+ ]
+}

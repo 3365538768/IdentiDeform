@@ -1,0 +1,68 @@
+{
+ "phase": "v3p",
+ "max_per_gpu": 10,
+ "gpus": [],
+ "note": "V3p prior training share on a800-2 (rest on a800-4 pool docs/v3p/jobs_a4.json)",
+ "jobs": [
+  {
+   "id": "v3main_B_seed17",
+   "kind": "train",
+   "config": "configs/v3p/v3main_B_seed17.json",
+   "group": "B-v3main",
+   "seed": 17,
+   "mem_mib": 20000,
+   "retries": 2
+  },
+  {
+   "id": "v3main_B_seed17_test",
+   "kind": "cmd",
+   "group": "v3p-eval",
+   "mem_mib": 8000,
+   "retries": 1,
+   "after": [
+    "v3main_B_seed17"
+   ],
+   "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/v3p/v3main_B_seed17.json --checkpoint runs/v3main_B_seed17/best_material.pt --split test --output runs/v3main_B_seed17/test_once > runs/v3main_B_seed17/test_once.log"
+  },
+  {
+   "id": "v3main_D_seed17",
+   "kind": "train",
+   "config": "configs/v3p/v3main_D_seed17.json",
+   "group": "D-v3main",
+   "seed": 17,
+   "mem_mib": 20000,
+   "retries": 2
+  },
+  {
+   "id": "v3main_D_seed17_test",
+   "kind": "cmd",
+   "group": "v3p-eval",
+   "mem_mib": 8000,
+   "retries": 1,
+   "after": [
+    "v3main_D_seed17"
+   ],
+   "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/v3p/v3main_D_seed17.json --checkpoint runs/v3main_D_seed17/best_material.pt --split test --output runs/v3main_D_seed17/test_once > runs/v3main_D_seed17/test_once.log"
+  },
+  {
+   "id": "v3main_B_seed43",
+   "kind": "train",
+   "config": "configs/v3p/v3main_B_seed43.json",
+   "group": "B-v3main",
+   "seed": 43,
+   "mem_mib": 20000,
+   "retries": 2
+  },
+  {
+   "id": "v3main_B_seed43_test",
+   "kind": "cmd",
+   "group": "v3p-eval",
+   "mem_mib": 8000,
+   "retries": 1,
+   "after": [
+    "v3main_B_seed43"
+   ],
+   "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/v3p/v3main_B_seed43.json --checkpoint runs/v3main_B_seed43/best_material.pt --split test --output runs/v3main_B_seed43/test_once > runs/v3main_B_seed43/test_once.log"
+  }
+ ]
+}

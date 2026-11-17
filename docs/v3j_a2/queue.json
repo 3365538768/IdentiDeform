@@ -1,0 +1,209 @@
+{
+ "phase": "v3j_a2",
+ "max_per_gpu": 3,
+ "gpus": [],
+ "note": "v3j jobs moved from the a800-4 pool (user: use a800-2 but keep 2 GPUs free -> 6,7 untouched)",
+ "jobs": [
+  {
+   "id": "v3j_cma_best3_000052_b12",
+   "kind": "cmd",
+   "group": "v3j",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 52 --arm cma_best3 --budget 12 && touch runs/v3j_done/v3j_cma_best3_000052_b12"
+  },
+  {
+   "id": "v3j_cma_prior_000248_b12",
+   "kind": "cmd",
+   "group": "v3j",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 248 --arm cma_prior --budget 12 && touch runs/v3j_done/v3j_cma_prior_000248_b12"
+  },
+  {
+   "id": "v3j_cma_gtmean_000248_b12",
+   "kind": "cmd",
+   "group": "v3j",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 248 --arm cma_gtmean --budget 12 && touch runs/v3j_done/v3j_cma_gtmean_000248_b12"
+  },
+  {
+   "id": "v3j_cma_best3_000248_b12",
+   "kind": "cmd",
+   "group": "v3j",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 248 --arm cma_best3 --budget 12 && touch runs/v3j_done/v3j_cma_best3_000248_b12"
+  },
+  {
+   "id": "v3j_cma_prior_000113_b12",
+   "kind": "cmd",
+   "group": "v3j",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 113 --arm cma_prior --budget 12 && touch runs/v3j_done/v3j_cma_prior_000113_b12"
+  },
+  {
+   "id": "v3j_cma_gtmean_000113_b12",
+   "kind": "cmd",
+   "group": "v3j",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 113 --arm cma_gtmean --budget 12 && touch runs/v3j_done/v3j_cma_gtmean_000113_b12"
+  },
+  {
+   "id": "v3j_cma_best3_000113_b12",
+   "kind": "cmd",
+   "group": "v3j",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 113 --arm cma_best3 --budget 12 && touch runs/v3j_done/v3j_cma_best3_000113_b12"
+  },
+  {
+   "id": "v3j_cma_prior_000272_b12",
+   "kind": "cmd",
+   "group": "v3j",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 272 --arm cma_prior --budget 12 && touch runs/v3j_done/v3j_cma_prior_000272_b12"
+  },
+  {
+   "id": "v3j_cma_gtmean_000272_b12",
+   "kind": "cmd",
+   "group": "v3j",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 272 --arm cma_gtmean --budget 12 && touch runs/v3j_done/v3j_cma_gtmean_000272_b12"
+  },
+  {
+   "id": "v3j_cma_best3_000272_b12",
+   "kind": "cmd",
+   "group": "v3j",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 272 --arm cma_best3 --budget 12 && touch runs/v3j_done/v3j_cma_best3_000272_b12"
+  },
+  {
+   "id": "v3j_cma_prior_000134_b12",
+   "kind": "cmd",
+   "group": "v3j",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 134 --arm cma_prior --budget 12 && touch runs/v3j_done/v3j_cma_prior_000134_b12"
+  },
+  {
+   "id": "v3j_cma_gtmean_000134_b12",
+   "kind": "cmd",
+   "group": "v3j",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 134 --arm cma_gtmean --budget 12 && touch runs/v3j_done/v3j_cma_gtmean_000134_b12"
+  },
+  {
+   "id": "v3j_cma_best3_000134_b12",
+   "kind": "cmd",
+   "group": "v3j",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 134 --arm cma_best3 --budget 12 && touch runs/v3j_done/v3j_cma_best3_000134_b12"
+  },
+  {
+   "id": "v3j_cma_prior_000119_b12",
+   "kind": "cmd",
+   "group": "v3j",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 119 --arm cma_prior --budget 12 && touch runs/v3j_done/v3j_cma_prior_000119_b12"
+  },
+  {
+   "id": "v3j_cma_gtmean_000119_b12",
+   "kind": "cmd",
+   "group": "v3j",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 119 --arm cma_gtmean --budget 12 && touch runs/v3j_done/v3j_cma_gtmean_000119_b12"
+  },
+  {
+   "id": "v3j_cma_best3_000119_b12",
+   "kind": "cmd",
+   "group": "v3j",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 119 --arm cma_best3 --budget 12 && touch runs/v3j_done/v3j_cma_best3_000119_b12"
+  },
+  {
+   "id": "v3j_cma_prior_000071_b12",
+   "kind": "cmd",
+   "group": "v3j",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 71 --arm cma_prior --budget 12 && touch runs/v3j_done/v3j_cma_prior_000071_b12"
+  },
+  {
+   "id": "v3j_cma_gtmean_000071_b12",
+   "kind": "cmd",
+   "group": "v3j",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 71 --arm cma_gtmean --budget 12 && touch runs/v3j_done/v3j_cma_gtmean_000071_b12"
+  },
+  {
+   "id": "v3j_cma_best3_000071_b12",
+   "kind": "cmd",
+   "group": "v3j",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 71 --arm cma_best3 --budget 12 && touch runs/v3j_done/v3j_cma_best3_000071_b12"
+  },
+  {
+   "id": "v3j_cma_prior_000231_b12",
+   "kind": "cmd",
+   "group": "v3j",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 231 --arm cma_prior --budget 12 && touch runs/v3j_done/v3j_cma_prior_000231_b12"
+  },
+  {
+   "id": "v3j_cma_gtmean_000231_b12",
+   "kind": "cmd",
+   "group": "v3j",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 231 --arm cma_gtmean --budget 12 && touch runs/v3j_done/v3j_cma_gtmean_000231_b12"
+  },
+  {
+   "id": "v3j_cma_best3_000231_b12",
+   "kind": "cmd",
+   "group": "v3j",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 231 --arm cma_best3 --budget 12 && touch runs/v3j_done/v3j_cma_best3_000231_b12"
+  },
+  {
+   "id": "v3j_cma_prior_000228_b12",
+   "kind": "cmd",
+   "group": "v3j",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 228 --arm cma_prior --budget 12 && touch runs/v3j_done/v3j_cma_prior_000228_b12"
+  },
+  {
+   "id": "v3j_cma_gtmean_000228_b12",
+   "kind": "cmd",
+   "group": "v3j",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 228 --arm cma_gtmean --budget 12 && touch runs/v3j_done/v3j_cma_gtmean_000228_b12"
+  },
+  {
+   "id": "v3j_cma_best3_000228_b12",
+   "kind": "cmd",
+   "group": "v3j",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 228 --arm cma_best3 --budget 12 && touch runs/v3j_done/v3j_cma_best3_000228_b12"
+  }
+ ],
+ "paused_note": "paused 2026-11-15 ~04:10 UTC by user request (GPUs go to the V3 data regeneration)"
+}

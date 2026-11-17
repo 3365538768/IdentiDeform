@@ -1,0 +1,24 @@
+quick failure obs_00 0
+simulation failed obs_00 1
+eval {'n': 1, 'law': 'jelly', 'xf': [3.482501, 2.095095, 0.25, 0.277758], 'x': [3.482501, 2.095095], 'seconds': 321.55616569519043, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_02 1
+simulation failed obs_01 1
+eval {'n': 2, 'law': 'jelly', 'xf': [2.346437, 2.095095, 0.25, 0.277758], 'x': [2.346437, 2.095095], 'seconds': 256.19395995140076, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval {'n': 3, 'law': 'jelly', 'xf': [3.500421, 2.095095, 0.25, 0.277758], 'x': [3.500421, 2.095095], 'seconds': 253.5668923854828, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval {'n': 4, 'law': 'jelly', 'xf': [2.0, 2.095095, 0.25, 0.277758], 'x': [2.0, 2.095095], 'seconds': 824.3585546016693, 'iou': 0.5076037129611967, 'iou_last': 0.45878705909679235, 'rgb_mae_union': 91.74183000237696, 'loss': 0.8521681694010659}
+simulation failed obs_04 1
+simulation failed obs_05 1
+eval {'n': 5, 'law': 'jelly', 'xf': [3.661029, 2.095095, 0.25, 0.277758], 'x': [3.661029, 2.095095], 'seconds': 233.1676802635193, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval {'n': 6, 'law': 'jelly', 'xf': [2.795943, 2.095095, 0.25, 0.277758], 'x': [2.795943, 2.095095], 'seconds': 233.64878964424133, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_07 1
+simulation failed obs_06 1
+eval {'n': 7, 'law': 'jelly', 'xf': [3.010004, 2.095095, 0.25, 0.277758], 'x': [3.010004, 2.095095], 'seconds': 287.56125688552856, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval {'n': 8, 'law': 'jelly', 'xf': [3.499285, 2.095095, 0.25, 0.277758], 'x': [3.499285, 2.095095], 'seconds': 281.2774498462677, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_08 1
+simulation failed obs_09 1
+eval {'n': 9, 'law': 'jelly', 'xf': [3.078466, 2.095095, 0.25, 0.277758], 'x': [3.078466, 2.095095], 'seconds': 295.46020221710205, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval {'n': 10, 'law': 'jelly', 'xf': [2.450128, 2.095095, 0.25, 0.277758], 'x': [2.450128, 2.095095], 'seconds': 295.5728738307953, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval {'n': 11, 'law': 'jelly', 'xf': [2.760311, 2.095095, 0.25, 0.277758], 'x': [2.760311, 2.095095], 'seconds': 858.9101300239563, 'iou': 0.6126749944255705, 'iou_last': 0.547695910431287, 'rgb_mae_union': 75.68446442699188, 'loss': 0.6841268268567506}
+simulation failed obs_11 1
+eval {'n': 12, 'law': 'jelly', 'xf': [3.240955, 2.095095, 0.25, 0.277758], 'x': [3.240955, 2.095095], 'seconds': 109.17750406265259, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+done 231 cma_gtmean {'0': 0.095, '4': 1.29, '12': 0.581}

@@ -1,0 +1,26 @@
+{
+ "base_manifest": "data/manifests/v2main.jsonl",
+ "base_sha256": "d21689990d3fd29b0224cbb165f249b4e35418673002d8abecdabfa10d30b2c5",
+ "manifest": "data/manifests/v2main_withtest.jsonl",
+ "sha256": "d6776e5a4cf00ff6fa74bba96e5e9d4f44b7df7a42e943d877a09d9d5814dd7d",
+ "counts": {
+  "train": 1955,
+  "val": 283,
+  "test": 300
+ },
+ ".stats.json": {
+  "path": "data/manifests/v2main_withtest.stats.json",
+  "equal_to_frozen_except_manifest_sha256": true
+ },
+ ".specific.stats.json": {
+  "path": "data/manifests/v2main_withtest.specific.stats.json",
+  "equal_to_frozen_except_manifest_sha256": true
+ },
+ "test_objects": 10,
+ "test_objects_overlapping_train_val": [],
+ "test_law_counts": {
+  "0": 100,
+  "1": 100,
+  "2": 100
+ }
+}

@@ -1,0 +1,402 @@
+{
+ "rule": "V2 rule: V3e gripper set = the C1 val set (scripts/v3b/c1_select.py logic, seed 20261113) on V3 val 0-282; wave 1 = scripts/v3e/make_jobs.py quota 10 plasticine / 10 metal / 6 jelly, seed 20261114",
+ "source": "docs/v3q/PROTOCOL.json val (identical to the recomputation)",
+ "samples": [
+  {
+   "index": 2,
+   "law": "plasticine",
+   "action": "press"
+  },
+  {
+   "index": 5,
+   "law": "plasticine",
+   "action": "drop"
+  },
+  {
+   "index": 21,
+   "law": "jelly",
+   "action": "drop"
+  },
+  {
+   "index": 27,
+   "law": "jelly",
+   "action": "stretch"
+  },
+  {
+   "index": 29,
+   "law": "plasticine",
+   "action": "stretch"
+  },
+  {
+   "index": 31,
+   "law": "metal",
+   "action": "bend"
+  },
+  {
+   "index": 37,
+   "law": "metal",
+   "action": "press"
+  },
+  {
+   "index": 40,
+   "law": "metal",
+   "action": "drop"
+  },
+  {
+   "index": 53,
+   "law": "plasticine",
+   "action": "tap30hold"
+  },
+  {
+   "index": 60,
+   "law": "jelly",
+   "action": "shear"
+  },
+  {
+   "index": 64,
+   "law": "metal",
+   "action": "stretch"
+  },
+  {
+   "index": 66,
+   "law": "jelly",
+   "action": "bend"
+  },
+  {
+   "index": 68,
+   "law": "plasticine",
+   "action": "bend"
+  },
+  {
+   "index": 71,
+   "law": "plasticine",
+   "action": "tap30hold"
+  },
+  {
+   "index": 80,
+   "law": "plasticine",
+   "action": "shear"
+  },
+  {
+   "index": 88,
+   "law": "metal",
+   "action": "tap30hold"
+  },
+  {
+   "index": 89,
+   "law": "plasticine",
+   "action": "tap30hold"
+  },
+  {
+   "index": 93,
+   "law": "jelly",
+   "action": "drop"
+  },
+  {
+   "index": 112,
+   "law": "metal",
+   "action": "drop"
+  },
+  {
+   "index": 113,
+   "law": "plasticine",
+   "action": "drop"
+  },
+  {
+   "index": 116,
+   "law": "plasticine",
+   "action": "shear"
+  },
+  {
+   "index": 119,
+   "law": "plasticine",
+   "action": "stretch"
+  },
+  {
+   "index": 121,
+   "law": "metal",
+   "action": "bend"
+  },
+  {
+   "index": 133,
+   "law": "metal",
+   "action": "shear"
+  },
+  {
+   "index": 134,
+   "law": "plasticine",
+   "action": "shear"
+  },
+  {
+   "index": 135,
+   "law": "jelly",
+   "action": "stretch"
+  },
+  {
+   "index": 141,
+   "law": "jelly",
+   "action": "tap30hold"
+  },
+  {
+   "index": 145,
+   "law": "metal",
+   "action": "press"
+  },
+  {
+   "index": 151,
+   "law": "metal",
+   "action": "shear"
+  },
+  {
+   "index": 164,
+   "law": "plasticine",
+   "action": "press"
+  },
+  {
+   "index": 169,
+   "law": "metal",
+   "action": "shear"
+  },
+  {
+   "index": 176,
+   "law": "plasticine",
+   "action": "bend"
+  },
+  {
+   "index": 180,
+   "law": "jelly",
+   "action": "press"
+  },
+  {
+   "index": 182,
+   "law": "plasticine",
+   "action": "press"
+  },
+  {
+   "index": 183,
+   "law": "jelly",
+   "action": "drop"
+  },
+  {
+   "index": 184,
+   "law": "metal",
+   "action": "drop"
+  },
+  {
+   "index": 186,
+   "law": "jelly",
+   "action": "shear"
+  },
+  {
+   "index": 195,
+   "law": "jelly",
+   "action": "tap30hold"
+  },
+  {
+   "index": 198,
+   "law": "jelly",
+   "action": "press"
+  },
+  {
+   "index": 205,
+   "law": "metal",
+   "action": "shear"
+  },
+  {
+   "index": 207,
+   "law": "jelly",
+   "action": "stretch"
+  },
+  {
+   "index": 210,
+   "law": "jelly",
+   "action": "bend"
+  },
+  {
+   "index": 214,
+   "law": "metal",
+   "action": "tap30hold"
+  },
+  {
+   "index": 226,
+   "law": "metal",
+   "action": "stretch"
+  },
+  {
+   "index": 228,
+   "law": "jelly",
+   "action": "bend"
+  },
+  {
+   "index": 230,
+   "law": "plasticine",
+   "action": "bend"
+  },
+  {
+   "index": 231,
+   "law": "jelly",
+   "action": "tap30hold"
+  },
+  {
+   "index": 240,
+   "law": "jelly",
+   "action": "shear"
+  },
+  {
+   "index": 244,
+   "law": "metal",
+   "action": "stretch"
+  },
+  {
+   "index": 245,
+   "law": "plasticine",
+   "action": "stretch"
+  },
+  {
+   "index": 250,
+   "law": "metal",
+   "action": "tap30hold"
+  },
+  {
+   "index": 252,
+   "law": "jelly",
+   "action": "press"
+  },
+  {
+   "index": 253,
+   "law": "metal",
+   "action": "press"
+  },
+  {
+   "index": 254,
+   "law": "plasticine",
+   "action": "press"
+  },
+  {
+   "index": 258,
+   "law": "jelly",
+   "action": "shear"
+  },
+  {
+   "index": 261,
+   "law": "jelly",
+   "action": "stretch"
+  },
+  {
+   "index": 265,
+   "law": "metal",
+   "action": "bend"
+  },
+  {
+   "index": 271,
+   "law": "metal",
+   "action": "press"
+  },
+  {
+   "index": 275,
+   "law": "plasticine",
+   "action": "drop"
+  },
+  {
+   "index": 278,
+   "law": "plasticine",
+   "action": "shear"
+  }
+ ],
+ "seed": 20261114,
+ "quota_wave1": {
+  "plasticine": 10,
+  "metal": 10,
+  "jelly": 6
+ },
+ "wave1": [
+  2,
+  29,
+  53,
+  68,
+  80,
+  89,
+  182,
+  230,
+  254,
+  275,
+  31,
+  64,
+  88,
+  133,
+  184,
+  205,
+  214,
+  244,
+  250,
+  271,
+  93,
+  141,
+  198,
+  231,
+  240,
+  252
+ ],
+ "indices": [
+  2,
+  29,
+  53,
+  68,
+  80,
+  89,
+  182,
+  230,
+  254,
+  275,
+  31,
+  64,
+  88,
+  133,
+  184,
+  205,
+  214,
+  244,
+  250,
+  271,
+  93,
+  141,
+  198,
+  231,
+  240,
+  252,
+  5,
+  21,
+  27,
+  37,
+  40,
+  60,
+  66,
+  71,
+  112,
+  113,
+  116,
+  119,
+  121,
+  134,
+  135,
+  145,
+  151,
+  164,
+  169,
+  176,
+  180,
+  183,
+  186,
+  195,
+  207,
+  210,
+  226,
+  228,
+  245,
+  253,
+  258,
+  261,
+  265,
+  278
+ ]
+}

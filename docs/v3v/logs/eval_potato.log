@@ -1,0 +1,35 @@
+2026-11-16T06:45:55+00:00 di-20261103141208-krk4l START eval --objs potato
+potato C0733 prior 4.283 HO {'iou': 0.43, 'psnr': 11.252, 'ssim': 0.261} FU {'iou': 0.224, 'psnr': 10.406, 'ssim': 0.13}
+potato C0733 prior_refine 5.721 HO {'iou': 0.469, 'psnr': 11.395, 'ssim': 0.286} FU {'iou': 0.157, 'psnr': 10.476, 'ssim': 0.09}
+potato C0733 class_mean 3.482 HO {'iou': 0.324, 'psnr': 10.534, 'ssim': 0.203} FU {'iou': 0.046, 'psnr': 8.949, 'ssim': 0.025}
+potato C0733 global_constant_loo 4.75 HO {'iou': 0.454, 'psnr': 11.298, 'ssim': 0.277} FU {'iou': 0.18, 'psnr': 10.399, 'ssim': 0.107}
+potato C0733 oracle 6.283 HO {'iou': 0.458, 'psnr': 11.267, 'ssim': 0.278} FU {'iou': 0.165, 'psnr': 10.519, 'ssim': 0.092}
+Traceback (most recent call last):
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/scripts/v3v/real_eval.py", line 374, in <module>
+    a = ap.parse_args(); {'prep': prep, 'run': run, 'eval': eval_obj}[a.stage](a)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/scripts/v3v/real_eval.py", line 320, in eval_obj
+    for arm, (lg, nu) in list(arms.items()) + [('rigid_track_2cam', None), ('persist_last', None)]:
+             ^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+2026-11-16T06:46:41+00:00 END rc=1
+2026-11-16T06:49:09+00:00 di-20261103141208-krk4l START eval --objs potato
+potato C0733 prior 4.283 HO {'iou': 0.43, 'psnr': 11.252, 'ssim': 0.261} FU {'iou': 0.224, 'psnr': 10.406, 'ssim': 0.13}
+potato C0733 prior_refine 5.721 HO {'iou': 0.469, 'psnr': 11.395, 'ssim': 0.286} FU {'iou': 0.157, 'psnr': 10.476, 'ssim': 0.09}
+potato C0733 class_mean 3.482 HO {'iou': 0.324, 'psnr': 10.534, 'ssim': 0.203} FU {'iou': 0.046, 'psnr': 8.949, 'ssim': 0.025}
+potato C0733 global_constant_loo 4.75 HO {'iou': 0.454, 'psnr': 11.298, 'ssim': 0.277} FU {'iou': 0.18, 'psnr': 10.399, 'ssim': 0.107}
+potato C0733 oracle 6.283 HO {'iou': 0.458, 'psnr': 11.267, 'ssim': 0.278} FU {'iou': 0.165, 'psnr': 10.519, 'ssim': 0.092}
+potato C0733 rigid_track_2cam None HO {'iou': 0.63, 'psnr': 12.069, 'ssim': 0.377} FU {}
+potato C0787 prior 4.283 HO {'iou': 0.465, 'psnr': 12.967, 'ssim': 0.271} FU {'iou': 0.224, 'psnr': 10.378, 'ssim': 0.134}
+potato C0787 prior_refine 5.721 HO {'iou': 0.461, 'psnr': 12.879, 'ssim': 0.272} FU {'iou': 0.157, 'psnr': 10.376, 'ssim': 0.095}
+potato C0787 class_mean 3.482 HO {'iou': 0.334, 'psnr': 11.95, 'ssim': 0.201} FU {'iou': 0.046, 'psnr': 8.934, 'ssim': 0.025}
+potato C0787 global_constant_loo 4.75 HO {'iou': 0.443, 'psnr': 13.0, 'ssim': 0.258} FU {'iou': 0.18, 'psnr': 10.365, 'ssim': 0.113}
+potato C0787 oracle 6.283 HO {'iou': 0.456, 'psnr': 12.961, 'ssim': 0.268} FU {'iou': 0.165, 'psnr': 10.381, 'ssim': 0.097}
+potato C0787 rigid_track_2cam None HO {'iou': 0.709, 'psnr': 14.659, 'ssim': 0.41} FU {}
+potato C0801 prior 4.283 HO {'iou': 0.453, 'psnr': 11.707, 'ssim': 0.255} FU {'iou': 0.224, 'psnr': 10.056, 'ssim': 0.132}
+potato C0801 prior_refine 5.721 HO {'iou': 0.447, 'psnr': 12.278, 'ssim': 0.256} FU {'iou': 0.157, 'psnr': 10.025, 'ssim': 0.096}
+potato C0801 class_mean 3.482 HO {'iou': 0.386, 'psnr': 10.977, 'ssim': 0.209} FU {'iou': 0.046, 'psnr': 8.577, 'ssim': 0.025}
+potato C0801 global_constant_loo 4.75 HO {'iou': 0.432, 'psnr': 11.771, 'ssim': 0.244} FU {'iou': 0.18, 'psnr': 10.049, 'ssim': 0.113}
+potato C0801 oracle 6.283 HO {'iou': 0.469, 'psnr': 12.281, 'ssim': 0.265} FU {'iou': 0.165, 'psnr': 10.036, 'ssim': 0.097}
+potato C0801 rigid_track_2cam None HO {'iou': 0.671, 'psnr': 12.669, 'ssim': 0.391} FU {}
+2026-11-16T06:51:15+00:00 END rc=0

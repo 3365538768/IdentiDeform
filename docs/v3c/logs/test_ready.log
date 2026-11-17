@@ -1,0 +1,40 @@
+{
+ "configs/v2main/v2main_B_seed17.json": true,
+ "configs/v2main/v2main_B_seed29.json": true,
+ "configs/v2main/v2main_B_seed43.json": true,
+ "configs/v2main/v2main_C_seed17.json": true,
+ "configs/v2main/v2main_C_seed29.json": true,
+ "configs/v2main/v2main_C_seed43.json": true,
+ "configs/v2main/v2main_D_seed17.json": true,
+ "configs/v2main/v2main_D_seed29.json": true,
+ "configs/v2main/v2main_D_seed43.json": true,
+ "configs/v3c/v3c_dino_B_seed17.json": true,
+ "configs/v3c/v3c_dino_B_seed29.json": true,
+ "configs/v3c/v3c_dino_B_seed43.json": true,
+ "configs/v3c/v3c_dino_C_seed17.json": true,
+ "configs/v3c/v3c_dino_C_seed29.json": true,
+ "configs/v3c/v3c_dino_C_seed43.json": true,
+ "configs/v3c/v3c_dino_S_seed17.json": true,
+ "configs/v3c/v3c_dino_S_seed29.json": true,
+ "configs/v3c/v3c_dino_S_seed43.json": true
+}
+{
+ "vjepa2_vitl": {
+  "dir": "data/prepared/v2main_test_vjl",
+  "samples": 300,
+  "index_sha256": "194d20412dec61d8789498e0e9e649e8094cee451f79da0abbfee458b1d08df6",
+  "manifest_sha256": "d6776e5a4cf00ff6fa74bba96e5e9d4f44b7df7a42e943d877a09d9d5814dd7d",
+  "backbone_checkpoint_sha256": "25466aef85727d16546c6cf8c99f12fcfad9cbca8225d45f23685e2e025b786b",
+  "frames": 32,
+  "bytes": 17252812200
+ },
+ "dinov3_vitl16": {
+  "dir": "data/prepared/v2main_test_dinov3l16",
+  "samples": 300,
+  "index_sha256": "0c5acc9d0fab74d09631d926f4ba1ad907d7a0ade2dcda801281506712b8296e",
+  "manifest_sha256": "d6776e5a4cf00ff6fa74bba96e5e9d4f44b7df7a42e943d877a09d9d5814dd7d",
+  "backbone_checkpoint_sha256": "1d9dfa114d3205df0d9e9450786596f6929dffafe6d0931bcb690e6bad1831fc",
+  "frames": 16,
+  "bytes": 13143148200
+ }
+}

@@ -1,0 +1,343 @@
+{
+ "field_learning_curve_v1": {
+  "groups": {
+   "B_f05": {
+    "mean_val_mae": 0.7913262848460363,
+    "sd": 0.0482779028760798,
+    "seeds": [
+     17,
+     29,
+     43
+    ]
+   },
+   "B_f10": {
+    "mean_val_mae": 0.7194171468887968,
+    "sd": 0.006062627025306914,
+    "seeds": [
+     17,
+     29,
+     43
+    ]
+   },
+   "B_f25": {
+    "mean_val_mae": 0.6765408804948488,
+    "sd": 0.01571839043863624,
+    "seeds": [
+     17,
+     29,
+     43
+    ]
+   },
+   "B_f50": {
+    "mean_val_mae": 0.64311815968368,
+    "sd": 0.02615942826641404,
+    "seeds": [
+     17,
+     29,
+     43
+    ]
+   },
+   "C_f05": {
+    "mean_val_mae": 0.7983997957475637,
+    "sd": 0.04345247163012746,
+    "seeds": [
+     17,
+     29,
+     43
+    ]
+   },
+   "C_f10": {
+    "mean_val_mae": 0.7337996833628232,
+    "sd": 0.015425944452785325,
+    "seeds": [
+     17,
+     29,
+     43
+    ]
+   },
+   "C_f25": {
+    "mean_val_mae": 0.6819035186989343,
+    "sd": 0.007510751391244432,
+    "seeds": [
+     17,
+     29,
+     43
+    ]
+   },
+   "C_f50": {
+    "mean_val_mae": 0.6140387833899428,
+    "sd": 0.012054062264010174,
+    "seeds": [
+     17,
+     29,
+     43
+    ]
+   }
+  },
+  "pairs": [
+   {
+    "control": "B_f05",
+    "candidate": "C_f05",
+    "mean_relative_improvement": -0.012472227803107638,
+    "seeds_candidate_better": 2,
+    "ci": [
+     [
+      -0.04578253456074968,
+      -0.005966111499667391
+     ],
+     [
+      -0.092710069112979,
+      0.02308482361891565
+     ],
+     [
+      0.020896030610091345,
+      0.13773006979242408
+     ]
+    ]
+   },
+   {
+    "control": "B_f10",
+    "candidate": "C_f10",
+    "mean_relative_improvement": -0.019954774718143786,
+    "seeds_candidate_better": 0,
+    "ci": [
+     [
+      -0.05090899648338771,
+      0.032305494613217106
+     ],
+     [
+      -0.025870615746227253,
+      0.04888429809408816
+     ],
+     [
+      -0.03628287277432866,
+      0.048872186379554136
+     ]
+    ]
+   },
+   {
+    "control": "B_f25",
+    "candidate": "C_f25",
+    "mean_relative_improvement": -0.008240314803293689,
+    "seeds_candidate_better": 1,
+    "ci": [
+     [
+      -0.05606415823827935,
+      0.006845036813722348
+     ],
+     [
+      -0.019917189101968366,
+      0.05630450878673087
+     ],
+     [
+      -0.025873487828633246,
+      0.05104853472038811
+     ]
+    ]
+   },
+   {
+    "control": "B_f50",
+    "candidate": "C_f50",
+    "mean_relative_improvement": 0.044287381895024396,
+    "seeds_candidate_better": 3,
+    "ci": [
+     [
+      -0.11627662878653541,
+      -0.012516737987884106
+     ],
+     [
+      -0.07067341072566394,
+      0.026374493760753823
+     ],
+     [
+      -0.05198814716466646,
+      0.03510973769594761
+     ]
+    ]
+   }
+  ]
+ },
+ "field_v2_pilot_B_vs_C": {
+  "groups": {
+   "Blow": {
+    "mean_val_mae": 0.8002172948641911,
+    "sd": 0.010643401163724406,
+    "seeds": [
+     17,
+     29,
+     43
+    ]
+   },
+   "Clow": {
+    "mean_val_mae": 0.8008316627864142,
+    "sd": 0.00988531957155351,
+    "seeds": [
+     17,
+     29,
+     43
+    ]
+   },
+   "Cv1": {
+    "mean_val_mae": 0.8553006629246654,
+    "sd": 0.009316777880263988,
+    "seeds": [
+     17,
+     29,
+     43
+    ]
+   }
+  },
+  "pairs": [
+   {
+    "control": "Blow",
+    "candidate": "Clow",
+    "mean_relative_improvement": -0.0008265995054916134,
+    "seeds_candidate_better": 1,
+    "ci": [
+     [
+      -0.019954125241315034,
+      0.040173634187064454
+     ],
+     [
+      -0.033166654561106026,
+      0.01966122948350595
+     ],
+     [
+      -0.07783582864634879,
+      0.03757162953188843
+     ]
+    ]
+   }
+  ]
+ },
+ "replay_unseen_action": {
+  "run": "p4d_Clow_seed17",
+  "n": 109,
+  "note": "unseen action replay; lawmean uses the true law (privileged)",
+  "pred": {
+   "iou": 0.8027977421618673,
+   "iou_last": 0.6110649317186467,
+   "rgb_mae_union": 29.047561763178454
+  },
+  "lawmean": {
+   "iou": 0.7690449333238188,
+   "iou_last": 0.5881549640220463,
+   "rgb_mae_union": 33.81383165628952
+  },
+  "pred_better_iou_fraction": 0.6788990825688074,
+  "iou_gain_95ci": [
+   0.016289133739288236,
+   0.0529297253446684
+  ]
+ },
+ "v2_main": {
+  "groups": {
+   "B": {
+    "mean_val_mae": 0.6453338530963977,
+    "sd": 0.006614638221629403,
+    "seeds": [
+     17,
+     29,
+     43
+    ]
+   },
+   "C": {
+    "mean_val_mae": 0.6440708240609001,
+    "sd": 0.009443692692067377,
+    "seeds": [
+     17,
+     29,
+     43
+    ]
+   },
+   "D": {
+    "mean_val_mae": 0.6394853802513772,
+    "sd": 0.005571003089561682,
+    "seeds": [
+     17,
+     29,
+     43
+    ]
+   }
+  },
+  "pairs": [
+   {
+    "control": "B",
+    "candidate": "C",
+    "mean_relative_improvement": 0.001956580023002185,
+    "seeds_candidate_better": 1,
+    "ci": [
+     [
+      -0.02751463594332072,
+      0.00780943788104227
+     ],
+     [
+      -0.018612589590236022,
+      0.019097437481181572
+     ],
+     [
+      -0.018438548238962748,
+      0.017991815110331304
+     ]
+    ]
+   },
+   {
+    "control": "C",
+    "candidate": "D",
+    "mean_relative_improvement": 0.006991112944310617,
+    "seeds_candidate_better": 2,
+    "ci": [
+     [
+      -0.022320178883417946,
+      0.013119471524963863
+     ],
+     [
+      -0.026919211368200177,
+      0.0002806516849139358
+     ],
+     [
+      -0.008911850993692419,
+      0.02282991047080287
+     ]
+    ]
+   },
+   {
+    "control": "B",
+    "candidate": "D",
+    "mean_relative_improvement": 0.008957046328517166,
+    "seeds_candidate_better": 2,
+    "ci": [
+     [
+      -0.030393402395275274,
+      0.004232854128971609
+     ],
+     [
+      -0.03724506079151074,
+      0.010729203519121431
+     ],
+     [
+      -0.011662451979794902,
+      0.023236468757454935
+     ]
+    ]
+   }
+  ]
+ },
+ "pacnerf_download_dirs": [
+  "data/external_datasets/pacnerf/.cache",
+  "data/external_datasets/pacnerf/.cache/huggingface",
+  "data/external_datasets/pacnerf/.cache/huggingface/download",
+  "data/external_datasets/pacnerf/.cache/huggingface/download/masiv",
+  "data/external_datasets/pacnerf/.cache/huggingface/download/oracle",
+  "data/external_datasets/pacnerf/.cache/huggingface/download/oracle/benchflow-h100",
+  "data/external_datasets/pacnerf/.cache/huggingface/download/oracle/pretrained",
+  "data/external_datasets/pacnerf/.cache/huggingface/download/oracle/upstream",
+  "data/external_datasets/pacnerf/.cache/huggingface/download/pacnerf",
+  "data/external_datasets/pacnerf/masiv",
+  "data/external_datasets/pacnerf/oracle",
+  "data/external_datasets/pacnerf/oracle/benchflow-h100",
+  "data/external_datasets/pacnerf/oracle/pretrained",
+  "data/external_datasets/pacnerf/oracle/upstream",
+  "data/external_datasets/pacnerf/pacnerf"
+ ]
+}

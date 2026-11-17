@@ -1,0 +1,41 @@
+07:32:39 start v3x_prior_top1_000272 gpu 5 pid 3046381
+07:32:41 start v3x_lawmean_best3_000272 gpu 6 pid 3046388
+07:32:43 start v3x_prior_top1_000242 gpu 7 pid 3046401
+07:32:45 start v3x_lawmean_best3_000242 gpu 5 pid 3046529
+07:32:47 start v3x_prior_top1_000123 gpu 6 pid 3046767
+07:32:49 start v3x_lawmean_best3_000123 gpu 7 pid 3046916
+07:32:51 start v3x_prior_top1_000137 gpu 5 pid 3047274
+07:32:53 start v3x_lawmean_best3_000137 gpu 6 pid 3047624
+07:32:55 start v3x_prior_top1_000187 gpu 7 pid 3047756
+07:32:57 start v3x_lawmean_best3_000187 gpu 5 pid 3047995
+07:42:59 start v3x_prior_top1_000226 gpu 6 pid 3061098
+07:43:01 start v3x_lawmean_best3_000226 gpu 7 pid 3061230
+07:43:04 start v3x_prior_top1_000276 gpu 5 pid 3061242
+07:43:06 start v3x_lawmean_best3_000276 gpu 6 pid 3061477
+07:43:08 start v3x_prior_top1_000104 gpu 7 pid 3061609
+07:43:10 start v3x_lawmean_best3_000104 gpu 5 pid 3061847
+07:43:12 start v3x_prior_top1_000239 gpu 6 pid 3062084
+07:43:14 start v3x_lawmean_best3_000239 gpu 7 pid 3062320
+07:43:16 start v3x_prior_top1_000054 gpu 5 pid 3062553
+07:43:18 start v3x_lawmean_best3_000054 gpu 6 pid 3062789
+08:23:05 exit v3x_prior_top1_000137 0 gpu 5
+08:28:50 exit v3x_prior_top1_000272 0 gpu 5
+08:37:05 exit v3x_prior_top1_000054 0 gpu 5
+08:51:05 exit v3x_prior_top1_000123 0 gpu 6
+08:51:20 exit v3x_lawmean_best3_000054 0 gpu 6
+08:52:50 exit v3x_lawmean_best3_000137 0 gpu 6
+09:00:05 exit v3x_lawmean_best3_000123 0 gpu 7
+09:26:50 exit v3x_lawmean_best3_000276 0 gpu 6
+09:29:50 exit v3x_prior_top1_000276 0 gpu 5
+09:39:05 exit v3x_lawmean_best3_000242 0 gpu 5
+09:41:05 exit v3x_lawmean_best3_000187 0 gpu 5
+09:41:50 exit v3x_lawmean_best3_000104 0 gpu 5
+09:43:50 exit v3x_lawmean_best3_000272 0 gpu 6
+09:51:36 exit v3x_prior_top1_000239 0 gpu 6
+09:55:06 exit v3x_prior_top1_000226 0 gpu 6
+10:10:06 exit v3x_prior_top1_000242 0 gpu 7
+10:14:51 exit v3x_lawmean_best3_000239 0 gpu 7
+10:16:36 exit v3x_prior_top1_000187 0 gpu 7
+10:19:51 exit v3x_prior_top1_000104 0 gpu 7
+10:22:06 exit v3x_lawmean_best3_000226 0 gpu 7
+all done

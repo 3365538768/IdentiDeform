@@ -1,0 +1,3336 @@
+{
+ "protocol": {
+  "task": "damage-aware parallel-jaw squeeze: two rigid sticky plates close on the object along its narrower horizontal axis by d*W/2 each over 1.0 s, hold until 1.5 s, open (plates removed), free relaxation until 4.0 s; gravity, floor collider; same MPM settings as V2 main/C1 (low damping, substep 1e-4, n_grid from template).",
+  "decision": "largest candidate depth d whose predicted permanent crush <= tau and d >= d_min; else abstain (refuse grasp)",
+  "candidate_depths": [
+   0.06,
+   0.1,
+   0.14,
+   0.18,
+   0.24,
+   0.32,
+   0.4,
+   0.48,
+   0.56,
+   0.64
+  ],
+  "d_min": 0.06,
+  "tau": 0.03,
+  "damage_metric": "wloss",
+  "damage_metric_definition": "same without rigid alignment (the originally planned metric; contaminated by rigid rotation of thin objects after release, see scripts/v3e/diag_rotation.py) - sensitivity only",
+  "gravity": "off for the task (g=0): under the V2-main gravity setting most elastoplastic objects slump to a puddle in <0.5 s (pilot figure docs/v3e/figs/pilot_particles_gravity.png), which makes a grasp ill-posed",
+  "execution": "GT-parameter simulation at the chosen depth (shared GT runs at every candidate depth; Warp-MPM run-to-run nondeterminism noted separately)",
+  "success": "chosen d is GT-feasible, or abstain when no candidate depth is GT-feasible",
+  "regret": "|d_chosen - d_oracle|, abstain = 0",
+  "utility": "secondary (added after the primary-metric switch, before final results): achieved safe grasp depth = d_chosen if GT-feasible else 0 (damage or abstain); oracle utility = d_oracle",
+  "twins": "object geometry = observed object for every method; twins differ only in material law/parameters; hardening/softening are not predicted (0.25 for twins, GT values for GT)",
+  "fixed_heuristic": "single depth or abstain for all objects, chosen leave-one-out on the other evaluated samples using their GT outcomes",
+  "bootstrap": "object (cluster) bootstrap over object identities, 2000 resamples, percentile 95% CI"
+ },
+ "summary": {
+  "gt": {
+   "label": "GT parameters (oracle twin)",
+   "n": 31,
+   "all": {
+    "n": 31,
+    "success": 1.0,
+    "success_ci95_object_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "regret_mean": 0.0,
+    "regret_ci95_object_bootstrap": [
+     0.0,
+     0.0
+    ],
+    "damage_rate": 0.0,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.28580645161290325,
+    "utility_mean": 0.28580645161290325,
+    "utility_ci95_object_bootstrap": [
+     0.12375000000000001,
+     0.41662010582010556
+    ],
+    "oracle_utility_mean": 0.28580645161290325
+   },
+   "jelly": {
+    "n": 11,
+    "success": 1.0,
+    "success_ci95_object_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "regret_mean": 0.0,
+    "regret_ci95_object_bootstrap": [
+     0.0,
+     0.0
+    ],
+    "damage_rate": 0.0,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.36363636363636365,
+    "utility_mean": 0.36363636363636365,
+    "utility_ci95_object_bootstrap": [
+     0.12444444444444445,
+     0.5542952380952382
+    ],
+    "oracle_utility_mean": 0.36363636363636365
+   },
+   "metal": {
+    "n": 8,
+    "success": 1.0,
+    "success_ci95_object_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "regret_mean": 0.0,
+    "regret_ci95_object_bootstrap": [
+     0.0,
+     0.0
+    ],
+    "damage_rate": 0.0,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.1075,
+    "utility_mean": 0.1075,
+    "utility_ci95_object_bootstrap": [
+     0.0075,
+     0.24000000000000002
+    ],
+    "oracle_utility_mean": 0.1075
+   },
+   "plasticine": {
+    "n": 12,
+    "success": 1.0,
+    "success_ci95_object_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "regret_mean": 0.0,
+    "regret_ci95_object_bootstrap": [
+     0.0,
+     0.0
+    ],
+    "damage_rate": 0.0,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.3333333333333333,
+    "utility_mean": 0.3333333333333333,
+    "utility_ci95_object_bootstrap": [
+     0.12666666666666668,
+     0.4666666666666666
+    ],
+    "oracle_utility_mean": 0.3333333333333333
+   },
+   "plastic_laws": {
+    "n": 20,
+    "success": 1.0,
+    "success_ci95_object_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "regret_mean": 0.0,
+    "regret_ci95_object_bootstrap": [
+     0.0,
+     0.0
+    ],
+    "damage_rate": 0.0,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.24299999999999997,
+    "utility_mean": 0.24299999999999997,
+    "utility_ci95_object_bootstrap": [
+     0.07248161764705884,
+     0.3726714285714286
+    ],
+    "oracle_utility_mean": 0.24299999999999997
+   },
+   "sims_per_object": 10.0,
+   "wall_seconds_per_object_refine": 0.0,
+   "wall_seconds_per_object_plan": 6250.772757653267
+  },
+  "prior_vt": {
+   "label": "(c) vision + touch prior (3-seed ensemble, 0 sims)",
+   "n": 6,
+   "all": {
+    "n": 6,
+    "success": 0.6666666666666666,
+    "success_ci95_object_bootstrap": [
+     0.25,
+     1.0
+    ],
+    "regret_mean": 0.05000000000000001,
+    "regret_ci95_object_bootstrap": [
+     0.0,
+     0.07500000000000001
+    ],
+    "damage_rate": 0.3333333333333333,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.5733333333333334,
+    "utility_mean": 0.4266666666666667,
+    "utility_ci95_object_bootstrap": [
+     0.16,
+     0.64
+    ],
+    "oracle_utility_mean": 0.5233333333333333
+   },
+   "jelly": {
+    "n": 3,
+    "success": 0.6666666666666666,
+    "success_ci95_object_bootstrap": [
+     0.0,
+     1.0
+    ],
+    "regret_mean": 0.02666666666666669,
+    "regret_ci95_object_bootstrap": [
+     0.0,
+     0.08000000000000007
+    ],
+    "damage_rate": 0.3333333333333333,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.6133333333333334,
+    "utility_mean": 0.4266666666666667,
+    "utility_ci95_object_bootstrap": [
+     0.0,
+     0.64
+    ],
+    "oracle_utility_mean": 0.5866666666666668
+   },
+   "metal": {
+    "n": 1,
+    "success": 1.0,
+    "success_ci95_object_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "regret_mean": 0.0,
+    "regret_ci95_object_bootstrap": [
+     0.0,
+     0.0
+    ],
+    "damage_rate": 0.0,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.64,
+    "utility_mean": 0.64,
+    "utility_ci95_object_bootstrap": [
+     0.64,
+     0.64
+    ],
+    "oracle_utility_mean": 0.64
+   },
+   "plasticine": {
+    "n": 2,
+    "success": 0.5,
+    "success_ci95_object_bootstrap": [
+     0.0,
+     1.0
+    ],
+    "regret_mean": 0.11,
+    "regret_ci95_object_bootstrap": [
+     0.0,
+     0.22
+    ],
+    "damage_rate": 0.5,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.48,
+    "utility_mean": 0.32,
+    "utility_ci95_object_bootstrap": [
+     0.0,
+     0.64
+    ],
+    "oracle_utility_mean": 0.37
+   },
+   "plastic_laws": {
+    "n": 3,
+    "success": 0.6666666666666666,
+    "success_ci95_object_bootstrap": [
+     0.5,
+     1.0
+    ],
+    "regret_mean": 0.07333333333333333,
+    "regret_ci95_object_bootstrap": [
+     0.0,
+     0.11
+    ],
+    "damage_rate": 0.3333333333333333,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.5333333333333333,
+    "utility_mean": 0.4266666666666667,
+    "utility_ci95_object_bootstrap": [
+     0.32,
+     0.64
+    ],
+    "oracle_utility_mean": 0.45999999999999996
+   },
+   "sims_per_object": 10.0,
+   "wall_seconds_per_object_refine": 0.0,
+   "wall_seconds_per_object_plan": 6678.507688999176
+  },
+  "prior_vision": {
+   "label": "(b) vision prior (9-run ensemble, 0 sims)",
+   "n": 14,
+   "all": {
+    "n": 14,
+    "success": 0.5,
+    "success_ci95_object_bootstrap": [
+     0.23496732026143793,
+     0.8333333333333334
+    ],
+    "regret_mean": 0.0642857142857143,
+    "regret_ci95_object_bootstrap": [
+     0.022000000000000002,
+     0.095
+    ],
+    "damage_rate": 0.35714285714285715,
+    "missed_grasp_rate": 0.14285714285714285,
+    "mean_chosen_d": 0.38285714285714295,
+    "utility_mean": 0.22714285714285715,
+    "utility_ci95_object_bootstrap": [
+     0.07057352941176472,
+     0.40727272727272723
+    ],
+    "oracle_utility_mean": 0.3528571428571429
+   },
+   "jelly": {
+    "n": 6,
+    "success": 0.5,
+    "success_ci95_object_bootstrap": [
+     0.125,
+     1.0
+    ],
+    "regret_mean": 0.043333333333333335,
+    "regret_ci95_object_bootstrap": [
+     0.0,
+     0.07666666666666667
+    ],
+    "damage_rate": 0.5,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.49666666666666676,
+    "utility_mean": 0.3066666666666667,
+    "utility_ci95_object_bootstrap": [
+     0.07,
+     0.624
+    ],
+    "oracle_utility_mean": 0.45333333333333337
+   },
+   "metal": {
+    "n": 3,
+    "success": 0.6666666666666666,
+    "success_ci95_object_bootstrap": [
+     0.0,
+     1.0
+    ],
+    "regret_mean": 0.02,
+    "regret_ci95_object_bootstrap": [
+     0.0,
+     0.06
+    ],
+    "damage_rate": 0.0,
+    "missed_grasp_rate": 0.3333333333333333,
+    "mean_chosen_d": 0.21333333333333335,
+    "utility_mean": 0.21333333333333335,
+    "utility_ci95_object_bootstrap": [
+     0.0,
+     0.64
+    ],
+    "oracle_utility_mean": 0.2333333333333333
+   },
+   "plasticine": {
+    "n": 5,
+    "success": 0.4,
+    "success_ci95_object_bootstrap": [
+     0.0,
+     0.8
+    ],
+    "regret_mean": 0.11600000000000002,
+    "regret_ci95_object_bootstrap": [
+     0.016000000000000004,
+     0.22400000000000003
+    ],
+    "damage_rate": 0.4,
+    "missed_grasp_rate": 0.2,
+    "mean_chosen_d": 0.34800000000000003,
+    "utility_mean": 0.13999999999999999,
+    "utility_ci95_object_bootstrap": [
+     0.0,
+     0.396
+    ],
+    "oracle_utility_mean": 0.304
+   },
+   "plastic_laws": {
+    "n": 8,
+    "success": 0.5,
+    "success_ci95_object_bootstrap": [
+     0.2222222222222222,
+     0.8571428571428571
+    ],
+    "regret_mean": 0.08,
+    "regret_ci95_object_bootstrap": [
+     0.02,
+     0.13
+    ],
+    "damage_rate": 0.25,
+    "missed_grasp_rate": 0.25,
+    "mean_chosen_d": 0.2975,
+    "utility_mean": 0.1675,
+    "utility_ci95_object_bootstrap": [
+     0.008571428571428572,
+     0.3275
+    ],
+    "oracle_utility_mean": 0.2775
+   },
+   "sims_per_object": 10.0,
+   "wall_seconds_per_object_refine": 0.0,
+   "wall_seconds_per_object_plan": 6999.722093122346
+  },
+  "prior_vis3": {
+   "label": "prior_vis3",
+   "n": 0
+  },
+  "lawmean_pred": {
+   "label": "law-mean parameters, predicted law",
+   "n": 0
+  },
+  "fixed_loo": {
+   "label": "fixed depth (leave-one-out tuned)",
+   "n": 31,
+   "all": {
+    "n": 31,
+    "success": 0.6129032258064516,
+    "success_ci95_object_bootstrap": [
+     0.3181818181818182,
+     0.8333333333333334
+    ],
+    "regret_mean": 0.26064516129032256,
+    "regret_ci95_object_bootstrap": [
+     0.1319741935483871,
+     0.3682832512315271
+    ],
+    "damage_rate": 0.3870967741935484,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.06000000000000001,
+    "utility_mean": 0.0367741935483871,
+    "utility_ci95_object_bootstrap": [
+     0.01909090909090909,
+     0.05000000000000001
+    ],
+    "oracle_utility_mean": 0.28580645161290325
+   },
+   "jelly": {
+    "n": 11,
+    "success": 0.45454545454545453,
+    "success_ci95_object_bootstrap": [
+     0.08333333333333333,
+     0.8
+    ],
+    "regret_mean": 0.3472727272727273,
+    "regret_ci95_object_bootstrap": [
+     0.15775,
+     0.5053333333333334
+    ],
+    "damage_rate": 0.5454545454545454,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.06000000000000001,
+    "utility_mean": 0.02727272727272727,
+    "utility_ci95_object_bootstrap": [
+     0.005,
+     0.048000000000000015
+    ],
+    "oracle_utility_mean": 0.36363636363636365
+   },
+   "metal": {
+    "n": 8,
+    "success": 0.5,
+    "success_ci95_object_bootstrap": [
+     0.125,
+     0.8888888888888888
+    ],
+    "regret_mean": 0.10750000000000001,
+    "regret_ci95_object_bootstrap": [
+     0.03142857142857143,
+     0.20444444444444448
+    ],
+    "damage_rate": 0.5,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.06,
+    "utility_mean": 0.03,
+    "utility_ci95_object_bootstrap": [
+     0.0075,
+     0.05333333333333333
+    ],
+    "oracle_utility_mean": 0.1075
+   },
+   "plasticine": {
+    "n": 12,
+    "success": 0.8333333333333334,
+    "success_ci95_object_bootstrap": [
+     0.5,
+     1.0
+    ],
+    "regret_mean": 0.2833333333333334,
+    "regret_ci95_object_bootstrap": [
+     0.09333333333333334,
+     0.41538888888888886
+    ],
+    "damage_rate": 0.16666666666666666,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.06000000000000002,
+    "utility_mean": 0.05000000000000001,
+    "utility_ci95_object_bootstrap": [
+     0.03,
+     0.06000000000000002
+    ],
+    "oracle_utility_mean": 0.3333333333333333
+   },
+   "plastic_laws": {
+    "n": 20,
+    "success": 0.7,
+    "success_ci95_object_bootstrap": [
+     0.35294117647058826,
+     0.9375919117647054
+    ],
+    "regret_mean": 0.213,
+    "regret_ci95_object_bootstrap": [
+     0.06941176470588237,
+     0.32616
+    ],
+    "damage_rate": 0.3,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.06000000000000001,
+    "utility_mean": 0.042,
+    "utility_ci95_object_bootstrap": [
+     0.021176470588235293,
+     0.05625551470588232
+    ],
+    "oracle_utility_mean": 0.24299999999999997
+   },
+   "sims_per_object": 0.0,
+   "wall_seconds_per_object_refine": 0.0,
+   "wall_seconds_per_object_plan": 0.0
+  }
+ },
+ "paired_success_differences": {
+  "gt-minus-prior_vision": {
+   "n": 14,
+   "success_diff": 0.5,
+   "success_ci95_object_bootstrap": [
+    0.16666666666666666,
+    0.7650326797385603
+   ],
+   "utility_diff": 0.12571428571428572,
+   "utility_ci95_object_bootstrap": [
+    0.035555555555555556,
+    0.20588235294117643
+   ],
+   "regret_diff": -0.0642857142857143,
+   "regret_ci95_object_bootstrap": [
+    -0.095,
+    -0.022000000000000002
+   ]
+  },
+  "gt-minus-fixed_loo": {
+   "n": 31,
+   "success_diff": 0.3870967741935484,
+   "success_ci95_object_bootstrap": [
+    0.16666666666666666,
+    0.6818181818181818
+   ],
+   "utility_diff": 0.24903225806451615,
+   "utility_ci95_object_bootstrap": [
+    0.10205295566502462,
+    0.3698065891472866
+   ],
+   "regret_diff": -0.26064516129032256,
+   "regret_ci95_object_bootstrap": [
+    -0.36828325123152716,
+    -0.13197419354838724
+   ]
+  },
+  "prior_vt-minus-prior_vision": {
+   "n": 5,
+   "success_diff": 0.0,
+   "success_ci95_object_bootstrap": [
+    0.0,
+    0.0
+   ],
+   "utility_diff": 0.0,
+   "utility_ci95_object_bootstrap": [
+    0.0,
+    0.0
+   ],
+   "regret_diff": 0.0,
+   "regret_ci95_object_bootstrap": [
+    0.0,
+    0.0
+   ]
+  },
+  "prior_vt-minus-fixed_loo": {
+   "n": 6,
+   "success_diff": -0.3333333333333333,
+   "success_ci95_object_bootstrap": [
+    -0.75,
+    0.0
+   ],
+   "utility_diff": 0.3666666666666667,
+   "utility_ci95_object_bootstrap": [
+    0.10000000000000002,
+    0.5800000000000001
+   ],
+   "regret_diff": -0.4133333333333334,
+   "regret_ci95_object_bootstrap": [
+    -0.5800000000000001,
+    -0.33
+   ]
+  },
+  "prior_vision-minus-fixed_loo": {
+   "n": 14,
+   "success_diff": -0.21428571428571427,
+   "success_ci95_object_bootstrap": [
+    -0.4444444444444444,
+    0.1111111111111111
+   ],
+   "utility_diff": 0.1842857142857143,
+   "utility_ci95_object_bootstrap": [
+    0.03529411764705883,
+    0.3581818181818182
+   ],
+   "regret_diff": -0.24571428571428575,
+   "regret_ci95_object_bootstrap": [
+    -0.38169166666666676,
+    -0.11137012987013017
+   ]
+  },
+  "fixed_loo-minus-prior_vision": {
+   "n": 14,
+   "success_diff": 0.21428571428571427,
+   "success_ci95_object_bootstrap": [
+    -0.1111111111111111,
+    0.4444444444444444
+   ],
+   "utility_diff": -0.1842857142857143,
+   "utility_ci95_object_bootstrap": [
+    -0.3581818181818182,
+    -0.03529411764705883
+   ],
+   "regret_diff": 0.24571428571428575,
+   "regret_ci95_object_bootstrap": [
+    0.11137012987012987,
+    0.38169166666666665
+   ]
+  }
+ },
+ "fixed_depth_success_global": {
+  "abstain": 0.2903225806451613,
+  "0.06": 0.6129032258064516,
+  "0.10": 0.4838709677419355,
+  "0.14": 0.45161290322580644,
+  "0.18": 0.45161290322580644,
+  "0.24": 0.3548387096774194,
+  "0.32": 0.3548387096774194,
+  "0.40": 0.3870967741935484,
+  "0.48": 0.3225806451612903,
+  "0.56": 0.2903225806451613,
+  "0.64": 0.2903225806451613
+ },
+ "n_samples": 31,
+ "n_complete": 0,
+ "excluded_samples": [],
+ "samples": [
+  {
+   "index": 2,
+   "law": "plasticine",
+   "object": "a_silver_human_skele_013020",
+   "gt_dent": {
+    "0.06": 0.008292494474008899,
+    "0.10": 0.005853387949363868,
+    "0.14": 0.009579164090365272,
+    "0.18": 0.02497383163757356,
+    "0.24": 0.024893385554689774,
+    "0.32": 0.018024599663810207,
+    "0.40": 0.017331453763613863,
+    "0.48": 0.01885805849926897,
+    "0.56": 0.007226583875798731,
+    "0.64": 0.012717496742401352
+   },
+   "oracle_d": 0.64,
+   "methods": {
+    "gt": {
+     "twin_law": "plasticine",
+     "twin_params": {
+      "material": "plasticine",
+      "E": 624.2481690014439,
+      "nu": 0.4562641370749686,
+      "density": 611.3803976977539,
+      "yield_stress": 685.6024083480929,
+      "hardening": 0.0800546916710875,
+      "softening": 0.4137641636365909
+     },
+     "twin_dent": {
+      "0.06": 0.008292494474008899,
+      "0.10": 0.005853387949363868,
+      "0.14": 0.009579164090365272,
+      "0.18": 0.02497383163757356,
+      "0.24": 0.024893385554689774,
+      "0.32": 0.018024599663810207,
+      "0.40": 0.017331453763613863,
+      "0.48": 0.01885805849926897,
+      "0.56": 0.007226583875798731,
+      "0.64": 0.012717496742401352
+     },
+     "chosen_d": 0.64,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": 0.012717496742401352,
+     "utility": 0.64,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 6795.250506162643
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": true,
+     "utility": 0.06,
+     "regret": 0.5800000000000001,
+     "damaged": false,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 21,
+   "law": "jelly",
+   "object": "a_stainless_steel_si_013020",
+   "gt_dent": {
+    "0.06": 0.007787861485119928,
+    "0.10": 0.010240731336296638,
+    "0.14": 0.013749212438774213,
+    "0.18": 0.02130204859962907,
+    "0.24": 0.08825525160199504,
+    "0.32": 0.04668029677499631,
+    "0.40": 0.00809357119071071,
+    "0.48": -0.037250739125905985,
+    "0.56": 0.050216776805854874,
+    "0.64": 0.12338904954406914
+   },
+   "oracle_d": 0.48,
+   "methods": {
+    "gt": {
+     "twin_law": "jelly",
+     "twin_params": {
+      "material": "jelly",
+      "E": 22362.04250999554,
+      "nu": 0.11339891949316705,
+      "density": 1178.8675155531037
+     },
+     "twin_dent": {
+      "0.06": 0.007787861485119928,
+      "0.10": 0.010240731336296638,
+      "0.14": 0.013749212438774213,
+      "0.18": 0.02130204859962907,
+      "0.24": 0.08825525160199504,
+      "0.32": 0.04668029677499631,
+      "0.40": 0.00809357119071071,
+      "0.48": -0.037250739125905985,
+      "0.56": 0.050216776805854874,
+      "0.64": 0.12338904954406914
+     },
+     "chosen_d": 0.48,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": -0.037250739125905985,
+     "utility": 0.48,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 6782.908900260925
+    },
+    "prior_vt": {
+     "twin_law": "jelly",
+     "twin_params": {
+      "material": "jelly",
+      "E": 27889.581662846016,
+      "nu": 0.2917049825191498,
+      "density": 1000.0
+     },
+     "twin_dent": {
+      "0.06": -0.0019684874156370253,
+      "0.10": 0.00429219381495494,
+      "0.14": 0.01236656824648571,
+      "0.18": 0.019319759554207318,
+      "0.24": 0.06844631285883582,
+      "0.32": 0.0351834748434054,
+      "0.40": 0.009198366219160791,
+      "0.48": -0.06613198946273535,
+      "0.56": 0.0031116818097689943,
+      "0.64": 0.1512209764502011
+     },
+     "chosen_d": 0.56,
+     "success": false,
+     "regret": 0.08000000000000007,
+     "damaged": true,
+     "missed_grasp": false,
+     "gt_dent_at_choice": 0.050216776805854874,
+     "utility": 0.0,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 6829.726670026779
+    },
+    "prior_vision": {
+     "twin_law": "jelly",
+     "twin_params": {
+      "material": "jelly",
+      "E": 22564.151136370885,
+      "nu": 0.2841703743507313,
+      "density": 1000.0
+     },
+     "twin_dent": {
+      "0.06": 0.004777465043488617,
+      "0.10": 0.013082034911048292,
+      "0.14": 0.01806934086156495,
+      "0.18": 0.023532205638240884,
+      "0.24": 0.07810720227359406,
+      "0.32": 0.023593364731504276,
+      "0.40": 0.017849436712821642,
+      "0.48": -0.04865545793450989,
+      "0.56": 0.020418767682667444,
+      "0.64": 0.130959955880003
+     },
+     "chosen_d": 0.56,
+     "success": false,
+     "regret": 0.08000000000000007,
+     "damaged": true,
+     "missed_grasp": false,
+     "gt_dent_at_choice": 0.050216776805854874,
+     "utility": 0.0,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 6829.479181528091
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": true,
+     "utility": 0.06,
+     "regret": 0.42,
+     "damaged": false,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 29,
+   "law": "plasticine",
+   "object": "a_silver_human_skele_013020",
+   "gt_dent": {
+    "0.06": 0.0073739124578242705,
+    "0.10": 0.0199333232931633,
+    "0.14": 0.04712503472745148,
+    "0.18": 0.0953959584262127,
+    "0.24": 0.14840758849770683,
+    "0.32": 0.20622587202150716,
+    "0.40": 0.2995105884818047,
+    "0.48": 0.3716655800209347,
+    "0.56": 0.4298318396241858,
+    "0.64": 0.5052406881320514
+   },
+   "oracle_d": 0.1,
+   "methods": {
+    "gt": {
+     "twin_law": "plasticine",
+     "twin_params": {
+      "material": "plasticine",
+      "E": 21637.07159411713,
+      "nu": 0.25823715525486124,
+      "density": 1355.9838898530452,
+      "yield_stress": 434.09627511054913,
+      "hardening": 0.36001899354509354,
+      "softening": 0.40286257474677084
+     },
+     "twin_dent": {
+      "0.06": 0.0073739124578242705,
+      "0.10": 0.0199333232931633,
+      "0.14": 0.04712503472745148,
+      "0.18": 0.0953959584262127,
+      "0.24": 0.14840758849770683,
+      "0.32": 0.20622587202150716,
+      "0.40": 0.2995105884818047,
+      "0.48": 0.3716655800209347,
+      "0.56": 0.4298318396241858,
+      "0.64": 0.5052406881320514
+     },
+     "chosen_d": 0.1,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": 0.0199333232931633,
+     "utility": 0.1,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 5480.203704833984
+    },
+    "prior_vt": {
+     "twin_law": "plasticine",
+     "twin_params": {
+      "material": "plasticine",
+      "E": 7572.808943033915,
+      "nu": 0.2792760729789734,
+      "density": 1000.0,
+      "yield_stress": 983.9431350296829,
+      "hardening": 0.25,
+      "softening": 0.25
+     },
+     "twin_dent": {
+      "0.06": -0.0026561238645175715,
+      "0.10": -0.008524946236760306,
+      "0.14": -0.012982220480263115,
+      "0.18": -0.015838524132421736,
+      "0.24": -0.005967509136710634,
+      "0.32": 0.006100806425209932,
+      "0.40": 0.12516381535191887,
+      "0.48": 0.2193474700174643,
+      "0.56": 0.31453249133099914,
+      "0.64": 0.23677667512597764
+     },
+     "chosen_d": 0.32,
+     "success": false,
+     "regret": 0.22,
+     "damaged": true,
+     "missed_grasp": false,
+     "gt_dent_at_choice": 0.20622587202150716,
+     "utility": 0.0,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 6023.356991291046
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": true,
+     "utility": 0.06,
+     "regret": 0.04000000000000001,
+     "damaged": false,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 31,
+   "law": "metal",
+   "object": "a_brass_telescope_013020",
+   "gt_dent": {
+    "0.06": 0.08508533434457233,
+    "0.10": 0.06815235140701877,
+    "0.14": 0.2031100850081978,
+    "0.18": 0.1552113485778347,
+    "0.24": 0.20289360653000935,
+    "0.32": 0.18938861869693904,
+    "0.40": 0.29287016819218564,
+    "0.48": 0.47965296887455083,
+    "0.56": 0.5828531753972632,
+    "0.64": 0.5876071447129414
+   },
+   "oracle_d": null,
+   "methods": {
+    "gt": {
+     "twin_law": "metal",
+     "twin_params": {
+      "material": "metal",
+      "E": 469299.3573723484,
+      "nu": 0.10337726991107588,
+      "density": 980.812781225411,
+      "yield_stress": 24195.375312410484,
+      "hardening": 0.40108627422894266
+     },
+     "twin_dent": {
+      "0.06": 0.08508533434457233,
+      "0.10": 0.06815235140701877,
+      "0.14": 0.2031100850081978,
+      "0.18": 0.1552113485778347,
+      "0.24": 0.20289360653000935,
+      "0.32": 0.18938861869693904,
+      "0.40": 0.29287016819218564,
+      "0.48": 0.47965296887455083,
+      "0.56": 0.5828531753972632,
+      "0.64": 0.5876071447129414
+     },
+     "chosen_d": null,
+     "success": true,
+     "regret": 0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": null,
+     "utility": 0.0,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 2579.976475954056
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": false,
+     "utility": 0.0,
+     "regret": 0.06,
+     "damaged": true,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 40,
+   "law": "metal",
+   "object": "a_plastic_water_bottle_thin_transparent_plastic_isolated_013020",
+   "gt_dent": {
+    "0.06": 0.000592472757108311,
+    "0.10": 0.004795531798389106,
+    "0.14": 0.03607952527653952,
+    "0.18": 0.06543823486705246,
+    "0.24": 0.12042495237195526,
+    "0.32": 0.19868027018090828,
+    "0.40": 0.2713899560369969,
+    "0.48": 0.34875464253162525,
+    "0.56": 0.43014537268835595,
+    "0.64": 0.5040667833531894
+   },
+   "oracle_d": 0.1,
+   "methods": {
+    "gt": {
+     "twin_law": "metal",
+     "twin_params": {
+      "material": "metal",
+      "E": 141762.3192676155,
+      "nu": 0.3499095949689117,
+      "density": 821.8919938087349,
+      "yield_stress": 6315.009943404661,
+      "hardening": 0.08536165728011472
+     },
+     "twin_dent": {
+      "0.06": 0.000592472757108311,
+      "0.10": 0.004795531798389106,
+      "0.14": 0.03607952527653952,
+      "0.18": 0.06543823486705246,
+      "0.24": 0.12042495237195526,
+      "0.32": 0.19868027018090828,
+      "0.40": 0.2713899560369969,
+      "0.48": 0.34875464253162525,
+      "0.56": 0.43014537268835595,
+      "0.64": 0.5040667833531894
+     },
+     "chosen_d": 0.1,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": 0.004795531798389106,
+     "utility": 0.1,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 2625.548219680786
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": true,
+     "utility": 0.06,
+     "regret": 0.04000000000000001,
+     "damaged": false,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 53,
+   "law": "plasticine",
+   "object": "a_stainless_steel_si_013020",
+   "gt_dent": {
+    "0.06": 0.04991569038311293,
+    "0.10": 0.08318787047050491,
+    "0.14": 0.10320111660466945,
+    "0.18": 0.10835298959459184,
+    "0.24": 0.11209539672473856,
+    "0.32": 0.07469117318433496,
+    "0.40": 0.019849741358314556,
+    "0.48": 0.054951347841903676,
+    "0.56": 0.08673066950768528,
+    "0.64": 0.09584509546581962
+   },
+   "oracle_d": 0.4,
+   "methods": {
+    "gt": {
+     "twin_law": "plasticine",
+     "twin_params": {
+      "material": "plasticine",
+      "E": 708.6165018195474,
+      "nu": 0.11409943272741942,
+      "density": 531.2655610067463,
+      "yield_stress": 1771.4546621096129,
+      "hardening": 0.3806865797394728,
+      "softening": 0.36824848801109117
+     },
+     "twin_dent": {
+      "0.06": 0.04991569038311293,
+      "0.10": 0.08318787047050491,
+      "0.14": 0.10320111660466945,
+      "0.18": 0.10835298959459184,
+      "0.24": 0.11209539672473856,
+      "0.32": 0.07469117318433496,
+      "0.40": 0.019849741358314556,
+      "0.48": 0.054951347841903676,
+      "0.56": 0.08673066950768528,
+      "0.64": 0.09584509546581962
+     },
+     "chosen_d": 0.4,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": 0.019849741358314556,
+     "utility": 0.4,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 6826.88418507576
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": false,
+     "utility": 0.0,
+     "regret": 0.34,
+     "damaged": true,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 60,
+   "law": "jelly",
+   "object": "a_brick_wall_013020",
+   "gt_dent": {
+    "0.06": 0.0619018782769631,
+    "0.10": 0.0689191211223064,
+    "0.14": 0.10247536341992394,
+    "0.18": 0.1883928965815781,
+    "0.24": 0.18131276475213237,
+    "0.32": 0.32543483950333685,
+    "0.40": 0.2944759840276332,
+    "0.48": 0.5063287078549941,
+    "0.56": 0.611709139276738,
+    "0.64": 0.6384939523876835
+   },
+   "oracle_d": null,
+   "methods": {
+    "gt": {
+     "twin_law": "jelly",
+     "twin_params": {
+      "material": "jelly",
+      "E": 168216.30615346305,
+      "nu": 0.11613567318583347,
+      "density": 2313.828638018651
+     },
+     "twin_dent": {
+      "0.06": 0.0619018782769631,
+      "0.10": 0.0689191211223064,
+      "0.14": 0.10247536341992394,
+      "0.18": 0.1883928965815781,
+      "0.24": 0.18131276475213237,
+      "0.32": 0.32543483950333685,
+      "0.40": 0.2944759840276332,
+      "0.48": 0.5063287078549941,
+      "0.56": 0.611709139276738,
+      "0.64": 0.6384939523876835
+     },
+     "chosen_d": null,
+     "success": true,
+     "regret": 0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": null,
+     "utility": 0.0,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 7228.9113075733185
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": false,
+     "utility": 0.0,
+     "regret": 0.06,
+     "damaged": true,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 64,
+   "law": "metal",
+   "object": "a_silver_human_skele_013020",
+   "gt_dent": {
+    "0.06": 0.004129409684772959,
+    "0.10": 0.0054572377621396415,
+    "0.14": 0.012889613942989918,
+    "0.18": 0.024272734671045678,
+    "0.24": 0.044164899503198664,
+    "0.32": 0.0686153638922434,
+    "0.40": 0.14309627618824008,
+    "0.48": 0.17132443250433332,
+    "0.56": 0.2460303132065341,
+    "0.64": -0.1716242344760107
+   },
+   "oracle_d": 0.64,
+   "methods": {
+    "gt": {
+     "twin_law": "metal",
+     "twin_params": {
+      "material": "metal",
+      "E": 23014.82772029133,
+      "nu": 0.1144253139032766,
+      "density": 501.93787968972754,
+      "yield_stress": 3104.5705708218056,
+      "hardening": 0.37745687620478036
+     },
+     "twin_dent": {
+      "0.06": 0.004129409684772959,
+      "0.10": 0.0054572377621396415,
+      "0.14": 0.012889613942989918,
+      "0.18": 0.024272734671045678,
+      "0.24": 0.044164899503198664,
+      "0.32": 0.0686153638922434,
+      "0.40": 0.14309627618824008,
+      "0.48": 0.17132443250433332,
+      "0.56": 0.2460303132065341,
+      "0.64": -0.1716242344760107
+     },
+     "chosen_d": 0.64,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": -0.1716242344760107,
+     "utility": 0.64,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 7250.550017356873
+    },
+    "prior_vt": {
+     "twin_law": "metal",
+     "twin_params": {
+      "material": "metal",
+      "E": 69816.80974576432,
+      "nu": 0.2607979476451874,
+      "density": 1000.0,
+      "yield_stress": 5000.633201071285,
+      "hardening": 0.25
+     },
+     "twin_dent": {
+      "0.06": 0.002284762295856372,
+      "0.10": 0.007908504741174082,
+      "0.14": 0.013225897277835514,
+      "0.18": 0.03378127458399553,
+      "0.24": 0.07827590948506088,
+      "0.32": 0.11734791714801798,
+      "0.40": 0.22506381900005518,
+      "0.48": 0.25432093684140616,
+      "0.56": 0.31551655271697293,
+      "0.64": -0.09831072580139733
+     },
+     "chosen_d": 0.64,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": -0.1716242344760107,
+     "utility": 0.64,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 6168.183517217636
+    },
+    "prior_vision": {
+     "twin_law": "jelly",
+     "twin_params": {
+      "material": "jelly",
+      "E": 67404.36163682996,
+      "nu": 0.27277936551029464,
+      "density": 1000.0
+     },
+     "twin_dent": {
+      "0.06": 0.003152363945562323,
+      "0.10": 0.006647091453164946,
+      "0.14": 0.006700878078348872,
+      "0.18": 0.011301739225603557,
+      "0.24": 0.01799981104524718,
+      "0.32": 0.022221827267293336,
+      "0.40": 0.022145122862683213,
+      "0.48": -0.022715728799417047,
+      "0.56": -0.24855407520212078,
+      "0.64": -0.6482471640417234
+     },
+     "chosen_d": 0.64,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": -0.1716242344760107,
+     "utility": 0.64,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 7271.346701145172
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": true,
+     "utility": 0.06,
+     "regret": 0.5800000000000001,
+     "damaged": false,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 66,
+   "law": "jelly",
+   "object": "a_silver_human_skele_013020",
+   "gt_dent": {
+    "0.06": 0.0031579764629728196,
+    "0.10": 0.002041085498283973,
+    "0.14": 0.004216871414419867,
+    "0.18": 0.0056686425846016845,
+    "0.24": 0.009726024962606604,
+    "0.32": 0.01276613855995899,
+    "0.40": 0.010344337297329658,
+    "0.48": -0.02202959854598382,
+    "0.56": -0.4314716301276193,
+    "0.64": -0.9624625481390295
+   },
+   "oracle_d": 0.64,
+   "methods": {
+    "gt": {
+     "twin_law": "jelly",
+     "twin_params": {
+      "material": "jelly",
+      "E": 416751.6828006308,
+      "nu": 0.13312318731716954,
+      "density": 1572.4549980699448
+     },
+     "twin_dent": {
+      "0.06": 0.0031579764629728196,
+      "0.10": 0.002041085498283973,
+      "0.14": 0.004216871414419867,
+      "0.18": 0.0056686425846016845,
+      "0.24": 0.009726024962606604,
+      "0.32": 0.01276613855995899,
+      "0.40": 0.010344337297329658,
+      "0.48": -0.02202959854598382,
+      "0.56": -0.4314716301276193,
+      "0.64": -0.9624625481390295
+     },
+     "chosen_d": 0.64,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": -0.9624625481390295,
+     "utility": 0.64,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 7278.861751794815
+    },
+    "prior_vt": {
+     "twin_law": "jelly",
+     "twin_params": {
+      "material": "jelly",
+      "E": 316227.7660168379,
+      "nu": 0.3063282072544098,
+      "density": 1000.0
+     },
+     "twin_dent": {
+      "0.06": 0.0010270906861208993,
+      "0.10": 0.00045882329830810665,
+      "0.14": 0.0013521489861455008,
+      "0.18": 0.0024306877485292867,
+      "0.24": 0.004128474265204543,
+      "0.32": 0.00591793189958458,
+      "0.40": -0.007886054671532096,
+      "0.48": -0.060145139700235446,
+      "0.56": -0.6410935428922612,
+      "0.64": -1.102275501642129
+     },
+     "chosen_d": 0.64,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": -0.9624625481390295,
+     "utility": 0.64,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 7074.501355886459
+    },
+    "prior_vision": {
+     "twin_law": "metal",
+     "twin_params": {
+      "material": "metal",
+      "E": 135272.33915690225,
+      "nu": 0.2749844412084929,
+      "density": 1000.0,
+      "yield_stress": 6816.7128502292935,
+      "hardening": 0.25
+     },
+     "twin_dent": {
+      "0.06": 0.001446626362555529,
+      "0.10": 0.0019770092578474687,
+      "0.14": 0.016104650999636122,
+      "0.18": 0.04427995611011385,
+      "0.24": 0.09306723141064077,
+      "0.32": 0.13593143000395683,
+      "0.40": 0.245189371014528,
+      "0.48": 0.26682469021242444,
+      "0.56": 0.3813410923268468,
+      "0.64": -0.08416016628018248
+     },
+     "chosen_d": 0.64,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": -0.9624625481390295,
+     "utility": 0.64,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 7065.372771024704
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": true,
+     "utility": 0.06,
+     "regret": 0.5800000000000001,
+     "damaged": false,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 68,
+   "law": "plasticine",
+   "object": "a_leather_boot_013020",
+   "gt_dent": {
+    "0.06": 0.017714153757896492,
+    "0.10": 0.05632030362884438,
+    "0.14": 0.038864544180439164,
+    "0.18": 0.05303405790001554,
+    "0.24": 0.08848623877094389,
+    "0.32": 0.21781324445226988,
+    "0.40": 0.233832082334025,
+    "0.48": 0.381343810156713,
+    "0.56": 0.39877937043921313,
+    "0.64": 0.43286255195339074
+   },
+   "oracle_d": 0.06,
+   "methods": {
+    "gt": {
+     "twin_law": "plasticine",
+     "twin_params": {
+      "material": "plasticine",
+      "E": 1675.8039491800344,
+      "nu": 0.12267537624639863,
+      "density": 497.168600770984,
+      "yield_stress": 273.75582641551534,
+      "hardening": 0.17460402602808173,
+      "softening": 0.36965077079443404
+     },
+     "twin_dent": {
+      "0.06": 0.017714153757896492,
+      "0.10": 0.05632030362884438,
+      "0.14": 0.038864544180439164,
+      "0.18": 0.05303405790001554,
+      "0.24": 0.08848623877094389,
+      "0.32": 0.21781324445226988,
+      "0.40": 0.233832082334025,
+      "0.48": 0.381343810156713,
+      "0.56": 0.39877937043921313,
+      "0.64": 0.43286255195339074
+     },
+     "chosen_d": 0.06,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": 0.017714153757896492,
+     "utility": 0.06,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 5630.270411968231
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": true,
+     "utility": 0.06,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 71,
+   "law": "plasticine",
+   "object": "a_wooden_chair_013020",
+   "gt_dent": {
+    "0.06": 0.0011002171111489877,
+    "0.10": 0.002281874942846698,
+    "0.14": 0.0028683069572673007,
+    "0.18": 0.002887738546515002,
+    "0.24": 0.003791245226241114,
+    "0.32": -0.007631003434371898,
+    "0.40": -0.0217809109995122,
+    "0.48": -0.024756595116460015,
+    "0.56": -0.035263945125463665,
+    "0.64": -0.010777340873930973
+   },
+   "oracle_d": 0.64,
+   "methods": {
+    "gt": {
+     "twin_law": "plasticine",
+     "twin_params": {
+      "material": "plasticine",
+      "E": 19493.784367496988,
+      "nu": 0.12936530299435667,
+      "density": 1199.4051494868356,
+      "yield_stress": 9829.736568973794,
+      "hardening": 0.22758618820900173,
+      "softening": 0.11986640081314125
+     },
+     "twin_dent": {
+      "0.06": 0.0011002171111489877,
+      "0.10": 0.002281874942846698,
+      "0.14": 0.0028683069572673007,
+      "0.18": 0.002887738546515002,
+      "0.24": 0.003791245226241114,
+      "0.32": -0.007631003434371898,
+      "0.40": -0.0217809109995122,
+      "0.48": -0.024756595116460015,
+      "0.56": -0.035263945125463665,
+      "0.64": -0.010777340873930973
+     },
+     "chosen_d": 0.64,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": -0.010777340873930973,
+     "utility": 0.64,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 7606.24894118309
+    },
+    "prior_vt": {
+     "twin_law": "jelly",
+     "twin_params": {
+      "material": "jelly",
+      "E": 75806.77131429329,
+      "nu": 0.23705850541591644,
+      "density": 1000.0
+     },
+     "twin_dent": {
+      "0.06": 0.0005446840764101909,
+      "0.10": 0.002450442942567481,
+      "0.14": 0.002888918846812769,
+      "0.18": 0.0032710156144681985,
+      "0.24": -0.01368289705273718,
+      "0.32": -0.03576081007063914,
+      "0.40": -0.05929957661911846,
+      "0.48": -0.07077389424622432,
+      "0.56": -0.15935448886492262,
+      "0.64": -0.13951057509472084
+     },
+     "chosen_d": 0.64,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": -0.010777340873930973,
+     "utility": 0.64,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 6913.143421649933
+    },
+    "prior_vision": {
+     "twin_law": "jelly",
+     "twin_params": {
+      "material": "jelly",
+      "E": 29933.879082522144,
+      "nu": 0.27509314212319286,
+      "density": 1000.0
+     },
+     "twin_dent": {
+      "0.06": 0.00019947075032962212,
+      "0.10": -0.0004579904538972105,
+      "0.14": -9.99069523645048e-05,
+      "0.18": -0.0018664280926556415,
+      "0.24": -0.006220276842639648,
+      "0.32": -0.03226134789916893,
+      "0.40": -0.05548049817722747,
+      "0.48": -0.0944936238330152,
+      "0.56": -0.1269289283872589,
+      "0.64": -0.1506441630285074
+     },
+     "chosen_d": 0.64,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": -0.010777340873930973,
+     "utility": 0.64,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 6915.6252863407135
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": true,
+     "utility": 0.06,
+     "regret": 0.5800000000000001,
+     "damaged": false,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 88,
+   "law": "metal",
+   "object": "a_brick_wall_013020",
+   "gt_dent": {
+    "0.06": 0.07615483278928953,
+    "0.10": 0.10899654800765059,
+    "0.14": 0.168332925668423,
+    "0.18": 0.2413202297131949,
+    "0.24": 0.24515731356370193,
+    "0.32": 0.45097298479179865,
+    "0.40": 0.37049776437667625,
+    "0.48": 0.4816624915522264,
+    "0.56": 0.4586373243636012,
+    "0.64": 0.6344361635400698
+   },
+   "oracle_d": null,
+   "methods": {
+    "gt": {
+     "twin_law": "metal",
+     "twin_params": {
+      "material": "metal",
+      "E": 848556.1266012395,
+      "nu": 0.2656445065900722,
+      "density": 1218.9537197983723,
+      "yield_stress": 20369.233334258905,
+      "hardening": 0.13999142720442198
+     },
+     "twin_dent": {
+      "0.06": 0.07615483278928953,
+      "0.10": 0.10899654800765059,
+      "0.14": 0.168332925668423,
+      "0.18": 0.2413202297131949,
+      "0.24": 0.24515731356370193,
+      "0.32": 0.45097298479179865,
+      "0.40": 0.37049776437667625,
+      "0.48": 0.4816624915522264,
+      "0.56": 0.4586373243636012,
+      "0.64": 0.6344361635400698
+     },
+     "chosen_d": null,
+     "success": true,
+     "regret": 0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": null,
+     "utility": 0.0,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 7283.547659158707
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": false,
+     "utility": 0.0,
+     "regret": 0.06,
+     "damaged": true,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 89,
+   "law": "plasticine",
+   "object": "a_brass_telescope_013020",
+   "gt_dent": {
+    "0.06": 0.07934548994417938,
+    "0.10": 0.14513347138366886,
+    "0.14": 0.22797311998549508,
+    "0.18": 0.18075962878979668,
+    "0.24": 0.23578156353613752,
+    "0.32": 0.3637750096462023,
+    "0.40": 0.521608295623775,
+    "0.48": 0.6306530064643376,
+    "0.56": 0.5425755416522479,
+    "0.64": 0.4247275403786175
+   },
+   "oracle_d": null,
+   "methods": {
+    "gt": {
+     "twin_law": "plasticine",
+     "twin_params": {
+      "material": "plasticine",
+      "E": 41706.65913577422,
+      "nu": 0.2878780434032939,
+      "density": 1360.5535576855025,
+      "yield_stress": 1370.3046085082701,
+      "hardening": 0.07829263513928529,
+      "softening": 0.20639718739937896
+     },
+     "twin_dent": {
+      "0.06": 0.07934548994417938,
+      "0.10": 0.14513347138366886,
+      "0.14": 0.22797311998549508,
+      "0.18": 0.18075962878979668,
+      "0.24": 0.23578156353613752,
+      "0.32": 0.3637750096462023,
+      "0.40": 0.521608295623775,
+      "0.48": 0.6306530064643376,
+      "0.56": 0.5425755416522479,
+      "0.64": 0.4247275403786175
+     },
+     "chosen_d": null,
+     "success": true,
+     "regret": 0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": null,
+     "utility": 0.0,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 7105.628442287445
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": false,
+     "utility": 0.0,
+     "regret": 0.06,
+     "damaged": true,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 93,
+   "law": "jelly",
+   "object": "a_plastic_water_bottle_thin_transparent_plastic_isolated_013020",
+   "gt_dent": {
+    "0.06": 1.6002848060786764e-05,
+    "0.10": 0.00025062235727729666,
+    "0.14": 0.00043432490636266476,
+    "0.18": 0.0010505723237764792,
+    "0.24": 0.0017920215808838666,
+    "0.32": 0.002143327612719461,
+    "0.40": 0.001552639267201461,
+    "0.48": -0.0018686331932046712,
+    "0.56": -0.0032774392644024657,
+    "0.64": -0.0017612710958568908
+   },
+   "oracle_d": 0.64,
+   "methods": {
+    "gt": {
+     "twin_law": "jelly",
+     "twin_params": {
+      "material": "jelly",
+      "E": 5342.439938914616,
+      "nu": 0.2916254901693782,
+      "density": 780.318177872992
+     },
+     "twin_dent": {
+      "0.06": 1.6002848060786764e-05,
+      "0.10": 0.00025062235727729666,
+      "0.14": 0.00043432490636266476,
+      "0.18": 0.0010505723237764792,
+      "0.24": 0.0017920215808838666,
+      "0.32": 0.002143327612719461,
+      "0.40": 0.001552639267201461,
+      "0.48": -0.0018686331932046712,
+      "0.56": -0.0032774392644024657,
+      "0.64": -0.0017612710958568908
+     },
+     "chosen_d": 0.64,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": -0.0017612710958568908,
+     "utility": 0.64,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 6800.27657532692
+    },
+    "prior_vt": {
+     "twin_law": "jelly",
+     "twin_params": {
+      "material": "jelly",
+      "E": 21943.6061587305,
+      "nu": 0.25299492478370667,
+      "density": 1000.0
+     },
+     "twin_dent": {
+      "0.06": -0.00034588719369802476,
+      "0.10": -0.0003006339909409331,
+      "0.14": -5.312123327331183e-05,
+      "0.18": -0.0003301861211265422,
+      "0.24": 0.00014127903823684803,
+      "0.32": -0.00018331767599691045,
+      "0.40": -0.00046468177118614694,
+      "0.48": -0.0008121609399302536,
+      "0.56": -0.0044184611374398965,
+      "0.64": -0.0046396100885734235
+     },
+     "chosen_d": 0.64,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": -0.0017612710958568908,
+     "utility": 0.64,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 7062.1341779232025
+    },
+    "prior_vision": {
+     "twin_law": "jelly",
+     "twin_params": {
+      "material": "jelly",
+      "E": 49930.39479559,
+      "nu": 0.279325419295535,
+      "density": 1000.0
+     },
+     "twin_dent": {
+      "0.06": -0.0002724332901222399,
+      "0.10": -0.0003976613711629568,
+      "0.14": 0.0002864417958180083,
+      "0.18": -0.0001165553158854017,
+      "0.24": 0.00037730245951333985,
+      "0.32": -0.00034695871536383693,
+      "0.40": -0.0026596742224254647,
+      "0.48": -0.008463451052015663,
+      "0.56": -0.013312878203412717,
+      "0.64": -0.01073837464596017
+     },
+     "chosen_d": 0.64,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": -0.0017612710958568908,
+     "utility": 0.64,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 7061.7862339019775
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": true,
+     "utility": 0.06,
+     "regret": 0.5800000000000001,
+     "damaged": false,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 113,
+   "law": "plasticine",
+   "object": "a_leather_boot_013020",
+   "gt_dent": {
+    "0.06": 0.013092071040478192,
+    "0.10": 0.06211753524263349,
+    "0.14": 0.052845467269304565,
+    "0.18": 0.07876495531097244,
+    "0.24": 0.1607973416619689,
+    "0.32": 0.19384516505096983,
+    "0.40": 0.32525929954451904,
+    "0.48": 0.40463146639554565,
+    "0.56": 0.3979332123513344,
+    "0.64": 0.4994911750826308
+   },
+   "oracle_d": 0.06,
+   "methods": {
+    "gt": {
+     "twin_law": "plasticine",
+     "twin_params": {
+      "material": "plasticine",
+      "E": 2885.717029098973,
+      "nu": 0.4509502093870321,
+      "density": 575.5941142534608,
+      "yield_stress": 345.4535272929177,
+      "hardening": 0.25293736011209206,
+      "softening": 0.24370498717538758
+     },
+     "twin_dent": {
+      "0.06": 0.013092071040478192,
+      "0.10": 0.06211753524263349,
+      "0.14": 0.052845467269304565,
+      "0.18": 0.07876495531097244,
+      "0.24": 0.1607973416619689,
+      "0.32": 0.19384516505096983,
+      "0.40": 0.32525929954451904,
+      "0.48": 0.40463146639554565,
+      "0.56": 0.3979332123513344,
+      "0.64": 0.4994911750826308
+     },
+     "chosen_d": 0.06,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": 0.013092071040478192,
+     "utility": 0.06,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 7502.36580991745
+    },
+    "prior_vision": {
+     "twin_law": "plasticine",
+     "twin_params": {
+      "material": "plasticine",
+      "E": 25152.20129121596,
+      "nu": 0.27131684411251394,
+      "density": 1000.0,
+      "yield_stress": 891.0826751670871,
+      "hardening": 0.25,
+      "softening": 0.25
+     },
+     "twin_dent": {
+      "0.06": -0.004082355561172528,
+      "0.10": 0.09802697221721268,
+      "0.14": 0.11757593087743658,
+      "0.18": 0.12794284807529271,
+      "0.24": 0.17702857844731232,
+      "0.32": 0.2819845923081762,
+      "0.40": 0.3140581402283606,
+      "0.48": 0.3753651647101756,
+      "0.56": 0.43368518576369386,
+      "0.64": 0.5280068535166429
+     },
+     "chosen_d": 0.06,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": 0.013092071040478192,
+     "utility": 0.06,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 6848.908365726471
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": true,
+     "utility": 0.06,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 119,
+   "law": "plasticine",
+   "object": "a_silver_human_skele_013020",
+   "gt_dent": {
+    "0.06": 0.002315631141614104,
+    "0.10": -0.000994351001226335,
+    "0.14": -0.006458604410129097,
+    "0.18": -0.002901203791442595,
+    "0.24": 0.0011042628005152291,
+    "0.32": 0.014974196451205242,
+    "0.40": 0.016227190963098635,
+    "0.48": 0.025056616269378384,
+    "0.56": 0.022827511437842774,
+    "0.64": 0.02405244336268368
+   },
+   "oracle_d": 0.64,
+   "methods": {
+    "gt": {
+     "twin_law": "plasticine",
+     "twin_params": {
+      "material": "plasticine",
+      "E": 2888.642910476433,
+      "nu": 0.18264985639090853,
+      "density": 989.1128496064498,
+      "yield_stress": 9074.533700855207,
+      "hardening": 0.1265986633554305,
+      "softening": 0.3281772651560698
+     },
+     "twin_dent": {
+      "0.06": 0.002315631141614104,
+      "0.10": -0.000994351001226335,
+      "0.14": -0.006458604410129097,
+      "0.18": -0.002901203791442595,
+      "0.24": 0.0011042628005152291,
+      "0.32": 0.014974196451205242,
+      "0.40": 0.016227190963098635,
+      "0.48": 0.025056616269378384,
+      "0.56": 0.022827511437842774,
+      "0.64": 0.02405244336268368
+     },
+     "chosen_d": 0.64,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": 0.02405244336268368,
+     "utility": 0.64,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 7150.318593740463
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": true,
+     "utility": 0.06,
+     "regret": 0.5800000000000001,
+     "damaged": false,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 135,
+   "law": "jelly",
+   "object": "a_ice_telescope_013020",
+   "gt_dent": {
+    "0.06": 0.11774566753588332,
+    "0.10": 0.19749893648051317,
+    "0.14": 0.28149060796148406,
+    "0.18": 0.358662582569649,
+    "0.24": 0.43425575316218296,
+    "0.32": 0.42629174302599965,
+    "0.40": 0.3929038827980574,
+    "0.48": 0.38984740613290453,
+    "0.56": 0.4187627966217337,
+    "0.64": 0.3758426936712257
+   },
+   "oracle_d": null,
+   "methods": {
+    "gt": {
+     "twin_law": "jelly",
+     "twin_params": {
+      "material": "jelly",
+      "E": 1247.2337394030874,
+      "nu": 0.37697077503846177,
+      "density": 880.4790077071457
+     },
+     "twin_dent": {
+      "0.06": 0.11774566753588332,
+      "0.10": 0.19749893648051317,
+      "0.14": 0.28149060796148406,
+      "0.18": 0.358662582569649,
+      "0.24": 0.43425575316218296,
+      "0.32": 0.42629174302599965,
+      "0.40": 0.3929038827980574,
+      "0.48": 0.38984740613290453,
+      "0.56": 0.4187627966217337,
+      "0.64": 0.3758426936712257
+     },
+     "chosen_d": null,
+     "success": true,
+     "regret": 0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": null,
+     "utility": 0.0,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 5963.085562705994
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": false,
+     "utility": 0.0,
+     "regret": 0.06,
+     "damaged": true,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 141,
+   "law": "jelly",
+   "object": "a_ice_telescope_013020",
+   "gt_dent": {
+    "0.06": 0.10056059000326327,
+    "0.10": 0.16796199423157968,
+    "0.14": 0.23869722552133404,
+    "0.18": 0.3107207410075445,
+    "0.24": 0.43842269447649423,
+    "0.32": 0.4292797645627473,
+    "0.40": 0.4039525822435333,
+    "0.48": 0.3902212384704925,
+    "0.56": 0.4061840192054768,
+    "0.64": 0.26367448214571687
+   },
+   "oracle_d": null,
+   "methods": {
+    "gt": {
+     "twin_law": "jelly",
+     "twin_params": {
+      "material": "jelly",
+      "E": 643.5517300199223,
+      "nu": 0.13800576539896858,
+      "density": 334.5180683416726
+     },
+     "twin_dent": {
+      "0.06": 0.10056059000326327,
+      "0.10": 0.16796199423157968,
+      "0.14": 0.23869722552133404,
+      "0.18": 0.3107207410075445,
+      "0.24": 0.43842269447649423,
+      "0.32": 0.4292797645627473,
+      "0.40": 0.4039525822435333,
+      "0.48": 0.3902212384704925,
+      "0.56": 0.4061840192054768,
+      "0.64": 0.26367448214571687
+     },
+     "chosen_d": null,
+     "success": true,
+     "regret": 0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": null,
+     "utility": 0.0,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 5483.722878217697
+    },
+    "prior_vision": {
+     "twin_law": "jelly",
+     "twin_params": {
+      "material": "jelly",
+      "E": 17228.44179501213,
+      "nu": 0.2860719345078844,
+      "density": 1000.0
+     },
+     "twin_dent": {
+      "0.06": 0.0017163091146034772,
+      "0.10": 0.015236249808930678,
+      "0.14": 0.035772944100687244,
+      "0.18": 0.0610364373162981,
+      "0.24": 0.09684932966844974,
+      "0.32": 0.2485217060911293,
+      "0.40": 0.28136705204786927,
+      "0.48": 0.42801157473576873,
+      "0.56": 0.4305449911101614,
+      "0.64": 0.3597614783130386
+     },
+     "chosen_d": 0.1,
+     "success": false,
+     "regret": 0.1,
+     "damaged": true,
+     "missed_grasp": false,
+     "gt_dent_at_choice": 0.16796199423157968,
+     "utility": 0.0,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 7091.099869251251
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": false,
+     "utility": 0.0,
+     "regret": 0.06,
+     "damaged": true,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 145,
+   "law": "metal",
+   "object": "a_brass_telescope_013020",
+   "gt_dent": {
+    "0.06": 0.036602474734687813,
+    "0.10": 0.0574074102737311,
+    "0.14": 0.06063971736902427,
+    "0.18": 0.1635331525338282,
+    "0.24": 0.2892379278740431,
+    "0.32": 0.3194250642066731,
+    "0.40": 0.37782166078312773,
+    "0.48": 0.4800492868443482,
+    "0.56": 0.4982600019237123,
+    "0.64": 0.5795625433249932
+   },
+   "oracle_d": null,
+   "methods": {
+    "gt": {
+     "twin_law": "metal",
+     "twin_params": {
+      "material": "metal",
+      "E": 109673.56527382585,
+      "nu": 0.27640794182783235,
+      "density": 1462.12668113086,
+      "yield_stress": 3185.1028448792304,
+      "hardening": 0.37734784334179977
+     },
+     "twin_dent": {
+      "0.06": 0.036602474734687813,
+      "0.10": 0.0574074102737311,
+      "0.14": 0.06063971736902427,
+      "0.18": 0.1635331525338282,
+      "0.24": 0.2892379278740431,
+      "0.32": 0.3194250642066731,
+      "0.40": 0.37782166078312773,
+      "0.48": 0.4800492868443482,
+      "0.56": 0.4982600019237123,
+      "0.64": 0.5795625433249932
+     },
+     "chosen_d": null,
+     "success": true,
+     "regret": 0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": null,
+     "utility": 0.0,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 5491.3032240867615
+    },
+    "prior_vision": {
+     "twin_law": "plasticine",
+     "twin_params": {
+      "material": "plasticine",
+      "E": 31622.776601683792,
+      "nu": 0.27523713554266543,
+      "density": 1000.0,
+      "yield_stress": 2707.3724172436323,
+      "hardening": 0.25,
+      "softening": 0.25
+     },
+     "twin_dent": {
+      "0.06": 0.07876920534084535,
+      "0.10": 0.13902421335078682,
+      "0.14": 0.22367111258030659,
+      "0.18": 0.17039521238782476,
+      "0.24": 0.22116072287371707,
+      "0.32": 0.33064990530690397,
+      "0.40": 0.49330297589499617,
+      "0.48": 0.3527214840005705,
+      "0.56": 0.46818036685421033,
+      "0.64": 0.4679537999405199
+     },
+     "chosen_d": null,
+     "success": true,
+     "regret": 0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": null,
+     "utility": 0.0,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 6886.956691741943
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": false,
+     "utility": 0.0,
+     "regret": 0.06,
+     "damaged": true,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 151,
+   "law": "metal",
+   "object": "a_stainless_steel_si_013020",
+   "gt_dent": {
+    "0.06": 0.02553073269774817,
+    "0.10": 0.04651457001666534,
+    "0.14": 0.06036868341787997,
+    "0.18": 0.07962071343764282,
+    "0.24": 0.1144508112038976,
+    "0.32": 0.17869181755925495,
+    "0.40": 0.25322071000721397,
+    "0.48": 0.3274963490781251,
+    "0.56": 0.4048543846195145,
+    "0.64": 0.4804728437194925
+   },
+   "oracle_d": 0.06,
+   "methods": {
+    "gt": {
+     "twin_law": "metal",
+     "twin_params": {
+      "material": "metal",
+      "E": 131779.41503494073,
+      "nu": 0.40957871885279473,
+      "density": 477.6870367300355,
+      "yield_stress": 561.30801263714,
+      "hardening": 0.42302926390806944
+     },
+     "twin_dent": {
+      "0.06": 0.02553073269774817,
+      "0.10": 0.04651457001666534,
+      "0.14": 0.06036868341787997,
+      "0.18": 0.07962071343764282,
+      "0.24": 0.1144508112038976,
+      "0.32": 0.17869181755925495,
+      "0.40": 0.25322071000721397,
+      "0.48": 0.3274963490781251,
+      "0.56": 0.4048543846195145,
+      "0.64": 0.4804728437194925
+     },
+     "chosen_d": 0.06,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": 0.02553073269774817,
+     "utility": 0.06,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 6181.029279232025
+    },
+    "prior_vision": {
+     "twin_law": "metal",
+     "twin_params": {
+      "material": "metal",
+      "E": 344902.2281328754,
+      "nu": 0.27478397978138397,
+      "density": 1000.0,
+      "yield_stress": 2267.247856608047,
+      "hardening": 0.25
+     },
+     "twin_dent": {
+      "0.06": 0.03438358453917235,
+      "0.10": 0.058875635932847566,
+      "0.14": 0.07335399971952274,
+      "0.18": 0.10037584248950843,
+      "0.24": 0.11010853507326211,
+      "0.32": 0.1698198040425845,
+      "0.40": 0.24675346431919984,
+      "0.48": 0.32130438557945007,
+      "0.56": 0.39830813381051317,
+      "0.64": 0.4746725299716679
+     },
+     "chosen_d": null,
+     "success": false,
+     "regret": 0.06,
+     "damaged": false,
+     "missed_grasp": true,
+     "gt_dent_at_choice": null,
+     "utility": 0.0,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 7013.397162914276
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": true,
+     "utility": 0.06,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 164,
+   "law": "plasticine",
+   "object": "a_ice_telescope_013020",
+   "gt_dent": {
+    "0.06": -0.015048795276097069,
+    "0.10": -0.019832852996009242,
+    "0.14": -0.02011147232817943,
+    "0.18": -0.021668979536883345,
+    "0.24": 0.0423925754224338,
+    "0.32": 0.24311063827383933,
+    "0.40": 0.3288655995580861,
+    "0.48": 0.41721772279845126,
+    "0.56": 0.42980038536298404,
+    "0.64": 0.44903202874335635
+   },
+   "oracle_d": 0.18,
+   "methods": {
+    "gt": {
+     "twin_law": "plasticine",
+     "twin_params": {
+      "material": "plasticine",
+      "E": 10634.409331006511,
+      "nu": 0.1660571141542163,
+      "density": 807.779198423432,
+      "yield_stress": 2073.1772555024622,
+      "hardening": 0.22104930902854286,
+      "softening": 0.05151040269579621
+     },
+     "twin_dent": {
+      "0.06": -0.015048795276097069,
+      "0.10": -0.019832852996009242,
+      "0.14": -0.02011147232817943,
+      "0.18": -0.021668979536883345,
+      "0.24": 0.0423925754224338,
+      "0.32": 0.24311063827383933,
+      "0.40": 0.3288655995580861,
+      "0.48": 0.41721772279845126,
+      "0.56": 0.42980038536298404,
+      "0.64": 0.44903202874335635
+     },
+     "chosen_d": 0.18,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": -0.021668979536883345,
+     "utility": 0.18,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 5699.4109489917755
+    },
+    "prior_vision": {
+     "twin_law": "plasticine",
+     "twin_params": {
+      "material": "plasticine",
+      "E": 20971.37953133825,
+      "nu": 0.28450071219540374,
+      "density": 1000.0,
+      "yield_stress": 2344.4555333081717,
+      "hardening": 0.25,
+      "softening": 0.25
+     },
+     "twin_dent": {
+      "0.06": 0.04765314726160381,
+      "0.10": 0.10663505622579307,
+      "0.14": 0.15830812496094354,
+      "0.18": 0.2389616961728421,
+      "0.24": 0.3179871825633452,
+      "0.32": 0.4191431667574871,
+      "0.40": 0.42692298351695107,
+      "0.48": 0.35692796452299413,
+      "0.56": 0.24166667031041664,
+      "0.64": 0.4041509999087243
+     },
+     "chosen_d": null,
+     "success": false,
+     "regret": 0.18,
+     "damaged": false,
+     "missed_grasp": true,
+     "gt_dent_at_choice": null,
+     "utility": 0.0,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 6773.247454881668
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": true,
+     "utility": 0.06,
+     "regret": 0.12,
+     "damaged": false,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 176,
+   "law": "plasticine",
+   "object": "a_plastic_duck_013020",
+   "gt_dent": {
+    "0.06": -0.004415018070460357,
+    "0.10": -0.023152922811959104,
+    "0.14": -0.027992258567757684,
+    "0.18": 0.01060254357677394,
+    "0.24": 0.014912461341561633,
+    "0.32": 0.024065292893872936,
+    "0.40": 0.054288177662697286,
+    "0.48": 0.0328930207025201,
+    "0.56": 0.06443614782989343,
+    "0.64": 0.17390643225307376
+   },
+   "oracle_d": 0.32,
+   "methods": {
+    "gt": {
+     "twin_law": "plasticine",
+     "twin_params": {
+      "material": "plasticine",
+      "E": 6675.195623445719,
+      "nu": 0.3933088569553631,
+      "density": 601.2714681611264,
+      "yield_stress": 3819.394030186418,
+      "hardening": 0.37652850260554854,
+      "softening": 0.3888456519574788
+     },
+     "twin_dent": {
+      "0.06": -0.004415018070460357,
+      "0.10": -0.023152922811959104,
+      "0.14": -0.027992258567757684,
+      "0.18": 0.01060254357677394,
+      "0.24": 0.014912461341561633,
+      "0.32": 0.024065292893872936,
+      "0.40": 0.054288177662697286,
+      "0.48": 0.0328930207025201,
+      "0.56": 0.06443614782989343,
+      "0.64": 0.17390643225307376
+     },
+     "chosen_d": 0.32,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": 0.024065292893872936,
+     "utility": 0.32,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 6053.053539991379
+    },
+    "prior_vision": {
+     "twin_law": "plasticine",
+     "twin_params": {
+      "material": "plasticine",
+      "E": 7292.391899931816,
+      "nu": 0.27379578964774837,
+      "density": 1000.0,
+      "yield_stress": 2558.4562802305163,
+      "hardening": 0.25,
+      "softening": 0.25
+     },
+     "twin_dent": {
+      "0.06": -0.004780941251076163,
+      "0.10": -0.009648201058775029,
+      "0.14": -0.003685720444156444,
+      "0.18": 0.03542963513529121,
+      "0.24": 0.068414825748338,
+      "0.32": -0.022123093860780537,
+      "0.40": 0.027846686592079322,
+      "0.48": 0.13331274506337254,
+      "0.56": 0.1305019665753956,
+      "0.64": 0.23169804213044837
+     },
+     "chosen_d": 0.4,
+     "success": false,
+     "regret": 0.08000000000000002,
+     "damaged": true,
+     "missed_grasp": false,
+     "gt_dent_at_choice": 0.054288177662697286,
+     "utility": 0.0,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 6829.92439365387
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": true,
+     "utility": 0.06,
+     "regret": 0.26,
+     "damaged": false,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 182,
+   "law": "plasticine",
+   "object": "a_silver_human_skele_013020",
+   "gt_dent": {
+    "0.06": -0.0019185455348214612,
+    "0.10": 0.0025630496174601676,
+    "0.14": 0.001876919364026944,
+    "0.18": 0.002730022010422445,
+    "0.24": 0.00586975779181115,
+    "0.32": 0.012186178427540996,
+    "0.40": 0.03082628416736901,
+    "0.48": 0.045535289170928285,
+    "0.56": 0.09392454344509414,
+    "0.64": 0.18719008380423913
+   },
+   "oracle_d": 0.32,
+   "methods": {
+    "gt": {
+     "twin_law": "plasticine",
+     "twin_params": {
+      "material": "plasticine",
+      "E": 14861.02351878961,
+      "nu": 0.17433566829910324,
+      "density": 645.4662862375452,
+      "yield_stress": 3627.5481264835166,
+      "hardening": 0.3975812573993511,
+      "softening": 0.11855324411506984
+     },
+     "twin_dent": {
+      "0.06": -0.0019185455348214612,
+      "0.10": 0.0025630496174601676,
+      "0.14": 0.001876919364026944,
+      "0.18": 0.002730022010422445,
+      "0.24": 0.00586975779181115,
+      "0.32": 0.012186178427540996,
+      "0.40": 0.03082628416736901,
+      "0.48": 0.045535289170928285,
+      "0.56": 0.09392454344509414,
+      "0.64": 0.18719008380423913
+     },
+     "chosen_d": 0.32,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": 0.012186178427540996,
+     "utility": 0.32,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 7371.451872110367
+    },
+    "prior_vision": {
+     "twin_law": "jelly",
+     "twin_params": {
+      "material": "jelly",
+      "E": 15091.451070899231,
+      "nu": 0.281980827354633,
+      "density": 1000.0
+     },
+     "twin_dent": {
+      "0.06": -0.004412374104218836,
+      "0.10": -0.0026247873089756315,
+      "0.14": -0.0034456179802607764,
+      "0.18": -0.005350599931340204,
+      "0.24": -0.01271609361304873,
+      "0.32": -0.014042050851278578,
+      "0.40": -0.012799345954637763,
+      "0.48": -0.03023088961207215,
+      "0.56": -0.032891222864647594,
+      "0.64": -0.13898417176548283
+     },
+     "chosen_d": 0.64,
+     "success": false,
+     "regret": 0.32,
+     "damaged": true,
+     "missed_grasp": false,
+     "gt_dent_at_choice": 0.18719008380423913,
+     "utility": 0.0,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 7399.027668714523
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": true,
+     "utility": 0.06,
+     "regret": 0.26,
+     "damaged": false,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 183,
+   "law": "jelly",
+   "object": "a_plastic_water_bottle_thin_transparent_plastic_isolated_013020",
+   "gt_dent": {
+    "0.06": -0.0001545615333341386,
+    "0.10": 0.00037323067718414963,
+    "0.14": 0.00046251686006510014,
+    "0.18": 0.0013789040563879438,
+    "0.24": 0.001812730377158132,
+    "0.32": 0.0016492730272191767,
+    "0.40": 0.0026716140352716898,
+    "0.48": 0.0025425634646972064,
+    "0.56": 0.0018222472389724435,
+    "0.64": 0.002081472384480696
+   },
+   "oracle_d": 0.64,
+   "methods": {
+    "gt": {
+     "twin_law": "jelly",
+     "twin_params": {
+      "material": "jelly",
+      "E": 16152.778693490494,
+      "nu": 0.2544858873817108,
+      "density": 1649.1078490671102
+     },
+     "twin_dent": {
+      "0.06": -0.0001545615333341386,
+      "0.10": 0.00037323067718414963,
+      "0.14": 0.00046251686006510014,
+      "0.18": 0.0013789040563879438,
+      "0.24": 0.001812730377158132,
+      "0.32": 0.0016492730272191767,
+      "0.40": 0.0026716140352716898,
+      "0.48": 0.0025425634646972064,
+      "0.56": 0.0018222472389724435,
+      "0.64": 0.002081472384480696
+     },
+     "chosen_d": 0.64,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": 0.002081472384480696,
+     "utility": 0.64,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 6070.4163472652435
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": true,
+     "utility": 0.06,
+     "regret": 0.5800000000000001,
+     "damaged": false,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 198,
+   "law": "jelly",
+   "object": "a_plastic_duck_013020",
+   "gt_dent": {
+    "0.06": 0.033924765872906486,
+    "0.10": 0.03347067560264371,
+    "0.14": 0.02587485734844987,
+    "0.18": 0.02801008104020124,
+    "0.24": 0.007401836652932154,
+    "0.32": 0.015972457324736122,
+    "0.40": 0.02130708556478949,
+    "0.48": -0.005653332138319711,
+    "0.56": -0.004033018254146456,
+    "0.64": 0.03738563047988214
+   },
+   "oracle_d": 0.56,
+   "methods": {
+    "gt": {
+     "twin_law": "jelly",
+     "twin_params": {
+      "material": "jelly",
+      "E": 28609.8453948053,
+      "nu": 0.17547845459568034,
+      "density": 963.6198760977618
+     },
+     "twin_dent": {
+      "0.06": 0.033924765872906486,
+      "0.10": 0.03347067560264371,
+      "0.14": 0.02587485734844987,
+      "0.18": 0.02801008104020124,
+      "0.24": 0.007401836652932154,
+      "0.32": 0.015972457324736122,
+      "0.40": 0.02130708556478949,
+      "0.48": -0.005653332138319711,
+      "0.56": -0.004033018254146456,
+      "0.64": 0.03738563047988214
+     },
+     "chosen_d": 0.56,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": -0.004033018254146456,
+     "utility": 0.56,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 6826.7892599105835
+    },
+    "prior_vision": {
+     "twin_law": "jelly",
+     "twin_params": {
+      "material": "jelly",
+      "E": 18451.89607906598,
+      "nu": 0.29003881204433585,
+      "density": 1000.0
+     },
+     "twin_dent": {
+      "0.06": 0.012882491999901888,
+      "0.10": -0.004470523075328414,
+      "0.14": 0.021602587105992083,
+      "0.18": 0.009150366841612504,
+      "0.24": 0.028453033432190425,
+      "0.32": 0.010464003962209562,
+      "0.40": 0.010000162213441233,
+      "0.48": 0.01196391346111337,
+      "0.56": 0.025012869127479923,
+      "0.64": 0.03309044963115143
+     },
+     "chosen_d": 0.56,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": -0.004033018254146456,
+     "utility": 0.56,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 7091.818683624268
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": false,
+     "utility": 0.0,
+     "regret": 0.5,
+     "damaged": true,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 205,
+   "law": "metal",
+   "object": "a_silver_human_skele_013020",
+   "gt_dent": {
+    "0.06": 0.02590130013965814,
+    "0.10": 0.04050553815155481,
+    "0.14": 0.07654912496176472,
+    "0.18": 0.11740404232212295,
+    "0.24": 0.17037919103044885,
+    "0.32": 0.17671104608905755,
+    "0.40": 0.3131237494609645,
+    "0.48": 0.3716375174338822,
+    "0.56": 0.42843291965961955,
+    "0.64": 0.4548641349847854
+   },
+   "oracle_d": 0.06,
+   "methods": {
+    "gt": {
+     "twin_law": "metal",
+     "twin_params": {
+      "material": "metal",
+      "E": 754490.4191115928,
+      "nu": 0.432891906020207,
+      "density": 1328.6762657004797,
+      "yield_stress": 8490.016034502922,
+      "hardening": 0.11775819204930059
+     },
+     "twin_dent": {
+      "0.06": 0.02590130013965814,
+      "0.10": 0.04050553815155481,
+      "0.14": 0.07654912496176472,
+      "0.18": 0.11740404232212295,
+      "0.24": 0.17037919103044885,
+      "0.32": 0.17671104608905755,
+      "0.40": 0.3131237494609645,
+      "0.48": 0.3716375174338822,
+      "0.56": 0.42843291965961955,
+      "0.64": 0.4548641349847854
+     },
+     "chosen_d": 0.06,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": 0.02590130013965814,
+     "utility": 0.06,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 7485.767996311188
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": true,
+     "utility": 0.06,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 207,
+   "law": "jelly",
+   "object": "a_stainless_steel_si_013020",
+   "gt_dent": {
+    "0.06": 0.049968875677837796,
+    "0.10": 0.08250001096372876,
+    "0.14": 0.10180809341526123,
+    "0.18": 0.10703254336983264,
+    "0.24": 0.11057918214867019,
+    "0.32": 0.07304816332194862,
+    "0.40": 0.012582071310628863,
+    "0.48": 0.046767367302571895,
+    "0.56": 0.07802647803984439,
+    "0.64": 0.07416924314306395
+   },
+   "oracle_d": 0.4,
+   "methods": {
+    "gt": {
+     "twin_law": "jelly",
+     "twin_params": {
+      "material": "jelly",
+      "E": 1138.4478391031778,
+      "nu": 0.17545597540095656,
+      "density": 867.1892431711967
+     },
+     "twin_dent": {
+      "0.06": 0.049968875677837796,
+      "0.10": 0.08250001096372876,
+      "0.14": 0.10180809341526123,
+      "0.18": 0.10703254336983264,
+      "0.24": 0.11057918214867019,
+      "0.32": 0.07304816332194862,
+      "0.40": 0.012582071310628863,
+      "0.48": 0.046767367302571895,
+      "0.56": 0.07802647803984439,
+      "0.64": 0.07416924314306395
+     },
+     "chosen_d": 0.4,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": 0.012582071310628863,
+     "utility": 0.4,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 2483.360523700714
+    },
+    "prior_vision": {
+     "twin_law": "plasticine",
+     "twin_params": {
+      "material": "plasticine",
+      "E": 1831.4750217835797,
+      "nu": 0.27834146426247214,
+      "density": 1000.0,
+      "yield_stress": 788.8001781167836,
+      "hardening": 0.25,
+      "softening": 0.25
+     },
+     "twin_dent": {
+      "0.06": 0.04798892751045205,
+      "0.10": 0.08828518014674187,
+      "0.14": 0.11156866408273439,
+      "0.18": 0.11607380763108623,
+      "0.24": 0.12406792366554532,
+      "0.32": 0.028094469729240113,
+      "0.40": 0.04899511329528033,
+      "0.48": 0.028387379646269358,
+      "0.56": 0.04291362130810976,
+      "0.64": 0.08521001486486754
+     },
+     "chosen_d": 0.48,
+     "success": false,
+     "regret": 0.07999999999999996,
+     "damaged": true,
+     "missed_grasp": false,
+     "gt_dent_at_choice": 0.046767367302571895,
+     "utility": 0.0,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 6918.118839263916
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": false,
+     "utility": 0.0,
+     "regret": 0.34,
+     "damaged": true,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 230,
+   "law": "plasticine",
+   "object": "a_wooden_chair_013020",
+   "gt_dent": {
+    "0.06": -0.003659636086644643,
+    "0.10": -0.005806922857194189,
+    "0.14": -0.01755387099845641,
+    "0.18": -0.02598302516999849,
+    "0.24": -0.042808696135836086,
+    "0.32": -0.0669897081962048,
+    "0.40": -0.10723014253163062,
+    "0.48": -0.1632367190291368,
+    "0.56": -0.1882123183002167,
+    "0.64": -0.1283185189305269
+   },
+   "oracle_d": 0.64,
+   "methods": {
+    "gt": {
+     "twin_law": "plasticine",
+     "twin_params": {
+      "material": "plasticine",
+      "E": 12905.707121939577,
+      "nu": 0.31870303765413355,
+      "density": 2099.469154564939,
+      "yield_stress": 6997.215089592523,
+      "hardening": 0.42816671947610563,
+      "softening": 0.05487687893188156
+     },
+     "twin_dent": {
+      "0.06": -0.003659636086644643,
+      "0.10": -0.005806922857194189,
+      "0.14": -0.01755387099845641,
+      "0.18": -0.02598302516999849,
+      "0.24": -0.042808696135836086,
+      "0.32": -0.0669897081962048,
+      "0.40": -0.10723014253163062,
+      "0.48": -0.1632367190291368,
+      "0.56": -0.1882123183002167,
+      "0.64": -0.1283185189305269
+     },
+     "chosen_d": 0.64,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": -0.1283185189305269,
+     "utility": 0.64,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 6783.223750591278
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": true,
+     "utility": 0.06,
+     "regret": 0.5800000000000001,
+     "damaged": false,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 231,
+   "law": "jelly",
+   "object": "a_leather_boot_013020",
+   "gt_dent": {
+    "0.06": 0.03139049780116628,
+    "0.10": 0.05971939607452235,
+    "0.14": 0.07869132952874275,
+    "0.18": 0.087106997833589,
+    "0.24": 0.12467072519620521,
+    "0.32": 0.21059773438013976,
+    "0.40": 0.10704251551679353,
+    "0.48": 0.33050200074690783,
+    "0.56": 0.3451691807350838,
+    "0.64": 0.3631457934852421
+   },
+   "oracle_d": null,
+   "methods": {
+    "gt": {
+     "twin_law": "jelly",
+     "twin_params": {
+      "material": "jelly",
+      "E": 33421.12448758662,
+      "nu": 0.19027384929337254,
+      "density": 2360.758850820246
+     },
+     "twin_dent": {
+      "0.06": 0.03139049780116628,
+      "0.10": 0.05971939607452235,
+      "0.14": 0.07869132952874275,
+      "0.18": 0.087106997833589,
+      "0.24": 0.12467072519620521,
+      "0.32": 0.21059773438013976,
+      "0.40": 0.10704251551679353,
+      "0.48": 0.33050200074690783,
+      "0.56": 0.3451691807350838,
+      "0.64": 0.3631457934852421
+     },
+     "chosen_d": null,
+     "success": true,
+     "regret": 0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": null,
+     "utility": 0.0,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 5682.919291734695
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": false,
+     "utility": 0.0,
+     "regret": 0.06,
+     "damaged": true,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 244,
+   "law": "metal",
+   "object": "a_ice_telescope_013020",
+   "gt_dent": {
+    "0.06": 0.08883518335622519,
+    "0.10": 0.10124942998088327,
+    "0.14": 0.11638067693949083,
+    "0.18": 0.14031469154473306,
+    "0.24": 0.1788934332522419,
+    "0.32": 0.2879834076385022,
+    "0.40": 0.39906045181405003,
+    "0.48": 0.43594848812620346,
+    "0.56": 0.34378585518171306,
+    "0.64": 0.5130769672924261
+   },
+   "oracle_d": null,
+   "methods": {
+    "gt": {
+     "twin_law": "metal",
+     "twin_params": {
+      "material": "metal",
+      "E": 96297.2740242829,
+      "nu": 0.45078437467829424,
+      "density": 1450.654569601942,
+      "yield_stress": 5897.832549724459,
+      "hardening": 0.15139300684087958
+     },
+     "twin_dent": {
+      "0.06": 0.08883518335622519,
+      "0.10": 0.10124942998088327,
+      "0.14": 0.11638067693949083,
+      "0.18": 0.14031469154473306,
+      "0.24": 0.1788934332522419,
+      "0.32": 0.2879834076385022,
+      "0.40": 0.39906045181405003,
+      "0.48": 0.43594848812620346,
+      "0.56": 0.34378585518171306,
+      "0.64": 0.5130769672924261
+     },
+     "chosen_d": null,
+     "success": true,
+     "regret": 0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": null,
+     "utility": 0.0,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 7149.755609750748
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": false,
+     "utility": 0.0,
+     "regret": 0.06,
+     "damaged": true,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  },
+  {
+   "index": 252,
+   "law": "jelly",
+   "object": "a_plastic_water_bottle_thin_transparent_plastic_isolated_013020",
+   "gt_dent": {
+    "0.06": 0.0008411445075986193,
+    "0.10": 0.0013920903332116945,
+    "0.14": 0.00240606909871364,
+    "0.18": 0.0037319000309652454,
+    "0.24": 0.004867441836054561,
+    "0.32": 0.007322472914556262,
+    "0.40": 0.009236149379742094,
+    "0.48": 0.011939384238047716,
+    "0.56": 0.01501905121786135,
+    "0.64": 0.018997825467052205
+   },
+   "oracle_d": 0.64,
+   "methods": {
+    "gt": {
+     "twin_law": "jelly",
+     "twin_params": {
+      "material": "jelly",
+      "E": 776.8267774711783,
+      "nu": 0.4189011054900198,
+      "density": 374.8920761949684
+     },
+     "twin_dent": {
+      "0.06": 0.0008411445075986193,
+      "0.10": 0.0013920903332116945,
+      "0.14": 0.00240606909871364,
+      "0.18": 0.0037319000309652454,
+      "0.24": 0.004867441836054561,
+      "0.32": 0.007322472914556262,
+      "0.40": 0.009236149379742094,
+      "0.48": 0.011939384238047716,
+      "0.56": 0.01501905121786135,
+      "0.64": 0.018997825467052205
+     },
+     "chosen_d": 0.64,
+     "success": true,
+     "regret": 0.0,
+     "damaged": false,
+     "missed_grasp": false,
+     "gt_dent_at_choice": 0.018997825467052205,
+     "utility": 0.64,
+     "sims_refine": 0,
+     "sims_plan": 10,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 7120.913900375366
+    },
+    "fixed_loo": {
+     "chosen_d": 0.06,
+     "success": true,
+     "utility": 0.06,
+     "regret": 0.5800000000000001,
+     "damaged": false,
+     "missed_grasp": false,
+     "sims_refine": 0,
+     "sims_plan": 0,
+     "wall_seconds_refine": 0.0,
+     "wall_seconds_plan": 0.0
+    }
+   }
+  }
+ ]
+}

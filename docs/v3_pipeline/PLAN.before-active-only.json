@@ -1,0 +1,129 @@
+{
+ "note": "V3 pipeline (contact-based actions, screened objects, new ranges). Stage scripts/agents update their own entry: status pending|running|done|failed, done/total counts.",
+ "stages": [
+  {
+   "id": "v5p",
+   "label": "V5a / V5b 先验快速验证（vs V3、V4，train 0–999，val 配对）",
+   "host": "a800-2 + a800-4",
+   "status": "done",
+   "unit": "步",
+   "total": 3,
+   "done": 3,
+   "deliverable": "docs/v5/PRIOR_CHECK.json",
+   "detail": "完成：快检 docs/v5/PRIOR_CHECK，门槛 docs/v5/GATE，汇总 docs/v5/SUMMARY_ZH.md，V5b 先验交接 docs/v5p/HANDOFF.json（v5b2k_C_seed29 + 9 头集成）"
+  },
+  {
+   "id": "v4f",
+   "label": "固定力 press 子集（导纳控制压板，恒定力）：设计与小样本验证，混合训练测试",
+   "host": "a800-5",
+   "status": "done",
+   "unit": "步",
+   "total": 3,
+   "done": 3,
+   "deliverable": "docs/v4/FORCE_SUBSET.json",
+   "detail": "固定力 press 设计完成（导纳控制压板，F=30 验证可用）；子集生成见 v5f"
+  },
+  {
+   "id": "v3p",
+   "label": "V3 特征提取 + 先验训练（B/C/D×3 种子）+ val/test 评估，与 V2 对比",
+   "host": "a800-2 + a800-4",
+   "status": "done",
+   "unit": "步",
+   "total": 4,
+   "done": 4,
+   "deliverable": "docs/v3p/RESULTS.json",
+   "detail": "V3 4000 扩展点按用户决定取消（切换 V4）；2000 样本先验结果/交接已完成"
+  },
+  {
+   "id": "v3q",
+   "label": "V3 先验 + 少量仿真修正（val 60 / test 30，4 种起点）",
+   "host": "a800-2 + a800-4",
+   "status": "stopped (switch to V4)",
+   "unit": "搜索",
+   "total": 360,
+   "done": 31,
+   "deliverable": "docs/v3q/RESULTS.json",
+   "detail": "已停止（15:55 UTC，转 V4 数据）。V3 完成：GT 重仿真噪声底 12/12（IoU≈1.000）；val lawmean_gt 20/60、best3 9（k24）+3（k12）、test lawmean_gt 2/30；先验臂刚启动无结果。状态见 docs/v3q/STOPPED.md"
+  },
+  {
+   "id": "v3r",
+   "label": "V3 夹爪任务（55 样本，新先验）",
+   "host": "a800-4",
+   "status": "stopped",
+   "unit": "样本",
+   "total": 60,
+   "done": 0,
+   "deliverable": "docs/v3r/RESULTS.json",
+   "detail": "stopped (switch to V4)：GT 挤压 V2 网格 60/60、扩展网格 51/60 已保留（g=0，与动作数据无关，可复用）；预注册 docs/v3r/PREREG_GRID_2026-11-15.md；见 docs/v3r/STOPPED.md",
+   "updated_utc": "2026-11-15 15:54 UTC"
+  },
+  {
+   "id": "v3s",
+   "label": "Spring-Gaus / PhysTwin 迁移（新先验，按其指标）",
+   "host": "a800-2",
+   "status": "stopped",
+   "unit": "运行",
+   "total": 4,
+   "done": 0,
+   "deliverable": "docs/v3s/RESULTS.json",
+   "detail": "stopped (switch to V4)：V3 先验在 Spring-Gaus/PhysTwin 的前向已算（未分析），其余作业已禁用；代码与 V2 复现检验保留；见 docs/v3r/STOPPED.md",
+   "updated_utc": "2026-11-15 15:54 UTC"
+  },
+  {
+   "id": "v3t",
+   "label": "论文更新：主线保持 V2；补充加载方式/可辨识性分析、V3/V5 先验快检与闸门、v3j 结果",
+   "host": "4090",
+   "status": "running",
+   "unit": "步",
+   "total": 1,
+   "done": 0,
+   "deliverable": "docs/v3t/DONE",
+   "detail": "动作描述与加载方式分析已写入补充材料（11-15 23:00）；等 v3j、V5b 修正结果"
+  },
+  {
+   "id": "v4p",
+   "label": "V4 先验可用性快检（V4 vs V3 train 0-999，val 配对比较）",
+   "host": "a800-4",
+   "status": "done",
+   "unit": "运行",
+   "total": 18,
+   "done": 18,
+   "deliverable": "docs/v4/PRIOR_CHECK.json",
+   "detail": "完成：V4 不优于 V3（E/ρ 增益 0.099 vs 0.081，σ/ρ 0.059 vs 0.082）；docs/v4/PRIOR_CHECK*"
+  },
+  {
+   "id": "v5q",
+   "label": "V5b 先验 + 少量仿真修正（val 60 / test 30，4 种起点）",
+   "host": "a800-2 + a800-4",
+   "status": "running",
+   "unit": "搜索",
+   "total": 360,
+   "done": 10,
+   "deliverable": "docs/v5q/RESULTS.json",
+   "detail": "P1+P2 运行中（V5b 作补充实验；01:35 UTC 起放出先验臂，9-run 集成）；GT 重仿真噪声底进行中"
+  },
+  {
+   "id": "v5m",
+   "label": "V5b 多模态先验（视觉+触觉力+动作），E、ρ 分离可辨识性",
+   "host": "a800-4",
+   "status": "done",
+   "unit": "运行",
+   "total": 15,
+   "done": 15,
+   "deliverable": "docs/v5m/RESULTS.json",
+   "detail": "完成：触觉使 E、ρ 可分离辨识（r_S(ρ) 0.23→0.65，E 误差 0.55→0.37 dec）；docs/v5m/RESULTS*"
+  },
+  {
+   "id": "v5r",
+   "label": "V5b 先探后抓（损伤感知夹取：类均值 / 视觉先验 / 视觉+触觉先验 / 固定深度 / GT）",
+   "host": "a800-3 + a800-5 + a800-2",
+   "status": "running",
+   "unit": "样本",
+   "total": 60,
+   "done": 0,
+   "deliverable": "docs/v5r/RESULTS.json",
+   "detail": "预注册 docs/v5r/PREREG_2026-11-16.md；60 个 V5b val 样本 GT 挤压（扩展网格）+ (a)(b) 孪生体已开跑；(c) 等 docs/v5m/HANDOFF.json",
+   "updated_utc": "2026-11-16 02:59 UTC"
+  }
+ ]
+}

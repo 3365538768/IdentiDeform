@@ -1,0 +1,220 @@
+{
+ "created_utc": "2026-11-14",
+ "split": "validation only (v2main/val); test untouched",
+ "question": "Is the C1 simulation saving specific to the learned V-JEPA prior, and how does it scale with initialization quality?",
+ "subset": {
+  "n": 30,
+  "indices": [
+   21,
+   52,
+   53,
+   71,
+   73,
+   96,
+   113,
+   118,
+   119,
+   134,
+   139,
+   141,
+   180,
+   181,
+   182,
+   184,
+   202,
+   210,
+   212,
+   219,
+   228,
+   231,
+   241,
+   248,
+   272,
+   276,
+   283,
+   293,
+   295,
+   297
+  ],
+  "source": "docs/v3b/C1_SAMPLES.json (60)",
+  "seed": 20261114,
+  "rule": "per (GT law, observed action) cell one random sample (18) + per law a second sample from 4 random actions (12)"
+ },
+ "refinement": {
+  "code": "scripts/v3h/c1h_refine.py (imports simulate/compare/candidate/encode/decode/law_means from scripts/v3b/c1_refine.py)",
+  "objective": "(1 - mean object-mask IoU) + RGB-MAE(union)/255 vs observed 3-view 128-frame video",
+  "optimizer": "deterministic opportunistic compass search over log10(E/rho) [+ log10(sigma_y/rho) unless law=jelly], initial step 0.5 decade, halved after an unsuccessful poll; bounds E [1.5,6.5], sigma_y [-0.5,5.0]",
+  "law": "fixed at the arm's start law (MAP / GT); no law probes",
+  "budget": 12,
+  "budgets_reported": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "nested": "budget k = best observed loss among the first k simulations; k=0 = start point",
+  "failure_rule": "quick crash (<60 s) retried once; failed sims get loss 9, count toward the budget, never selected; no sample dropped",
+  "fixed": "hardening/softening 0.25; rho irrelevant (density 1000)",
+  "replay": "not run (accuracy only)"
+ },
+ "metric": "identifiable z-MAE: |z_hat - z_gt| on E/rho and sigma_y/rho (train-standardized ln1p specific; sigma_y only where defined), pooled over (sample, target) elements; CIs = object-clustered bootstrap (2000 draws, seed 17)",
+ "arms_new_primary": {
+  "dino_c": "seed ensemble of runs/v3c_dino_C_seed{17,29,43} (best val epoch): mean prediction_z, majority-vote law (1/1/1 tie -> law whose train-mean E/rho z is closest to the mean prediction); nu = decoded ensemble nu",
+  "gtnoise_0.25": "PRIVILEGED: GT law; x0 = clip(log10 GT (E/rho, sigma_y/rho) + 0.25 * eps), eps ~ N(0, I2) one fixed draw per sample (listed below; the same eps is scaled for every level); nu = train mean nu of the GT law (as lawmean_gt)",
+  "gtnoise_0.5": "PRIVILEGED: GT law; x0 = clip(log10 GT (E/rho, sigma_y/rho) + 0.5 * eps), eps ~ N(0, I2) one fixed draw per sample (listed below; the same eps is scaled for every level); nu = train mean nu of the GT law (as lawmean_gt)",
+  "gtnoise_1": "PRIVILEGED: GT law; x0 = clip(log10 GT (E/rho, sigma_y/rho) + 1 * eps), eps ~ N(0, I2) one fixed draw per sample (listed below; the same eps is scaled for every level); nu = train mean nu of the GT law (as lawmean_gt)"
+ },
+ "arms_new_secondary": {
+  "ens_map": "run only if time permits, after all primary jobs: 9-run B/C/D V-JEPA ensemble (docs/v3b/ENSEMBLE_BCD9_VAL.json) mean prediction, top-1 vote law, NO probes (same protocol as dino_c)"
+ },
+ "arms_reused": {
+  "prior": "data/v3b_refine/v2main_C_seed29/<idx>/state.json (single V-JEPA C seed29, MAP law, no probes)",
+  "prior_top2": ".../prior_top2 (9-run ensemble, 2 law probes counted in the budget)",
+  "lawmean_gt": ".../lawmean_gt (PRIVILEGED GT law, train mean of that law)",
+  "lawmean_best3": ".../lawmean_best3 (3 law-mean probes counted; first point at k=3)"
+ },
+ "noise_eps": {
+  "21": [
+   0.017326,
+   -0.214509
+  ],
+  "52": [
+   -1.441286,
+   -0.511302
+  ],
+  "53": [
+   -0.804454,
+   -0.155756
+  ],
+  "71": [
+   -0.622995,
+   0.343564
+  ],
+  "73": [
+   -1.178648,
+   -0.429626
+  ],
+  "96": [
+   -1.635792,
+   -0.395684
+  ],
+  "113": [
+   -0.697617,
+   -0.184386
+  ],
+  "118": [
+   -1.604432,
+   1.051898
+  ],
+  "119": [
+   0.205647,
+   -0.866269
+  ],
+  "134": [
+   -0.285685,
+   -1.65549
+  ],
+  "139": [
+   -0.816716,
+   1.562309
+  ],
+  "141": [
+   -1.503611,
+   0.539443
+  ],
+  "180": [
+   -1.056482,
+   -0.020658
+  ],
+  "181": [
+   -0.018699,
+   0.971655
+  ],
+  "182": [
+   -2.754468,
+   -0.873096
+  ],
+  "184": [
+   0.065968,
+   0.116529
+  ],
+  "202": [
+   0.290432,
+   -0.308709
+  ],
+  "210": [
+   -0.749873,
+   0.039462
+  ],
+  "212": [
+   1.313551,
+   0.451819
+  ],
+  "219": [
+   0.727159,
+   -0.038426
+  ],
+  "228": [
+   0.429651,
+   -0.456188
+  ],
+  "231": [
+   0.905663,
+   0.225139
+  ],
+  "241": [
+   -0.802812,
+   -0.938774
+  ],
+  "248": [
+   -0.511785,
+   0.632473
+  ],
+  "272": [
+   0.440164,
+   -0.012928
+  ],
+  "276": [
+   0.195188,
+   -0.162752
+  ],
+  "283": [
+   1.409036,
+   -2.562662
+  ],
+  "293": [
+   0.816389,
+   -0.239501
+  ],
+  "295": [
+   0.530051,
+   0.054165
+  ],
+  "297": [
+   -0.615638,
+   0.500826
+  ]
+ },
+ "analyses": [
+  "per arm: identifiable MAE at budgets 0/4/12 (and full 0..12 curve) on the 30-sample subset; final error vs initial (budget-0) error",
+  "sims to reach target T = lawmean_gt pooled MAE at 24 sims on the same subset (also T12 = lawmean_gt at 12), linear interpolation in k on the 0..12 (reused arms: 0..24) curve; censored if not reached; object bootstrap CI",
+  "paired differences vs lawmean_gt at the same budget (object bootstrap)",
+  "breakdown of the existing 60-sample C1 results by observed action and by GT law (prior, prior_top2, lawmean_gt, lawmean_best3)"
+ ],
+ "addenda": [
+  {
+   "utc": "2026-11-14 15:20",
+   "by": "lead request",
+   "change": "secondary arm ens_map NOT run on the 30-subset; replaced by prior_top1 (same init: 9-run ensemble, top-1 law, no probes) on ALL 60 C1 val samples via scripts/v3d/c1_refine.py --split val, budget 24, replay 0/4/12/24, shared r_queue on a800-2 (docs/v3h/queue.json). Primary arms unchanged; the a800-4 pool was split into two disjoint job files (GPUs 4-7: jobs.json, GPUs 0-3: jobs_a8004_gpu0123.json)."
+  }
+ ]
+}

@@ -1,0 +1,14714 @@
+{
+ "dirs": 300,
+ "exit0": 300,
+ "ok": 300,
+ "corrupt": 0,
+ "not_ok": [],
+ "quarantined": [],
+ "rgb_shapes": [
+  "[3, 128, 3, 224, 224]"
+ ],
+ "seconds": 658.941255569458,
+ "samples": [
+  {
+   "dir": "000000",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000000/a_embroidered_fan_013020/sample_pack.npz",
+   "bytes": 2349584,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000001",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000001/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 16169779,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000002",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000002/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 7892848,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000003",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000003/a_stone_statue_013020/sample_pack.npz",
+   "bytes": 2934356,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000004",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000004/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 2567321,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000005",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000005/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 4687716,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000006",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000006/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 3173099,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000007",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000007/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 30492399,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000008",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000008/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 30111452,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000009",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000009/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 5470396,
+   "shapes": {
+    "meta_json": [
+     288
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000010",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000010/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 6735123,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000011",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000011/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 15466383,
+   "shapes": {
+    "meta_json": [
+     288
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000012",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000012/a_stone_statue_013020/sample_pack.npz",
+   "bytes": 3981996,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000013",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000013/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 35648121,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000014",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000014/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 19027323,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000015",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000015/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 2305801,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000016",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000016/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 2874991,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000017",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000017/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 1112059,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000018",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000018/a_embroidered_fan_013020/sample_pack.npz",
+   "bytes": 2812020,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000019",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000019/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 2665336,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000020",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000020/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 4230742,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000021",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000021/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 1812441,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000022",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000022/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 12898455,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000023",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000023/a_embroidered_fan_013020/sample_pack.npz",
+   "bytes": 5524586,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000024",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000024/a_embroidered_fan_013020/sample_pack.npz",
+   "bytes": 3586753,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000025",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000025/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 33628026,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000026",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000026/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 21834772,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000027",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000027/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 5506971,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000028",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000028/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 23310894,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000029",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000029/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 23291536,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000030",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000030/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 2425077,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000031",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000031/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 41556518,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000032",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000032/a_embroidered_fan_013020/sample_pack.npz",
+   "bytes": 11916703,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000033",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000033/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 1917506,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000034",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000034/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 3947463,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000035",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000035/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 4203491,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000036",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000036/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 1781842,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000037",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000037/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 3526984,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000038",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000038/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 6419126,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000039",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000039/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 1976416,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000040",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000040/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 3677601,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000041",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000041/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 3828131,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000042",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000042/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 2626177,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000043",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000043/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 33658347,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000044",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000044/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 25845479,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000045",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000045/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 7046028,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000046",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000046/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 4582255,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000047",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000047/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 23663632,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000048",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000048/a_embroidered_fan_013020/sample_pack.npz",
+   "bytes": 3741981,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000049",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000049/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 30810050,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000050",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000050/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 8189201,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000051",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000051/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 13994610,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000052",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000052/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 3852252,
+   "shapes": {
+    "meta_json": [
+     288
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000053",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000053/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 5929781,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000054",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000054/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 4900685,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000055",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000055/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 6332071,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000056",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000056/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 3194248,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000057",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000057/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 2049072,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000058",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000058/a_embroidered_fan_013020/sample_pack.npz",
+   "bytes": 9889155,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000059",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000059/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 3819153,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000060",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000060/a_embroidered_fan_013020/sample_pack.npz",
+   "bytes": 3728885,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000061",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000061/a_stone_statue_013020/sample_pack.npz",
+   "bytes": 7514431,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000062",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000062/a_stone_statue_013020/sample_pack.npz",
+   "bytes": 31166033,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000063",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000063/a_stone_statue_013020/sample_pack.npz",
+   "bytes": 2159035,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000064",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000064/a_embroidered_fan_013020/sample_pack.npz",
+   "bytes": 26000349,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000065",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000065/a_stone_statue_013020/sample_pack.npz",
+   "bytes": 8516824,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000066",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000066/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 2579370,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000067",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000067/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 43696365,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000068",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000068/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 29991510,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000069",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000069/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 3279646,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000070",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000070/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 3074838,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000071",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000071/a_embroidered_fan_013020/sample_pack.npz",
+   "bytes": 3915646,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000072",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000072/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 5151607,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000073",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000073/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 5390550,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000074",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000074/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 38112852,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000075",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000075/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 3221974,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000076",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000076/a_embroidered_fan_013020/sample_pack.npz",
+   "bytes": 11849036,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000077",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000077/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 5500080,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000078",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000078/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 7790029,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000079",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000079/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 31077377,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000080",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000080/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 7086624,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000081",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000081/a_stone_statue_013020/sample_pack.npz",
+   "bytes": 3172642,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000082",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000082/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 17016602,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000083",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000083/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 10670216,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000084",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000084/a_embroidered_fan_013020/sample_pack.npz",
+   "bytes": 3949472,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000085",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000085/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 30997586,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000086",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000086/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 4223177,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000087",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000087/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 3405861,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000088",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000088/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 2263670,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000089",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000089/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 3945680,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000090",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000090/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 3880735,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000091",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000091/a_embroidered_fan_013020/sample_pack.npz",
+   "bytes": 3439683,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000092",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000092/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 2045010,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000093",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000093/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 2615303,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000094",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000094/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 5392156,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000095",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000095/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 1990502,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000096",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000096/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 2139074,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000097",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000097/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 20920774,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000098",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000098/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 11549380,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000099",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000099/a_stone_statue_013020/sample_pack.npz",
+   "bytes": 3266726,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000100",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000100/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 4101713,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000101",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000101/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 5108155,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000102",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000102/a_embroidered_fan_013020/sample_pack.npz",
+   "bytes": 4354153,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000103",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000103/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 4694364,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000104",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000104/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 12646196,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000105",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000105/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 11668697,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000106",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000106/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 7973643,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000107",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000107/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 3148522,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000108",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000108/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 2563957,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000109",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000109/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 2465014,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000110",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000110/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 4429581,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000111",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000111/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 2478439,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000112",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000112/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 6272634,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000113",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000113/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 22659141,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000114",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000114/a_embroidered_fan_013020/sample_pack.npz",
+   "bytes": 3088016,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000115",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000115/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 3138366,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000116",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000116/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 23772285,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000117",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000117/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 19030230,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000118",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000118/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 47637068,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000119",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000119/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 2451213,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000120",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000120/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 3278392,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000121",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000121/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 21297927,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000122",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000122/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 20059271,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000123",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000123/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 1240296,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000124",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000124/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 4419608,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000125",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000125/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 1372190,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000126",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000126/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 4285532,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000127",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000127/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 3034652,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000128",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000128/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 4311924,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000129",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000129/a_stone_statue_013020/sample_pack.npz",
+   "bytes": 2259328,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000130",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000130/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 2846518,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000131",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000131/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 31167883,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000132",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000132/a_stone_statue_013020/sample_pack.npz",
+   "bytes": 3625353,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000133",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000133/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 35234354,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000134",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000134/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 17718950,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000135",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000135/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 2447865,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000136",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000136/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 26646690,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000137",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000137/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 2311256,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000138",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000138/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 2284786,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000139",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000139/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 35379904,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000140",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000140/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 26257660,
+   "shapes": {
+    "meta_json": [
+     288
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000141",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000141/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 2667618,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000142",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000142/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 5052411,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000143",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000143/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 10543509,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000144",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000144/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 1622327,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000145",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000145/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 3203600,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000146",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000146/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 1579803,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000147",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000147/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 2020354,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000148",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000148/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 42115628,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000149",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000149/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 3635600,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000150",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000150/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 2687155,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000151",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000151/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 34538780,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000152",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000152/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 2067616,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000153",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000153/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 6346356,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000154",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000154/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 9287481,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000155",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000155/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 9102298,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000156",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000156/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 3343940,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000157",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000157/a_stone_statue_013020/sample_pack.npz",
+   "bytes": 3548943,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000158",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000158/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 4965038,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000159",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000159/a_stone_statue_013020/sample_pack.npz",
+   "bytes": 1604208,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000160",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000160/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 3416471,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000161",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000161/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 2822264,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000162",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000162/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 13552227,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000163",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000163/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 14210106,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000164",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000164/a_stone_statue_013020/sample_pack.npz",
+   "bytes": 3160871,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000165",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000165/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 2975920,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000166",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000166/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 22695214,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000167",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000167/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 2308260,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000168",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000168/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 3440585,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000169",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000169/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 35332254,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000170",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000170/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 15121669,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000171",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000171/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 15642328,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000172",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000172/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 24373918,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000173",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000173/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 6348053,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000174",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000174/a_embroidered_fan_013020/sample_pack.npz",
+   "bytes": 3570789,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000175",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000175/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 29889356,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000176",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000176/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 5766073,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000177",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000177/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 2880140,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000178",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000178/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 3026905,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000179",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000179/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 1664810,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000180",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000180/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 5708745,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000181",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000181/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 2623823,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000182",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000182/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 2204041,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000183",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000183/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 4551602,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000184",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000184/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 13278783,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000185",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000185/a_embroidered_fan_013020/sample_pack.npz",
+   "bytes": 2438578,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000186",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000186/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 2890969,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000187",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000187/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 27963085,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000188",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000188/a_stone_statue_013020/sample_pack.npz",
+   "bytes": 6788215,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000189",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000189/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 2861865,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000190",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000190/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 2841719,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000191",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000191/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 25818078,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000192",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000192/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 9145875,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000193",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000193/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 36615393,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000194",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000194/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 5130705,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000195",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000195/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 1637095,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000196",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000196/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 2187953,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000197",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000197/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 2981761,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000198",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000198/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 3197391,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000199",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000199/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 2055817,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000200",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000200/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 1647080,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000201",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000201/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 2500668,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000202",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000202/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 1787343,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000203",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000203/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 30690811,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000204",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000204/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 3893439,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000205",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000205/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 3247612,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000206",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000206/a_embroidered_fan_013020/sample_pack.npz",
+   "bytes": 13960311,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000207",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000207/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 1688911,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000208",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000208/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 15170898,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000209",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000209/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 38321452,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000210",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000210/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 3368472,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000211",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000211/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 7958265,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000212",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000212/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 39722835,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000213",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000213/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 6110764,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000214",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000214/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 8770215,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000215",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000215/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 1820344,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000216",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000216/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 2040969,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000217",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000217/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 32551339,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000218",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000218/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 1532855,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000219",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000219/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 2694548,
+   "shapes": {
+    "meta_json": [
+     287
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000220",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000220/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 49931983,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000221",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000221/a_stone_statue_013020/sample_pack.npz",
+   "bytes": 4138855,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000222",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000222/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 3329296,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000223",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000223/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 27657641,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000224",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000224/a_stone_statue_013020/sample_pack.npz",
+   "bytes": 3686247,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000225",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000225/a_embroidered_fan_013020/sample_pack.npz",
+   "bytes": 1799069,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000226",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000226/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 53880289,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000227",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000227/a_stone_statue_013020/sample_pack.npz",
+   "bytes": 7035862,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000228",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000228/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 2825009,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000229",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000229/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 3291127,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000230",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000230/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 18210058,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000231",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000231/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 1919688,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000232",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000232/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 2319401,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000233",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000233/a_stone_statue_013020/sample_pack.npz",
+   "bytes": 1538185,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000234",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000234/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 2636679,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000235",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000235/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 12425463,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000236",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000236/a_embroidered_fan_013020/sample_pack.npz",
+   "bytes": 6401212,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000237",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000237/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 4393553,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000238",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000238/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 10013018,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000239",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000239/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 4039799,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000240",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000240/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 2405725,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000241",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000241/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 34462654,
+   "shapes": {
+    "meta_json": [
+     288
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000242",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000242/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 11550082,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000243",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000243/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 2203110,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000244",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000244/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 3605250,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000245",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000245/a_stone_statue_013020/sample_pack.npz",
+   "bytes": 4690851,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000246",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000246/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 3927255,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000247",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000247/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 9487345,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000248",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000248/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 3971568,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000249",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000249/a_stone_statue_013020/sample_pack.npz",
+   "bytes": 1356781,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000250",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000250/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 5450231,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000251",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000251/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 21392863,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000252",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000252/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 1957709,
+   "shapes": {
+    "meta_json": [
+     288
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000253",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000253/a_stone_statue_013020/sample_pack.npz",
+   "bytes": 2849147,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000254",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000254/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 5481903,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000255",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000255/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 3186143,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000256",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000256/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 21476328,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000257",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000257/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 5810850,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000258",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000258/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 2384294,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000259",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000259/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 16221024,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000260",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000260/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 7506403,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000261",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000261/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 2846785,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000262",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000262/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 8774482,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000263",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000263/a_embroidered_fan_013020/sample_pack.npz",
+   "bytes": 17076489,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000264",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000264/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 3663069,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000265",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000265/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 37286820,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000266",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000266/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 21110562,
+   "shapes": {
+    "meta_json": [
+     287
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000267",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000267/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 1128178,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000268",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000268/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 6491282,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000269",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000269/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 2907028,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000270",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000270/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 2559599,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000271",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000271/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 3043921,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000272",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000272/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 1161754,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000273",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000273/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 2383706,
+   "shapes": {
+    "meta_json": [
+     288
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000274",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000274/a_carbon_fiber_rose_013020/sample_pack.npz",
+   "bytes": 2582944,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000275",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000275/a_seashell_necklace_013020/sample_pack.npz",
+   "bytes": 1730319,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000276",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000276/a_embroidered_fan_013020/sample_pack.npz",
+   "bytes": 3800880,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000277",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000277/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 3606252,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000278",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000278/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 24564305,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000279",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000279/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 5899767,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000280",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000280/a_denim_violin_013020/sample_pack.npz",
+   "bytes": 18231073,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000281",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000281/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 6282309,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000282",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000282/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 5149293,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000283",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000283/a_stone_statue_013020/sample_pack.npz",
+   "bytes": 7827039,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000284",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000284/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 3732658,
+   "shapes": {
+    "meta_json": [
+     288
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000285",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000285/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 13822877,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000286",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000286/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 2259128,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000287",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000287/a_stone_statue_013020/sample_pack.npz",
+   "bytes": 2329068,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000288",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000288/a_bamboo_spacesuit_013020/sample_pack.npz",
+   "bytes": 2210403,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000289",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000289/a_embroidered_fan_013020/sample_pack.npz",
+   "bytes": 3153941,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000290",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000290/a_embroidered_fan_013020/sample_pack.npz",
+   "bytes": 2575349,
+   "shapes": {
+    "meta_json": [
+     288
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000291",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000291/a_stone_statue_013020/sample_pack.npz",
+   "bytes": 1447599,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000292",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000292/a_stone_statue_013020/sample_pack.npz",
+   "bytes": 2909336,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000293",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000293/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 7691942,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000294",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000294/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 4038960,
+   "shapes": {
+    "meta_json": [
+     289
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000295",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000295/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 14650644,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000296",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000296/a_rubber_tire_013020/sample_pack.npz",
+   "bytes": 19852508,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000297",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000297/a_carbon_fiber_helme_013020/sample_pack.npz",
+   "bytes": 18954623,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000298",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000298/a_ceramic_plate_013020/sample_pack.npz",
+   "bytes": 9925210,
+   "shapes": {
+    "meta_json": [
+     290
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  },
+  {
+   "dir": "000299",
+   "exit": 0,
+   "packs": 1,
+   "pack": "data/v2_main/test/000299/a_crystal_cactus_013020/sample_pack.npz",
+   "bytes": 5735511,
+   "shapes": {
+    "meta_json": [
+     291
+    ],
+    "rgb": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "stress": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "flow": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "force_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ],
+    "object_mask": [
+     3,
+     128,
+     3,
+     224,
+     224
+    ]
+   },
+   "corrupt": false,
+   "ok": true
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+2026-11-16T06:45:54+00:00 di-20261103141208-krk4l START eval --objs bun
+bun C0733 prior 4.268 HO {'iou': 0.544, 'psnr': 10.621, 'ssim': 0.29} FU {'iou': 0.317, 'psnr': 9.529, 'ssim': 0.187}
+bun C0733 prior_refine 4.518 HO {'iou': 0.5, 'psnr': 10.411, 'ssim': 0.27} FU {'iou': 0.19, 'psnr': 8.547, 'ssim': 0.112}
+bun C0733 class_mean 3.482 HO {'iou': 0.375, 'psnr': 9.254, 'ssim': 0.198} FU {'iou': 0.064, 'psnr': 7.38, 'ssim': 0.016}
+bun C0733 global_constant_loo 5.25 HO {'iou': 0.375, 'psnr': 9.656, 'ssim': 0.203} FU {'iou': 0.029, 'psnr': 7.852, 'ssim': 0.014}
+bun C0733 oracle 4.0 HO {'iou': 0.606, 'psnr': 10.735, 'ssim': 0.32} FU {'iou': 0.537, 'psnr': 10.652, 'ssim': 0.317}
+Traceback (most recent call last):
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/scripts/v3v/real_eval.py", line 374, in <module>
+    a = ap.parse_args(); {'prep': prep, 'run': run, 'eval': eval_obj}[a.stage](a)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/scripts/v3v/real_eval.py", line 320, in eval_obj
+    for arm, (lg, nu) in list(arms.items()) + [('rigid_track_2cam', None), ('persist_last', None)]:
+             ^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+2026-11-16T06:46:41+00:00 END rc=1
+2026-11-16T06:49:08+00:00 di-20261103141208-krk4l START eval --objs bun
+bun C0733 prior 4.268 HO {'iou': 0.544, 'psnr': 10.621, 'ssim': 0.29} FU {'iou': 0.317, 'psnr': 9.529, 'ssim': 0.187}
+bun C0733 prior_refine 4.518 HO {'iou': 0.5, 'psnr': 10.411, 'ssim': 0.27} FU {'iou': 0.19, 'psnr': 8.547, 'ssim': 0.112}
+bun C0733 class_mean 3.482 HO {'iou': 0.375, 'psnr': 9.254, 'ssim': 0.198} FU {'iou': 0.064, 'psnr': 7.38, 'ssim': 0.016}
+bun C0733 global_constant_loo 5.25 HO {'iou': 0.375, 'psnr': 9.656, 'ssim': 0.203} FU {'iou': 0.029, 'psnr': 7.852, 'ssim': 0.014}
+bun C0733 oracle 4.518 HO {'iou': 0.5, 'psnr': 10.411, 'ssim': 0.27} FU {'iou': 0.19, 'psnr': 8.547, 'ssim': 0.112}
+bun C0733 rigid_track_2cam None HO {'iou': 0.792, 'psnr': 12.406, 'ssim': 0.432} FU {}
+bun C0787 prior 4.268 HO {'iou': 0.524, 'psnr': 11.823, 'ssim': 0.308} FU {'iou': 0.317, 'psnr': 9.519, 'ssim': 0.209}
+bun C0787 prior_refine 4.518 HO {'iou': 0.48, 'psnr': 11.668, 'ssim': 0.284} FU {'iou': 0.19, 'psnr': 8.511, 'ssim': 0.127}
+bun C0787 class_mean 3.482 HO {'iou': 0.381, 'psnr': 10.611, 'ssim': 0.211} FU {'iou': 0.064, 'psnr': 7.323, 'ssim': 0.019}
+bun C0787 global_constant_loo 5.25 HO {'iou': 0.371, 'psnr': 11.225, 'ssim': 0.219} FU {'iou': 0.029, 'psnr': 7.743, 'ssim': 0.016}
+bun C0787 oracle 4.518 HO {'iou': 0.48, 'psnr': 11.668, 'ssim': 0.284} FU {'iou': 0.19, 'psnr': 8.511, 'ssim': 0.127}
+bun C0787 rigid_track_2cam None HO {'iou': 0.787, 'psnr': 14.352, 'ssim': 0.461} FU {}
+bun C0801 prior 4.268 HO {'iou': 0.515, 'psnr': 10.547, 'ssim': 0.282} FU {'iou': 0.317, 'psnr': 9.585, 'ssim': 0.193}
+bun C0801 prior_refine 4.768 HO {'iou': 0.411, 'psnr': 9.998, 'ssim': 0.229} FU {'iou': 0.105, 'psnr': 8.23, 'ssim': 0.065}
+bun C0801 class_mean 3.482 HO {'iou': 0.355, 'psnr': 9.407, 'ssim': 0.189} FU {'iou': 0.064, 'psnr': 7.524, 'ssim': 0.016}
+bun C0801 global_constant_loo 5.25 HO {'iou': 0.35, 'psnr': 9.76, 'ssim': 0.199} FU {'iou': 0.029, 'psnr': 7.965, 'ssim': 0.016}
+bun C0801 oracle 4.518 HO {'iou': 0.455, 'psnr': 10.227, 'ssim': 0.252} FU {'iou': 0.19, 'psnr': 8.728, 'ssim': 0.121}
+bun C0801 rigid_track_2cam None HO {'iou': 0.751, 'psnr': 11.713, 'ssim': 0.437} FU {}
+2026-11-16T06:51:17+00:00 END rc=0

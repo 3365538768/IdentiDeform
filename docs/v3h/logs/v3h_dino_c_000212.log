@@ -1,0 +1,25 @@
+eval {'n': 1, 'law': 'plasticine', 'x': [3.410539, 1.043984], 'seconds': 391.2634696960449, 'iou': 0.8080743283641582, 'iou_last': 1.0, 'rgb_mae_union': 63.19265518707483, 'loss': 0.4397400057028019}
+eval {'n': 2, 'law': 'plasticine', 'x': [3.910539, 1.043984], 'seconds': 397.84153628349304, 'iou': 0.8279072768023225, 'iou_last': 1.0, 'rgb_mae_union': 64.03196747448979, 'loss': 0.4231984779995983}
+quick failure obs_02 0
+quick failure obs_02 1
+simulation failed obs_02 1
+eval {'n': 3, 'law': 'plasticine', 'x': [4.410539, 1.043984], 'seconds': 86.42629146575928, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+quick failure obs_03 0
+quick failure obs_03 1
+simulation failed obs_03 1
+eval {'n': 4, 'law': 'plasticine', 'x': [3.910539, 1.543984], 'seconds': 86.83586263656616, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+quick failure obs_04 0
+quick failure obs_04 1
+simulation failed obs_04 1
+eval {'n': 5, 'law': 'plasticine', 'x': [3.910539, 0.543984], 'seconds': 86.67976427078247, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval {'n': 6, 'law': 'plasticine', 'x': [4.160539, 1.043984], 'seconds': 396.09630727767944, 'iou': 0.8331817834555698, 'iou_last': 1.0, 'rgb_mae_union': 60.90470211522109, 'loss': 0.4056601856237286}
+quick failure obs_06 0
+quick failure obs_06 1
+simulation failed obs_06 1
+eval {'n': 7, 'law': 'plasticine', 'x': [4.160539, 1.293984], 'seconds': 86.15645694732666, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval {'n': 8, 'law': 'plasticine', 'x': [4.160539, 0.793984], 'seconds': 405.95663142204285, 'iou': 0.8330560800980548, 'iou_last': 1.0, 'rgb_mae_union': 60.057597257653065, 'loss': 0.4024639091476435}
+eval {'n': 9, 'law': 'plasticine', 'x': [4.160539, 0.543984], 'seconds': 412.1926910877228, 'iou': 0.5474647470072013, 'iou_last': 1.0, 'rgb_mae_union': 107.61896125637755, 'loss': 0.8745703951746715}
+eval {'n': 10, 'law': 'plasticine', 'x': [4.410539, 0.793984], 'seconds': 401.5961363315582, 'iou': 0.8156634479963861, 'iou_last': 1.0, 'rgb_mae_union': 69.80872661564626, 'loss': 0.4580962642218345}
+eval {'n': 11, 'law': 'plasticine', 'x': [3.910539, 0.793984], 'seconds': 391.63432264328003, 'iou': 0.8391402367831899, 'iou_last': 1.0, 'rgb_mae_union': 60.302767591411566, 'loss': 0.3973412047517574}
+eval {'n': 12, 'law': 'plasticine', 'x': [3.660539, 0.793984], 'seconds': 394.97615361213684, 'iou': 0.8622055053710938, 'iou_last': 1.0, 'rgb_mae_union': 54.17103130314626, 'loss': 0.35022991150398963}
+done 212 dino_c {'0': 0.595, '4': 0.712, '12': 0.702}

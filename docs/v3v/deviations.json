@@ -1,0 +1,6 @@
+[
+ {"utc": "2026-11-16 06:50",
+  "what": "Added an EXPLORATORY arm 'prior_refine_damp' (not in the pre-registered protocol): 2D compass search on (log10 E/rho, rpic_damping in [0,1]) from (prior, 0), steps (0.5 decade, 0.5), opportunistic polling, halve on failure, same fit set (2 training cameras x frames 0..9), same objective (1 - fit-set IoU), same 12-sim budget per fold. rpic_damping damps the symmetric part of the APIC affine velocity (strain-rate dissipation; rigid motion untouched).",
+  "why": "Decided AFTER seeing the pre-registered E-only refinement results on the first fold (it moved E stiffer, 4.5-5.7, and lowered future-frame IoU vs. the prior). The engine with zero internal damping cannot produce a stiff-but-dissipative bounce; the arm tests whether one extra dissipation parameter fixes that. Reported separately and labelled post hoc; the pre-registered arms are unchanged.",
+  "other": "a800-4 GPU 7 was occupied by another user's processes at launch time, so all simulations ran on a800-2 GPU 7 (MPM replays take 2-7 s each for 20 frames, so the budget was not binding)."}
+]

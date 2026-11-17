@@ -1,0 +1,39 @@
+14:33:38 start v3main_dinoS_seed17 gpu 1
+14:33:40 start v3main_dinoS_seed43 gpu 2
+14:33:56 exit v3main_dinoS_seed17 0 gpu 1
+14:33:56 start v3main_dinoS_seed17_test gpu 1
+14:34:12 exit v3main_dinoS_seed17_test 0 gpu 1
+14:34:27 start v3main_D_seed29 gpu 1
+14:38:30 start v3main_D_seed43 gpu 3
+14:39:01 start v3main_C_seed43 gpu 4
+14:41:30 start v3main_B_seed29 gpu 5
+14:48:20 start v3main_C_seed17 gpu 6
+14:54:22 start v3main_dinoS_seed29 gpu 7
+14:54:38 exit v3main_dinoS_seed29 0 gpu 7
+14:54:39 start v3main_dinoS_seed29_test gpu 7
+14:55:41 exit v3main_dinoS_seed29_test 0 gpu 7
+15:05:40 start v3main_dinoS_seed43_test gpu 7
+15:05:56 exit v3main_dinoS_seed43 0 gpu 2
+15:06:29 exit v3main_dinoS_seed43_test 0 gpu 7
+15:08:18 start v3main_B_seed29_test gpu 2
+15:08:34 exit v3main_B_seed29 0 gpu 5
+15:09:06 exit v3main_B_seed29_test 0 gpu 2
+15:09:52 exit v3main_C_seed43 0 gpu 4
+15:09:54 start v3main_C_seed43_test gpu 2
+15:10:55 exit v3main_C_seed43_test 0 gpu 2
+15:14:16 exit v3main_D_seed29 0 gpu 1
+15:14:16 start v3main_D_seed29_test gpu 1
+15:14:34 start v3main_C_seed29 gpu 2
+15:14:50 exit v3main_D_seed29_test 0 gpu 1
+15:14:50 exit v3main_C_seed29 0 gpu 2
+15:14:50 start v3main_C_seed29_test gpu 1
+15:15:36 exit v3main_C_seed29_test 0 gpu 1
+15:18:21 exit v3main_D_seed43 0 gpu 3
+15:18:21 start v3main_D_seed43_test gpu 1
+15:19:07 exit v3main_D_seed43_test 0 gpu 1
+15:23:22 exit v3main_C_seed17 0 gpu 6
+15:23:22 start v3main_C_seed17_test gpu 1
+15:24:08 exit v3main_C_seed17_test 0 gpu 1
+15:24:08 start v3main_handoff gpu 
+15:24:24 exit v3main_handoff 0 gpu 
+all done

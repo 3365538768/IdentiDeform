@@ -1,0 +1,126 @@
+{
+  "updated_unix": 1794117287.4656408,
+  "steps": [
+    {
+      "id": "D3p",
+      "name": "\u6750\u6599\u52a8\u4f5c\u5e73\u8861\u3001\u91cd\u590d\u53d6\u6837\u4e0e\u7f13\u5b58",
+      "state": "complete",
+      "completed": 640,
+      "total": 640,
+      "report": "docs/D3_SINGLE_VIDEO_PREPARE.json"
+    },
+    {
+      "id": "D3",
+      "name": "\u5355\u89c6\u9891\u516b\u7ec4\u5339\u914d\u5bf9\u7167",
+      "state": "complete",
+      "completed": 8,
+      "total": 8,
+      "report": "docs/D3_SINGLE_VIDEO_RESULTS.json"
+    },
+    {
+      "id": "D3a",
+      "name": "\u7edf\u4e00\u5c3a\u5ea6\u4e0e\u7269\u4f53\u914d\u5bf9\u53cd\u9988",
+      "state": "complete",
+      "completed": 8,
+      "total": 8,
+      "report": "docs/D3_SINGLE_VIDEO_AUDIT.json"
+    },
+    {
+      "id": "I1",
+      "name": "\u52a0\u8f7d\u4e0e\u5c3a\u5ea6\u53ef\u8fa8\u8bc6\u6027\u6838\u9a8c",
+      "state": "complete",
+      "completed": 8,
+      "total": 8,
+      "report": "docs/I1_IDENTIFIABILITY.json"
+    },
+    {
+      "id": "M3",
+      "name": "\u5c40\u90e8\u76f8\u5bf9\u8fd0\u52a8\u4e0e\u54cd\u5e94\u8868\u793a",
+      "state": "complete",
+      "completed": 6,
+      "total": 6,
+      "report": "docs/M3_LOCAL_RESPONSE_RESULTS.json"
+    },
+    {
+      "id": "B1p",
+      "name": "RGB\u7ec6\u8282\u8f93\u5165\u4e0e\u65f6\u95f4/\u6765\u6e90\u9a8c\u6536",
+      "state": "complete",
+      "completed": 640,
+      "total": 640,
+      "report": "docs/B1_PIXEL_PREPARE.json"
+    },
+    {
+      "id": "B1",
+      "name": "RGB\u50cf\u7d20\u5206\u652f\u516b\u7ec4\u5339\u914d\u5bf9\u7167",
+      "state": "complete",
+      "completed": 8,
+      "total": 8,
+      "report": "docs/B1_PIXEL_RESULTS.json"
+    },
+    {
+      "id": "B1a",
+      "name": "\u50cf\u7d20\u4e0e\u573a\u6865\u6536\u76ca\u5206\u522b\u53cd\u9988",
+      "state": "complete",
+      "completed": 8,
+      "total": 8,
+      "report": "docs/B1_PIXEL_AUDIT.json"
+    },
+    {
+      "id": "NFp",
+      "name": "\u96f6\u573a\u8def\u7ebf\uff1a\u9996\u5e27OOF\u5148\u9a8c",
+      "state": "complete",
+      "completed": 640,
+      "total": 640,
+      "report": "docs/NF_STATIC_PREPARE.json"
+    },
+    {
+      "id": "NF",
+      "name": "\u96f6\u573a\u8def\u7ebf\uff1a\u89c6\u9891/\u5148\u9a8c/\u6982\u7387\u63a8\u65ad",
+      "state": "complete",
+      "completed": 3,
+      "total": 3,
+      "report": "docs/NF_RESULTS.json"
+    },
+    {
+      "id": "NFa",
+      "name": "\u96f6\u573a\u8def\u7ebf\uff1a\u7ed3\u679c\u4e0e\u540e\u9a8c\u6838\u9a8c",
+      "state": "complete",
+      "completed": 3,
+      "total": 3,
+      "report": "docs/NF_AUDIT.json"
+    },
+    {
+      "id": "NFt",
+      "name": "\u79bb\u7ebf\u6559\u5e08\uff1a\u53d7\u63a7\u5939\u5177\u84b8\u998f",
+      "state": "complete",
+      "completed": 120,
+      "total": 120,
+      "report": "docs/NF_TEACHER_FIXTURE.json"
+    },
+    {
+      "id": "B2",
+      "name": "\u9aa8\u5e72\u672b\u5757\u9002\u914d\u4e0e\u516c\u5f00\u6570\u636e",
+      "state": "waiting_for_previous_feedback",
+      "completed": 0,
+      "total": 0,
+      "report": "docs/B2_ADAPTATION_RESULTS.json"
+    },
+    {
+      "id": "E2",
+      "name": "\u89c6\u9891\u5171\u4eab\u54cd\u5e94\u4e0e\u5206\u5f15\u64ce\u5934",
+      "state": "waiting_for_previous_feedback",
+      "completed": 0,
+      "total": 0,
+      "report": "docs/E2_VIDEO_ENGINE_RESULTS.json"
+    },
+    {
+      "id": "V",
+      "name": "\u591a\u79cd\u5b50\u3001\u72ec\u7acb\u6d4b\u8bd5\u4e0e\u5728\u7ebf\u516c\u5e73\u5bf9\u6bd4",
+      "state": "waiting_for_previous_feedback",
+      "completed": 0,
+      "total": 0,
+      "report": "docs/V_CONFIRMATION_RESULTS.json"
+    }
+  ],
+  "scope": "Sequential feedback gates; no automatic full-scale promotion, no hourly automation."
+}

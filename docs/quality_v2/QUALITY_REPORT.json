@@ -1,0 +1,249 @@
+{
+  "updated_unix": 1794404160.5771813,
+  "numerical": [
+    {
+      "step": "25us",
+      "value": 10000000.0,
+      "dominant_height_hz": 0.6593406593406593,
+      "height_change_px": 13.79882926940918
+    },
+    {
+      "step": "12us",
+      "value": 10000000.0,
+      "dominant_height_hz": 0.6593406593406593,
+      "height_change_px": 8.44838905334473
+    },
+    {
+      "step": "6us",
+      "value": 10000000.0,
+      "dominant_height_hz": 0.6593406593406593,
+      "height_change_px": 4.439234733581543
+    }
+  ],
+  "comparisons": [
+    {
+      "steps": [
+        "25us",
+        "12us"
+      ],
+      "height_relative_difference": 0.633308928161423
+    },
+    {
+      "steps": [
+        "12us",
+        "6us"
+      ],
+      "height_relative_difference": 0.9031183436719576
+    }
+  ],
+  "camera_samples": {
+    "camera_0.65": [
+      {
+        "source": "data/v2_quality/camera_0.65/drop/a_pewter_mug_013020_2.75_a/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.0,
+        "p10_area_fraction": 0.023278061224489797
+      },
+      {
+        "source": "data/v2_quality/camera_0.65/drop/a_pewter_mug_013020_2.75_b/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.0,
+        "p10_area_fraction": 0.027307876275510207
+      },
+      {
+        "source": "data/v2_quality/camera_0.65/drop/a_pewter_mug_013020_3.75_a/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.0,
+        "p10_area_fraction": 0.038783482142857144
+      },
+      {
+        "source": "data/v2_quality/camera_0.65/drop/a_pewter_mug_013020_3.75_b/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.0,
+        "p10_area_fraction": 0.058185188137755105
+      },
+      {
+        "source": "data/v2_quality/camera_0.65/press/a_pewter_mug_013020_2.75_a/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.0,
+        "p10_area_fraction": 0.021045918367346938
+      },
+      {
+        "source": "data/v2_quality/camera_0.65/press/a_pewter_mug_013020_2.75_b/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.0,
+        "p10_area_fraction": 0.03125199298469388
+      },
+      {
+        "source": "data/v2_quality/camera_0.65/press/a_pewter_mug_013020_3.75_a/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.0,
+        "p10_area_fraction": 0.04806281887755102
+      },
+      {
+        "source": "data/v2_quality/camera_0.65/press/a_pewter_mug_013020_3.75_b/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.0,
+        "p10_area_fraction": 0.04985849808673469
+      },
+      {
+        "source": "data/v2_quality/camera_0.65/stretch/a_pewter_mug_013020_2.75_a/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.0,
+        "p10_area_fraction": 0.03512037627551021
+      },
+      {
+        "source": "data/v2_quality/camera_0.65/stretch/a_pewter_mug_013020_2.75_b/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.0,
+        "p10_area_fraction": 0.033111447704081635
+      },
+      {
+        "source": "data/v2_quality/camera_0.65/stretch/a_pewter_mug_013020_3.75_a/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.0,
+        "p10_area_fraction": 0.0482162786989796
+      },
+      {
+        "source": "data/v2_quality/camera_0.65/stretch/a_pewter_mug_013020_3.75_b/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.0,
+        "p10_area_fraction": 0.07303292410714286
+      }
+    ],
+    "camera_0.8": [
+      {
+        "source": "data/v2_quality/camera_0.8/press/a_pewter_mug_013020_2.75_a/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.0,
+        "p10_area_fraction": 0.03423748405612245
+      },
+      {
+        "source": "data/v2_quality/camera_0.8/press/a_pewter_mug_013020_2.75_b/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.0,
+        "p10_area_fraction": 0.05052216198979592
+      },
+      {
+        "source": "data/v2_quality/camera_0.8/press/a_pewter_mug_013020_3.75_a/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.0,
+        "p10_area_fraction": 0.07505580357142858
+      },
+      {
+        "source": "data/v2_quality/camera_0.8/press/a_pewter_mug_013020_3.75_b/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.0,
+        "p10_area_fraction": 0.07776227678571429
+      },
+      {
+        "source": "data/v2_quality/camera_0.8/stretch/a_pewter_mug_013020_2.75_a/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.4427083333333333,
+        "p10_area_fraction": 0.05155652104591837
+      },
+      {
+        "source": "data/v2_quality/camera_0.8/stretch/a_pewter_mug_013020_2.75_b/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.3125,
+        "p10_area_fraction": 0.048262117346938777
+      },
+      {
+        "source": "data/v2_quality/camera_0.8/stretch/a_pewter_mug_013020_3.75_a/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.3177083333333333,
+        "p10_area_fraction": 0.07227957589285715
+      },
+      {
+        "source": "data/v2_quality/camera_0.8/stretch/a_pewter_mug_013020_3.75_b/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.0703125,
+        "p10_area_fraction": 0.11019411670918368
+      }
+    ],
+    "camera_1.0": [
+      {
+        "source": "data/v2_quality/camera_1.0/drop/a_pewter_mug_013020_2.75_a/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.25,
+        "p10_area_fraction": 0.06353635204081633
+      },
+      {
+        "source": "data/v2_quality/camera_1.0/drop/a_pewter_mug_013020_2.75_b/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.0,
+        "p10_area_fraction": 0.07200055803571428
+      },
+      {
+        "source": "data/v2_quality/camera_1.0/drop/a_pewter_mug_013020_3.75_a/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.3958333333333333,
+        "p10_area_fraction": 0.08520806760204083
+      },
+      {
+        "source": "data/v2_quality/camera_1.0/drop/a_pewter_mug_013020_3.75_b/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.24739583333333334,
+        "p10_area_fraction": 0.1349250637755102
+      },
+      {
+        "source": "data/v2_quality/camera_1.0/press/a_pewter_mug_013020_2.75_a/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.0,
+        "p10_area_fraction": 0.05883290816326531
+      },
+      {
+        "source": "data/v2_quality/camera_1.0/press/a_pewter_mug_013020_2.75_b/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.0,
+        "p10_area_fraction": 0.08676060267857143
+      },
+      {
+        "source": "data/v2_quality/camera_1.0/press/a_pewter_mug_013020_3.75_a/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.0,
+        "p10_area_fraction": 0.1235710299744898
+      },
+      {
+        "source": "data/v2_quality/camera_1.0/press/a_pewter_mug_013020_3.75_b/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.0,
+        "p10_area_fraction": 0.12593869579081635
+      },
+      {
+        "source": "data/v2_quality/camera_1.0/stretch/a_pewter_mug_013020_2.75_a/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.9192708333333334,
+        "p10_area_fraction": 0.055436862244897966
+      },
+      {
+        "source": "data/v2_quality/camera_1.0/stretch/a_pewter_mug_013020_2.75_b/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.9166666666666666,
+        "p10_area_fraction": 0.0517319036989796
+      },
+      {
+        "source": "data/v2_quality/camera_1.0/stretch/a_pewter_mug_013020_3.75_a/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.6432291666666666,
+        "p10_area_fraction": 0.07693917410714286
+      },
+      {
+        "source": "data/v2_quality/camera_1.0/stretch/a_pewter_mug_013020_3.75_b/a_pewter_mug_013020/sample_pack.npz",
+        "empty_fraction": 0.0,
+        "border_fraction": 0.1484375,
+        "p10_area_fraction": 0.15746970663265306
+      }
+    ]
+  },
+  "scope": "Highest-stiffness metal cube and limited camera pilot; not full dataset certification.",
+  "bulk_generation_allowed": false,
+  "remaining_gates": [
+    "full-trajectory convergence and grid refinement",
+    "all material families and actions",
+    "view coverage with sufficient pixel footprint",
+    "visible nonrigid motion",
+    "force/field alignment",
+    "object-level held-out audit"
+  ]
+}

@@ -1,0 +1,151 @@
+v2main_B_seed17
+v2main_B_seed29
+v2main_B_seed43
+v2main_C_seed17
+v2main_C_seed29
+v2main_C_seed43
+v2main_D_seed17
+v2main_D_seed29
+v2main_D_seed43
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/scripts/v3w/phys101_fall.py:138: DeprecationWarning: __array_wrap__ must accept context and return_scalar arguments (positionally) in the future. (Deprecated NumPy 2.0)
+  'log10_E_over_rho_x1000': float(np.log10(dec[0])), 'rho_decoded': float(dec[2]),
+pred 632
+{
+ "motion": {
+  "P1_auc": 0.5130434782608696,
+  "P1_ci": [
+   0.2608695652173913,
+   0.7565217391304347
+  ],
+  "P2_spearman": 0.3611192707795476,
+  "P2_ci": [
+   -0.035255897776733665,
+   0.6857927021225273
+  ]
+ },
+ "static": {
+  "P1_auc": 0.5304347826086957,
+  "P1_ci": [
+   0.23478260869565218,
+   0.8173913043478261
+  ],
+  "P2_spearman": 0.20948650204136546,
+  "P2_ci": [
+   -0.1999896084282971,
+   0.5674826289278797
+  ]
+ },
+ "squash": {
+  "P1_auc": 0.2608695652173913,
+  "P1_ci": [
+   0.043478260869565216,
+   0.5391304347826087
+  ],
+  "P2_spearman": -0.21695149988693752,
+  "P2_ci": [
+   -0.6172235800337207,
+   0.21614361139421245
+  ]
+ },
+ "motion_minus_static": {
+  "P1_diff": -0.017391304347826098,
+  "P1_ci": [
+   -0.41739130434782606,
+   0.41739130434782606
+  ],
+  "P2_diff": 0.15163276873818213,
+  "P2_ci": [
+   -0.2687982168888705,
+   0.5673465328275099
+  ]
+ },
+ "motion_minus_squash": {
+  "P1_diff": 0.2521739130434783,
+  "P1_ci": [
+   -0.026086956521739146,
+   0.5565217391304348
+  ],
+  "P2_diff": 0.5780707706664852,
+  "P2_ci": [
+   0.20726341041131838,
+   0.9544421426746997
+  ]
+ }
+}
+5 23 30
+{
+ "cardboard": {
+  "n_objects": 3,
+  "n_trials": 36,
+  "pred_log10_E_over_rho_x1000_mean": 3.9280169470512134,
+  "static_mean": 5.062035663515075,
+  "squash_mean": 0.2088159254087437,
+  "law_prob_mean": {
+   "jelly": 0.5701747937469867,
+   "metal": 0.22464616040076132,
+   "plasticine": 0.20517904378355087
+  }
+ },
+ "foam": {
+  "n_objects": 2,
+  "n_trials": 24,
+  "pred_log10_E_over_rho_x1000_mean": 4.17113588253657,
+  "static_mean": 4.949089268843333,
+  "squash_mean": 0.24394207200542578,
+  "law_prob_mean": {
+   "jelly": 0.4972159620374441,
+   "metal": 0.26960817514918745,
+   "plasticine": 0.2331758588552475
+  }
+ },
+ "metal": {
+  "n_objects": 2,
+  "n_trials": 14,
+  "pred_log10_E_over_rho_x1000_mean": 4.705273253577096,
+  "static_mean": 5.493699107851301,
+  "squash_mean": 0.23384947324100297,
+  "law_prob_mean": {
+   "jelly": 0.2778870036755896,
+   "metal": 0.6392727317288518,
+   "plasticine": 0.08284027139390154
+  }
+ },
+ "plastic": {
+  "n_objects": 11,
+  "n_trials": 137,
+  "pred_log10_E_over_rho_x1000_mean": 4.276220480642493,
+  "static_mean": 5.273455493036886,
+  "squash_mean": 0.400561229328174,
+  "law_prob_mean": {
+   "jelly": 0.7159816382330457,
+   "metal": 0.17997778196942488,
+   "plasticine": 0.10404058255956428
+  }
+ },
+ "rubber": {
+  "n_objects": 5,
+  "n_trials": 66,
+  "pred_log10_E_over_rho_x1000_mean": 4.320816585869143,
+  "static_mean": 5.239023372559321,
+  "squash_mean": 0.3142433970227674,
+  "law_prob_mean": {
+   "jelly": 0.6593067406388867,
+   "metal": 0.236788741031213,
+   "plasticine": 0.1039045162325053
+  }
+ },
+ "wood": {
+  "n_objects": 10,
+  "n_trials": 123,
+  "pred_log10_E_over_rho_x1000_mean": 4.35215353416952,
+  "static_mean": 5.24778051283254,
+  "squash_mean": 0.40998418866814745,
+  "law_prob_mean": {
+   "jelly": 0.5116607816129112,
+   "metal": 0.3188955723478443,
+   "plasticine": 0.16944364790613645
+  }
+ }
+}
+{'motion': 0.5151515151515151, 'static': 0.5169763326697633, 'squash': 0.3909256801592568} {'spearman': 0.1718057998811996, 'n': 33} {"cardboard": {"total": 58, "no_release": 3}, "foam": {"total": 36, "no_release": 6}, "rubber": {"total": 107}, "wood": {"total": 206, "no_release": 3, "short_clip": 4}, "metal": {"total": 38, "short_clip": 8, "no_release": 10}, "plastic": {"total": 221}}
+CHAIN_DONE

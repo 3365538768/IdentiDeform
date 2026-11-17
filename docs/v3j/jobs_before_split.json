@@ -1,0 +1,1142 @@
+[
+ {
+  "id": "v3j_u4_prior_000210",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 210 --arm u4_prior --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_gtmean_000210",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 210 --arm u4_gtmean --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_prior_000219",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 219 --arm u4_prior --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_gtmean_000219",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 219 --arm u4_gtmean --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_prior_000180",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 180 --arm u4_prior --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_gtmean_000180",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 180 --arm u4_gtmean --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_prior_000276",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 276 --arm u4_prior --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_gtmean_000276",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 276 --arm u4_gtmean --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_prior_000297",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 297 --arm u4_prior --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_gtmean_000297",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 297 --arm u4_gtmean --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_prior_000141",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 141 --arm u4_prior --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_gtmean_000141",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 141 --arm u4_gtmean --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_prior_000283",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 283 --arm u4_prior --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_gtmean_000283",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 283 --arm u4_gtmean --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_prior_000202",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 202 --arm u4_prior --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_gtmean_000202",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 202 --arm u4_gtmean --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_prior_000181",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 181 --arm u4_prior --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_gtmean_000181",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 181 --arm u4_gtmean --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_prior_000295",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 295 --arm u4_prior --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_gtmean_000295",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 295 --arm u4_gtmean --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_prior_000118",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 118 --arm u4_prior --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_gtmean_000118",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 118 --arm u4_gtmean --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_prior_000052",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 52 --arm u4_prior --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_gtmean_000052",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 52 --arm u4_gtmean --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_prior_000248",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 248 --arm u4_prior --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_gtmean_000248",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 248 --arm u4_gtmean --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_prior_000113",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 113 --arm u4_prior --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_gtmean_000113",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 113 --arm u4_gtmean --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_prior_000272",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 272 --arm u4_prior --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_gtmean_000272",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 272 --arm u4_gtmean --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_prior_000134",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 134 --arm u4_prior --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_gtmean_000134",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 134 --arm u4_gtmean --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_prior_000119",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 119 --arm u4_prior --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_gtmean_000119",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 119 --arm u4_gtmean --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_prior_000071",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 71 --arm u4_prior --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_gtmean_000071",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 71 --arm u4_gtmean --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_prior_000231",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 231 --arm u4_prior --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_gtmean_000231",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 231 --arm u4_gtmean --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_prior_000228",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 228 --arm u4_prior --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_gtmean_000228",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 228 --arm u4_gtmean --budget 24",
+  "slots": 1
+ },
+ {
+  "id": "v3j_u4_prior_000210_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 210 --arm u4_prior --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_prior_000210"
+  ]
+ },
+ {
+  "id": "v3j_u4_gtmean_000210_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 210 --arm u4_gtmean --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_gtmean_000210"
+  ]
+ },
+ {
+  "id": "v3j_u4_prior_000219_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 219 --arm u4_prior --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_prior_000219"
+  ]
+ },
+ {
+  "id": "v3j_u4_gtmean_000219_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 219 --arm u4_gtmean --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_gtmean_000219"
+  ]
+ },
+ {
+  "id": "v3j_u4_prior_000180_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 180 --arm u4_prior --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_prior_000180"
+  ]
+ },
+ {
+  "id": "v3j_u4_gtmean_000180_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 180 --arm u4_gtmean --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_gtmean_000180"
+  ]
+ },
+ {
+  "id": "v3j_u4_prior_000276_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 276 --arm u4_prior --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_prior_000276"
+  ]
+ },
+ {
+  "id": "v3j_u4_gtmean_000276_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 276 --arm u4_gtmean --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_gtmean_000276"
+  ]
+ },
+ {
+  "id": "v3j_u4_prior_000297_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 297 --arm u4_prior --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_prior_000297"
+  ]
+ },
+ {
+  "id": "v3j_u4_gtmean_000297_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 297 --arm u4_gtmean --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_gtmean_000297"
+  ]
+ },
+ {
+  "id": "v3j_u4_prior_000141_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 141 --arm u4_prior --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_prior_000141"
+  ]
+ },
+ {
+  "id": "v3j_u4_gtmean_000141_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 141 --arm u4_gtmean --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_gtmean_000141"
+  ]
+ },
+ {
+  "id": "v3j_u4_prior_000283_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 283 --arm u4_prior --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_prior_000283"
+  ]
+ },
+ {
+  "id": "v3j_u4_gtmean_000283_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 283 --arm u4_gtmean --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_gtmean_000283"
+  ]
+ },
+ {
+  "id": "v3j_u4_prior_000202_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 202 --arm u4_prior --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_prior_000202"
+  ]
+ },
+ {
+  "id": "v3j_u4_gtmean_000202_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 202 --arm u4_gtmean --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_gtmean_000202"
+  ]
+ },
+ {
+  "id": "v3j_u4_prior_000181_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 181 --arm u4_prior --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_prior_000181"
+  ]
+ },
+ {
+  "id": "v3j_u4_gtmean_000181_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 181 --arm u4_gtmean --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_gtmean_000181"
+  ]
+ },
+ {
+  "id": "v3j_u4_prior_000295_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 295 --arm u4_prior --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_prior_000295"
+  ]
+ },
+ {
+  "id": "v3j_u4_gtmean_000295_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 295 --arm u4_gtmean --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_gtmean_000295"
+  ]
+ },
+ {
+  "id": "v3j_u4_prior_000118_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 118 --arm u4_prior --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_prior_000118"
+  ]
+ },
+ {
+  "id": "v3j_u4_gtmean_000118_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 118 --arm u4_gtmean --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_gtmean_000118"
+  ]
+ },
+ {
+  "id": "v3j_u4_prior_000052_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 52 --arm u4_prior --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_prior_000052"
+  ]
+ },
+ {
+  "id": "v3j_u4_gtmean_000052_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 52 --arm u4_gtmean --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_gtmean_000052"
+  ]
+ },
+ {
+  "id": "v3j_u4_prior_000248_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 248 --arm u4_prior --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_prior_000248"
+  ]
+ },
+ {
+  "id": "v3j_u4_gtmean_000248_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 248 --arm u4_gtmean --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_gtmean_000248"
+  ]
+ },
+ {
+  "id": "v3j_u4_prior_000113_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 113 --arm u4_prior --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_prior_000113"
+  ]
+ },
+ {
+  "id": "v3j_u4_gtmean_000113_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 113 --arm u4_gtmean --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_gtmean_000113"
+  ]
+ },
+ {
+  "id": "v3j_u4_prior_000272_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 272 --arm u4_prior --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_prior_000272"
+  ]
+ },
+ {
+  "id": "v3j_u4_gtmean_000272_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 272 --arm u4_gtmean --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_gtmean_000272"
+  ]
+ },
+ {
+  "id": "v3j_u4_prior_000134_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 134 --arm u4_prior --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_prior_000134"
+  ]
+ },
+ {
+  "id": "v3j_u4_gtmean_000134_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 134 --arm u4_gtmean --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_gtmean_000134"
+  ]
+ },
+ {
+  "id": "v3j_u4_prior_000119_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 119 --arm u4_prior --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_prior_000119"
+  ]
+ },
+ {
+  "id": "v3j_u4_gtmean_000119_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 119 --arm u4_gtmean --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_gtmean_000119"
+  ]
+ },
+ {
+  "id": "v3j_u4_prior_000071_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 71 --arm u4_prior --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_prior_000071"
+  ]
+ },
+ {
+  "id": "v3j_u4_gtmean_000071_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 71 --arm u4_gtmean --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_gtmean_000071"
+  ]
+ },
+ {
+  "id": "v3j_u4_prior_000231_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 231 --arm u4_prior --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_prior_000231"
+  ]
+ },
+ {
+  "id": "v3j_u4_gtmean_000231_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 231 --arm u4_gtmean --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_gtmean_000231"
+  ]
+ },
+ {
+  "id": "v3j_u4_prior_000228_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 228 --arm u4_prior --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_prior_000228"
+  ]
+ },
+ {
+  "id": "v3j_u4_gtmean_000228_replay",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 228 --arm u4_gtmean --budget 24 --replay",
+  "slots": 4,
+  "after": [
+   "v3j_u4_gtmean_000228"
+  ]
+ },
+ {
+  "id": "v3j_cma_prior_000210_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 210 --arm cma_prior --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_gtmean_000210_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 210 --arm cma_gtmean --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_best3_000210_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 210 --arm cma_best3 --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_prior_000219_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 219 --arm cma_prior --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_gtmean_000219_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 219 --arm cma_gtmean --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_best3_000219_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 219 --arm cma_best3 --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_prior_000180_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 180 --arm cma_prior --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_gtmean_000180_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 180 --arm cma_gtmean --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_best3_000180_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 180 --arm cma_best3 --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_prior_000276_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 276 --arm cma_prior --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_gtmean_000276_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 276 --arm cma_gtmean --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_best3_000276_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 276 --arm cma_best3 --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_prior_000297_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 297 --arm cma_prior --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_gtmean_000297_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 297 --arm cma_gtmean --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_best3_000297_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 297 --arm cma_best3 --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_prior_000141_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 141 --arm cma_prior --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_gtmean_000141_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 141 --arm cma_gtmean --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_best3_000141_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 141 --arm cma_best3 --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_prior_000283_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 283 --arm cma_prior --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_gtmean_000283_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 283 --arm cma_gtmean --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_best3_000283_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 283 --arm cma_best3 --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_prior_000202_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 202 --arm cma_prior --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_gtmean_000202_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 202 --arm cma_gtmean --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_best3_000202_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 202 --arm cma_best3 --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_prior_000181_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 181 --arm cma_prior --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_gtmean_000181_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 181 --arm cma_gtmean --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_best3_000181_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 181 --arm cma_best3 --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_prior_000295_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 295 --arm cma_prior --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_gtmean_000295_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 295 --arm cma_gtmean --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_best3_000295_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 295 --arm cma_best3 --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_prior_000118_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 118 --arm cma_prior --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_gtmean_000118_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 118 --arm cma_gtmean --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_best3_000118_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 118 --arm cma_best3 --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_prior_000052_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 52 --arm cma_prior --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_gtmean_000052_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 52 --arm cma_gtmean --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_best3_000052_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 52 --arm cma_best3 --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_prior_000248_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 248 --arm cma_prior --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_gtmean_000248_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 248 --arm cma_gtmean --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_best3_000248_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 248 --arm cma_best3 --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_prior_000113_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 113 --arm cma_prior --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_gtmean_000113_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 113 --arm cma_gtmean --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_best3_000113_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 113 --arm cma_best3 --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_prior_000272_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 272 --arm cma_prior --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_gtmean_000272_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 272 --arm cma_gtmean --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_best3_000272_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 272 --arm cma_best3 --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_prior_000134_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 134 --arm cma_prior --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_gtmean_000134_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 134 --arm cma_gtmean --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_best3_000134_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 134 --arm cma_best3 --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_prior_000119_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 119 --arm cma_prior --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_gtmean_000119_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 119 --arm cma_gtmean --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_best3_000119_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 119 --arm cma_best3 --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_prior_000071_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 71 --arm cma_prior --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_gtmean_000071_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 71 --arm cma_gtmean --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_best3_000071_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 71 --arm cma_best3 --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_prior_000231_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 231 --arm cma_prior --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_gtmean_000231_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 231 --arm cma_gtmean --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_best3_000231_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 231 --arm cma_best3 --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_prior_000228_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 228 --arm cma_prior --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_gtmean_000228_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 228 --arm cma_gtmean --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_best3_000228_b12",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 228 --arm cma_best3 --budget 12",
+  "slots": 4
+ },
+ {
+  "id": "v3j_cma_gtmean_000210_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 210 --arm cma_gtmean --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_gtmean_000210_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_best3_000210_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 210 --arm cma_best3 --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_best3_000210_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_gtmean_000219_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 219 --arm cma_gtmean --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_gtmean_000219_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_best3_000219_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 219 --arm cma_best3 --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_best3_000219_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_gtmean_000180_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 180 --arm cma_gtmean --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_gtmean_000180_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_best3_000180_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 180 --arm cma_best3 --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_best3_000180_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_gtmean_000276_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 276 --arm cma_gtmean --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_gtmean_000276_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_best3_000276_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 276 --arm cma_best3 --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_best3_000276_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_gtmean_000297_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 297 --arm cma_gtmean --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_gtmean_000297_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_best3_000297_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 297 --arm cma_best3 --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_best3_000297_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_gtmean_000141_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 141 --arm cma_gtmean --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_gtmean_000141_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_best3_000141_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 141 --arm cma_best3 --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_best3_000141_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_gtmean_000283_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 283 --arm cma_gtmean --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_gtmean_000283_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_best3_000283_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 283 --arm cma_best3 --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_best3_000283_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_gtmean_000202_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 202 --arm cma_gtmean --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_gtmean_000202_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_best3_000202_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 202 --arm cma_best3 --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_best3_000202_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_gtmean_000181_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 181 --arm cma_gtmean --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_gtmean_000181_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_best3_000181_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 181 --arm cma_best3 --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_best3_000181_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_gtmean_000295_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 295 --arm cma_gtmean --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_gtmean_000295_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_best3_000295_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 295 --arm cma_best3 --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_best3_000295_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_gtmean_000118_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 118 --arm cma_gtmean --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_gtmean_000118_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_best3_000118_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 118 --arm cma_best3 --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_best3_000118_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_gtmean_000052_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 52 --arm cma_gtmean --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_gtmean_000052_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_best3_000052_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 52 --arm cma_best3 --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_best3_000052_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_gtmean_000248_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 248 --arm cma_gtmean --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_gtmean_000248_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_best3_000248_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 248 --arm cma_best3 --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_best3_000248_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_gtmean_000113_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 113 --arm cma_gtmean --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_gtmean_000113_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_best3_000113_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 113 --arm cma_best3 --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_best3_000113_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_gtmean_000272_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 272 --arm cma_gtmean --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_gtmean_000272_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_best3_000272_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 272 --arm cma_best3 --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_best3_000272_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_gtmean_000134_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 134 --arm cma_gtmean --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_gtmean_000134_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_best3_000134_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 134 --arm cma_best3 --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_best3_000134_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_gtmean_000119_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 119 --arm cma_gtmean --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_gtmean_000119_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_best3_000119_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 119 --arm cma_best3 --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_best3_000119_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_gtmean_000071_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 71 --arm cma_gtmean --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_gtmean_000071_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_best3_000071_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 71 --arm cma_best3 --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_best3_000071_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_gtmean_000231_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 231 --arm cma_gtmean --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_gtmean_000231_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_best3_000231_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 231 --arm cma_best3 --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_best3_000231_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_gtmean_000228_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 228 --arm cma_gtmean --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_gtmean_000228_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_best3_000228_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 228 --arm cma_best3 --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_best3_000228_b12"
+  ]
+ }
+]

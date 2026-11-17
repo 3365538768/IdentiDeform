@@ -1,0 +1,62 @@
+2026-11-14T01:13:23+00:00 START .venv/bin/python -I scripts/v3f/springgaus_real.py build data/external_datasets/springgaus_gdrive/real_capture.zip data/prepared/v3f_springgaus_real_vjl
+2026-11-14T01:13:23+00:00 END rc=0
+2026-11-14T01:13:23+00:00 START .venv/bin/python -I scripts/v3f/springgaus_real.py predict data/prepared/v3f_springgaus_real_vjl docs/v3f/SPRINGGAUS_REAL_PRED.json
+2026-11-14T01:13:23+00:00 END rc=0
+2026-11-14T01:14:29+00:00 START .venv/bin/python -I scripts/v3f/springgaus_real.py build data/external_datasets/springgaus_gdrive/real_capture.zip data/prepared/v3f_springgaus_real_vjl
+bun reproj px mean 4.1
+burger reproj px mean 3.95
+dog reproj px mean 3.45
+pig reproj px mean 3.55
+potato reproj px mean 4.63
+2026-11-14T01:14:58+00:00 END rc=0
+2026-11-14T01:14:58+00:00 START .venv/bin/python -I scripts/v3f/springgaus_real.py predict data/prepared/v3f_springgaus_real_vjl docs/v3f/SPRINGGAUS_REAL_PRED.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/scripts/v3f/springgaus_real.py:125: DeprecationWarning: __array_wrap__ must accept context and return_scalar arguments (positionally) in the future. (Deprecated NumPy 2.0)
+  'E_over_rho_x1000_decoded': float(dec[0]), 'log10_E_over_rho_x1000': float(np.log10(dec[0])),
+{
+ "bun": [
+  4.27,
+  "jelly",
+  {
+   "jelly": 9,
+   "metal": 0,
+   "plasticine": 0
+  }
+ ],
+ "burger": [
+  4.5,
+  "jelly",
+  {
+   "jelly": 8,
+   "metal": 1,
+   "plasticine": 0
+  }
+ ],
+ "dog": [
+  4.39,
+  "jelly",
+  {
+   "jelly": 9,
+   "metal": 0,
+   "plasticine": 0
+  }
+ ],
+ "pig": [
+  4.25,
+  "jelly",
+  {
+   "jelly": 9,
+   "metal": 0,
+   "plasticine": 0
+  }
+ ],
+ "potato": [
+  4.28,
+  "jelly",
+  {
+   "jelly": 9,
+   "metal": 0,
+   "plasticine": 0
+  }
+ ]
+}
+2026-11-14T01:15:16+00:00 END rc=0

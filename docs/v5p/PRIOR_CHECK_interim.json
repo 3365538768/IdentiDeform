@@ -1,0 +1,2084 @@
+{
+ "arms_def": {
+  "V3_t1000": [
+   "v3t1k",
+   "data/manifests/v3main_t1000"
+  ],
+  "V4_t1000": [
+   "v4t1k",
+   "data/manifests/v4main_t1000"
+  ],
+  "V5a_t1000": [
+   "v5at1k",
+   "data/manifests/v5amain_t1000"
+  ],
+  "V5b_t1000": [
+   "v5bt1k",
+   "data/manifests/v5bmain_t1000"
+  ]
+ },
+ "written_utc": "2026-11-15T22:00:16Z",
+ "doc": "V4 prior usefulness check: V4 (gravity 2 on every action) vs V3 (paired: same val indices, objects, parameters),\nboth trained on train indices 0-999 with the unchanged V2 recipe (configs/v2main/*, own train standardization).\nVal predictions = best val epoch of each run (scripts/r1_report.best_dir). Writes docs/v4/PRIOR_CHECK.json + _ZH.md.\n\nMetrics per arm/group (3-seed groups: per-seed metric averaged over available seeds; ensemble = mean z, vote law):\n  decade MAE of E/rho and sigma_y/rho, gain over the constant (train-mean) baseline = 1 - MAE_model / MAE_const,\n  class accuracy, within-class Spearman (mean over classes; per action; per class), z-MAE.\nCIs: object bootstrap (2000, seed 17). V4-V3 paired differences resample the same val objects (index-paired).\n  .venv/bin/python scripts/v4p/prior_check.py\n",
+ "paired_val_samples": 283,
+ "arms": {
+  "V3_t1000": {
+   "B": {
+    "seeds": [
+     17,
+     29,
+     43
+    ],
+    "train_std_decades": {
+     "E_over_rho": 0.6641213109340305,
+     "sigma_y_over_rho": 0.3648259820719847
+    },
+    "point": {
+     "z_mae": 0.8268824059655627,
+     "law_accuracy": 0.4334511189634864,
+     "decade_mae_E_over_rho": 0.5293569239532864,
+     "const_decade_mae_E_over_rho": 0.5591565673099799,
+     "gain_over_const_E_over_rho": 0.05329391640708984,
+     "within_class_spearman_E_over_rho": 0.21770569331417197,
+     "per_class_spearman_E_over_rho": {
+      "jelly": -0.01533578012823484,
+      "metal": 0.47224948245362963,
+      "plasticine": 0.19620337761712106
+     },
+     "per_action_spearman_E_over_rho": {
+      "bend": 0.19968750430845775,
+      "drop": 0.23986928104575164,
+      "press": 0.10687573520566758,
+      "shear": 0.22663555055217097,
+      "stretch": 0.2184851010730907,
+      "tap30hold": 0.2743914059618661
+     },
+     "decade_mae_sigma_y_over_rho": 0.3105621792572195,
+     "const_decade_mae_sigma_y_over_rho": 0.3315044017739223,
+     "gain_over_const_sigma_y_over_rho": 0.06317328640174398,
+     "within_class_spearman_sigma_y_over_rho": 0.3483034237977085,
+     "per_class_spearman_sigma_y_over_rho": {
+      "jelly": null,
+      "metal": 0.32727367301559046,
+      "plasticine": 0.36933317457982656
+     },
+     "per_action_spearman_sigma_y_over_rho": {
+      "bend": 0.6363487679070766,
+      "drop": 0.5575396825396824,
+      "press": 0.31764705882352945,
+      "shear": 0.025498626561122676,
+      "stretch": 0.44429233100810556,
+      "tap30hold": 0.4107004107004107
+     },
+     "per_class_accuracy": {
+      "jelly": 0.27017543859649124,
+      "metal": 0.4290780141843972,
+      "plasticine": 0.6028368794326241
+     },
+     "per_action_accuracy": {
+      "bend": 0.4202898550724638,
+      "drop": 0.4444444444444444,
+      "press": 0.4236111111111111,
+      "shear": 0.45138888888888884,
+      "stretch": 0.4444444444444445,
+      "tap30hold": 0.4148148148148148
+     }
+    },
+    "ci95": {
+     "z_mae": [
+      0.8065817813692748,
+      0.8480767021491785
+     ],
+     "law_accuracy": [
+      0.4093731268845543,
+      0.4574543002697033
+     ],
+     "decade_mae_E_over_rho": [
+      0.48476766868389604,
+      0.5713708067692774
+     ],
+     "const_decade_mae_E_over_rho": [
+      0.5149081701160882,
+      0.6039204516086274
+     ],
+     "gain_over_const_E_over_rho": [
+      0.02456040643867887,
+      0.07725633476413077
+     ],
+     "within_class_spearman_E_over_rho": [
+      0.12900630005673477,
+      0.3049876619975573
+     ],
+     "decade_mae_sigma_y_over_rho": [
+      0.2856265246420511,
+      0.33915244186421706
+     ],
+     "const_decade_mae_sigma_y_over_rho": [
+      0.30832330867610713,
+      0.3583569333241696
+     ],
+     "gain_over_const_sigma_y_over_rho": [
+      0.03468119712439262,
+      0.09498897958430352
+     ],
+     "within_class_spearman_sigma_y_over_rho": [
+      0.20223182111428745,
+      0.46024129093080396
+     ]
+    }
+   },
+   "C": {
+    "seeds": [
+     17,
+     29,
+     43
+    ],
+    "train_std_decades": {
+     "E_over_rho": 0.6641213109340305,
+     "sigma_y_over_rho": 0.3648259820719847
+    },
+    "point": {
+     "z_mae": 0.8255652192479106,
+     "law_accuracy": 0.4664310954063604,
+     "decade_mae_E_over_rho": 0.5259108450035889,
+     "const_decade_mae_E_over_rho": 0.5591565673099799,
+     "gain_over_const_E_over_rho": 0.0594569110872315,
+     "within_class_spearman_E_over_rho": 0.21429434265546157,
+     "per_class_spearman_E_over_rho": {
+      "jelly": -0.025994580557085145,
+      "metal": 0.4683981817400839,
+      "plasticine": 0.20047942678338607
+     },
+     "per_action_spearman_E_over_rho": {
+      "bend": 0.16300186741363207,
+      "drop": 0.2581699346405229,
+      "press": 0.05468662361651014,
+      "shear": 0.23170030863542346,
+      "stretch": 0.18937819325432695,
+      "tap30hold": 0.2176596171177737
+     },
+     "decade_mae_sigma_y_over_rho": 0.3105752649830104,
+     "const_decade_mae_sigma_y_over_rho": 0.3315044017739223,
+     "gain_over_const_sigma_y_over_rho": 0.06313381263994522,
+     "within_class_spearman_sigma_y_over_rho": 0.3363890303759502,
+     "per_class_spearman_sigma_y_over_rho": {
+      "jelly": null,
+      "metal": 0.310549179394272,
+      "plasticine": 0.3622288813576284
+     },
+     "per_action_spearman_sigma_y_over_rho": {
+      "bend": 0.6271916209905658,
+      "drop": 0.5041666666666667,
+      "press": 0.36592039712192453,
+      "shear": 0.06725016470424282,
+      "stretch": 0.47605607510150466,
+      "tap30hold": 0.3613719613719614
+     },
+     "per_class_accuracy": {
+      "jelly": 0.6070175438596491,
+      "metal": 0.43971631205673756,
+      "plasticine": 0.351063829787234
+     },
+     "per_action_accuracy": {
+      "bend": 0.45652173913043476,
+      "drop": 0.46527777777777785,
+      "press": 0.3819444444444444,
+      "shear": 0.47222222222222227,
+      "stretch": 0.5555555555555556,
+      "tap30hold": 0.4666666666666666
+     }
+    },
+    "ci95": {
+     "z_mae": [
+      0.8052232978003604,
+      0.8453695188414649
+     ],
+     "law_accuracy": [
+      0.4219054502623407,
+      0.52
+     ],
+     "decade_mae_E_over_rho": [
+      0.4792129911931633,
+      0.5704233258993447
+     ],
+     "const_decade_mae_E_over_rho": [
+      0.5149081701160882,
+      0.6039204516086274
+     ],
+     "gain_over_const_E_over_rho": [
+      0.025226804709525662,
+      0.09383807534298617
+     ],
+     "within_class_spearman_E_over_rho": [
+      0.12142854787109374,
+      0.2922320030270812
+     ],
+     "decade_mae_sigma_y_over_rho": [
+      0.2860205634756971,
+      0.3396231336102364
+     ],
+     "const_decade_mae_sigma_y_over_rho": [
+      0.30832330867610713,
+      0.3583569333241696
+     ],
+     "gain_over_const_sigma_y_over_rho": [
+      0.044824910075459766,
+      0.08236716871540448
+     ],
+     "within_class_spearman_sigma_y_over_rho": [
+      0.2020915098401531,
+      0.4551924623517449
+     ]
+    }
+   },
+   "D": {
+    "seeds": [
+     17,
+     29,
+     43
+    ],
+    "train_std_decades": {
+     "E_over_rho": 0.6641213109340305,
+     "sigma_y_over_rho": 0.3648259820719847
+    },
+    "point": {
+     "z_mae": 0.8190586700857995,
+     "law_accuracy": 0.46525323910482924,
+     "decade_mae_E_over_rho": 0.5134029573960347,
+     "const_decade_mae_E_over_rho": 0.5591565673099799,
+     "gain_over_const_E_over_rho": 0.08182611559774593,
+     "within_class_spearman_E_over_rho": 0.29008653108711446,
+     "per_class_spearman_E_over_rho": {
+      "jelly": 0.0792587354029095,
+      "metal": 0.4812095663201567,
+      "plasticine": 0.3097912915382771
+     },
+     "per_action_spearman_E_over_rho": {
+      "bend": 0.2897402734942214,
+      "drop": 0.3497391153827158,
+      "press": 0.14346405228758172,
+      "shear": 0.2609675584160663,
+      "stretch": 0.2954248366013072,
+      "tap30hold": 0.2799771696821451
+     },
+     "decade_mae_sigma_y_over_rho": 0.30581169769168953,
+     "const_decade_mae_sigma_y_over_rho": 0.3315044017739223,
+     "gain_over_const_sigma_y_over_rho": 0.07750335725482937,
+     "within_class_spearman_sigma_y_over_rho": 0.40347454884788814,
+     "per_class_spearman_sigma_y_over_rho": {
+      "jelly": null,
+      "metal": 0.33532537176233923,
+      "plasticine": 0.471623725933437
+     },
+     "per_action_spearman_sigma_y_over_rho": {
+      "bend": 0.6378205128205128,
+      "drop": 0.48936181537165174,
+      "press": 0.4013071895424836,
+      "shear": 0.17775802628743806,
+      "stretch": 0.3332333453882496,
+      "tap30hold": 0.4408361344517406
+     },
+     "per_class_accuracy": {
+      "jelly": 0.4140350877192982,
+      "metal": 0.5106382978723404,
+      "plasticine": 0.4716312056737588
+     },
+     "per_action_accuracy": {
+      "bend": 0.43478260869565216,
+      "drop": 0.5277777777777778,
+      "press": 0.40972222222222227,
+      "shear": 0.4444444444444444,
+      "stretch": 0.5208333333333334,
+      "tap30hold": 0.4518518518518519
+     }
+    },
+    "ci95": {
+     "z_mae": [
+      0.7954774486168847,
+      0.8422526572050909
+     ],
+     "law_accuracy": [
+      0.4273992091330373,
+      0.5
+     ],
+     "decade_mae_E_over_rho": [
+      0.4595078417227302,
+      0.5640452788032957
+     ],
+     "const_decade_mae_E_over_rho": [
+      0.5149081701160882,
+      0.6039204516086274
+     ],
+     "gain_over_const_E_over_rho": [
+      0.04352122164837301,
+      0.12488268646701534
+     ],
+     "within_class_spearman_E_over_rho": [
+      0.17700649888981096,
+      0.3949286522881094
+     ],
+     "decade_mae_sigma_y_over_rho": [
+      0.2768923119038116,
+      0.33955188398969793
+     ],
+     "const_decade_mae_sigma_y_over_rho": [
+      0.30832330867610713,
+      0.3583569333241696
+     ],
+     "gain_over_const_sigma_y_over_rho": [
+      0.048453535824439536,
+      0.10803703752418477
+     ],
+     "within_class_spearman_sigma_y_over_rho": [
+      0.2818854335943929,
+      0.506357521892625
+     ]
+    }
+   },
+   "ensemble_9": {
+    "point": {
+     "z_mae": 0.8154215884921991,
+     "law_accuracy": 0.4734982332155477,
+     "decade_mae_E_over_rho": 0.5138203890837555,
+     "const_decade_mae_E_over_rho": 0.5591565673099799,
+     "gain_over_const_E_over_rho": 0.08107957748637395,
+     "within_class_spearman_E_over_rho": 0.2776616816578165,
+     "per_class_spearman_E_over_rho": {
+      "jelly": 0.037709966405375134,
+      "metal": 0.5062962829173139,
+      "plasticine": 0.2889787956507604
+     },
+     "per_action_spearman_E_over_rho": {
+      "bend": 0.2660364145658263,
+      "drop": 0.3284313725490196,
+      "press": 0.14607843137254906,
+      "shear": 0.30196078431372547,
+      "stretch": 0.2549019607843137,
+      "tap30hold": 0.29285714285714287
+     },
+     "decade_mae_sigma_y_over_rho": 0.3043455418910236,
+     "const_decade_mae_sigma_y_over_rho": 0.3315044017739223,
+     "gain_over_const_sigma_y_over_rho": 0.08192609129039674,
+     "within_class_spearman_sigma_y_over_rho": 0.42081700586697085,
+     "per_class_spearman_sigma_y_over_rho": {
+      "jelly": null,
+      "metal": 0.38517279821627654,
+      "plasticine": 0.45646121351766517
+     },
+     "per_action_spearman_sigma_y_over_rho": {
+      "bend": 0.7126373626373625,
+      "drop": 0.5720238095238095,
+      "press": 0.46225490196078434,
+      "shear": 0.1589366515837104,
+      "stretch": 0.40909090909090906,
+      "tap30hold": 0.4851814851814852
+     },
+     "per_class_accuracy": {
+      "jelly": 0.4421052631578947,
+      "metal": 0.48936170212765956,
+      "plasticine": 0.48936170212765956
+     },
+     "per_action_accuracy": {
+      "bend": 0.5,
+      "drop": 0.4375,
+      "press": 0.375,
+      "shear": 0.5,
+      "stretch": 0.5416666666666666,
+      "tap30hold": 0.4888888888888889
+     }
+    },
+    "ci95": {
+     "z_mae": [
+      0.7941174949443882,
+      0.8362738752855099
+     ],
+     "law_accuracy": [
+      0.4336917562724014,
+      0.5125516956162116
+     ],
+     "decade_mae_E_over_rho": [
+      0.46611054419143033,
+      0.5590051530084155
+     ],
+     "const_decade_mae_E_over_rho": [
+      0.5149081701160882,
+      0.6039204516086274
+     ],
+     "gain_over_const_E_over_rho": [
+      0.05042040261090959,
+      0.11509692839097517
+     ],
+     "within_class_spearman_E_over_rho": [
+      0.17391296091249314,
+      0.3724077046433382
+     ],
+     "decade_mae_sigma_y_over_rho": [
+      0.2770019542194353,
+      0.33593970591093164
+     ],
+     "const_decade_mae_sigma_y_over_rho": [
+      0.30832330867610713,
+      0.3583569333241696
+     ],
+     "gain_over_const_sigma_y_over_rho": [
+      0.05643102523319758,
+      0.11104976521010956
+     ],
+     "within_class_spearman_sigma_y_over_rho": [
+      0.2644159809809461,
+      0.5373679269168894
+     ]
+    },
+    "seeds": [
+     0
+    ],
+    "train_std_decades": null
+   }
+  },
+  "V4_t1000": {
+   "B": {
+    "seeds": [
+     17,
+     29,
+     43
+    ],
+    "train_std_decades": {
+     "E_over_rho": 0.6641213109340305,
+     "sigma_y_over_rho": 0.3648259820719847
+    },
+    "point": {
+     "z_mae": 0.8272027196086374,
+     "law_accuracy": 0.46878680800942285,
+     "decade_mae_E_over_rho": 0.5173660907869031,
+     "const_decade_mae_E_over_rho": 0.5591565673099799,
+     "gain_over_const_E_over_rho": 0.07473841669091826,
+     "within_class_spearman_E_over_rho": 0.28507602878068744,
+     "per_class_spearman_E_over_rho": {
+      "jelly": 0.1345043719334012,
+      "metal": 0.41956705662659016,
+      "plasticine": 0.3011566577820708
+     },
+     "per_action_spearman_E_over_rho": {
+      "bend": 0.4822666612009951,
+      "drop": 0.3730720517916685,
+      "press": 0.13548241138610248,
+      "shear": 0.1960796341602924,
+      "stretch": 0.42682681264544725,
+      "tap30hold": 0.27630003203158915
+     },
+     "decade_mae_sigma_y_over_rho": 0.31805621623632324,
+     "const_decade_mae_sigma_y_over_rho": 0.3315044017739223,
+     "gain_over_const_sigma_y_over_rho": 0.040567140181657045,
+     "within_class_spearman_sigma_y_over_rho": 0.20034132276693542,
+     "per_class_spearman_sigma_y_over_rho": {
+      "jelly": null,
+      "metal": 0.2588656917732635,
+      "plasticine": 0.1418169537606073
+     },
+     "per_action_spearman_sigma_y_over_rho": {
+      "bend": 0.3584803703097883,
+      "drop": 0.2654761904761905,
+      "press": 0.14664789239354442,
+      "shear": -0.017781728075845726,
+      "stretch": 0.2462213459002185,
+      "tap30hold": 0.24584115526999653
+     },
+     "per_class_accuracy": {
+      "jelly": 0.6491228070175438,
+      "metal": 0.524822695035461,
+      "plasticine": 0.2304964539007092
+     },
+     "per_action_accuracy": {
+      "bend": 0.5217391304347826,
+      "drop": 0.4930555555555555,
+      "press": 0.4513888888888889,
+      "shear": 0.4305555555555556,
+      "stretch": 0.4583333333333333,
+      "tap30hold": 0.45925925925925926
+     }
+    },
+    "ci95": {
+     "z_mae": [
+      0.8008232828522708,
+      0.8544175020622419
+     ],
+     "law_accuracy": [
+      0.42619047619047623,
+      0.5142511949017525
+     ],
+     "decade_mae_E_over_rho": [
+      0.46214110517713763,
+      0.5709016449848622
+     ],
+     "const_decade_mae_E_over_rho": [
+      0.5149081701160882,
+      0.6039204516086274
+     ],
+     "gain_over_const_E_over_rho": [
+      0.020678725114926987,
+      0.12867804590847798
+     ],
+     "within_class_spearman_E_over_rho": [
+      0.18839687130117128,
+      0.3946120771661965
+     ],
+     "decade_mae_sigma_y_over_rho": [
+      0.2909028474973765,
+      0.3465167594050134
+     ],
+     "const_decade_mae_sigma_y_over_rho": [
+      0.30832330867610713,
+      0.3583569333241696
+     ],
+     "gain_over_const_sigma_y_over_rho": [
+      0.002664134239570629,
+      0.08143826501388807
+     ],
+     "within_class_spearman_sigma_y_over_rho": [
+      0.07158452957384319,
+      0.3618622741671436
+     ]
+    }
+   },
+   "C": {
+    "seeds": [
+     17,
+     29,
+     43
+    ],
+    "train_std_decades": {
+     "E_over_rho": 0.6641213109340305,
+     "sigma_y_over_rho": 0.3648259820719847
+    },
+    "point": {
+     "z_mae": 0.8238945713749725,
+     "law_accuracy": 0.4652532391048292,
+     "decade_mae_E_over_rho": 0.5140141180273756,
+     "const_decade_mae_E_over_rho": 0.5591565673099799,
+     "gain_over_const_E_over_rho": 0.08073311112087611,
+     "within_class_spearman_E_over_rho": 0.28396125483364815,
+     "per_class_spearman_E_over_rho": {
+      "jelly": 0.1245850596411548,
+      "metal": 0.4552281101173394,
+      "plasticine": 0.27207059474245043
+     },
+     "per_action_spearman_E_over_rho": {
+      "bend": 0.26023927751211756,
+      "drop": 0.3560730549157614,
+      "press": 0.17765250745643213,
+      "shear": 0.20163398692810455,
+      "stretch": 0.5,
+      "tap30hold": 0.28335603948484844
+     },
+     "decade_mae_sigma_y_over_rho": 0.317198000573837,
+     "const_decade_mae_sigma_y_over_rho": 0.3315044017739223,
+     "gain_over_const_sigma_y_over_rho": 0.04315599166566105,
+     "within_class_spearman_sigma_y_over_rho": 0.25589109342547245,
+     "per_class_spearman_sigma_y_over_rho": {
+      "jelly": null,
+      "metal": 0.23726823391858853,
+      "plasticine": 0.2745139529323564
+     },
+     "per_action_spearman_sigma_y_over_rho": {
+      "bend": 0.3206304517411364,
+      "drop": 0.41904761904761906,
+      "press": 0.4388575262095437,
+      "shear": -0.03286468433527257,
+      "stretch": 0.23867243867243867,
+      "tap30hold": 0.3821739503184904
+     },
+     "per_class_accuracy": {
+      "jelly": 0.4807017543859649,
+      "metal": 0.48936170212765956,
+      "plasticine": 0.425531914893617
+     },
+     "per_action_accuracy": {
+      "bend": 0.48550724637681153,
+      "drop": 0.513888888888889,
+      "press": 0.3958333333333333,
+      "shear": 0.4583333333333333,
+      "stretch": 0.4791666666666667,
+      "tap30hold": 0.45925925925925926
+     }
+    },
+    "ci95": {
+     "z_mae": [
+      0.8003775969806832,
+      0.8475945376233687
+     ],
+     "law_accuracy": [
+      0.42380588876772085,
+      0.5052292707726264
+     ],
+     "decade_mae_E_over_rho": [
+      0.45767191271755747,
+      0.5644290692165366
+     ],
+     "const_decade_mae_E_over_rho": [
+      0.5149081701160882,
+      0.6039204516086274
+     ],
+     "gain_over_const_E_over_rho": [
+      0.040998277625059365,
+      0.1282782274962974
+     ],
+     "within_class_spearman_E_over_rho": [
+      0.1929482087972155,
+      0.40184661851669795
+     ],
+     "decade_mae_sigma_y_over_rho": [
+      0.29231908692825725,
+      0.34462443868977666
+     ],
+     "const_decade_mae_sigma_y_over_rho": [
+      0.30832330867610713,
+      0.3583569333241696
+     ],
+     "gain_over_const_sigma_y_over_rho": [
+      0.021638169755821536,
+      0.06897822535939936
+     ],
+     "within_class_spearman_sigma_y_over_rho": [
+      0.12025180859167635,
+      0.3935541280954069
+     ]
+    }
+   },
+   "D": {
+    "seeds": [
+     17,
+     29,
+     43
+    ],
+    "train_std_decades": {
+     "E_over_rho": 0.6641213109340305,
+     "sigma_y_over_rho": 0.3648259820719847
+    },
+    "point": {
+     "z_mae": 0.8182751221605352,
+     "law_accuracy": 0.48174322732626623,
+     "decade_mae_E_over_rho": 0.5113948620480556,
+     "const_decade_mae_E_over_rho": 0.5591565673099799,
+     "gain_over_const_E_over_rho": 0.08541740910188851,
+     "within_class_spearman_E_over_rho": 0.3340639018313527,
+     "per_class_spearman_E_over_rho": {
+      "jelly": 0.22330410942831236,
+      "metal": 0.4455849586323389,
+      "plasticine": 0.33330263743340677
+     },
+     "per_action_spearman_E_over_rho": {
+      "bend": 0.5071422834287332,
+      "drop": 0.23986928104575164,
+      "press": 0.2768262525267559,
+      "shear": 0.2836870731644057,
+      "stretch": 0.41839182490571863,
+      "tap30hold": 0.2699454955642718
+     },
+     "decade_mae_sigma_y_over_rho": 0.31027014989748003,
+     "const_decade_mae_sigma_y_over_rho": 0.3315044017739223,
+     "gain_over_const_sigma_y_over_rho": 0.06405420791644123,
+     "within_class_spearman_sigma_y_over_rho": 0.3073297321191839,
+     "per_class_spearman_sigma_y_over_rho": {
+      "jelly": null,
+      "metal": 0.2742628922507265,
+      "plasticine": 0.34039657198764134
+     },
+     "per_action_spearman_sigma_y_over_rho": {
+      "bend": 0.370688483324769,
+      "drop": 0.4855717514356173,
+      "press": 0.32504943457625246,
+      "shear": 0.018094160741219566,
+      "stretch": 0.13585858585858587,
+      "tap30hold": 0.4093240093240093
+     },
+     "per_class_accuracy": {
+      "jelly": 0.6456140350877193,
+      "metal": 0.4609929078014184,
+      "plasticine": 0.3368794326241135
+     },
+     "per_action_accuracy": {
+      "bend": 0.47826086956521746,
+      "drop": 0.5208333333333334,
+      "press": 0.4305555555555556,
+      "shear": 0.42361111111111116,
+      "stretch": 0.5208333333333334,
+      "tap30hold": 0.5185185185185185
+     }
+    },
+    "ci95": {
+     "z_mae": [
+      0.7926172384340253,
+      0.846082105104188
+     ],
+     "law_accuracy": [
+      0.4081276553942877,
+      0.5570780205716452
+     ],
+     "decade_mae_E_over_rho": [
+      0.4537907643196179,
+      0.5650752445006489
+     ],
+     "const_decade_mae_E_over_rho": [
+      0.5149081701160882,
+      0.6039204516086274
+     ],
+     "gain_over_const_E_over_rho": [
+      0.02207650059859429,
+      0.1447703604969691
+     ],
+     "within_class_spearman_E_over_rho": [
+      0.2447862599995107,
+      0.44704700386087187
+     ],
+     "decade_mae_sigma_y_over_rho": [
+      0.2810194745235856,
+      0.33996830504398134
+     ],
+     "const_decade_mae_sigma_y_over_rho": [
+      0.30832330867610713,
+      0.3583569333241696
+     ],
+     "gain_over_const_sigma_y_over_rho": [
+      0.023787877322926494,
+      0.10830131156786921
+     ],
+     "within_class_spearman_sigma_y_over_rho": [
+      0.1675718719935385,
+      0.4396666736485382
+     ]
+    }
+   },
+   "ensemble_9": {
+    "point": {
+     "z_mae": 0.8137627158975469,
+     "law_accuracy": 0.49823321554770317,
+     "decade_mae_E_over_rho": 0.5035259963744844,
+     "const_decade_mae_E_over_rho": 0.5591565673099799,
+     "gain_over_const_E_over_rho": 0.0994901503225224,
+     "within_class_spearman_E_over_rho": 0.34342210622644465,
+     "per_class_spearman_E_over_rho": {
+      "jelly": 0.22210246360582309,
+      "metal": 0.4731784849907886,
+      "plasticine": 0.3349853700827223
+     },
+     "per_action_spearman_E_over_rho": {
+      "bend": 0.4986694677871148,
+      "drop": 0.3352941176470588,
+      "press": 0.23823529411764707,
+      "shear": 0.32941176470588235,
+      "stretch": 0.46960784313725484,
+      "tap30hold": 0.3511904761904761
+     },
+     "decade_mae_sigma_y_over_rho": 0.31195494547492597,
+     "const_decade_mae_sigma_y_over_rho": 0.3315044017739223,
+     "gain_over_const_sigma_y_over_rho": 0.058971935800504305,
+     "within_class_spearman_sigma_y_over_rho": 0.3569175798488562,
+     "per_class_spearman_sigma_y_over_rho": {
+      "jelly": null,
+      "metal": 0.32366618888358023,
+      "plasticine": 0.39016897081413215
+     },
+     "per_action_spearman_sigma_y_over_rho": {
+      "bend": 0.645054945054945,
+      "drop": 0.42261904761904767,
+      "press": 0.3931372549019608,
+      "shear": -0.013736263736263736,
+      "stretch": 0.22716450216450212,
+      "tap30hold": 0.42397602397602396
+     },
+     "per_class_accuracy": {
+      "jelly": 0.7368421052631579,
+      "metal": 0.5212765957446809,
+      "plasticine": 0.23404255319148937
+     },
+     "per_action_accuracy": {
+      "bend": 0.5434782608695652,
+      "drop": 0.5416666666666666,
+      "press": 0.4166666666666667,
+      "shear": 0.4375,
+      "stretch": 0.5416666666666666,
+      "tap30hold": 0.5111111111111111
+     }
+    },
+    "ci95": {
+     "z_mae": [
+      0.7887778130840685,
+      0.8388758209553588
+     ],
+     "law_accuracy": [
+      0.42026370835200955,
+      0.5754411207875805
+     ],
+     "decade_mae_E_over_rho": [
+      0.446990782784894,
+      0.5564357783961923
+     ],
+     "const_decade_mae_E_over_rho": [
+      0.5149081701160882,
+      0.6039204516086274
+     ],
+     "gain_over_const_E_over_rho": [
+      0.050810424270511974,
+      0.15161847167436854
+     ],
+     "within_class_spearman_E_over_rho": [
+      0.2346575622478128,
+      0.47960636200393053
+     ],
+     "decade_mae_sigma_y_over_rho": [
+      0.284270224877236,
+      0.3414890282731495
+     ],
+     "const_decade_mae_sigma_y_over_rho": [
+      0.30832330867610713,
+      0.3583569333241696
+     ],
+     "gain_over_const_sigma_y_over_rho": [
+      0.026025730659593568,
+      0.098613067816258
+     ],
+     "within_class_spearman_sigma_y_over_rho": [
+      0.22786385016259833,
+      0.4815027469161188
+     ]
+    },
+    "seeds": [
+     0
+    ],
+    "train_std_decades": null
+   }
+  },
+  "V5a_t1000": {
+   "B": {
+    "seeds": [
+     17,
+     29,
+     43
+    ],
+    "train_std_decades": {
+     "E_over_rho": 0.6641213109340305,
+     "sigma_y_over_rho": 0.3648259820719847
+    },
+    "point": {
+     "z_mae": 0.8189660224373504,
+     "law_accuracy": 0.441696113074205,
+     "decade_mae_E_over_rho": 0.5012998662004352,
+     "const_decade_mae_E_over_rho": 0.5591565673099799,
+     "gain_over_const_E_over_rho": 0.10347137902338295,
+     "within_class_spearman_E_over_rho": 0.3229447090105139,
+     "per_class_spearman_E_over_rho": {
+      "jelly": 0.21809833963418548,
+      "metal": 0.36323652080844826,
+      "plasticine": 0.3874992665889079
+     },
+     "per_action_spearman_E_over_rho": {
+      "bend": 0.30562487922858766,
+      "drop": 0.28137254901960784,
+      "press": 0.05511286959298731,
+      "shear": 0.6109983497822965,
+      "stretch": 0.3594727123862462,
+      "tap30hold": 0.24285856199161251
+     },
+     "decade_mae_sigma_y_over_rho": 0.310203884625954,
+     "const_decade_mae_sigma_y_over_rho": 0.3315044017739223,
+     "gain_over_const_sigma_y_over_rho": 0.06425410050058618,
+     "within_class_spearman_sigma_y_over_rho": 0.3351832144386077,
+     "per_class_spearman_sigma_y_over_rho": {
+      "jelly": null,
+      "metal": 0.31850948579043314,
+      "plasticine": 0.35185694308678217
+     },
+     "per_action_spearman_sigma_y_over_rho": {
+      "bend": 0.4822802197802198,
+      "drop": 0.3836935273612914,
+      "press": 0.17794117647058824,
+      "shear": 0.39221075624120144,
+      "stretch": 0.10770202020202019,
+      "tap30hold": 0.2325674325674326
+     },
+     "per_class_accuracy": {
+      "jelly": 0.39999999999999997,
+      "metal": 0.3829787234042554,
+      "plasticine": 0.5425531914893618
+     },
+     "per_action_accuracy": {
+      "bend": 0.4710144927536232,
+      "drop": 0.46527777777777773,
+      "press": 0.34722222222222227,
+      "shear": 0.4791666666666667,
+      "stretch": 0.4305555555555556,
+      "tap30hold": 0.45925925925925926
+     }
+    },
+    "ci95": {
+     "z_mae": [
+      0.7940484686995556,
+      0.8440433392941649
+     ],
+     "law_accuracy": [
+      0.4099095119854837,
+      0.4706590649031585
+     ],
+     "decade_mae_E_over_rho": [
+      0.451579030981123,
+      0.5583287287726268
+     ],
+     "const_decade_mae_E_over_rho": [
+      0.5149081701160882,
+      0.6039204516086274
+     ],
+     "gain_over_const_E_over_rho": [
+      0.05229249141495997,
+      0.1569141312989045
+     ],
+     "within_class_spearman_E_over_rho": [
+      0.16938294738784063,
+      0.45211314266357916
+     ],
+     "decade_mae_sigma_y_over_rho": [
+      0.2893871022222604,
+      0.334921682190723
+     ],
+     "const_decade_mae_sigma_y_over_rho": [
+      0.30832330867610713,
+      0.3583569333241696
+     ],
+     "gain_over_const_sigma_y_over_rho": [
+      0.040845381871845235,
+      0.08590261944197272
+     ],
+     "within_class_spearman_sigma_y_over_rho": [
+      0.21371032633516804,
+      0.45304464653606236
+     ]
+    }
+   },
+   "C": {
+    "seeds": [
+     29
+    ],
+    "train_std_decades": {
+     "E_over_rho": 0.6641213109340305,
+     "sigma_y_over_rho": 0.3648259820719847
+    },
+    "point": {
+     "z_mae": 0.8193920661376349,
+     "law_accuracy": 0.47703180212014135,
+     "decade_mae_E_over_rho": 0.513784914784854,
+     "const_decade_mae_E_over_rho": 0.5591565673099799,
+     "gain_over_const_E_over_rho": 0.08114302000136064,
+     "within_class_spearman_E_over_rho": 0.2931436822025052,
+     "per_class_spearman_E_over_rho": {
+      "jelly": 0.1948646881948879,
+      "metal": 0.3407761696181174,
+      "plasticine": 0.3437901887945103
+     },
+     "per_action_spearman_E_over_rho": {
+      "bend": 0.1911064425770308,
+      "drop": 0.2235294117647059,
+      "press": 0.004901960784313736,
+      "shear": 0.5764705882352942,
+      "stretch": 0.4065396162371619,
+      "tap30hold": 0.238657436985949
+     },
+     "decade_mae_sigma_y_over_rho": 0.30890607055261204,
+     "const_decade_mae_sigma_y_over_rho": 0.3315044017739223,
+     "gain_over_const_sigma_y_over_rho": 0.06816902309708028,
+     "within_class_spearman_sigma_y_over_rho": 0.2973953112416251,
+     "per_class_spearman_sigma_y_over_rho": {
+      "jelly": null,
+      "metal": 0.29089258555298425,
+      "plasticine": 0.30389803693026596
+     },
+     "per_action_spearman_sigma_y_over_rho": {
+      "bend": 0.371565934065934,
+      "drop": 0.33511904761904765,
+      "press": 0.132843137254902,
+      "shear": 0.3005494505494506,
+      "stretch": 0.14970351789422684,
+      "tap30hold": 0.3403929403929404
+     },
+     "per_class_accuracy": {
+      "jelly": 0.10526315789473684,
+      "metal": 0.7127659574468085,
+      "plasticine": 0.6170212765957447
+     },
+     "per_action_accuracy": {
+      "bend": 0.3695652173913043,
+      "drop": 0.5625,
+      "press": 0.5,
+      "shear": 0.4583333333333333,
+      "stretch": 0.5416666666666666,
+      "tap30hold": 0.4222222222222222
+     }
+    },
+    "ci95": {
+     "z_mae": [
+      0.7942424583591156,
+      0.8442012844121346
+     ],
+     "law_accuracy": [
+      0.4232209737827715,
+      0.5234979226589964
+     ],
+     "decade_mae_E_over_rho": [
+      0.47431573593083887,
+      0.5624324732100189
+     ],
+     "const_decade_mae_E_over_rho": [
+      0.5149081701160882,
+      0.6039204516086274
+     ],
+     "gain_over_const_E_over_rho": [
+      0.03700659286164885,
+      0.12904569589250245
+     ],
+     "within_class_spearman_E_over_rho": [
+      0.13248757534274386,
+      0.4435128620469159
+     ],
+     "decade_mae_sigma_y_over_rho": [
+      0.2893906959928761,
+      0.3307725285986386
+     ],
+     "const_decade_mae_sigma_y_over_rho": [
+      0.30832330867610713,
+      0.3583569333241696
+     ],
+     "gain_over_const_sigma_y_over_rho": [
+      0.04205705679902997,
+      0.09399362182668006
+     ],
+     "within_class_spearman_sigma_y_over_rho": [
+      0.17016742771296273,
+      0.43195212442226016
+     ]
+    }
+   },
+   "D": {
+    "seeds": [
+     29
+    ],
+    "train_std_decades": {
+     "E_over_rho": 0.6641213109340305,
+     "sigma_y_over_rho": 0.3648259820719847
+    },
+    "point": {
+     "z_mae": 0.8235715681290976,
+     "law_accuracy": 0.4840989399293286,
+     "decade_mae_E_over_rho": 0.5091378381230368,
+     "const_decade_mae_E_over_rho": 0.5591565673099799,
+     "gain_over_const_E_over_rho": 0.08945388842981106,
+     "within_class_spearman_E_over_rho": 0.2819493758052247,
+     "per_class_spearman_E_over_rho": {
+      "jelly": 0.17462633818357876,
+      "metal": 0.33059750039633495,
+      "plasticine": 0.34062428883576046
+     },
+     "per_action_spearman_E_over_rho": {
+      "bend": 0.12222464311732074,
+      "drop": 0.203921568627451,
+      "press": 0.04115193371827055,
+      "shear": 0.5519607843137254,
+      "stretch": 0.4614321952770774,
+      "tap30hold": 0.21428571428571427
+     },
+     "decade_mae_sigma_y_over_rho": 0.31206819913667283,
+     "const_decade_mae_sigma_y_over_rho": 0.3315044017739223,
+     "gain_over_const_sigma_y_over_rho": 0.058630300331591,
+     "within_class_spearman_sigma_y_over_rho": 0.32189443122072237,
+     "per_class_spearman_sigma_y_over_rho": {
+      "jelly": null,
+      "metal": 0.3250408125212442,
+      "plasticine": 0.31874804992020045
+     },
+     "per_action_spearman_sigma_y_over_rho": {
+      "bend": 0.46524725274725276,
+      "drop": 0.2869047619047619,
+      "press": 0.17009803921568625,
+      "shear": 0.3539107950872657,
+      "stretch": 0.04426848392814865,
+      "tap30hold": 0.2521478521478521
+     },
+     "per_class_accuracy": {
+      "jelly": 0.5263157894736842,
+      "metal": 0.8191489361702128,
+      "plasticine": 0.10638297872340426
+     },
+     "per_action_accuracy": {
+      "bend": 0.4782608695652174,
+      "drop": 0.3958333333333333,
+      "press": 0.4791666666666667,
+      "shear": 0.5,
+      "stretch": 0.5416666666666666,
+      "tap30hold": 0.5111111111111111
+     }
+    },
+    "ci95": {
+     "z_mae": [
+      0.8005620520593292,
+      0.8471775854889823
+     ],
+     "law_accuracy": [
+      0.4084344720807112,
+      0.5636411992263055
+     ],
+     "decade_mae_E_over_rho": [
+      0.4627870716729737,
+      0.5636015608075531
+     ],
+     "const_decade_mae_E_over_rho": [
+      0.5149081701160882,
+      0.6039204516086274
+     ],
+     "gain_over_const_E_over_rho": [
+      0.053741126624900985,
+      0.13034224511167275
+     ],
+     "within_class_spearman_E_over_rho": [
+      0.11321321122700279,
+      0.4385451451139453
+     ],
+     "decade_mae_sigma_y_over_rho": [
+      0.29014933322688435,
+      0.337190433187302
+     ],
+     "const_decade_mae_sigma_y_over_rho": [
+      0.30832330867610713,
+      0.3583569333241696
+     ],
+     "gain_over_const_sigma_y_over_rho": [
+      0.02986607194646064,
+      0.08600977672364635
+     ],
+     "within_class_spearman_sigma_y_over_rho": [
+      0.19524871934930976,
+      0.439540680687382
+     ]
+    }
+   },
+   "ensemble_5": {
+    "point": {
+     "z_mae": 0.8139669933765366,
+     "law_accuracy": 0.4911660777385159,
+     "decade_mae_E_over_rho": 0.4984152412308273,
+     "const_decade_mae_E_over_rho": 0.5591565673099799,
+     "gain_over_const_E_over_rho": 0.10863026499245132,
+     "within_class_spearman_E_over_rho": 0.332206322314416,
+     "per_class_spearman_E_over_rho": {
+      "jelly": 0.22309008640284417,
+      "metal": 0.3801683343568255,
+      "plasticine": 0.39336054618357835
+     },
+     "per_action_spearman_E_over_rho": {
+      "bend": 0.26750700280112044,
+      "drop": 0.24901960784313726,
+      "press": 0.028431372549019628,
+      "shear": 0.6196078431372549,
+      "stretch": 0.4235294117647059,
+      "tap30hold": 0.2821428571428571
+     },
+     "decade_mae_sigma_y_over_rho": 0.3090670586408002,
+     "const_decade_mae_sigma_y_over_rho": 0.3315044017739223,
+     "gain_over_const_sigma_y_over_rho": 0.0676833942869447,
+     "within_class_spearman_sigma_y_over_rho": 0.32206540683486684,
+     "per_class_spearman_sigma_y_over_rho": {
+      "jelly": null,
+      "metal": 0.3074852683548336,
+      "plasticine": 0.33664554531490015
+     },
+     "per_action_spearman_sigma_y_over_rho": {
+      "bend": 0.482554945054945,
+      "drop": 0.32440476190476186,
+      "press": 0.12990196078431374,
+      "shear": 0.3973981900452489,
+      "stretch": 0.14193722943722942,
+      "tap30hold": 0.2325008325008325
+     },
+     "per_class_accuracy": {
+      "jelly": 0.35789473684210527,
+      "metal": 0.6595744680851063,
+      "plasticine": 0.4574468085106383
+     },
+     "per_action_accuracy": {
+      "bend": 0.5217391304347826,
+      "drop": 0.5208333333333334,
+      "press": 0.4583333333333333,
+      "shear": 0.5208333333333334,
+      "stretch": 0.5,
+      "tap30hold": 0.4222222222222222
+     }
+    },
+    "ci95": {
+     "z_mae": [
+      0.7892349273152637,
+      0.838849819025208
+     ],
+     "law_accuracy": [
+      0.44709171447244206,
+      0.527782634032634
+     ],
+     "decade_mae_E_over_rho": [
+      0.45061535712817485,
+      0.5553699807272229
+     ],
+     "const_decade_mae_E_over_rho": [
+      0.5149081701160882,
+      0.6039204516086274
+     ],
+     "gain_over_const_E_over_rho": [
+      0.060931601955705975,
+      0.15904697903865841
+     ],
+     "within_class_spearman_E_over_rho": [
+      0.167175629408809,
+      0.47726198849311297
+     ],
+     "decade_mae_sigma_y_over_rho": [
+      0.2882776502392347,
+      0.3330064245592919
+     ],
+     "const_decade_mae_sigma_y_over_rho": [
+      0.30832330867610713,
+      0.3583569333241696
+     ],
+     "gain_over_const_sigma_y_over_rho": [
+      0.046317241956068705,
+      0.08844518432607085
+     ],
+     "within_class_spearman_sigma_y_over_rho": [
+      0.20422672665749747,
+      0.4500058474714342
+     ]
+    },
+    "seeds": [
+     0
+    ],
+    "train_std_decades": null
+   }
+  },
+  "V5b_t1000": {
+   "B": {
+    "seeds": [
+     29
+    ],
+    "train_std_decades": {
+     "E_over_rho": 0.827097084304714,
+     "sigma_y_over_rho": 0.5135615470135947
+    },
+    "point": {
+     "z_mae": 0.7716633286711657,
+     "law_accuracy": 0.5229681978798587,
+     "decade_mae_E_over_rho": 0.5692490227232105,
+     "const_decade_mae_E_over_rho": 0.723448691981837,
+     "gain_over_const_E_over_rho": 0.21314527342112854,
+     "within_class_spearman_E_over_rho": 0.4179488706048505,
+     "per_class_spearman_E_over_rho": {
+      "jelly": 0.49122315873558103,
+      "metal": 0.3898044259255452,
+      "plasticine": 0.37281902715342524
+     },
+     "per_action_spearman_E_over_rho": {
+      "bend": 0.2790616246498599,
+      "drop": 0.29919641764141264,
+      "press": 0.3735294117647059,
+      "shear": 0.7117647058823531,
+      "stretch": 0.48823529411764705,
+      "tap30hold": 0.2119047619047619
+     },
+     "decade_mae_sigma_y_over_rho": 0.36359831742751514,
+     "const_decade_mae_sigma_y_over_rho": 0.46963020713981884,
+     "gain_over_const_sigma_y_over_rho": 0.22577740549967595,
+     "within_class_spearman_sigma_y_over_rho": 0.4020572257496045,
+     "per_class_spearman_sigma_y_over_rho": {
+      "jelly": null,
+      "metal": 0.37610104585315274,
+      "plasticine": 0.4280134056460563
+     },
+     "per_action_spearman_sigma_y_over_rho": {
+      "bend": 0.5669372294372294,
+      "drop": 0.6678571428571428,
+      "press": -0.16085434173669472,
+      "shear": 0.6018270944741533,
+      "stretch": 0.2681372549019608,
+      "tap30hold": 0.519298434727314
+     },
+     "per_class_accuracy": {
+      "jelly": 0.45263157894736844,
+      "metal": 0.5638297872340425,
+      "plasticine": 0.5531914893617021
+     },
+     "per_action_accuracy": {
+      "bend": 0.5217391304347826,
+      "drop": 0.5625,
+      "press": 0.4583333333333333,
+      "shear": 0.5625,
+      "stretch": 0.6041666666666666,
+      "tap30hold": 0.4222222222222222
+     }
+    },
+    "ci95": {
+     "z_mae": [
+      0.7423095504042415,
+      0.8015014219228247
+     ],
+     "law_accuracy": [
+      0.4724115663570429,
+      0.5734291443850267
+     ],
+     "decade_mae_E_over_rho": [
+      0.5289712986001825,
+      0.6143750484173889
+     ],
+     "const_decade_mae_E_over_rho": [
+      0.683474239521872,
+      0.7625454900285955
+     ],
+     "gain_over_const_E_over_rho": [
+      0.16761928418237554,
+      0.25630721305517035
+     ],
+     "within_class_spearman_E_over_rho": [
+      0.2692888660406254,
+      0.5780443596500826
+     ],
+     "decade_mae_sigma_y_over_rho": [
+      0.3302788578025548,
+      0.40128864608890463
+     ],
+     "const_decade_mae_sigma_y_over_rho": [
+      0.43228936045748184,
+      0.5210414683107515
+     ],
+     "gain_over_const_sigma_y_over_rho": [
+      0.11565843036360829,
+      0.3208781832423499
+     ],
+     "within_class_spearman_sigma_y_over_rho": [
+      0.22733996021237557,
+      0.5748459228601797
+     ]
+    }
+   },
+   "C": {
+    "seeds": [
+     29
+    ],
+    "train_std_decades": {
+     "E_over_rho": 0.827097084304714,
+     "sigma_y_over_rho": 0.5135615470135947
+    },
+    "point": {
+     "z_mae": 0.7756549600044721,
+     "law_accuracy": 0.6113074204946997,
+     "decade_mae_E_over_rho": 0.5597561497104898,
+     "const_decade_mae_E_over_rho": 0.723448691981837,
+     "gain_over_const_E_over_rho": 0.226266968322139,
+     "within_class_spearman_E_over_rho": 0.3388274028335525,
+     "per_class_spearman_E_over_rho": {
+      "jelly": 0.4108863250262595,
+      "metal": 0.24579326511979172,
+      "plasticine": 0.3598026183546063
+     },
+     "per_action_spearman_E_over_rho": {
+      "bend": 0.16905843361603834,
+      "drop": 0.29411764705882354,
+      "press": 0.06568627450980392,
+      "shear": 0.6529411764705882,
+      "stretch": 0.5845605375351356,
+      "tap30hold": 0.2763444307519725
+     },
+     "decade_mae_sigma_y_over_rho": 0.3826095442025048,
+     "const_decade_mae_sigma_y_over_rho": 0.46963020713981884,
+     "gain_over_const_sigma_y_over_rho": 0.1852961364374207,
+     "within_class_spearman_sigma_y_over_rho": 0.3572478410518388,
+     "per_class_spearman_sigma_y_over_rho": {
+      "jelly": null,
+      "metal": 0.2916724466175151,
+      "plasticine": 0.42282323548616246
+     },
+     "per_action_spearman_sigma_y_over_rho": {
+      "bend": 0.5213827801845576,
+      "drop": 0.606456750153054,
+      "press": 0.00854341736694677,
+      "shear": 0.5013368983957218,
+      "stretch": 0.3888642276936772,
+      "tap30hold": 0.24194139194139197
+     },
+     "per_class_accuracy": {
+      "jelly": 0.7157894736842105,
+      "metal": 0.6702127659574468,
+      "plasticine": 0.44680851063829785
+     },
+     "per_action_accuracy": {
+      "bend": 0.6739130434782609,
+      "drop": 0.6458333333333334,
+      "press": 0.4791666666666667,
+      "shear": 0.6666666666666666,
+      "stretch": 0.6666666666666666,
+      "tap30hold": 0.5333333333333333
+     }
+    },
+    "ci95": {
+     "z_mae": [
+      0.7424003314280118,
+      0.8052845654420002
+     ],
+     "law_accuracy": [
+      0.5551601423487544,
+      0.6730226788555401
+     ],
+     "decade_mae_E_over_rho": [
+      0.47930987216588267,
+      0.6469873919625062
+     ],
+     "const_decade_mae_E_over_rho": [
+      0.683474239521872,
+      0.7625454900285955
+     ],
+     "gain_over_const_E_over_rho": [
+      0.14223347913179207,
+      0.31490155011448867
+     ],
+     "within_class_spearman_E_over_rho": [
+      0.15467639387659468,
+      0.5054543899221832
+     ],
+     "decade_mae_sigma_y_over_rho": [
+      0.3585804184331639,
+      0.4103822414348143
+     ],
+     "const_decade_mae_sigma_y_over_rho": [
+      0.43228936045748184,
+      0.5210414683107515
+     ],
+     "gain_over_const_sigma_y_over_rho": [
+      0.1296381480558544,
+      0.24985799162400585
+     ],
+     "within_class_spearman_sigma_y_over_rho": [
+      0.23931595559689892,
+      0.5169744579557783
+     ]
+    }
+   },
+   "ensemble_2": {
+    "point": {
+     "z_mae": 0.766507469940169,
+     "law_accuracy": 0.6042402826855123,
+     "decade_mae_E_over_rho": 0.55413098431096,
+     "const_decade_mae_E_over_rho": 0.723448691981837,
+     "gain_over_const_E_over_rho": 0.23404245463080875,
+     "within_class_spearman_E_over_rho": 0.4103557553881107,
+     "per_class_spearman_E_over_rho": {
+      "jelly": 0.4923572228443449,
+      "metal": 0.36257892988649815,
+      "plasticine": 0.3761311134334891
+     },
+     "per_action_spearman_E_over_rho": {
+      "bend": 0.23298319327731087,
+      "drop": 0.3127450980392157,
+      "press": 0.2931372549019608,
+      "shear": 0.7049019607843138,
+      "stretch": 0.565686274509804,
+      "tap30hold": 0.1952380952380952
+     },
+     "decade_mae_sigma_y_over_rho": 0.36927137778415564,
+     "const_decade_mae_sigma_y_over_rho": 0.46963020713981884,
+     "gain_over_const_sigma_y_over_rho": 0.21369755997357354,
+     "within_class_spearman_sigma_y_over_rho": 0.38784703451709457,
+     "per_class_spearman_sigma_y_over_rho": {
+      "jelly": null,
+      "metal": 0.36597836853047533,
+      "plasticine": 0.4097157005037138
+     },
+     "per_action_spearman_sigma_y_over_rho": {
+      "bend": 0.5597943722943722,
+      "drop": 0.6589285714285715,
+      "press": -0.10000000000000006,
+      "shear": 0.5641711229946524,
+      "stretch": 0.3254901960784314,
+      "tap30hold": 0.41446886446886455
+     },
+     "per_class_accuracy": {
+      "jelly": 0.8210526315789474,
+      "metal": 0.5957446808510638,
+      "plasticine": 0.39361702127659576
+     },
+     "per_action_accuracy": {
+      "bend": 0.6304347826086957,
+      "drop": 0.6458333333333334,
+      "press": 0.5208333333333334,
+      "shear": 0.6041666666666666,
+      "stretch": 0.6458333333333334,
+      "tap30hold": 0.5777777777777777
+     }
+    },
+    "ci95": {
+     "z_mae": [
+      0.7368818545516462,
+      0.7936884993185526
+     ],
+     "law_accuracy": [
+      0.5670017182130584,
+      0.6496350364963503
+     ],
+     "decade_mae_E_over_rho": [
+      0.49096230347307834,
+      0.6224431674481214
+     ],
+     "const_decade_mae_E_over_rho": [
+      0.683474239521872,
+      0.7625454900285955
+     ],
+     "gain_over_const_E_over_rho": [
+      0.1700844164914793,
+      0.29822429058994226
+     ],
+     "within_class_spearman_E_over_rho": [
+      0.23095659231148438,
+      0.585372960918231
+     ],
+     "decade_mae_sigma_y_over_rho": [
+      0.3434547322003084,
+      0.3975321275940593
+     ],
+     "const_decade_mae_sigma_y_over_rho": [
+      0.43228936045748184,
+      0.5210414683107515
+     ],
+     "gain_over_const_sigma_y_over_rho": [
+      0.13546246478497426,
+      0.2874407621005219
+     ],
+     "within_class_spearman_sigma_y_over_rho": [
+      0.24240157043468874,
+      0.5636659486316242
+     ]
+    },
+    "seeds": [
+     0
+    ],
+    "train_std_decades": null
+   }
+  }
+ },
+ "paired_v4_minus_v3": {
+  "V4_t1000 - V3_t1000 / B": {
+   "decade_mae_E_over_rho": {
+    "value": -0.011990833166383275,
+    "ci95": [
+     -0.030643034778868174,
+     0.006885073064347965
+    ]
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.007494036979103724,
+    "ci95": [
+     6.352399349208448e-05,
+     0.013558716879561582
+    ]
+   },
+   "gain_over_const_E_over_rho": {
+    "value": 0.021444500283828417,
+    "ci95": [
+     -0.012042367244540808,
+     0.05577715465467121
+    ]
+   },
+   "gain_over_const_sigma_y_over_rho": {
+    "value": -0.022606146220086935,
+    "ci95": [
+     -0.04113701160702193,
+     -0.00019688080365643515
+    ]
+   },
+   "law_accuracy": {
+    "value": 0.035335689045936425,
+    "ci95": [
+     -0.0024036654135338245,
+     0.08178550499018071
+    ]
+   },
+   "within_class_spearman_E_over_rho": {
+    "value": 0.06737033546651547,
+    "ci95": [
+     0.017492617990940696,
+     0.12158462601468352
+    ]
+   },
+   "within_class_spearman_sigma_y_over_rho": {
+    "value": -0.1479621010307731,
+    "ci95": [
+     -0.23714821928871868,
+     -0.04970719762480376
+    ]
+   }
+  },
+  "V4_t1000 - V3_t1000 / C": {
+   "decade_mae_E_over_rho": {
+    "value": -0.011896726976213245,
+    "ci95": [
+     -0.02335937197680617,
+     -0.0006183398202704412
+    ]
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.006622735590826601,
+    "ci95": [
+     -3.4594203444653046e-05,
+     0.012190936077054737
+    ]
+   },
+   "gain_over_const_E_over_rho": {
+    "value": 0.02127620003364461,
+    "ci95": [
+     0.0010608772053275419,
+     0.044895176734057955
+    ]
+   },
+   "gain_over_const_sigma_y_over_rho": {
+    "value": -0.019977820974284168,
+    "ci95": [
+     -0.0372497721808292,
+     0.00010833487389009437
+    ]
+   },
+   "law_accuracy": {
+    "value": -0.0011778563015312216,
+    "ci95": [
+     -0.038507821901323736,
+     0.03424866123575905
+    ]
+   },
+   "within_class_spearman_E_over_rho": {
+    "value": 0.06966691217818657,
+    "ci95": [
+     0.02402566572707841,
+     0.13807744333544408
+    ]
+   },
+   "within_class_spearman_sigma_y_over_rho": {
+    "value": -0.08049793695047774,
+    "ci95": [
+     -0.15006155210805422,
+     -0.0035289452333895368
+    ]
+   }
+  },
+  "V4_t1000 - V3_t1000 / D": {
+   "decade_mae_E_over_rho": {
+    "value": -0.0020080953479790775,
+    "ci95": [
+     -0.019844473300944007,
+     0.022930339679463126
+    ]
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.004458452205790497,
+    "ci95": [
+     -0.013113565233700457,
+     0.018571908580693484
+    ]
+   },
+   "gain_over_const_E_over_rho": {
+    "value": 0.003591293504142584,
+    "ci95": [
+     -0.04160086179128318,
+     0.03459648132888557
+    ]
+   },
+   "gain_over_const_sigma_y_over_rho": {
+    "value": -0.013449149338388144,
+    "ci95": [
+     -0.057019939696228816,
+     0.03957871048137919
+    ]
+   },
+   "law_accuracy": {
+    "value": 0.01648998822143699,
+    "ci95": [
+     -0.030519804651664775,
+     0.06968641114982571
+    ]
+   },
+   "within_class_spearman_E_over_rho": {
+    "value": 0.04397737074423824,
+    "ci95": [
+     -0.04046176611079285,
+     0.13655835160764584
+    ]
+   },
+   "within_class_spearman_sigma_y_over_rho": {
+    "value": -0.09614481672870423,
+    "ci95": [
+     -0.2052756738676308,
+     0.0022306168818503383
+    ]
+   }
+  },
+  "V4_t1000 - V3_t1000 / ensemble_9": {
+   "decade_mae_E_over_rho": {
+    "value": -0.010294392709271127,
+    "ci95": [
+     -0.023643462546999332,
+     0.005667247201316692
+    ]
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.0076094035839023855,
+    "ci95": [
+     -0.004311639075813012,
+     0.016790895309926265
+    ]
+   },
+   "gain_over_const_E_over_rho": {
+    "value": 0.018410572836148442,
+    "ci95": [
+     -0.009560376271126766,
+     0.04409636639961662
+    ]
+   },
+   "gain_over_const_sigma_y_over_rho": {
+    "value": -0.022954155489892436,
+    "ci95": [
+     -0.05178541221808218,
+     0.012923315964016014
+    ]
+   },
+   "law_accuracy": {
+    "value": 0.024734982332155486,
+    "ci95": [
+     -0.027979441053645998,
+     0.08425553319919511
+    ]
+   },
+   "within_class_spearman_E_over_rho": {
+    "value": 0.06576042456862813,
+    "ci95": [
+     0.011146493602461817,
+     0.12873080638303033
+    ]
+   },
+   "within_class_spearman_sigma_y_over_rho": {
+    "value": -0.06389942601811466,
+    "ci95": [
+     -0.16642855886967672,
+     0.03836252401753909
+    ]
+   }
+  },
+  "V5a_t1000 - V3_t1000 / B": {
+   "decade_mae_E_over_rho": {
+    "value": -0.028057057752851167,
+    "ci95": [
+     -0.05208003103523905,
+     -0.004326612936852832
+    ]
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": -0.0003582946312655211,
+    "ci95": [
+     -0.014478180954784745,
+     0.013938930057324366
+    ]
+   },
+   "gain_over_const_E_over_rho": {
+    "value": 0.05017746261629311,
+    "ci95": [
+     0.007476476298092821,
+     0.09305467459933318
+    ]
+   },
+   "gain_over_const_sigma_y_over_rho": {
+    "value": 0.0010808140988421977,
+    "ci95": [
+     -0.04305287116640623,
+     0.04283660527669065
+    ]
+   },
+   "law_accuracy": {
+    "value": 0.008244994110718551,
+    "ci95": [
+     -0.018082181215171335,
+     0.034317951318458384
+    ]
+   },
+   "within_class_spearman_E_over_rho": {
+    "value": 0.10523901569634195,
+    "ci95": [
+     0.006989346733487285,
+     0.1750539692669495
+    ]
+   },
+   "within_class_spearman_sigma_y_over_rho": {
+    "value": -0.013120209359100798,
+    "ci95": [
+     -0.17437703459170975,
+     0.18617849030282352
+    ]
+   }
+  },
+  "V5a_t1000 - V3_t1000 / C": {
+   "decade_mae_E_over_rho": {
+    "value": -0.01212593021873487,
+    "ci95": [
+     -0.039790120421087205,
+     0.014693028536313562
+    ]
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": -0.0016691944303983686,
+    "ci95": [
+     -0.014239566309286845,
+     0.007460000288378076
+    ]
+   },
+   "gain_over_const_E_over_rho": {
+    "value": 0.021686108914129143,
+    "ci95": [
+     -0.027125998894699327,
+     0.07070472665700954
+    ]
+   },
+   "gain_over_const_sigma_y_over_rho": {
+    "value": 0.005035210457135064,
+    "ci95": [
+     -0.023544798081157656,
+     0.040963332094042904
+    ]
+   },
+   "law_accuracy": {
+    "value": 0.010600706713780939,
+    "ci95": [
+     -0.087915543575921,
+     0.09039594180421698
+    ]
+   },
+   "within_class_spearman_E_over_rho": {
+    "value": 0.07884933954704362,
+    "ci95": [
+     -0.018821702686200367,
+     0.18396210032102933
+    ]
+   },
+   "within_class_spearman_sigma_y_over_rho": {
+    "value": -0.03899371913432509,
+    "ci95": [
+     -0.19292556606445554,
+     0.1637220609230052
+    ]
+   }
+  },
+  "V5a_t1000 - V3_t1000 / D": {
+   "decade_mae_E_over_rho": {
+    "value": -0.004265119272997886,
+    "ci95": [
+     -0.02857855262947949,
+     0.01737421432244834
+    ]
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.006256501444983298,
+    "ci95": [
+     -0.008335752584593025,
+     0.02040418491528944
+    ]
+   },
+   "gain_over_const_E_over_rho": {
+    "value": 0.00762777283206513,
+    "ci95": [
+     -0.031498392277627546,
+     0.05082758391927184
+    ]
+   },
+   "gain_over_const_sigma_y_over_rho": {
+    "value": -0.018873056923238374,
+    "ci95": [
+     -0.06425870132545174,
+     0.02445647158776227
+    ]
+   },
+   "law_accuracy": {
+    "value": 0.01884570082449938,
+    "ci95": [
+     -0.060168471720818295,
+     0.09663345410628014
+    ]
+   },
+   "within_class_spearman_E_over_rho": {
+    "value": -0.00813715528188974,
+    "ci95": [
+     -0.12200517920860356,
+     0.11372506688397799
+    ]
+   },
+   "within_class_spearman_sigma_y_over_rho": {
+    "value": -0.08158011762716577,
+    "ci95": [
+     -0.24123770682065318,
+     0.11245602853413725
+    ]
+   }
+  },
+  "V5b_t1000 - V3_t1000 / B": {
+   "decade_mae_E_over_rho": {
+    "value": 0.03989209876992417,
+    "ci95": [
+     -0.005377456887824941,
+     0.07952463498202779
+    ]
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.05303613817029562,
+    "ci95": [
+     0.01004452105611698,
+     0.10411853992357063
+    ]
+   },
+   "gain_over_const_E_over_rho": {
+    "value": 0.15985135701403871,
+    "ci95": [
+     0.10762252371168728,
+     0.21497814123127712
+    ]
+   },
+   "gain_over_const_sigma_y_over_rho": {
+    "value": 0.162604119097932,
+    "ci95": [
+     0.03620406004198368,
+     0.26118841664558523
+    ]
+   },
+   "law_accuracy": {
+    "value": 0.08951707891637228,
+    "ci95": [
+     0.03549918610960389,
+     0.14102564102564102
+    ]
+   },
+   "within_class_spearman_E_over_rho": {
+    "value": 0.2002431772906785,
+    "ci95": [
+     0.06549522907378504,
+     0.3226212390301905
+    ]
+   },
+   "within_class_spearman_sigma_y_over_rho": {
+    "value": 0.053753801951895996,
+    "ci95": [
+     -0.1868831482246754,
+     0.3154360703659483
+    ]
+   }
+  },
+  "V5b_t1000 - V3_t1000 / C": {
+   "decade_mae_E_over_rho": {
+    "value": 0.03384530470690095,
+    "ci95": [
+     -0.040181877276883694,
+     0.09628682275834413
+    ]
+   },
+   "decade_mae_sigma_y_over_rho": {
+    "value": 0.0720342792194944,
+    "ci95": [
+     0.050190020375791504,
+     0.09205499854692298
+    ]
+   },
+   "gain_over_const_E_over_rho": {
+    "value": 0.1668100572349075,
+    "ci95": [
+     0.07936402816467843,
+     0.2639953997567906
+    ]
+   },
+   "gain_over_const_sigma_y_over_rho": {
+    "value": 0.12216232379747549,
+    "ci95": [
+     0.06362451973257015,
+     0.1856152230786626
+    ]
+   },
+   "law_accuracy": {
+    "value": 0.14487632508833925,
+    "ci95": [
+     0.0802787191518943,
+     0.2045997176850171
+    ]
+   },
+   "within_class_spearman_E_over_rho": {
+    "value": 0.12453306017809093,
+    "ci95": [
+     -0.0135163819093947,
+     0.26110361451272973
+    ]
+   },
+   "within_class_spearman_sigma_y_over_rho": {
+    "value": 0.020858810675888628,
+    "ci95": [
+     -0.15593996899054685,
+     0.25652079239016196
+    ]
+   }
+  }
+ },
+ "references_val": {
+  "V2 main (1955 train) / B (3 seeds)": {
+   "decade_mae_E_over_rho": 0.43824788211716065,
+   "decade_mae_sigma_y_over_rho": 0.4757904536970643,
+   "law_accuracy": 0.6878680800942285,
+   "within_law_spearman_E_over_rho": 0.6685203001181158,
+   "within_law_spearman_sigma_y_over_rho": 0.8574309775466356,
+   "z_mae": 0.6453338530963977,
+   "gain_over_const_E_over_rho": 0.5140660675553052,
+   "gain_over_const_sigma_y_over_rho": 0.5584530366531
+  },
+  "V2 main (1955 train) / ensemble_BCD9": {
+   "decade_mae_E_over_rho": 0.3813701358282338,
+   "decade_mae_sigma_y_over_rho": 0.4210423182656892,
+   "law_accuracy": 0.6996466431095406,
+   "within_law_spearman_E_over_rho": 0.7135210767541048,
+   "within_law_spearman_sigma_y_over_rho": 0.8841559297993542,
+   "z_mae": 0.616246852638067,
+   "gain_over_const_E_over_rho": 0.5771327201292951,
+   "gain_over_const_sigma_y_over_rho": 0.6092608508090771
+  },
+  "V2 main (1955 train) / constant_train_mean": {
+   "decade_mae_E_over_rho": 0.9018672145663311,
+   "decade_mae_sigma_y_over_rho": 1.077553450012657,
+   "law_accuracy": 0.3286219081272085,
+   "within_law_spearman_E_over_rho": null,
+   "within_law_spearman_sigma_y_over_rho": null,
+   "z_mae": 0.8575882477086423
+  },
+  "V3 main (2000 train) / B (3 seeds)": {
+   "decade_mae_E_over_rho": 0.4841115627938817,
+   "decade_mae_sigma_y_over_rho": 0.2950776271936156,
+   "law_accuracy": 0.5170789163722026,
+   "within_law_spearman_E_over_rho": 0.3702269755368825,
+   "within_law_spearman_sigma_y_over_rho": 0.44098690562282283,
+   "z_mae": 0.796296087961872,
+   "gain_over_const_E_over_rho": 0.1342533593790135,
+   "gain_over_const_sigma_y_over_rho": 0.11072887878304183
+  },
+  "V3 main (2000 train) / ensemble_BCD9": {
+   "decade_mae_E_over_rho": 0.4666825144342872,
+   "decade_mae_sigma_y_over_rho": 0.28861505266468407,
+   "law_accuracy": 0.5477031802120141,
+   "within_law_spearman_E_over_rho": 0.457949674288673,
+   "within_law_spearman_sigma_y_over_rho": 0.4846319528998352,
+   "z_mae": 0.7790386691326254,
+   "gain_over_const_E_over_rho": 0.16542208416521342,
+   "gain_over_const_sigma_y_over_rho": 0.13020504494293905
+  },
+  "V3 main (2000 train) / constant_train_mean": {
+   "decade_mae_E_over_rho": 0.5591838767594132,
+   "decade_mae_sigma_y_over_rho": 0.3318196443732536,
+   "law_accuracy": 0.33568904593639576,
+   "within_law_spearman_E_over_rho": null,
+   "within_law_spearman_sigma_y_over_rho": null,
+   "z_mae": 0.8570497321021341
+  }
+ }
+}

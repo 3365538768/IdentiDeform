@@ -1,0 +1,18 @@
+[
+ {
+  "id": "v3j_cma_prior_000071_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 71 --arm cma_prior --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_prior_000071_b12"
+  ]
+ },
+ {
+  "id": "v3j_cma_prior_000228_b24",
+  "cmd": ".venv/bin/python scripts/v3j/c1j_refine.py --index 228 --arm cma_prior --budget 24",
+  "slots": 4,
+  "after": [
+   "v3j_cma_prior_000228_b12"
+  ]
+ }
+]

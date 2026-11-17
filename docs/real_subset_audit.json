@@ -1,0 +1,482 @@
+{
+  "samples": 7,
+  "purpose": "format and metadata audit, not physical validity certification",
+  "records": [
+    {
+      "path": "data/real_subset/dataset_5000_clean/train/000000/sample_pack.npz",
+      "object": "a_ice_hammer_013020",
+      "material": "jelly",
+      "sha256": "5c25ba3db2c0cbba4d777aeefe94d10f66c4f93afd1e074cedd936227dbfff4b",
+      "arrays": {
+        "meta_json": {
+          "shape": [
+            290
+          ],
+          "dtype": "uint8"
+        },
+        "rgb": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "stress": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "flow": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "force_mask": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "object_mask": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "grid_v_damping_scale": 0.999,
+      "rpic_damping": "0.35",
+      "example_gamma_if_dt_1e_minus4": 10.005003335835344,
+      "gamma_note": "Conditional calculation using template dt, NOT measured damping or verified per-sample dt"
+    },
+    {
+      "path": "data/real_subset/dataset_5000_clean/train/000001/sample_pack.npz",
+      "object": "a_wicker_basket_013020",
+      "material": "metal",
+      "sha256": "876adaf82073f83fc8ce4ce5d3647290d2549a9e678cd1077878ccec6de6c09a",
+      "arrays": {
+        "meta_json": {
+          "shape": [
+            290
+          ],
+          "dtype": "uint8"
+        },
+        "rgb": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "stress": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "flow": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "force_mask": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "object_mask": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "grid_v_damping_scale": 0.9995,
+      "rpic_damping": "0.25",
+      "example_gamma_if_dt_1e_minus4": 5.001250416822429,
+      "gamma_note": "Conditional calculation using template dt, NOT measured damping or verified per-sample dt"
+    },
+    {
+      "path": "data/real_subset/dataset_5000_clean/train/000832/sample_pack.npz",
+      "object": "a_denim_jacket_013020",
+      "material": "jelly",
+      "sha256": "63a3ac3bafeee1d96e622bfa555ed9428c986688a95d5455ca74f8099c1de94b",
+      "arrays": {
+        "meta_json": {
+          "shape": [
+            290
+          ],
+          "dtype": "uint8"
+        },
+        "rgb": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "stress": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "flow": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "force_mask": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "object_mask": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "grid_v_damping_scale": 0.999,
+      "rpic_damping": "0.35",
+      "example_gamma_if_dt_1e_minus4": 10.005003335835344,
+      "gamma_note": "Conditional calculation using template dt, NOT measured damping or verified per-sample dt"
+    },
+    {
+      "path": "data/real_subset/dataset_5000_clean/train/001668/sample_pack.npz",
+      "object": "a_stone_pillow_013020",
+      "material": "plasticine",
+      "sha256": "521b96e0174495a9ccb04bdb0f18cd0d51a77eac9930a26b4bc644b9a03d4e3f",
+      "arrays": {
+        "meta_json": {
+          "shape": [
+            290
+          ],
+          "dtype": "uint8"
+        },
+        "rgb": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "stress": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "flow": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "force_mask": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "object_mask": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "grid_v_damping_scale": 0.9992,
+      "rpic_damping": "0.45",
+      "example_gamma_if_dt_1e_minus4": 8.003201707691552,
+      "gamma_note": "Conditional calculation using template dt, NOT measured damping or verified per-sample dt"
+    },
+    {
+      "path": "data/real_subset/dataset_5000_clean/train/002500/sample_pack.npz",
+      "object": "a_velvet_sofa_013020",
+      "material": "metal",
+      "sha256": "de19d8379eaac675350776dbdcda538227ccd78c665b41abe71b254501bd1b4e",
+      "arrays": {
+        "meta_json": {
+          "shape": [
+            290
+          ],
+          "dtype": "uint8"
+        },
+        "rgb": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "stress": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "flow": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "force_mask": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "object_mask": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "grid_v_damping_scale": 0.9995,
+      "rpic_damping": "0.25",
+      "example_gamma_if_dt_1e_minus4": 5.001250416822429,
+      "gamma_note": "Conditional calculation using template dt, NOT measured damping or verified per-sample dt"
+    },
+    {
+      "path": "data/real_subset/dataset_5000_clean/train/003334/sample_pack.npz",
+      "object": "a_knitted_wrench_013020",
+      "material": "metal",
+      "sha256": "d5780d2a194e31cda7504cf02f6a0357c623676adfa5fe4f8bcc2f031d69548f",
+      "arrays": {
+        "meta_json": {
+          "shape": [
+            290
+          ],
+          "dtype": "uint8"
+        },
+        "rgb": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "stress": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "flow": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "force_mask": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "object_mask": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "grid_v_damping_scale": 0.9995,
+      "rpic_damping": "0.25",
+      "example_gamma_if_dt_1e_minus4": 5.001250416822429,
+      "gamma_note": "Conditional calculation using template dt, NOT measured damping or verified per-sample dt"
+    },
+    {
+      "path": "data/real_subset/dataset_5000_clean/train/004169/sample_pack.npz",
+      "object": "a_marble_pillar_013020",
+      "material": "plasticine",
+      "sha256": "bee989da6dd84dda5e0e6961600ca70dc4bfa17acb6728173177416d37ea812b",
+      "arrays": {
+        "meta_json": {
+          "shape": [
+            290
+          ],
+          "dtype": "uint8"
+        },
+        "rgb": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "stress": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "flow": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "force_mask": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        },
+        "object_mask": {
+          "shape": [
+            3,
+            64,
+            3,
+            224,
+            224
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "grid_v_damping_scale": 0.9992,
+      "rpic_damping": "0.45",
+      "example_gamma_if_dt_1e_minus4": 8.003201707691552,
+      "gamma_note": "Conditional calculation using template dt, NOT measured damping or verified per-sample dt"
+    }
+  ]
+}

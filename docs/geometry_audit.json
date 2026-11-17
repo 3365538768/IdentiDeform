@@ -1,0 +1,3683 @@
+{
+  "status": "geometry_arrays_validated",
+  "assets": 108,
+  "dataset_objects": 108,
+  "covered_dataset_objects": 108,
+  "missing_objects": [],
+  "extra_objects": [],
+  "records": [
+    {
+      "object_id": "a_aluminum_foil_013020",
+      "points": 22159,
+      "sha256": "1d06791356866d96544f0ef2b0388cbbbce459238347a96305da37a3ace646f7",
+      "coordinate_bbox_min": [
+        -0.4263247847557068,
+        -0.03170771896839142,
+        -0.9910868406295776
+      ],
+      "coordinate_bbox_max": [
+        0.42397379875183105,
+        0.15634889900684357,
+        0.9895143508911133
+      ],
+      "coordinate_extent": [
+        0.8502985835075378,
+        0.18805661797523499,
+        1.980601191520691
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -10.529597282409668,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.402695894241333,
+        1.1764839887619019
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_amber_bead_013020",
+      "points": 77560,
+      "sha256": "bfabd544ea735c7921f8fdd5e8527cd5736b5a340143b0efcb8ee1d8fa935538",
+      "coordinate_bbox_min": [
+        -0.3368973731994629,
+        -0.3122904300689697,
+        -0.3534257411956787
+      ],
+      "coordinate_bbox_max": [
+        0.9942164421081543,
+        0.31651490926742554,
+        0.4039779305458069
+      ],
+      "coordinate_extent": [
+        1.3311138153076172,
+        0.6288053393363953,
+        0.7574036717414856
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.807210922241211,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.3987846076488495,
+        1.2714570760726929
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_bamboo_mat_013020",
+      "points": 16713,
+      "sha256": "c5c9251c83a6ee5d747d3babc9210f2f28adbb515857639aa81be99138e11398",
+      "coordinate_bbox_min": [
+        -0.39307522773742676,
+        -0.015485748648643494,
+        -0.9895143508911133
+      ],
+      "coordinate_bbox_max": [
+        0.4036085605621338,
+        0.1475176215171814,
+        0.5246031284332275
+      ],
+      "coordinate_extent": [
+        0.7966837882995605,
+        0.1630033701658249,
+        1.5141174793243408
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -10.759177207946777,
+        1.9422372579574585
+      ],
+      "quaternion_norm_min_max": [
+        0.4820253551006317,
+        1.145929217338562
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_bamboo_spacesuit_013020",
+      "points": 26822,
+      "sha256": "f414d27f5cea537c66588d5871a5b3ba3b4a6f324711572f4591607b95c1b02a",
+      "coordinate_bbox_min": [
+        -0.1427769660949707,
+        -0.4115590453147888,
+        -0.9400489330291748
+      ],
+      "coordinate_bbox_max": [
+        0.89874666929245,
+        0.42044439911842346,
+        0.12255608290433884
+      ],
+      "coordinate_extent": [
+        1.0415236949920654,
+        0.8320034742355347,
+        1.0626050233840942
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.956371545791626
+      ],
+      "stored_opacity_min_max": [
+        -10.887714385986328,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.5263447761535645,
+        1.180167317390442
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_blown_glass_swan_013020",
+      "points": 23753,
+      "sha256": "a93526880e309bd87b8783bb7e4de4e97945c523a3a62c3a562c5f9fb8816e2f",
+      "coordinate_bbox_min": [
+        -0.9731041193008423,
+        -0.32937729358673096,
+        -0.9718981981277466
+      ],
+      "coordinate_bbox_max": [
+        0.9820467233657837,
+        0.33363068103790283,
+        0.9989491105079651
+      ],
+      "coordinate_extent": [
+        1.955150842666626,
+        0.6630079746246338,
+        1.9708473682403564
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.58887767791748,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.3830733001232147,
+        1.1835614442825317
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_brass_octopus_013020",
+      "points": 14114,
+      "sha256": "83505c3b3042c0f61b519828e4ce9e44827f16947944c5dba0b50c9ea0ed0938",
+      "coordinate_bbox_min": [
+        -0.9895143508911133,
+        -0.48947495222091675,
+        -0.9926592707633972
+      ],
+      "coordinate_bbox_max": [
+        0.9848122596740723,
+        0.20881950855255127,
+        0.9696341753005981
+      ],
+      "coordinate_extent": [
+        1.9743266105651855,
+        0.698294460773468,
+        1.9622933864593506
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -10.75777530670166,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.4743531346321106,
+        1.2509539127349854
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_brass_telescope_013020",
+      "points": 11659,
+      "sha256": "0905160d66698e617f61b41534e065b143a6090ca9f6aef572f1d76a01ec051c",
+      "coordinate_bbox_min": [
+        -0.9863846898078918,
+        -0.06448446214199066,
+        -0.36432743072509766
+      ],
+      "coordinate_bbox_max": [
+        0.9848122596740723,
+        0.1741846203804016,
+        0.3972083330154419
+      ],
+      "coordinate_extent": [
+        1.9711968898773193,
+        0.23866908252239227,
+        0.7615357637405396
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -9.998229026794434,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.5208116769790649,
+        1.1370577812194824
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_brass_trumpet_013020",
+      "points": 17921,
+      "sha256": "95698669394e696328f4b58d7ffe62b4f9811da5cb518dbd8b0e7e254d76b57d",
+      "coordinate_bbox_min": [
+        -0.9848122596740723,
+        -0.1580851525068283,
+        -0.9942164421081543
+      ],
+      "coordinate_bbox_max": [
+        0.9848122596740723,
+        0.18310248851776123,
+        0.9895143508911133
+      ],
+      "coordinate_extent": [
+        1.9696245193481445,
+        0.34118765592575073,
+        1.9837307929992676
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.715543746948242,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.34024524688720703,
+        1.137259602546692
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_brick_teddy_bear_013020",
+      "points": 56166,
+      "sha256": "387cb34ef2aa6a0037281974f1f1f19c0580602656d24fcd6b55f76c12226863",
+      "coordinate_bbox_min": [
+        -1.0005062818527222,
+        -0.39446258544921875,
+        -0.9850770235061646
+      ],
+      "coordinate_bbox_max": [
+        1.0052084922790527,
+        0.3963571786880493,
+        1.0052084922790527
+      ],
+      "coordinate_extent": [
+        2.0057148933410645,
+        0.7908197641372681,
+        1.9902855157852173
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -10.240235328674316,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.4405534267425537,
+        1.1587978601455688
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_brick_wall_013020",
+      "points": 68340,
+      "sha256": "415ae24f4535e6efa429da3251af79dc56d4074e4321efc17e07a408e2556a92",
+      "coordinate_bbox_min": [
+        -0.13824105262756348,
+        -0.3038782477378845,
+        -0.4202762842178345
+      ],
+      "coordinate_bbox_max": [
+        0.13679859042167664,
+        0.30699190497398376,
+        0.4212990999221802
+      ],
+      "coordinate_extent": [
+        0.2750396430492401,
+        0.6108701229095459,
+        0.8415753841400146
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.080621719360352,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.7047473192214966,
+        1.159053087234497
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_bronze_apple_013020",
+      "points": 84257,
+      "sha256": "be1016aa779e6dceeb78eeebb48f8185df3f126a1075ac27d6e338b036956a31",
+      "coordinate_bbox_min": [
+        -0.36966681480407715,
+        -0.3549289107322693,
+        -0.37230753898620605
+      ],
+      "coordinate_bbox_max": [
+        0.3885347247123718,
+        0.3814625144004822,
+        0.39221423864364624
+      ],
+      "coordinate_extent": [
+        0.758201539516449,
+        0.7363914251327515,
+        0.7645217776298523
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -12.365830421447754,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.32833096385002136,
+        1.1999212503433228
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_bronze_bell_013020",
+      "points": 29173,
+      "sha256": "67aa3a04fa7dea42d545352db61e5fca1504943549ed93215caecaa51e0da7a8",
+      "coordinate_bbox_min": [
+        -0.19619345664978027,
+        -0.3228999376296997,
+        -0.1876446008682251
+      ],
+      "coordinate_bbox_max": [
+        0.20631420612335205,
+        0.31807976961135864,
+        0.21309232711791992
+      ],
+      "coordinate_extent": [
+        0.4025076627731323,
+        0.6409797072410583,
+        0.400736927986145
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.007894515991211,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.6381847858428955,
+        1.3800820112228394
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_brushed_aluminum_c_013020",
+      "points": 81370,
+      "sha256": "9524cc5ae3a7c50f450eb8c4b9b1d46125c67b537c1c330f8793ffcb335da58a",
+      "coordinate_bbox_min": [
+        -1.0052084922790527,
+        -0.3958812355995178,
+        -1.0049833059310913
+      ],
+      "coordinate_bbox_max": [
+        0.998812198638916,
+        0.3807806968688965,
+        0.9922213554382324
+      ],
+      "coordinate_extent": [
+        2.0040206909179688,
+        0.7766619324684143,
+        1.9972046613693237
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -13.815509796142578,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.5964822173118591,
+        1.4455134868621826
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_carbon_fiber_helme_013020",
+      "points": 111027,
+      "sha256": "5bfa9f313a51326731ae973e5df4242ec8fccf7f40e23e772778173d59556cd9",
+      "coordinate_bbox_min": [
+        -0.9816672801971436,
+        -0.4114302396774292,
+        -1.0005062818527222
+      ],
+      "coordinate_bbox_max": [
+        0.9848122596740723,
+        0.4249146580696106,
+        0.3991451859474182
+      ],
+      "coordinate_extent": [
+        1.9664795398712158,
+        0.8363448977470398,
+        1.3996515274047852
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -13.815509796142578,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.46278882026672363,
+        1.5695767402648926
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_carbon_fiber_rose_013020",
+      "points": 25711,
+      "sha256": "4716de63cedb1bd42cdecc14924a95550be957c78b00baa151a9d6665356be1f",
+      "coordinate_bbox_min": [
+        -0.9706906080245972,
+        -0.4234294891357422,
+        -0.9675495624542236
+      ],
+      "coordinate_bbox_max": [
+        0.22788047790527344,
+        0.4239804744720459,
+        0.30048418045043945
+      ],
+      "coordinate_extent": [
+        1.1985710859298706,
+        0.8474099636077881,
+        1.268033742904663
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -13.169794082641602,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.3676939010620117,
+        1.1653077602386475
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_cast_iron_skillet_013020",
+      "points": 21177,
+      "sha256": "49848c1d13445bbcfa30bf35975e5416b0614f13f5a095782e1fe6db4d77b25c",
+      "coordinate_bbox_min": [
+        -0.4017009735107422,
+        -0.4827682375907898,
+        -0.43993592262268066
+      ],
+      "coordinate_bbox_max": [
+        0.35136282444000244,
+        0.09112352132797241,
+        0.4610532522201538
+      ],
+      "coordinate_extent": [
+        0.7530637979507446,
+        0.5738917589187622,
+        0.9009891748428345
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.490939140319824,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.5089175701141357,
+        1.301235556602478
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_ceramic_mug_glossy_ceramic_surface_isolated_013020",
+      "points": 70158,
+      "sha256": "38fc00b668392dffad10ae6875d5be4833f95905b99ea02702571fbbdd27da8b",
+      "coordinate_bbox_min": [
+        -0.43157848715782166,
+        -0.39315712451934814,
+        -0.30429333448410034
+      ],
+      "coordinate_bbox_max": [
+        0.3309769034385681,
+        0.2986433506011963,
+        0.4336698055267334
+      ],
+      "coordinate_extent": [
+        0.7625553607940674,
+        0.6918004751205444,
+        0.7379631400108337
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -12.394201278686523,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.7070684432983398,
+        1.451074481010437
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_ceramic_plate_013020",
+      "points": 36779,
+      "sha256": "408e67bda9f519b5e0845dcbb16ca935b06d1082349975d07dc0835fabd6e748",
+      "coordinate_bbox_min": [
+        -0.9879571199417114,
+        -0.05850394070148468,
+        -0.9879571199417114
+      ],
+      "coordinate_bbox_max": [
+        0.9879571199417114,
+        0.18310248851776123,
+        0.9879571199417114
+      ],
+      "coordinate_extent": [
+        1.9759142398834229,
+        0.2416064292192459,
+        1.9759142398834229
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.100152969360352,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.36052972078323364,
+        1.3941726684570312
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_ceramic_sneaker_013020",
+      "points": 45321,
+      "sha256": "bfeb0788d91e49e7f381e6cb54cc3a2870987b0f1da88ae0e6547b92dd9e0318",
+      "coordinate_bbox_min": [
+        -0.997361421585083,
+        -0.20754732191562653,
+        -0.9958041906356812
+      ],
+      "coordinate_bbox_max": [
+        0.9958041906356812,
+        0.2061159461736679,
+        0.997361421585083
+      ],
+      "coordinate_extent": [
+        1.9931656122207642,
+        0.41366326808929443,
+        1.9931656122207642
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -10.597636222839355,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.33539989590644836,
+        1.3422633409500122
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_chrome_banana_013020",
+      "points": 19788,
+      "sha256": "542441fadacf05d5a6822c30d8f63c855bfd79cb7f84e84ceb62febb040aa597",
+      "coordinate_bbox_min": [
+        -0.35520970821380615,
+        -0.14560534060001373,
+        -0.286257266998291
+      ],
+      "coordinate_bbox_max": [
+        0.7902682423591614,
+        0.18310248851776123,
+        0.9848122596740723
+      ],
+      "coordinate_extent": [
+        1.1454780101776123,
+        0.32870781421661377,
+        1.2710695266723633
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.110064506530762,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.16275417804718018,
+        1.2118669748306274
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_clay_camera_013020",
+      "points": 92906,
+      "sha256": "e29972126db2709713762a14d6f03bb9358d98d30477ec20c6267bd91dac382e",
+      "coordinate_bbox_min": [
+        -0.9785376787185669,
+        -0.3399965763092041,
+        -0.9785376787185669
+      ],
+      "coordinate_bbox_max": [
+        0.9738279581069946,
+        0.3110140562057495,
+        0.9801101684570312
+      ],
+      "coordinate_extent": [
+        1.9523656368255615,
+        0.6510106325149536,
+        1.9586478471755981
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.686763763427734,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.4072590470314026,
+        1.23252272605896
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_clay_pot_013020",
+      "points": 100160,
+      "sha256": "c43f5461426c556a1991b783fc2ac70b0bbbd66582e2bb451964d9b09ae784bd",
+      "coordinate_bbox_min": [
+        -0.9942164421081543,
+        -0.3633744716644287,
+        -0.9989491105079651
+      ],
+      "coordinate_bbox_max": [
+        0.9989491105079651,
+        0.36097317934036255,
+        1.002063512802124
+      ],
+      "coordinate_extent": [
+        1.9931654930114746,
+        0.7243476510047913,
+        2.0010125637054443
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -12.684285163879395,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.6151271462440491,
+        1.2476435899734497
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_concrete_bench_013020",
+      "points": 51525,
+      "sha256": "dcca14537a12c2e34f54f996d578af7133d51804b63b250939d0f05efc0bf0db",
+      "coordinate_bbox_min": [
+        -0.9671922922134399,
+        -0.12908659875392914,
+        -0.9958041906356812
+      ],
+      "coordinate_bbox_max": [
+        0.9879571199417114,
+        0.165266752243042,
+        0.9942164421081543
+      ],
+      "coordinate_extent": [
+        1.9551494121551514,
+        0.2943533658981323,
+        1.9900206327438354
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.344731330871582,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.3126979172229767,
+        1.3381741046905518
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_concrete_handbag_013020",
+      "points": 45982,
+      "sha256": "c6607896c23646c6aeeeb55634090d4d32dc26ad6a9e018a94c36385d3f5dc33",
+      "coordinate_bbox_min": [
+        -0.9633985757827759,
+        -0.34741008281707764,
+        -0.27517974376678467
+      ],
+      "coordinate_bbox_max": [
+        0.8998469710350037,
+        0.3607458174228668,
+        0.9848122596740723
+      ],
+      "coordinate_extent": [
+        1.8632454872131348,
+        0.7081558704376221,
+        1.259992003440857
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.708270072937012,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.4767877459526062,
+        1.2700929641723633
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_concrete_lightbulb_013020",
+      "points": 35131,
+      "sha256": "8ed56286123c5cff6420e86399e77c0a9a9276c600a1982d4bdd8a44cbc861f9",
+      "coordinate_bbox_min": [
+        -0.16135084629058838,
+        -0.4108281135559082,
+        -0.16449570655822754
+      ],
+      "coordinate_bbox_max": [
+        0.16282200813293457,
+        0.40994274616241455,
+        0.16282200813293457
+      ],
+      "coordinate_extent": [
+        0.32417285442352295,
+        0.8207708597183228,
+        0.3273177146911621
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -10.78187370300293,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.7331098318099976,
+        1.1137641668319702
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_cork_stopper_013020",
+      "points": 39095,
+      "sha256": "feb875433c7a729deb72008b47c9f2599122cce854b32443eb09fce4456511c9",
+      "coordinate_bbox_min": [
+        -0.9448068141937256,
+        -0.39544641971588135,
+        -0.18462538719177246
+      ],
+      "coordinate_bbox_max": [
+        0.1872410774230957,
+        0.3920851945877075,
+        0.9848122596740723
+      ],
+      "coordinate_extent": [
+        1.1320478916168213,
+        0.7875316143035889,
+        1.1694376468658447
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -13.139022827148438,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.6545724868774414,
+        1.2135093212127686
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_cotton_shirt_013020",
+      "points": 26755,
+      "sha256": "028da39c04f646444c4a9d77eae3181527c6ef2d6dda4c4a944876e89f5f5e6e",
+      "coordinate_bbox_min": [
+        -0.28731223940849304,
+        -0.19133435189723969,
+        -0.9769651889801025
+      ],
+      "coordinate_bbox_max": [
+        0.9801101684570312,
+        0.21868735551834106,
+        0.9879571199417114
+      ],
+      "coordinate_extent": [
+        1.2674224376678467,
+        0.41002172231674194,
+        1.964922308921814
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.106088638305664,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.3734993040561676,
+        1.1225225925445557
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_crystal_bowl_013020",
+      "points": 61980,
+      "sha256": "385077ac0acf9cac754a54c48350cb0cff1f001c74a72968d42f7c32e4b7c97f",
+      "coordinate_bbox_min": [
+        -0.9989491105079651,
+        -0.26671886444091797,
+        -0.997361421585083
+      ],
+      "coordinate_bbox_max": [
+        0.9989491105079651,
+        0.18945492804050446,
+        0.9989491105079651
+      ],
+      "coordinate_extent": [
+        1.9978982210159302,
+        0.45617377758026123,
+        1.9963104724884033
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -10.439059257507324,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.34594443440437317,
+        1.4726827144622803
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_crystal_cactus_013020",
+      "points": 29214,
+      "sha256": "8c7426e75724a5c3f36c1f68a3d4fe7d80df0fb212d42e74b6c8f7b56ab85241",
+      "coordinate_bbox_min": [
+        -0.1874387264251709,
+        -0.3741893768310547,
+        -0.15332698822021484
+      ],
+      "coordinate_bbox_max": [
+        0.18954874575138092,
+        0.3768325746059418,
+        0.9933240413665771
+      ],
+      "coordinate_extent": [
+        0.3769874572753906,
+        0.7510219812393188,
+        1.146651029586792
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -13.080182075500488,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.4710007309913635,
+        1.1561702489852905
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_denim_baseball_cap_013020",
+      "points": 63586,
+      "sha256": "bc54cb3df8beedd9a970d7aa6a7d3fa0ed44e650b0218ea524c8885c062b1d3e",
+      "coordinate_bbox_min": [
+        -1.0005062818527222,
+        -0.2218308001756668,
+        -1.0005062818527222
+      ],
+      "coordinate_bbox_max": [
+        0.9989491105079651,
+        0.23132260143756866,
+        1.002063512802124
+      ],
+      "coordinate_extent": [
+        1.999455451965332,
+        0.4531534016132355,
+        2.0025696754455566
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -13.773330688476562,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.4512208104133606,
+        1.4898611307144165
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_denim_jacket_013020",
+      "points": 23639,
+      "sha256": "db7cb25a53f80cc3c29c756e0f5d657ee2ca98f93cefb28d6ebfca3a22d14c2a",
+      "coordinate_bbox_min": [
+        -0.9593454599380493,
+        -0.18625213205814362,
+        -0.997361421585083
+      ],
+      "coordinate_bbox_max": [
+        0.9129811525344849,
+        0.20433767139911652,
+        0.997361421585083
+      ],
+      "coordinate_extent": [
+        1.8723266124725342,
+        0.39058980345726013,
+        1.994722843170166
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -12.181180000305176,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.5666654109954834,
+        1.148677945137024
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_denim_violin_013020",
+      "points": 12599,
+      "sha256": "8caf2ec9c4d4f6e9295825848b12726104b31e07114183d735792b8afc2c60b1",
+      "coordinate_bbox_min": [
+        -0.9910868406295776,
+        -0.0498071163892746,
+        -0.9879571795463562
+      ],
+      "coordinate_bbox_max": [
+        0.9832397699356079,
+        0.18310248851776123,
+        0.3706439733505249
+      ],
+      "coordinate_extent": [
+        1.9743266105651855,
+        0.23290960490703583,
+        1.3586010932922363
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -10.389394760131836,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.353816956281662,
+        1.2402935028076172
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_diamond_bone_013020",
+      "points": 16074,
+      "sha256": "35bcc70a17d6ac37980c36e038492c10162c543f2ec0d4c3c4194574121d8533",
+      "coordinate_bbox_min": [
+        -0.9879571199417114,
+        -0.08215375244617462,
+        -0.3816503882408142
+      ],
+      "coordinate_bbox_max": [
+        0.3231680393218994,
+        0.15634889900684357,
+        0.4192569851875305
+      ],
+      "coordinate_extent": [
+        1.3111251592636108,
+        0.2385026514530182,
+        0.8009073734283447
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -9.95714282989502,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.7757076621055603,
+        1.1438167095184326
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_diamond_wrench_013020",
+      "points": 14520,
+      "sha256": "39f851b501dadc8334422ca055d8458f69f851bc2181590bded19380214df7bb",
+      "coordinate_bbox_min": [
+        -0.9879571199417114,
+        -0.03903989493846893,
+        -0.9910868406295776
+      ],
+      "coordinate_bbox_max": [
+        0.9863846898078918,
+        0.1741846203804016,
+        0.9895143508911133
+      ],
+      "coordinate_extent": [
+        1.974341869354248,
+        0.21322451531887054,
+        1.980601191520691
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.995954513549805,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.445256769657135,
+        1.2505038976669312
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_eggshell_mosaic_013020",
+      "points": 22933,
+      "sha256": "c7a826d955a5220becd82c2d92d076787686f43a9cfbf625ad3c711d8e6ab584",
+      "coordinate_bbox_min": [
+        -0.9895143508911133,
+        -0.02315036952495575,
+        -0.9910868406295776
+      ],
+      "coordinate_bbox_max": [
+        0.4947960376739502,
+        0.3278712034225464,
+        0.9863846898078918
+      ],
+      "coordinate_extent": [
+        1.4843103885650635,
+        0.35102158784866333,
+        1.9774715900421143
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.935209035873413
+      ],
+      "stored_opacity_min_max": [
+        -11.27893352508545,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.43263158202171326,
+        1.238321304321289
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_embroidered_fan_013020",
+      "points": 36527,
+      "sha256": "dc95b3092e283f7e1c3c2a2a282e5b0cb4bedd65ddb20bc646b3f19fcfc017c2",
+      "coordinate_bbox_min": [
+        -0.9161216020584106,
+        -0.36794114112854004,
+        -0.3615140914916992
+      ],
+      "coordinate_bbox_max": [
+        0.8610996007919312,
+        0.32874608039855957,
+        0.3623698949813843
+      ],
+      "coordinate_extent": [
+        1.7772212028503418,
+        0.6966872215270996,
+        0.7238839864730835
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.84803295135498,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.26850059628486633,
+        1.134648084640503
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_emerald_banana_013020",
+      "points": 20643,
+      "sha256": "d70441b654c033663dc91f7670d06502b86cc6c5c5b917042b5ecf198d5b69bd",
+      "coordinate_bbox_min": [
+        -0.9688942432403564,
+        -0.15457169711589813,
+        -0.9801101684570312
+      ],
+      "coordinate_bbox_max": [
+        0.9863846898078918,
+        0.20085163414478302,
+        0.9848122596740723
+      ],
+      "coordinate_extent": [
+        1.9552788734436035,
+        0.35542333126068115,
+        1.9649224281311035
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.009695053100586,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.3066635727882385,
+        1.1808642148971558
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_emerald_skull_013020",
+      "points": 87879,
+      "sha256": "a9489ff47e8bfa81e35a3ae000e3d63960ecd94e500f1bac819ae00fb67ca7eb",
+      "coordinate_bbox_min": [
+        -0.9926592707633972,
+        -0.3884769678115845,
+        -0.9958041906356812
+      ],
+      "coordinate_bbox_max": [
+        0.997361421585083,
+        0.39390096068382263,
+        1.0052084922790527
+      ],
+      "coordinate_extent": [
+        1.990020751953125,
+        0.7823779582977295,
+        2.0010128021240234
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -12.266079902648926,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.32109394669532776,
+        1.3106052875518799
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_felt_hat_013020",
+      "points": 58152,
+      "sha256": "b2d005441981aa819a8da24def6c7f1f53b4da7995a6cd58144878fc2fd11746",
+      "coordinate_bbox_min": [
+        -0.44891178607940674,
+        -0.20796798169612885,
+        -0.41120588779449463
+      ],
+      "coordinate_bbox_max": [
+        0.46943652629852295,
+        0.213128462433815,
+        0.4234490394592285
+      ],
+      "coordinate_extent": [
+        0.9183483123779297,
+        0.42109644412994385,
+        0.8346549272537231
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -10.356979370117188,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.7091941833496094,
+        1.6300299167633057
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_folded_cotton_towel_soft_fabric_isolated_013020",
+      "points": 25702,
+      "sha256": "cdc98ba816fb75ed6a5664514689d3f6292e8bc09d2b54f83c8bbe0301fe002a",
+      "coordinate_bbox_min": [
+        -0.5268771052360535,
+        -0.4001753330230713,
+        -0.5302175283432007
+      ],
+      "coordinate_bbox_max": [
+        0.4383626878261566,
+        0.5098568797111511,
+        0.5308955907821655
+      ],
+      "coordinate_extent": [
+        0.9652397632598877,
+        0.9100322127342224,
+        1.0611131191253662
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -10.728787422180176,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.24546049535274506,
+        1.411589503288269
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_glass_ax_013020",
+      "points": 8237,
+      "sha256": "c221bb34e5818583cb44f7beb550d6890401cfbbb6e1894fa9b4e2efbdaaf983",
+      "coordinate_bbox_min": [
+        -0.955235481262207,
+        -0.12438143789768219,
+        -0.9832397699356079
+      ],
+      "coordinate_bbox_max": [
+        0.1837986707687378,
+        0.18310248851776123,
+        0.3344646692276001
+      ],
+      "coordinate_extent": [
+        1.1390341520309448,
+        0.3074839115142822,
+        1.317704439163208
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.34978199005127,
+        1.411522626876831
+      ],
+      "quaternion_norm_min_max": [
+        0.5098943114280701,
+        1.2327752113342285
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_glass_bottle_transparent_reflective_surface_isolated_013020",
+      "points": 42137,
+      "sha256": "f359d91d2170df3bb134ba028c6487af64dcfccc4ebfb72dd9c3e03e502f2905",
+      "coordinate_bbox_min": [
+        -0.16798686981201172,
+        -0.37973475456237793,
+        -0.16772900521755219
+      ],
+      "coordinate_bbox_max": [
+        0.1679883748292923,
+        0.3828791379928589,
+        0.16793711483478546
+      ],
+      "coordinate_extent": [
+        0.3359752297401428,
+        0.7626138925552368,
+        0.33566612005233765
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -10.242742538452148,
+        1.7348359823226929
+      ],
+      "quaternion_norm_min_max": [
+        0.45471248030662537,
+        1.1232622861862183
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_glass_vase_013020",
+      "points": 29538,
+      "sha256": "119f2cc12c637373b308b58f87164372b956eaec3e8d07e0632177ddff0bdb38",
+      "coordinate_bbox_min": [
+        -0.980851411819458,
+        -0.35668206214904785,
+        -0.9848129749298096
+      ],
+      "coordinate_bbox_max": [
+        0.15895366668701172,
+        0.3529963195323944,
+        0.1582503318786621
+      ],
+      "coordinate_extent": [
+        1.1398050785064697,
+        0.7096784114837646,
+        1.1430633068084717
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -9.559653282165527,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.47443854808807373,
+        1.149709701538086
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_gold_coin_013020",
+      "points": 71214,
+      "sha256": "5709a0e9e1b7852a79870725e43717df751f5ca101f8c7d0e7cb6d47d3f86b6f",
+      "coordinate_bbox_min": [
+        -0.9832397699356079,
+        -0.39629679918289185,
+        -0.9895143508911133
+      ],
+      "coordinate_bbox_max": [
+        0.97856605052948,
+        0.39734184741973877,
+        0.38456618785858154
+      ],
+      "coordinate_extent": [
+        1.961805820465088,
+        0.7936386466026306,
+        1.3740805387496948
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -13.717761039733887,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.5777305960655212,
+        1.1581597328186035
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_gold_leaf_hamburge_013020",
+      "points": 67532,
+      "sha256": "01fa915ac05c34455c3aff5800ad7efc3b90e25e45752220047ecda9c617c2b5",
+      "coordinate_bbox_min": [
+        -0.9958041906356812,
+        -0.2122504562139511,
+        -0.9958041906356812
+      ],
+      "coordinate_bbox_max": [
+        0.9942164421081543,
+        0.21868735551834106,
+        0.9958041906356812
+      ],
+      "coordinate_extent": [
+        1.9900206327438354,
+        0.43093782663345337,
+        1.9916083812713623
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -13.815509796142578,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.17418913543224335,
+        1.6074379682540894
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_golden_eggshell_013020",
+      "points": 66474,
+      "sha256": "27852a7f69473ac6950fec591f5b1f6b316a688d0cd00e820108aa0219dc495c",
+      "coordinate_bbox_min": [
+        -0.9926592707633972,
+        -0.4037821888923645,
+        -0.9895143508911133
+      ],
+      "coordinate_bbox_max": [
+        0.9926592707633972,
+        0.4066200852394104,
+        0.9895143508911133
+      ],
+      "coordinate_extent": [
+        1.9853185415267944,
+        0.8104022741317749,
+        1.9790287017822266
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.948775291442871,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.43656623363494873,
+        1.2100211381912231
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_granite_block_013020",
+      "points": 60062,
+      "sha256": "e4766950409d70e5129cad4b58437a5bb533a1468bfe1ce30e1ad313fec1ab64",
+      "coordinate_bbox_min": [
+        -0.9958041906356812,
+        -0.20703406631946564,
+        -0.997361421585083
+      ],
+      "coordinate_bbox_max": [
+        0.9958041906356812,
+        0.18310248851776123,
+        0.997361421585083
+      ],
+      "coordinate_extent": [
+        1.9916083812713623,
+        0.3901365399360657,
+        1.994722843170166
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -13.522015571594238,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.5214855074882507,
+        1.6144216060638428
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_granite_obelisk_013020",
+      "points": 27617,
+      "sha256": "fd5fea802a40d8eb5b038be5426946ecd9005e59958d3149c0bf7f0dd8c397d2",
+      "coordinate_bbox_min": [
+        -0.9346733689308167,
+        -0.3750491142272949,
+        -0.9453178644180298
+      ],
+      "coordinate_bbox_max": [
+        0.9559502601623535,
+        0.3659304976463318,
+        0.9450622200965881
+      ],
+      "coordinate_extent": [
+        1.8906235694885254,
+        0.7409796118736267,
+        1.8903801441192627
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.890593528747559,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.7306028604507446,
+        1.1625847816467285
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_granite_teddybear_013020",
+      "points": 54521,
+      "sha256": "0689d59248556c652c4addbb724aebd6e2efcbf703b8a0eae9971037dbbdb939",
+      "coordinate_bbox_min": [
+        -1.0005062818527222,
+        -0.3874692916870117,
+        -0.9989491105079651
+      ],
+      "coordinate_bbox_max": [
+        1.0013384819030762,
+        0.3730563819408417,
+        1.002063512802124
+      ],
+      "coordinate_extent": [
+        2.001844882965088,
+        0.7605257034301758,
+        2.0010125637054443
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -10.76339340209961,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.4743487536907196,
+        1.2168020009994507
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_ice_hammer_013020",
+      "points": 25968,
+      "sha256": "b1fe3502d229dbd82eac401f4c66b62b67e9172bdce41a9f32c4b90954e6e7cc",
+      "coordinate_bbox_min": [
+        -0.9550360441207886,
+        -0.42074495553970337,
+        -0.22612214088439941
+      ],
+      "coordinate_bbox_max": [
+        0.891512393951416,
+        0.4204775094985962,
+        0.2319246530532837
+      ],
+      "coordinate_extent": [
+        1.8465484380722046,
+        0.8412224650382996,
+        0.4580467939376831
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -12.40869426727295,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.47986751794815063,
+        1.1264039278030396
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_ice_telescope_013020",
+      "points": 22233,
+      "sha256": "be829cb9ccd1c9c010c1911b8d9764988da4510812d61d3c8c4026d25664efa5",
+      "coordinate_bbox_min": [
+        -0.9832397699356079,
+        -0.15813039243221283,
+        -0.9832397699356079
+      ],
+      "coordinate_bbox_max": [
+        0.921841561794281,
+        0.20512881875038147,
+        0.9832397699356079
+      ],
+      "coordinate_extent": [
+        1.9050812721252441,
+        0.3632591962814331,
+        1.9664795398712158
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.423306465148926,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.28799447417259216,
+        1.1607784032821655
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_iron_hammer_013020",
+      "points": 7658,
+      "sha256": "fd51f525990536193a59a473c5a770c07a4cd99d0c1c8d6162157ef57c173382",
+      "coordinate_bbox_min": [
+        -0.9863846898078918,
+        -0.05871571600437164,
+        -0.3836691379547119
+      ],
+      "coordinate_bbox_max": [
+        0.14094328880310059,
+        0.165266752243042,
+        0.40125250816345215
+      ],
+      "coordinate_extent": [
+        1.1273279190063477,
+        0.22398246824741364,
+        0.7849216461181641
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -9.570276260375977,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.40745455026626587,
+        1.1261173486709595
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_ivory_carving_013020",
+      "points": 25147,
+      "sha256": "370afb8fe8b719ca3bc11107bef9ed926a9e228a691f874758be3b46e65e276a",
+      "coordinate_bbox_min": [
+        -0.927039623260498,
+        -0.37786275148391724,
+        -0.12108004093170166
+      ],
+      "coordinate_bbox_max": [
+        0.8739532232284546,
+        0.37481915950775146,
+        0.14051473140716553
+      ],
+      "coordinate_extent": [
+        1.8009928464889526,
+        0.7526819109916687,
+        0.2615947723388672
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -4.000986576080322
+      ],
+      "stored_opacity_min_max": [
+        -12.259770393371582,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.6754488348960876,
+        1.140629529953003
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_ivory_laptop_013020",
+      "points": 37115,
+      "sha256": "7cf12f2a4987f441a559ed8a9165272a7a1e0f8968a803c5e3941b5986a528cc",
+      "coordinate_bbox_min": [
+        -0.40160414576530457,
+        -0.1087685376405716,
+        -0.9910868406295776
+      ],
+      "coordinate_bbox_max": [
+        0.3888089656829834,
+        0.1470070779323578,
+        0.4585742950439453
+      ],
+      "coordinate_extent": [
+        0.7904131412506104,
+        0.2557756304740906,
+        1.449661135673523
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -10.812466621398926,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.5010163187980652,
+        1.2921267747879028
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_jade_keyboard_013020",
+      "points": 22190,
+      "sha256": "10ded082e129570487a20df349269afb3104e9094c3cde4620cebcd30b018a77",
+      "coordinate_bbox_min": [
+        -0.9879571199417114,
+        -0.04108510911464691,
+        -0.9926592707633972
+      ],
+      "coordinate_bbox_max": [
+        0.9848122596740723,
+        0.3273230195045471,
+        0.9926592707633972
+      ],
+      "coordinate_extent": [
+        1.9727693796157837,
+        0.3684081435203552,
+        1.9853185415267944
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.944177627563477,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.33462226390838623,
+        1.3717906475067139
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_knitted_skull_013020",
+      "points": 109738,
+      "sha256": "351df9c5616bf589e14d8d60d3d7cf0e3f2f9e0ad62babccc21ae7e5bd5eec22",
+      "coordinate_bbox_min": [
+        -1.0035943984985352,
+        -0.47661542892456055,
+        -0.997361421585083
+      ],
+      "coordinate_bbox_max": [
+        0.9942164421081543,
+        0.43038275837898254,
+        1.00679612159729
+      ],
+      "coordinate_extent": [
+        1.9978108406066895,
+        0.9069981575012207,
+        2.004157543182373
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -13.815509796142578,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.17492403090000153,
+        1.4268542528152466
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_knitted_wrench_013020",
+      "points": 14531,
+      "sha256": "d452e971972579fa58d654988d7d5d13f7e0105ee55d5eb7d58c10828a853a7e",
+      "coordinate_bbox_min": [
+        -0.9879571199417114,
+        -0.05616752803325653,
+        -0.9910868406295776
+      ],
+      "coordinate_bbox_max": [
+        0.9895143508911133,
+        0.1741846203804016,
+        0.9910868406295776
+      ],
+      "coordinate_extent": [
+        1.9774714708328247,
+        0.23035214841365814,
+        1.9821736812591553
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.082557678222656,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.3024750351905823,
+        1.1811861991882324
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_lava_rock_013020",
+      "points": 76468,
+      "sha256": "4f2977e8e09d19c29f160dfba344342f63295a70d41851a230dee9b6a1a8012f",
+      "coordinate_bbox_min": [
+        -0.9958041906356812,
+        -0.3986760377883911,
+        -0.9958041906356812
+      ],
+      "coordinate_bbox_max": [
+        0.9942164421081543,
+        0.2795622944831848,
+        0.9989491105079651
+      ],
+      "coordinate_extent": [
+        1.9900206327438354,
+        0.6782383322715759,
+        1.994753360748291
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -12.84004020690918,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.21680298447608948,
+        1.393325686454773
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_lava_rock_chair_013020",
+      "points": 67298,
+      "sha256": "906cd9d89f89339a773f3351292c242003775cbf11d970e092d4ad22166c78ba",
+      "coordinate_bbox_min": [
+        -0.9958041906356812,
+        -0.34586238861083984,
+        -0.9995372295379639
+      ],
+      "coordinate_bbox_max": [
+        0.9942164421081543,
+        0.32917970418930054,
+        1.0005062818527222
+      ],
+      "coordinate_extent": [
+        1.9900206327438354,
+        0.6750420928001404,
+        2.0000433921813965
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.128155708312988,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.2044149488210678,
+        1.4383502006530762
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_lead_balloon_013020",
+      "points": 21846,
+      "sha256": "5407e599c80223ec665d061e41cc4de1d80ffee7dc2ebd715bd8b44a1244ee2b",
+      "coordinate_bbox_min": [
+        -0.15631616115570068,
+        -0.42340558767318726,
+        -0.1540687084197998
+      ],
+      "coordinate_bbox_max": [
+        0.15649199485778809,
+        0.41964370012283325,
+        0.15350282192230225
+      ],
+      "coordinate_extent": [
+        0.31280815601348877,
+        0.8430492877960205,
+        0.30757153034210205
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.496787071228027,
+        1.4819204807281494
+      ],
+      "quaternion_norm_min_max": [
+        0.677291214466095,
+        1.1298974752426147
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_lead_weight_013020",
+      "points": 22266,
+      "sha256": "3581b1fa2bccb75941cf796f9c698b5160ccf6ffcdedb8454e0e31819f45ce6b",
+      "coordinate_bbox_min": [
+        -0.9879571199417114,
+        -0.11948086321353912,
+        -0.4135783314704895
+      ],
+      "coordinate_bbox_max": [
+        0.31671082973480225,
+        0.1741846203804016,
+        0.9848122596740723
+      ],
+      "coordinate_extent": [
+        1.3046679496765137,
+        0.29366546869277954,
+        1.398390531539917
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -12.228808403015137,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.31705352663993835,
+        1.202036738395691
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_leather_boot_013020",
+      "points": 53356,
+      "sha256": "2bfa88198c65db93e4086691713fd28aa0645181b8bd8ae96e7120a7fde7105e",
+      "coordinate_bbox_min": [
+        -0.9786413908004761,
+        -0.31718218326568604,
+        -0.997361421585083
+      ],
+      "coordinate_bbox_max": [
+        0.930345892906189,
+        0.31083524227142334,
+        0.9926592707633972
+      ],
+      "coordinate_extent": [
+        1.908987283706665,
+        0.6280174255371094,
+        1.990020751953125
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.25102424621582,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.3520395755767822,
+        1.272981882095337
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_liquid_metal_statu_013020",
+      "points": 24894,
+      "sha256": "c177328fc8307bb2a53865e576272a726c158e39bc08a69ad6af9ec85020b906",
+      "coordinate_bbox_min": [
+        -0.1578986644744873,
+        -0.39537477493286133,
+        -0.1876145601272583
+      ],
+      "coordinate_bbox_max": [
+        0.9690406322479248,
+        0.3864317834377289,
+        0.17038285732269287
+      ],
+      "coordinate_extent": [
+        1.126939296722412,
+        0.7818065881729126,
+        0.35799741744995117
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -9.97683334350586,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.41486334800720215,
+        1.1573785543441772
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_marble_bread_013020",
+      "points": 61034,
+      "sha256": "71d83befc260980907d4b794db2dad24212d3f5f7c8b46fef57602f72d15b4a4",
+      "coordinate_bbox_min": [
+        -0.9910868406295776,
+        -0.17866186797618866,
+        -0.9958041906356812
+      ],
+      "coordinate_bbox_max": [
+        0.9879571199417114,
+        0.20976948738098145,
+        0.9926592707633972
+      ],
+      "coordinate_extent": [
+        1.979043960571289,
+        0.3884313702583313,
+        1.9884634017944336
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.28603458404541,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.43308520317077637,
+        1.5291409492492676
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_marble_football_013020",
+      "points": 74982,
+      "sha256": "bd780dc364a339370fb205420b7072ccccf8a54f3e1a56224afb3c4e7a2eb711",
+      "coordinate_bbox_min": [
+        -0.9958041906356812,
+        -0.29518425464630127,
+        -0.9958041906356812
+      ],
+      "coordinate_bbox_max": [
+        0.9848122596740723,
+        0.29928088188171387,
+        0.9989491105079651
+      ],
+      "coordinate_extent": [
+        1.9806164503097534,
+        0.5944651365280151,
+        1.994753360748291
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.860611915588379,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.47296109795570374,
+        1.3790662288665771
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_marble_pillar_013020",
+      "points": 35997,
+      "sha256": "5c9eaeb796fd1cc28cb00bff691e12945985db76d7c67383d9fd05a8e73a217b",
+      "coordinate_bbox_min": [
+        -0.9815195798873901,
+        -0.3839055299758911,
+        -0.9487195014953613
+      ],
+      "coordinate_bbox_max": [
+        0.9738279581069946,
+        0.3820856809616089,
+        0.9314415454864502
+      ],
+      "coordinate_extent": [
+        1.9553475379943848,
+        0.7659912109375,
+        1.8801610469818115
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -13.080182075500488,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.7483018636703491,
+        1.2020787000656128
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_oak_barrel_013020",
+      "points": 131182,
+      "sha256": "e7c50e886714c9ed87ae3aac2e67b7c54b3b3fbb5fd20cc7e62f3afb5c72250b",
+      "coordinate_bbox_min": [
+        -1.008353352546692,
+        -0.4246382713317871,
+        -1.008353352546692
+      ],
+      "coordinate_bbox_max": [
+        1.008353352546692,
+        0.4226458966732025,
+        1.008353352546692
+      ],
+      "coordinate_extent": [
+        2.016706705093384,
+        0.847284197807312,
+        2.016706705093384
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -13.815509796142578,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.5034850835800171,
+        1.5771170854568481
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_obsidian_blade_013020",
+      "points": 7382,
+      "sha256": "6732c18ba4048e77a3b5d34f4712f4b70e0927e2f3116156ecff018429edcb14",
+      "coordinate_bbox_min": [
+        -0.17193865776062012,
+        -0.07807938754558563,
+        -0.3302156925201416
+      ],
+      "coordinate_bbox_max": [
+        0.1766343116760254,
+        0.07035325467586517,
+        0.3264198303222656
+      ],
+      "coordinate_extent": [
+        0.3485729694366455,
+        0.1484326422214508,
+        0.6566355228424072
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -9.555435180664062,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.6969568729400635,
+        1.0959317684173584
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_obsidian_skull_013020",
+      "points": 89107,
+      "sha256": "efb10ae1f54e9005ac380284348a6f360e941baaa08cc3386e88a24f52cf6042",
+      "coordinate_bbox_min": [
+        -0.9926592707633972,
+        -0.3827207088470459,
+        -0.39316415786743164
+      ],
+      "coordinate_bbox_max": [
+        0.3605470061302185,
+        0.3888094425201416,
+        0.9958041906356812
+      ],
+      "coordinate_extent": [
+        1.3532062768936157,
+        0.7715301513671875,
+        1.3889683485031128
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.57609748840332,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.2556202709674835,
+        1.4081276655197144
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_paper_box_013020",
+      "points": 55524,
+      "sha256": "e5f6644d1b795533f75d1b4a81bfd41b04d3094be21e160041af88f3b9aae80f",
+      "coordinate_bbox_min": [
+        -0.42064517736434937,
+        -0.12442035973072052,
+        -0.49635565280914307
+      ],
+      "coordinate_bbox_max": [
+        0.41916465759277344,
+        0.17018328607082367,
+        0.5017975568771362
+      ],
+      "coordinate_extent": [
+        0.8398098349571228,
+        0.2946036458015442,
+        0.9981532096862793
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.803218841552734,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.565517783164978,
+        1.5654069185256958
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_paper_sword_013020",
+      "points": 4505,
+      "sha256": "031f8f8c040bbbd4ae85e1415a73ba4b1883f8eea4492cd0ff2c6b78ff519856",
+      "coordinate_bbox_min": [
+        -0.1773364543914795,
+        -0.10837922990322113,
+        -0.34287571907043457
+      ],
+      "coordinate_bbox_max": [
+        0.1884937286376953,
+        0.11387281119823456,
+        0.34228038787841797
+      ],
+      "coordinate_extent": [
+        0.3658301830291748,
+        0.2222520411014557,
+        0.6851561069488525
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.485124588012695,
+        1.100821614265442
+      ],
+      "quaternion_norm_min_max": [
+        0.5468003153800964,
+        1.0689496994018555
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_pewter_mug_013020",
+      "points": 107526,
+      "sha256": "54a766a7d221224a03c90c5d27ac9c9a467ca233aa314c6e54a97e9b497fd41d",
+      "coordinate_bbox_min": [
+        -0.9816672801971436,
+        -0.41055595874786377,
+        -0.9942164421081543
+      ],
+      "coordinate_bbox_max": [
+        0.9769651889801025,
+        0.39339011907577515,
+        0.9879571199417114
+      ],
+      "coordinate_extent": [
+        1.958632469177246,
+        0.8039460778236389,
+        1.9821735620498657
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.199615478515625,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.36387160420417786,
+        1.581554889678955
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_pine_table_013020",
+      "points": 16744,
+      "sha256": "04a72461d537596a973730b24f6cc5e8ed92ec955648e95edb2f529727acbf55",
+      "coordinate_bbox_min": [
+        -0.9816672801971436,
+        -0.11934630572795868,
+        -0.9832397699356079
+      ],
+      "coordinate_bbox_max": [
+        0.9816672801971436,
+        0.20085163414478302,
+        0.9832397699356079
+      ],
+      "coordinate_extent": [
+        1.963334560394287,
+        0.3201979398727417,
+        1.9664795398712158
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.582467079162598,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.2928409278392792,
+        1.1689505577087402
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_plastic_duck_013020",
+      "points": 44628,
+      "sha256": "27e5808c6257dc088e53688a741071b0a5025ec54e65dfa92beaa00b41bdbbc8",
+      "coordinate_bbox_min": [
+        -0.3896474540233612,
+        -0.3428574800491333,
+        -0.25109052658081055
+      ],
+      "coordinate_bbox_max": [
+        0.39927178621292114,
+        0.3364879786968231,
+        0.35746991634368896
+      ],
+      "coordinate_extent": [
+        0.78891921043396,
+        0.6793454885482788,
+        0.6085604429244995
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -10.93340015411377,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.7927018404006958,
+        1.1668245792388916
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_plastic_toolbox_013020",
+      "points": 56512,
+      "sha256": "a446ed80ad37a4b5daa0368a9211b80c63c81bb22adc210158db3480e930253e",
+      "coordinate_bbox_min": [
+        -0.4272937774658203,
+        -0.10628028213977814,
+        -0.509269654750824
+      ],
+      "coordinate_bbox_max": [
+        0.4272937774658203,
+        0.16840393841266632,
+        0.5088194012641907
+      ],
+      "coordinate_extent": [
+        0.8545875549316406,
+        0.27468422055244446,
+        1.0180890560150146
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -12.874329566955566,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.5907952785491943,
+        1.59147047996521
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_plastic_water_bottle_thin_transparent_plastic_isolated_013020",
+      "points": 36120,
+      "sha256": "6d0012181ffbe44ba16e1cfe7f7b4a5f395d7cc57c87eabe00db70fa534014fe",
+      "coordinate_bbox_min": [
+        -0.14592871069908142,
+        -0.3718377351760864,
+        -0.14598681032657623
+      ],
+      "coordinate_bbox_max": [
+        0.1491556614637375,
+        0.36227554082870483,
+        0.1450895071029663
+      ],
+      "coordinate_extent": [
+        0.2950843572616577,
+        0.7341132760047913,
+        0.29107630252838135
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -12.733556747436523,
+        2.101099967956543
+      ],
+      "quaternion_norm_min_max": [
+        0.5772867798805237,
+        1.1179646253585815
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_plush_pillow_soft_cloth_isolated_013020",
+      "points": 35977,
+      "sha256": "fdfe18c6b89c6c15650fab01167aa9a05e659a537ef857ea224b8e8f14fe9390",
+      "coordinate_bbox_min": [
+        -0.9909855127334595,
+        -0.4972289204597473,
+        -0.5309193730354309
+      ],
+      "coordinate_bbox_max": [
+        0.4380476176738739,
+        0.509868860244751,
+        0.5308660268783569
+      ],
+      "coordinate_extent": [
+        1.4290331602096558,
+        1.0070977210998535,
+        1.0617854595184326
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -13.815509796142578,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.6259248852729797,
+        1.3940675258636475
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_porcelain_teapot_013020",
+      "points": 36428,
+      "sha256": "38a54c35a0e42f797758d6d868f87e8aa6464fd15720488f24a74612f59d0f5d",
+      "coordinate_bbox_min": [
+        -0.9926592707633972,
+        -0.387842059135437,
+        -0.9900108575820923
+      ],
+      "coordinate_bbox_max": [
+        0.9942164421081543,
+        0.21663829684257507,
+        0.9942164421081543
+      ],
+      "coordinate_extent": [
+        1.9868757724761963,
+        0.6044803857803345,
+        1.9842272996902466
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.163247108459473,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.4155415892601013,
+        1.3961353302001953
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_porcelain_wrench_013020",
+      "points": 14621,
+      "sha256": "ca0d4a521dc175c15b396cd6774bb8ce06c1fa2cd3c3d729d65db8c9c8c575f1",
+      "coordinate_bbox_min": [
+        -0.9879571199417114,
+        -0.050791844725608826,
+        -0.4486812353134155
+      ],
+      "coordinate_bbox_max": [
+        0.3186342716217041,
+        0.3575792908668518,
+        0.4643512964248657
+      ],
+      "coordinate_extent": [
+        1.3065913915634155,
+        0.4083711504936218,
+        0.9130325317382812
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -10.075875282287598,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.5579661130905151,
+        1.176842451095581
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_rubber_ball_matte_elastic_surface_isolated_013020",
+      "points": 87980,
+      "sha256": "340f962e05c9285a7ccb1b55740397216582a7249f009dc9c2e4463c244c93fb",
+      "coordinate_bbox_min": [
+        -0.4357592761516571,
+        -0.39651811122894287,
+        -0.3677217364311218
+      ],
+      "coordinate_bbox_max": [
+        0.3648306727409363,
+        0.36040693521499634,
+        0.4359605610370636
+      ],
+      "coordinate_extent": [
+        0.800589919090271,
+        0.7569250464439392,
+        0.8036823272705078
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.439790725708008,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.7158857583999634,
+        1.2108758687973022
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_rubber_skeleton_013020",
+      "points": 13487,
+      "sha256": "757f618e447d8d94e1381985a78efbf1a6aa05972e3c7cb571c2b243f3a09bea",
+      "coordinate_bbox_min": [
+        -0.07385015487670898,
+        -0.4294055104255676,
+        -0.1335909366607666
+      ],
+      "coordinate_bbox_max": [
+        0.12062191963195801,
+        0.4527434706687927,
+        0.11809659004211426
+      ],
+      "coordinate_extent": [
+        0.194472074508667,
+        0.8821489810943604,
+        0.25168752670288086
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.23509693145752,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.7043032646179199,
+        1.131160855293274
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_rubber_tire_013020",
+      "points": 61869,
+      "sha256": "5c8533d00ef157143213df3d07d64a27c239f06a82fd4902f1afd1677ecdeb06",
+      "coordinate_bbox_min": [
+        -0.39656615257263184,
+        -0.2627487778663635,
+        -0.42504292726516724
+      ],
+      "coordinate_bbox_max": [
+        0.4095470905303955,
+        0.3132835030555725,
+        0.42829424142837524
+      ],
+      "coordinate_extent": [
+        0.8061132431030273,
+        0.576032280921936,
+        0.8533371686935425
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -13.436858177185059,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.4036082327365875,
+        1.182542085647583
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_rusty_chain_013020",
+      "points": 9341,
+      "sha256": "481acdbf0bd3cd980cfdb4c72811de514383c3bc1fe496fe243b19d8f80329b3",
+      "coordinate_bbox_min": [
+        -0.9863846898078918,
+        -0.052260056138038635,
+        -0.9879571795463562
+      ],
+      "coordinate_bbox_max": [
+        0.9236088991165161,
+        0.1741846203804016,
+        0.9863846898078918
+      ],
+      "coordinate_extent": [
+        1.9099936485290527,
+        0.22644467651844025,
+        1.974341869354248
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.971374034881592
+      ],
+      "stored_opacity_min_max": [
+        -10.683566093444824,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.39724645018577576,
+        1.1511090993881226
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_sandstone_book_013020",
+      "points": 52080,
+      "sha256": "349fc32f2afe3791c6e3fb62556893bc87ccecd58859e919d04f01383b2ae448",
+      "coordinate_bbox_min": [
+        -0.9942164421081543,
+        -0.10112832486629486,
+        -0.9958041906356812
+      ],
+      "coordinate_bbox_max": [
+        0.9879571199417114,
+        0.165266752243042,
+        0.9958041906356812
+      ],
+      "coordinate_extent": [
+        1.9821735620498657,
+        0.26639509201049805,
+        1.9916083812713623
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.423306465148926,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.512506365776062,
+        1.6118440628051758
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_sandstone_joystick_013020",
+      "points": 32588,
+      "sha256": "aa2103e662c98adf60e233e6dfda0744f8f60f1a96ca3e5c086e50aea1b4bfe2",
+      "coordinate_bbox_min": [
+        -0.16774535179138184,
+        -0.3710986375808716,
+        -0.16844868659973145
+      ],
+      "coordinate_bbox_max": [
+        0.16844870150089264,
+        0.3692062497138977,
+        0.16809701919555664
+      ],
+      "coordinate_extent": [
+        0.3361940383911133,
+        0.7403048872947693,
+        0.3365457057952881
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -13.80231761932373,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.739830493927002,
+        1.2943617105484009
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_sapphire_ring_013020",
+      "points": 35828,
+      "sha256": "a2f3cb060854fd6d4ea0eb3b540a929039f328cc984ea7766fc09d2fe0b66178",
+      "coordinate_bbox_min": [
+        -0.4321032166481018,
+        -0.12892483174800873,
+        -0.8953714370727539
+      ],
+      "coordinate_bbox_max": [
+        0.4163411259651184,
+        0.18310248851776123,
+        0.9832397699356079
+      ],
+      "coordinate_extent": [
+        0.8484443426132202,
+        0.31202733516693115,
+        1.8786112070083618
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.73768424987793,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.4744618535041809,
+        1.289122223854065
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_seashell_necklace_013020",
+      "points": 10871,
+      "sha256": "5576882f684df13a83df4f0e58077ee5a5398f440dc1f8edfb83fc19b23a306e",
+      "coordinate_bbox_min": [
+        -0.963083028793335,
+        -0.3783069849014282,
+        -0.18532872200012207
+      ],
+      "coordinate_bbox_max": [
+        0.15543699264526367,
+        0.38291609287261963,
+        0.19201040267944336
+      ],
+      "coordinate_extent": [
+        1.1185200214385986,
+        0.7612230777740479,
+        0.37733912467956543
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.982862710952759
+      ],
+      "stored_opacity_min_max": [
+        -11.337203025817871,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.6794564723968506,
+        1.1185941696166992
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_shingle_roof_013020",
+      "points": 28966,
+      "sha256": "6b05c7b316fe5c5ebec1a632abcd0275c3a6326b2fca3beeb8fe5e88f4f46a0f",
+      "coordinate_bbox_min": [
+        -0.9879571199417114,
+        -0.47812509536743164,
+        -0.9926592707633972
+      ],
+      "coordinate_bbox_max": [
+        0.9879571199417114,
+        0.1741846203804016,
+        0.9879571199417114
+      ],
+      "coordinate_extent": [
+        1.9759142398834229,
+        0.6523097157478333,
+        1.9806163311004639
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -12.516491889953613,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.2792322039604187,
+        1.2160555124282837
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_silk_scarf_013020",
+      "points": 16004,
+      "sha256": "ade31fe17de5162ced1454a2842523771028951683924302bd1a9b6c9850b538",
+      "coordinate_bbox_min": [
+        -0.9879571199417114,
+        -0.02763064205646515,
+        -0.9910868406295776
+      ],
+      "coordinate_bbox_max": [
+        0.9879571199417114,
+        0.16952301561832428,
+        0.9895143508911133
+      ],
+      "coordinate_extent": [
+        1.9759142398834229,
+        0.19715365767478943,
+        1.980601191520691
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.708270072937012,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.38718143105506897,
+        1.2583050727844238
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_silver_human_skele_013020",
+      "points": 15647,
+      "sha256": "44ba80c685a39be0019e7b628036f52b4f63780253d72144e54525d5e2377949",
+      "coordinate_bbox_min": [
+        -0.975392758846283,
+        -0.414195716381073,
+        -0.9344804286956787
+      ],
+      "coordinate_bbox_max": [
+        0.9533041715621948,
+        0.4148494601249695,
+        0.9801101684570312
+      ],
+      "coordinate_extent": [
+        1.928696870803833,
+        0.8290451765060425,
+        1.91459059715271
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -10.902173042297363,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.2772698998451233,
+        1.1331486701965332
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_silver_spoon_013020",
+      "points": 8097,
+      "sha256": "22e5073cf60cd401f9bbb7fa490dd688759d35904945b3fbeb84640615cdb5f4",
+      "coordinate_bbox_min": [
+        -0.9863846898078918,
+        -0.05984313786029816,
+        -0.38050520420074463
+      ],
+      "coordinate_bbox_max": [
+        0.9477705359458923,
+        0.16774243116378784,
+        0.39794492721557617
+      ],
+      "coordinate_extent": [
+        1.9341552257537842,
+        0.227585569024086,
+        0.7784501314163208
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -12.828866958618164,
+        1.3508540391921997
+      ],
+      "quaternion_norm_min_max": [
+        0.6577509045600891,
+        1.1351075172424316
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_sponge_porous_soft_material_isolated_013020",
+      "points": 63217,
+      "sha256": "752c25e81586bf11efa57d65d2019993713d8af90534cc59814554f1efed7403",
+      "coordinate_bbox_min": [
+        -0.4307868480682373,
+        -0.3989112973213196,
+        -0.4275665879249573
+      ],
+      "coordinate_bbox_max": [
+        0.4761298596858978,
+        0.5170455574989319,
+        0.5304833054542542
+      ],
+      "coordinate_extent": [
+        0.9069167375564575,
+        0.9159568548202515,
+        0.9580498933792114
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.967381477355957,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.6999134421348572,
+        1.463104009628296
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_stainless_steel_si_013020",
+      "points": 36376,
+      "sha256": "e6c6045b7cbc0ff9e82ddfa81ace65172a39aa2a7406bb1262ab7b9bfdf81495",
+      "coordinate_bbox_min": [
+        -0.9832397699356079,
+        -0.09065704047679901,
+        -0.9848122596740723
+      ],
+      "coordinate_bbox_max": [
+        0.4456348419189453,
+        0.18310248851776123,
+        0.5073999166488647
+      ],
+      "coordinate_extent": [
+        1.4288746118545532,
+        0.27375954389572144,
+        1.492212176322937
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.34978199005127,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.5341779589653015,
+        1.4812778234481812
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_stone_pillow_013020",
+      "points": 46789,
+      "sha256": "d4affa2870b42101df46d78fea75c6bfc582d57b2f11dc0e52c02d55255dc943",
+      "coordinate_bbox_min": [
+        -0.9910868406295776,
+        -0.16294555366039276,
+        -0.9926592707633972
+      ],
+      "coordinate_bbox_max": [
+        0.9895143508911133,
+        0.20085163414478302,
+        0.9942164421081543
+      ],
+      "coordinate_extent": [
+        1.980601191520691,
+        0.3637971878051758,
+        1.9868757724761963
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.431514739990234,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.39743539690971375,
+        1.4119718074798584
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_stone_statue_013020",
+      "points": 33351,
+      "sha256": "a4d1da70fc912d7ba11287f911f167c9407f858273a685142acc3727c27c4c35",
+      "coordinate_bbox_min": [
+        -0.9767763018608093,
+        -0.37994086742401123,
+        -0.9571489095687866
+      ],
+      "coordinate_bbox_max": [
+        0.9573740363121033,
+        0.416562020778656,
+        0.9958041906356812
+      ],
+      "coordinate_extent": [
+        1.9341503381729126,
+        0.7965028882026672,
+        1.9529531002044678
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.024214744567871,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.6335866451263428,
+        1.2123030424118042
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_terracotta_warrior_013020",
+      "points": 27600,
+      "sha256": "308cb00b3c67afebf52265ecfc066f4049921c11663500179f52a820e31c16ca",
+      "coordinate_bbox_min": [
+        -0.9021350145339966,
+        -0.4109858274459839,
+        -0.11323690414428711
+      ],
+      "coordinate_bbox_max": [
+        0.11569857597351074,
+        0.41533857583999634,
+        0.1297987699508667
+      ],
+      "coordinate_extent": [
+        1.0178335905075073,
+        0.8263244032859802,
+        0.2430356740951538
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.47646713256836,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.6860377788543701,
+        1.1289043426513672
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_tin_can_013020",
+      "points": 105231,
+      "sha256": "a04621409c850c3ff976918b8c1359d06dfe15fff13c26bee6d937c06781c3df",
+      "coordinate_bbox_min": [
+        -1.008353352546692,
+        -0.4316123127937317,
+        -1.008353352546692
+      ],
+      "coordinate_bbox_max": [
+        1.008353352546692,
+        0.3859131932258606,
+        1.008353352546692
+      ],
+      "coordinate_extent": [
+        2.016706705093384,
+        0.8175255060195923,
+        2.016706705093384
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -10.89411449432373,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.47441479563713074,
+        1.6253238916397095
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_tin_soldier_bread_013020",
+      "points": 20338,
+      "sha256": "b5db52704b7f1b9e693cb7755ac5440512c030bfe1038fe360208b2d59435b05",
+      "coordinate_bbox_min": [
+        -0.9509261846542358,
+        -0.3696942925453186,
+        -0.9234869480133057
+      ],
+      "coordinate_bbox_max": [
+        0.9597921371459961,
+        0.3724784255027771,
+        0.9602692723274231
+      ],
+      "coordinate_extent": [
+        1.910718321800232,
+        0.7421727180480957,
+        1.883756160736084
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -10.697973251342773,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.6762740612030029,
+        1.1369917392730713
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_velvet_curtain_013020",
+      "points": 57732,
+      "sha256": "9395e75282ba0dd9365551aadc29c73e7ebdd072f32ba623c985fa876a5c6fc9",
+      "coordinate_bbox_min": [
+        -0.18937289714813232,
+        -0.38207101821899414,
+        -0.2771139144897461
+      ],
+      "coordinate_bbox_max": [
+        0.13890860974788666,
+        0.3876463770866394,
+        0.23878216743469238
+      ],
+      "coordinate_extent": [
+        0.3282815217971802,
+        0.7697173953056335,
+        0.5158960819244385
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.470735549926758,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.47471264004707336,
+        1.1053030490875244
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_velvet_sofa_013020",
+      "points": 77450,
+      "sha256": "9a320577dd14592c671eb35d0474c6417ae16ec9c542f531799a9d644716cc31",
+      "coordinate_bbox_min": [
+        -0.9910868406295776,
+        -0.21910567581653595,
+        -0.5332816243171692
+      ],
+      "coordinate_bbox_max": [
+        0.9769651889801025,
+        0.21868735551834106,
+        0.5286716222763062
+      ],
+      "coordinate_extent": [
+        1.9680520296096802,
+        0.4377930164337158,
+        1.0619533061981201
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -13.109169960021973,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.31890085339546204,
+        1.6206468343734741
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_wicker_basket_013020",
+      "points": 89605,
+      "sha256": "3f20160bdfd35dd42fe5a56812838e282f53be62dd605480b136a6232c7e8bb5",
+      "coordinate_bbox_min": [
+        -1.00679612159729,
+        -0.3838962912559509,
+        -1.008353352546692
+      ],
+      "coordinate_bbox_max": [
+        1.00679612159729,
+        0.1931862086057663,
+        1.008353352546692
+      ],
+      "coordinate_extent": [
+        2.01359224319458,
+        0.5770825147628784,
+        2.016706705093384
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -10.986540794372559,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.32920020818710327,
+        1.6350561380386353
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_wire_mesh_brain_013020",
+      "points": 49278,
+      "sha256": "d07259fa75c6ab7a7f967d6528d9a6a89872894c41079985dc3fd132fa3088ce",
+      "coordinate_bbox_min": [
+        -1.0005062818527222,
+        -0.4378846287727356,
+        -0.997361421585083
+      ],
+      "coordinate_bbox_max": [
+        0.9958041906356812,
+        0.2977701723575592,
+        1.0005062818527222
+      ],
+      "coordinate_extent": [
+        1.9963104724884033,
+        0.7356548309326172,
+        1.9978677034378052
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -13.457476615905762,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.3697112500667572,
+        1.239068627357483
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_wooden_chair_013020",
+      "points": 25358,
+      "sha256": "cd8aae7321aa6171734ffa18cef5a6e41dd3e83ae51dcfb8706fd3ef79f59e5d",
+      "coordinate_bbox_min": [
+        -0.9895143508911133,
+        -0.3800742030143738,
+        -0.9895143508911133
+      ],
+      "coordinate_bbox_max": [
+        0.9832397699356079,
+        0.3780778646469116,
+        0.17787635326385498
+      ],
+      "coordinate_extent": [
+        1.9727541208267212,
+        0.7581520676612854,
+        1.1673907041549683
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -13.396852493286133,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.40778660774230957,
+        1.172946810722351
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_wooden_fire_013020",
+      "points": 23726,
+      "sha256": "ed0444f1221ed21ee3c2ca725bac7baa8b0362b00ae331715dfbebbdf9adbc1f",
+      "coordinate_bbox_min": [
+        -0.16123950481414795,
+        -0.3325110077857971,
+        -0.1582503318786621
+      ],
+      "coordinate_bbox_max": [
+        0.15578866004943848,
+        0.3150094449520111,
+        0.16088783740997314
+      ],
+      "coordinate_extent": [
+        0.3170281648635864,
+        0.6475204229354858,
+        0.31913816928863525
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -13.201542854309082,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.6897816061973572,
+        1.299530029296875
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_wooden_gear_013020",
+      "points": 37193,
+      "sha256": "820785c3185f9696027350119bea208cf3d7ffd34cdb95fb5092efdc426d11b1",
+      "coordinate_bbox_min": [
+        -0.9863846898078918,
+        -0.06367261707782745,
+        -0.9863846898078918
+      ],
+      "coordinate_bbox_max": [
+        0.42340755462646484,
+        0.165266752243042,
+        0.4254736006259918
+      ],
+      "coordinate_extent": [
+        1.409792184829712,
+        0.22893936932086945,
+        1.411858320236206
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -11.347253799438477,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.42296215891838074,
+        1.1951308250427246
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_wool_sweater_013020",
+      "points": 90087,
+      "sha256": "4461ab7b1d9cb14be0a0e1018125c2d995132cd8d2c8fee90c97d930b87e0f4f",
+      "coordinate_bbox_min": [
+        -0.9958041906356812,
+        -0.3867143988609314,
+        -0.9958041906356812
+      ],
+      "coordinate_bbox_max": [
+        0.9832397699356079,
+        0.3649030923843384,
+        1.0005062818527222
+      ],
+      "coordinate_extent": [
+        1.979043960571289,
+        0.7516174912452698,
+        1.9963104724884033
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -12.210680961608887,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.583706259727478,
+        1.4830225706100464
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "a_woven_straw_hat_013020",
+      "points": 44116,
+      "sha256": "3e578dc8925d8d963371b97bbbdaef3e8afa63d4f40d5daa5b3935cdb8727a30",
+      "coordinate_bbox_min": [
+        -0.997361421585083,
+        -0.3935169577598572,
+        -0.997361421585083
+      ],
+      "coordinate_bbox_max": [
+        0.9989491105079651,
+        0.165266752243042,
+        0.9989491105079651
+      ],
+      "coordinate_extent": [
+        1.9963104724884033,
+        0.5587837100028992,
+        1.9963104724884033
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -9.663331031799316,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.593005895614624,
+        1.4494074583053589
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    },
+    {
+      "object_id": "an_empty_aluminum_can_dented_metal_isolated_013020",
+      "points": 79167,
+      "sha256": "f959e8872ce957c21d0f98a9668d199804abff67e2fb7ee8e236880eaee131be",
+      "coordinate_bbox_min": [
+        -0.24466824531555176,
+        -0.3851826786994934,
+        -0.24434171617031097
+      ],
+      "coordinate_bbox_max": [
+        0.24430915713310242,
+        0.3704398274421692,
+        0.24374178051948547
+      ],
+      "coordinate_extent": [
+        0.4889774024486542,
+        0.7556225061416626,
+        0.48808348178863525
+      ],
+      "stored_log_scale_min_max": [
+        -7.600882530212402,
+        -3.912022590637207
+      ],
+      "stored_opacity_min_max": [
+        -13.815509796142578,
+        13.80231761932373
+      ],
+      "quaternion_norm_min_max": [
+        0.24503491818904877,
+        1.4133294820785522
+      ],
+      "length_scale_m": null,
+      "solid_volume_validated": false
+    }
+  ],
+  "limits": "Finite binary Gaussian arrays, coverage and hashes only; not calibrated physical length, volume, mass or constitutive response."
+}

@@ -1,0 +1,2240 @@
+{
+ "created": "2026-11-14 (v3g)",
+ "deadline": "2026-11-15T06:00Z",
+ "protocol_notes": [
+  "All PAC-NeRF numbers come from the official code (github.com/xuan-li/PAC-NeRF @ b613048), official per-scene configs; only data/output paths, n_cameras (3-view variant) and the Taichi memory pool fraction (0.6 -> 0.12/0.2, needed on shared GPUs) were changed.",
+  "rho is fixed to 1000 by the official configs (not optimised) and assumed 1000 by our model; GT = PAC-NeRF paper Table 1.",
+  "3-view variant uses the same canonical triplet t0 = cameras [4,6,7] as our model (docs/v3c/PACNERF_FEWSHOT.json), renumbered 0..2.",
+  "Engines differ: PAC-NeRF fits its own differentiable MPM to its own MPM renders (in-engine); our model was trained on a different simulator/action family and is applied zero-shot (K0) or with leave-one-scene-out offset calibration.",
+  "Wall-clock measured on shared A800-80GB GPUs (100% utilisation by other agents, up to 5 co-located v3g runs); treat as upper bounds; the README of PhysTwin and PAC-NeRF quote faster single-job times.",
+  "Errors: |log10 E_hat - log10 E_gt|, |nu_hat - nu_gt|, |log10 tauY_hat - log10 tauY_gt|."
+ ],
+ "pacnerf_official": [
+  {
+   "scene": "torus",
+   "run": "torus_v11",
+   "inputs": "PAC-NeRF data.zip renders, 800x800 RGB, 14 frames @24 fps, official background matting",
+   "views": 11,
+   "config": "external/pacnerf/configs/torus.py (official) + scripts/v3g/pn_cfgs/torus_v11.py (paths, n_cameras, taichi pool only)",
+   "iterations": {
+    "static": 6000,
+    "velocity_lbfgs_evals": 15,
+    "dynamic_completed": 150,
+    "dynamic_schedule": "50 (hit_frame+warmup frames) + 100 (all frames), Adam",
+    "dynamic_nan_dt_halving_retries": 0
+   },
+   "wall_clock_s": {
+    "stage": {
+     "data_prep_matting": 25,
+     "static": 1047,
+     "velocity": 440,
+     "dynamic": 12031
+    },
+    "total_productive": 13543,
+    "attempts": 2,
+    "note": "shared A800 at 100% util from other tenants; several PAC-NeRF runs co-located -> upper bound"
+   },
+   "gpu": "7 NVIDIA A800-SXM4-80GB",
+   "estimate": {
+    "E": 1062268.124848358,
+    "nu": 0.28783152341168466,
+    "source": "final train_dynamic.pt",
+    "ckpt_stage_epoch": 2
+   },
+   "gt": {
+    "E": 1000000.0,
+    "nu": 0.3
+   },
+   "error": {
+    "log10_E_abs": 0.026234149932861328,
+    "E_rel": 0.0622681248483581,
+    "nu_abs": 0.012168476588315325
+   },
+   "status": "completed (150/150 dynamic iterations); attempt 1 (GPU 0) CUDA-OOM caused by other tenants during the dynamic stage; dynamic stage restarted from scratch on GPU 7 from attempt-1 static/velocity checkpoints (official resume would skip the interrupted sub-stage)"
+  },
+  {
+   "scene": "torus",
+   "run": "torus_v3t0",
+   "inputs": "PAC-NeRF data.zip renders, 800x800 RGB, 14 frames @24 fps, official background matting",
+   "views": [
+    4,
+    6,
+    7
+   ],
+   "config": "external/pacnerf/configs/torus.py (official) + scripts/v3g/pn_cfgs/torus_v3t0.py (paths, n_cameras, taichi pool only)",
+   "iterations": {
+    "static": 6000,
+    "velocity_lbfgs_evals": 19,
+    "dynamic_completed": 52,
+    "dynamic_schedule": "50 (hit_frame+warmup frames) + 100 (all frames), Adam",
+    "dynamic_nan_dt_halving_retries": 27
+   },
+   "wall_clock_s": {
+    "stage": {
+     "data_prep_matting": 109,
+     "static": 1641,
+     "velocity": 813,
+     "dynamic": 17470
+    },
+    "total_productive": 20033,
+    "attempts": 1,
+    "note": "shared A800 at 100% util from other tenants; several PAC-NeRF runs co-located -> upper bound"
+   },
+   "gpu": "3 NVIDIA A800-SXM4-80GB",
+   "estimate": {
+    "E": 143964.87044758478,
+    "nu": -0.34548309445381165,
+    "source": "last logged dynamic-iteration params (run not finished)"
+   },
+   "gt": {
+    "E": 1000000.0,
+    "nu": 0.3
+   },
+   "error": {
+    "log10_E_abs": 0.8417434692382812,
+    "E_rel": 0.8560351295524152,
+    "nu_abs": 0.6454830944538117
+   },
+   "status": "not completed: 52/150 dynamic iterations; NOT COMPLETED: stopped manually at 52/150 dynamic iterations (2026-11-14T06:49Z). nu had drifted to -0.345 (bound -0.45); the simulator then returned NaN and the official NaN -> dt/2 retry loop made one iteration take >1 h (27 re-simulations). Estimate = last logged parameters"
+  },
+  {
+   "scene": "bird",
+   "run": "bird_v11",
+   "inputs": "PAC-NeRF data.zip renders, 800x800 RGB, 14 frames @24 fps, official background matting",
+   "views": 11,
+   "config": "external/pacnerf/configs/bird.py (official) + scripts/v3g/pn_cfgs/bird_v11.py (paths, n_cameras, taichi pool only)",
+   "iterations": {
+    "static": 6000,
+    "velocity_lbfgs_evals": 12,
+    "dynamic_completed": 150,
+    "dynamic_schedule": "50 (hit_frame+warmup frames) + 100 (all frames), Adam",
+    "dynamic_nan_dt_halving_retries": 0
+   },
+   "wall_clock_s": {
+    "stage": {
+     "data_prep_matting": 31,
+     "static": 1548,
+     "velocity": 409,
+     "dynamic": 6650
+    },
+    "total_productive": 8638,
+    "attempts": 2,
+    "note": "shared A800 at 100% util from other tenants; several PAC-NeRF runs co-located -> upper bound"
+   },
+   "gpu": "7 NVIDIA A800-SXM4-80GB",
+   "estimate": {
+    "E": 371308.22824654647,
+    "nu": 0.41286474000141865,
+    "source": "final train_dynamic.pt",
+    "ckpt_stage_epoch": 2
+   },
+   "gt": {
+    "E": 300000.0,
+    "nu": 0.3
+   },
+   "error": {
+    "log10_E_abs": 0.09261331864459521,
+    "E_rel": 0.23769409415515488,
+    "nu_abs": 0.11286474000141866
+   },
+   "status": "completed (150/150 dynamic iterations); attempt 1 (GPU 0) CUDA-OOM during the static stage at iter ~4770; resumed with the official static checkpoint on GPU 7"
+  },
+  {
+   "scene": "bird",
+   "run": "bird_v3t0",
+   "inputs": "PAC-NeRF data.zip renders, 800x800 RGB, 14 frames @24 fps, official background matting",
+   "views": [
+    4,
+    6,
+    7
+   ],
+   "config": "external/pacnerf/configs/bird.py (official) + scripts/v3g/pn_cfgs/bird_v3t0.py (paths, n_cameras, taichi pool only)",
+   "iterations": {
+    "static": 6000,
+    "velocity_lbfgs_evals": 11,
+    "dynamic_completed": 150,
+    "dynamic_schedule": "50 (hit_frame+warmup frames) + 100 (all frames), Adam",
+    "dynamic_nan_dt_halving_retries": 0
+   },
+   "wall_clock_s": {
+    "stage": {
+     "data_prep_matting": 12,
+     "static": 1643,
+     "velocity": 339,
+     "dynamic": 8263
+    },
+    "total_productive": 10257,
+    "attempts": 1,
+    "note": "shared A800 at 100% util from other tenants; several PAC-NeRF runs co-located -> upper bound"
+   },
+   "gpu": "3 NVIDIA A800-SXM4-80GB",
+   "estimate": {
+    "E": 1059.2051122139324,
+    "nu": 0.17880573775759678,
+    "source": "final train_dynamic.pt",
+    "ckpt_stage_epoch": 2
+   },
+   "gt": {
+    "E": 300000.0,
+    "nu": 0.3
+   },
+   "error": {
+    "log10_E_abs": 2.4521411865128755,
+    "E_rel": 0.9964693162926203,
+    "nu_abs": 0.1211942622424032
+   },
+   "status": "completed (150/150 dynamic iterations); completed (train_dynamic.pt epoch 2, 150 iterations logged); the wrapper's end-marker line is missing, end time = last log line"
+  },
+  {
+   "scene": "playdoh",
+   "run": "playdoh_v11",
+   "inputs": "PAC-NeRF data.zip renders, 800x800 RGB, 14 frames @24 fps, official background matting",
+   "views": 11,
+   "config": "external/pacnerf/configs/playdoh.py (official) + scripts/v3g/pn_cfgs/playdoh_v11.py (paths, n_cameras, taichi pool only)",
+   "iterations": {
+    "static": 6000,
+    "velocity_lbfgs_evals": 12,
+    "dynamic_completed": 150,
+    "dynamic_schedule": "50 (hit_frame+warmup frames) + 100 (all frames), Adam",
+    "dynamic_nan_dt_halving_retries": 37
+   },
+   "wall_clock_s": {
+    "stage": {
+     "data_prep_matting": 27,
+     "static": 4108,
+     "velocity": 1725,
+     "dynamic": 25904
+    },
+    "total_productive": 31764,
+    "attempts": 2,
+    "note": "shared A800 at 100% util from other tenants; several PAC-NeRF runs co-located -> upper bound"
+   },
+   "gpu": "3 NVIDIA A800-SXM4-80GB",
+   "estimate": {
+    "E": 6125308.5691466555,
+    "nu": 0.13723112999894882,
+    "source": "final train_dynamic.pt",
+    "ckpt_stage_epoch": 2,
+    "tau_y": 17158.391242822425
+   },
+   "gt": {
+    "E": 2000000.0,
+    "nu": 0.3,
+    "tau_y": 15400.0
+   },
+   "error": {
+    "log10_E_abs": 0.48609797598518867,
+    "E_rel": 2.062654284573328,
+    "nu_abs": 0.16276887000105117,
+    "log10_tau_y_abs": 0.046955845478234615,
+    "tau_y_rel": 0.1141812495339237
+   },
+   "status": "completed (150/150 dynamic iterations); attempt 1 started on GPU 0 and was killed after ~4 min (moved off the overcrowded GPU 0); resumed from the official static checkpoint on GPU 3; 37 NaN->dt/2 re-simulations in the dynamic stage"
+  },
+  {
+   "scene": "playdoh",
+   "run": "playdoh_v3t0",
+   "inputs": "PAC-NeRF data.zip renders, 800x800 RGB, 14 frames @24 fps, official background matting",
+   "views": [
+    4,
+    6,
+    7
+   ],
+   "config": "external/pacnerf/configs/playdoh.py (official) + scripts/v3g/pn_cfgs/playdoh_v3t0.py (paths, n_cameras, taichi pool only)",
+   "iterations": {
+    "static": 6000,
+    "velocity_lbfgs_evals": 10,
+    "dynamic_completed": 150,
+    "dynamic_schedule": "50 (hit_frame+warmup frames) + 100 (all frames), Adam",
+    "dynamic_nan_dt_halving_retries": 110
+   },
+   "wall_clock_s": {
+    "stage": {
+     "data_prep_matting": 16,
+     "static": 2996,
+     "velocity": 736,
+     "dynamic": 35185
+    },
+    "total_productive": 38933,
+    "attempts": 1,
+    "note": "shared A800 at 100% util from other tenants; several PAC-NeRF runs co-located -> upper bound"
+   },
+   "gpu": "3 NVIDIA A800-SXM4-80GB",
+   "estimate": {
+    "E": 19600550.821137547,
+    "nu": 0.12942637594410883,
+    "source": "final train_dynamic.pt",
+    "ckpt_stage_epoch": 2,
+    "tau_y": 16042.558374109938
+   },
+   "gt": {
+    "E": 2000000.0,
+    "nu": 0.3,
+    "tau_y": 15400.0
+   },
+   "error": {
+    "log10_E_abs": 0.9912382805506184,
+    "E_rel": 8.800275410568775,
+    "nu_abs": 0.17057362405589116,
+    "log10_tau_y_abs": 0.01775290739840063,
+    "tau_y_rel": 0.04172456974739858
+   },
+   "status": "completed (150/150 dynamic iterations); completed; 110 NaN->dt/2 re-simulations in the dynamic stage (main reason for the long dynamic time)"
+  },
+  {
+   "scene": "cat",
+   "run": "cat_v11",
+   "inputs": "PAC-NeRF data.zip renders, 800x800 RGB, 14 frames @24 fps, official background matting",
+   "views": 11,
+   "config": "external/pacnerf/configs/cat.py (official) + scripts/v3g/pn_cfgs/cat_v11.py (paths, n_cameras, taichi pool only)",
+   "iterations": {
+    "static": 6000,
+    "velocity_lbfgs_evals": 15,
+    "dynamic_completed": 150,
+    "dynamic_schedule": "50 (hit_frame+warmup frames) + 100 (all frames), Adam",
+    "dynamic_nan_dt_halving_retries": 0
+   },
+   "wall_clock_s": {
+    "stage": {
+     "data_prep_matting": 31,
+     "static": 4231,
+     "velocity": 1753,
+     "dynamic": 22863
+    },
+    "total_productive": 28878,
+    "attempts": 1,
+    "note": "shared A800 at 100% util from other tenants; several PAC-NeRF runs co-located -> upper bound"
+   },
+   "gpu": "3 NVIDIA A800-SXM4-80GB",
+   "estimate": {
+    "E": 144376.59136992728,
+    "nu": 0.06172481990210346,
+    "source": "final train_dynamic.pt",
+    "ckpt_stage_epoch": 2,
+    "tau_y": 3527.282879716716
+   },
+   "gt": {
+    "E": 1000000.0,
+    "nu": 0.3,
+    "tau_y": 3850.0
+   },
+   "error": {
+    "log10_E_abs": 0.8405032157897949,
+    "E_rel": 0.8556234086300727,
+    "nu_abs": 0.23827518009789653,
+    "log10_tau_y_abs": 0.03802043905745078,
+    "tau_y_rel": 0.08382262864500889
+   },
+   "status": "completed (150/150 dynamic iterations); single attempt on GPU 3"
+  },
+  {
+   "scene": "cat",
+   "run": "cat_v3t0",
+   "inputs": "PAC-NeRF data.zip renders, 800x800 RGB, 14 frames @24 fps, official background matting",
+   "views": [
+    4,
+    6,
+    7
+   ],
+   "config": "external/pacnerf/configs/cat.py (official) + scripts/v3g/pn_cfgs/cat_v3t0.py (paths, n_cameras, taichi pool only)",
+   "iterations": {
+    "static": 6000,
+    "velocity_lbfgs_evals": 14,
+    "dynamic_completed": 150,
+    "dynamic_schedule": "50 (hit_frame+warmup frames) + 100 (all frames), Adam",
+    "dynamic_nan_dt_halving_retries": 0
+   },
+   "wall_clock_s": {
+    "stage": {
+     "data_prep_matting": 15,
+     "static": 4110,
+     "velocity": 1045,
+     "dynamic": 24456
+    },
+    "total_productive": 29626,
+    "attempts": 2,
+    "note": "shared A800 at 100% util from other tenants; several PAC-NeRF runs co-located -> upper bound"
+   },
+   "gpu": "3 NVIDIA A800-SXM4-80GB",
+   "estimate": {
+    "E": 39516.579577175544,
+    "nu": -0.1334384361274432,
+    "source": "final train_dynamic.pt",
+    "ckpt_stage_epoch": 2,
+    "tau_y": 4398.077350304763
+   },
+   "gt": {
+    "E": 1000000.0,
+    "nu": 0.3,
+    "tau_y": 3850.0
+   },
+   "error": {
+    "log10_E_abs": 1.4032206535339355,
+    "E_rel": 0.9604834204228244,
+    "nu_abs": 0.43343843612744315,
+    "log10_tau_y_abs": 0.0578021336506791,
+    "tau_y_rel": 0.1423577533259125
+   },
+   "status": "completed (150/150 dynamic iterations); attempt 1 killed in the static stage (moved off GPU 0); restarted from scratch on GPU 3"
+  }
+ ],
+ "ours_on_pacnerf_scenes": {
+  "rows": {
+   "bgsub/K0": {
+    "torus": {
+     "estimate": {
+      "E": 57020.72385027426,
+      "nu": 0.27838454643885296
+     },
+     "gt": {
+      "E": 1000000.0,
+      "nu": 0.3
+     },
+     "error": {
+      "log10_E_abs": 1.2439672738349685,
+      "E_rel": 0.9429792761497258,
+      "nu_abs": 0.021615453561147024
+     },
+     "law_pred_per_seed": [
+      "jelly",
+      "metal",
+      "metal"
+     ],
+     "per_seed_log10_E_abs": [
+      1.1787089366305947,
+      1.3171640502116118,
+      1.2360288346627
+     ]
+    },
+    "bird": {
+     "estimate": {
+      "E": 23198.96093888264,
+      "nu": 0.2638138731320699
+     },
+     "gt": {
+      "E": 300000.0,
+      "nu": 0.3
+     },
+     "error": {
+      "log10_E_abs": 1.1116527210621774,
+      "E_rel": 0.9226701302037245,
+      "nu_abs": 0.0361861268679301
+     },
+     "law_pred_per_seed": [
+      "jelly",
+      "jelly",
+      "jelly"
+     ],
+     "per_seed_log10_E_abs": [
+      1.006085808063883,
+      1.3763291547561485,
+      0.952543200366498
+     ]
+    },
+    "playdoh": {
+     "estimate": {
+      "E": 56591.45274731701,
+      "nu": 0.2721437911192576,
+      "tau_y": 9042.449292318923
+     },
+     "gt": {
+      "E": 2000000.0,
+      "nu": 0.3,
+      "tau_y": 15400.0
+     },
+     "error": {
+      "log10_E_abs": 1.5482791529029738,
+      "E_rel": 0.9717042736263415,
+      "nu_abs": 0.02785620888074236,
+      "log10_tau_y_abs": 0.2312346388053852,
+      "tau_y_rel": 0.4128279680312388
+     },
+     "law_pred_per_seed": [
+      "jelly",
+      "jelly",
+      "metal"
+     ],
+     "per_seed_log10_E_abs": [
+      1.2917398786041812,
+      1.8562243805382304,
+      1.4968731995665099
+     ]
+    },
+    "cat": {
+     "estimate": {
+      "E": 78290.80171717757,
+      "nu": 0.2842473288377126,
+      "tau_y": 7872.9174593464595
+     },
+     "gt": {
+      "E": 1000000.0,
+      "nu": 0.3,
+      "tau_y": 3850.0
+     },
+     "error": {
+      "log10_E_abs": 1.106289259629583,
+      "E_rel": 0.9217091982828224,
+      "nu_abs": 0.0157526711622874,
+      "log10_tau_y_abs": 0.31067496875959844,
+      "tau_y_rel": 1.0449136258042753
+     },
+     "law_pred_per_seed": [
+      "metal",
+      "metal",
+      "metal"
+     ],
+     "per_seed_log10_E_abs": [
+      0.7324977247217062,
+      1.4206448822587827,
+      1.165725171908262
+     ]
+    }
+   },
+   "bgsub/offset": {
+    "torus": {
+     "estimate": {
+      "E": 1353950.474955043,
+      "nu": 0.30385364095369977
+     },
+     "gt": {
+      "E": 1000000.0,
+      "nu": 0.3
+     },
+     "error": {
+      "log10_E_abs": 0.13160277893767347,
+      "E_rel": 0.35395047495504306,
+      "nu_abs": 0.0038536409536997773
+     },
+     "law_pred_per_seed": [
+      "jelly",
+      "metal",
+      "metal"
+     ],
+     "per_seed_log10_E_abs": [
+      0.21134984749214158,
+      0.18807648762161833,
+      0.004617998300739501
+     ]
+    },
+    "bird": {
+     "estimate": {
+      "E": 726474.3411375743,
+      "nu": 0.28722744186719257
+     },
+     "gt": {
+      "E": 300000.0,
+      "nu": 0.3
+     },
+     "error": {
+      "log10_E_abs": 0.3840990250304772,
+      "E_rel": 1.4215811371252476,
+      "nu_abs": 0.012772558132807421
+     },
+     "law_pred_per_seed": [
+      "jelly",
+      "jelly",
+      "jelly"
+     ],
+     "per_seed_log10_E_abs": [
+      0.6051076110152058,
+      0.19008085570312172,
+      0.35710860837310676
+     ]
+    },
+    "playdoh": {
+     "estimate": {
+      "E": 1141857.043405526,
+      "nu": 0.2962086796760559,
+      "tau_y": 5430.161169869764
+     },
+     "gt": {
+      "E": 2000000.0,
+      "nu": 0.3,
+      "tau_y": 15400.0
+     },
+     "error": {
+      "log10_E_abs": 0.2434182605338373,
+      "E_rel": 0.42907147829723696,
+      "nu_abs": 0.0037913203239440807,
+      "log10_tau_y_abs": 0.4527080009812563,
+      "tau_y_rel": 0.6473921318266388
+     },
+     "law_pred_per_seed": [
+      "jelly",
+      "jelly",
+      "metal"
+     ],
+     "per_seed_log10_E_abs": [
+      0.09826242614160119,
+      0.471754935472827,
+      0.3567622722702888
+     ]
+    },
+    "cat": {
+     "estimate": {
+      "E": 1922102.554977289,
+      "nu": 0.3117818335692088,
+      "tau_y": 20645.500163285302
+     },
+     "gt": {
+      "E": 1000000.0,
+      "nu": 0.3,
+      "tau_y": 3850.0
+     },
+     "error": {
+      "log10_E_abs": 0.2837765560029233,
+      "E_rel": 0.922102554977289,
+      "nu_abs": 0.01178183356920881,
+      "log10_tau_y_abs": 0.7293646791613457,
+      "tau_y_rel": 4.362467574879299
+     },
+     "law_pred_per_seed": [
+      "metal",
+      "metal",
+      "metal"
+     ],
+     "per_seed_log10_E_abs": [
+      0.7648943292232646,
+      0.05880643491609838,
+      0.027628903869405086
+     ]
+    }
+   },
+   "bgsub/support_mean_baseline": {
+    "torus": {
+     "estimate": {
+      "E": 843433.0000000002,
+      "nu": 0.30000001192092896
+     },
+     "gt": {
+      "E": 1000000.0,
+      "nu": 0.3
+     },
+     "error": {
+      "log10_E_abs": 0.07394941086499074,
+      "E_rel": 0.15656699999999976,
+      "nu_abs": 1.1920928966180355e-08
+     },
+     "law_pred_per_seed": [
+      "jelly",
+      "metal",
+      "metal"
+     ],
+     "per_seed_log10_E_abs": [
+      0.07394941086499074,
+      0.07394941086499074,
+      0.07394941086499074
+     ]
+    },
+    "bird": {
+     "estimate": {
+      "E": 1259920.8750000005,
+      "nu": 0.30000001192092896
+     },
+     "gt": {
+      "E": 300000.0,
+      "nu": 0.3
+     },
+     "error": {
+      "log10_E_abs": 0.6232220168821065,
+      "E_rel": 3.1997362500000017,
+      "nu_abs": 1.1920928966180355e-08
+     },
+     "law_pred_per_seed": [
+      "jelly",
+      "jelly",
+      "jelly"
+     ],
+     "per_seed_log10_E_abs": [
+      0.6232220168821065,
+      0.6232220168821065,
+      0.6232220168821065
+     ]
+    },
+    "playdoh": {
+     "estimate": {
+      "E": 669433.3749999983,
+      "nu": 0.30000001192092896,
+      "tau_y": 3850.000488281251
+     },
+     "gt": {
+      "E": 2000000.0,
+      "nu": 0.3,
+      "tau_y": 15400.0
+     },
+     "error": {
+      "log10_E_abs": 0.4753226350921649,
+      "E_rel": 0.665283312500001,
+      "nu_abs": 1.1920928966180355e-08,
+      "log10_tau_y_abs": 0.6020599362480037,
+      "tau_y_rel": 0.7499999682934253
+     },
+     "law_pred_per_seed": [
+      "jelly",
+      "jelly",
+      "metal"
+     ],
+     "per_seed_log10_E_abs": [
+      0.475322635092164,
+      0.475322635092164,
+      0.475322635092164
+     ]
+    },
+    "cat": {
+     "estimate": {
+      "E": 843433.0000000002,
+      "nu": 0.30000001192092896,
+      "tau_y": 15400.00585937499
+     },
+     "gt": {
+      "E": 1000000.0,
+      "nu": 0.3,
+      "tau_y": 3850.0
+     },
+     "error": {
+      "log10_E_abs": 0.07394941086499074,
+      "E_rel": 0.15656699999999976,
+      "nu_abs": 1.1920928966180355e-08,
+      "log10_tau_y_abs": 0.6020601565678159,
+      "tau_y_rel": 3.000001521915582
+     },
+     "law_pred_per_seed": [
+      "metal",
+      "metal",
+      "metal"
+     ],
+     "per_seed_log10_E_abs": [
+      0.07394941086499074,
+      0.07394941086499074,
+      0.07394941086499074
+     ]
+    }
+   },
+   "raw/K0": {
+    "torus": {
+     "estimate": {
+      "E": 115802.89522366833,
+      "nu": 0.3198687533537547
+     },
+     "gt": {
+      "E": 1000000.0,
+      "nu": 0.3
+     },
+     "error": {
+      "log10_E_abs": 0.9362805825434286,
+      "E_rel": 0.8841971047763317,
+      "nu_abs": 0.01986875335375471
+     },
+     "law_pred_per_seed": [
+      "metal",
+      "metal",
+      "metal"
+     ],
+     "per_seed_log10_E_abs": [
+      1.2956778256640789,
+      0.7139032169988715,
+      0.7992607049673355
+     ]
+    },
+    "bird": {
+     "estimate": {
+      "E": 116768.87258906207,
+      "nu": 0.31024011969566345
+     },
+     "gt": {
+      "E": 300000.0,
+      "nu": 0.3
+     },
+     "error": {
+      "log10_E_abs": 0.4097941676322696,
+      "E_rel": 0.6107704247031264,
+      "nu_abs": 0.010240119695663463
+     },
+     "law_pred_per_seed": [
+      "metal",
+      "metal",
+      "metal"
+     ],
+     "per_seed_log10_E_abs": [
+      0.8191380090722475,
+      0.23054405133571443,
+      0.17970044248884687
+     ]
+    },
+    "playdoh": {
+     "estimate": {
+      "E": 101825.74146242757,
+      "nu": 0.32340435187021893,
+      "tau_y": 127.37610609595748
+     },
+     "gt": {
+      "E": 2000000.0,
+      "nu": 0.3,
+      "tau_y": 15400.0
+     },
+     "error": {
+      "log10_E_abs": 1.2931724145011492,
+      "E_rel": 0.9490871292687861,
+      "nu_abs": 0.023404351870218942,
+      "log10_tau_y_abs": 2.0824327525223914,
+      "tau_y_rel": 0.9917288242794833
+     },
+     "law_pred_per_seed": [
+      "metal",
+      "metal",
+      "metal"
+     ],
+     "per_seed_log10_E_abs": [
+      1.4488505133217568,
+      1.1581638261014024,
+      1.2725029040802873
+     ]
+    },
+    "cat": {
+     "estimate": {
+      "E": 198018.61141446518,
+      "nu": 0.29450105627377826,
+      "tau_y": 467.93834880221993
+     },
+     "gt": {
+      "E": 1000000.0,
+      "nu": 0.3,
+      "tau_y": 3850.0
+     },
+     "error": {
+      "log10_E_abs": 0.7032939892599579,
+      "E_rel": 0.8019813885855349,
+      "nu_abs": 0.005498943726221728,
+      "log10_tau_y_abs": 0.9152720912606984,
+      "tau_y_rel": 0.8784575717396831
+     },
+     "law_pred_per_seed": [
+      "metal",
+      "metal",
+      "metal"
+     ],
+     "per_seed_log10_E_abs": [
+      0.861081386082847,
+      0.6011487937641427,
+      0.6476517879328831
+     ]
+    }
+   },
+   "raw/offset": {
+    "torus": {
+     "estimate": {
+      "E": 906057.5031524968,
+      "nu": 0.30319757262865704
+     },
+     "gt": {
+      "E": 1000000.0,
+      "nu": 0.3
+     },
+     "error": {
+      "log10_E_abs": 0.042844238847098204,
+      "E_rel": 0.09394249684750323,
+      "nu_abs": 0.0031975726286570527
+     },
+     "law_pred_per_seed": [
+      "metal",
+      "metal",
+      "metal"
+     ],
+     "per_seed_log10_E_abs": [
+      0.05332094412580002,
+      0.017290238269926483,
+      0.09250201068542019
+     ]
+    },
+    "bird": {
+     "estimate": {
+      "E": 1397745.0837405694,
+      "nu": 0.28926069537798565
+     },
+     "gt": {
+      "E": 300000.0,
+      "nu": 0.3
+     },
+     "error": {
+      "log10_E_abs": 0.6683067186788731,
+      "E_rel": 3.6591502791352313,
+      "nu_abs": 0.010739304622014334
+     },
+     "law_pred_per_seed": [
+      "metal",
+      "metal",
+      "metal"
+     ],
+     "per_seed_log10_E_abs": [
+      0.5935662276777052,
+      0.6662548906469521,
+      0.7450990377119595
+     ]
+    },
+    "playdoh": {
+     "estimate": {
+      "E": 653097.9800873327,
+      "nu": 0.3043982783953349,
+      "tau_y": 2932.116216645984
+     },
+     "gt": {
+      "E": 2000000.0,
+      "nu": 0.3,
+      "tau_y": 15400.0
+     },
+     "error": {
+      "log10_E_abs": 0.4860516550945917,
+      "E_rel": 0.6734510099563337,
+      "nu_abs": 0.004398278395334909,
+      "log10_tau_y_abs": 0.7203395409356568,
+      "tau_y_rel": 0.8096028430749361
+     },
+     "law_pred_per_seed": [
+      "metal",
+      "metal",
+      "metal"
+     ],
+     "per_seed_log10_E_abs": [
+      0.27599426566908747,
+      0.5053744362724126,
+      0.676786263342275
+     ]
+    },
+    "cat": {
+     "estimate": {
+      "E": 1875835.2413755103,
+      "nu": 0.27084152897198993,
+      "tau_y": 73381.40393051722
+     },
+     "gt": {
+      "E": 1000000.0,
+      "nu": 0.3,
+      "tau_y": 3850.0
+     },
+     "error": {
+      "log10_E_abs": 0.27319469070417046,
+      "E_rel": 0.8758352413755104,
+      "nu_abs": 0.029158471028010058,
+      "log10_tau_y_abs": 1.2801252868981279,
+      "tau_y_rel": 18.06010491701746
+     },
+     "law_pred_per_seed": [
+      "metal",
+      "metal",
+      "metal"
+     ],
+     "per_seed_log10_E_abs": [
+      0.5019943170482914,
+      0.1803521068898677,
+      0.13723764817435047
+     ]
+    }
+   }
+  },
+  "wall_clock": {
+   "scene": "torus",
+   "views": [
+    4,
+    6,
+    7
+   ],
+   "gpu": "NVIDIA A800-SXM4-80GB",
+   "model_load_s": 10.235545873641968,
+   "reps": [
+    {
+     "png_decode_preproc_s": 5.0409533977508545,
+     "vjepa_features_s": 1.1994309425354004,
+     "heads_3seeds_s": 0.44849729537963867,
+     "total_s": 6.6888816356658936
+    },
+    {
+     "png_decode_preproc_s": 4.9349892139434814,
+     "vjepa_features_s": 0.6881368160247803,
+     "heads_3seeds_s": 0.1271071434020996,
+     "total_s": 5.750233173370361
+    },
+    {
+     "png_decode_preproc_s": 4.909543514251709,
+     "vjepa_features_s": 0.7465171813964844,
+     "heads_3seeds_s": 0.15248346328735352,
+     "total_s": 5.808544158935547
+    },
+    {
+     "png_decode_preproc_s": 4.894616365432739,
+     "vjepa_features_s": 0.7712240219116211,
+     "heads_3seeds_s": 0.15973496437072754,
+     "total_s": 5.825575351715088
+    }
+   ],
+   "peak_mem_gb": 1.258459648,
+   "note": "rep 0 includes CUDA warm-up; report median of reps 1-3",
+   "median_total_s_warm": 5.808544158935547
+  },
+  "note": "decoded from docs/v3c/PACNERF_FEWSHOT.json (3-seed ensemble, triplet t0); K0 = zero-shot, offset = leave-one-scene-out calibration using the other 3 scenes' GT; support_mean_baseline = no-video reference"
+ },
+ "hybrid_prior_init": {
+  "results": {
+   "torus_v11_hy": {
+    "scene": "torus",
+    "default_run": "torus_v11",
+    "hybrid_run": "torus_v11_hy",
+    "default": {
+     "n_iters": 150,
+     "dynamic_wall_s": 11764,
+     "init": {
+      "E": 100000.0,
+      "nu": 0.10000000894069672,
+      "tau_y": null
+     },
+     "init_error": {
+      "log10_E_abs": 1.0
+     },
+     "final_estimate": {
+      "E": 1062268.124848358,
+      "nu": 0.28783152341168466,
+      "source": "final train_dynamic.pt",
+      "ckpt_stage_epoch": 2
+     },
+     "final_error": {
+      "log10_E_abs": 0.026234149932861328,
+      "E_rel": 0.0622681248483581,
+      "nu_abs": 0.012168476588315325
+     },
+     "stage1_final_loss": 0.000600346876308322,
+     "stage2_final_loss_smoothed": 0.001259951340034604,
+     "iters_to_default_final_loss": 51,
+     "time_s_to_default_final_loss": 2169,
+     "iters_to_default_final_E_err": 10,
+     "time_s_to_default_final_E_err": 375,
+     "iter_stay_within_0.05_of_gt_E": 30,
+     "time_s_stay_within_0.05_of_gt_E": 1093,
+     "iter_stay_within_0.05_of_default_final_E": 24,
+     "time_s_stay_within_0.05_of_default_final_E": 862,
+     "iter_stay_within_0.1_of_gt_E": 16,
+     "time_s_stay_within_0.1_of_gt_E": 579,
+     "iter_stay_within_0.1_of_default_final_E": 22,
+     "time_s_stay_within_0.1_of_default_final_E": 786,
+     "err_traj_every10": [
+      {
+       "log10_E_abs": 1.0
+      },
+      {
+       "log10_E_abs": 0.014548301696777344
+      },
+      {
+       "log10_E_abs": 0.07389545440673828
+      },
+      {
+       "log10_E_abs": 0.03226947784423828
+      },
+      {
+       "log10_E_abs": 0.032280921936035156
+      },
+      {
+       "log10_E_abs": 0.014514923095703125
+      },
+      {
+       "log10_E_abs": 0.018648624420166016
+      },
+      {
+       "log10_E_abs": 0.029767513275146484
+      },
+      {
+       "log10_E_abs": 0.02868795394897461
+      },
+      {
+       "log10_E_abs": 0.02500295639038086
+      },
+      {
+       "log10_E_abs": 0.02490854263305664
+      },
+      {
+       "log10_E_abs": 0.026010990142822266
+      },
+      {
+       "log10_E_abs": 0.026477336883544922
+      },
+      {
+       "log10_E_abs": 0.026215553283691406
+      },
+      {
+       "log10_E_abs": 0.026595115661621094
+      }
+     ]
+    },
+    "hybrid": {
+     "n_iters": 150,
+     "dynamic_wall_s": 12625,
+     "init": {
+      "E": 1353950.4287897192,
+      "nu": 0.3038536608219147,
+      "tau_y": null
+     },
+     "init_error": {
+      "log10_E_abs": 0.13160276412963867
+     },
+     "final_estimate": {
+      "E": 1058734.216957895,
+      "nu": 0.2878012327463199,
+      "source": "final train_dynamic.pt",
+      "ckpt_stage_epoch": 2
+     },
+     "final_error": {
+      "log10_E_abs": 0.024786949157714844,
+      "E_rel": 0.05873421695789509,
+      "nu_abs": 0.012198767253680076
+     },
+     "stage1_final_loss": 0.0005751815275289119,
+     "stage2_final_loss_smoothed": 0.001261046202853322,
+     "iters_to_default_final_loss": 51,
+     "time_s_to_default_final_loss": 2869,
+     "iters_to_default_final_E_err": 6,
+     "time_s_to_default_final_E_err": 385,
+     "iter_stay_within_0.05_of_gt_E": 11,
+     "time_s_stay_within_0.05_of_gt_E": 655,
+     "iter_stay_within_0.05_of_default_final_E": 15,
+     "time_s_stay_within_0.05_of_default_final_E": 870,
+     "iter_stay_within_0.1_of_gt_E": 1,
+     "time_s_stay_within_0.1_of_gt_E": 114,
+     "iter_stay_within_0.1_of_default_final_E": 5,
+     "time_s_stay_within_0.1_of_default_final_E": 334,
+     "err_traj_every10": [
+      {
+       "log10_E_abs": 0.13160276412963867
+      },
+      {
+       "log10_E_abs": 0.051709651947021484
+      },
+      {
+       "log10_E_abs": 0.03490877151489258
+      },
+      {
+       "log10_E_abs": 0.013785839080810547
+      },
+      {
+       "log10_E_abs": 0.002246379852294922
+      },
+      {
+       "log10_E_abs": 0.017410755157470703
+      },
+      {
+       "log10_E_abs": 0.031427860260009766
+      },
+      {
+       "log10_E_abs": 0.030640602111816406
+      },
+      {
+       "log10_E_abs": 0.024239063262939453
+      },
+      {
+       "log10_E_abs": 0.028159141540527344
+      },
+      {
+       "log10_E_abs": 0.025136947631835938
+      },
+      {
+       "log10_E_abs": 0.026636123657226562
+      },
+      {
+       "log10_E_abs": 0.026711463928222656
+      },
+      {
+       "log10_E_abs": 0.025976181030273438
+      },
+      {
+       "log10_E_abs": 0.025104045867919922
+      }
+     ]
+    },
+    "target_loss_default_final_smoothed": 0.001259951340034604,
+    "E_err_threshold_default_final": 0.026234149932861328
+   },
+   "bird_v11_hy": {
+    "scene": "bird",
+    "default_run": "bird_v11",
+    "hybrid_run": "bird_v11_hy",
+    "default": {
+     "n_iters": 150,
+     "dynamic_wall_s": 6650,
+     "init": {
+      "E": 1000.0,
+      "nu": 0.10000000894069672,
+      "tau_y": null
+     },
+     "init_error": {
+      "log10_E_abs": 2.4771212547196626
+     },
+     "final_estimate": {
+      "E": 371308.22824654647,
+      "nu": 0.41286474000141865,
+      "source": "final train_dynamic.pt",
+      "ckpt_stage_epoch": 2
+     },
+     "final_error": {
+      "log10_E_abs": 0.09261331864459521,
+      "E_rel": 0.23769409415515488,
+      "nu_abs": 0.11286474000141866
+     },
+     "stage1_final_loss": 0.002598440367728472,
+     "stage2_final_loss_smoothed": 0.004031346179544926,
+     "iters_to_default_final_loss": 150,
+     "time_s_to_default_final_loss": null,
+     "iters_to_default_final_E_err": 65,
+     "time_s_to_default_final_E_err": 2145,
+     "iter_stay_within_0.05_of_gt_E": null,
+     "time_s_stay_within_0.05_of_gt_E": null,
+     "iter_stay_within_0.05_of_default_final_E": 116,
+     "time_s_stay_within_0.05_of_default_final_E": 4836,
+     "iter_stay_within_0.1_of_gt_E": 147,
+     "time_s_stay_within_0.1_of_gt_E": 6493,
+     "iter_stay_within_0.1_of_default_final_E": 88,
+     "time_s_stay_within_0.1_of_default_final_E": 3356,
+     "err_traj_every10": [
+      {
+       "log10_E_abs": 2.4771212547196626
+      },
+      {
+       "log10_E_abs": 1.805427929676938
+      },
+      {
+       "log10_E_abs": 1.9620572536362886
+      },
+      {
+       "log10_E_abs": 1.867744585789609
+      },
+      {
+       "log10_E_abs": 1.8925680129899263
+      },
+      {
+       "log10_E_abs": 1.8142229526414155
+      },
+      {
+       "log10_E_abs": 0.8180803268326997
+      },
+      {
+       "log10_E_abs": 0.42532310792071826
+      },
+      {
+       "log10_E_abs": 0.011999985493588383
+      },
+      {
+       "log10_E_abs": 0.09718809434039599
+      },
+      {
+       "log10_E_abs": 0.1005154640303374
+      },
+      {
+       "log10_E_abs": 0.10492763825519091
+      },
+      {
+       "log10_E_abs": 0.11304769822223193
+      },
+      {
+       "log10_E_abs": 0.11231432267291552
+      },
+      {
+       "log10_E_abs": 0.10465441056354052
+      }
+     ]
+    },
+    "hybrid": {
+     "n_iters": 94,
+     "dynamic_wall_s": 10077,
+     "init": {
+      "E": 726474.4750462674,
+      "nu": 0.28722745180130005,
+      "tau_y": null
+     },
+     "init_error": {
+      "log10_E_abs": 0.3840991050825835
+     },
+     "final_estimate": {
+      "E": 520064.60903662443,
+      "nu": -0.4209480583667755,
+      "source": "last logged dynamic-iteration params (run not finished)"
+     },
+     "final_error": {
+      "log10_E_abs": 0.23893604584796435,
+      "E_rel": 0.7335486967887481,
+      "nu_abs": 0.7209480583667756
+     },
+     "stage1_final_loss": 0.0011500002583488822,
+     "stage2_final_loss_smoothed": 0.0038571955636143686,
+     "iters_to_default_final_loss": 51,
+     "time_s_to_default_final_loss": 1854,
+     "iters_to_default_final_E_err": 53,
+     "time_s_to_default_final_E_err": 1967,
+     "iter_stay_within_0.05_of_gt_E": null,
+     "time_s_stay_within_0.05_of_gt_E": null,
+     "iter_stay_within_0.05_of_default_final_E": null,
+     "time_s_stay_within_0.05_of_default_final_E": null,
+     "iter_stay_within_0.1_of_gt_E": null,
+     "time_s_stay_within_0.1_of_gt_E": null,
+     "iter_stay_within_0.1_of_default_final_E": null,
+     "time_s_stay_within_0.1_of_default_final_E": null,
+     "err_traj_every10": [
+      {
+       "log10_E_abs": 0.3840991050825835
+      },
+      {
+       "log10_E_abs": 0.3279605896101714
+      },
+      {
+       "log10_E_abs": 0.34855470963580615
+      },
+      {
+       "log10_E_abs": 0.3295503646956206
+      },
+      {
+       "log10_E_abs": 0.30844269105060107
+      },
+      {
+       "log10_E_abs": 0.31082210847003466
+      },
+      {
+       "log10_E_abs": 0.19729957886798388
+      },
+      {
+       "log10_E_abs": 0.18508444138629443
+      },
+      {
+       "log10_E_abs": 0.12069807358844287
+      },
+      {
+       "log10_E_abs": 0.2180686981306792
+      }
+     ]
+    },
+    "target_loss_default_final_smoothed": 0.004031346179544926,
+    "E_err_threshold_default_final": 0.09261331864459521
+   },
+   "playdoh_v11_hy": {
+    "scene": "playdoh",
+    "default_run": "playdoh_v11",
+    "hybrid_run": "playdoh_v11_hy",
+    "default": {
+     "n_iters": 150,
+     "dynamic_wall_s": 25904,
+     "init": {
+      "E": 100000.0,
+      "nu": 0.4000000059604645,
+      "tau_y": 1000.0
+     },
+     "init_error": {
+      "log10_E_abs": 1.3010299956639813,
+      "log10_tau_y_abs": 1.1875207208364627
+     },
+     "final_estimate": {
+      "E": 6125308.5691466555,
+      "nu": 0.13723112999894882,
+      "source": "final train_dynamic.pt",
+      "ckpt_stage_epoch": 2,
+      "tau_y": 17158.391242822425
+     },
+     "final_error": {
+      "log10_E_abs": 0.48609797598518867,
+      "E_rel": 2.062654284573328,
+      "nu_abs": 0.16276887000105117,
+      "log10_tau_y_abs": 0.046955845478234615,
+      "tau_y_rel": 0.1141812495339237
+     },
+     "stage1_final_loss": 0.0006964629399590194,
+     "stage2_final_loss_smoothed": 0.0008220302523113787,
+     "iters_to_default_final_loss": 51,
+     "time_s_to_default_final_loss": 8746,
+     "iters_to_default_final_E_err": 9,
+     "time_s_to_default_final_E_err": 938,
+     "iter_stay_within_0.05_of_gt_E": null,
+     "time_s_stay_within_0.05_of_gt_E": null,
+     "iter_stay_within_0.05_of_default_final_E": 72,
+     "time_s_stay_within_0.05_of_default_final_E": 13505,
+     "iter_stay_within_0.05_of_gt_tau_y": 50,
+     "iter_stay_within_0.1_of_gt_E": null,
+     "time_s_stay_within_0.1_of_gt_E": null,
+     "iter_stay_within_0.1_of_default_final_E": 40,
+     "time_s_stay_within_0.1_of_default_final_E": 6284,
+     "iter_stay_within_0.1_of_gt_tau_y": 21,
+     "err_traj_every10": [
+      {
+       "log10_E_abs": 1.3010299956639813,
+       "log10_tau_y_abs": 1.1875207208364627
+      },
+      {
+       "log10_E_abs": 0.31401474831901055,
+       "log10_tau_y_abs": 0.1911668808936562
+      },
+      {
+       "log10_E_abs": 0.37569634558357734,
+       "log10_tau_y_abs": 0.13630083198085607
+      },
+      {
+       "log10_E_abs": 0.6064187729517414,
+       "log10_tau_y_abs": 0.029596118217082967
+      },
+      {
+       "log10_E_abs": 0.5761915886560871,
+       "log10_tau_y_abs": 0.021599496946891783
+      },
+      {
+       "log10_E_abs": 0.5115782463709309,
+       "log10_tau_y_abs": 0.038829576565465374
+      },
+      {
+       "log10_E_abs": 0.41799418570198554,
+       "log10_tau_y_abs": 0.03553795555623207
+      },
+      {
+       "log10_E_abs": 0.4324032509485676,
+       "log10_tau_y_abs": 0.044352338722633
+      },
+      {
+       "log10_E_abs": 0.4557096207300617,
+       "log10_tau_y_abs": 0.04182364721449616
+      },
+      {
+       "log10_E_abs": 0.4669963562647297,
+       "log10_tau_y_abs": 0.03991297270762573
+      },
+      {
+       "log10_E_abs": 0.4758507454554035,
+       "log10_tau_y_abs": 0.04462747184179072
+      },
+      {
+       "log10_E_abs": 0.4773303711573078,
+       "log10_tau_y_abs": 0.0458714966242626
+      },
+      {
+       "log10_E_abs": 0.47936503531136054,
+       "log10_tau_y_abs": 0.04589439225755321
+      },
+      {
+       "log10_E_abs": 0.4830347740808918,
+       "log10_tau_y_abs": 0.04611803199169451
+      },
+      {
+       "log10_E_abs": 0.48567025305428047,
+       "log10_tau_y_abs": 0.0465920309193093
+      }
+     ]
+    },
+    "hybrid": {
+     "n_iters": 150,
+     "dynamic_wall_s": 11748,
+     "init": {
+      "E": 1141857.5880784276,
+      "nu": 0.2962087094783783,
+      "tau_y": 5430.16162109375
+     },
+     "init_error": {
+      "log10_E_abs": 0.2434180533727215,
+      "log10_tau_y_abs": 0.45270796489317844
+     },
+     "final_estimate": {
+      "E": 6149668.958270485,
+      "nu": 0.13021505168267997,
+      "source": "final train_dynamic.pt",
+      "ckpt_stage_epoch": 2,
+      "tau_y": 17174.544031402602
+     },
+     "final_error": {
+      "log10_E_abs": 0.48782174231209297,
+      "E_rel": 2.074834479135242,
+      "nu_abs": 0.16978494831732002,
+      "log10_tau_y_abs": 0.04736449492281469,
+      "tau_y_rel": 0.11523013190925986
+     },
+     "stage1_final_loss": 0.0006541123730130494,
+     "stage2_final_loss_smoothed": 0.0008220067131333054,
+     "iters_to_default_final_loss": 51,
+     "time_s_to_default_final_loss": 4068,
+     "iters_to_default_final_E_err": 0,
+     "time_s_to_default_final_E_err": 0,
+     "iter_stay_within_0.05_of_gt_E": null,
+     "time_s_stay_within_0.05_of_gt_E": null,
+     "iter_stay_within_0.05_of_default_final_E": 54,
+     "time_s_stay_within_0.05_of_default_final_E": 4356,
+     "iter_stay_within_0.05_of_gt_tau_y": 69,
+     "iter_stay_within_0.1_of_gt_E": null,
+     "time_s_stay_within_0.1_of_gt_E": null,
+     "iter_stay_within_0.1_of_default_final_E": 21,
+     "time_s_stay_within_0.1_of_default_final_E": 2017,
+     "iter_stay_within_0.1_of_gt_tau_y": 25,
+     "err_traj_every10": [
+      {
+       "log10_E_abs": 0.2434180533727215,
+       "log10_tau_y_abs": 0.45270796489317844
+      },
+      {
+       "log10_E_abs": 0.43914715887703437,
+       "log10_tau_y_abs": 0.17178464535034887
+      },
+      {
+       "log10_E_abs": 0.3679982865015461,
+       "log10_tau_y_abs": 0.03601527224277401
+      },
+      {
+       "log10_E_abs": 0.4182898247400715,
+       "log10_tau_y_abs": 0.00447060938167354
+      },
+      {
+       "log10_E_abs": 0.4673630440393879,
+       "log10_tau_y_abs": 0.05801941723977677
+      },
+      {
+       "log10_E_abs": 0.4445668900171711,
+       "log10_tau_y_abs": 0.059932944672955735
+      },
+      {
+       "log10_E_abs": 0.4752709114710285,
+       "log10_tau_y_abs": 0.036629938235184234
+      },
+      {
+       "log10_E_abs": 0.4767190659204914,
+       "log10_tau_y_abs": 0.044146794927292454
+      },
+      {
+       "log10_E_abs": 0.47913519980110664,
+       "log10_tau_y_abs": 0.048889434946502774
+      },
+      {
+       "log10_E_abs": 0.47962872625984687,
+       "log10_tau_y_abs": 0.04653577215455673
+      },
+      {
+       "log10_E_abs": 0.4826108658472492,
+       "log10_tau_y_abs": 0.04562308567457496
+      },
+      {
+       "log10_E_abs": 0.4835979187647297,
+       "log10_tau_y_abs": 0.04594543228998482
+      },
+      {
+       "log10_E_abs": 0.4844204628626301,
+       "log10_tau_y_abs": 0.04642560856005584
+      },
+      {
+       "log10_E_abs": 0.48557822348274726,
+       "log10_tau_y_abs": 0.046917713496768876
+      },
+      {
+       "log10_E_abs": 0.4870034897486164,
+       "log10_tau_y_abs": 0.047189497403224756
+      }
+     ]
+    },
+    "target_loss_default_final_smoothed": 0.0008220302523113787,
+    "E_err_threshold_default_final": 0.48609797598518867
+   },
+   "cat_v11_hy": {
+    "scene": "cat",
+    "default_run": "cat_v11",
+    "hybrid_run": "cat_v11_hy",
+    "default": {
+     "n_iters": 150,
+     "dynamic_wall_s": 22863,
+     "init": {
+      "E": 1000.0,
+      "nu": 0.20000001788139343,
+      "tau_y": 100.0
+     },
+     "init_error": {
+      "log10_E_abs": 3.0,
+      "log10_tau_y_abs": 1.5854607295085006
+     },
+     "final_estimate": {
+      "E": 144376.59136992728,
+      "nu": 0.06172481990210346,
+      "source": "final train_dynamic.pt",
+      "ckpt_stage_epoch": 2,
+      "tau_y": 3527.282879716716
+     },
+     "final_error": {
+      "log10_E_abs": 0.8405032157897949,
+      "E_rel": 0.8556234086300727,
+      "nu_abs": 0.23827518009789653,
+      "log10_tau_y_abs": 0.03802043905745078,
+      "tau_y_rel": 0.08382262864500889
+     },
+     "stage1_final_loss": 0.0007530529866926372,
+     "stage2_final_loss_smoothed": 0.0012077305000275373,
+     "iters_to_default_final_loss": 51,
+     "time_s_to_default_final_loss": 6439,
+     "iters_to_default_final_E_err": 86,
+     "time_s_to_default_final_E_err": 12653,
+     "iter_stay_within_0.05_of_gt_E": null,
+     "time_s_stay_within_0.05_of_gt_E": null,
+     "iter_stay_within_0.05_of_default_final_E": 98,
+     "time_s_stay_within_0.05_of_default_final_E": 14763,
+     "iter_stay_within_0.05_of_gt_tau_y": 91,
+     "iter_stay_within_0.1_of_gt_E": null,
+     "time_s_stay_within_0.1_of_gt_E": null,
+     "iter_stay_within_0.1_of_default_final_E": 77,
+     "time_s_stay_within_0.1_of_default_final_E": 11062,
+     "iter_stay_within_0.1_of_gt_tau_y": 66,
+     "err_traj_every10": [
+      {
+       "log10_E_abs": 3.0,
+       "log10_tau_y_abs": 1.5854607295085006
+      },
+      {
+       "log10_E_abs": 2.111441135406494,
+       "log10_tau_y_abs": 0.8996947524956291
+      },
+      {
+       "log10_E_abs": 1.766557216644287,
+       "log10_tau_y_abs": 0.37147931922779653
+      },
+      {
+       "log10_E_abs": 1.9527459144592285,
+       "log10_tau_y_abs": 0.5057783883723905
+      },
+      {
+       "log10_E_abs": 1.958597183227539,
+       "log10_tau_y_abs": 0.6594136374201396
+      },
+      {
+       "log10_E_abs": 1.8903298377990723,
+       "log10_tau_y_abs": 0.578358014335671
+      },
+      {
+       "log10_E_abs": 1.6762824058532715,
+       "log10_tau_y_abs": 0.03015822141020319
+      },
+      {
+       "log10_E_abs": 1.0244946479797363,
+       "log10_tau_y_abs": 0.037249043576180085
+      },
+      {
+       "log10_E_abs": 0.8650417327880859,
+       "log10_tau_y_abs": 0.025357309140131346
+      },
+      {
+       "log10_E_abs": 0.8876228332519531,
+       "log10_tau_y_abs": 0.054808220544051434
+      },
+      {
+       "log10_E_abs": 0.8738369941711426,
+       "log10_tau_y_abs": 0.026409223465618137
+      },
+      {
+       "log10_E_abs": 0.8521285057067871,
+       "log10_tau_y_abs": 0.037471346085608204
+      },
+      {
+       "log10_E_abs": 0.8621149063110352,
+       "log10_tau_y_abs": 0.04078895216967071
+      },
+      {
+       "log10_E_abs": 0.8469867706298828,
+       "log10_tau_y_abs": 0.039063759751905014
+      },
+      {
+       "log10_E_abs": 0.8462638854980469,
+       "log10_tau_y_abs": 0.03754406468031357
+      }
+     ]
+    },
+    "hybrid": {
+     "n_iters": 150,
+     "dynamic_wall_s": 22143,
+     "init": {
+      "E": 1922103.4582771354,
+      "nu": 0.3117818534374237,
+      "tau_y": 20645.505859375
+     },
+     "init_error": {
+      "log10_E_abs": 0.28377676010131836,
+      "log10_tau_y_abs": 0.7293647989830974
+     },
+     "final_estimate": {
+      "E": 227125.06680380105,
+      "nu": 0.2057307844363257,
+      "source": "final train_dynamic.pt",
+      "ckpt_stage_epoch": 2,
+      "tau_y": 3392.5213144504555
+     },
+     "final_error": {
+      "log10_E_abs": 0.6437349319458008,
+      "E_rel": 0.7728749331961989,
+      "nu_abs": 0.09426921556367429,
+      "log10_tau_y_abs": 0.054938144593339455,
+      "tau_y_rel": 0.11882563261027129
+     },
+     "stage1_final_loss": 0.0007816396653652191,
+     "stage2_final_loss_smoothed": 0.0012085167691111565,
+     "iters_to_default_final_loss": 51,
+     "time_s_to_default_final_loss": 6683,
+     "iters_to_default_final_E_err": 0,
+     "time_s_to_default_final_E_err": 0,
+     "iter_stay_within_0.05_of_gt_E": null,
+     "time_s_stay_within_0.05_of_gt_E": null,
+     "iter_stay_within_0.05_of_default_final_E": null,
+     "time_s_stay_within_0.05_of_default_final_E": null,
+     "iter_stay_within_0.05_of_gt_tau_y": null,
+     "iter_stay_within_0.1_of_gt_E": null,
+     "time_s_stay_within_0.1_of_gt_E": null,
+     "iter_stay_within_0.1_of_default_final_E": null,
+     "time_s_stay_within_0.1_of_default_final_E": null,
+     "iter_stay_within_0.1_of_gt_tau_y": 79,
+     "err_traj_every10": [
+      {
+       "log10_E_abs": 0.28377676010131836,
+       "log10_tau_y_abs": 0.7293647989830974
+      },
+      {
+       "log10_E_abs": 0.6195216178894043,
+       "log10_tau_y_abs": 0.2535868582553089
+      },
+      {
+       "log10_E_abs": 0.781348705291748,
+       "log10_tau_y_abs": 0.7051301861602295
+      },
+      {
+       "log10_E_abs": 0.7111458778381348,
+       "log10_tau_y_abs": 0.7839406210250033
+      },
+      {
+       "log10_E_abs": 0.7480568885803223,
+       "log10_tau_y_abs": 0.7659414544246101
+      },
+      {
+       "log10_E_abs": 0.7590107917785645,
+       "log10_tau_y_abs": 0.6736329238846062
+      },
+      {
+       "log10_E_abs": 0.5178513526916504,
+       "log10_tau_y_abs": 0.08401482489291023
+      },
+      {
+       "log10_E_abs": 0.7459220886230469,
+       "log10_tau_y_abs": 0.06126672749629325
+      },
+      {
+       "log10_E_abs": 0.6159310340881348,
+       "log10_tau_y_abs": 0.07530745027088592
+      },
+      {
+       "log10_E_abs": 0.6024136543273926,
+       "log10_tau_y_abs": 0.040893636342509865
+      },
+      {
+       "log10_E_abs": 0.624241828918457,
+       "log10_tau_y_abs": 0.047584351859926155
+      },
+      {
+       "log10_E_abs": 0.6317620277404785,
+       "log10_tau_y_abs": 0.0656018891376502
+      },
+      {
+       "log10_E_abs": 0.6284236907958984,
+       "log10_tau_y_abs": 0.05108434224942027
+      },
+      {
+       "log10_E_abs": 0.6410107612609863,
+       "log10_tau_y_abs": 0.057546216945231876
+      },
+      {
+       "log10_E_abs": 0.6386141777038574,
+       "log10_tau_y_abs": 0.057170207947902174
+      }
+     ]
+    },
+    "target_loss_default_final_smoothed": 0.0012077305000275373,
+    "E_err_threshold_default_final": 0.8405032157897949
+   }
+  },
+  "notes": {
+   "design": "Hybrid = PAC-NeRF official dynamic stage (50+100 Adam iterations, official lr) started from the SAME static NeRF + initial-velocity checkpoints as the default run (<scene>_v11), with E, nu (and tauY) initialised from our model's calibrated prediction (bgsub, triplet t0, 3-seed ensemble, leave-one-scene-out offset; docs/v3g/pn_results/OURS.json) instead of the config defaults (torus E=1e5 nu=0.1; bird E=1e3 nu=0.1; playdoh E=1e5 nu=0.4 tauY=1e3; cat E=1e3 nu=0.2 tauY=1e2). Control = the default run's own dynamic stage (camera sampling RNG differs; a same-RNG default restart control torus_v11_rs was abandoned after 3 OOMs on the shared GPU).",
+   "metrics": "Loss is a single random camera per iteration and too noisy for a reach-the-same-loss criterion (both runs 'reach' the default's final smoothed loss at the first full-length iteration, 51). We therefore report reach-and-stay criteria on the parameter trajectory: first iteration after which log10 E stays within 0.05/0.1 of GT and of the default run's own final E (GT-free), and the same for tauY. Wall-clock per iteration differs between runs because of GPU sharing, so iteration counts are the comparable quantity.",
+   "end_to_end_note": "Under the official protocol the dynamic stage always runs a fixed 150 iterations and the static NeRF (6000 iterations) and velocity stages do not depend on the physical-parameter init, so end-to-end wall-clock is unchanged by a better init; savings would only materialise with early stopping.",
+   "bird_v11_hy": "NOT COMPLETED: 3 CUDA-OOMs on shared GPU 7 (restarted each time), 4th attempt on GPU 3 stopped manually at 94/150 dynamic iterations (2026-11-14T15:31Z): nu collapsed to -0.42 (bound -0.45), 45 NaN->dt/2 re-simulations, ~10 min per iteration and growing. The earlier OOM-killed attempts showed the same nu collapse (-0.33 at iteration 72).",
+   "playdoh_v11_hy": "first attempt OOM-killed (another tenant on GPU 7) at 138/150 (kept as docs/v3g/pn_results/playdoh_v11_hy_partial138.json); rerun on GPU 3 completed 150/150 and is the one reported"
+  }
+ },
+ "springgaus_official": {
+  "method": "Spring-Gaus (official code, github.com/Colmar-zlicheng/Spring-Gaus @ 62a1bb5, Apache-2.0)",
+  "protocol": {
+   "data": "Spring-Gaus mpm_synthetic (official Google Drive zip downloaded by v3f; 3 scenes extracted to data/external_datasets/v3g_springgaus_extract)",
+   "config": "official config/mpm_synthetic/<scene>.yaml + default.yaml unchanged; train.py -g <gpu> --cfg ... --eval_cam 5",
+   "views": "all 10 cameras used for training (official protocol); eval_cam 5 is one of the training cameras (render-only)",
+   "frames": "first 20 of 30 frames (N_FRAME 20, dt 0.03 s) observed; frames 20-29 (0.60-0.87 s) are future prediction",
+   "stages": "static 3DGS 30000 it -> velocity 100 it (+3000 Gaussian refine) -> dynamic spring-mass 300 it (+3000 refine first; n_step 100->150->200 at it 100/200) -> eval",
+   "metrics": "Chamfer distance (mean of the two directed mean NN L2 distances, 8192-pt subsample, scene units; also squared x1e3) between Spring-Gaus anchor-interpolated Gaussian centres and GT MPM particles. Fit = frames 0-19 at training dt; future = frames 20-29 from its 60 Hz prediction rollout linearly interpolated in time; static baseline = GT frame 0 vs GT frame k. PSNR on eval cam 5 fit renders vs GT images. Metric code is ours (scripts/v3g/sg_eval.py): the official repo writes point clouds but ships no CD/EMD script, so numbers are not directly comparable to the paper table.",
+   "params": "Spring-Gaus does not output E or nu: it learns per-anchor spring stiffness log10 k (2048 anchors, unit mass per anchor, init 3.0), friction, rebound, soft-k. Only the ranking of median log10 k vs GT E can be compared.",
+   "patches": "build-compat only: #include <cfloat> added to submodules/simple-knn/simple_knn.cu (CUDA 12.6); env torch 2.4.1+cu121, pytorch3d 0.7.8, open3d 0.17.0, pillow 9.5.0 (pillow>=10 breaks its np.byte image loader); no algorithmic change",
+   "hardware": "1x NVIDIA A800-SXM4-80GB (GPU 7), shared with other jobs at ~100% util, so wall-clock is an upper bound",
+   "restart_note": "torus was first started on GPU 0 at 01:30Z and aborted in the dynamic stage (GPU reassignment); restarted from scratch on GPU 7; the GPU-7 run is the one reported"
+  },
+  "scenes": {
+   "torus": {
+    "gt": {
+     "TYPE": "elastic",
+     "E": 1000000,
+     "NU": 0.3
+    },
+    "status": "completed",
+    "wall_clock_total_s": 18334,
+    "stage_wall_clock_s": {
+     "static_30000it": 1771,
+     "static_source_log": "sg_train_torus.log",
+     "velocity_100it": 624,
+     "velocity_source_log": "sg_train_torus.log",
+     "dynamic_300it": 15292,
+     "refines_3000it": {
+      "sg_train_torus.log": [
+       174,
+       177
+      ],
+      "sg_train_torus_gpu0_aborted.log": [
+       72,
+       77
+      ]
+     }
+    },
+    "iterations": {
+     "static": 30000,
+     "velocity": 100,
+     "velocity_refine": 3000,
+     "dynamic": 300,
+     "dynamic_refine": 3000
+    },
+    "metrics": {
+     "fit_cd_mean": 0.008430062088432024,
+     "fit_cd2_x1e3_mean": 0.12419303499750552,
+     "fit_n_frames": 20,
+     "future_cd_mean": 0.011019740046435153,
+     "future_cd2_x1e3_mean": 0.2004202726948328,
+     "future_n_frames": 10,
+     "future_cd_static_baseline_mean": 0.24365675400798686,
+     "fit_psnr_mean_eval_cam": 26.86902113455186,
+     "fit_psnr_n_images": 20
+    },
+    "learned_params": {
+     "n_anchors": 2048,
+     "log10_k_median": 3.495373249053955,
+     "log10_k_mean": 3.4557809829711914,
+     "log10_k_p10": 3.0289026498794556,
+     "log10_k_p90": 3.862188696861267,
+     "fric_k_eff": 0.04924008287190515,
+     "rebound_k_sigmoid": 0.2689414213699951,
+     "soft_vector": -0.5105008482933044
+    },
+    "our_model_v3f": {
+     "source": "docs/v3f/SPRINGGAUS_SYN.json ensemble9 (V2 main B/C/D x 3 seeds), canonical 3-view triplet t0, 30 frames; offset/ridge = leave-one-scene-out over 14 scenes; support_mean_baseline ignores the video; cost = one forward pass per run, no per-scene optimisation",
+     "K0": {
+      "E_Pa_at_rho1000": 92030.46875,
+      "nu": 0.28192296624183655,
+      "abs_log10_E_err": 1.0360683659228065,
+      "abs_nu_err": 0.01807703375816344
+     },
+     "offset": {
+      "E_Pa_at_rho1000": 616439.75,
+      "nu": 0.29236939549446106,
+      "abs_log10_E_err": 0.21010936435814392,
+      "abs_nu_err": 0.007630604505538929
+     },
+     "ridge_last_layer": {
+      "E_Pa_at_rho1000": 547106.4375,
+      "nu": 0.2885339558124542,
+      "abs_log10_E_err": 0.2619281750885899,
+      "abs_nu_err": 0.011466044187545765
+     },
+     "support_mean_baseline": {
+      "E_Pa_at_rho1000": 455453.375,
+      "nu": 0.2853846251964569,
+      "abs_log10_E_err": 0.34155607536855204,
+      "abs_nu_err": 0.01461537480354308
+     }
+    }
+   },
+   "duck": {
+    "gt": {
+     "TYPE": "elastic",
+     "E": 300000,
+     "NU": 0.3
+    },
+    "status": "completed",
+    "wall_clock_total_s": 12134,
+    "stage_wall_clock_s": {
+     "static_30000it": 2417,
+     "static_source_log": "sg_train_duck_try1_oom.log",
+     "velocity_100it": 605,
+     "velocity_source_log": "sg_train_duck_try1_oom.log",
+     "dynamic_300it": 8662,
+     "refines_3000it": {
+      "sg_train_duck.log": [
+       140
+      ],
+      "sg_train_duck_fail1.log": [
+       143
+      ],
+      "sg_train_duck_fail2.log": [
+       115
+      ],
+      "sg_train_duck_try1_oom.log": [
+       156,
+       169
+      ],
+      "sg_train_duck_try2_fail.log": [
+       135
+      ]
+     }
+    },
+    "wall_clock_successful_attempt_s": 8943,
+    "wall_clock_note": "static+velocity(+its refine) ran in an earlier attempt that later hit CUDA OOM in the dynamic stage (GPU co-located with other jobs); their checkpoints were reused, so total = successful attempt + those stage times. Failed attempts' wasted compute is excluded; see logs/sg_time_<scene>_*.txt",
+    "iterations": {
+     "static": 30000,
+     "velocity": 100,
+     "velocity_refine": 3000,
+     "dynamic": 300,
+     "dynamic_refine": 3000
+    },
+    "metrics": {
+     "fit_cd_mean": 0.014073589660500218,
+     "fit_cd2_x1e3_mean": 0.3339808811395189,
+     "fit_n_frames": 20,
+     "future_cd_mean": 0.02074476424001174,
+     "future_cd2_x1e3_mean": 0.7855708965028491,
+     "future_n_frames": 10,
+     "future_cd_static_baseline_mean": 0.029119800216099744,
+     "fit_psnr_mean_eval_cam": 20.46415959118298,
+     "fit_psnr_n_images": 20
+    },
+    "learned_params": {
+     "n_anchors": 2048,
+     "log10_k_median": 3.277707576751709,
+     "log10_k_mean": 3.2603530883789062,
+     "log10_k_p10": 2.830472493171692,
+     "log10_k_p90": 3.691026210784912,
+     "fric_k_eff": 0.28605440184250064,
+     "rebound_k_sigmoid": 0.2689414213699951,
+     "soft_vector": 0.204305961728096
+    },
+    "our_model_v3f": {
+     "source": "docs/v3f/SPRINGGAUS_SYN.json ensemble9 (V2 main B/C/D x 3 seeds), canonical 3-view triplet t0, 30 frames; offset/ridge = leave-one-scene-out over 14 scenes; support_mean_baseline ignores the video; cost = one forward pass per run, no per-scene optimisation",
+     "K0": {
+      "E_Pa_at_rho1000": 102052.1328125,
+      "nu": 0.2797461748123169,
+      "abs_log10_E_err": 0.46829916914605957,
+      "abs_nu_err": 0.020253825187683094
+     },
+     "offset": {
+      "E_Pa_at_rho1000": 743366.4375,
+      "nu": 0.2897354066371918,
+      "abs_log10_E_err": 0.3940816943758095,
+      "abs_nu_err": 0.010264593362808216
+     },
+     "ridge_last_layer": {
+      "E_Pa_at_rho1000": 469126.5625,
+      "nu": 0.2813494801521301,
+      "abs_log10_E_err": 0.1941687691901476,
+      "abs_nu_err": 0.018650519847869862
+     },
+     "support_mean_baseline": {
+      "E_Pa_at_rho1000": 499649.46875,
+      "nu": 0.2853846251964569,
+      "abs_log10_E_err": 0.2215441752658303,
+      "abs_nu_err": 0.01461537480354308
+     }
+    }
+   },
+   "apple": {
+    "gt": {
+     "TYPE": "elastic",
+     "E": 100000,
+     "NU": 0.01
+    },
+    "status": "completed",
+    "wall_clock_total_s": 8672,
+    "stage_wall_clock_s": {
+     "static_30000it": 2694,
+     "static_source_log": "sg_train_apple_try1_fail.log",
+     "velocity_100it": 487,
+     "velocity_source_log": "sg_train_apple_try1_fail.log",
+     "dynamic_300it": 5104,
+     "refines_3000it": {
+      "sg_train_apple.log": [
+       77
+      ],
+      "sg_train_apple_fail1.log": [
+       154
+      ],
+      "sg_train_apple_try1_fail.log": [
+       163,
+       221
+      ],
+      "sg_train_apple_try2_fail.log": [
+       147
+      ]
+     }
+    },
+    "wall_clock_successful_attempt_s": 5270,
+    "wall_clock_note": "static+velocity(+its refine) ran in an earlier attempt that later hit CUDA OOM in the dynamic stage (GPU co-located with other jobs); their checkpoints were reused, so total = successful attempt + those stage times. Failed attempts' wasted compute is excluded; see logs/sg_time_<scene>_*.txt",
+    "iterations": {
+     "static": 30000,
+     "velocity": 100,
+     "velocity_refine": 3000,
+     "dynamic": 300,
+     "dynamic_refine": 3000
+    },
+    "metrics": {
+     "fit_cd_mean": 0.010503739908712065,
+     "fit_cd2_x1e3_mean": 0.16597475416125176,
+     "fit_n_frames": 20,
+     "future_cd_mean": 0.02007180908538273,
+     "future_cd2_x1e3_mean": 0.8498227750411171,
+     "future_n_frames": 10,
+     "future_cd_static_baseline_mean": 0.038849997605895706,
+     "fit_psnr_mean_eval_cam": 29.495850902915425,
+     "fit_psnr_n_images": 20
+    },
+    "learned_params": {
+     "n_anchors": 2048,
+     "log10_k_median": 2.8047637939453125,
+     "log10_k_mean": 2.7786712646484375,
+     "log10_k_p10": 2.397093963623047,
+     "log10_k_p90": 3.0692524909973145,
+     "fric_k_eff": 0.3599727034486866,
+     "rebound_k_sigmoid": 0.2689414213699951,
+     "soft_vector": 0.43182578682899475
+    },
+    "our_model_v3f": {
+     "source": "docs/v3f/SPRINGGAUS_SYN.json ensemble9 (V2 main B/C/D x 3 seeds), canonical 3-view triplet t0, 30 frames; offset/ridge = leave-one-scene-out over 14 scenes; support_mean_baseline ignores the video; cost = one forward pass per run, no per-scene optimisation",
+     "K0": {
+      "E_Pa_at_rho1000": 82090.59375,
+      "nu": 0.2668592631816864,
+      "abs_log10_E_err": 0.08570660313029793,
+      "abs_nu_err": 0.2568592631816864
+     },
+     "offset": {
+      "E_Pa_at_rho1000": 637408.5,
+      "nu": 0.2980543375015259,
+      "abs_log10_E_err": 0.8044178506006611,
+      "abs_nu_err": 0.28805433750152587
+     },
+     "ridge_last_layer": {
+      "E_Pa_at_rho1000": 618523.8125,
+      "nu": 0.3121125102043152,
+      "abs_log10_E_err": 0.7913564241563712,
+      "abs_nu_err": 0.3021125102043152
+     },
+     "support_mean_baseline": {
+      "E_Pa_at_rho1000": 543708.875,
+      "nu": 0.3076923191547394,
+      "abs_log10_E_err": 0.735366422080374,
+      "abs_nu_err": 0.29769231915473937
+     }
+    }
+   }
+  },
+  "ranking_check": {
+   "scenes": [
+    "torus",
+    "duck",
+    "apple"
+   ],
+   "gt_E": [
+    1000000,
+    300000,
+    100000
+   ],
+   "springgaus_median_log10_k": [
+    3.495373249053955,
+    3.277707576751709,
+    2.8047637939453125
+   ],
+   "ours_K0_E": [
+    92030.46875,
+    102052.1328125,
+    82090.59375
+   ],
+   "note": "GT E order torus(1e6) > duck(3e5) > apple(1e5). Spring-Gaus median log10 spring k 3.50 > 3.28 > 2.80: same order (3/3 pairs) although k is not convertible to Pa. Our K0 ensemble E/rho: duck 1.02e5 > torus 9.2e4 > apple 8.2e4 (2/3 pairs; torus-vs-duck wrong), all ~5-10x low; on the full 14-scene set (docs/v3f) our K0 E Spearman is -0.21, i.e. no ranking signal there.",
+   "pairs_correct": {
+    "springgaus_k": "3/3",
+    "ours_K0": "2/3"
+   }
+  }
+ },
+ "phystwin_official": {
+  "method": "PhysTwin (official, github.com/Jianghanxiao/PhysTwin @81c71879, ICCV 2025)",
+  "status": "completed (physics stages); appearance stage not run",
+  "case": "single_push_sloth (data/different_types, released processed data, HF Jianghanxiao/PhysTwin rev 05665bcd0edad8f069c7def9cbb58d2eb75d68d0)",
+  "input": "3 RealSense RGB-D views, 30 fps, 68 frames (train 0-47, test 47-68); hand-push interaction; processed point clouds + CoTracker 3D tracks + TRELLIS shape prior (released, not recomputed)",
+  "split": {
+   "frame_len": 68,
+   "train": [
+    0,
+    47
+   ],
+   "test": [
+    47,
+    68
+   ]
+  },
+  "gpu": "NVIDIA A800-SXM4-80GB (GPU 3, shared with other jobs at 100% util; timings are therefore upper bounds vs. an idle GPU)",
+  "env": "uv venv .engine-envs/v3g_phystwin: python 3.10, torch 2.4.0+cu121, warp-lang 1.7.0, pytorch3d (cu121/pt240 wheel)",
+  "stages": {
+   "zero_order_cma_es": {
+    "script": "optimize_cma.py",
+    "iterations": 20,
+    "function_evals": 220,
+    "wall_s": 859.3,
+    "loss_first_iter": 0.000733499040981532,
+    "loss_best": 0.0004785453881160483,
+    "note": "official default max_iter=20, configs/real.yaml"
+   },
+   "first_order_train": {
+    "script": "train_warp.py",
+    "iterations": 200,
+    "wall_s": 1017.6,
+    "loss_iter0": 0.0004611491234873424,
+    "loss_best": 0.00043936557279306254,
+    "best_epoch": 120,
+    "loss_iter199": 0.000454172500529081,
+    "note": "official 200 iters (configs/real.yaml); best checkpoint chosen on training loss at vis_interval=20 as in official code"
+   },
+   "inference": {
+    "script": "inference_warp.py",
+    "wall_s": 11.4
+   },
+   "evaluation": {
+    "scripts": [
+     "evaluate_chamfer.py",
+     "evaluate_track.py"
+    ],
+    "wall_s": 11.0
+   },
+   "gaussian_appearance": {
+    "status": "not run",
+    "reason": "needs diff-gaussian-rasterization/simple-knn CUDA builds + export_gaussian_data (raw colour/depth frames, ~0.6 GB more data); appearance is irrelevant to physical-parameter cost; out of scope at verification scale"
+   }
+  },
+  "total_physics_wall_s": 1876.9,
+  "total_physics_wall_min": 31.3,
+  "metrics_official_eval": {
+   "chamfer_L1_single_dir_train": 0.015509363132245515,
+   "chamfer_train_frames": 46,
+   "chamfer_L1_single_dir_test": 0.037271304499535335,
+   "chamfer_test_frames": 21,
+   "track_err_train_m": 0.027187777268687124,
+   "track_err_test_m": 0.08916416602987824,
+   "units": "metres (world frame of the processed data); test = future-frame prediction, frames 47-68"
+  },
+  "peak_gpu_memory": "not measured by torch (Warp allocates outside the torch allocator); not separately measured",
+  "deviations_from_official": [
+   "visualisation disabled: qqtt visualize_pc replaced by a no-op and wandb.Video stubbed (no display on server; README notes runs are faster with visualisation disabled)",
+   "wandb disabled (WANDB_MODE=disabled)",
+   "import-only stubs for diff_gaussian_rasterization, simple_knn, pynput, pyrender (used only by GS rendering / keyboard playground / visualisation, never called in the optimisation path)",
+   "no source file of the official repo was modified; wrapper scripts/v3g/pt_run.py runs the official scripts via runpy"
+  ],
+  "security": {
+   "data": "downloaded by HTTP range from the official HF data.zip into a new dir data/external_datasets/v3g_phystwin; CRC verified; pickles scanned with pickletools before use: only numpy ndarray/_reconstruct/dtype globals",
+   "manifest": "data/external_datasets/v3g_phystwin/single_push_sloth/v3g_download_manifest.json"
+  },
+  "applicability_to_our_model": "Not applicable: PhysTwin consumes multi-view RGB-D + hand-controller tracks of a real interaction and fits a per-scene spring-mass model (per-spring stiffness, no E/nu/sigma_y); there is no GT material parameter. Our feed-forward model takes rendered RGB video of a FieldBench-style loading and outputs continuum parameters. We report only cost (about 31 min of GPU optimisation per scene on a shared A800 vs. one forward pass for ours) and qualitative fit; no accuracy comparison is claimed.",
+  "files": {
+   "scripts": [
+    "scripts/v3g/pt_env.sh",
+    "scripts/v3g/pt_install.sh",
+    "scripts/v3g/pt_download.py",
+    "scripts/v3g/pt_run.py",
+    "scripts/v3g/pt_pipeline.sh",
+    "scripts/v3g/pt_summarize.py"
+   ],
+   "logs": [
+    "docs/v3g/logs/pt_pipeline_cma.log",
+    "docs/v3g/logs/pt_pipeline.log",
+    "docs/v3g/logs/pt_install.log"
+   ],
+   "run_dir": "runs/v3g_phystwin",
+   "timing": "runs/v3g_phystwin/timing.jsonl"
+  },
+  "stages_raw": [
+   {
+    "stage": "cma",
+    "script": "optimize_cma.py",
+    "case": "single_push_sloth",
+    "argv": [
+     "--base_path",
+     "./data/different_types",
+     "--case_name",
+     "single_push_sloth",
+     "--train_frame",
+     "47"
+    ],
+    "status": "ok",
+    "error": null,
+    "wall_s": 859.3274064064026,
+    "cuda_visible": "3",
+    "end_unix": 1794620360.724968,
+    "gpu": "NVIDIA A800-SXM4-80GB",
+    "peak_mem_gb": 0.022331904
+   },
+   {
+    "stage": "train",
+    "script": "train_warp.py",
+    "case": "single_push_sloth",
+    "argv": [
+     "--base_path",
+     "./data/different_types",
+     "--case_name",
+     "single_push_sloth",
+     "--train_frame",
+     "47"
+    ],
+    "status": "ok",
+    "error": null,
+    "wall_s": 1017.5689852237701,
+    "cuda_visible": "3",
+    "end_unix": 1794621434.6414454,
+    "gpu": "NVIDIA A800-SXM4-80GB",
+    "peak_mem_gb": 0.016828416
+   },
+   {
+    "stage": "infer",
+    "script": "inference_warp.py",
+    "case": "single_push_sloth",
+    "argv": [
+     "--base_path",
+     "./data/different_types",
+     "--case_name",
+     "single_push_sloth"
+    ],
+    "status": "ok",
+    "error": null,
+    "wall_s": 11.4236421585083,
+    "cuda_visible": "3",
+    "end_unix": 1794621447.5607255,
+    "gpu": "NVIDIA A800-SXM4-80GB",
+    "peak_mem_gb": 0.017007616
+   },
+   {
+    "stage": "eval_chamfer",
+    "script": "evaluate_chamfer.py",
+    "case": "single_push_sloth",
+    "argv": [],
+    "status": "ok",
+    "error": null,
+    "wall_s": 10.754932880401611,
+    "cuda_visible": "3",
+    "end_unix": 1794621459.5220468,
+    "gpu": "NVIDIA A800-SXM4-80GB",
+    "peak_mem_gb": 0.0
+   },
+   {
+    "stage": "eval_track",
+    "script": "evaluate_track.py",
+    "case": "single_push_sloth",
+    "argv": [],
+    "status": "ok",
+    "error": null,
+    "wall_s": 0.20833253860473633,
+    "cuda_visible": "3",
+    "end_unix": 1794621460.200892,
+    "gpu": "NVIDIA A800-SXM4-80GB",
+    "peak_mem_gb": 0.0
+   }
+  ],
+  "generated_unix": 1794621543.5590792
+ }
+}

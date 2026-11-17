@@ -1,0 +1,13 @@
+{
+  "bulk_generation_allowed": false,
+  "reason": "drop response not converged (63.7%); stretch empty frames 8.1%, border 45%",
+  "required": [
+    "fixed-time step convergence",
+    "paired fixed camera coverage",
+    "minimum object pixel footprint",
+    "visible nonrigid motion",
+    "force/field label alignment",
+    "material-stratified failure audit"
+  ],
+  "note": "No bulk generation job has been queued. This gate is a planning record, not a generator-enforced admission check."
+}

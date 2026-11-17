@@ -1,0 +1,195 @@
+{
+ "v3i_B_f10_seed17": {
+  "status": "done",
+  "attempts": 1,
+  "gpu": 3,
+  "pid": 2721214,
+  "started": 1794651875.3157597,
+  "ended": 1794653458.09257
+ },
+ "v3i_C_f10_seed17": {
+  "status": "done",
+  "attempts": 1,
+  "gpu": 0,
+  "pid": 2721215,
+  "started": 1794651875.3164477,
+  "ended": 1794653458.0926595
+ },
+ "v3i_B_f10_seed29": {
+  "status": "done",
+  "attempts": 1,
+  "gpu": 1,
+  "pid": 2721216,
+  "started": 1794651875.317089,
+  "ended": 1794653458.092756
+ },
+ "v3i_C_f10_seed29": {
+  "status": "done",
+  "attempts": 1,
+  "gpu": 2,
+  "pid": 2721217,
+  "started": 1794651875.317724,
+  "ended": 1794653458.0928319
+ },
+ "v3i_B_f10_seed43": {
+  "status": "done",
+  "attempts": 1,
+  "gpu": 4,
+  "pid": 2721218,
+  "started": 1794651875.3183813,
+  "ended": 1794653458.092904
+ },
+ "v3i_C_f10_seed43": {
+  "status": "done",
+  "attempts": 1,
+  "gpu": 5,
+  "pid": 2721219,
+  "started": 1794651875.319227,
+  "ended": 1794653458.0929732
+ },
+ "v3i_B_f25_seed17": {
+  "status": "done",
+  "attempts": 1,
+  "gpu": 6,
+  "pid": 2721220,
+  "started": 1794651875.3200784,
+  "ended": 1794653458.0930476
+ },
+ "v3i_C_f25_seed17": {
+  "status": "done",
+  "attempts": 1,
+  "gpu": 7,
+  "pid": 2721221,
+  "started": 1794651875.3209577,
+  "ended": 1794653458.0931277
+ },
+ "v3i_B_f25_seed29": {
+  "status": "done",
+  "attempts": 1,
+  "gpu": 3,
+  "pid": 2721222,
+  "started": 1794651875.3217947,
+  "ended": 1794653458.093199
+ },
+ "v3i_C_f25_seed29": {
+  "status": "done",
+  "attempts": 1,
+  "gpu": 0,
+  "pid": 2721223,
+  "started": 1794651875.3226304,
+  "ended": 1794653458.0932684
+ },
+ "v3i_B_f25_seed43": {
+  "status": "done",
+  "attempts": 1,
+  "gpu": 1,
+  "pid": 2721224,
+  "started": 1794651875.3235402,
+  "ended": 1794653458.093337
+ },
+ "v3i_C_f25_seed43": {
+  "status": "done",
+  "attempts": 1,
+  "gpu": 2,
+  "pid": 2721225,
+  "started": 1794651875.3244257,
+  "ended": 1794653458.0934136
+ },
+ "v3i_C_v1_seed17": {
+  "status": "done",
+  "attempts": 2,
+  "gpu": 0,
+  "pid": 2772878,
+  "started": 1794653864.705971,
+  "ended": 1794654557.1914492
+ },
+ "v3i_C_v2_seed17": {
+  "status": "done",
+  "attempts": 2,
+  "gpu": 3,
+  "pid": 2772879,
+  "started": 1794653864.7068357,
+  "ended": 1794654808.7753785
+ },
+ "v3i_C_v1_seed29": {
+  "status": "done",
+  "attempts": 2,
+  "gpu": 1,
+  "pid": 2772880,
+  "started": 1794653864.707529,
+  "ended": 1794654075.541659
+ },
+ "v3i_C_v2_seed29": {
+  "status": "done",
+  "attempts": 2,
+  "gpu": 2,
+  "pid": 2772881,
+  "started": 1794653864.7082253,
+  "ended": 1794654808.7758882
+ },
+ "v3i_C_v1_seed43": {
+  "status": "done",
+  "attempts": 1,
+  "gpu": 0,
+  "pid": 2762265,
+  "started": 1794653458.1900485,
+  "ended": 1794655350.9066515
+ },
+ "v3i_C_v2_seed43": {
+  "status": "done",
+  "attempts": 1,
+  "gpu": 3,
+  "pid": 2762266,
+  "started": 1794653458.1911652,
+  "ended": 1794655169.9542396
+ },
+ "v3i_B_f50_seed17": {
+  "status": "done",
+  "attempts": 1,
+  "gpu": 1,
+  "pid": 2762267,
+  "started": 1794653458.1922307,
+  "ended": 1794654745.382455
+ },
+ "v3i_C_f50_seed17": {
+  "status": "done",
+  "attempts": 1,
+  "gpu": 2,
+  "pid": 2762268,
+  "started": 1794653458.193249,
+  "ended": 1794654838.8820918
+ },
+ "v3i_B_f50_seed29": {
+  "status": "done",
+  "attempts": 1,
+  "gpu": 6,
+  "pid": 2762269,
+  "started": 1794653458.1942196,
+  "ended": 1794654685.1884472
+ },
+ "v3i_C_f50_seed29": {
+  "status": "done",
+  "attempts": 1,
+  "gpu": 7,
+  "pid": 2762270,
+  "started": 1794653458.1951857,
+  "ended": 1794655169.9547157
+ },
+ "v3i_B_f50_seed43": {
+  "status": "done",
+  "attempts": 1,
+  "gpu": 4,
+  "pid": 2762271,
+  "started": 1794653458.1961164,
+  "ended": 1794654496.982071
+ },
+ "v3i_C_f50_seed43": {
+  "status": "done",
+  "attempts": 1,
+  "gpu": 5,
+  "pid": 2762272,
+  "started": 1794653458.1970193,
+  "ended": 1794654989.37832
+ },
+ "_updated": 1794655350.995655
+}

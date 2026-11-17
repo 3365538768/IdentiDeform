@@ -1,0 +1,616 @@
+15:43:37 start ["data/v4_main", "val", 16] gpu 0
+15:43:38 start ["data/v4_main", "val", 17] gpu 1
+15:43:39 start ["data/v4_main", "val", 18] gpu 2
+15:43:40 start ["data/v4_main", "val", 19] gpu 3
+15:43:41 start ["data/v4_main", "val", 20] gpu 5
+15:43:42 start ["data/v4_main", "val", 21] gpu 6
+15:43:43 start ["data/v4_main", "val", 22] gpu 7
+15:43:44 start ["data/v4_main", "val", 47] gpu 0
+15:43:45 start ["data/v4_main", "val", 48] gpu 1
+15:43:46 start ["data/v4_main", "val", 49] gpu 2
+15:43:47 start ["data/v4_main", "val", 50] gpu 3
+15:43:48 start ["data/v4_main", "val", 51] gpu 5
+15:43:49 start ["data/v4_main", "val", 52] gpu 6
+15:43:50 start ["data/v4_main", "val", 53] gpu 7
+15:43:51 start ["data/v4_main", "val", 78] gpu 0
+15:43:52 start ["data/v4_main", "val", 79] gpu 1
+15:43:53 start ["data/v4_main", "val", 80] gpu 2
+15:43:54 start ["data/v4_main", "val", 81] gpu 3
+15:43:55 start ["data/v4_main", "val", 82] gpu 5
+15:43:56 start ["data/v4_main", "val", 83] gpu 6
+15:43:57 start ["data/v4_main", "val", 84] gpu 7
+15:43:58 start ["data/v4_main", "val", 109] gpu 0
+15:43:59 start ["data/v4_main", "val", 110] gpu 1
+15:44:00 start ["data/v4_main", "val", 111] gpu 2
+15:44:01 start ["data/v4_main", "val", 112] gpu 3
+15:44:02 start ["data/v4_main", "val", 113] gpu 5
+15:44:03 start ["data/v4_main", "val", 114] gpu 6
+15:44:04 start ["data/v4_main", "val", 115] gpu 7
+15:44:05 start ["data/v4_main", "val", 140] gpu 0
+15:44:06 start ["data/v4_main", "val", 141] gpu 1
+15:44:07 start ["data/v4_main", "val", 142] gpu 2
+15:44:08 start ["data/v4_main", "val", 143] gpu 3
+15:44:09 start ["data/v4_main", "val", 144] gpu 5
+15:44:11 start ["data/v4_main", "val", 145] gpu 6
+15:44:12 start ["data/v4_main", "val", 146] gpu 7
+16:04:31 exit ["data/v4_main", "val", 111] 0 gpu 2
+16:04:31 start ["data/v4_main", "val", 171] gpu 2
+16:04:47 exit ["data/v4_main", "val", 21] 0 gpu 6
+16:04:47 start ["data/v4_main", "val", 172] gpu 6
+16:05:03 exit ["data/v4_main", "val", 22] 0 gpu 7
+16:05:03 exit ["data/v4_main", "val", 112] 0 gpu 3
+16:05:03 exit ["data/v4_main", "val", 113] 0 gpu 5
+16:05:03 start ["data/v4_main", "val", 173] gpu 3
+16:05:04 start ["data/v4_main", "val", 174] gpu 5
+16:05:05 start ["data/v4_main", "val", 175] gpu 7
+16:06:36 exit ["data/v4_main", "val", 52] 0 gpu 6
+16:06:36 exit ["data/v4_main", "val", 142] 0 gpu 2
+16:06:36 start ["data/v4_main", "val", 176] gpu 2
+16:06:37 start ["data/v4_main", "val", 177] gpu 6
+16:06:53 exit ["data/v4_main", "val", 51] 0 gpu 5
+16:06:53 exit ["data/v4_main", "val", 53] 0 gpu 7
+16:06:53 exit ["data/v4_main", "val", 143] 0 gpu 3
+16:06:53 start ["data/v4_main", "val", 202] gpu 3
+16:06:54 start ["data/v4_main", "val", 203] gpu 5
+16:06:55 start ["data/v4_main", "val", 204] gpu 7
+16:07:11 exit ["data/v4_main", "val", 18] 0 gpu 2
+16:07:11 exit ["data/v4_main", "val", 20] 0 gpu 5
+16:07:11 exit ["data/v4_main", "val", 145] 0 gpu 6
+16:07:11 start ["data/v4_main", "val", 205] gpu 2
+16:07:12 start ["data/v4_main", "val", 206] gpu 5
+16:07:13 start ["data/v4_main", "val", 207] gpu 6
+16:07:29 exit ["data/v4_main", "val", 19] 0 gpu 3
+16:07:29 exit ["data/v4_main", "val", 144] 0 gpu 5
+16:07:29 start ["data/v4_main", "val", 208] gpu 3
+16:07:30 start ["data/v4_main", "val", 233] gpu 5
+16:07:46 exit ["data/v4_main", "val", 17] 0 gpu 1
+16:07:46 exit ["data/v4_main", "val", 146] 0 gpu 7
+16:07:46 start ["data/v4_main", "val", 234] gpu 1
+16:07:47 start ["data/v4_main", "val", 235] gpu 7
+16:08:03 exit ["data/v4_main", "val", 16] 0 gpu 0
+16:08:03 exit ["data/v4_main", "val", 141] 0 gpu 1
+16:08:03 start ["data/v4_main", "val", 236] gpu 0
+16:08:04 start ["data/v4_main", "val", 237] gpu 1
+16:08:35 exit ["data/v4_main", "val", 110] 0 gpu 1
+16:08:35 start ["data/v4_main", "val", 238] gpu 1
+16:09:06 exit ["data/v4_main", "val", 109] 0 gpu 0
+16:09:06 start ["data/v4_main", "val", 239] gpu 0
+16:09:37 exit ["data/v4_main", "val", 80] 0 gpu 2
+16:09:37 start ["data/v4_main", "val", 264] gpu 2
+16:10:08 exit ["data/v4_main", "val", 49] 0 gpu 2
+16:10:08 exit ["data/v4_main", "val", 114] 0 gpu 6
+16:10:08 start ["data/v4_main", "val", 265] gpu 2
+16:10:09 start ["data/v4_main", "val", 266] gpu 6
+16:10:55 exit ["data/v4_main", "val", 115] 0 gpu 7
+16:10:55 start ["data/v4_main", "val", 267] gpu 7
+16:11:11 exit ["data/v4_main", "val", 50] 0 gpu 3
+16:11:11 exit ["data/v4_main", "val", 83] 0 gpu 6
+16:11:11 start ["data/v4_main", "val", 268] gpu 3
+16:11:12 start ["data/v4_main", "val", 269] gpu 6
+16:11:28 exit ["data/v4_main", "val", 81] 0 gpu 3
+16:11:28 exit ["data/v4_main", "val", 84] 0 gpu 7
+16:11:28 start ["data/v4_main", "val", 270] gpu 3
+16:11:29 start ["data/v4_main", "train", 12] gpu 7
+16:11:45 exit ["data/v4_main", "val", 82] 0 gpu 5
+16:11:45 start ["data/v4_main", "train", 13] gpu 5
+16:12:01 exit ["data/v4_main", "val", 79] 0 gpu 1
+16:12:01 start ["data/v4_main", "train", 14] gpu 1
+16:12:17 exit ["data/v4_main", "val", 78] 0 gpu 0
+16:12:17 start ["data/v4_main", "train", 15] gpu 0
+16:12:49 exit ["data/v4_main", "val", 48] 0 gpu 1
+16:12:49 start ["data/v4_main", "train", 16] gpu 1
+16:13:05 exit ["data/v4_main", "val", 140] 0 gpu 0
+16:13:05 start ["data/v4_main", "train", 17] gpu 0
+16:13:36 exit ["data/v4_main", "val", 47] 0 gpu 0
+16:13:36 start ["data/v4_main", "train", 18] gpu 0
+16:14:37 exit ["data/v4_main", "val", 202] 0 gpu 3
+16:14:37 exit ["data/v4_main", "val", 203] 0 gpu 5
+16:14:37 start ["data/v4_main", "train", 43] gpu 3
+16:14:38 start ["data/v4_main", "train", 44] gpu 5
+16:15:39 exit ["data/v4_main", "val", 177] 0 gpu 6
+16:15:39 start ["data/v4_main", "train", 45] gpu 6
+16:16:25 exit ["data/v4_main", "val", 233] 0 gpu 5
+16:16:25 start ["data/v4_main", "train", 46] gpu 5
+16:17:26 exit ["data/v4_main", "val", 171] 0 gpu 2
+16:17:26 exit ["data/v4_main", "val", 174] 0 gpu 5
+16:17:26 exit ["data/v4_main", "val", 237] 0 gpu 1
+16:17:26 start ["data/v4_main", "train", 47] gpu 1
+16:17:27 start ["data/v4_main", "train", 48] gpu 2
+16:17:28 start ["data/v4_main", "train", 49] gpu 5
+16:17:44 exit ["data/v4_main", "val", 172] 0 gpu 6
+16:17:44 exit ["data/v4_main", "val", 238] 0 gpu 1
+16:17:44 start ["data/v4_main", "train", 78] gpu 1
+16:17:45 start ["data/v4_main", "train", 79] gpu 6
+16:18:01 exit ["data/v4_main", "val", 205] 0 gpu 2
+16:18:01 start ["data/v4_main", "train", 80] gpu 2
+16:18:17 exit ["data/v4_main", "val", 176] 0 gpu 2
+16:18:17 exit ["data/v4_main", "val", 206] 0 gpu 5
+16:18:17 start ["data/v4_main", "train", 136] gpu 2
+16:18:18 start ["data/v4_main", "train", 137] gpu 5
+16:18:49 exit ["data/v4_main", "val", 239] 0 gpu 0
+16:18:49 start ["data/v4_main", "train", 138] gpu 0
+16:19:05 exit ["data/v4_main", "val", 207] 0 gpu 6
+16:19:05 exit ["data/v4_main", "val", 235] 0 gpu 7
+16:19:05 start ["data/v4_main", "train", 139] gpu 6
+16:19:06 start ["data/v4_main", "train", 140] gpu 7
+16:19:22 exit ["data/v4_main", "val", 234] 0 gpu 1
+16:19:22 exit ["data/v4_main", "val", 269] 0 gpu 6
+16:19:22 start ["data/v4_main", "train", 168] gpu 1
+16:19:23 start ["data/v4_main", "train", 169] gpu 6
+16:19:39 exit ["data/v4_main", "val", 173] 0 gpu 3
+16:19:39 exit ["data/v4_main", "val", 175] 0 gpu 7
+16:19:39 start ["data/v4_main", "train", 170] gpu 3
+16:19:40 start ["data/v4_main", "train", 171] gpu 7
+16:20:11 exit ["data/v4_main", "val", 204] 0 gpu 7
+16:20:11 exit ["data/v4_main", "val", 264] 0 gpu 2
+16:20:11 start ["data/v4_main", "train", 172] gpu 2
+16:20:12 start ["data/v4_main", "train", 173] gpu 7
+16:20:28 exit ["data/v4_main", "val", 267] 0 gpu 7
+16:20:28 start ["data/v4_main", "train", 204] gpu 7
+16:20:44 exit ["data/v4_main", "val", 265] 0 gpu 2
+16:20:44 exit ["data/v4_main", "val", 266] 0 gpu 6
+16:20:44 start ["data/v4_main", "train", 229] gpu 2
+16:20:45 start ["data/v4_main", "train", 230] gpu 6
+16:21:01 exit ["data/v4_main", "val", 236] 0 gpu 0
+16:21:01 start ["data/v4_main", "train", 260] gpu 0
+16:21:17 exit ["data/v4_main", "val", 208] 0 gpu 3
+16:21:17 start ["data/v4_main", "train", 261] gpu 3
+16:21:33 exit ["data/v4_main", "val", 268] 0 gpu 3
+16:21:33 start ["data/v4_main", "train", 262] gpu 3
+16:21:49 exit ["data/v4_main", "train", 16] 0 gpu 1
+16:21:49 start ["data/v4_main", "train", 263] gpu 1
+16:22:05 exit ["data/v4_main", "val", 270] 0 gpu 3
+16:22:05 start ["data/v4_main", "train", 264] gpu 3
+16:22:37 exit ["data/v4_main", "train", 13] 0 gpu 5
+16:22:37 start ["data/v4_main", "train", 265] gpu 5
+16:23:08 exit ["data/v4_main", "train", 12] 0 gpu 7
+16:23:08 start ["data/v4_main", "train", 266] gpu 7
+16:24:54 exit ["data/v4_main", "train", 15] 0 gpu 0
+16:24:54 start ["data/v4_main", "train", 294] gpu 0
+16:25:55 exit ["data/v4_main", "train", 14] 0 gpu 1
+16:25:55 exit ["data/v4_main", "train", 17] 0 gpu 0
+16:25:55 start ["data/v4_main", "train", 295] gpu 0
+16:25:56 start ["data/v4_main", "train", 296] gpu 1
+16:26:42 exit ["data/v4_main", "train", 44] 0 gpu 5
+16:26:42 start ["data/v4_main", "train", 297] gpu 5
+16:27:43 exit ["data/v4_main", "train", 18] 0 gpu 0
+16:27:43 start ["data/v4_main", "train", 353] gpu 0
+16:28:59 exit ["data/v4_main", "train", 43] 0 gpu 3
+16:28:59 start ["data/v4_main", "train", 354] gpu 3
+16:30:16 exit ["data/v4_main", "train", 45] 0 gpu 6
+16:30:16 start ["data/v4_main", "train", 355] gpu 6
+16:32:17 exit ["data/v4_main", "train", 79] 0 gpu 6
+16:32:17 start ["data/v4_main", "train", 356] gpu 6
+16:32:48 exit ["data/v4_main", "train", 46] 0 gpu 5
+16:32:48 start ["data/v4_main", "train", 384] gpu 5
+16:33:34 exit ["data/v4_main", "train", 48] 0 gpu 2
+16:33:34 start ["data/v4_main", "train", 385] gpu 2
+16:33:50 exit ["data/v4_main", "train", 49] 0 gpu 5
+16:33:50 exit ["data/v4_main", "train", 78] 0 gpu 1
+16:33:50 exit ["data/v4_main", "train", 80] 0 gpu 2
+16:33:50 start ["data/v4_main", "train", 386] gpu 1
+16:33:51 start ["data/v4_main", "train", 387] gpu 2
+16:33:52 start ["data/v4_main", "train", 388] gpu 5
+16:34:53 exit ["data/v4_main", "train", 47] 0 gpu 1
+16:34:53 exit ["data/v4_main", "train", 140] 0 gpu 7
+16:34:53 start ["data/v4_main", "train", 389] gpu 1
+16:34:54 start ["data/v4_main", "train", 390] gpu 7
+16:35:25 exit ["data/v4_main", "train", 136] 0 gpu 2
+16:35:25 start ["data/v4_main", "train", 420] gpu 2
+16:35:41 exit ["data/v4_main", "train", 137] 0 gpu 5
+16:35:41 exit ["data/v4_main", "train", 169] 0 gpu 6
+16:35:41 exit ["data/v4_main", "train", 170] 0 gpu 3
+16:35:41 start ["data/v4_main", "train", 421] gpu 3
+16:35:42 start ["data/v4_main", "train", 446] gpu 5
+16:35:43 start ["data/v4_main", "train", 477] gpu 6
+16:35:59 exit ["data/v4_main", "train", 139] 0 gpu 6
+16:35:59 exit ["data/v4_main", "train", 168] 0 gpu 1
+16:35:59 start ["data/v4_main", "train", 478] gpu 1
+16:36:00 start ["data/v4_main", "train", 479] gpu 6
+16:36:46 exit ["data/v4_main", "train", 138] 0 gpu 0
+16:36:46 start ["data/v4_main", "train", 480] gpu 0
+16:37:02 exit ["data/v4_main", "train", 171] 0 gpu 7
+16:37:02 exit ["data/v4_main", "train", 172] 0 gpu 2
+16:37:02 exit ["data/v4_main", "train", 230] 0 gpu 6
+16:37:02 start ["data/v4_main", "train", 481] gpu 2
+16:37:03 start ["data/v4_main", "train", 482] gpu 6
+16:37:04 start ["data/v4_main", "train", 510] gpu 7
+16:37:20 exit ["data/v4_main", "train", 204] 0 gpu 7
+16:37:20 exit ["data/v4_main", "train", 229] 0 gpu 2
+16:37:21 start ["data/v4_main", "train", 511] gpu 2
+16:37:22 start ["data/v4_main", "train", 512] gpu 7
+16:37:38 exit ["data/v4_main", "train", 173] 0 gpu 7
+16:37:38 start ["data/v4_main", "train", 513] gpu 7
+16:38:09 exit ["data/v4_main", "train", 260] 0 gpu 0
+16:38:09 exit ["data/v4_main", "train", 265] 0 gpu 5
+16:38:09 start ["data/v4_main", "train", 514] gpu 0
+16:38:10 start ["data/v4_main", "train", 570] gpu 5
+16:38:26 exit ["data/v4_main", "train", 266] 0 gpu 7
+16:38:26 start ["data/v4_main", "train", 571] gpu 7
+16:38:42 exit ["data/v4_main", "train", 261] 0 gpu 3
+16:38:42 exit ["data/v4_main", "train", 263] 0 gpu 1
+16:38:42 exit ["data/v4_main", "train", 264] 0 gpu 3
+16:38:42 start ["data/v4_main", "train", 572] gpu 3
+16:38:43 start ["data/v4_main", "train", 601] gpu 1
+16:38:44 start ["data/v4_main", "train", 602] gpu 3
+16:39:00 exit ["data/v4_main", "train", 262] 0 gpu 3
+16:39:00 start ["data/v4_main", "train", 603] gpu 3
+16:39:31 exit ["data/v4_main", "train", 294] 0 gpu 0
+16:39:31 exit ["data/v4_main", "train", 296] 0 gpu 1
+16:39:31 start ["data/v4_main", "train", 604] gpu 0
+16:39:32 start ["data/v4_main", "train", 605] gpu 1
+16:39:48 exit ["data/v4_main", "train", 295] 0 gpu 0
+16:39:48 start ["data/v4_main", "train", 606] gpu 0
+16:40:19 exit ["data/v4_main", "train", 354] 0 gpu 3
+16:40:19 start ["data/v4_main", "train", 607] gpu 3
+16:40:50 exit ["data/v4_main", "train", 297] 0 gpu 5
+16:40:50 start ["data/v4_main", "train", 636] gpu 5
+16:41:36 exit ["data/v4_main", "train", 353] 0 gpu 0
+16:41:36 start ["data/v4_main", "train", 637] gpu 0
+16:41:52 exit ["data/v4_main", "train", 355] 0 gpu 6
+16:41:52 start ["data/v4_main", "train", 638] gpu 6
+16:42:53 exit ["data/v4_main", "train", 356] 0 gpu 6
+16:42:53 exit ["data/v4_main", "train", 384] 0 gpu 5
+16:42:53 start ["data/v4_main", "train", 694] gpu 5
+16:42:54 start ["data/v4_main", "train", 695] gpu 6
+16:43:10 exit ["data/v4_main", "train", 390] 0 gpu 7
+16:43:10 start ["data/v4_main", "train", 696] gpu 7
+16:43:41 exit ["data/v4_main", "train", 385] 0 gpu 2
+16:43:41 exit ["data/v4_main", "train", 386] 0 gpu 1
+16:43:41 start ["data/v4_main", "train", 697] gpu 1
+16:43:42 start ["data/v4_main", "train", 698] gpu 2
+16:44:58 exit ["data/v4_main", "train", 387] 0 gpu 2
+16:44:58 exit ["data/v4_main", "train", 388] 0 gpu 5
+16:44:58 exit ["data/v4_main", "train", 421] 0 gpu 3
+16:44:58 start ["data/v4_main", "train", 726] gpu 2
+16:44:59 start ["data/v4_main", "train", 727] gpu 3
+16:45:00 start ["data/v4_main", "train", 728] gpu 5
+16:45:46 exit ["data/v4_main", "train", 420] 0 gpu 2
+16:45:46 start ["data/v4_main", "train", 729] gpu 2
+16:46:32 exit ["data/v4_main", "train", 446] 0 gpu 5
+16:46:32 start ["data/v4_main", "train", 730] gpu 5
+16:47:03 exit ["data/v4_main", "train", 389] 0 gpu 1
+16:47:03 start ["data/v4_main", "train", 731] gpu 1
+16:47:35 exit ["data/v4_main", "train", 510] 0 gpu 7
+16:47:35 start ["data/v4_main", "train", 762] gpu 7
+16:47:51 exit ["data/v4_main", "train", 477] 0 gpu 6
+16:47:51 start ["data/v4_main", "train", 787] gpu 6
+16:48:07 exit ["data/v4_main", "train", 478] 0 gpu 1
+16:48:07 exit ["data/v4_main", "train", 479] 0 gpu 6
+16:48:07 exit ["data/v4_main", "train", 480] 0 gpu 0
+16:48:07 start ["data/v4_main", "train", 788] gpu 0
+16:48:08 start ["data/v4_main", "train", 818] gpu 1
+16:48:09 start ["data/v4_main", "train", 819] gpu 6
+16:48:25 exit ["data/v4_main", "train", 511] 0 gpu 2
+16:48:25 start ["data/v4_main", "train", 820] gpu 2
+16:48:41 exit ["data/v4_main", "train", 481] 0 gpu 2
+16:48:41 exit ["data/v4_main", "train", 512] 0 gpu 7
+16:48:41 start ["data/v4_main", "train", 821] gpu 2
+16:48:42 start ["data/v4_main", "train", 822] gpu 7
+16:48:58 exit ["data/v4_main", "train", 482] 0 gpu 6
+16:48:58 exit ["data/v4_main", "train", 570] 0 gpu 5
+16:48:58 start ["data/v4_main", "train", 823] gpu 5
+16:48:59 start ["data/v4_main", "train", 824] gpu 6
+16:49:15 exit ["data/v4_main", "train", 601] 0 gpu 1
+16:49:15 start ["data/v4_main", "train", 852] gpu 1
+16:49:31 exit ["data/v4_main", "train", 513] 0 gpu 7
+16:49:31 exit ["data/v4_main", "train", 514] 0 gpu 0
+16:49:31 start ["data/v4_main", "train", 853] gpu 0
+16:49:32 start ["data/v4_main", "train", 854] gpu 7
+16:49:48 exit ["data/v4_main", "train", 571] 0 gpu 7
+16:49:48 start ["data/v4_main", "train", 855] gpu 7
+16:50:04 exit ["data/v4_main", "train", 602] 0 gpu 3
+16:50:04 start ["data/v4_main", "train", 911] gpu 3
+16:50:35 exit ["data/v4_main", "train", 572] 0 gpu 3
+16:50:35 start ["data/v4_main", "train", 912] gpu 3
+16:50:51 exit ["data/v4_main", "train", 605] 0 gpu 1
+16:50:51 start ["data/v4_main", "train", 913] gpu 1
+16:51:07 exit ["data/v4_main", "train", 603] 0 gpu 3
+16:51:07 exit ["data/v4_main", "train", 604] 0 gpu 0
+16:51:07 exit ["data/v4_main", "train", 606] 0 gpu 0
+16:51:07 exit ["data/v4_main", "train", 636] 0 gpu 5
+16:51:07 start ["data/v4_main", "train", 914] gpu 0
+16:51:08 start ["data/v4_main", "train", 942] gpu 0
+16:51:09 start ["data/v4_main", "train", 943] gpu 3
+16:51:10 start ["data/v4_main", "train", 944] gpu 5
+16:51:41 exit ["data/v4_main", "train", 607] 0 gpu 3
+16:51:41 exit ["data/v4_main", "train", 637] 0 gpu 0
+16:51:41 start ["data/v4_main", "train", 945] gpu 0
+16:51:42 start ["data/v4_main", "train", 946] gpu 3
+16:52:28 exit ["data/v4_main", "train", 638] 0 gpu 6
+16:52:28 start ["data/v4_main", "train", 947] gpu 6
+16:53:44 exit ["data/v4_main", "train", 696] 0 gpu 7
+16:53:44 start ["data/v4_main", "train", 948] gpu 7
+16:54:15 exit ["data/v4_main", "train", 698] 0 gpu 2
+16:54:15 start ["data/v4_main", "train", 978] gpu 2
+16:54:31 exit ["data/v4_main", "train", 694] 0 gpu 5
+16:54:31 start ["data/v4_main", "train", 979] gpu 5
+16:54:47 exit ["data/v4_main", "train", 697] 0 gpu 1
+16:54:47 start ["data/v4_main", "test", 6] gpu 1
+16:55:18 exit ["data/v4_main", "train", 726] 0 gpu 2
+16:55:18 exit ["data/v4_main", "train", 728] 0 gpu 5
+16:55:18 start ["data/v4_main", "test", 7] gpu 2
+16:55:19 start ["data/v4_main", "test", 8] gpu 5
+16:55:35 exit ["data/v4_main", "train", 695] 0 gpu 6
+16:55:35 exit ["data/v4_main", "train", 727] 0 gpu 3
+16:55:35 start ["data/v4_main", "test", 9] gpu 3
+16:55:36 start ["data/v4_main", "test", 10] gpu 6
+16:57:07 exit ["data/v4_main", "train", 729] 0 gpu 2
+16:57:07 start ["data/v4_main", "test", 66] gpu 2
+16:57:39 exit ["data/v4_main", "train", 730] 0 gpu 5
+16:57:39 start ["data/v4_main", "test", 67] gpu 5
+16:58:25 exit ["data/v4_main", "train", 731] 0 gpu 1
+16:58:25 exit ["data/v4_main", "train", 762] 0 gpu 7
+16:58:25 exit ["data/v4_main", "train", 788] 0 gpu 0
+16:58:25 start ["data/v4_main", "test", 68] gpu 0
+16:58:26 start ["data/v4_main", "test", 97] gpu 1
+16:58:27 start ["data/v4_main", "test", 98] gpu 7
+16:58:43 exit ["data/v4_main", "train", 818] 0 gpu 1
+16:58:43 start ["data/v4_main", "test", 99] gpu 1
+16:58:59 exit ["data/v4_main", "train", 853] 0 gpu 0
+16:58:59 start ["data/v4_main", "test", 100] gpu 0
+16:59:15 exit ["data/v4_main", "train", 852] 0 gpu 1
+16:59:15 start ["data/v4_main", "test", 101] gpu 1
+16:59:46 exit ["data/v4_main", "train", 823] 0 gpu 5
+16:59:46 start ["data/v4_main", "test", 102] gpu 5
+17:00:02 exit ["data/v4_main", "train", 787] 0 gpu 6
+17:00:02 exit ["data/v4_main", "train", 820] 0 gpu 2
+17:00:02 start ["data/v4_main", "test", 103] gpu 2
+17:00:03 start ["data/v4_main", "test", 132] gpu 6
+17:00:19 exit ["data/v4_main", "train", 821] 0 gpu 2
+17:00:19 exit ["data/v4_main", "train", 822] 0 gpu 7
+17:00:19 start ["data/v4_main", "test", 133] gpu 2
+17:00:20 start ["data/v4_main", "test", 134] gpu 7
+17:00:51 exit ["data/v4_main", "train", 819] 0 gpu 6
+17:00:51 start ["data/v4_main", "test", 190] gpu 6
+17:01:07 exit ["data/v4_main", "train", 824] 0 gpu 6
+17:01:07 exit ["data/v4_main", "train", 854] 0 gpu 7
+17:01:07 exit ["data/v4_main", "train", 913] 0 gpu 1
+17:01:07 exit ["data/v4_main", "train", 944] 0 gpu 5
+17:01:07 start ["data/v4_main", "test", 191] gpu 1
+17:01:08 start ["data/v4_main", "test", 192] gpu 5
+17:01:09 start ["data/v4_main", "test", 193] gpu 6
+17:01:10 start ["data/v4_main", "test", 194] gpu 7
+17:02:41 exit ["data/v4_main", "train", 942] 0 gpu 0
+17:02:41 start ["data/v4_main", "test", 222] gpu 0
+17:02:57 exit ["data/v4_main", "train", 855] 0 gpu 7
+17:02:57 exit ["data/v4_main", "train", 911] 0 gpu 3
+17:02:57 exit ["data/v4_main", "train", 912] 0 gpu 3
+17:02:57 exit ["data/v4_main", "train", 914] 0 gpu 0
+17:02:57 exit ["data/v4_main", "train", 943] 0 gpu 3
+17:02:57 start ["data/v4_main", "test", 223] gpu 3
+17:02:58 start ["data/v4_main", "test", 224] gpu 3
+17:02:59 start ["data/v4_main", "test", 225] gpu 0
+17:03:00 start ["data/v4_main", "test", 226] gpu 3
+17:03:01 start ["data/v4_main", "test", 227] gpu 7
+17:03:17 exit ["data/v4_main", "train", 945] 0 gpu 0
+17:03:17 exit ["data/v4_main", "train", 946] 0 gpu 3
+17:03:17 start ["data/v4_main", "test", 258] gpu 0
+17:03:18 start ["data/v4_main", "test", 283] gpu 3
+17:03:34 exit ["data/v4_main", "train", 947] 0 gpu 6
+17:03:34 start ["data/v4_main", "test", 284] gpu 6
+17:04:05 exit ["data/v4_main", "test", 9] 0 gpu 3
+17:04:05 start ["data/v4_main", "train", 1014] gpu 3
+17:08:52 exit ["data/v4_main", "train", 978] 0 gpu 2
+17:08:52 exit ["data/v4_main", "test", 6] 0 gpu 1
+17:08:52 start ["data/v4_main", "train", 1015] gpu 1
+17:08:53 start ["data/v4_main", "train", 1016] gpu 2
+17:09:39 exit ["data/v4_main", "train", 979] 0 gpu 5
+17:09:39 start ["data/v4_main", "train", 1017] gpu 5
+17:10:10 exit ["data/v4_main", "test", 7] 0 gpu 2
+17:10:10 start ["data/v4_main", "train", 1018] gpu 2
+17:10:26 exit ["data/v4_main", "test", 8] 0 gpu 5
+17:10:26 start ["data/v4_main", "train", 1019] gpu 5
+17:12:58 exit ["data/v4_main", "train", 948] 0 gpu 7
+17:12:58 start ["data/v4_main", "train", 1020] gpu 7
+17:13:29 exit ["data/v4_main", "test", 97] 0 gpu 1
+17:13:29 exit ["data/v4_main", "test", 98] 0 gpu 7
+17:13:29 start ["data/v4_main", "train", 1050] gpu 1
+17:13:30 start ["data/v4_main", "train", 1051] gpu 7
+17:14:01 exit ["data/v4_main", "test", 10] 0 gpu 6
+17:14:01 start ["data/v4_main", "train", 1076] gpu 6
+17:14:47 exit ["data/v4_main", "test", 132] 0 gpu 6
+17:14:47 start ["data/v4_main", "train", 1107] gpu 6
+17:15:03 exit ["data/v4_main", "test", 66] 0 gpu 2
+17:15:03 start ["data/v4_main", "train", 1108] gpu 2
+17:15:19 exit ["data/v4_main", "test", 68] 0 gpu 0
+17:15:19 exit ["data/v4_main", "test", 134] 0 gpu 7
+17:15:19 start ["data/v4_main", "train", 1109] gpu 0
+17:15:20 start ["data/v4_main", "train", 1110] gpu 7
+17:15:36 exit ["data/v4_main", "test", 67] 0 gpu 5
+17:15:36 exit ["data/v4_main", "test", 133] 0 gpu 2
+17:15:36 start ["data/v4_main", "train", 1111] gpu 2
+17:15:37 start ["data/v4_main", "train", 1112] gpu 5
+17:16:23 exit ["data/v4_main", "test", 100] 0 gpu 0
+17:16:23 start ["data/v4_main", "train", 1140] gpu 0
+17:17:24 exit ["data/v4_main", "test", 102] 0 gpu 5
+17:17:24 start ["data/v4_main", "train", 1141] gpu 5
+17:17:40 exit ["data/v4_main", "test", 222] 0 gpu 0
+17:17:40 start ["data/v4_main", "train", 1142] gpu 0
+17:17:56 exit ["data/v4_main", "test", 99] 0 gpu 1
+17:17:56 exit ["data/v4_main", "test", 103] 0 gpu 2
+17:17:56 start ["data/v4_main", "train", 1143] gpu 1
+17:17:57 start ["data/v4_main", "train", 1144] gpu 2
+17:18:13 exit ["data/v4_main", "test", 223] 0 gpu 3
+17:18:13 start ["data/v4_main", "train", 1200] gpu 3
+17:18:29 exit ["data/v4_main", "test", 101] 0 gpu 1
+17:18:29 exit ["data/v4_main", "test", 224] 0 gpu 3
+17:18:29 exit ["data/v4_main", "test", 258] 0 gpu 0
+17:18:29 start ["data/v4_main", "train", 1201] gpu 0
+17:18:30 start ["data/v4_main", "train", 1202] gpu 1
+17:18:31 start ["data/v4_main", "train", 1231] gpu 3
+17:19:02 exit ["data/v4_main", "test", 192] 0 gpu 5
+17:19:02 start ["data/v4_main", "train", 1232] gpu 5
+17:19:18 exit ["data/v4_main", "train", 1014] 0 gpu 3
+17:19:18 start ["data/v4_main", "train", 1233] gpu 3
+17:19:34 exit ["data/v4_main", "test", 193] 0 gpu 6
+17:19:34 exit ["data/v4_main", "test", 194] 0 gpu 7
+17:19:34 start ["data/v4_main", "train", 1234] gpu 6
+17:19:35 start ["data/v4_main", "train", 1235] gpu 7
+17:19:51 exit ["data/v4_main", "test", 190] 0 gpu 6
+17:19:51 start ["data/v4_main", "train", 1236] gpu 6
+17:20:07 exit ["data/v4_main", "test", 191] 0 gpu 1
+17:20:07 start ["data/v4_main", "train", 1237] gpu 1
+17:21:23 exit ["data/v4_main", "test", 284] 0 gpu 6
+17:21:23 start ["data/v4_main", "train", 1266] gpu 6
+17:21:39 exit ["data/v4_main", "test", 226] 0 gpu 3
+17:21:39 exit ["data/v4_main", "test", 283] 0 gpu 3
+17:21:39 start ["data/v4_main", "train", 1267] gpu 3
+17:21:40 start ["data/v4_main", "train", 1268] gpu 3
+17:21:56 exit ["data/v4_main", "test", 225] 0 gpu 0
+17:21:56 start ["data/v4_main", "train", 1324] gpu 0
+17:22:27 exit ["data/v4_main", "test", 227] 0 gpu 7
+17:22:27 start ["data/v4_main", "train", 1325] gpu 7
+17:23:28 exit ["data/v4_main", "train", 1016] 0 gpu 2
+17:23:29 start ["data/v4_main", "train", 1326] gpu 2
+17:24:00 exit ["data/v4_main", "train", 1015] 0 gpu 1
+17:24:00 start ["data/v4_main", "train", 1327] gpu 1
+17:28:46 exit ["data/v4_main", "train", 1017] 0 gpu 5
+17:28:46 exit ["data/v4_main", "train", 1050] 0 gpu 1
+17:28:46 start ["data/v4_main", "train", 1328] gpu 1
+17:28:47 start ["data/v4_main", "train", 1356] gpu 5
+17:29:03 exit ["data/v4_main", "train", 1018] 0 gpu 2
+17:29:03 exit ["data/v4_main", "train", 1051] 0 gpu 7
+17:29:03 start ["data/v4_main", "train", 1357] gpu 2
+17:29:04 start ["data/v4_main", "train", 1358] gpu 7
+17:29:50 exit ["data/v4_main", "train", 1019] 0 gpu 5
+17:29:50 start ["data/v4_main", "train", 1359] gpu 5
+17:31:52 exit ["data/v4_main", "train", 1140] 0 gpu 0
+17:31:52 start ["data/v4_main", "train", 1360] gpu 0
+17:32:08 exit ["data/v4_main", "train", 1020] 0 gpu 7
+17:32:08 start ["data/v4_main", "train", 1361] gpu 7
+17:32:24 exit ["data/v4_main", "train", 1076] 0 gpu 6
+17:32:24 start ["data/v4_main", "train", 1392] gpu 6
+17:32:40 exit ["data/v4_main", "train", 1141] 0 gpu 5
+17:32:40 exit ["data/v4_main", "train", 1142] 0 gpu 0
+17:32:40 start ["data/v4_main", "train", 1417] gpu 0
+17:32:41 start ["data/v4_main", "train", 1418] gpu 5
+17:33:12 exit ["data/v4_main", "train", 1231] 0 gpu 3
+17:33:12 start ["data/v4_main", "train", 1448] gpu 3
+17:33:43 exit ["data/v4_main", "train", 1107] 0 gpu 6
+17:33:43 exit ["data/v4_main", "train", 1232] 0 gpu 5
+17:33:43 start ["data/v4_main", "train", 1449] gpu 5
+17:33:44 start ["data/v4_main", "train", 1450] gpu 6
+17:34:00 exit ["data/v4_main", "train", 1109] 0 gpu 0
+17:34:00 exit ["data/v4_main", "train", 1112] 0 gpu 5
+17:34:00 start ["data/v4_main", "train", 1451] gpu 0
+17:34:01 start ["data/v4_main", "train", 1452] gpu 5
+17:35:02 exit ["data/v4_main", "train", 1108] 0 gpu 2
+17:35:02 exit ["data/v4_main", "train", 1110] 0 gpu 7
+17:35:02 exit ["data/v4_main", "train", 1111] 0 gpu 2
+17:35:02 exit ["data/v4_main", "train", 1200] 0 gpu 3
+17:35:02 exit ["data/v4_main", "train", 1201] 0 gpu 0
+17:35:02 start ["data/v4_main", "train", 1453] gpu 2
+17:35:03 start ["data/v4_main", "train", 1454] gpu 0
+17:35:04 start ["data/v4_main", "train", 1482] gpu 2
+17:35:05 start ["data/v4_main", "train", 1483] gpu 3
+17:35:06 start ["data/v4_main", "train", 1484] gpu 7
+17:35:52 exit ["data/v4_main", "train", 1144] 0 gpu 2
+17:35:52 exit ["data/v4_main", "train", 1266] 0 gpu 6
+17:35:53 start ["data/v4_main", "train", 1485] gpu 2
+17:35:54 start ["data/v4_main", "train", 1541] gpu 6
+17:36:25 exit ["data/v4_main", "train", 1202] 0 gpu 1
+17:36:25 exit ["data/v4_main", "train", 1236] 0 gpu 6
+17:36:25 exit ["data/v4_main", "train", 1267] 0 gpu 3
+17:36:25 start ["data/v4_main", "train", 1542] gpu 1
+17:36:26 start ["data/v4_main", "train", 1543] gpu 3
+17:36:27 start ["data/v4_main", "train", 1544] gpu 6
+17:36:43 exit ["data/v4_main", "train", 1143] 0 gpu 1
+17:36:43 exit ["data/v4_main", "train", 1233] 0 gpu 3
+17:36:43 exit ["data/v4_main", "train", 1268] 0 gpu 3
+17:36:43 start ["data/v4_main", "train", 1572] gpu 3
+17:36:44 start ["data/v4_main", "train", 1573] gpu 1
+17:36:45 start ["data/v4_main", "train", 1574] gpu 3
+17:37:01 exit ["data/v4_main", "train", 1234] 0 gpu 6
+17:37:01 start ["data/v4_main", "train", 1575] gpu 6
+17:37:47 exit ["data/v4_main", "train", 1237] 0 gpu 1
+17:37:47 start ["data/v4_main", "train", 1576] gpu 1
+17:40:09 exit ["data/v4_main", "train", 1235] 0 gpu 7
+17:40:09 start ["data/v4_main", "train", 1577] gpu 7
+17:41:25 exit ["data/v4_main", "train", 1324] 0 gpu 0
+17:41:25 exit ["data/v4_main", "train", 1326] 0 gpu 2
+17:41:25 start ["data/v4_main", "train", 1578] gpu 0
+17:41:26 start ["data/v4_main", "train", 1608] gpu 2
+17:41:42 exit ["data/v4_main", "train", 1325] 0 gpu 7
+17:41:42 exit ["data/v4_main", "train", 1327] 0 gpu 1
+17:41:42 start ["data/v4_main", "train", 1609] gpu 1
+17:41:43 start ["data/v4_main", "train", 1634] gpu 7
+17:42:45 exit ["data/v4_main", "train", 1357] 0 gpu 2
+17:42:45 start ["data/v4_main", "train", 1665] gpu 2
+17:43:16 exit ["data/v4_main", "train", 1356] 0 gpu 5
+17:43:16 start ["data/v4_main", "train", 1666] gpu 5
+17:43:47 exit ["data/v4_main", "train", 1358] 0 gpu 7
+17:43:47 start ["data/v4_main", "train", 1667] gpu 7
+17:46:03 exit ["data/v4_main", "train", 1328] 0 gpu 1
+17:46:03 start ["data/v4_main", "train", 1668] gpu 1
+17:46:49 exit ["data/v4_main", "train", 1392] 0 gpu 6
+17:46:49 start ["data/v4_main", "train", 1669] gpu 6
+17:47:20 exit ["data/v4_main", "train", 1448] 0 gpu 3
+17:47:20 start ["data/v4_main", "train", 1670] gpu 3
+17:48:37 exit ["data/v4_main", "train", 1359] 0 gpu 5
+17:48:37 start ["data/v4_main", "train", 1698] gpu 5
+17:49:08 exit ["data/v4_main", "train", 1417] 0 gpu 0
+17:49:08 exit ["data/v4_main", "train", 1483] 0 gpu 3
+17:49:08 start ["data/v4_main", "train", 1699] gpu 0
+17:49:09 start ["data/v4_main", "train", 1700] gpu 3
+17:49:25 exit ["data/v4_main", "train", 1360] 0 gpu 0
+17:49:25 start ["data/v4_main", "train", 1701] gpu 0
+17:49:56 exit ["data/v4_main", "train", 1482] 0 gpu 2
+17:49:56 start ["data/v4_main", "train", 1702] gpu 2
+17:51:12 exit ["data/v4_main", "train", 1418] 0 gpu 5
+17:51:12 exit ["data/v4_main", "train", 1484] 0 gpu 7
+17:51:12 start ["data/v4_main", "train", 1758] gpu 5
+17:51:13 start ["data/v4_main", "train", 1759] gpu 7
+17:51:29 exit ["data/v4_main", "train", 1361] 0 gpu 7
+17:51:29 exit ["data/v4_main", "train", 1451] 0 gpu 0
+17:51:29 exit ["data/v4_main", "train", 1454] 0 gpu 0
+17:51:29 start ["data/v4_main", "train", 1760] gpu 0
+17:51:31 start ["data/v4_main", "train", 1789] gpu 0
+17:51:32 start ["data/v4_main", "train", 1790] gpu 7
+17:51:48 exit ["data/v4_main", "train", 1573] 0 gpu 1
+17:51:48 start ["data/v4_main", "train", 1791] gpu 1
+17:52:34 exit ["data/v4_main", "train", 1450] 0 gpu 6
+17:52:34 exit ["data/v4_main", "train", 1453] 0 gpu 2
+17:52:34 exit ["data/v4_main", "train", 1572] 0 gpu 3
+17:52:34 exit ["data/v4_main", "train", 1574] 0 gpu 3
+17:52:34 start ["data/v4_main", "train", 1792] gpu 3
+17:52:35 start ["data/v4_main", "train", 1793] gpu 2
+17:52:36 start ["data/v4_main", "train", 1794] gpu 3
+17:52:37 start ["data/v4_main", "train", 1795] gpu 6
+17:53:08 exit ["data/v4_main", "train", 1449] 0 gpu 5
+17:53:08 exit ["data/v4_main", "train", 1452] 0 gpu 5
+17:53:08 start ["data/v4_main", "train", 1824] gpu 5
+17:53:09 start ["data/v4_main", "train", 1825] gpu 5
+17:53:25 exit ["data/v4_main", "train", 1543] 0 gpu 3
+17:53:25 start ["data/v4_main", "train", 1826] gpu 3
+17:53:41 exit ["data/v4_main", "train", 1485] 0 gpu 2
+17:53:41 exit ["data/v4_main", "train", 1542] 0 gpu 1
+17:53:41 start ["data/v4_main", "train", 1882] gpu 1
+17:53:42 start ["data/v4_main", "train", 1883] gpu 2
+17:54:14 exit ["data/v4_main", "train", 1544] 0 gpu 6
+17:54:14 start ["data/v4_main", "train", 1884] gpu 6
+17:54:30 exit ["data/v4_main", "train", 1541] 0 gpu 6
+17:54:30 start ["data/v4_main", "train", 1885] gpu 6
+17:55:16 exit ["data/v4_main", "train", 1575] 0 gpu 6
+17:55:16 start ["data/v4_main", "train", 1886] gpu 6
+17:55:32 exit ["data/v4_main", "train", 1608] 0 gpu 2
+17:55:32 start ["data/v4_main", "train", 1914] gpu 2
+17:56:03 exit ["data/v4_main", "train", 1576] 0 gpu 1
+17:56:03 start ["data/v4_main", "train", 1915] gpu 1
+17:56:34 exit ["data/v4_main", "train", 1609] 0 gpu 1
+17:56:34 start ["data/v4_main", "train", 1916] gpu 1
+17:57:20 exit ["data/v4_main", "train", 1577] 0 gpu 7
+17:57:20 exit ["data/v4_main", "train", 1578] 0 gpu 0
+17:57:20 start ["data/v4_main", "train", 1917] gpu 0
+17:57:21 start ["data/v4_main", "train", 1918] gpu 7
+17:58:07 exit ["data/v4_main", "train", 1634] 0 gpu 7
+17:58:07 start ["data/v4_main", "train", 1919] gpu 7
+18:00:24 exit ["data/v4_main", "train", 1665] 0 gpu 2
+18:00:24 start ["data/v4_main", "train", 1950] gpu 2
+18:00:55 exit ["data/v4_main", "train", 1666] 0 gpu 5
+18:00:55 exit ["data/v4_main", "train", 1667] 0 gpu 7
+18:00:55 start ["data/v4_main", "train", 1975] gpu 5
+18:00:56 start ["data/v4_main", "train", 1976] gpu 7
+18:02:27 exit ["data/v4_main", "train", 1698] 0 gpu 5
+18:02:42 exit ["data/v4_main", "train", 1700] 0 gpu 3
+18:02:57 exit ["data/v4_main", "train", 1670] 0 gpu 3

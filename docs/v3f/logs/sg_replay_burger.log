@@ -1,0 +1,26 @@
+2026-11-14T01:21:17+00:00 START scripts/v3f/replay_env.sh scripts/v3f/springgaus_replay.py data/external_datasets/springgaus_gdrive/real_capture.zip data/prepared/v3f_springgaus_real_vjl docs/v3f/SPRINGGAUS_REAL_PRED.json data/v3f_springgaus_replay/burger --objs burger
+Warp 1.11.1 initialized:
+   CUDA Toolkit 12.9, Driver 12.6
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA A800-SXM4-80GB" (79 GiB, sm_80, mempool enabled)
+   Kernel cache:
+     /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.cache/warp
+Warp DeprecationWarning: The namespace `warp.torch` will soon be removed from the public API. It can still be accessed from `warp._src.torch` but might be changed or removed without notice.
+Warp DeprecationWarning: The symbol `warp.types.float32` will soon be removed from the public API. Use `warp.float32` instead.
+Module warp_utils 5598e36 load on device 'cuda:0' took 1.06 ms  (cached)
+Particles initialized from torch data.
+Total particles:  14238
+Module mpm_utils 8c60f93 load on device 'cuda:0' took 2.22 ms  (cached)
+Module mpm_solver_warp 3dca6b4 load on device 'cuda:0' took 0.63 ms  (cached)
+burger predicted 4.5 {'centroid_err_cm_mean': 3.012, 'post_hit_up_rmse_cm': 5.82, 'mask_iou_mean': 0.525} 0.7223635310322161
+Particles initialized from torch data.
+Total particles:  14238
+burger grid_3.0 3.0 {'centroid_err_cm_mean': 3.636, 'post_hit_up_rmse_cm': 6.532, 'mask_iou_mean': 0.434} 0.11105810035323631
+Particles initialized from torch data.
+Total particles:  14238
+burger grid_3.5 3.5 {'centroid_err_cm_mean': 3.093, 'post_hit_up_rmse_cm': 5.418, 'mask_iou_mean': 0.449} 0.2010862550075737
+Particles initialized from torch data.
+Total particles:  14238
+burger grid_4.0 4.0 {'centroid_err_cm_mean': 0.794, 'post_hit_up_rmse_cm': 1.15, 'mask_iou_mean': 0.732} 0.46297519920276237
+2026-11-14T01:24:05+00:00 END rc=143

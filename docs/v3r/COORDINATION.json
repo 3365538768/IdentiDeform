@@ -1,0 +1,12 @@
+{
+ "owner": "v3r/v3s agent",
+ "v3r_reads": {
+  "samples": "docs/v3q/PROTOCOL.json samples.val (V2 C1 rule; recomputed identically by scripts/v3r/select.py -> docs/v3r/SAMPLES.json)",
+  "prior_twin": "docs/v3q/PRIOR_ENSEMBLE_val.json samples[str(index)] {law_posterior_votes, x_log10, nu} (= V3q prior_top2 budget 0)",
+  "refined_twins": "data/v3q_refine/val/<index:06d>/{prior_top2,lawmean_best3}/state.json, budget 12 (budgets['12'] or best of the first 12 evals, nested)",
+  "law_means": "docs/v3q/LAW_MEANS.json"
+ },
+ "v3s_reads": "docs/v3p/HANDOFF.json (run configs + best checkpoints + stats) -> docs/v3s/PRIOR_SOURCES.json",
+ "writes": ["data/v3r/runs", "data/v3s", "docs/v3r", "docs/v3s", "docs/v3r/queue.json (r_queue phase v3r)", "docs/v3s/queue.json (r_queue phase v3s)", "a800-4 nohup pool docs/v3r/jobs_a4.json (scripts/v3e/pool.py --tag v3r)"],
+ "fallback": "if V3q prior_top2 / lawmean_best3 val searches have not reached 12 evaluations when the rest of v3r is done, v3r runs scripts/v3q/c1_refine.py itself for the missing gripper samples with --out data/v3q_refine (same layout; the script's per-arm run.lock prevents double runs)"
+}

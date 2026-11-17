@@ -1,0 +1,179 @@
+2026-11-16T06:35:22+00:00 di-20261103141208-krk4l START run --objs pig potato
+Warp 1.11.1 initialized:
+   CUDA Toolkit 12.9, Driver 12.6
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA A800-SXM4-80GB" (79 GiB, sm_80, mempool enabled)
+   Kernel cache:
+     /root/.cache/warp/1.11.1
+Warp DeprecationWarning: The namespace `warp.torch` will soon be removed from the public API. It can still be accessed from `warp._src.torch` but might be changed or removed without notice.
+Warp DeprecationWarning: The symbol `warp.types.float32` will soon be removed from the public API. Use `warp.float32` instead.
+Module warp_utils 5598e36 load on device 'cuda:0' took 0.63 ms  (cached)
+Particles initialized from torch data.
+Total particles:  13806
+Module mpm_utils 8c60f93 load on device 'cuda:0' took 1.48 ms  (cached)
+Module mpm_solver_warp 3dca6b4 load on device 'cuda:0' took 0.99 ms  (cached)
+  sim pig lg4.2520_nu0.278 7.0s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg3.4820_nu0.278 6.7s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg3.0000_nu0.278 6.9s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg3.2500_nu0.278 7.3s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg3.5000_nu0.278 7.4s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg3.7500_nu0.278 7.2s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg4.0000_nu0.278 7.3s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg4.2500_nu0.278 7.3s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg4.5000_nu0.278 6.8s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg4.7500_nu0.278 7.2s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg5.0000_nu0.278 7.4s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg5.2500_nu0.278 8.9s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg5.5000_nu0.278 11.9s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg5.7500_nu0.278 15.3s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg6.0000_nu0.278 21.2s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg4.7520_nu0.278 7.3s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg3.7520_nu0.278 7.3s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg5.2520_nu0.278 8.9s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg5.7520_nu0.278 15.8s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg5.5020_nu0.278 12.3s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg5.0020_nu0.278 7.4s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg5.3770_nu0.278 9.1s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg5.1270_nu0.278 2.3s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg5.4395_nu0.278 6.6s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg5.3145_nu0.278 6.1s
+pig fold C0733 refined lg 5.3145 sims 11
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg5.1895_nu0.278 4.6s
+pig fold C0787 refined lg 5.252 sims 11
+pig fold C0801 refined lg 5.3145 sims 11
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg4.2830_nu0.288 4.7s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg3.4820_nu0.278 7.3s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg3.0000_nu0.278 8.2s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg3.2500_nu0.278 7.5s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg3.5000_nu0.278 6.9s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg3.7500_nu0.278 7.4s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg4.0000_nu0.278 7.3s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg4.2500_nu0.278 7.3s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg4.5000_nu0.278 7.3s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg4.7500_nu0.278 7.4s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg5.0000_nu0.278 7.5s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg5.2500_nu0.278 8.9s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg5.5000_nu0.278 11.8s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg5.7500_nu0.278 15.1s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg6.0000_nu0.278 21.0s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg4.7830_nu0.288 7.6s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg3.7830_nu0.288 7.3s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg5.2830_nu0.288 9.7s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg5.7830_nu0.288 16.4s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg6.2830_nu0.288 28.1s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg6.0330_nu0.288 21.3s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg5.5330_nu0.288 7.3s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg5.9080_nu0.288 14.8s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg5.6580_nu0.288 9.7s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg5.7205_nu0.288 10.7s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg5.5955_nu0.288 12.9s
+potato fold C0733 refined lg 5.7205 sims 12
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg5.8455_nu0.288 13.8s
+potato fold C0787 refined lg 5.7205 sims 12
+potato fold C0801 refined lg 5.7205 sims 12
+2026-11-16T06:45:11+00:00 END rc=0

@@ -1,0 +1,362 @@
+[
+ {
+  "id": "v3x_prior_top1_000114",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 114 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000114",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 114 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000253",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 253 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000253",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 253 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000155",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 155 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000155",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 155 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000230",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 230 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000230",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 230 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000154",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 154 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000154",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 154 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000259",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 259 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000259",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 259 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000130",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 130 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000130",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 130 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000089",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 89 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000089",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 89 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000222",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 222 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000222",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 222 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000172",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 172 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000172",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 172 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000167",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 167 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000167",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 167 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000135",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 135 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000135",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 135 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000210",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 210 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000210",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 210 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000271",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 271 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000271",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 271 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000021",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 21 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000021",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 21 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000166",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 166 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000166",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 166 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000286",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 286 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000286",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 286 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000180",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 180 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000180",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 180 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000284",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 284 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000284",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 284 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000139",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 139 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000139",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 139 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000272",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 272 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000272",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 272 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000242",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 242 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000242",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 242 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000123",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 123 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000123",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 123 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000137",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 137 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000137",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 137 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000187",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 187 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000187",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 187 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000226",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 226 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000226",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 226 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000276",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 276 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000276",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 276 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000104",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 104 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000104",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 104 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000239",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 239 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000239",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 239 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_prior_top1_000054",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 54 --arm prior_top1 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_best3_000054",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 54 --arm lawmean_best3 --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000114",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 114 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000253",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 253 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000155",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 155 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000230",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 230 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000154",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 154 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000259",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 259 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000130",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 130 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000089",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 89 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000222",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 222 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000172",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 172 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000167",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 167 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000135",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 135 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000210",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 210 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000271",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 271 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000021",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 21 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000166",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 166 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000286",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 286 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000180",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 180 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000284",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 284 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000139",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 139 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000272",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 272 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000242",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 242 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000123",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 123 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000137",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 137 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000187",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 187 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000226",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 226 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000276",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 276 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000104",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 104 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000239",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 239 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ },
+ {
+  "id": "v3x_lawmean_gt_000054",
+  "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3x_refine_test --index 54 --arm lawmean_gt --budget 24 --replay-budgets 24"
+ }
+]

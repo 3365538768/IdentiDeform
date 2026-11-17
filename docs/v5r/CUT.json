@@ -1,0 +1,659 @@
+{
+ "reason": "V5r deadline cut (coordinator priority: 1 = GT + 3 main twins on the V2 grid, 2 = extended depths, 3 = vision 3-seed twin).",
+ "jobs": [
+  {
+   "index": "000005",
+   "method": "gt",
+   "cache": "3dd272f6f45f",
+   "sims_done": 9
+  },
+  {
+   "index": "000005",
+   "method": "prior_vis3",
+   "cache": "df5fc43e3a2f",
+   "sims_done": 2
+  },
+  {
+   "index": "000021",
+   "method": "prior_vis3",
+   "cache": "d61466544a3a",
+   "sims_done": 2
+  },
+  {
+   "index": "000027",
+   "method": "gt",
+   "cache": "b2f08fbe67ac",
+   "sims_done": 9
+  },
+  {
+   "index": "000027",
+   "method": "prior_vis3",
+   "cache": "0cfd3bbc0e02",
+   "sims_done": 2
+  },
+  {
+   "index": "000031",
+   "method": "prior_vis3",
+   "cache": "290c91d16e85",
+   "sims_done": 0
+  },
+  {
+   "index": "000037",
+   "method": "gt",
+   "cache": "026ed9c2bfe9",
+   "sims_done": 8
+  },
+  {
+   "index": "000037",
+   "method": "prior_vis3",
+   "cache": "d7ef586b125c",
+   "sims_done": 4
+  },
+  {
+   "index": "000040",
+   "method": "prior_vis3",
+   "cache": "527b79d25444",
+   "sims_done": 2
+  },
+  {
+   "index": "000053",
+   "method": "prior_vis3",
+   "cache": "44a0216fd710",
+   "sims_done": 4
+  },
+  {
+   "index": "000060",
+   "method": "prior_vis3",
+   "cache": "0681a4a0f9a8",
+   "sims_done": 2
+  },
+  {
+   "index": "000066",
+   "method": "prior_vis3",
+   "cache": "bcdc5e45460f",
+   "sims_done": 2
+  },
+  {
+   "index": "000071",
+   "method": "prior_vis3",
+   "cache": "51918249304a",
+   "sims_done": 2
+  },
+  {
+   "index": "000080",
+   "method": "gt",
+   "cache": "da693f15e55d",
+   "sims_done": 8
+  },
+  {
+   "index": "000080",
+   "method": "prior_vis3",
+   "cache": "7beb2c0322d9",
+   "sims_done": 4
+  },
+  {
+   "index": "000089",
+   "method": "prior_vis3",
+   "cache": "7172b614dae0",
+   "sims_done": 3
+  },
+  {
+   "index": "000093",
+   "method": "prior_vis3",
+   "cache": "52c6d1b30cc2",
+   "sims_done": 2
+  },
+  {
+   "index": "000112",
+   "method": "gt",
+   "cache": "a088c28396db",
+   "sims_done": 8
+  },
+  {
+   "index": "000112",
+   "method": "prior_vis3",
+   "cache": "5369e7260573",
+   "sims_done": 4
+  },
+  {
+   "index": "000113",
+   "method": "prior_vis3",
+   "cache": "9a9699ba2fe3",
+   "sims_done": 2
+  },
+  {
+   "index": "000116",
+   "method": "gt",
+   "cache": "51e594ae6f5c",
+   "sims_done": 9
+  },
+  {
+   "index": "000116",
+   "method": "prior_vis3",
+   "cache": "07a1f2697d9c",
+   "sims_done": 2
+  },
+  {
+   "index": "000119",
+   "method": "prior_vis3",
+   "cache": "cdd54cc41729",
+   "sims_done": 2
+  },
+  {
+   "index": "000121",
+   "method": "gt",
+   "cache": "158b14a91e98",
+   "sims_done": 8
+  },
+  {
+   "index": "000121",
+   "method": "prior_vis3",
+   "cache": "716e0b8d9757",
+   "sims_done": 2
+  },
+  {
+   "index": "000133",
+   "method": "gt",
+   "cache": "a89f14b02b1c",
+   "sims_done": 9
+  },
+  {
+   "index": "000134",
+   "method": "gt",
+   "cache": "a4b596cbb128",
+   "sims_done": 8
+  },
+  {
+   "index": "000134",
+   "method": "prior_vis3",
+   "cache": "c95cdc22b3e4",
+   "sims_done": 4
+  },
+  {
+   "index": "000135",
+   "method": "prior_vis3",
+   "cache": "8b835f4ee2f6",
+   "sims_done": 2
+  },
+  {
+   "index": "000141",
+   "method": "prior_vis3",
+   "cache": "40582d71b2bd",
+   "sims_done": 2
+  },
+  {
+   "index": "000145",
+   "method": "prior_vis3",
+   "cache": "868427e49187",
+   "sims_done": 2
+  },
+  {
+   "index": "000151",
+   "method": "prior_vis3",
+   "cache": "091c893c6355",
+   "sims_done": 2
+  },
+  {
+   "index": "000164",
+   "method": "prior_vis3",
+   "cache": "251961e6ac5f",
+   "sims_done": 2
+  },
+  {
+   "index": "000169",
+   "method": "gt",
+   "cache": "e29fbccb9f00",
+   "sims_done": 8
+  },
+  {
+   "index": "000169",
+   "method": "prior_vis3",
+   "cache": "3720c0b4a5b0",
+   "sims_done": 4
+  },
+  {
+   "index": "000176",
+   "method": "prior_vis3",
+   "cache": "1910884ddbc7",
+   "sims_done": 1
+  },
+  {
+   "index": "000180",
+   "method": "gt",
+   "cache": "df1e79c2e618",
+   "sims_done": 8
+  },
+  {
+   "index": "000180",
+   "method": "prior_vis3",
+   "cache": "c8949853d575",
+   "sims_done": 1
+  },
+  {
+   "index": "000183",
+   "method": "prior_vis3",
+   "cache": "44ec919c4247",
+   "sims_done": 1
+  },
+  {
+   "index": "000184",
+   "method": "gt",
+   "cache": "84046ac0d177",
+   "sims_done": 8
+  },
+  {
+   "index": "000184",
+   "method": "prior_vis3",
+   "cache": "f5210a3c726b",
+   "sims_done": 4
+  },
+  {
+   "index": "000186",
+   "method": "gt",
+   "cache": "b9c5fbe6125d",
+   "sims_done": 8
+  },
+  {
+   "index": "000186",
+   "method": "prior_vis3",
+   "cache": "c18bfcaf860b",
+   "sims_done": 1
+  },
+  {
+   "index": "000195",
+   "method": "gt",
+   "cache": "b9f82d512c6d",
+   "sims_done": 8
+  },
+  {
+   "index": "000195",
+   "method": "prior_vis3",
+   "cache": "efe9f15fc1d0",
+   "sims_done": 4
+  },
+  {
+   "index": "000198",
+   "method": "prior_vis3",
+   "cache": "65096f9323a4",
+   "sims_done": 1
+  },
+  {
+   "index": "000207",
+   "method": "prior_vis3",
+   "cache": "dfef2beda577",
+   "sims_done": 1
+  },
+  {
+   "index": "000210",
+   "method": "gt",
+   "cache": "aa7b704c9ce1",
+   "sims_done": 8
+  },
+  {
+   "index": "000210",
+   "method": "prior_vis3",
+   "cache": "d812431f8689",
+   "sims_done": 1
+  },
+  {
+   "index": "000214",
+   "method": "gt",
+   "cache": "9ece5fd106e7",
+   "sims_done": 9
+  },
+  {
+   "index": "000226",
+   "method": "gt",
+   "cache": "649ed45a3539",
+   "sims_done": 9
+  },
+  {
+   "index": "000228",
+   "method": "gt",
+   "cache": "16fa6220a460",
+   "sims_done": 9
+  },
+  {
+   "index": "000230",
+   "method": "prior_vis3",
+   "cache": "971141fa4484",
+   "sims_done": 2
+  },
+  {
+   "index": "000240",
+   "method": "gt",
+   "cache": "efdbc82343ba",
+   "sims_done": 8
+  },
+  {
+   "index": "000240",
+   "method": "prior_vis3",
+   "cache": "3515bdb8b846",
+   "sims_done": 4
+  },
+  {
+   "index": "000245",
+   "method": "gt",
+   "cache": "e679b50d666c",
+   "sims_done": 8
+  },
+  {
+   "index": "000245",
+   "method": "prior_vis3",
+   "cache": "5a80d4525660",
+   "sims_done": 4
+  },
+  {
+   "index": "000250",
+   "method": "gt",
+   "cache": "26ac47f8a771",
+   "sims_done": 8
+  },
+  {
+   "index": "000253",
+   "method": "gt",
+   "cache": "ce4ffd1f276b",
+   "sims_done": 9
+  },
+  {
+   "index": "000254",
+   "method": "gt",
+   "cache": "bc49e83b6ca6",
+   "sims_done": 9
+  },
+  {
+   "index": "000258",
+   "method": "gt",
+   "cache": "f262ec81d86f",
+   "sims_done": 9
+  },
+  {
+   "index": "000261",
+   "method": "gt",
+   "cache": "e2ee41a7f742",
+   "sims_done": 9
+  },
+  {
+   "index": "000265",
+   "method": "gt",
+   "cache": "08fdfc48d55d",
+   "sims_done": 7
+  },
+  {
+   "index": "000271",
+   "method": "gt",
+   "cache": "4f1fcba96f3b",
+   "sims_done": 8
+  },
+  {
+   "index": "000271",
+   "method": "prior_vis3",
+   "cache": "fae3363d10fe",
+   "sims_done": 4
+  },
+  {
+   "index": "000275",
+   "method": "gt",
+   "cache": "32aab6777b74",
+   "sims_done": 8
+  },
+  {
+   "index": "000275",
+   "method": "prior_vis3",
+   "cache": "b999baeace87",
+   "sims_done": 4
+  },
+  {
+   "index": "000278",
+   "method": "gt",
+   "cache": "2053a0ba6163",
+   "sims_done": 8
+  },
+  {
+   "index": "000278",
+   "method": "prior_vis3",
+   "cache": "42fd12016fdc",
+   "sims_done": 4
+  },
+  {
+   "index": "000005",
+   "method": "lawmean_pred",
+   "cache": "9cc1131adec4",
+   "sims_done": 2
+  },
+  {
+   "index": "000029",
+   "method": "lawmean_pred",
+   "cache": "6d314c56640f",
+   "sims_done": 1
+  },
+  {
+   "index": "000029",
+   "method": "prior_vis3",
+   "cache": "db3a9d1ec068",
+   "sims_done": 1
+  },
+  {
+   "index": "000040",
+   "method": "lawmean_pred",
+   "cache": "6f2db674f89e",
+   "sims_done": 2
+  },
+  {
+   "index": "000060",
+   "method": "lawmean_pred",
+   "cache": "9cc1131adec4",
+   "sims_done": 2
+  },
+  {
+   "index": "000064",
+   "method": "lawmean_pred",
+   "cache": "9cc1131adec4",
+   "sims_done": 1
+  },
+  {
+   "index": "000064",
+   "method": "prior_vis3",
+   "cache": "8ad422ce5786",
+   "sims_done": 1
+  },
+  {
+   "index": "000068",
+   "method": "lawmean_pred",
+   "cache": "6d314c56640f",
+   "sims_done": 1
+  },
+  {
+   "index": "000068",
+   "method": "prior_vis3",
+   "cache": "71aacbac0e7e",
+   "sims_done": 1
+  },
+  {
+   "index": "000088",
+   "method": "lawmean_pred",
+   "cache": "6f2db674f89e",
+   "sims_done": 1
+  },
+  {
+   "index": "000088",
+   "method": "prior_vis3",
+   "cache": "0d474b11a108",
+   "sims_done": 1
+  },
+  {
+   "index": "000093",
+   "method": "lawmean_pred",
+   "cache": "9cc1131adec4",
+   "sims_done": 2
+  },
+  {
+   "index": "000113",
+   "method": "lawmean_pred",
+   "cache": "6d314c56640f",
+   "sims_done": 2
+  },
+  {
+   "index": "000121",
+   "method": "lawmean_pred",
+   "cache": "9cc1131adec4",
+   "sims_done": 2
+  },
+  {
+   "index": "000133",
+   "method": "lawmean_pred",
+   "cache": "9cc1131adec4",
+   "sims_done": 1
+  },
+  {
+   "index": "000133",
+   "method": "prior_vis3",
+   "cache": "fb8eea0d77e8",
+   "sims_done": 1
+  },
+  {
+   "index": "000135",
+   "method": "lawmean_pred",
+   "cache": "6d314c56640f",
+   "sims_done": 2
+  },
+  {
+   "index": "000141",
+   "method": "lawmean_pred",
+   "cache": "9cc1131adec4",
+   "sims_done": 2
+  },
+  {
+   "index": "000151",
+   "method": "lawmean_pred",
+   "cache": "6f2db674f89e",
+   "sims_done": 2
+  },
+  {
+   "index": "000164",
+   "method": "lawmean_pred",
+   "cache": "6d314c56640f",
+   "sims_done": 2
+  },
+  {
+   "index": "000182",
+   "method": "lawmean_pred",
+   "cache": "9cc1131adec4",
+   "sims_done": 1
+  },
+  {
+   "index": "000182",
+   "method": "prior_vis3",
+   "cache": "058287e920d9",
+   "sims_done": 1
+  },
+  {
+   "index": "000183",
+   "method": "lawmean_pred",
+   "cache": "9cc1131adec4",
+   "sims_done": 2
+  },
+  {
+   "index": "000186",
+   "method": "lawmean_pred",
+   "cache": "9cc1131adec4",
+   "sims_done": 2
+  },
+  {
+   "index": "000198",
+   "method": "lawmean_pred",
+   "cache": "9cc1131adec4",
+   "sims_done": 2
+  },
+  {
+   "index": "000205",
+   "method": "prior_vis3",
+   "cache": "78a7eba6921e",
+   "sims_done": 2
+  },
+  {
+   "index": "000210",
+   "method": "lawmean_pred",
+   "cache": "9cc1131adec4",
+   "sims_done": 2
+  },
+  {
+   "index": "000214",
+   "method": "lawmean_pred",
+   "cache": "9cc1131adec4",
+   "sims_done": 1
+  },
+  {
+   "index": "000214",
+   "method": "prior_vis3",
+   "cache": "259978b956fa",
+   "sims_done": 1
+  },
+  {
+   "index": "000226",
+   "method": "lawmean_pred",
+   "cache": "6f2db674f89e",
+   "sims_done": 2
+  },
+  {
+   "index": "000244",
+   "method": "lawmean_pred",
+   "cache": "6f2db674f89e",
+   "sims_done": 2
+  },
+  {
+   "index": "000244",
+   "method": "prior_vis3",
+   "cache": "9c568476bb6e",
+   "sims_done": 1
+  },
+  {
+   "index": "000250",
+   "method": "lawmean_pred",
+   "cache": "6f2db674f89e",
+   "sims_done": 1
+  },
+  {
+   "index": "000250",
+   "method": "prior_vis3",
+   "cache": "dca798987f67",
+   "sims_done": 0
+  },
+  {
+   "index": "000252",
+   "method": "lawmean_pred",
+   "cache": "9cc1131adec4",
+   "sims_done": 2
+  },
+  {
+   "index": "000253",
+   "method": "lawmean_pred",
+   "cache": "6f2db674f89e",
+   "sims_done": 2
+  },
+  {
+   "index": "000254",
+   "method": "lawmean_pred",
+   "cache": "6d314c56640f",
+   "sims_done": 1
+  },
+  {
+   "index": "000254",
+   "method": "prior_vis3",
+   "cache": "6c89967fede3",
+   "sims_done": 0
+  },
+  {
+   "index": "000258",
+   "method": "lawmean_pred",
+   "cache": "9cc1131adec4",
+   "sims_done": 2
+  },
+  {
+   "index": "000265",
+   "method": "lawmean_pred",
+   "cache": "9cc1131adec4",
+   "sims_done": 2
+  }
+ ]
+}

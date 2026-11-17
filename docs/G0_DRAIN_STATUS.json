@@ -1,0 +1,33 @@
+{
+  "started_unix": 1794040215.0439577,
+  "status": "drained",
+  "jobs": [
+    {
+      "name": "C_aux_no_feedback",
+      "pid": 1740810,
+      "devices": "0,1,2,3",
+      "config": "configs/full_giant16_C_aux_no_feedback_seed17.json",
+      "log": "runs/phase_logs/full_giant16_C_aux_no_feedback_seed17.log",
+      "launched_unix": 1794037506.4338844,
+      "checkpoint": "runs/full_giant16_C_aux_no_feedback_seed17/last.pt",
+      "original_mtime_ns": 1794040105016105752,
+      "status": "drained",
+      "stopped_unix": 1794041329.6723695,
+      "checkpoint_bytes": 4677638867
+    },
+    {
+      "name": "D_field_bridge",
+      "pid": 1740811,
+      "devices": "4,5,6,7",
+      "config": "configs/full_giant16_D_field_bridge_seed17.json",
+      "log": "runs/phase_logs/full_giant16_D_field_bridge_seed17.log",
+      "launched_unix": 1794037506.4414759,
+      "checkpoint": "runs/full_giant16_D_field_bridge_seed17/last.pt",
+      "original_mtime_ns": 1794040109427482346,
+      "status": "drained",
+      "stopped_unix": 1794041333.8300848,
+      "checkpoint_bytes": 4677638867
+    }
+  ],
+  "updated_unix": 1794041334.3404937
+}

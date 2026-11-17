@@ -1,0 +1,47 @@
+{
+ "stage": "v3v",
+ "title": "Real-video replay evaluation of prior-initialised MPM twins on Spring-Gaus real captures",
+ "written_utc": "2026-11-16 06:30 UTC (before any v3v metric was computed)",
+ "data": {
+  "source": "data/external_datasets/springgaus_gdrive/real_capture.zip (untrusted; only PNG/JPG/JSON decoded, nothing executed, python -I)",
+  "objects": ["bun", "burger", "dog", "pig", "potato"],
+  "n_objects": 5,
+  "cameras": ["C0733", "C0787", "C0801"],
+  "fps": 119.88,
+  "frames": "the 20 released synchronized frames per camera (0..19), released masks; hit frame 6-7",
+  "calibration": "released cameras_calib.json (shared K/dist, per-camera rvec/tvec, checkerboard world frame, metres, up = -z)"
+ },
+ "twin_construction": {
+  "shared_by_all_arms": "frame-0 3-view visual hull (2.5 mm voxels -> MPM particles), ground height = lowest 3-view hull point at the hit frame, pre-impact velocity = parabola fit (|g| = 9.8) of triangulated centroids of frames 0..hit-1. Same as scripts/v3f/springgaus_replay.py. This initial state uses all 3 cameras at frames <= hit (stated caveat for the held-out-camera split).",
+  "engine": "DeformFieldBench mpm_solver_warp, jelly (fixed corotated), rho = 1000 (only E/rho matters), slip ground friction 0.3, rpic_damping 0, grid_v_damping 0.99999, CFL dt; simulated for the 20 released frames only",
+  "free_parameter": "log10(E/rho x 1000); nu fixed (prior arms: predicted nu; constant arms: jelly train-class mean nu 0.278). Pre-impact velocity scale NOT refined (velocity already fitted from frames 0..hit-1).",
+  "appearance": "each particle coloured at t0 from the training cameras of the fold only: z-buffer visibility test per camera, colour sampled from the visible camera closest to the particle; particles visible in no training camera take the colour of the nearest coloured particle. Colours are carried with the particles (Lagrangian)."
+ },
+ "folds": "3 folds; in fold h camera h is held out; the other 2 cameras are the training cameras. Fit set = training cameras x frames 0..9 (first half). Every arm is evaluated in every fold and metrics are averaged over the 3 folds per object.",
+ "arms": {
+  "prior": "K0 9-run ensemble prediction (docs/v3f/SPRINGGAUS_REAL_PRED.json), 0 refinement sims",
+  "prior_refine": "compass search on log10 E/rho starting at the prior: step 0.5 decade, try +/-step, move on improvement, halve on failure, stop at step < 0.0625 or 12 simulations (prior evaluation counts as 1). Objective = 1 - mean mask IoU on the fit set only.",
+  "class_mean": "uninformed: mean log10 E/rho x 1000 of the jelly class in the V2 train split (3.482), nu 0.278",
+  "global_constant_loo": "grid log10 E/rho x 1000 in {3.00, 3.25, ..., 6.00} (13 sims/object, nu 0.278); for object o pick the grid value maximising the mean fit-set IoU of the OTHER 4 objects (same fold), evaluate on o",
+  "oracle": "upper bound of our engine: the simulated E (grid or compass points) with the best IoU on ALL frames x ALL cameras of that object (peeks at the evaluation data)",
+  "nonphysical_references": {
+   "rigid_track_2cam": "held-out camera split only: frame-0 hull moved rigidly so that its centroid follows the centroid trajectory triangulated from the 2 training cameras at every frame (uses observations at the evaluated frames; no physics)",
+   "persist_last": "future split only: last fit frame (frame 9) frozen: the observed frame-9 masks/images are used as the prediction for frames 10..19 in every camera; for 3D metrics the frame-9 3-view hull is frozen"
+  }
+ },
+ "evaluation_splits": {
+  "heldout_camera": "camera h, frames 1..19 (frame 0 is the hull input), averaged over the 3 folds",
+  "future_frames": "frames 10..19, all 3 cameras, averaged over the 3 folds (twin of fold h)"
+ },
+ "metrics": {
+  "mask_iou": "simulated particles projected with the released calibration (incl. distortion), splatted as discs with radius = round(0.75 x projected voxel spacing) (>= 1 px), then morphological close with an elliptical kernel of 2 x spacing + 1 px; IoU against the released mask",
+  "psnr_ssim": "rendered image = z-buffered disc splats of the particle colours (holes inside the closed silhouette inpainted), black outside the simulated silhouette; observed image multiplied by its mask (black background); PSNR over the pixels of the union mask (8-bit, MAX=255) and SSIM (Gaussian 11x11, sigma 1.5, on RGB, averaged over channels) averaged over the union mask, computed in the union bbox crop",
+  "lpips": "not computed (lpips package/weights not installed on the server; not cheap within the time box)",
+  "centroid_err_cm": "sim silhouettes -> per-camera mask centroids -> same DLT triangulation as the observations (apples-to-apples); error to the observed triangulated mask centroid, 3D Euclidean, cm",
+  "lowest_point_err_cm": "|min up of simulated particles - min up of the observed per-frame 3-view visual hull|, cm",
+  "chamfer_cm": "symmetric mean nearest-neighbour distance (cm) between simulated particles and the observed per-frame 3-view visual hull (a 3D PROXY, not true 3D; it uses all 3 cameras, so it is reported for the future split only)",
+  "upper_bound_reference": "IoU of the frame-0 hull projection vs. frame-0 masks (geometry/splatting ceiling)"
+ },
+ "statistics": "per-object values (fold-averaged), mean over the 5 objects, 95% percentile bootstrap CI over objects (10000 resamples, n = 5) for each arm and for paired differences vs. prior, plus leave-one-object-out range of the mean. n = 5 is stated everywhere; no significance claims beyond the CI.",
+ "reporting_rules": "all arms reported, including ones where the twin is worse than a trivial/non-physical reference; protocol not changed after seeing metrics (any deviation logged in RESULTS.json 'deviations')"
+}

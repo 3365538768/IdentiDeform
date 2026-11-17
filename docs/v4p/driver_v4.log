@@ -1,0 +1,65 @@
+16:17:22 train=502 val=216
+16:20:01 train=503 val=239
+16:22:40 train=505 val=244
+16:25:07 train=508 val=248
+16:27:38 train=529 val=273
+16:30:33 train=555 val=282
+16:33:14 train=569 val=282
+16:35:49 train=585 val=282
+16:38:29 train=615 val=282
+16:41:18 train=693 val=282
+16:44:19 train=715 val=283
+16:46:54 train=734 val=283
+16:49:33 train=760 val=283
+16:52:11 train=822 val=283
+16:55:06 train=858 val=283
+16:57:48 train=880 val=283
+17:00:25 train=907 val=283
+17:03:02 train=946 val=283
+17:05:45 train=969 val=283
+17:08:19 train=970 val=283
+17:10:43 train=975 val=283
+17:13:10 train=978 val=283
+17:15:35 train=981 val=283
+17:18:01 train=989 val=283
+17:20:31 train=990 val=283
+17:22:55 train=991 val=283
+17:25:19 train=992 val=283
+17:27:45 train=994 val=283
+17:30:09 train=996 val=283
+17:32:32 train=997 val=283
+17:35:09 train=999 val=283
+17:37:42 train=1000 val=283
+index data/prepared/v4main_t1000_vjl/index.json 1283
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v4t1k_B_seed17.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v4t1k_B_seed29.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v4t1k_B_seed43.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v4t1k_C_seed17.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v4t1k_C_seed29.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v4t1k_C_seed43.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v4t1k_D_seed17.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v4t1k_D_seed29.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v4t1k_D_seed43.json
+queued
+17:38:11 start v4t1k_B_seed29 gpu 0
+17:38:12 start v4t1k_C_seed29 gpu 1
+17:38:13 start v4t1k_D_seed29 gpu 2
+17:38:14 start v4t1k_B_seed17 gpu 3
+17:38:15 start v4t1k_B_seed43 gpu 4
+17:38:16 start v4t1k_C_seed17 gpu 5
+17:38:18 start v4t1k_C_seed43 gpu 6
+17:49:22 exit v4t1k_B_seed17 0 gpu 3
+17:49:22 start v4t1k_D_seed17 gpu 3
+17:51:25 exit v4t1k_B_seed29 0 gpu 0
+17:51:25 start v4t1k_D_seed43 gpu 0
+17:52:26 exit v4t1k_C_seed29 0 gpu 1
+17:52:56 exit v4t1k_D_seed29 0 gpu 2
+17:57:56 exit v4t1k_C_seed43 0 gpu 6
+17:58:11 exit v4t1k_B_seed43 0 gpu 4
+17:58:11 exit v4t1k_C_seed17 0 gpu 5
+18:07:56 exit v4t1k_D_seed43 0 gpu 0
+18:10:26 exit v4t1k_D_seed17 0 gpu 3
+18:10:26 start v4p_report gpu 
+18:13:42 exit v4p_report 0 gpu 
+all done
+18:13:42 pool finished

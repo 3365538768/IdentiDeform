@@ -1,0 +1,82 @@
+{
+  "frozen_utc": "2026-11-13T06:14:09Z",
+  "status": "frozen before any test-split access; run ONCE, only if the user-facing plan says so",
+  "test_split": "data/v2_main/test (300 samples, generated separately); objects must be disjoint from train/val (fieldbridge.cli audit)",
+  "statistics": "train-split statistics of data/manifests/v2main.specific.stats.json (numbers unchanged; if the test rows are appended to a new manifest, refit stats on the identical train rows and assert equality of mean/std)",
+  "metric": {
+    "primary": "standardized MAE over all scored (sample, parameter) entries in specific space (E/rho, nu, rho, sigma_y/rho)",
+    "secondary": [
+      "per-parameter MAE (z)",
+      "law accuracy (3-class)",
+      "within-law Pearson r for E/rho and sigma_y/rho (mean over GT laws)",
+      "paired object bootstrap vs V-JEPA 2 C (2000 draws, seed 17; seed-matched for trained methods, against each C seed for deterministic ones)"
+    ]
+  },
+  "methods": {
+    "constant_train_mean": {
+      "rule": "z = 0 (train mean) for every parameter, majority train law",
+      "selection": "none",
+      "script": "scripts/v3c/simple_baselines.py --split test"
+    },
+    "law_mean_gt_privileged": {
+      "rule": "GT law -> train-split law mean z (PRIVILEGED; not deployable)",
+      "selection": "none",
+      "script": "scripts/v3c/simple_baselines.py --split test"
+    },
+    "qwen3vl8b_zeroshot": {
+      "rule": "scripts/v3c/vlm_v2main.py --split test, 3 views x 8 frames, greedy, R5 prompt with V2 train ranges, z=0 fallback",
+      "selection": "none"
+    },
+    "dinov3_static_first_frame_B": {
+      "configs": "configs/v3c/v3c_dino_S_seed{17,29,43}.json",
+      "cache": "DINOv3 ViT-L/16 16-frame cache (test samples built with configs/v3c/v3c_dino_cache.json)",
+      "checkpoint": "best_material.pt (best val standardized MAE)"
+    },
+    "dinov3_16f_B": {
+      "configs": "configs/v3c/v3c_dino_B_seed{17,29,43}.json",
+      "checkpoint": "best_material.pt (best val standardized MAE)"
+    },
+    "dinov3_16f_C": {
+      "configs": "configs/v3c/v3c_dino_C_seed{17,29,43}.json",
+      "checkpoint": "best_material.pt (best val standardized MAE)"
+    },
+    "vjepa2_32f_B/C/D (main)": {
+      "configs": "configs/v2main/v2main_{B,C,D}_seed{17,29,43}.json",
+      "checkpoint": "best_material.pt (best val standardized MAE)"
+    }
+  },
+  "evaluation_command": ".venv/bin/python -m fieldbridge.cli evaluate --config <config with test cache> --checkpoint <run>/best_material.pt --split test --output <run>/test_once",
+  "reporting": "mean +- sd over seeds 17/29/43; no re-selection, no re-training, no prompt change after test access; all methods reported, including those that lose",
+  "sha256": {
+    "scripts/v3c/simple_baselines.py": "b30180c03b2da0c5d7185e0e5a1e511249e1b28bec0211b26f22d79923cf3593",
+    "scripts/v3c/vlm_v2main.py": "977ce1471da9c6ee7bc93066d79420580c07948b10639273d09399b6d23e8fde",
+    "scripts/v3c/baselines_report.py": "58da4219f1848af4992d4f0bdfe1e01afcf4953ecacf593c00fe4ea581911075",
+    "scripts/vlm_baseline.py": "526fcb846a92d554f00e636172b46b83c50f7e804773eb6c5da5cac048840a6c",
+    "scripts/prepare_feature_cache.py": "dd656129355b5b05a9b79669e46aaaeb2038987be7da184ffa1e86cd75a6f6d6",
+    "scripts/prepare_vjepa_cache.py": "01b719964303f1fd84c07a5dd22e63df05ef0ba376afc5f334d5741db42dc51d",
+    "scripts/bootstrap_object_ci.py": "e10f5b414930c226730cc05bb3779832c68918a8ad2795a875b109f287b885e3",
+    "scripts/audit_within_law.py": "bf82484d052d138739702897dec17665a9d442333bb687f393339a6749633e6b",
+    "data/manifests/v2main.jsonl": "d21689990d3fd29b0224cbb165f249b4e35418673002d8abecdabfa10d30b2c5",
+    "data/manifests/v2main.specific.stats.json": "788912decec0ea040d017f4637dc3a2f7365568582afa464a80c491e177df699",
+    "data/manifests/v2main.stats.json": "cce21825a6bb5508da8a2cfb57d223ef3a729f35f10921f7094d6f7d3319ca28",
+    "configs/v3c/v3c_dino_B_seed17.json": "1964fa6df3a81e1c5069950e9682aff5df94902e3338607c2dc755d3d8bf00fe",
+    "configs/v3c/v3c_dino_B_seed29.json": "784e5b00084a99b124ca03b71dfec45324a7e8fdd0817c6733f4ea42227f6932",
+    "configs/v3c/v3c_dino_B_seed43.json": "2bb0939a1b0c823f76dc54aac92274623b7bd80743e6eed035386f93fca6a0a9",
+    "configs/v3c/v3c_dino_C_seed17.json": "7c6c8cbdff1af3e89b94261a690829ff909d998de971ece759cd5fe0052bb1a5",
+    "configs/v3c/v3c_dino_C_seed29.json": "fe592376ffde6db90a0572c10c00f91920a9ba81a979ef8d0aad59f6b5f349df",
+    "configs/v3c/v3c_dino_C_seed43.json": "119b1c39ac5b786a6936a1b5e5b6b836697d81a4583e022fbf967cca7ad5f8c9",
+    "configs/v3c/v3c_dino_S_seed17.json": "98c52e7beb477df2f66e3245310f086e45a6e0e96a3bde34ab60414ec13275f7",
+    "configs/v3c/v3c_dino_S_seed29.json": "3b8318a6841a07ff0455e5eef7039c17e7270d68b1d9272c037291c18fa23443",
+    "configs/v3c/v3c_dino_S_seed43.json": "b986766dfed345bd325e25490eb724d2ac8dc07903b238552ac350851531db9d",
+    "configs/v3c/v3c_dino_cache.json": "92bd63d3ab03cd0a9ef0b530f01a883c0f96eb21be2025abb33c58ead4b4b2a6",
+    "configs/v2main/v2main_B_seed17.json": "99e189cae8208ff6b44dc58ae7b03aff6aba73e751c7e246278d4af537c4fcd7",
+    "configs/v2main/v2main_B_seed29.json": "5bb6e378eabe34c611dce48a7fdaf9310270c6f15270dcf421960db8a5d75a23",
+    "configs/v2main/v2main_B_seed43.json": "20688a83c9ae303a982d0c0bd9ed2d751e8bdb9b615600eeab5bd79e95d6d9b6",
+    "configs/v2main/v2main_C_seed17.json": "53971f8e2927f8abb66743e4fb949a632cef9fdcb8e1a670c7c9925951560301",
+    "configs/v2main/v2main_C_seed29.json": "b6ebc886a3808b69aa9c1f151cad7346522763b0aa5709e2fe5e8315078ebfe2",
+    "configs/v2main/v2main_C_seed43.json": "27acce36e9f5ff0c55b54874d13c438dbfcc0021e2b3ef315ea37121b4e37ee8",
+    "configs/v2main/v2main_D_seed17.json": "1dbff0e5c2e38554e34c4e74585b597ccccd37c12e5b27b0a2f3f5f38e91986e",
+    "configs/v2main/v2main_D_seed29.json": "5c814ffc09cf2c91af3e90040bf8fbac862ddac87c774a1746c84c4bd8b932fb",
+    "configs/v2main/v2main_D_seed43.json": "997c337c1134eb8c512c4ec1038d00d424962372193428c50fc64b9f940f954b"
+  }
+}

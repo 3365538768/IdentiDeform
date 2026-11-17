@@ -1,0 +1,2 @@
+- 2026-11-14 15:51 UTC v3e: compacted 1982 data/v3e/runs/**/subset.npz (7.82 GiB -> 0.77 GiB: kept every 4th subset frame as float16; x0/x_tail/width trace unchanged); deleted 20 full particle dumps traj.npz (161 MiB) under data/v3e/runs and data/v3e/pilot (metrics already in state.json; pilot figures kept in docs/v3e/figs)
+

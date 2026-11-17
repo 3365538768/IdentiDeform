@@ -1,0 +1,6 @@
+sim 93 gt 0.0 True 472
+sim 93 gt 0.08 True 492
+sim 93 gt 0.32 True 445
+measure 93 gt 0.08 {'dent_p95': 0.003578165446747965, 'dent_mean': 0.0022186400122869406, 'wloss': 0.017162044071917446, 'peak_compression': 0.05825885051776586, 'final_width_vs_ref': 0.01722397330052526, 'zmax_drop': -0.05218361391703292, 'n_particles': 151536, 'W': 0.6260798573493958, 'axis': 0}
+measure 93 gt 0.32 {'dent_p95': 0.022488583818953627, 'dent_mean': 0.010898379906532345, 'wloss': 0.01949197900927453, 'peak_compression': 0.2809952363303567, 'final_width_vs_ref': 0.019291422966967446, 'zmax_drop': -0.29448585165268065, 'n_particles': 151536, 'W': 0.6260798573493958, 'axis': 0}
+done 93 gt

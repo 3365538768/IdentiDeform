@@ -1,0 +1,56 @@
+2026-11-14T01:24:07+00:00 START scripts/v3f/replay_env.sh scripts/v3f/springgaus_replay.py data/external_datasets/springgaus_gdrive/real_capture.zip data/prepared/v3f_springgaus_real_vjl docs/v3f/SPRINGGAUS_REAL_PRED.json data/v3f_springgaus_replay/dog --objs dog
+Warp 1.11.1 initialized:
+   CUDA Toolkit 12.9, Driver 12.6
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA A800-SXM4-80GB" (79 GiB, sm_80, mempool enabled)
+   Kernel cache:
+     /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/.cache/warp
+Warp DeprecationWarning: The namespace `warp.torch` will soon be removed from the public API. It can still be accessed from `warp._src.torch` but might be changed or removed without notice.
+Warp DeprecationWarning: The symbol `warp.types.float32` will soon be removed from the public API. Use `warp.float32` instead.
+Module warp_utils 5598e36 load on device 'cuda:0' took 0.92 ms  (cached)
+Particles initialized from torch data.
+Total particles:  12285
+Module mpm_utils 8c60f93 load on device 'cuda:0' took 2.32 ms  (cached)
+Module mpm_solver_warp 3dca6b4 load on device 'cuda:0' took 1.28 ms  (cached)
+dog predicted 4.39 {'centroid_err_cm_mean': 4.242, 'post_hit_up_rmse_cm': 6.849, 'mask_iou_mean': 0.424} 0.7351985636782264
+Particles initialized from torch data.
+Total particles:  12285
+dog grid_3.00 3.0 {'centroid_err_cm_mean': 5.433, 'post_hit_up_rmse_cm': 7.599, 'mask_iou_mean': 0.296} 0.13340505912680878
+Particles initialized from torch data.
+Total particles:  12285
+dog grid_3.25 3.25 {'centroid_err_cm_mean': 5.229, 'post_hit_up_rmse_cm': 7.236, 'mask_iou_mean': 0.296} 0.15651175218882038
+Particles initialized from torch data.
+Total particles:  12285
+dog grid_3.50 3.5 {'centroid_err_cm_mean': 4.719, 'post_hit_up_rmse_cm': 6.31, 'mask_iou_mean': 0.299} 0.2121615454029846
+Particles initialized from torch data.
+Total particles:  12285
+dog grid_3.75 3.75 {'centroid_err_cm_mean': 3.771, 'post_hit_up_rmse_cm': 4.549, 'mask_iou_mean': 0.335} 0.2967947287330088
+Particles initialized from torch data.
+Total particles:  12285
+dog grid_4.00 4.0 {'centroid_err_cm_mean': 2.702, 'post_hit_up_rmse_cm': 2.426, 'mask_iou_mean': 0.478} 0.47149402160814086
+Particles initialized from torch data.
+Total particles:  12285
+dog grid_4.25 4.25 {'centroid_err_cm_mean': 3.491, 'post_hit_up_rmse_cm': 5.025, 'mask_iou_mean': 0.446} 0.6651780597405753
+Particles initialized from torch data.
+Total particles:  12285
+dog grid_4.50 4.5 {'centroid_err_cm_mean': 4.62, 'post_hit_up_rmse_cm': 7.71, 'mask_iou_mean': 0.417} 0.7565929000016379
+Particles initialized from torch data.
+Total particles:  12285
+dog grid_4.75 4.75 {'centroid_err_cm_mean': 4.854, 'post_hit_up_rmse_cm': 8.313, 'mask_iou_mean': 0.416} 0.744255201507308
+Particles initialized from torch data.
+Total particles:  12285
+dog grid_5.00 5.0 {'centroid_err_cm_mean': 4.952, 'post_hit_up_rmse_cm': 8.558, 'mask_iou_mean': 0.411} 0.7613214028364559
+Particles initialized from torch data.
+Total particles:  12285
+dog grid_5.25 5.25 {'centroid_err_cm_mean': 5.124, 'post_hit_up_rmse_cm': 8.768, 'mask_iou_mean': 0.407} 0.7468188907706984
+Particles initialized from torch data.
+Total particles:  12285
+dog grid_5.50 5.5 {'centroid_err_cm_mean': 5.221, 'post_hit_up_rmse_cm': 8.716, 'mask_iou_mean': 0.403} 0.7254827963182688
+Particles initialized from torch data.
+Total particles:  12285
+dog grid_5.75 5.75 {'centroid_err_cm_mean': 5.121, 'post_hit_up_rmse_cm': 8.23, 'mask_iou_mean': 0.401} 0.6894930309844122
+Particles initialized from torch data.
+Total particles:  12285
+dog grid_6.00 6.0 {'centroid_err_cm_mean': 4.742, 'post_hit_up_rmse_cm': 7.23, 'mask_iou_mean': 0.401} 0.6357210753854928
+2026-11-14T01:34:27+00:00 END rc=0

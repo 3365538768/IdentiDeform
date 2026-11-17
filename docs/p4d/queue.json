@@ -1,0 +1,198 @@
+{
+ "phase": "P4d",
+ "max_per_gpu": 2,
+ "gpus": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "jobs": [
+  {
+   "id": "p4d_manifest_low",
+   "kind": "cmd",
+   "group": "p4d-prep",
+   "mem_mib": 0,
+   "after": [
+    "p4c_low_val_s0",
+    "p4c_low_val_s1",
+    "p4c_low_train_s0",
+    "p4c_low_train_s1",
+    "p4c_low_train_s2",
+    "p4c_low_train_s3",
+    "p4c_low_train_s4",
+    "p4c_low_train_s5",
+    "p4c_v1_val_s0",
+    "p4c_v1_val_s1",
+    "p4c_v1_train_s0",
+    "p4c_v1_train_s1",
+    "p4c_v1_train_s2",
+    "p4c_v1_train_s3",
+    "p4c_v1_train_s4",
+    "p4c_v1_train_s5"
+   ],
+   "cmd": ".venv/bin/python scripts/v2/build_v2_manifest.py --arm low"
+  },
+  {
+   "id": "p4d_cache_low_s0",
+   "kind": "cmd",
+   "group": "p4d-cache",
+   "mem_mib": 20000,
+   "after": [
+    "p4d_manifest_low"
+   ],
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/p4d/p4d_cache_low.json --shard 0 --num-shards 2 --status-output docs/p4d/cache_low_shard0.json"
+  },
+  {
+   "id": "p4d_cache_low_s1",
+   "kind": "cmd",
+   "group": "p4d-cache",
+   "mem_mib": 20000,
+   "after": [
+    "p4d_manifest_low"
+   ],
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/p4d/p4d_cache_low.json --shard 1 --num-shards 2 --status-output docs/p4d/cache_low_shard1.json"
+  },
+  {
+   "id": "p4d_cache_low_merge",
+   "kind": "cmd",
+   "group": "p4d-cache",
+   "mem_mib": 0,
+   "after": [
+    "p4d_cache_low_s0",
+    "p4d_cache_low_s1"
+   ],
+   "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/p4d/p4d_cache_low.json --status-output docs/p4d/cache_low_merge.json"
+  },
+  {
+   "id": "p4d_Clow_seed17",
+   "config": "configs/p4d/p4d_Clow_seed17.json",
+   "group": "C-v2low",
+   "seed": 17,
+   "kind": "train",
+   "after": [
+    "p4d_cache_low_merge"
+   ],
+   "mem_mib": 20000
+  },
+  {
+   "id": "p4d_Clow_seed29",
+   "config": "configs/p4d/p4d_Clow_seed29.json",
+   "group": "C-v2low",
+   "seed": 29,
+   "kind": "train",
+   "after": [
+    "p4d_cache_low_merge"
+   ],
+   "mem_mib": 20000
+  },
+  {
+   "id": "p4d_Clow_seed43",
+   "config": "configs/p4d/p4d_Clow_seed43.json",
+   "group": "C-v2low",
+   "seed": 43,
+   "kind": "train",
+   "after": [
+    "p4d_cache_low_merge"
+   ],
+   "mem_mib": 20000
+  },
+  {
+   "id": "p4d_manifest_v1",
+   "kind": "cmd",
+   "group": "p4d-prep",
+   "mem_mib": 0,
+   "after": [
+    "p4c_low_val_s0",
+    "p4c_low_val_s1",
+    "p4c_low_train_s0",
+    "p4c_low_train_s1",
+    "p4c_low_train_s2",
+    "p4c_low_train_s3",
+    "p4c_low_train_s4",
+    "p4c_low_train_s5",
+    "p4c_v1_val_s0",
+    "p4c_v1_val_s1",
+    "p4c_v1_train_s0",
+    "p4c_v1_train_s1",
+    "p4c_v1_train_s2",
+    "p4c_v1_train_s3",
+    "p4c_v1_train_s4",
+    "p4c_v1_train_s5"
+   ],
+   "cmd": ".venv/bin/python scripts/v2/build_v2_manifest.py --arm v1"
+  },
+  {
+   "id": "p4d_cache_v1_s0",
+   "kind": "cmd",
+   "group": "p4d-cache",
+   "mem_mib": 20000,
+   "after": [
+    "p4d_manifest_v1"
+   ],
+   "retries": 5,
+   "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/p4d/p4d_cache_v1.json --shard 0 --num-shards 2 --status-output docs/p4d/cache_v1_shard0.json"
+  },
+  {
+   "id": "p4d_cache_v1_s1",
+   "kind": "cmd",
+   "group": "p4d-cache",
+   "mem_mib": 20000,
+   "after": [
+    "p4d_manifest_v1"
+   ],
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/p4d/p4d_cache_v1.json --shard 1 --num-shards 2 --status-output docs/p4d/cache_v1_shard1.json"
+  },
+  {
+   "id": "p4d_cache_v1_merge",
+   "kind": "cmd",
+   "group": "p4d-cache",
+   "mem_mib": 0,
+   "after": [
+    "p4d_cache_v1_s0",
+    "p4d_cache_v1_s1"
+   ],
+   "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/p4d/p4d_cache_v1.json --status-output docs/p4d/cache_v1_merge.json"
+  },
+  {
+   "id": "p4d_Cv1_seed17",
+   "config": "configs/p4d/p4d_Cv1_seed17.json",
+   "group": "C-v2v1",
+   "seed": 17,
+   "kind": "train",
+   "after": [
+    "p4d_cache_v1_merge"
+   ],
+   "mem_mib": 20000
+  },
+  {
+   "id": "p4d_Cv1_seed29",
+   "config": "configs/p4d/p4d_Cv1_seed29.json",
+   "group": "C-v2v1",
+   "seed": 29,
+   "kind": "train",
+   "after": [
+    "p4d_cache_v1_merge"
+   ],
+   "mem_mib": 20000
+  },
+  {
+   "id": "p4d_Cv1_seed43",
+   "config": "configs/p4d/p4d_Cv1_seed43.json",
+   "group": "C-v2v1",
+   "seed": 43,
+   "kind": "train",
+   "after": [
+    "p4d_cache_v1_merge"
+   ],
+   "mem_mib": 20000
+  }
+ ]
+}

@@ -1,0 +1,385 @@
+{
+ "seed": 20261113,
+ "cells": {
+  "jelly/bend": 15,
+  "jelly/drop": 17,
+  "jelly/press": 17,
+  "jelly/shear": 17,
+  "jelly/stretch": 17,
+  "jelly/tap30hold": 14,
+  "metal/bend": 16,
+  "metal/drop": 15,
+  "metal/press": 15,
+  "metal/shear": 17,
+  "metal/stretch": 16,
+  "metal/tap30hold": 14,
+  "plasticine/bend": 14,
+  "plasticine/drop": 16,
+  "plasticine/press": 16,
+  "plasticine/shear": 15,
+  "plasticine/stretch": 17,
+  "plasticine/tap30hold": 15
+ },
+ "samples": [
+  {
+   "index": 2,
+   "law": "plasticine",
+   "action": "press",
+   "gt_observed": true
+  },
+  {
+   "index": 5,
+   "law": "plasticine",
+   "action": "drop",
+   "gt_observed": true
+  },
+  {
+   "index": 7,
+   "law": "metal",
+   "action": "shear",
+   "gt_observed": true
+  },
+  {
+   "index": 9,
+   "law": "jelly",
+   "action": "stretch",
+   "gt_observed": true
+  },
+  {
+   "index": 21,
+   "law": "jelly",
+   "action": "drop",
+   "gt_observed": false
+  },
+  {
+   "index": 25,
+   "law": "metal",
+   "action": "shear",
+   "gt_observed": false
+  },
+  {
+   "index": 29,
+   "law": "plasticine",
+   "action": "stretch",
+   "gt_observed": false
+  },
+  {
+   "index": 52,
+   "law": "metal",
+   "action": "tap30hold",
+   "gt_observed": true
+  },
+  {
+   "index": 53,
+   "law": "plasticine",
+   "action": "tap30hold",
+   "gt_observed": false
+  },
+  {
+   "index": 66,
+   "law": "jelly",
+   "action": "bend",
+   "gt_observed": true
+  },
+  {
+   "index": 68,
+   "law": "plasticine",
+   "action": "bend",
+   "gt_observed": false
+  },
+  {
+   "index": 70,
+   "law": "metal",
+   "action": "tap30hold",
+   "gt_observed": false
+  },
+  {
+   "index": 71,
+   "law": "plasticine",
+   "action": "tap30hold",
+   "gt_observed": false
+  },
+  {
+   "index": 73,
+   "law": "metal",
+   "action": "press",
+   "gt_observed": false
+  },
+  {
+   "index": 89,
+   "law": "plasticine",
+   "action": "tap30hold",
+   "gt_observed": false
+  },
+  {
+   "index": 93,
+   "law": "jelly",
+   "action": "drop",
+   "gt_observed": false
+  },
+  {
+   "index": 96,
+   "law": "jelly",
+   "action": "shear",
+   "gt_observed": false
+  },
+  {
+   "index": 106,
+   "law": "metal",
+   "action": "tap30hold",
+   "gt_observed": false
+  },
+  {
+   "index": 113,
+   "law": "plasticine",
+   "action": "drop",
+   "gt_observed": false
+  },
+  {
+   "index": 114,
+   "law": "jelly",
+   "action": "shear",
+   "gt_observed": false
+  },
+  {
+   "index": 118,
+   "law": "metal",
+   "action": "stretch",
+   "gt_observed": false
+  },
+  {
+   "index": 119,
+   "law": "plasticine",
+   "action": "stretch",
+   "gt_observed": false
+  },
+  {
+   "index": 127,
+   "law": "metal",
+   "action": "press",
+   "gt_observed": false
+  },
+  {
+   "index": 134,
+   "law": "plasticine",
+   "action": "shear",
+   "gt_observed": false
+  },
+  {
+   "index": 135,
+   "law": "jelly",
+   "action": "stretch",
+   "gt_observed": false
+  },
+  {
+   "index": 136,
+   "law": "metal",
+   "action": "stretch",
+   "gt_observed": false
+  },
+  {
+   "index": 139,
+   "law": "metal",
+   "action": "bend",
+   "gt_observed": false
+  },
+  {
+   "index": 141,
+   "law": "jelly",
+   "action": "tap30hold",
+   "gt_observed": false
+  },
+  {
+   "index": 148,
+   "law": "metal",
+   "action": "drop",
+   "gt_observed": false
+  },
+  {
+   "index": 152,
+   "law": "plasticine",
+   "action": "shear",
+   "gt_observed": false
+  },
+  {
+   "index": 154,
+   "law": "metal",
+   "action": "stretch",
+   "gt_observed": false
+  },
+  {
+   "index": 159,
+   "law": "jelly",
+   "action": "tap30hold",
+   "gt_observed": false
+  },
+  {
+   "index": 180,
+   "law": "jelly",
+   "action": "press",
+   "gt_observed": false
+  },
+  {
+   "index": 181,
+   "law": "metal",
+   "action": "press",
+   "gt_observed": false
+  },
+  {
+   "index": 182,
+   "law": "plasticine",
+   "action": "press",
+   "gt_observed": false
+  },
+  {
+   "index": 184,
+   "law": "metal",
+   "action": "drop",
+   "gt_observed": false
+  },
+  {
+   "index": 188,
+   "law": "plasticine",
+   "action": "shear",
+   "gt_observed": false
+  },
+  {
+   "index": 198,
+   "law": "jelly",
+   "action": "press",
+   "gt_observed": false
+  },
+  {
+   "index": 200,
+   "law": "plasticine",
+   "action": "press",
+   "gt_observed": false
+  },
+  {
+   "index": 202,
+   "law": "metal",
+   "action": "drop",
+   "gt_observed": false
+  },
+  {
+   "index": 210,
+   "law": "jelly",
+   "action": "bend",
+   "gt_observed": false
+  },
+  {
+   "index": 212,
+   "law": "plasticine",
+   "action": "bend",
+   "gt_observed": false
+  },
+  {
+   "index": 216,
+   "law": "jelly",
+   "action": "press",
+   "gt_observed": false
+  },
+  {
+   "index": 219,
+   "law": "jelly",
+   "action": "drop",
+   "gt_observed": false
+  },
+  {
+   "index": 222,
+   "law": "jelly",
+   "action": "shear",
+   "gt_observed": false
+  },
+  {
+   "index": 228,
+   "law": "jelly",
+   "action": "bend",
+   "gt_observed": false
+  },
+  {
+   "index": 231,
+   "law": "jelly",
+   "action": "tap30hold",
+   "gt_observed": false
+  },
+  {
+   "index": 235,
+   "law": "metal",
+   "action": "press",
+   "gt_observed": false
+  },
+  {
+   "index": 241,
+   "law": "metal",
+   "action": "shear",
+   "gt_observed": false
+  },
+  {
+   "index": 245,
+   "law": "plasticine",
+   "action": "stretch",
+   "gt_observed": false
+  },
+  {
+   "index": 248,
+   "law": "plasticine",
+   "action": "bend",
+   "gt_observed": false
+  },
+  {
+   "index": 261,
+   "law": "jelly",
+   "action": "stretch",
+   "gt_observed": false
+  },
+  {
+   "index": 265,
+   "law": "metal",
+   "action": "bend",
+   "gt_observed": false
+  },
+  {
+   "index": 272,
+   "law": "plasticine",
+   "action": "press",
+   "gt_observed": false
+  },
+  {
+   "index": 276,
+   "law": "jelly",
+   "action": "shear",
+   "gt_observed": false
+  },
+  {
+   "index": 283,
+   "law": "metal",
+   "action": "bend",
+   "gt_observed": false
+  },
+  {
+   "index": 293,
+   "law": "plasticine",
+   "action": "drop",
+   "gt_observed": false
+  },
+  {
+   "index": 295,
+   "law": "metal",
+   "action": "shear",
+   "gt_observed": false
+  },
+  {
+   "index": 296,
+   "law": "plasticine",
+   "action": "shear",
+   "gt_observed": false
+  },
+  {
+   "index": 297,
+   "law": "jelly",
+   "action": "stretch",
+   "gt_observed": false
+  }
+ ]
+}

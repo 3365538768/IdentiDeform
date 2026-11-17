@@ -1,0 +1,12 @@
+v2main_B_seed17
+v2main_B_seed29
+v2main_B_seed43
+v2main_C_seed17
+v2main_C_seed29
+v2main_C_seed43
+v2main_D_seed17
+v2main_D_seed29
+v2main_D_seed43
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/scripts/v3w/phys101_fall.py:138: DeprecationWarning: __array_wrap__ must accept context and return_scalar arguments (positionally) in the future. (Deprecated NumPy 2.0)
+  'log10_E_over_rho_x1000': float(np.log10(dec[0])), 'rho_decoded': float(dec[2]),
+pred 626

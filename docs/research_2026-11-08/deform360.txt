@@ -1,0 +1,615 @@
+<div align="center">
+
+# Deform360: A Massive Multi-view Visuotactile Dataset for Deformable World Models
+
+[Hongyu Li](https://lhy.xyz/)¹ ², [Wanjia Fu](https://wanjia-fu.com/)¹, [Xiaoyan Cong](https://oliver-cong02.github.io/)¹, [Zekun Li](https://kunkun0w0.github.io/)¹, [Binghao Huang](https://binghao-huang.github.io/)², [Hanxiao Jiang](https://jianghanxiao.github.io/)², Xintong He¹, [Yiqing Liang](https://lynl7130.github.io/)¹, [Rao Fu](https://freddierao.github.io/)¹, [Tao Lu](https://inspirelt.github.io/)¹, [Srinath Sridhar](https://srinathsridhar.com/)¹, [Kevin A. Smith](https://www.mit.edu/~k2smith/)³, [George Konidaris](https://cs.brown.edu/people/gdk/)¹, [Yunzhu Li](https://yunzhuli.github.io/)²
+
+¹ Brown University &nbsp;&nbsp; ² Columbia University &nbsp;&nbsp; ³ MIT
+
+### [Project Page](https://deform360.lhy.xyz/) | [Dataset](https://huggingface.co/datasets/brownu/deform360) | [Paper](https://arxiv.org/abs/2607.05390)
+
+*Accepted to ECCV 2026*
+
+</div>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/lhy0807/deform360/main/assets/teaser.gif" width="80%" alt="Deform360: per-frame 3D reconstruction alongside 360-degree multi-view capture.">
+</p>
+
+---
+
+**Deform360** is a massive multi-view visuotactile dataset for deformable-object
+research, captured in the [BRICS](https://ivl.cs.brown.edu/research/diva) dome at
+Brown University. The full collection described by the paper has:
+
+- **198** everyday deformable objects across 13 categories
+- **1,980** robotic interactions · **215.7 hours** · **~23.3M frames**
+- **41** synchronized 720p RGB cameras with 360° coverage
+- Bimanual UMI-based tactile grippers with four 16×32 sensor streams
+
+> This repository contains dataset access, preprocessing, annotation
+> processing, and multimodal alignment utilities. World-model baselines,
+> training code, and pretrained world-model checkpoints are not released.
+
+Annotation contracts are producer-agnostic: the core package defines their
+file formats and model-independent transforms without heavy dependencies.
+The optional `[processing]` extra adds the model-backed stages
+(`deform360-annotate`) that produce those annotations from raw data,
+covering the full annotation pipeline: SAM3 masks, ArUco robot poses, URDF gripper masks, Splatfacto reconstruction, rendered depth, CoTracker tracking, cleaned point clouds, and PhysTwin control-point inputs.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Download Data](#download-data)
+- [Camera Undistortion and Alignment](#camera-undistortion-and-alignment)
+- [Tactile Processing and Alignment](#tactile-processing-and-alignment)
+- [Load Aligned Data](#load-aligned-data)
+- [Annotation Processing](#annotation-processing)
+- [Annotation and Geometry Utilities](#annotation-and-geometry-utilities)
+- [Data Conventions](#data-conventions)
+- [Repository Layout](#repository-layout)
+- [Release Scope](#release-scope)
+- [Acknowledgments](#acknowledgments)
+- [Citation](#citation)
+
+## Installation
+
+Python 3.10 or newer is required.
+
+```bash
+git clone https://github.com/lhy0807/deform360.git
+cd deform360
+
+uv venv --python 3.10
+source .venv/bin/activate
+uv pip install -e .
+```
+
+The core install includes NumPy, OpenCV contrib, and the Hugging Face client.
+Install all optional readers for HDF5 annotations, binary PLY files, and faster
+video access with:
+
+```bash
+uv pip install -e ".[all]"
+```
+
+Individual extras are `annotations` (`h5py`), `reconstruction` (`plyfile`), and
+`fast-video` (`decord`). Heavy learning frameworks are not package dependencies.
+
+The model-backed annotation stages need the heavy `processing` extra plus two
+git-pinned model packages:
+
+```bash
+uv pip install -e ".[processing]"
+uv pip install -r requirements-processing.txt
+```
+
+This adds the `deform360-annotate` command. The `robot`, `pcd`, and
+`control-points` stages run on CPU; all other annotation stages require a
+CUDA GPU. gsplat compiles its CUDA kernels on first use, so a CUDA
+toolkit (`nvcc`) matching your torch build must be available (set
+`CUDA_HOME`); `ninja` is installed with the extra.
+
+Installation exposes four independent commands: `deform360-download`,
+`deform360-undistort`, `deform360-process-tactile`, and `deform360-annotate`
+(whose stages additionally require the `[processing]` dependencies). The
+files in `scripts/` are thin source-tree wrappers around the first three
+entry points.
+
+## Download Data
+
+The dataset is hosted at [`brownu/deform360`](https://huggingface.co/datasets/brownu/deform360).
+The public snapshot may be staged independently of the paper totals: the downloader
+uses the object directories currently present under `raw/`, and `--all` means every
+object currently hosted. Processed annotations are not assumed to be present.
+
+```bash
+deform360-download \
+    --objects 001-rope 008-pink-cloth \
+    --output-dir /mnt/data/deform360_data
+```
+
+| Flag | Description |
+|---|---|
+| `--objects <names...>` | Objects to fetch; defaults to `001-rope 008-pink-cloth`. |
+| `--all` | Download every object currently hosted. |
+| `--output-dir <dir>` | Local dataset root. |
+| `--include-audio` | Also fetch tactile WAV/FLAC files; off by default. |
+| `--workers <n>` | Parallel download workers. |
+
+Tactile WAV files are not needed when the exact raw `.npy`, timestamp, and median
+sidecars are present. A raw object has this layout:
+
+```text
+raw/001-rope/
+├── metadata.json
+├── calibration_refined/
+│   ├── intrinsics.npy              # camera -> (3,3) K
+│   ├── extrinsics.npy              # camera -> (4,4) camera-to-world
+│   └── dist.npy                    # camera -> [k1,k2,p1,p2]
+├── brics-odroid-001_cam0/
+│   ├── <camera>_<time>.mp4          # one recording per episode
+│   └── <camera>_<time>.txt          # per-frame Unix-microsecond timestamps
+├── ...
+└── brics-odroid_tactilel_left/
+    ├── <sensor>_<time>.npy          # headerless float32 (T,16,32)
+    ├── <sensor>_<time>.txt          # per-sample timestamps
+    └── median_<time>.npy            # standard NumPy (16,32) baseline
+```
+
+Data and timestamp files are paired by exact stem. This avoids silently pairing
+independently sorted files from different recordings.
+
+The released calibration files are NumPy dictionaries and therefore use NumPy's
+pickle-backed container. Load only the official Deform360 calibration files or
+files from another source you trust.
+
+## Camera Undistortion and Alignment
+
+Each camera is independently clocked. The alignment stage chooses the calibrated
+camera with the fewest frames as its anchor, selects the nearest frame in every
+other camera, and rectifies images with the shipped calibration.
+
+Raw captures contain 41 camera-stream directories, while the shipped refined
+calibration currently covers 36 streams. By default the CLI processes the
+intersection and leaves raw streams without calibration untouched.
+
+```bash
+deform360-undistort \
+    --object-dir /mnt/data/deform360_data/raw/001-rope \
+    --output-dir /mnt/data/deform360_data/processed/001-rope
+```
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/lhy0807/deform360/main/assets/pink-cloth.gif" width="45%" alt="Raw multi-view capture of a deformable cloth in the BRICS dome.">
+</p>
+
+| Flag | Description |
+|---|---|
+| `--episodes <ints...>` | Episode indices; defaults to all. |
+| `--cameras <names...>` | Camera subset; defaults to all calibrated streams. |
+| `--tolerance-us <n>` | Flag nearest matches beyond this delta; default `100000`. |
+| `--no-overwrite` | Validate and reuse existing camera videos. |
+| `--rebuild-timeline` | Recompute the anchor explicitly; requires every existing camera and no downstream artifacts. |
+
+Output per episode:
+
+```text
+processed/001-rope/episode_0000/
+├── alignment.json                   # episode timeline and anchor metadata
+├── undistorted_intrinsics.npy       # camera -> rectified K
+├── extrinsics.npy                   # camera -> camera-to-world
+├── brics-odroid-001_cam0/
+│   ├── undistorted.mp4
+│   ├── undistorted_000000.png
+│   ├── aligned_timestamps.txt
+│   ├── alignment.json               # source frame/time/delta for every output
+│   └── metadata.json                # input/calibration/output fingerprints
+└── ...
+```
+
+The processor rejects truncated videos and mismatched resume outputs rather than
+writing a video, timestamp file, and calibration with different lengths.
+`--no-overwrite` verifies hashes for the raw video/timestamps, calibration, encoded
+video, preview, aligned timestamps, and manifest before reusing an output.
+
+The first successful camera run locks the episode timeline. Adding another camera
+later aligns it to that stored timeline instead of silently changing every frame
+index. Use `--rebuild-timeline` only when intentionally changing the anchor; it
+requires all existing cameras and is refused after tactile, robot, reconstruction,
+or HDF5 annotations exist because those artifacts already depend on frame indices.
+
+## Tactile Processing and Alignment
+
+Run tactile processing after camera alignment. It is a standalone stage and uses
+the camera timeline already stored in the episode.
+
+```bash
+deform360-process-tactile \
+    --object-dir /mnt/data/deform360_data/raw/001-rope \
+    --aligned-dir /mnt/data/deform360_data/processed/001-rope \
+    --episodes 0 1
+```
+
+For each named tactile sensor, the default legacy-compatible transform is:
+
+1. Decode headerless float32 frames as `(T,16,32)`.
+2. Subtract the sensor's `(16,32)` median baseline.
+3. Divide positive values by the episode-wide positive maximum.
+4. Set normalized values below `0.3` to zero, then clear column 31.
+5. Select the nearest tactile sample for every camera timestamp.
+
+Duplicate raw timestamps use their last sample, matching the original processing.
+The default 150 ms tolerance flags timing quality without changing nearest-neighbor
+output; choose `--out-of-tolerance drop` or `raise` for stricter behavior.
+
+```text
+episode_0000/
+└── brics-odroid_tactilel_left/
+    ├── synced_tactile.npy            # float32 (T,16,32)
+    ├── alignment.json                # selected source index/time/delta
+    └── metadata.json                 # normalization scale and data contract
+```
+
+Values are unitless peak-relative responses, not calibrated forces. Sensor names
+are preserved without assigning ambiguous left/right robot semantics. Exact
+processing requires raw `.npy`, timestamp, and median sidecars; WAV-only objects
+fail with an actionable error instead of synthesizing approximate alignment.
+
+The cleaned implementation was checked against all 80 existing tactile outputs
+for `001-rope` and `008-pink-cloth`; every array matched bit-for-bit.
+
+## Load Aligned Data
+
+`MultiViewDataset` returns synchronized RGB frames, calibration, and the common
+timestamp. It is compatible with the Dataset protocol but does not require PyTorch.
+
+```python
+from deform360 import MultiViewDataset
+
+episode = "/mnt/data/deform360_data/processed/001-rope/episode_0000"
+with MultiViewDataset(episode) as dataset:
+    sample = dataset[0]
+
+sample["images"]         # list[(H,W,3) uint8 RGB]
+sample["intrinsics"]     # list[(3,3)]
+sample["extrinsics"]     # list[(4,4) camera-to-world]
+sample["cameras"]        # camera names
+sample["timestamp_us"]   # shared Unix timestamp in microseconds
+```
+
+When camera provenance files are present, the loader verifies the episode timeline,
+video/timestamp fingerprints, and per-camera calibration automatically. Pass
+`strict_provenance=True` to require these files, or `False` only for a trusted
+legacy episode that predates them.
+
+Load all synchronized tactile grids at the same frame index with:
+
+```python
+from deform360 import TactileDataset
+
+with TactileDataset(episode) as tactile:
+    frame = tactile[0]        # sensor name -> (16,32) float32
+```
+
+The tactile loader validates each sensor's timeline metadata and output fingerprint
+by default. Use `strict_provenance=False` only for a trusted legacy output that
+predates these manifests.
+
+Runnable examples:
+
+```bash
+episode=/mnt/data/deform360_data/processed/001-rope/episode_0000
+python examples/load_multiview.py --episode-dir "$episode" --frame 0 --save view.png
+python examples/load_tactile.py --episode-dir "$episode" --frame 0
+python examples/read_annotations.py \
+    --camera-dir "$episode/brics-odroid-001_cam0" --frame 0
+```
+
+## Annotation Processing
+
+`deform360-annotate <stage>` produces the model-backed annotations from an
+aligned episode. Stages are independent commands, run per object in the
+documented order after `deform360-undistort` (and `deform360-process-tactile`
+where tactile is used). All eight stages are released: `masks`, `robot`, `gripper-masks`, `reconstruct`, `depth`, `tracking`, `pcd`, and `control-points` — run in that order.
+
+### Object masks (`masks`)
+
+Segments every camera's `undistorted.mp4` with a SAM3 text prompt and writes
+the documented `mask_refined.h5` contract ((T,H,W) uint8 binary, one mask per
+aligned frame; frames where nothing is found are zero).
+
+```bash
+deform360-annotate masks \
+    --aligned-dir /mnt/data/deform360_data/processed/001-rope \
+    --object-dir /mnt/data/deform360_data/raw/001-rope \
+    --episodes 0
+```
+
+| Flag | Description |
+|---|---|
+| `--prompt <text>` | Object text prompt; defaults to `sam_prompt` from the raw object's `metadata.json` (via `--object-dir`). |
+| `--cameras <names...>` | Camera subset; defaults to all cameras in the episode. |
+| `--no-preview` | Skip the `segmented/` preview video and RGBA first frame. |
+| `--no-overwrite` | Keep existing outputs whose provenance fingerprints match. |
+
+If the text prompt finds nothing on the first frame and `GOOGLE_API_KEY` is
+set, the stage asks Gemini for a first-frame bounding box and re-prompts SAM3;
+without the key it fails with an actionable error instead.
+
+Each stage writes a `<output-stem>.meta.json` provenance manifest (schema
+`deform360.processing/<stage>/v1`) recording input/output SHA-256
+fingerprints, stage parameters, and the model identity. `--no-overwrite`
+reuses outputs only when these fingerprints match.
+
+### Robot/gripper poses (`robot`)
+
+Recovers per-frame gripper poses from multi-view ArUco detections — RANSAC
+consensus across cameras and markers, velocity-outlier suppression,
+interpolation onto the aligned timeline, and pose smoothing (no bundle
+adjustment) — and writes the safe `robot/robot.npz` contract plus an
+`opening_dists.png` diagnostic. This stage runs on CPU.
+
+```bash
+deform360-annotate robot \
+    --aligned-dir /mnt/data/deform360_data/processed/001-rope \
+    --object-dir /mnt/data/deform360_data/raw/001-rope \
+    --episodes 0
+```
+
+| Flag | Description |
+|---|---|
+| `--bimanual` | Force two-gripper processing; defaults to `metadata.json` `sequences[<ep>].bimanual` (via `--object-dir`), else monomanual. |
+| `--seed <n>` | RANSAC seed for deterministic reruns; recorded in the manifest. |
+| `--no-plot` | Skip the `opening_dists.png` diagnostic. |
+| `--cameras <names...>` | Camera subset; defaults to all cameras in the episode. |
+
+### Gripper masks (`gripper-masks`)
+
+Renders the shipped UMI gripper URDF at each frame's robot pose into every
+camera, writing per-camera `rendered_urdf.h5` (`(T,H,W)` bool) silhouettes.
+The depth stage uses these to exclude gripper pixels from the object depth.
+Requires `robot.npz` and
+an EGL-capable GPU (pyrender offscreen).
+
+```bash
+deform360-annotate gripper-masks \
+    --aligned-dir /mnt/data/deform360_data/processed/001-rope \
+    --episodes 0
+```
+
+| Flag | Description |
+|---|---|
+| `--urdf <path>` | Alternative gripper URDF (default: the shipped `umi.urdf`). |
+| `--cameras <names...>` | Camera subset; defaults to all cameras in the episode. |
+
+### Reconstruction (`reconstruct`)
+
+Fits one Gaussian splat per aligned frame with nerfstudio Splatfacto,
+writing the documented `splatfacto/splat_<frame>.ply` contract. Frame 0 is
+seeded from a visual hull carved out of the object masks; every later frame
+warm-starts from the previous frame's splat. Temporary per-frame nerfstudio
+datasets live in a scratch directory inside `splatfacto/` and are removed
+after each frame. This is by far the slowest stage (GPU training per frame).
+
+```bash
+deform360-annotate reconstruct \
+    --aligned-dir /mnt/data/deform360_data/processed/001-rope \
+    --episodes 0
+```
+
+| Flag | Description |
+|---|---|
+| `--first-frame-iterations <n>` | Training iterations for the hull-seeded first frame (default 10000). |
+| `--warm-start-iterations <n>` | Iterations for warm-started frames (default 5000). |
+| `--cube-half-extent-m <f>` | Visual-hull cube half-extent in metres (default 0.5). |
+| `--voxel-resolution <n>` | Hull voxels per axis (default 100). |
+| `--keep-scratch` | Keep per-frame scratch datasets for debugging. |
+
+With `--no-overwrite`, existing `splat_<i>.ply` files are kept and only
+missing frames are trained (warm-started from their predecessor).
+
+### Rendered depth (`depth`)
+
+Rasterizes each frame's splat into every camera with gsplat's expected-depth
+mode and writes the per-camera `rendered_depth.h5` contract ((T,H,W) uint16
+millimetres, 0 invalid). Depth is zeroed outside the object mask; when
+`rendered_urdf.h5` exists, gripper pixels are excluded from the object mask
+first (run `gripper-masks` beforehand, or the stage warns and proceeds).
+
+```bash
+deform360-annotate depth \
+    --aligned-dir /mnt/data/deform360_data/processed/001-rope \
+    --episodes 0
+```
+
+| Flag | Description |
+|---|---|
+| `--no-preview` | Skip the `rendered_depth.mp4` colormap preview. |
+| `--cameras <names...>` | Camera subset; defaults to all cameras in the episode. |
+
+### Dense tracking (`tracking`)
+
+Tracks the object with CoTracker3 in mask-cropped windows and lifts the
+tracks through the rendered depth into per-pixel world-frame velocities,
+writing the per-camera `tracking/vel.h5` ((T,H,W,3) float16 m/s) and
+`tracking/visibility.h5` ((T,H,W) bool) contracts. The last 5 frames of an
+episode have no velocity (the 5-frame lookahead gap).
+
+```bash
+deform360-annotate tracking \
+    --aligned-dir /mnt/data/deform360_data/processed/001-rope \
+    --episodes 0
+```
+
+| Flag | Description |
+|---|---|
+| `--checkpoint <path>` | Local CoTracker checkpoint; defaults to downloading CoTracker3 offline via torch.hub. |
+| `--cameras <names...>` | Camera subset; defaults to all cameras in the episode. |
+
+### Cleaned point clouds (`pcd`)
+
+Seeds a fixed point set from the frame-0 splat (cube crop, farthest-point
+sampling to 10000, radius and statistical outlier removal), fuses per-camera
+tracking velocities onto it, and advects it through the episode, writing
+`pcd_clean/<frame>.npz` (`pts`, `colors`, `vels`, `camera_indices`,
+`visibility_matrix`). Runs on CPU. The last 5 frames are skipped (no
+velocity lookahead).
+
+| Flag | Description |
+|---|---|
+| `--rng-seed <n>` | Seed recorded in the manifest for the sampling step. |
+
+### Control points (`control-points`)
+
+Derives PhysTwin-format inputs: per-frame gripper controller points (768
+URDF taxels per gripper posed at the recovered robot state), the
+tactile-contact frame window, an 80/20 train/test `split.json`,
+`start_obj_pcd.ply`, and the write-only interchange pickles
+`calibrate.pkl`/`final_data.pkl` expected by PhysTwin (this release never
+loads them back). Runs on CPU.
+
+## Annotation and Geometry Utilities
+
+Install `.[annotations]` to read or write HDF5 arrays. All HDF5 files store one
+dataset at key `data`.
+
+| Dataset artifact | Contract | Public utilities |
+|---|---|---|
+| Object masks | `mask_refined.h5`: `(T,H,W)` bool/uint8 binary | validation and HDF5 I/O |
+| Metric depth | `rendered_depth.h5`: `(T,H,W)` uint16 millimetres; 0 invalid | metre/mm encoding, masking |
+| Dense tracking | `tracking/vel.h5`: `(T,H,W,3)` float16/32; `visibility.h5`: `(T,H,W)` bool | point sampling/lifting, robust multi-camera fusion |
+| RGB-D geometry | metric float depth + RGB + K + camera-to-world | backprojection, projection, multi-view fusion, voxel selection |
+| Reconstruction | already-produced `.splat` or `.ply` annotations | read-only Gaussian/point loading; no training launcher |
+| Robot/gripper pose | safe `robot.npz` state or configurable ArUco observations | validation, detection, PnP, interpolation, smoothing, opening distance |
+
+For example, convert a masked depth annotation into world points:
+
+```python
+from deform360 import H5Array, backproject_depth, decode_metric_depth
+
+with H5Array("mask_refined.h5") as masks, H5Array("rendered_depth.h5") as depths:
+    mask = masks[0].astype(bool)
+    depth_m = decode_metric_depth(depths[0][None])[0]
+
+points_world = backproject_depth(depth_m, intrinsics=K, camera_to_world=c2w, mask=mask)
+```
+
+The core package consumes these annotations without instantiating learned
+models. To produce them yourself, use the model-backed `deform360-annotate`
+stages described in [Annotation Processing](#annotation-processing).
+
+### Reconstruction annotations
+
+Where available, per-frame Gaussian PLY annotations use
+`episode_XXXX/splatfacto/splat_<frame_index>.ply`; the numeric suffix is the
+zero-based aligned episode frame. `list_reconstruction_files()` natural-sorts
+files, and `load_reconstruction()` accepts both `.ply` and compact 32-byte-record
+`.splat` files. The loader does not infer missing frames, so callers should verify
+the suffixes against their episode timeline.
+
+`GaussianSplat` exposes world-frame centres `(N,3)`, principal scales `(N,3)`,
+covariances `(N,3,3)`, normalized WXYZ quaternions, RGB colors, and opacities.
+For Deform360 annotations, positions/scales are metres and covariances are m²;
+units in external compatible files are not inferred or converted. Gaussian PLY
+fields use `scale_0..2` as log standard deviations, `rot_0..3` as WXYZ, `opacity`
+as a logit, and `f_dc_0..2` as degree-zero spherical harmonics. Decoded SH colors
+are preserved without clipping; byte-style direct RGB fields are normalized by
+255. Pass `clip_colors=True` only for display-oriented `[0,1]` color.
+
+### Robot/gripper annotations
+
+The safe state format is `episode_XXXX/robot/robot.npz`, a versioned, pickle-free
+archive loaded with `load_robot_state()`. Time index `t` is the zero-based aligned
+episode frame. Monomanual shapes are `actions (T,5,3)`, `T_worlds (T,4,4)`, and
+`openings (T,)`; bimanual shapes are `(T,2,5,3)`, `(T,2,4,4)`, and `(T,2)`.
+Pass the episode length as `expected_num_frames` when loading to check
+correspondence.
+
+`T_worlds` maps each end-effector frame into the annotation world frame;
+translations and openings are metres. `actions` is an absolute pose/opening
+encoding, not a delta command: row 0 is translation, rows 1–3 are the rotation
+matrix, and row 4 is `[opening_m,0,0]`. Legacy `robot.npy` is a pickled dictionary
+and is refused by default. Only for a trusted file, convert it once with
+`convert_legacy_robot_state(source, destination, trusted_legacy_pickle=True)`.
+
+## Data Conventions
+
+- RGB arrays are `(H,W,3)` `uint8` in RGB order.
+- Intrinsics use `K = [[fx,0,cx],[0,fy,cy],[0,0,1]]`.
+- Extrinsics are **camera-to-world** (`c2w`); use `w2c = inv(c2w)` for projection.
+- Camera coordinates follow OpenCV: +x right, +y down, +z forward.
+- Distortion order is `[k1,k2,p1,p2]`; rectified outputs have zero distortion.
+- Depth is metric camera-z depth. HDF5 depth is uint16 millimetres with zero invalid.
+- Timestamps are Unix microseconds. Text rows are `frame_<timestamp>_<index>`;
+  tactile rows may include a trailing `512` payload-size field.
+- Tactile arrays are `(T,16,32)` float32 unitless responses.
+
+Every per-stream `alignment.json` uses schema `deform360.alignment/v1` and records
+the target timestamp, selected source record/frame/timestamp, signed delta in
+microseconds, tolerance status, acceptance decision, and summary statistics.
+
+## Repository Layout
+
+```text
+deform360/
+├── deform360/
+│   ├── annotations.py       # mask/depth/velocity/visibility contracts + HDF5
+│   ├── calibration.py       # shipped camera calibration
+│   ├── cli.py               # installed independent dataset-stage commands
+│   ├── dataset.py           # synchronized multiview RGB loader
+│   ├── geometry.py          # metric RGB-D projection and fusion
+│   ├── layout.py            # episode/stream discovery and exact file pairing
+│   ├── reconstruction.py    # read-only SPLAT/PLY annotations
+│   ├── robot.py             # configurable ArUco and rigid-pose utilities
+│   ├── tactile.py           # tactile decoding, normalization, alignment, loading
+│   ├── timestamps.py        # validated matching + alignment manifests
+│   ├── tracking.py          # model-independent track transforms/fusion
+│   ├── undistort.py         # camera rectification and alignment
+│   └── processing/          # model-backed annotation stages ([processing] extra)
+├── scripts/
+│   ├── download_data.py
+│   ├── undistort.py
+│   └── process_tactile.py
+├── examples/
+└── tests/
+```
+
+## Release Scope
+
+Released dataset code:
+
+- [x] Hugging Face dataset downloader
+- [x] Calibration, timestamp parsing, and auditable synchronization
+- [x] Camera undistortion and rectification
+- [x] Synchronized multiview and tactile dataloaders
+- [x] Mask, metric-depth, velocity, and visibility array contracts
+- [x] Model-independent point sampling, lifting, and velocity fusion
+- [x] RGB-D point-cloud projection, fusion, and voxel selection
+- [x] Read-only SPLAT/PLY reconstruction annotation loading
+- [x] Validated robot-state I/O and configurable ArUco pose processing
+- [x] Tactile decoding, normalization, temporal alignment, and manifests
+- [x] SAM3 mask annotation stage (`deform360-annotate masks`)
+- [x] ArUco robot-pose annotation stage (`deform360-annotate robot`)
+- [x] URDF gripper-mask rendering stage (`deform360-annotate gripper-masks`)
+- [x] Per-frame Splatfacto reconstruction stage (`deform360-annotate reconstruct`)
+- [x] Rendered metric-depth stage (`deform360-annotate depth`)
+- [x] CoTracker dense-velocity tracking stage (`deform360-annotate tracking`)
+- [x] Cleaned point-cloud stage (`deform360-annotate pcd`)
+- [x] PhysTwin control-point stage (`deform360-annotate control-points`)
+
+Each public script is intentionally an independent dataset stage.
+
+## Acknowledgments
+
+- Data was captured in the [BRICS](https://ivl.cs.brown.edu/research/diva) multi-view system at Brown University.
+- The bimanual tactile grippers are based on [UMI](https://umi-gripper.github.io/) and [FlexiTac](https://flexitac.github.io/).
+- Our research builds on work including 4D Gaussian Splatting, CoTracker, SAM, and GroundingDINO.
+
+This work was supported by the Office of Naval Research (ONR) under REPRISM
+MURI N000142412603, ONR grant N00014-22-1-2592, and ONR DURIP grant
+N00014-23-1-2804. This work was also partially supported by NSF Award #2409661,
+Samsung Research America, an Amazon Research Award (Fall 2024), and the
+Robotics and AI Institute. Hongyu Li was partially funded by Brown University's
+Research Mobility Fellowship. Wanjia Fu was partially funded by Brown
+University's Randy Pausch Undergraduate Research Fellowship. This article
+solely reflects the opinions and conclusions of its authors and should not be
+interpreted as necessarily representing the official policies, either expressed
+or implied, of the sponsors.
+
+## Citation
+
+If you find Deform360 useful, please cite:
+
+```bibtex
+@inproceedings{li2026deform360,
+  title     = {Deform360: A Massive Multi-view Visuotactile Dataset for Deformable World Models},
+  author    = {Li, Hongyu and Fu, Wanjia and Cong, Xiaoyan and Li, Zekun and Huang, Binghao and Jiang, Hanxiao and He, Xintong and Liang, Yiqing and Fu, Rao and Lu, Tao and Sridhar, Srinath and Smith, Kevin A. and Konidaris, George and Li, Yunzhu},
+  booktitle = {European Conference on Computer Vision (ECCV)},
+  year      = {2026}
+}
+```
+
+## License
+
+Released under the MIT License. See [LICENSE](LICENSE).

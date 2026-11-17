@@ -1,0 +1,145 @@
+{
+  "phase": "R1",
+  "max_per_gpu": 3,
+  "gpus": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "jobs": [
+    {
+      "id": "r1_B_seed17",
+      "config": "configs/r1/r1_B_seed17.json",
+      "group": "B",
+      "seed": 17,
+      "kind": "train"
+    },
+    {
+      "id": "r1_C_seed17",
+      "config": "configs/r1/r1_C_seed17.json",
+      "group": "C",
+      "seed": 17,
+      "kind": "train"
+    },
+    {
+      "id": "r1_D_seed17",
+      "config": "configs/r1/r1_D_seed17.json",
+      "group": "D",
+      "seed": 17,
+      "kind": "train"
+    },
+    {
+      "id": "r1_Bh_seed17",
+      "config": "configs/r1/r1_Bh_seed17.json",
+      "group": "Bh",
+      "seed": 17,
+      "kind": "train"
+    },
+    {
+      "id": "r1_Ch_seed17",
+      "config": "configs/r1/r1_Ch_seed17.json",
+      "group": "Ch",
+      "seed": 17,
+      "kind": "train"
+    },
+    {
+      "id": "r1_Dh_seed17",
+      "config": "configs/r1/r1_Dh_seed17.json",
+      "group": "Dh",
+      "seed": 17,
+      "kind": "train"
+    },
+    {
+      "id": "r1_B_seed29",
+      "config": "configs/r1/r1_B_seed29.json",
+      "group": "B",
+      "seed": 29,
+      "kind": "train"
+    },
+    {
+      "id": "r1_C_seed29",
+      "config": "configs/r1/r1_C_seed29.json",
+      "group": "C",
+      "seed": 29,
+      "kind": "train"
+    },
+    {
+      "id": "r1_D_seed29",
+      "config": "configs/r1/r1_D_seed29.json",
+      "group": "D",
+      "seed": 29,
+      "kind": "train"
+    },
+    {
+      "id": "r1_Bh_seed29",
+      "config": "configs/r1/r1_Bh_seed29.json",
+      "group": "Bh",
+      "seed": 29,
+      "kind": "train"
+    },
+    {
+      "id": "r1_Ch_seed29",
+      "config": "configs/r1/r1_Ch_seed29.json",
+      "group": "Ch",
+      "seed": 29,
+      "kind": "train"
+    },
+    {
+      "id": "r1_Dh_seed29",
+      "config": "configs/r1/r1_Dh_seed29.json",
+      "group": "Dh",
+      "seed": 29,
+      "kind": "train"
+    },
+    {
+      "id": "r1_B_seed43",
+      "config": "configs/r1/r1_B_seed43.json",
+      "group": "B",
+      "seed": 43,
+      "kind": "train"
+    },
+    {
+      "id": "r1_C_seed43",
+      "config": "configs/r1/r1_C_seed43.json",
+      "group": "C",
+      "seed": 43,
+      "kind": "train"
+    },
+    {
+      "id": "r1_D_seed43",
+      "config": "configs/r1/r1_D_seed43.json",
+      "group": "D",
+      "seed": 43,
+      "kind": "train"
+    },
+    {
+      "id": "r1_Bh_seed43",
+      "config": "configs/r1/r1_Bh_seed43.json",
+      "group": "Bh",
+      "seed": 43,
+      "kind": "train"
+    },
+    {
+      "id": "r1_Ch_seed43",
+      "config": "configs/r1/r1_Ch_seed43.json",
+      "group": "Ch",
+      "seed": 43,
+      "kind": "train"
+    },
+    {
+      "id": "r1_Dh_seed43",
+      "config": "configs/r1/r1_Dh_seed43.json",
+      "group": "Dh",
+      "seed": 43,
+      "kind": "train"
+    },
+    {
+      "id": "r1_Cl_seed17",
+      "config": "configs/r1/r1_Cl_seed17.json",
+      "group": "Cl",
+      "seed": 17,
+      "kind": "train"
+    }
+  ]
+}

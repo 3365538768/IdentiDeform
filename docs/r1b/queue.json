@@ -1,0 +1,75 @@
+{
+  "phase": "R1b",
+  "max_per_gpu": 3,
+  "gpus": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "jobs": [
+    {
+      "id": "r1b_B_seed17",
+      "config": "configs/r1b/r1b_B_seed17.json",
+      "group": "B",
+      "seed": 17,
+      "kind": "train"
+    },
+    {
+      "id": "r1b_C_seed17",
+      "config": "configs/r1b/r1b_C_seed17.json",
+      "group": "C",
+      "seed": 17,
+      "kind": "train"
+    },
+    {
+      "id": "r1b_D_seed17",
+      "config": "configs/r1b/r1b_D_seed17.json",
+      "group": "D",
+      "seed": 17,
+      "kind": "train"
+    },
+    {
+      "id": "r1b_B_seed29",
+      "config": "configs/r1b/r1b_B_seed29.json",
+      "group": "B",
+      "seed": 29,
+      "kind": "train"
+    },
+    {
+      "id": "r1b_C_seed29",
+      "config": "configs/r1b/r1b_C_seed29.json",
+      "group": "C",
+      "seed": 29,
+      "kind": "train"
+    },
+    {
+      "id": "r1b_D_seed29",
+      "config": "configs/r1b/r1b_D_seed29.json",
+      "group": "D",
+      "seed": 29,
+      "kind": "train"
+    },
+    {
+      "id": "r1b_B_seed43",
+      "config": "configs/r1b/r1b_B_seed43.json",
+      "group": "B",
+      "seed": 43,
+      "kind": "train"
+    },
+    {
+      "id": "r1b_C_seed43",
+      "config": "configs/r1b/r1b_C_seed43.json",
+      "group": "C",
+      "seed": 43,
+      "kind": "train"
+    },
+    {
+      "id": "r1b_D_seed43",
+      "config": "configs/r1b/r1b_D_seed43.json",
+      "group": "D",
+      "seed": 43,
+      "kind": "train"
+    }
+  ]
+}

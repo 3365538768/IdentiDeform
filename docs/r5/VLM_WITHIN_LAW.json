@@ -1,0 +1,95 @@
+[
+  {
+    "predictions": "runs/r5_vlm_qwen3vl8b_val",
+    "samples": 399,
+    "law_accuracy": 0.3007518796992481,
+    "parameters": {
+      "E": {
+        "count": 399,
+        "pearson": -0.046780657377998414,
+        "model_mae": 1.779221813535822,
+        "constant_mae": 0.8555080157010827,
+        "law_mean_oracle_mae": 0.2683333566015528,
+        "within_law": {
+          "0": {
+            "count": 121,
+            "pearson": -0.03479508246082816,
+            "spread_ratio": 3.06416206377243
+          },
+          "1": {
+            "count": 131,
+            "pearson": 0.18320320757878145,
+            "spread_ratio": 1.2336692527832938
+          },
+          "2": {
+            "count": 147,
+            "pearson": -0.13036983222544365,
+            "spread_ratio": 2.2844875325535177
+          }
+        }
+      },
+      "nu": {
+        "count": 399,
+        "pearson": 0.11878078293862077,
+        "model_mae": 2.057005013509176,
+        "constant_mae": 0.859507453757506,
+        "law_mean_oracle_mae": 0.4673692639430572,
+        "within_law": {
+          "0": {
+            "count": 121,
+            "pearson": 0.0693888045545172,
+            "spread_ratio": 1.4520169539599308
+          },
+          "1": {
+            "count": 131,
+            "pearson": -0.02330862054160523,
+            "spread_ratio": 0.8412843748443793
+          },
+          "2": {
+            "count": 147,
+            "pearson": 0.10598687496118872,
+            "spread_ratio": 1.4039119603355004
+          }
+        }
+      },
+      "rho": {
+        "count": 399,
+        "pearson": -0.052479217113706046,
+        "model_mae": 5.6556854377632595,
+        "constant_mae": 0.8396026489046017,
+        "law_mean_oracle_mae": 0.8407859119949674,
+        "within_law": {
+          "0": {
+            "count": 121,
+            "pearson": -0.10458982134284914,
+            "spread_ratio": 1.0699550144153076
+          },
+          "1": {
+            "count": 131,
+            "pearson": -0.032206048333996366,
+            "spread_ratio": 2.454282294634259
+          },
+          "2": {
+            "count": 147,
+            "pearson": -0.011470323333558317,
+            "spread_ratio": 1.0343762428860412
+          }
+        }
+      },
+      "sigma_y": {
+        "count": 131,
+        "pearson": 0.13673286635469634,
+        "model_mae": 0.8352341595241792,
+        "constant_mae": 0.8402962810391235,
+        "law_mean_oracle_mae": 0.8402962810391235,
+        "within_law": {
+          "1": {
+            "count": 131,
+            "pearson": 0.13673286635469634,
+            "spread_ratio": 0.04989823512806445
+          }
+        }
+      }
+    }
+  }
+]

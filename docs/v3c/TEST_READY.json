@@ -1,0 +1,455 @@
+{
+ "written_utc": "2026-11-13T14:57:39Z",
+ "status": "prepared; NO test metric has been computed. Run each command exactly once (eval_test.py refuses existing outputs).",
+ "frozen_protocol": {
+  "path": "docs/v3c/TEST_PROTOCOL.json",
+  "sha256": "ed25efa55cadb049a37784799c0ababa2400e87247f7516285fd1744bf4f53ba"
+ },
+ "deviation_from_protocol_text": "TEST_PROTOCOL lists `fieldbridge.cli evaluate --split test`. That path cannot be used unchanged: stats embed manifest_sha256 and the training manifest has no test rows. scripts/v3c/eval_test.py is cli.evaluate with only the manifest/stats/cache re-pointed, guarded so the codec is provably identical (manifest is a byte-extension; stats equal except the hash). Methods, checkpoints and selection rule are unchanged.",
+ "test_data": {
+  "dirs": 300,
+  "result_exit0": 300,
+  "valid_packs": 300,
+  "corrupt_quarantined": [],
+  "rgb_shape": [
+   "[3, 128, 3, 224, 224]"
+  ],
+  "objects": 10,
+  "object_overlap_with_train_val": [],
+  "law_counts": {
+   "0": 100,
+   "1": 100,
+   "2": 100
+  }
+ },
+ "manifest": {
+  "base_manifest": "data/manifests/v2main.jsonl",
+  "base_sha256": "d21689990d3fd29b0224cbb165f249b4e35418673002d8abecdabfa10d30b2c5",
+  "manifest": "data/manifests/v2main_withtest.jsonl",
+  "sha256": "d6776e5a4cf00ff6fa74bba96e5e9d4f44b7df7a42e943d877a09d9d5814dd7d",
+  "counts": {
+   "train": 1955,
+   "val": 283,
+   "test": 300
+  },
+  ".stats.json": {
+   "path": "data/manifests/v2main_withtest.stats.json",
+   "equal_to_frozen_except_manifest_sha256": true
+  },
+  ".specific.stats.json": {
+   "path": "data/manifests/v2main_withtest.specific.stats.json",
+   "equal_to_frozen_except_manifest_sha256": true
+  },
+  "test_objects": 10,
+  "test_objects_overlapping_train_val": [],
+  "test_law_counts": {
+   "0": 100,
+   "1": 100,
+   "2": 100
+  },
+  "v2main.jsonl_sha256_now": "d21689990d3fd29b0224cbb165f249b4e35418673002d8abecdabfa10d30b2c5",
+  "v2main_withtest.stats.json_sha256": "a192115d097c1fcc6e0717a15a37533b3a1c842742419c44332a104adc316426",
+  "v2main_withtest.specific.stats.json_sha256": "52a0faaa55e431199f0e84fa450372b476cc08e32c6d85a879961a839858113e"
+ },
+ "feature_caches": {
+  "vjepa2_vitl": {
+   "dir": "data/prepared/v2main_test_vjl",
+   "samples": 300,
+   "index_sha256": "194d20412dec61d8789498e0e9e649e8094cee451f79da0abbfee458b1d08df6",
+   "manifest_sha256": "d6776e5a4cf00ff6fa74bba96e5e9d4f44b7df7a42e943d877a09d9d5814dd7d",
+   "backbone_checkpoint_sha256": "25466aef85727d16546c6cf8c99f12fcfad9cbca8225d45f23685e2e025b786b",
+   "frames": 32,
+   "bytes": 17252812200
+  },
+  "dinov3_vitl16": {
+   "dir": "data/prepared/v2main_test_dinov3l16",
+   "samples": 300,
+   "index_sha256": "0c5acc9d0fab74d09631d926f4ba1ad907d7a0ade2dcda801281506712b8296e",
+   "manifest_sha256": "d6776e5a4cf00ff6fa74bba96e5e9d4f44b7df7a42e943d877a09d9d5814dd7d",
+   "backbone_checkpoint_sha256": "1d9dfa114d3205df0d9e9450786596f6929dffafe6d0931bcb690e6bad1831fc",
+   "frames": 16,
+   "bytes": 13143148200
+  }
+ },
+ "scripts_sha256": {
+  "scripts/v3c/eval_test.py": "589bea3ed6d11f6886333d6ddc22ee0102c40a259ceb6c56f48ce1d1a670140d",
+  "scripts/v3c/simple_baselines_test.py": "5d4a22d7a0b23e206d3ac8ab93683311fb8ad38c9f67fb54f6193180b7d179cc",
+  "scripts/v3c/simple_baselines.py": "b30180c03b2da0c5d7185e0e5a1e511249e1b28bec0211b26f22d79923cf3593",
+  "scripts/v3c/vlm_v2main.py": "977ce1471da9c6ee7bc93066d79420580c07948b10639273d09399b6d23e8fde",
+  "scripts/v3c/test_report.py": "409e37b609293f2270a5135727ab60727d6c871dcb42c8b12f738ca2cddb1805",
+  "scripts/v3c/baselines_report.py": "58da4219f1848af4992d4f0bdfe1e01afcf4953ecacf593c00fe4ea581911075",
+  "scripts/v3c/build_test_manifest.py": "c3f6ecbd8ec86dec0e6f066ddbfef4dea2d814755fd73484438bbf20a9764b3a",
+  "scripts/v3c/check_test_packs.py": "84f6eaf19421f3cec4826c9dbdedcdeb15dfc3207b4af7dabb989f23be7d7290",
+  "src/fieldbridge/evaluation.py": "1a59fef3e6b3619d14c9b26188ec3c4eeb3d032d20ddba7d8d3486b27fe21822",
+  "src/fieldbridge/model.py": "191d23faba09a0faff69dfd3daffa2e6750d243315b0a9c536074954e6db9083"
+ },
+ "run_order": [
+  "all 18 trained-run commands (GPU, ~2 min each; source scripts/r1_env.sh first)",
+  "simple_baselines_test.py (CPU)",
+  "VLM 4 shards (GPU)",
+  ".venv/bin/python scripts/v3c/test_report.py --output docs/v3c/BASELINES_TEST.json"
+ ],
+ "methods": {
+  "vjepa2_32f_B": {
+   "selection": "best_material.pt = epoch with best val standardized MAE (frozen)",
+   "feature_cache": "data/prepared/v2main_test_vjl",
+   "runs": [
+    {
+     "seed": 17,
+     "config": "configs/v2main/v2main_B_seed17.json",
+     "config_sha256": "99e189cae8208ff6b44dc58ae7b03aff6aba73e751c7e246278d4af537c4fcd7",
+     "checkpoint": "runs/v2main_B_seed17/best_material.pt",
+     "checkpoint_sha256": "1fc6ef2f31cec99d0a505d185328d8ff7c74a525cb768a4eacaa8d7ab1a941bf",
+     "guard_check_passed": true,
+     "command": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v2main/v2main_B_seed17.json --checkpoint runs/v2main_B_seed17/best_material.pt --prepared-dir data/prepared/v2main_test_vjl --output runs/v2main_B_seed17/test_once"
+    },
+    {
+     "seed": 29,
+     "config": "configs/v2main/v2main_B_seed29.json",
+     "config_sha256": "5bb6e378eabe34c611dce48a7fdaf9310270c6f15270dcf421960db8a5d75a23",
+     "checkpoint": "runs/v2main_B_seed29/best_material.pt",
+     "checkpoint_sha256": "cbc35f95728b7c0600e9738c1c5d0770df4609a01a3c9745d40e0617db271a6e",
+     "guard_check_passed": true,
+     "command": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v2main/v2main_B_seed29.json --checkpoint runs/v2main_B_seed29/best_material.pt --prepared-dir data/prepared/v2main_test_vjl --output runs/v2main_B_seed29/test_once"
+    },
+    {
+     "seed": 43,
+     "config": "configs/v2main/v2main_B_seed43.json",
+     "config_sha256": "20688a83c9ae303a982d0c0bd9ed2d751e8bdb9b615600eeab5bd79e95d6d9b6",
+     "checkpoint": "runs/v2main_B_seed43/best_material.pt",
+     "checkpoint_sha256": "a1d0e52bcf5ef63843b095d4ef98913010c2c4bd13d5cc92f140582ed0fd78ee",
+     "guard_check_passed": true,
+     "command": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v2main/v2main_B_seed43.json --checkpoint runs/v2main_B_seed43/best_material.pt --prepared-dir data/prepared/v2main_test_vjl --output runs/v2main_B_seed43/test_once"
+    }
+   ]
+  },
+  "vjepa2_32f_C": {
+   "selection": "best_material.pt = epoch with best val standardized MAE (frozen)",
+   "feature_cache": "data/prepared/v2main_test_vjl",
+   "runs": [
+    {
+     "seed": 17,
+     "config": "configs/v2main/v2main_C_seed17.json",
+     "config_sha256": "53971f8e2927f8abb66743e4fb949a632cef9fdcb8e1a670c7c9925951560301",
+     "checkpoint": "runs/v2main_C_seed17/best_material.pt",
+     "checkpoint_sha256": "8ed06e17df40b5df8bb13f0d6d019e8cd4eca5cd316c9c1c700d583f3c2c29ba",
+     "guard_check_passed": true,
+     "command": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v2main/v2main_C_seed17.json --checkpoint runs/v2main_C_seed17/best_material.pt --prepared-dir data/prepared/v2main_test_vjl --output runs/v2main_C_seed17/test_once"
+    },
+    {
+     "seed": 29,
+     "config": "configs/v2main/v2main_C_seed29.json",
+     "config_sha256": "b6ebc886a3808b69aa9c1f151cad7346522763b0aa5709e2fe5e8315078ebfe2",
+     "checkpoint": "runs/v2main_C_seed29/best_material.pt",
+     "checkpoint_sha256": "79d4fa139390d893042ac8ece4ad6379a597735378e92a1dc01ed20c4f57db1a",
+     "guard_check_passed": true,
+     "command": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v2main/v2main_C_seed29.json --checkpoint runs/v2main_C_seed29/best_material.pt --prepared-dir data/prepared/v2main_test_vjl --output runs/v2main_C_seed29/test_once"
+    },
+    {
+     "seed": 43,
+     "config": "configs/v2main/v2main_C_seed43.json",
+     "config_sha256": "27acce36e9f5ff0c55b54874d13c438dbfcc0021e2b3ef315ea37121b4e37ee8",
+     "checkpoint": "runs/v2main_C_seed43/best_material.pt",
+     "checkpoint_sha256": "052369b8e444978600653f5a06457410b2a1f5af64f200ddb163c1e46d411b1a",
+     "guard_check_passed": true,
+     "command": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v2main/v2main_C_seed43.json --checkpoint runs/v2main_C_seed43/best_material.pt --prepared-dir data/prepared/v2main_test_vjl --output runs/v2main_C_seed43/test_once"
+    }
+   ]
+  },
+  "vjepa2_32f_D": {
+   "selection": "best_material.pt = epoch with best val standardized MAE (frozen)",
+   "feature_cache": "data/prepared/v2main_test_vjl",
+   "runs": [
+    {
+     "seed": 17,
+     "config": "configs/v2main/v2main_D_seed17.json",
+     "config_sha256": "1dbff0e5c2e38554e34c4e74585b597ccccd37c12e5b27b0a2f3f5f38e91986e",
+     "checkpoint": "runs/v2main_D_seed17/best_material.pt",
+     "checkpoint_sha256": "efd818716e3b13c84398f9d14c9f3c3b6dac693c08bbab2fd6a35052127a04bd",
+     "guard_check_passed": true,
+     "command": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v2main/v2main_D_seed17.json --checkpoint runs/v2main_D_seed17/best_material.pt --prepared-dir data/prepared/v2main_test_vjl --output runs/v2main_D_seed17/test_once"
+    },
+    {
+     "seed": 29,
+     "config": "configs/v2main/v2main_D_seed29.json",
+     "config_sha256": "5c814ffc09cf2c91af3e90040bf8fbac862ddac87c774a1746c84c4bd8b932fb",
+     "checkpoint": "runs/v2main_D_seed29/best_material.pt",
+     "checkpoint_sha256": "e85e580b30c96772e55037d397efe4ff3b67cee837bd373b1ca97fde08687193",
+     "guard_check_passed": true,
+     "command": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v2main/v2main_D_seed29.json --checkpoint runs/v2main_D_seed29/best_material.pt --prepared-dir data/prepared/v2main_test_vjl --output runs/v2main_D_seed29/test_once"
+    },
+    {
+     "seed": 43,
+     "config": "configs/v2main/v2main_D_seed43.json",
+     "config_sha256": "997c337c1134eb8c512c4ec1038d00d424962372193428c50fc64b9f940f954b",
+     "checkpoint": "runs/v2main_D_seed43/best_material.pt",
+     "checkpoint_sha256": "7b0fa0c2faada421486e967efb8ea34f9d15912a4d320c756c3d6ede6914664a",
+     "guard_check_passed": true,
+     "command": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v2main/v2main_D_seed43.json --checkpoint runs/v2main_D_seed43/best_material.pt --prepared-dir data/prepared/v2main_test_vjl --output runs/v2main_D_seed43/test_once"
+    }
+   ]
+  },
+  "dinov3_16f_B": {
+   "selection": "best_material.pt = epoch with best val standardized MAE (frozen)",
+   "feature_cache": "data/prepared/v2main_test_dinov3l16",
+   "runs": [
+    {
+     "seed": 17,
+     "config": "configs/v3c/v3c_dino_B_seed17.json",
+     "config_sha256": "1964fa6df3a81e1c5069950e9682aff5df94902e3338607c2dc755d3d8bf00fe",
+     "checkpoint": "runs/v3c_dino_B_seed17/best_material.pt",
+     "checkpoint_sha256": "b589d5fa3248a449e78e28b1ca4c009b8af8239631943ee071c7f4d007e878d9",
+     "guard_check_passed": true,
+     "command": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v3c/v3c_dino_B_seed17.json --checkpoint runs/v3c_dino_B_seed17/best_material.pt --prepared-dir data/prepared/v2main_test_dinov3l16 --output runs/v3c_dino_B_seed17/test_once"
+    },
+    {
+     "seed": 29,
+     "config": "configs/v3c/v3c_dino_B_seed29.json",
+     "config_sha256": "784e5b00084a99b124ca03b71dfec45324a7e8fdd0817c6733f4ea42227f6932",
+     "checkpoint": "runs/v3c_dino_B_seed29/best_material.pt",
+     "checkpoint_sha256": "627487a09c91af960cad23f3344db1941cc9cf86944e2dd7738340fa221017c3",
+     "guard_check_passed": true,
+     "command": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v3c/v3c_dino_B_seed29.json --checkpoint runs/v3c_dino_B_seed29/best_material.pt --prepared-dir data/prepared/v2main_test_dinov3l16 --output runs/v3c_dino_B_seed29/test_once"
+    },
+    {
+     "seed": 43,
+     "config": "configs/v3c/v3c_dino_B_seed43.json",
+     "config_sha256": "2bb0939a1b0c823f76dc54aac92274623b7bd80743e6eed035386f93fca6a0a9",
+     "checkpoint": "runs/v3c_dino_B_seed43/best_material.pt",
+     "checkpoint_sha256": "ea694ce9316e553e0710c85553a9129a1247eb3b2427b35ce5b85331d4842df1",
+     "guard_check_passed": true,
+     "command": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v3c/v3c_dino_B_seed43.json --checkpoint runs/v3c_dino_B_seed43/best_material.pt --prepared-dir data/prepared/v2main_test_dinov3l16 --output runs/v3c_dino_B_seed43/test_once"
+    }
+   ]
+  },
+  "dinov3_16f_C": {
+   "selection": "best_material.pt = epoch with best val standardized MAE (frozen)",
+   "feature_cache": "data/prepared/v2main_test_dinov3l16",
+   "runs": [
+    {
+     "seed": 17,
+     "config": "configs/v3c/v3c_dino_C_seed17.json",
+     "config_sha256": "7c6c8cbdff1af3e89b94261a690829ff909d998de971ece759cd5fe0052bb1a5",
+     "checkpoint": "runs/v3c_dino_C_seed17/best_material.pt",
+     "checkpoint_sha256": "83126ea3d7907c8675fb3fddd982f96d64cc49500bf4f0e8d3de370bb965ea90",
+     "guard_check_passed": true,
+     "command": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v3c/v3c_dino_C_seed17.json --checkpoint runs/v3c_dino_C_seed17/best_material.pt --prepared-dir data/prepared/v2main_test_dinov3l16 --output runs/v3c_dino_C_seed17/test_once"
+    },
+    {
+     "seed": 29,
+     "config": "configs/v3c/v3c_dino_C_seed29.json",
+     "config_sha256": "fe592376ffde6db90a0572c10c00f91920a9ba81a979ef8d0aad59f6b5f349df",
+     "checkpoint": "runs/v3c_dino_C_seed29/best_material.pt",
+     "checkpoint_sha256": "ee3baf22828bda7b6f76a7a209be1ab950f95ec6f1504cac6939fc6118441008",
+     "guard_check_passed": true,
+     "command": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v3c/v3c_dino_C_seed29.json --checkpoint runs/v3c_dino_C_seed29/best_material.pt --prepared-dir data/prepared/v2main_test_dinov3l16 --output runs/v3c_dino_C_seed29/test_once"
+    },
+    {
+     "seed": 43,
+     "config": "configs/v3c/v3c_dino_C_seed43.json",
+     "config_sha256": "119b1c39ac5b786a6936a1b5e5b6b836697d81a4583e022fbf967cca7ad5f8c9",
+     "checkpoint": "runs/v3c_dino_C_seed43/best_material.pt",
+     "checkpoint_sha256": "0cfaee3f65460bb92fc5f6a665c05e4c9154a1a0e859293012a8a99379dba487",
+     "guard_check_passed": true,
+     "command": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v3c/v3c_dino_C_seed43.json --checkpoint runs/v3c_dino_C_seed43/best_material.pt --prepared-dir data/prepared/v2main_test_dinov3l16 --output runs/v3c_dino_C_seed43/test_once"
+    }
+   ]
+  },
+  "dinov3_static_first_frame_B": {
+   "selection": "best_material.pt = epoch with best val standardized MAE (frozen)",
+   "feature_cache": "data/prepared/v2main_test_dinov3l16",
+   "runs": [
+    {
+     "seed": 17,
+     "config": "configs/v3c/v3c_dino_S_seed17.json",
+     "config_sha256": "98c52e7beb477df2f66e3245310f086e45a6e0e96a3bde34ab60414ec13275f7",
+     "checkpoint": "runs/v3c_dino_S_seed17/best_material.pt",
+     "checkpoint_sha256": "f4eb3ba3fd9d79a84924141e0f7158d5a2ad4244abfdb3abda30fe971265b438",
+     "guard_check_passed": true,
+     "command": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v3c/v3c_dino_S_seed17.json --checkpoint runs/v3c_dino_S_seed17/best_material.pt --prepared-dir data/prepared/v2main_test_dinov3l16 --output runs/v3c_dino_S_seed17/test_once"
+    },
+    {
+     "seed": 29,
+     "config": "configs/v3c/v3c_dino_S_seed29.json",
+     "config_sha256": "3b8318a6841a07ff0455e5eef7039c17e7270d68b1d9272c037291c18fa23443",
+     "checkpoint": "runs/v3c_dino_S_seed29/best_material.pt",
+     "checkpoint_sha256": "d9725ac4938e351d084ce9a9a89f41b30c8b42e88c9af238b6240f3f0d2421fe",
+     "guard_check_passed": true,
+     "command": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v3c/v3c_dino_S_seed29.json --checkpoint runs/v3c_dino_S_seed29/best_material.pt --prepared-dir data/prepared/v2main_test_dinov3l16 --output runs/v3c_dino_S_seed29/test_once"
+    },
+    {
+     "seed": 43,
+     "config": "configs/v3c/v3c_dino_S_seed43.json",
+     "config_sha256": "b986766dfed345bd325e25490eb724d2ac8dc07903b238552ac350851531db9d",
+     "checkpoint": "runs/v3c_dino_S_seed43/best_material.pt",
+     "checkpoint_sha256": "25ac4a11ea07ea097305bcb217a3b7cd7d9050feffa135b51db0b8cfefd53348",
+     "guard_check_passed": true,
+     "command": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v3c/v3c_dino_S_seed43.json --checkpoint runs/v3c_dino_S_seed43/best_material.pt --prepared-dir data/prepared/v2main_test_dinov3l16 --output runs/v3c_dino_S_seed43/test_once"
+    }
+   ]
+  },
+  "constant_and_law_mean_gt_privileged": {
+   "command": ".venv/bin/python scripts/v3c/simple_baselines_test.py",
+   "outputs": [
+    "runs/v3c_const_test",
+    "runs/v3c_lawmean_gt_test"
+   ],
+   "gpu": false
+  },
+  "qwen3vl8b_zeroshot": {
+   "gpu": "~26 GB each, ~5 min per shard",
+   "commands": [
+    ".venv/bin/python scripts/v3c/vlm_v2main.py --split test --manifest data/manifests/v2main_withtest.jsonl --shard 0 --num-shards 4 --output runs/v3c_vlm_qwen3vl8b_test",
+    ".venv/bin/python scripts/v3c/vlm_v2main.py --split test --manifest data/manifests/v2main_withtest.jsonl --shard 1 --num-shards 4 --output runs/v3c_vlm_qwen3vl8b_test",
+    ".venv/bin/python scripts/v3c/vlm_v2main.py --split test --manifest data/manifests/v2main_withtest.jsonl --shard 2 --num-shards 4 --output runs/v3c_vlm_qwen3vl8b_test",
+    ".venv/bin/python scripts/v3c/vlm_v2main.py --split test --manifest data/manifests/v2main_withtest.jsonl --shard 3 --num-shards 4 --output runs/v3c_vlm_qwen3vl8b_test"
+   ]
+  }
+ },
+ "guard_checks": {
+  "vjepa2_32f_B/seed17": {
+   "check_only": true,
+   "test_samples": 300,
+   "config": "configs/v2main/v2main_B_seed17.json",
+   "checkpoint": "runs/v2main_B_seed17/best_material.pt",
+   "checkpoint_epoch": 7,
+   "best_material": 0.6471366213936226
+  },
+  "vjepa2_32f_B/seed29": {
+   "check_only": true,
+   "test_samples": 300,
+   "config": "configs/v2main/v2main_B_seed29.json",
+   "checkpoint": "runs/v2main_B_seed29/best_material.pt",
+   "checkpoint_epoch": 10,
+   "best_material": 0.6508602180602608
+  },
+  "vjepa2_32f_B/seed43": {
+   "check_only": true,
+   "test_samples": 300,
+   "config": "configs/v2main/v2main_B_seed43.json",
+   "checkpoint": "runs/v2main_B_seed43/best_material.pt",
+   "checkpoint_epoch": 11,
+   "best_material": 0.6380047198353096
+  },
+  "vjepa2_32f_C/seed17": {
+   "check_only": true,
+   "test_samples": 300,
+   "config": "configs/v2main/v2main_C_seed17.json",
+   "checkpoint": "runs/v2main_C_seed17/best_material.pt",
+   "checkpoint_epoch": 16,
+   "best_material": 0.6382580841512467
+  },
+  "vjepa2_32f_C/seed29": {
+   "check_only": true,
+   "test_samples": 300,
+   "config": "configs/v2main/v2main_C_seed29.json",
+   "checkpoint": "runs/v2main_C_seed29/best_material.pt",
+   "checkpoint_epoch": 7,
+   "best_material": 0.6549673362371925
+  },
+  "vjepa2_32f_C/seed43": {
+   "check_only": true,
+   "test_samples": 300,
+   "config": "configs/v2main/v2main_C_seed43.json",
+   "checkpoint": "runs/v2main_C_seed43/best_material.pt",
+   "checkpoint_epoch": 11,
+   "best_material": 0.6389870517942611
+  },
+  "vjepa2_32f_D/seed17": {
+   "check_only": true,
+   "test_samples": 300,
+   "config": "configs/v2main/v2main_D_seed17.json",
+   "checkpoint": "runs/v2main_D_seed17/best_material.pt",
+   "checkpoint_epoch": 11,
+   "best_material": 0.633586159414581
+  },
+  "vjepa2_32f_D/seed29": {
+   "check_only": true,
+   "test_samples": 300,
+   "config": "configs/v2main/v2main_D_seed29.json",
+   "checkpoint": "runs/v2main_D_seed29/best_material.pt",
+   "checkpoint_epoch": 17,
+   "best_material": 0.6402133987713976
+  },
+  "vjepa2_32f_D/seed43": {
+   "check_only": true,
+   "test_samples": 300,
+   "config": "configs/v2main/v2main_D_seed43.json",
+   "checkpoint": "runs/v2main_D_seed43/best_material.pt",
+   "checkpoint_epoch": 11,
+   "best_material": 0.6446565825681531
+  },
+  "dinov3_16f_B/seed17": {
+   "check_only": true,
+   "test_samples": 300,
+   "config": "configs/v3c/v3c_dino_B_seed17.json",
+   "checkpoint": "runs/v3c_dino_B_seed17/best_material.pt",
+   "checkpoint_epoch": 8,
+   "best_material": 0.6551102974111092
+  },
+  "dinov3_16f_B/seed29": {
+   "check_only": true,
+   "test_samples": 300,
+   "config": "configs/v3c/v3c_dino_B_seed29.json",
+   "checkpoint": "runs/v3c_dino_B_seed29/best_material.pt",
+   "checkpoint_epoch": 6,
+   "best_material": 0.6638104239035446
+  },
+  "dinov3_16f_B/seed43": {
+   "check_only": true,
+   "test_samples": 300,
+   "config": "configs/v3c/v3c_dino_B_seed43.json",
+   "checkpoint": "runs/v3c_dino_B_seed43/best_material.pt",
+   "checkpoint_epoch": 11,
+   "best_material": 0.6646734961079781
+  },
+  "dinov3_16f_C/seed17": {
+   "check_only": true,
+   "test_samples": 300,
+   "config": "configs/v3c/v3c_dino_C_seed17.json",
+   "checkpoint": "runs/v3c_dino_C_seed17/best_material.pt",
+   "checkpoint_epoch": 6,
+   "best_material": 0.6601521560775869
+  },
+  "dinov3_16f_C/seed29": {
+   "check_only": true,
+   "test_samples": 300,
+   "config": "configs/v3c/v3c_dino_C_seed29.json",
+   "checkpoint": "runs/v3c_dino_C_seed29/best_material.pt",
+   "checkpoint_epoch": 6,
+   "best_material": 0.6629294399838429
+  },
+  "dinov3_16f_C/seed43": {
+   "check_only": true,
+   "test_samples": 300,
+   "config": "configs/v3c/v3c_dino_C_seed43.json",
+   "checkpoint": "runs/v3c_dino_C_seed43/best_material.pt",
+   "checkpoint_epoch": 13,
+   "best_material": 0.665090149981368
+  },
+  "dinov3_static_first_frame_B/seed17": {
+   "check_only": true,
+   "test_samples": 300,
+   "config": "configs/v3c/v3c_dino_S_seed17.json",
+   "checkpoint": "runs/v3c_dino_S_seed17/best_material.pt",
+   "checkpoint_epoch": 5,
+   "best_material": 0.8570416801025551
+  },
+  "dinov3_static_first_frame_B/seed29": {
+   "check_only": true,
+   "test_samples": 300,
+   "config": "configs/v3c/v3c_dino_S_seed29.json",
+   "checkpoint": "runs/v3c_dino_S_seed29/best_material.pt",
+   "checkpoint_epoch": 3,
+   "best_material": 0.8572656059809857
+  },
+  "dinov3_static_first_frame_B/seed43": {
+   "check_only": true,
+   "test_samples": 300,
+   "config": "configs/v3c/v3c_dino_S_seed43.json",
+   "checkpoint": "runs/v3c_dino_S_seed43/best_material.pt",
+   "checkpoint_epoch": 7,
+   "best_material": 0.8562530326242699
+  }
+ }
+}

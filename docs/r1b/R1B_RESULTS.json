@@ -1,0 +1,316 @@
+{
+  "protocol": "r1b: best validation epoch per run; test split untouched",
+  "groups": {
+    "B": {
+      "seeds": [
+        17,
+        29,
+        43
+      ],
+      "val_mae": [
+        0.7015691913505957,
+        0.6968886025701703,
+        0.6985100066872895
+      ],
+      "mean": 0.6989892668693519,
+      "sd": 0.002376814164894667,
+      "law_accuracy": [
+        0.6516290726817042,
+        0.6290726817042607,
+        0.6215538847117794
+      ],
+      "within_law_r": {
+        "E": [
+          0.12470098338176948,
+          0.137575499562841,
+          0.11482300617532522
+        ],
+        "nu": [
+          -0.021018230174780942,
+          0.03888410857009001,
+          -0.0012956682328237833
+        ],
+        "rho": [
+          0.1998411789423523,
+          0.19384472329251232,
+          0.17833236970641156
+        ],
+        "sigma_y": [
+          0.3702536109563671,
+          0.4415509517563659,
+          0.39331057646704914
+        ]
+      }
+    },
+    "C": {
+      "seeds": [
+        17,
+        29,
+        43
+      ],
+      "val_mae": [
+        0.6721309970293713,
+        0.6763168477456206,
+        0.7101523278502813
+      ],
+      "mean": 0.6862000575417578,
+      "sd": 0.02084859170913266,
+      "law_accuracy": [
+        0.6842105263157895,
+        0.6365914786967418,
+        0.5914786967418546
+      ],
+      "within_law_r": {
+        "E": [
+          0.13319470302096445,
+          0.18440910524967236,
+          0.1273180461591285
+        ],
+        "nu": [
+          -0.016497803436121835,
+          0.003706952026504118,
+          -0.027124326423681632
+        ],
+        "rho": [
+          0.1542665088685112,
+          0.19595669237657773,
+          0.18571146057193563
+        ],
+        "sigma_y": [
+          0.4337499611192825,
+          0.3482274583673494,
+          0.4127529750752612
+        ]
+      }
+    },
+    "D": {
+      "seeds": [
+        17,
+        29,
+        43
+      ],
+      "val_mae": [
+        0.6730116919498069,
+        0.7029526074387591,
+        0.6883368367877764
+      ],
+      "mean": 0.6881003787254475,
+      "sd": 0.014971858247745141,
+      "law_accuracy": [
+        0.6591478696741855,
+        0.6215538847117794,
+        0.6365914786967418
+      ],
+      "within_law_r": {
+        "E": [
+          0.1653161405053041,
+          0.21804589215758344,
+          0.17844047068327565
+        ],
+        "nu": [
+          0.0004070965543368545,
+          -0.015554200853236827,
+          -0.048849586536715846
+        ],
+        "rho": [
+          0.21667464018831176,
+          0.23002954480392016,
+          0.21139943257180116
+        ],
+        "sigma_y": [
+          0.37564111629761054,
+          0.4126689479719719,
+          0.3469953523844468
+        ]
+      }
+    }
+  },
+  "pairs": [
+    {
+      "control": "C",
+      "candidate": "D",
+      "per_seed": [
+        {
+          "seed": 17,
+          "control": 0.6721309970293713,
+          "candidate": 0.6730116919498069,
+          "relative_improvement": -0.0013103024921154566,
+          "object_bootstrap": {
+            "objects": 10,
+            "mean_object_delta_B_minus_A": -0.01815146843462381,
+            "paired_bootstrap_95_ci": [
+              -0.0637811912664092,
+              0.015614869174773786
+            ],
+            "draws": 2000,
+            "seed": 17,
+            "negative_favors": "B",
+            "score": "object-macro standardized MAE"
+          }
+        },
+        {
+          "seed": 29,
+          "control": 0.6763168477456206,
+          "candidate": 0.7029526074387591,
+          "relative_improvement": -0.039383551928247745,
+          "object_bootstrap": {
+            "objects": 10,
+            "mean_object_delta_B_minus_A": 0.041998275799896026,
+            "paired_bootstrap_95_ci": [
+              0.007042618917818689,
+              0.08060336091042554
+            ],
+            "draws": 2000,
+            "seed": 17,
+            "negative_favors": "B",
+            "score": "object-macro standardized MAE"
+          }
+        },
+        {
+          "seed": 43,
+          "control": 0.7101523278502813,
+          "candidate": 0.6883368367877764,
+          "relative_improvement": 0.03071945300600942,
+          "object_bootstrap": {
+            "objects": 10,
+            "mean_object_delta_B_minus_A": -0.031787984080102534,
+            "paired_bootstrap_95_ci": [
+              -0.08170775371453959,
+              0.015223419558346402
+            ],
+            "draws": 2000,
+            "seed": 17,
+            "negative_favors": "B",
+            "score": "object-macro standardized MAE"
+          }
+        }
+      ],
+      "mean_relative_improvement": -0.0033248004714512614,
+      "seeds_candidate_better": 1
+    },
+    {
+      "control": "B",
+      "candidate": "C",
+      "per_seed": [
+        {
+          "seed": 17,
+          "control": 0.7015691913505957,
+          "candidate": 0.6721309970293713,
+          "relative_improvement": 0.04196050038137042,
+          "object_bootstrap": {
+            "objects": 10,
+            "mean_object_delta_B_minus_A": -0.0046608372593646644,
+            "paired_bootstrap_95_ci": [
+              -0.05250683896023806,
+              0.05165441747263947
+            ],
+            "draws": 2000,
+            "seed": 17,
+            "negative_favors": "B",
+            "score": "object-macro standardized MAE"
+          }
+        },
+        {
+          "seed": 29,
+          "control": 0.6968886025701703,
+          "candidate": 0.6763168477456206,
+          "relative_improvement": 0.029519430722040343,
+          "object_bootstrap": {
+            "objects": 10,
+            "mean_object_delta_B_minus_A": -0.047001479629078496,
+            "paired_bootstrap_95_ci": [
+              -0.11066256372010973,
+              0.00101331766427197
+            ],
+            "draws": 2000,
+            "seed": 17,
+            "negative_favors": "B",
+            "score": "object-macro standardized MAE"
+          }
+        },
+        {
+          "seed": 43,
+          "control": 0.6985100066872895,
+          "candidate": 0.7101523278502813,
+          "relative_improvement": -0.01666736489317591,
+          "object_bootstrap": {
+            "objects": 10,
+            "mean_object_delta_B_minus_A": 0.013755235151432307,
+            "paired_bootstrap_95_ci": [
+              -0.014591577014873014,
+              0.04309405442972611
+            ],
+            "draws": 2000,
+            "seed": 17,
+            "negative_favors": "B",
+            "score": "object-macro standardized MAE"
+          }
+        }
+      ],
+      "mean_relative_improvement": 0.018270855403411616,
+      "seeds_candidate_better": 2
+    },
+    {
+      "control": "B",
+      "candidate": "D",
+      "per_seed": [
+        {
+          "seed": 17,
+          "control": 0.7015691913505957,
+          "candidate": 0.6730116919498069,
+          "relative_improvement": 0.040705178837475084,
+          "object_bootstrap": {
+            "objects": 10,
+            "mean_object_delta_B_minus_A": -0.02281230569398847,
+            "paired_bootstrap_95_ci": [
+              -0.059538208509160626,
+              0.011800850338148323
+            ],
+            "draws": 2000,
+            "seed": 17,
+            "negative_favors": "B",
+            "score": "object-macro standardized MAE"
+          }
+        },
+        {
+          "seed": 29,
+          "control": 0.6968886025701703,
+          "candidate": 0.7029526074387591,
+          "relative_improvement": -0.00870154117347361,
+          "object_bootstrap": {
+            "objects": 10,
+            "mean_object_delta_B_minus_A": -0.005003203829182476,
+            "paired_bootstrap_95_ci": [
+              -0.05825687383207661,
+              0.053088096092648814
+            ],
+            "draws": 2000,
+            "seed": 17,
+            "negative_favors": "B",
+            "score": "object-macro standardized MAE"
+          }
+        },
+        {
+          "seed": 43,
+          "control": 0.6985100066872895,
+          "candidate": 0.6883368367877764,
+          "relative_improvement": 0.01456410044540344,
+          "object_bootstrap": {
+            "objects": 10,
+            "mean_object_delta_B_minus_A": -0.018032748928670232,
+            "paired_bootstrap_95_ci": [
+              -0.05201360685179265,
+              0.01700770513278542
+            ],
+            "draws": 2000,
+            "seed": 17,
+            "negative_favors": "B",
+            "score": "object-macro standardized MAE"
+          }
+        }
+      ],
+      "mean_relative_improvement": 0.015522579369801637,
+      "seeds_candidate_better": 2
+    }
+  ]
+}

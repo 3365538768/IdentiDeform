@@ -1,0 +1,37 @@
+2026-11-16T07:18:05+00:00 di-20261103141208-krk4l START run3 --objs potato
+Warp 1.11.1 initialized:
+   CUDA Toolkit 12.9, Driver 12.6
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA A800-SXM4-80GB" (79 GiB, sm_80, mempool enabled)
+   Kernel cache:
+     /root/.cache/warp/1.11.1
+Warp DeprecationWarning: The namespace `warp.torch` will soon be removed from the public API. It can still be accessed from `warp._src.torch` but might be changed or removed without notice.
+Warp DeprecationWarning: The symbol `warp.types.float32` will soon be removed from the public API. Use `warp.float32` instead.
+Module warp_utils 5598e36 load on device 'cuda:0' took 0.72 ms  (cached)
+Particles initialized from torch data.
+Total particles:  13317
+Module mpm_utils 8c60f93 load on device 'cuda:0' took 2.24 ms  (cached)
+Module mpm_solver_warp 3dca6b4 load on device 'cuda:0' took 0.80 ms  (cached)
+  sim potato lg3.7830_nu0.288_r1.0000 13.8s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg5.6580_nu0.288_r1.0000 23.8s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg5.8455_nu0.288_r1.0000 25.7s
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg5.7205_nu0.288_r1.0000 19.0s
+potato fold C0733 loo rpic 1.0 refined lg 5.8455 sims 12
+Particles initialized from torch data.
+Total particles:  13317
+  sim potato lg5.9705_nu0.288_r1.0000 21.8s
+potato fold C0787 loo rpic 1.0 refined lg 5.908 sims 12
+potato fold C0801 loo rpic 1.0 refined lg 5.908 sims 12
+2026-11-16T07:20:01+00:00 END rc=0
+2026-11-16T07:20:01+00:00 di-20261103141208-krk4l START eval3 --objs potato
+potato C0733 prior_refine_damp_loo 5.8455 1.0 HO {'iou': 0.533, 'psnr': 11.851, 'ssim': 0.321} FU {'iou': 0.275, 'psnr': 11.137, 'ssim': 0.152}
+potato C0787 prior_refine_damp_loo 5.908 1.0 HO {'iou': 0.526, 'psnr': 13.203, 'ssim': 0.309} FU {'iou': 0.269, 'psnr': 10.973, 'ssim': 0.154}
+potato C0801 prior_refine_damp_loo 5.908 1.0 HO {'iou': 0.507, 'psnr': 12.558, 'ssim': 0.287} FU {'iou': 0.269, 'psnr': 10.634, 'ssim': 0.157}
+2026-11-16T07:20:26+00:00 END rc=0

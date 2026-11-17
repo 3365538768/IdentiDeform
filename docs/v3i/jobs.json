@@ -1,0 +1,284 @@
+{
+  "note": "run by scripts/v3i/launch_a8004.py on a800-4 (not the a800-2 r_queue)",
+  "jobs": [
+    {
+      "id": "v3i_B_f10_seed17",
+      "config": "configs/v3i/v3i_B_f10_seed17.json",
+      "group": "B_f10",
+      "seed": 17,
+      "fraction": 0.1,
+      "views": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "v3i_C_f10_seed17",
+      "config": "configs/v3i/v3i_C_f10_seed17.json",
+      "group": "C_f10",
+      "seed": 17,
+      "fraction": 0.1,
+      "views": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "v3i_B_f10_seed29",
+      "config": "configs/v3i/v3i_B_f10_seed29.json",
+      "group": "B_f10",
+      "seed": 29,
+      "fraction": 0.1,
+      "views": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "v3i_C_f10_seed29",
+      "config": "configs/v3i/v3i_C_f10_seed29.json",
+      "group": "C_f10",
+      "seed": 29,
+      "fraction": 0.1,
+      "views": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "v3i_B_f10_seed43",
+      "config": "configs/v3i/v3i_B_f10_seed43.json",
+      "group": "B_f10",
+      "seed": 43,
+      "fraction": 0.1,
+      "views": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "v3i_C_f10_seed43",
+      "config": "configs/v3i/v3i_C_f10_seed43.json",
+      "group": "C_f10",
+      "seed": 43,
+      "fraction": 0.1,
+      "views": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "v3i_B_f25_seed17",
+      "config": "configs/v3i/v3i_B_f25_seed17.json",
+      "group": "B_f25",
+      "seed": 17,
+      "fraction": 0.25,
+      "views": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "v3i_C_f25_seed17",
+      "config": "configs/v3i/v3i_C_f25_seed17.json",
+      "group": "C_f25",
+      "seed": 17,
+      "fraction": 0.25,
+      "views": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "v3i_B_f25_seed29",
+      "config": "configs/v3i/v3i_B_f25_seed29.json",
+      "group": "B_f25",
+      "seed": 29,
+      "fraction": 0.25,
+      "views": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "v3i_C_f25_seed29",
+      "config": "configs/v3i/v3i_C_f25_seed29.json",
+      "group": "C_f25",
+      "seed": 29,
+      "fraction": 0.25,
+      "views": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "v3i_B_f25_seed43",
+      "config": "configs/v3i/v3i_B_f25_seed43.json",
+      "group": "B_f25",
+      "seed": 43,
+      "fraction": 0.25,
+      "views": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "v3i_C_f25_seed43",
+      "config": "configs/v3i/v3i_C_f25_seed43.json",
+      "group": "C_f25",
+      "seed": 43,
+      "fraction": 0.25,
+      "views": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "v3i_C_v1_seed17",
+      "config": "configs/v3i/v3i_C_v1_seed17.json",
+      "group": "C_v1",
+      "seed": 17,
+      "fraction": 1.0,
+      "views": [
+        0
+      ]
+    },
+    {
+      "id": "v3i_C_v2_seed17",
+      "config": "configs/v3i/v3i_C_v2_seed17.json",
+      "group": "C_v2",
+      "seed": 17,
+      "fraction": 1.0,
+      "views": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "v3i_C_v1_seed29",
+      "config": "configs/v3i/v3i_C_v1_seed29.json",
+      "group": "C_v1",
+      "seed": 29,
+      "fraction": 1.0,
+      "views": [
+        0
+      ]
+    },
+    {
+      "id": "v3i_C_v2_seed29",
+      "config": "configs/v3i/v3i_C_v2_seed29.json",
+      "group": "C_v2",
+      "seed": 29,
+      "fraction": 1.0,
+      "views": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "v3i_C_v1_seed43",
+      "config": "configs/v3i/v3i_C_v1_seed43.json",
+      "group": "C_v1",
+      "seed": 43,
+      "fraction": 1.0,
+      "views": [
+        0
+      ]
+    },
+    {
+      "id": "v3i_C_v2_seed43",
+      "config": "configs/v3i/v3i_C_v2_seed43.json",
+      "group": "C_v2",
+      "seed": 43,
+      "fraction": 1.0,
+      "views": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "v3i_B_f50_seed17",
+      "config": "configs/v3i/v3i_B_f50_seed17.json",
+      "group": "B_f50",
+      "seed": 17,
+      "fraction": 0.5,
+      "views": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "v3i_C_f50_seed17",
+      "config": "configs/v3i/v3i_C_f50_seed17.json",
+      "group": "C_f50",
+      "seed": 17,
+      "fraction": 0.5,
+      "views": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "v3i_B_f50_seed29",
+      "config": "configs/v3i/v3i_B_f50_seed29.json",
+      "group": "B_f50",
+      "seed": 29,
+      "fraction": 0.5,
+      "views": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "v3i_C_f50_seed29",
+      "config": "configs/v3i/v3i_C_f50_seed29.json",
+      "group": "C_f50",
+      "seed": 29,
+      "fraction": 0.5,
+      "views": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "v3i_B_f50_seed43",
+      "config": "configs/v3i/v3i_B_f50_seed43.json",
+      "group": "B_f50",
+      "seed": 43,
+      "fraction": 0.5,
+      "views": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "v3i_C_f50_seed43",
+      "config": "configs/v3i/v3i_C_f50_seed43.json",
+      "group": "C_f50",
+      "seed": 43,
+      "fraction": 0.5,
+      "views": [
+        0,
+        1,
+        2
+      ]
+    }
+  ]
+}

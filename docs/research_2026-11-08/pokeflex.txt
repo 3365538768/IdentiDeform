@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="PokeFlex: A Real-World Dataset of Volumetric Deformable Objects for Robotics.">
+  <meta name="keywords" content="Deformable Objects, Dataset">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> PokeFlex: A Real-World Dataset of Deformable Objects for Robotics</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <!-- <link rel="stylesheet" href="./static/css/bulma-carousel.min.css"> -->
+  <!-- <link rel="stylesheet" href="./static/css/bulma-slider.min.css"> -->
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <!-- <script src="./static/js/bulma-carousel.min.js"></script> -->
+  <!-- <script src="./static/js/bulma-slider.min.js"></script> -->
+  <!-- <script src="./static/js/index.js"></script> -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
+  
+  <style>
+    .container-mesh {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    }
+
+    .responsive-iframe-mesh {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">PokeFlex: A Real-World Dataset of Volumetric Deformable Objects for Robotics</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://janobrist.github.io/">Jan Obrist<sup>*,1</sup></a>,</span>
+            <span class="author-block">
+              <a href="https://miguelzamoram.github.io/">Miguel Zamora<sup>*,1</sup></a>,</span>
+            <span class="author-block">
+              <a href="https://srl.ethz.ch/the-group/people/hehui-zheng.html">Hehui Zheng<sup>*,2,3</sup></a>,</span>            
+            <span class="author-block">
+              Ronan Hinchet<sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://firatozdemir.github.io/">Firat Ozdemir<sup>5</sup></a>,</span>
+            <span class="author-block">
+              <a href="https://ait.ethz.ch/people/jzarate">Juan Zarate<sup>4</sup></a>,</span>
+            <span class="author-block">
+              <a href="https://srl.ethz.ch/the-group/prof-robert-katzschmann.html">Robert K. Katzschmann<sup>2,3</sup></a>,</span>  
+            <span class="author-block">
+              <a href="https://crl.ethz.ch/people/coros/index.html">Stelian Coros<sup>1</sup></a>,
+            </span>
+          </div>
+          <div class="is-size-7 publication-authors">
+            <span class="author-block"><sup>*</sup>Equal contribution.</span>            
+          </div>
+          <div class="is-size-7 publication-authors">
+            <span class="author-block"><sup>1</sup>Computational Robotics Lab, Department of Computer Science, ETH Zurich</span>            
+          </div>
+          <div class="is-size-7 publication-authors">            
+            <span class="author-block"><sup>2</sup>Soft Robotics Lab, Department of Mechanical Engineering, ETH Zurich</span>    
+          </div>
+          <div class="is-size-7 publication-authors">                        
+            <span class="author-block"><sup>3</sup>ETH AI Center, ETH Zurich</span>          
+          </div>
+          <div class="is-size-7 publication-authors">                                                
+            <span class="author-block"><sup>4</sup>Advanced Interactive Technologies Lab, Department of Computer Science, ETH Zurich</span>
+          </div> 
+          <div class="is-size-7 publication-authors">                                    
+            <span class="author-block"><sup>5</sup>Swiss Data Science Center, ETH Zurich and EPFL</span>            
+          </div>                                        
+                    
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+
+                <a href="https://arxiv.org/abs/2410.07688"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Preprint</span>
+                </a>
+
+                <a href="https://github.com/pokeflex-dataset/reconstruction"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/17zndHnoIuzzQmDNInpVKo9l8nEVcs1pb?usp=sharing"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-archive"></i>
+                  </span>
+                  <span>Supp</span>
+                </a>
+
+                <a href="https://pokeflex.ait.ethz.ch/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-database"></i>
+                  </span>
+                  <span>Dataset</span>
+                </a>
+
+                <!--a href="https://arxiv.org/abs/2409.17124"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Extended Abstract</span>
+                </a-->
+
+              </span>            
+            </div>
+          </div>
+
+               
+
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <div class="content has-text-centered">          
+                <p> <sup>+</sup> Website might take some time to load for the first time. </p>        
+              </div>  
+          </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+
+      <div style="width: 100%; justify-content: center; align-items: center; margin: auto; text-align: center;">
+          <img src="./static/gifs/dice_poking2_anony.gif" style="width:47.5%; object-fit: cover; object-position: center ;" />
+          <img src="./static/gifs/dice_static.gif" style="width:47.5%; object-fit: cover; object-position: center ;" />
+      </div>
+
+      <div style="width: 100%; justify-content: center; align-items: center; margin: auto; text-align: center;">    
+        <img src="./static/gifs/Beanbag/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
+        <img src="./static/gifs/Foam/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
+        <img src="./static/gifs/Dice/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
+        <img src="./static/gifs/HalfSphere/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
+        <img src="./static/gifs/MemoryFoam/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
+        <img src="./static/gifs/Pillow/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
+        <img src="./static/gifs/PlushDice/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
+        <img src="./static/gifs/Moon/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
+        <img src="./static/gifs/Octopus/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
+
+        <img src="./static/gifs/Turtle/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />                
+        <img src="./static/gifs/Volleyball/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
+        <img src="./static/gifs/Sponge/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
+        <img src="./static/gifs/ToiletPaper/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
+        <img src="./static/gifs/Bunny/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />        
+        <img src="./static/gifs/Cylinder/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
+        <img src="./static/gifs/Heart/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
+        <img src="./static/gifs/Pizza/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
+        <img src="./static/gifs/Pyramid/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
+        
+        
+
+
+        
+      </div>
+      <div class="content has-text-centered">          
+        <p>
+          PokeFlex is a dataset containing real-world paired and annotated multimodal data of deformable objects <br /> that includes 3D textured meshes, point clouds, RGB images, and depth maps.
+        </p>        
+      </div>  
+      
+
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Data-driven methods have shown great potential in solving challenging manipulation tasks; however, their application in the domain of deformable objects has been constrained, in part, by the lack of data. To address this lack, we propose PokeFlex, a dataset featuring real-world multimodal data that is paired and annotated. The modalities include 3D textured meshes, point clouds, RGB images, and depth maps. Such data can be leveraged for several downstream tasks, such as online 3D mesh reconstruction, and it can potentially enable underexplored applications such as the real-world deployment of traditional control methods based on mesh simulations. 
+            To deal with the challenges posed by real-world 3D mesh reconstruction, we leverage a professional volumetric capture system that allows complete 360° reconstruction. PokeFlex consists of 18 deformable objects with varying stiffness and shapes. Deformations are generated by dropping objects onto a flat surface or by poking the objects with a robot arm. Interaction wrenches and contact locations are also reported for the latter case. Using different data modalities, we demonstrated a use case for our dataset training models that, given the novelty of the multimodal nature of Pokeflex, constitute the state-of-the-art in multi-object online template-based mesh reconstruction from multimodal data, to the best of our knowledge.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!--div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe id=sup_video src="static/videos/pokeflex.mp4"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div-->   
+    
+  </div>
+</section>
+
+
+<!--section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      
+      <div class="columns is-centered">
+      <div class="column has-text-centered">
+
+        <h2 class="title is-3">Overview</h2>   
+
+        <div style="width: 100%; justify-content: center; align-items: center; margin: auto; text-align: center;">
+          <img src="./static/images/fig1_v5_web.svg" style="width:100%; object-fit: cover; object-position: bottom ;" />
+        </div>
+        
+      </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        <p>The PokeFlex dataset comprises 18 deformable objects, including 13 everyday items as well as 5 objects that are 3D printed (See paper for full list of objects).</p>          
+      </h2>
+
+    </div>
+    </div>
+  </div>
+</section-->
+
+<section class="hero teaser"></section>
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      
+      <div class="columns is-centered">
+      <div class="column has-text-centered">
+
+        <h2 class="title is-3">Overview of objects</h2>   
+        <div style="width: 100%; justify-content: center; align-items: center; margin: auto; text-align: center;">
+          <img src="./static/images/objects_18.png" style="width:100%; object-fit: cover; object-position: bottom ;" />
+        </div>
+        <!--h2 class="subtitle has-text-centered">
+          Rest-state reconstructed 3D meshes of all 18 objects featured in the PokeFlex dataset.
+        </h2-->
+
+      </div>
+      </div>
+      
+    </div>          
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser"></section>
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      
+      <div class="columns is-centered">
+      <div class="column has-text-centered">
+
+        <h2 class="title is-3">Deformation sequences</h2>   
+        <div style="width: 100%; justify-content: center; align-items: center; margin: auto; text-align: center;">
+          <img src="./static/images/sequence_v2.svg" style="width:100%; object-fit: cover; object-position: bottom ;" />
+        </div>
+        <div class="content has-text-centered">          
+          <p>
+            Top: Mesh reconstructions of foam dice for a poking sequence shown in every third frame.  <br />                  
+            Bottom: Mesh reconstructions of plush octopus for a dropping sequence.
+          </p>        
+        </div>        
+      </div>
+      </div>
+      
+    </div>          
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      
+      <div class="columns is-centered">
+      <div class="column has-text-centered">
+
+        <h2 class="title is-3">Data modalities</h2>   
+        <h2 class="title is-4">Overview</h2>   
+
+        <div style="width: 100%; justify-content: center; align-items: center; margin: auto; text-align: center;">
+          <img src="./static/images/modalities_v3.svg" style="width:100%; object-fit: cover; object-position: bottom ;" />
+        </div>
+
+        <h2 class="title is-4">Synchronized time sequences</h2>
+        <div class="publication-video">
+          <iframe id=sup_video src="static/videos/modalities.mp4"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        
+      </div>
+      </div>
+      <!--h2 class="subtitle has-text-centered">         
+        <p>PokeFlex is a dataset containing real-world paired and annotated multimodal data of deformable objects that includes 3D textured meshes, point clouds, RGB images, and depth maps.  </p>          
+      </h2-->
+
+    </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+    <div class="columns is-centered">
+    <div class="column has-text-centered">
+
+        <h2 class="title is-3">Interactive Mesh Visualization</h2>   
+        <div class="container-mesh">      
+            <iframe class="responsive-iframe-mesh" src="./static/reconstructions/mesh_animation_m1_div.html" allow="autoplay;" ></iframe>                  
+        </div>
+        
+        <div class="content has-text-justified">          
+          <p>
+          <ul>
+              <li>The plot on the left illustrates the 3D mesh reconstructed using a professional volumetric capture system for a toilet paper roll.
+              The dotted red line donotes the trajectory of the robot's end-effector executing a poking strategy.</li>
+              <li>The plot on the right shows the magnitud of the force applied by the end effector on the toilet paper roll. </li>
+          </ul>
+ 
+          
+          </p>
+          <p>
+          Notes:
+          <ul>
+              <li>Feel free to rotate the 3D mesh on the left.</li>
+              <li>The visualization might take some time load.</li>
+              <li>Consider pressing the Stop button and then pressing the Play button again, if playback is slow.</li>
+              <li>On mobile devices consider using landscape mode (Rotate your device).</li>
+          </ul>
+          </p>
+        </div>        
+        
+    </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser"></section>
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      
+      <div class="columns is-centered">
+      <div class="column has-text-centered">
+
+        <h2 class="title is-3">Learning-based online 3D mesh reconstruction</h2>   
+        <div style="width: 100%; justify-content: center; align-items: center; margin: auto; text-align: center;">
+          <img src="./static/images/img_architecture_v4_plain_web.png" style="width:100%; object-fit: cover; object-position: bottom ;" />
+        </div>
+        <div class="content has-text-justified">          
+          <p>
+            Superimposed representation of the proposed network architectures for ingesting the multi-modal PokeFlex data to predict deformed mesh reconstruction.
+          Inference rates across different data modalities range from 33 Hz to 185 Hz for dense point clouds and forces, respectively. 
+          (See paper for more details).
+          </p>
+        </div> 
+        <div class="publication-video">
+          <iframe id=sup_video src="static/videos/prediction_vs_ground_truth.mp4"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>         
+
+      </div>
+      </div>
+      
+    </div>          
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser"></section>
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      
+      <div class="columns is-centered">
+      <div class="column has-text-centered">
+
+        <h2 class="title is-3">Physical properties </h2>           
+        <div class="content has-text-justified">          
+          <p>
+              Physical properties of objects featured in the PokeFlex dataset. Dimensions of sphere-like objects are described by their diameter (D). Cylinder-like objects are characterized by their diameter (D) and height (H). For objects with irregular or complex shapes, dimensions are provided using a bounding box defined by length (L), width (W), and height (H). Stiffness of the objects is estimated using Hooke's law and applying RANSAC for linear regression to avoid outliers.
+
+            
+              \begin{array}{lllll}
+              \hline
+              \textbf{Object} & \textbf{Weight[g]} & \textbf{Dimensions [cm]} & \textbf{Est. stiffness [N/m]} & \textbf{Total Frames} & \textbf{Frames in contact}  \\
+              \hline                
+              \text{Beanbag}             & 184 & \text{DxH: } 26\text{x}9                 & 523  & 1084 & 363 \\ 
+              \text{Foam cylinder}       & 153 & \text{DxH: } 12\text{x}29                & 250  & 990  & 407 \\ 
+              \text{Foam dice}           & 140 & \text{L: } 15.5                          & 748  & 1220 & 738 \\ 
+              \text{Foam half sphere}    & 41  & \text{D: } 15                            & 1252 & 939  & 546 \\ 
+              \text{Memory foam}         & 213 & \text{LxWxH: } 17.5\text{x}8.5\text{x}7  & 395  & 958  & 282 \\ 
+              \text{Pillow}              & 975 & \text{LxWxH: } 58\text{x}50\text{x}10    & 474  & 1085 & 565 \\ 
+              \text{Plush dice}          & 340 & \text{L: } 22                            & 149  & 1259 & 567 \\ 
+              \text{Plush moon}          & 151 & \text{D: } 17                            & 366  & 959  & 517 \\ 
+              \text{Plush octopus}       & 130 & \text{LxWxH: } 22\text{x}22\text{x}11    & 325  & 1085 & 525 \\ 
+              \text{Plush turtle}        & 194 & \text{LxWxH: } 35\text{x}30\text{x}10    & 1035 & 930  & 427 \\ 
+              \text{Plush volleyball}    & 303 & \text{D: } 22                            & 323  & 939  & 488 \\ 
+              \text{Sponge}              & 28  & \text{LxWxH: } 22\text{x}12\text{x}6.1   & 1045 & 775  & 490 \\ 
+              \text{Toilet paper roll}   & 134 & \text{DxH: } 10.5\text{x}9.5             & 2156 & 920  & 411 \\ 
+              \text{3D printed bunny}    & 105 & \text{LxWxH: } 13\text{x}9\text{x}15     & 950  & 1117 & 520 \\ 
+              \text{3D printed cylinder} & 223 & \text{DxH: } 10\text{x}20                & 585  & 1020 & 574 \\ 
+              \text{3D printed heart}    & 100 & \text{LxWxH: } 16\text{x}9\text{x}10     & 1198 & 940  & 444 \\ 
+              \text{3D printed pizza}    & 68  & \text{LxWxH: } 18\text{x}15\text{x}3     & 884  & 958  & 360 \\ 
+              \text{3D printed pyramid}  & 48  & \text{LxWxH: } 14.5\text{x}14.5\text{x}7 & 861  & 899  & 386 \\                                 
+              \hline
+              \end{array}
+            
+          </p>
+        </div>        
+
+
+        <h2 class="title is-3">3D printed objects </h2>           
+        <div class="content has-text-justified">          
+          <p> All 3D printed objects were printed using thermoplastic polyurethane (TPU) Filaflex Shore 60A Pro White filament on Prusa MK3S+ and Prusa XL 3D printers equipped with 0.4mm nozzles. The mechanical properties of the filament are presented in the table below.
+              \begin{array}{lccc}
+              \hline
+              \textbf{Mechanical properties} & \textbf{Value} & \textbf{Unit} & \textbf{Test method according to} \\
+              \hline                
+              \text{Tensile strenght}         & 26 & \text{MPa}  & \text{DIN 53504-S2} \\ 
+              \text{Stress at 20% elongation} &  1 & \text{MPa}  & \text{DIN 53504-S2} \\ 
+              \hline
+              \end{array}
+            
+              The printing parameters of the 3D printed objects are summarized in the table below, where the infill used for all objects is the isotropic gyroid pattern with uniform properties and behavior in all directions.
+
+            
+              \begin{array}{lcccc}
+              \hline
+              \textbf{Object} & \textbf{Infill density} & \textbf{Layer thickness [mm]} & \textbf{Perimeters} & \textbf{Bottom layers} & \textbf{Top layers}  \\
+              \hline                
+              \text{Bunny}    & 10 & 0.2  & 3 & 3 & 3 \\ 
+              \text{Cylinder} & 10 & 0.15 & 2 & 3 & 3 \\ 
+              \text{Heart}    & 10 & 0.2  & 3 & 3 & 3 \\ 
+              \text{Pizza}    & 10 & 0.2  & 3 & 3 & 3 \\ 
+              \text{Pyramid}  & 8  & 0.2  & 3 & 3 & 3 \\                                               
+              \hline
+              \end{array}
+
+
+              
+          </p>
+        </div>        
+
+        <h2 class="title is-4">Gyroid patterns </h2>           
+        
+          <p> Top (Left) and bottom (Right) view of the 3D printed pyramid, with a close-up view of the gyroid infill pattern.
+          </p>           
+          <br>
+         
+          <div style="width: 100%; justify-content: center; align-items: center; margin: auto; text-align: center;">
+            <img src="./static/images/gyroid.png" style="width:80%; object-fit: cover; object-position: bottom ;" />
+          </div>
+        
+
+      </div>
+      </div>
+      
+    </div>          
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser"></section>
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      
+      <div class="columns is-centered">
+      <div class="column has-text-centered">
+
+        <h2 class="title is-3">Use PokeFlex in your favorite simulator!</h2>   
+        <div class="publication-video">
+          <iframe id=sup_video src="static/videos/simulators.mp4"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>     
+
+      </div>
+      </div>
+      
+    </div>          
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX Preprint</h2>
+    <pre><code>@article{obrist2025pokeflex,
+      author    = {Obrist, Jan and Zamora, Miguel and Zheng, Hehui and Hinchet, Ronan and Ozdemir, Firat and Zarate, Juan and Katzschmann, Robert K. and Coros, Stelian},
+      title     = {PokeFlex: A Real-World Dataset of Volumetirc Deformable Objects for Robotics},
+      journal   = {Under review},
+      year      = {2025}
+      url       = {https://arxiv.org/pdf/2410.07688}
+      }
+    </code></pre>
+
+    <!--h2 class="title">BibTeX Extended Abstract</h2>
+    <pre><code>@article{obrist2024towardspokeflex,
+      author    = {Obrist, Jan and Zamora, Miguel and Zheng, Hehui and Zarate, Juan and Katzschmann, Robert K. and Coros, Stelian},
+      title     = {PokeFlex: Towards a Real-World Dataset of Deformable Objects for Robotic Manipulation},
+      journal   = {Extended Abstract, 40th Anniversary of the IEEE International Conference on Robotics and Automation. (ICRA@40 Rotterdam 2024)},
+      year      = {2024},
+      url       = {https://arxiv.org/abs/2409.17124}
+      }
+    </code></pre-->    
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      The website (<a href="https://github.com/pokeflex-dataset/pokeflex-dataset.github.io">source code</a>) design was adapted from <a href="https://nerfies.github.io" class="external-link"><span
+        class="dnerf">Nerfies</span></a>.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

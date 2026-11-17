@@ -1,0 +1,4 @@
+sim 265 gt none:0 True 350
+sim 265 gt centre:0.03 True 159
+measure centre:0.03 {'sag': 0.02986673880165007, 'left': 0.0, 'crush': 0.05865123819153643, 'dent_p95': 0.03728435129106298, 'grip': 229.20497131347656, 'lift': 0.19203811883926392, 'height': 0.6401270627975464, 'n_particles': 85855, 'seg_particles': 30742}
+done 265 gt centre:0.03 False

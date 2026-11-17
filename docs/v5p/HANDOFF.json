@@ -1,0 +1,139 @@
+{
+ "stage": "v5p",
+ "written_utc": "2026-11-16T01:22:06Z",
+ "data_root": "data/v5b_main",
+ "sample_id_format": "v5bmain/<split>/<idx:06d>",
+ "manifest": "data/manifests/v5bmain_t2000.jsonl",
+ "stats_specific": "data/manifests/v5bmain_t2000.specific.stats.json",
+ "target_space": "specific: z = (ln1p(x) - mean) / std with x = E/(rho/1000), nu, rho, sigma_y/(rho/1000); order [E_over_rho, nu, rho, sigma_y_over_rho]",
+ "law_ids": {
+  "0": "jelly",
+  "1": "metal",
+  "2": "plasticine"
+ },
+ "main_run": "v5b2k_C_seed29",
+ "runs": {
+  "v5b2k_B_seed17": {
+   "val": {
+    "prediction_dir": "runs/v5b2k_B_seed17/val_epoch_0008",
+    "predictions": "runs/v5b2k_B_seed17/val_epoch_0008/predictions.jsonl",
+    "checkpoint": "runs/v5b2k_B_seed17/best_material.pt"
+   },
+   "test": {
+    "prediction_dir": "runs/v5b2k_B_seed17/test_once",
+    "predictions": "runs/v5b2k_B_seed17/test_once/predictions.jsonl",
+    "checkpoint": "runs/v5b2k_B_seed17/best_material.pt"
+   }
+  },
+  "v5b2k_B_seed29": {
+   "val": {
+    "prediction_dir": "runs/v5b2k_B_seed29/val_epoch_0012",
+    "predictions": "runs/v5b2k_B_seed29/val_epoch_0012/predictions.jsonl",
+    "checkpoint": "runs/v5b2k_B_seed29/best_material.pt"
+   },
+   "test": {
+    "prediction_dir": "runs/v5b2k_B_seed29/test_once",
+    "predictions": "runs/v5b2k_B_seed29/test_once/predictions.jsonl",
+    "checkpoint": "runs/v5b2k_B_seed29/best_material.pt"
+   }
+  },
+  "v5b2k_B_seed43": {
+   "val": {
+    "prediction_dir": "runs/v5b2k_B_seed43/val_epoch_0004",
+    "predictions": "runs/v5b2k_B_seed43/val_epoch_0004/predictions.jsonl",
+    "checkpoint": "runs/v5b2k_B_seed43/best_material.pt"
+   },
+   "test": {
+    "prediction_dir": "runs/v5b2k_B_seed43/test_once",
+    "predictions": "runs/v5b2k_B_seed43/test_once/predictions.jsonl",
+    "checkpoint": "runs/v5b2k_B_seed43/best_material.pt"
+   }
+  },
+  "v5b2k_C_seed17": {
+   "val": {
+    "prediction_dir": "runs/v5b2k_C_seed17/val_epoch_0018",
+    "predictions": "runs/v5b2k_C_seed17/val_epoch_0018/predictions.jsonl",
+    "checkpoint": "runs/v5b2k_C_seed17/best_material.pt"
+   },
+   "test": {
+    "prediction_dir": "runs/v5b2k_C_seed17/test_once",
+    "predictions": "runs/v5b2k_C_seed17/test_once/predictions.jsonl",
+    "checkpoint": "runs/v5b2k_C_seed17/best_material.pt"
+   }
+  },
+  "v5b2k_C_seed29": {
+   "val": {
+    "prediction_dir": "runs/v5b2k_C_seed29/val_epoch_0012",
+    "predictions": "runs/v5b2k_C_seed29/val_epoch_0012/predictions.jsonl",
+    "checkpoint": "runs/v5b2k_C_seed29/best_material.pt"
+   },
+   "test": {
+    "prediction_dir": "runs/v5b2k_C_seed29/test_once",
+    "predictions": "runs/v5b2k_C_seed29/test_once/predictions.jsonl",
+    "checkpoint": "runs/v5b2k_C_seed29/best_material.pt"
+   }
+  },
+  "v5b2k_C_seed43": {
+   "val": {
+    "prediction_dir": "runs/v5b2k_C_seed43/val_epoch_0016",
+    "predictions": "runs/v5b2k_C_seed43/val_epoch_0016/predictions.jsonl",
+    "checkpoint": "runs/v5b2k_C_seed43/best_material.pt"
+   },
+   "test": {
+    "prediction_dir": "runs/v5b2k_C_seed43/test_once",
+    "predictions": "runs/v5b2k_C_seed43/test_once/predictions.jsonl",
+    "checkpoint": "runs/v5b2k_C_seed43/best_material.pt"
+   }
+  },
+  "v5b2k_D_seed17": {
+   "val": {
+    "prediction_dir": "runs/v5b2k_D_seed17/val_epoch_0015",
+    "predictions": "runs/v5b2k_D_seed17/val_epoch_0015/predictions.jsonl",
+    "checkpoint": "runs/v5b2k_D_seed17/best_material.pt"
+   },
+   "test": {
+    "prediction_dir": "runs/v5b2k_D_seed17/test_once",
+    "predictions": "runs/v5b2k_D_seed17/test_once/predictions.jsonl",
+    "checkpoint": "runs/v5b2k_D_seed17/best_material.pt"
+   }
+  },
+  "v5b2k_D_seed29": {
+   "val": {
+    "prediction_dir": "runs/v5b2k_D_seed29/val_epoch_0017",
+    "predictions": "runs/v5b2k_D_seed29/val_epoch_0017/predictions.jsonl",
+    "checkpoint": "runs/v5b2k_D_seed29/best_material.pt"
+   },
+   "test": {
+    "prediction_dir": "runs/v5b2k_D_seed29/test_once",
+    "predictions": "runs/v5b2k_D_seed29/test_once/predictions.jsonl",
+    "checkpoint": "runs/v5b2k_D_seed29/best_material.pt"
+   }
+  },
+  "v5b2k_D_seed43": {
+   "val": {
+    "prediction_dir": "runs/v5b2k_D_seed43/val_epoch_0010",
+    "predictions": "runs/v5b2k_D_seed43/val_epoch_0010/predictions.jsonl",
+    "checkpoint": "runs/v5b2k_D_seed43/best_material.pt"
+   },
+   "test": {
+    "prediction_dir": "runs/v5b2k_D_seed43/test_once",
+    "predictions": "runs/v5b2k_D_seed43/test_once/predictions.jsonl",
+    "checkpoint": "runs/v5b2k_D_seed43/best_material.pt"
+   }
+  }
+ },
+ "ensemble": {
+  "val": {
+   "json": "docs/v5p/ENSEMBLE_BCD9_VAL.json",
+   "predictions": "runs/v5b2k_ens_bcd9_val/predictions.jsonl",
+   "samples": 283
+  },
+  "test": {
+   "json": "docs/v5p/ENSEMBLE_BCD9_TEST.json",
+   "predictions": "runs/v5b2k_ens_bcd9_test/predictions.jsonl",
+   "samples": 300
+  }
+ },
+ "note_for_c1_refine": "V5b data: data/v5b_main (all six actions; held shear/stretch/bend; V5 ranges). Re-point c1_refine stats/manifest/sid/data_root to the fields above and its generator to the V5b settings of scripts/v3n/gen_v3.py used for data/v5b_main. prediction_dir: val = best val epoch dir (r1_report.best_dir), test = test_once.",
+ "status": "final: V5b full prior (train 0-1999), main_run C_seed29 + 9-run ensemble"
+}

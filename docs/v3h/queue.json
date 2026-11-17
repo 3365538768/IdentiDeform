@@ -1,0 +1,495 @@
+{
+ "phase": "v3h",
+ "max_per_gpu": 6,
+ "gpus": [
+  0,
+  1,
+  2,
+  4,
+  5,
+  6,
+  7
+ ],
+ "jobs": [
+  {
+   "id": "v3h_q_top1_000002",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 2 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000005",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 5 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000007",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 7 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000009",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 9 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000021",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 21 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000025",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 25 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000029",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 29 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000052",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 52 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000053",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 53 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000066",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 66 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000068",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 68 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000070",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 70 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000071",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 71 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000073",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 73 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000089",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 89 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000093",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 93 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000096",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 96 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000106",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 106 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000113",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 113 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000114",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 114 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000118",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 118 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000119",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 119 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000127",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 127 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000134",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 134 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000135",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 135 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000136",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 136 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000139",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 139 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000141",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 141 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000148",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 148 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000152",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 152 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000154",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 154 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000159",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 159 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000180",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 180 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000181",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 181 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000182",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 182 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000184",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 184 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000188",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 188 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000198",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 198 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000200",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 200 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000202",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 202 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000210",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 210 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000212",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 212 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000216",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 216 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000219",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 219 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000222",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 222 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000228",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 228 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000231",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 231 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000235",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 235 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000241",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 241 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000245",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 245 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000248",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 248 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000261",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 261 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000265",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 265 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000272",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 272 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000276",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 276 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000283",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 283 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000293",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 293 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000295",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 295 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000296",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 296 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3h_q_top1_000297",
+   "kind": "cmd",
+   "group": "v3h-top1val",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split val --ensemble docs/v3b/ENSEMBLE_BCD9_VAL.json --out data/v3b_refine --index 297 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  }
+ ]
+}

@@ -1,0 +1,430 @@
+[
+ {
+  "id": "v3e_gt_000002",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 2 --method gt"
+ },
+ {
+  "id": "v3e_refined_top2_000002",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 2 --method refined_top2"
+ },
+ {
+  "id": "v3e_ensemble_prior_000002",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 2 --method ensemble_prior"
+ },
+ {
+  "id": "v3e_refined_best3_000002",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 2 --method refined_best3"
+ },
+ {
+  "id": "v3e_lawmean_pred_000002",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 2 --method lawmean_pred"
+ },
+ {
+  "id": "v3e_gt_000029",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 29 --method gt"
+ },
+ {
+  "id": "v3e_refined_top2_000029",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 29 --method refined_top2"
+ },
+ {
+  "id": "v3e_ensemble_prior_000029",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 29 --method ensemble_prior"
+ },
+ {
+  "id": "v3e_refined_best3_000029",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 29 --method refined_best3"
+ },
+ {
+  "id": "v3e_lawmean_pred_000029",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 29 --method lawmean_pred"
+ },
+ {
+  "id": "v3e_gt_000053",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 53 --method gt"
+ },
+ {
+  "id": "v3e_refined_top2_000053",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 53 --method refined_top2"
+ },
+ {
+  "id": "v3e_ensemble_prior_000053",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 53 --method ensemble_prior"
+ },
+ {
+  "id": "v3e_refined_best3_000053",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 53 --method refined_best3"
+ },
+ {
+  "id": "v3e_lawmean_pred_000053",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 53 --method lawmean_pred"
+ },
+ {
+  "id": "v3e_gt_000068",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 68 --method gt"
+ },
+ {
+  "id": "v3e_refined_top2_000068",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 68 --method refined_top2"
+ },
+ {
+  "id": "v3e_ensemble_prior_000068",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 68 --method ensemble_prior"
+ },
+ {
+  "id": "v3e_refined_best3_000068",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 68 --method refined_best3"
+ },
+ {
+  "id": "v3e_lawmean_pred_000068",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 68 --method lawmean_pred"
+ },
+ {
+  "id": "v3e_gt_000089",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 89 --method gt"
+ },
+ {
+  "id": "v3e_refined_top2_000089",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 89 --method refined_top2"
+ },
+ {
+  "id": "v3e_ensemble_prior_000089",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 89 --method ensemble_prior"
+ },
+ {
+  "id": "v3e_refined_best3_000089",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 89 --method refined_best3"
+ },
+ {
+  "id": "v3e_lawmean_pred_000089",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 89 --method lawmean_pred"
+ },
+ {
+  "id": "v3e_gt_000113",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 113 --method gt"
+ },
+ {
+  "id": "v3e_refined_top2_000113",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 113 --method refined_top2"
+ },
+ {
+  "id": "v3e_ensemble_prior_000113",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 113 --method ensemble_prior"
+ },
+ {
+  "id": "v3e_refined_best3_000113",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 113 --method refined_best3"
+ },
+ {
+  "id": "v3e_lawmean_pred_000113",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 113 --method lawmean_pred"
+ },
+ {
+  "id": "v3e_gt_000212",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 212 --method gt"
+ },
+ {
+  "id": "v3e_refined_top2_000212",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 212 --method refined_top2"
+ },
+ {
+  "id": "v3e_ensemble_prior_000212",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 212 --method ensemble_prior"
+ },
+ {
+  "id": "v3e_refined_best3_000212",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 212 --method refined_best3"
+ },
+ {
+  "id": "v3e_lawmean_pred_000212",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 212 --method lawmean_pred"
+ },
+ {
+  "id": "v3e_gt_000245",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 245 --method gt"
+ },
+ {
+  "id": "v3e_refined_top2_000245",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 245 --method refined_top2"
+ },
+ {
+  "id": "v3e_ensemble_prior_000245",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 245 --method ensemble_prior"
+ },
+ {
+  "id": "v3e_refined_best3_000245",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 245 --method refined_best3"
+ },
+ {
+  "id": "v3e_lawmean_pred_000245",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 245 --method lawmean_pred"
+ },
+ {
+  "id": "v3e_gt_000272",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 272 --method gt"
+ },
+ {
+  "id": "v3e_refined_top2_000272",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 272 --method refined_top2"
+ },
+ {
+  "id": "v3e_ensemble_prior_000272",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 272 --method ensemble_prior"
+ },
+ {
+  "id": "v3e_refined_best3_000272",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 272 --method refined_best3"
+ },
+ {
+  "id": "v3e_lawmean_pred_000272",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 272 --method lawmean_pred"
+ },
+ {
+  "id": "v3e_gt_000293",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 293 --method gt"
+ },
+ {
+  "id": "v3e_refined_top2_000293",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 293 --method refined_top2"
+ },
+ {
+  "id": "v3e_ensemble_prior_000293",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 293 --method ensemble_prior"
+ },
+ {
+  "id": "v3e_refined_best3_000293",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 293 --method refined_best3"
+ },
+ {
+  "id": "v3e_lawmean_pred_000293",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 293 --method lawmean_pred"
+ },
+ {
+  "id": "v3e_gt_000007",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 7 --method gt"
+ },
+ {
+  "id": "v3e_refined_top2_000007",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 7 --method refined_top2"
+ },
+ {
+  "id": "v3e_ensemble_prior_000007",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 7 --method ensemble_prior"
+ },
+ {
+  "id": "v3e_refined_best3_000007",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 7 --method refined_best3"
+ },
+ {
+  "id": "v3e_lawmean_pred_000007",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 7 --method lawmean_pred"
+ },
+ {
+  "id": "v3e_gt_000070",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 70 --method gt"
+ },
+ {
+  "id": "v3e_refined_top2_000070",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 70 --method refined_top2"
+ },
+ {
+  "id": "v3e_ensemble_prior_000070",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 70 --method ensemble_prior"
+ },
+ {
+  "id": "v3e_refined_best3_000070",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 70 --method refined_best3"
+ },
+ {
+  "id": "v3e_lawmean_pred_000070",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 70 --method lawmean_pred"
+ },
+ {
+  "id": "v3e_gt_000073",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 73 --method gt"
+ },
+ {
+  "id": "v3e_refined_top2_000073",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 73 --method refined_top2"
+ },
+ {
+  "id": "v3e_ensemble_prior_000073",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 73 --method ensemble_prior"
+ },
+ {
+  "id": "v3e_refined_best3_000073",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 73 --method refined_best3"
+ },
+ {
+  "id": "v3e_lawmean_pred_000073",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 73 --method lawmean_pred"
+ },
+ {
+  "id": "v3e_gt_000127",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 127 --method gt"
+ },
+ {
+  "id": "v3e_refined_top2_000127",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 127 --method refined_top2"
+ },
+ {
+  "id": "v3e_ensemble_prior_000127",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 127 --method ensemble_prior"
+ },
+ {
+  "id": "v3e_refined_best3_000127",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 127 --method refined_best3"
+ },
+ {
+  "id": "v3e_lawmean_pred_000127",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 127 --method lawmean_pred"
+ },
+ {
+  "id": "v3e_gt_000154",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 154 --method gt"
+ },
+ {
+  "id": "v3e_refined_top2_000154",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 154 --method refined_top2"
+ },
+ {
+  "id": "v3e_ensemble_prior_000154",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 154 --method ensemble_prior"
+ },
+ {
+  "id": "v3e_refined_best3_000154",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 154 --method refined_best3"
+ },
+ {
+  "id": "v3e_lawmean_pred_000154",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 154 --method lawmean_pred"
+ },
+ {
+  "id": "v3e_gt_000181",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 181 --method gt"
+ },
+ {
+  "id": "v3e_refined_top2_000181",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 181 --method refined_top2"
+ },
+ {
+  "id": "v3e_ensemble_prior_000181",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 181 --method ensemble_prior"
+ },
+ {
+  "id": "v3e_refined_best3_000181",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 181 --method refined_best3"
+ },
+ {
+  "id": "v3e_lawmean_pred_000181",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 181 --method lawmean_pred"
+ },
+ {
+  "id": "v3e_gt_000184",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 184 --method gt"
+ },
+ {
+  "id": "v3e_refined_top2_000184",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 184 --method refined_top2"
+ },
+ {
+  "id": "v3e_ensemble_prior_000184",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 184 --method ensemble_prior"
+ },
+ {
+  "id": "v3e_refined_best3_000184",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 184 --method refined_best3"
+ },
+ {
+  "id": "v3e_lawmean_pred_000184",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 184 --method lawmean_pred"
+ },
+ {
+  "id": "v3e_gt_000235",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 235 --method gt"
+ },
+ {
+  "id": "v3e_refined_top2_000235",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 235 --method refined_top2"
+ },
+ {
+  "id": "v3e_ensemble_prior_000235",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 235 --method ensemble_prior"
+ },
+ {
+  "id": "v3e_refined_best3_000235",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 235 --method refined_best3"
+ },
+ {
+  "id": "v3e_lawmean_pred_000235",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 235 --method lawmean_pred"
+ },
+ {
+  "id": "v3e_gt_000241",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 241 --method gt"
+ },
+ {
+  "id": "v3e_refined_top2_000241",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 241 --method refined_top2"
+ },
+ {
+  "id": "v3e_ensemble_prior_000241",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 241 --method ensemble_prior"
+ },
+ {
+  "id": "v3e_refined_best3_000241",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 241 --method refined_best3"
+ },
+ {
+  "id": "v3e_lawmean_pred_000241",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 241 --method lawmean_pred"
+ },
+ {
+  "id": "v3e_gt_000295",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 295 --method gt"
+ },
+ {
+  "id": "v3e_refined_top2_000295",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 295 --method refined_top2"
+ },
+ {
+  "id": "v3e_ensemble_prior_000295",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 295 --method ensemble_prior"
+ },
+ {
+  "id": "v3e_refined_best3_000295",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 295 --method refined_best3"
+ },
+ {
+  "id": "v3e_lawmean_pred_000295",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 295 --method lawmean_pred"
+ },
+ {
+  "id": "v3e_gt_000096",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 96 --method gt"
+ },
+ {
+  "id": "v3e_refined_top2_000096",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 96 --method refined_top2"
+ },
+ {
+  "id": "v3e_ensemble_prior_000096",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 96 --method ensemble_prior"
+ },
+ {
+  "id": "v3e_refined_best3_000096",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 96 --method refined_best3"
+ },
+ {
+  "id": "v3e_lawmean_pred_000096",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 96 --method lawmean_pred"
+ },
+ {
+  "id": "v3e_gt_000135",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 135 --method gt"
+ },
+ {
+  "id": "v3e_refined_top2_000135",
+  "cmd": ".venv/bin/python scripts/v3e/squeeze_run.py --index 135 --method refined_top2"
+ }
+]

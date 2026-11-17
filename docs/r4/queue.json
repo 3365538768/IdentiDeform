@@ -1,0 +1,184 @@
+{
+  "phase": "R4",
+  "max_per_gpu": 3,
+  "gpus": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "jobs": [
+    {
+      "id": "r4_cache_shard0",
+      "kind": "cmd",
+      "group": "vjepa-cache",
+      "mem_mib": 12000,
+      "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/r4/r4_cache.json --shard 0 --num-shards 8 --status-output docs/r4/cache_shard0.json"
+    },
+    {
+      "id": "r4_cache_shard1",
+      "kind": "cmd",
+      "group": "vjepa-cache",
+      "mem_mib": 12000,
+      "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/r4/r4_cache.json --shard 1 --num-shards 8 --status-output docs/r4/cache_shard1.json"
+    },
+    {
+      "id": "r4_cache_shard2",
+      "kind": "cmd",
+      "group": "vjepa-cache",
+      "mem_mib": 12000,
+      "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/r4/r4_cache.json --shard 2 --num-shards 8 --status-output docs/r4/cache_shard2.json"
+    },
+    {
+      "id": "r4_cache_shard3",
+      "kind": "cmd",
+      "group": "vjepa-cache",
+      "mem_mib": 12000,
+      "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/r4/r4_cache.json --shard 3 --num-shards 8 --status-output docs/r4/cache_shard3.json"
+    },
+    {
+      "id": "r4_cache_shard4",
+      "kind": "cmd",
+      "group": "vjepa-cache",
+      "mem_mib": 12000,
+      "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/r4/r4_cache.json --shard 4 --num-shards 8 --status-output docs/r4/cache_shard4.json"
+    },
+    {
+      "id": "r4_cache_shard5",
+      "kind": "cmd",
+      "group": "vjepa-cache",
+      "mem_mib": 12000,
+      "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/r4/r4_cache.json --shard 5 --num-shards 8 --status-output docs/r4/cache_shard5.json"
+    },
+    {
+      "id": "r4_cache_shard6",
+      "kind": "cmd",
+      "group": "vjepa-cache",
+      "mem_mib": 12000,
+      "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/r4/r4_cache.json --shard 6 --num-shards 8 --status-output docs/r4/cache_shard6.json"
+    },
+    {
+      "id": "r4_cache_shard7",
+      "kind": "cmd",
+      "group": "vjepa-cache",
+      "mem_mib": 12000,
+      "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/r4/r4_cache.json --shard 7 --num-shards 8 --status-output docs/r4/cache_shard7.json"
+    },
+    {
+      "id": "r4_cache_merge",
+      "kind": "cmd",
+      "group": "vjepa-cache",
+      "mem_mib": 12000,
+      "after": [
+        "r4_cache_shard0",
+        "r4_cache_shard1",
+        "r4_cache_shard2",
+        "r4_cache_shard3",
+        "r4_cache_shard4",
+        "r4_cache_shard5",
+        "r4_cache_shard6",
+        "r4_cache_shard7"
+      ],
+      "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/r4/r4_cache.json --status-output docs/r4/cache_merged.json"
+    },
+    {
+      "id": "r4_Bvj_seed17",
+      "config": "configs/r4/r4_Bvj_seed17.json",
+      "group": "B-vjepa2",
+      "seed": 17,
+      "kind": "train",
+      "after": [
+        "r4_cache_merge"
+      ],
+      "mem_mib": 20000
+    },
+    {
+      "id": "r4_Cvj_seed17",
+      "config": "configs/r4/r4_Cvj_seed17.json",
+      "group": "C-vjepa2",
+      "seed": 17,
+      "kind": "train",
+      "after": [
+        "r4_cache_merge"
+      ],
+      "mem_mib": 20000
+    },
+    {
+      "id": "r4_Dvj_seed17",
+      "config": "configs/r4/r4_Dvj_seed17.json",
+      "group": "D-vjepa2",
+      "seed": 17,
+      "kind": "train",
+      "after": [
+        "r4_cache_merge"
+      ],
+      "mem_mib": 20000
+    },
+    {
+      "id": "r4_Bvj_seed29",
+      "config": "configs/r4/r4_Bvj_seed29.json",
+      "group": "B-vjepa2",
+      "seed": 29,
+      "kind": "train",
+      "after": [
+        "r4_cache_merge"
+      ],
+      "mem_mib": 20000
+    },
+    {
+      "id": "r4_Cvj_seed29",
+      "config": "configs/r4/r4_Cvj_seed29.json",
+      "group": "C-vjepa2",
+      "seed": 29,
+      "kind": "train",
+      "after": [
+        "r4_cache_merge"
+      ],
+      "mem_mib": 20000
+    },
+    {
+      "id": "r4_Dvj_seed29",
+      "config": "configs/r4/r4_Dvj_seed29.json",
+      "group": "D-vjepa2",
+      "seed": 29,
+      "kind": "train",
+      "after": [
+        "r4_cache_merge"
+      ],
+      "mem_mib": 20000
+    },
+    {
+      "id": "r4_Bvj_seed43",
+      "config": "configs/r4/r4_Bvj_seed43.json",
+      "group": "B-vjepa2",
+      "seed": 43,
+      "kind": "train",
+      "after": [
+        "r4_cache_merge"
+      ],
+      "mem_mib": 20000
+    },
+    {
+      "id": "r4_Cvj_seed43",
+      "config": "configs/r4/r4_Cvj_seed43.json",
+      "group": "C-vjepa2",
+      "seed": 43,
+      "kind": "train",
+      "after": [
+        "r4_cache_merge"
+      ],
+      "mem_mib": 20000
+    },
+    {
+      "id": "r4_Dvj_seed43",
+      "config": "configs/r4/r4_Dvj_seed43.json",
+      "group": "D-vjepa2",
+      "seed": 43,
+      "kind": "train",
+      "after": [
+        "r4_cache_merge"
+      ],
+      "mem_mib": 20000
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+sim 5 gt centre:0.16 True 501
+measure centre:0.16 {'sag': 0.35676060187379116, 'left': 0.9509981245430559, 'crush': 0.03149099651483206, 'dent_p95': 0.08322782486683604, 'grip': 68.90966033935547, 'lift': 0.10495541095733642, 'height': 0.3498513698577881, 'n_particles': 62918, 'seg_particles': 25234}
+done 5 gt centre:0.16 False

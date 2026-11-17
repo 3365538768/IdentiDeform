@@ -1,0 +1,975 @@
+{
+ "phase": "v3d",
+ "max_per_gpu": 4,
+ "jobs": [
+  {
+   "id": "v3d_C1t_000005",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 5 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24 --gt-observed"
+  },
+  {
+   "id": "v3d_C1g_000005",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 5 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000005",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 5 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000009",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 9 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24 --gt-observed"
+  },
+  {
+   "id": "v3d_C1g_000009",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 9 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000009",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 9 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000025",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 25 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24 --gt-observed"
+  },
+  {
+   "id": "v3d_C1g_000025",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 25 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000025",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 25 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000026",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 26 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1g_000026",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 26 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000026",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 26 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000029",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 29 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1g_000029",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 29 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000029",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 29 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000055",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 55 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24 --gt-observed"
+  },
+  {
+   "id": "v3d_C1g_000055",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 55 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000055",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 55 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000066",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 66 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24 --gt-observed"
+  },
+  {
+   "id": "v3d_C1g_000066",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 66 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000066",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 66 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000074",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 74 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1g_000074",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 74 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000074",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 74 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000093",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 93 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1g_000093",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 93 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000093",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 93 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000096",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 96 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1g_000096",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 96 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000096",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 96 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000116",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 116 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1g_000116",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 116 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000116",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 116 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000127",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 127 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1g_000127",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 127 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000127",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 127 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000128",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 128 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1g_000128",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 128 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000128",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 128 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000136",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 136 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1g_000136",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 136 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000136",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 136 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000140",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 140 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1g_000140",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 140 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000140",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 140 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000141",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 141 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24 --gt-observed"
+  },
+  {
+   "id": "v3d_C1g_000141",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 141 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000141",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 141 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000142",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 142 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1g_000142",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 142 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000142",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 142 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000160",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 160 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1g_000160",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 160 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000160",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 160 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000179",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 179 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1g_000179",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 179 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000179",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 179 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000184",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 184 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1g_000184",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 184 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000184",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 184 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000195",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 195 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1g_000195",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 195 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000195",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 195 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000198",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 198 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1g_000198",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 198 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000198",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 198 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000203",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 203 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1g_000203",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 203 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000203",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 203 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000216",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 216 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1g_000216",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 216 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000216",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 216 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000219",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 219 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1g_000219",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 219 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000219",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 219 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000228",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 228 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1g_000228",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 228 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000228",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 228 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000261",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 261 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1g_000261",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 261 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000261",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 261 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000265",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 265 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1g_000265",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 265 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000265",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 265 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000269",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 269 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1g_000269",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 269 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000269",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 269 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1t_000283",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 283 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1g_000283",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 283 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1b_000283",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 283 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3d_C1o_000005",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 5 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000009",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 9 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000025",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 25 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000026",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 26 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000029",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 29 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000055",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 55 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000066",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 66 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000074",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 74 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000093",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 93 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000096",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 96 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000116",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 116 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000127",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 127 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000128",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 128 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000136",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 136 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000140",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 140 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000141",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 141 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000142",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 142 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000160",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 160 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000179",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 179 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000184",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 184 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000195",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 195 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000198",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 198 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000203",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 203 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000216",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 216 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000219",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 219 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000228",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 228 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000261",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 261 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000265",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 265 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000269",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 269 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3d_C1o_000283",
+   "kind": "cmd",
+   "group": "v3d-C1test",
+   "mem_mib": 6000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3d/c1_refine.py --run v2main_C_seed29 --split test --ensemble docs/v3d/ENSEMBLE_BCD9_TEST.json --out data/v3d_refine_test --index 283 --arm prior_top1 --budget 24 --replay-budgets 0,4,12,24"
+  }
+ ],
+ "gpus": [
+  0,
+  1,
+  2,
+  4,
+  5,
+  6,
+  7
+ ]
+}

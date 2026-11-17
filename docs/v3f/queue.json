@@ -1,0 +1,14 @@
+{
+ "phase": "V3f",
+ "max_per_gpu": 2,
+ "gpus": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "jobs": [],
+ "note": "v3f jobs run via nohup (scripts/v3f/run_bg.sh) because the shared queue counts all phases per GPU and v3d occupies >=4 slots/GPU"
+}

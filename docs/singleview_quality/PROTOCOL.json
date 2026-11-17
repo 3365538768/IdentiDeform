@@ -1,0 +1,33 @@
+{
+  "status": "prepared_not_launched",
+  "hypothesis": "Auxiliary field supervision or predicted-field feedback improves fixed-camera inference over matched video-only model",
+  "data": "existing P4c low-damping pilot; not quality-certified V2",
+  "inputs": "one camera per clip, random camera at training, first valid camera fixed at validation; compact feature and target slicing",
+  "arms": {
+    "B": "no field loss/no feedback",
+    "C": "field loss/no feedback",
+    "D": "field loss/predicted-field feedback"
+  },
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "controlled": "same backbone, split, seed, joint epochs and no field-only pretraining; no test selection",
+  "launch_gates": [
+    "verify frozen cache features are independent per camera",
+    "check train/val shape contract at runtime",
+    "report known data quality limitations and fixed-camera quality mask"
+  ],
+  "future_controls": [
+    "shuffled predicted-field feedback",
+    "held-out camera indices",
+    "oracle fields only as privileged diagnostic"
+  ],
+  "estimated_minutes_per_run": [
+    15,
+    45
+  ],
+  "estimate_status": "provisional until first measured epoch",
+  "fewshot_protocol_required": "support/query split by object; 1/5/10/20 support objects, at least 3 draws; engine-specific label codec; compare head adaptation, engine adapter and full-data target reference; report normalized excess error and replay metrics"
+}

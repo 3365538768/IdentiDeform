@@ -1,0 +1,19 @@
+15:47:37 start v3t1k_B_seed29 gpu 0
+15:47:38 start v3t1k_C_seed29 gpu 1
+15:47:39 start v3t1k_D_seed29 gpu 2
+15:47:40 start v3t1k_B_seed17 gpu 3
+15:47:41 start v3t1k_B_seed43 gpu 4
+15:47:43 start v3t1k_C_seed17 gpu 5
+15:59:30 exit v3t1k_B_seed43 0 gpu 4
+15:59:32 start v3t1k_C_seed43 gpu 4
+16:00:38 exit v3t1k_B_seed29 0 gpu 0
+16:00:38 start v3t1k_D_seed17 gpu 0
+16:02:41 exit v3t1k_C_seed29 0 gpu 1
+16:02:41 start v3t1k_D_seed43 gpu 1
+16:03:12 exit v3t1k_B_seed17 0 gpu 3
+16:03:12 exit v3t1k_C_seed17 0 gpu 5
+16:11:27 exit v3t1k_C_seed43 0 gpu 4
+16:12:57 exit v3t1k_D_seed29 0 gpu 2
+16:13:12 exit v3t1k_D_seed17 0 gpu 0
+16:14:42 exit v3t1k_D_seed43 0 gpu 1
+all done

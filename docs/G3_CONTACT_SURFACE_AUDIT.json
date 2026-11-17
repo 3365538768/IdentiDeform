@@ -1,0 +1,123 @@
+{
+  "status": "complete",
+  "completed": 12,
+  "total": 12,
+  "rows": [
+    {
+      "path": "data/calibration/g3_contact_preflight/uipc_ebb2790cab70d97b72b7",
+      "trajectory_sha256": "437e2260fbb4fbed359ce1f91b269c8f164f923b0162f2f3622fe56ddbcb5fee",
+      "saved_frames": 121,
+      "penetration_tolerance_m": 1e-08,
+      "max_overlapping_triangles": 0,
+      "offending_frames": [],
+      "passed": true
+    },
+    {
+      "path": "data/calibration/g3_contact_preflight/uipc_11f213d2a7bce0ecc417",
+      "trajectory_sha256": "13ab6f47223de599d35bc62b2dedf2486a388a9122f31a8a4767575cedf4ff74",
+      "saved_frames": 121,
+      "penetration_tolerance_m": 1e-08,
+      "max_overlapping_triangles": 0,
+      "offending_frames": [],
+      "passed": true
+    },
+    {
+      "path": "data/calibration/g3_contact_preflight/uipc_d8e5a9d5728c8495fac0",
+      "trajectory_sha256": "169970c1ca18738032ac2c96c3d4419d2655dfdc5c7c92568f0e1bfd9cbd6a97",
+      "saved_frames": 121,
+      "penetration_tolerance_m": 1e-08,
+      "max_overlapping_triangles": 0,
+      "offending_frames": [],
+      "passed": true
+    },
+    {
+      "path": "data/calibration/g3_contact_preflight/uipc_aa96fd5e1891314ded34",
+      "trajectory_sha256": "4bf122e7d384c8cceec4c3c6bb40d7f5569a82e681363f7d90034ee8f0140f81",
+      "saved_frames": 121,
+      "penetration_tolerance_m": 1e-08,
+      "max_overlapping_triangles": 0,
+      "offending_frames": [],
+      "passed": true
+    },
+    {
+      "path": "data/calibration/g3_contact_preflight/uipc_64ec64650eb3c4b0c479",
+      "trajectory_sha256": "08d88acc2b373fd0c811d46752bc75c38380db1095521ad5a8b686dd0f19665c",
+      "saved_frames": 121,
+      "penetration_tolerance_m": 1e-08,
+      "max_overlapping_triangles": 0,
+      "offending_frames": [],
+      "passed": true
+    },
+    {
+      "path": "data/calibration/g3_contact_preflight/uipc_111b9b545434fb67563e",
+      "trajectory_sha256": "7ace682ac0a3f620677f9a3bc270ed328c40f7703ec1053716124c74613c0937",
+      "saved_frames": 121,
+      "penetration_tolerance_m": 1e-08,
+      "max_overlapping_triangles": 0,
+      "offending_frames": [],
+      "passed": true
+    },
+    {
+      "path": "data/calibration/g3_contact_preflight/uipc_a3540617ff5d2c6ce793",
+      "trajectory_sha256": "25f7851e9c4a3c03bdbf552e2982191da24bfa4a8d22835a766c81aa4a6dffd7",
+      "saved_frames": 121,
+      "penetration_tolerance_m": 1e-08,
+      "max_overlapping_triangles": 0,
+      "offending_frames": [],
+      "passed": true
+    },
+    {
+      "path": "data/calibration/g3_contact_preflight/uipc_5f48978bc7a41c90d9c2",
+      "trajectory_sha256": "5ff655a7d6ad1fb02f9c6b44afda1da1d188c4a74080944660ed9a16a13b215a",
+      "saved_frames": 121,
+      "penetration_tolerance_m": 1e-08,
+      "max_overlapping_triangles": 0,
+      "offending_frames": [],
+      "passed": true
+    },
+    {
+      "path": "data/calibration/g3_contact_force_audit/d9b811cc4624ec00ae93",
+      "trajectory_sha256": "27bac107a47cac73e6d9390f59bbfa5f3e535326b3f012219a77225ad27fc190",
+      "saved_frames": 481,
+      "penetration_tolerance_m": 1e-08,
+      "max_overlapping_triangles": 0,
+      "offending_frames": [],
+      "passed": true
+    },
+    {
+      "path": "data/calibration/g3_contact_force_audit/2c1f7fee02d607dd1828",
+      "trajectory_sha256": "ea78a944f750e22b8573b4f73fbd7b5a3f6eb705e13735818a47eb31333c7724",
+      "saved_frames": 961,
+      "penetration_tolerance_m": 1e-08,
+      "max_overlapping_triangles": 0,
+      "offending_frames": [],
+      "passed": true
+    },
+    {
+      "path": "data/calibration/g3_contact_force_audit/cf025cdc8c6d61a18f6f",
+      "trajectory_sha256": "2593b16df6dbcd3a08d57a6da8738d9ff77c6b14b9605dd64088fbc300a32941",
+      "saved_frames": 481,
+      "penetration_tolerance_m": 1e-08,
+      "max_overlapping_triangles": 0,
+      "offending_frames": [],
+      "passed": true
+    },
+    {
+      "path": "data/calibration/g3_contact_force_audit/a704e496e6790de53e01",
+      "trajectory_sha256": "929f76bc697dac9ebea41aa301c2f08e3279a989003832cca7d9df004576603b",
+      "saved_frames": 961,
+      "penetration_tolerance_m": 1e-08,
+      "max_overlapping_triangles": 0,
+      "offending_frames": [],
+      "passed": true
+    }
+  ],
+  "admitted_for_training": false,
+  "scope": "All saved-frame intersections for our affine cuboid tool and tetrahedral solid.\n\nTriangle/box SAT catches edge/face crossings missed by vertex-inside tests.\nContainment uses the tool center in the complete deformed tet volume. This is\nspecific to this convex cuboid tool; it is not a generic tool collision checker,\nminimum-clearance certificate, or a continuous-time CCD proof.\n",
+  "updated_unix": 1794073779.5495558,
+  "current_case": "data/calibration/g3_contact_force_audit/a704e496e6790de53e01",
+  "current_frame": 900,
+  "current_frames": 961,
+  "saved_frame_intersection_screen_passed": true,
+  "next_gate": "Minimum surface separation/continuous-time proof, complete energy/actuator and friction audits remain; no automatic training"
+}

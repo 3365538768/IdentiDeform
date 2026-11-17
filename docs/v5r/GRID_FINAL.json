@@ -1,0 +1,31 @@
+{
+ "rule": "docs/v5r/PREREG_2026-11-16.md (= docs/v3r/PREREG_GRID_2026-11-15.md rule on V5b GT)",
+ "n_samples": 31,
+ "gt_failures_per_depth": {},
+ "excluded_depths": [],
+ "oracle_histogram_full_grid": {
+  "0.06": 1,
+  "0.1": 2,
+  "0.18": 1,
+  "0.24": 2,
+  "0.4": 1,
+  "0.56": 4,
+  "0.64": 20
+ },
+ "D_top": 0.64,
+ "grid": [
+  0.06,
+  0.1,
+  0.14,
+  0.18,
+  0.24,
+  0.32,
+  0.4,
+  0.48,
+  0.56,
+  0.64
+ ],
+ "n_at_top_final": 20,
+ "excluded_gt_samples": [],
+ "written_utc": "2026-11-16T05:20:43Z"
+}

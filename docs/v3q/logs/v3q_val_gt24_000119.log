@@ -1,0 +1,16 @@
+
+== 2026-11-15 09:24:08 host a2 gpu 3 attempt 1
+eval {'n': 1, 'law': 'plasticine', 'x': [4.491988, 3.746546], 'nu': 0.2788999372153278, 'cache': '4a1624482dbb6516', 'simulated_by': 'lawmean_gt', 'iou': 0.6912566477791007, 'iou_last': 0.4167913444517135, 'rgb_mae_union': 42.14434737489894, 'loss': 0.47401530271069914, 'seconds': 1184.5982019901276}
+
+== 2026-11-15 12:51:07 host a2 gpu 3 attempt 2
+eval {'n': 2, 'law': 'plasticine', 'x': [4.991988, 3.746546], 'nu': 0.2788999372153278, 'cache': '0dcf230a3333c809', 'simulated_by': 'lawmean_gt', 'iou': 0.6602095881211713, 'iou_last': 0.42064704962833543, 'rgb_mae_union': 45.375901135853695, 'loss': 0.5177351222155099, 'seconds': 991.4089295864105}
+eval {'n': 3, 'law': 'plasticine', 'x': [3.991988, 3.746546], 'nu': 0.2788999372153278, 'cache': '071a4a79eb8f5299', 'simulated_by': 'lawmean_gt', 'iou': 0.7716480462137497, 'iou_last': 0.3951551745590902, 'rgb_mae_union': 31.18300785313085, 'loss': 0.3506382590926458, 'seconds': 968.8851382732391}
+eval {'n': 4, 'law': 'plasticine', 'x': [3.5, 3.746546], 'nu': 0.2788999372153278, 'cache': 'f391b9e320c3a449', 'simulated_by': 'lawmean_gt', 'iou': 0.825813268580856, 'iou_last': 0.5398595851045838, 'rgb_mae_union': 22.09384914961123, 'loss': 0.2608292771038939, 'seconds': 1219.3954741954803}
+eval {'n': 5, 'law': 'plasticine', 'x': [4.0, 3.746546], 'nu': 0.2788999372153278, 'cache': '650af93b4225f764', 'simulated_by': 'lawmean_gt', 'iou': 0.7701415553208895, 'iou_last': 0.3960983690419277, 'rgb_mae_union': 31.433938992645103, 'loss': 0.35312879366987565, 'seconds': 1179.7237436771393}
+eval {'n': 6, 'law': 'plasticine', 'x': [3.5, 4.246546], 'nu': 0.2788999372153278, 'cache': 'cb681955b487ae98', 'simulated_by': 'lawmean_gt', 'iou': 0.825813268580856, 'iou_last': 0.5398595851045838, 'rgb_mae_union': 22.093879788117707, 'loss': 0.2608293972548997, 'seconds': 1365.74622631073}
+eval {'n': 7, 'law': 'plasticine', 'x': [3.5, 3.246546], 'nu': 0.2788999372153278, 'cache': 'bad91419598e155d', 'simulated_by': 'lawmean_gt', 'iou': 0.775307517056671, 'iou_last': 0.5164421162659566, 'rgb_mae_union': 30.11100961443677, 'loss': 0.3427748735881791, 'seconds': 1461.0071003437042}
+eval {'n': 8, 'law': 'plasticine', 'x': [3.75, 3.746546], 'nu': 0.2788999372153278, 'cache': '2b90b2b99e53f668', 'simulated_by': 'lawmean_gt', 'iou': 0.8171479314171641, 'iou_last': 0.4161845644527209, 'rgb_mae_union': 24.487750960840703, 'loss': 0.2788824645077014, 'seconds': 617.237860918045}
+eval {'n': 9, 'law': 'plasticine', 'x': [3.5, 3.996546], 'nu': 0.2788999372153278, 'cache': 'd223eb27f3aec8b5', 'simulated_by': 'lawmean_gt', 'iou': 0.825813268580856, 'iou_last': 0.5398595851045838, 'rgb_mae_union': 22.09381170254776, 'loss': 0.26082913025266463, 'seconds': 957.5631868839264}
+eval {'n': 10, 'law': 'plasticine', 'x': [3.75, 3.996546], 'nu': 0.2788999372153278, 'cache': 'a410483da8969b49', 'simulated_by': 'lawmean_gt', 'iou': 0.8240758792054713, 'iou_last': 0.4303984999638671, 'rgb_mae_union': 23.132105760151084, 'loss': 0.26663826103041527, 'seconds': 1434.5056855678558}
+
+== 2026-11-15 15:47:01 host a2 gpu 3 attempt 3

@@ -1,0 +1,151 @@
+[
+ {
+  "id": "v5b2k_B_seed29",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v5b2k_B_seed29.json --preload",
+  "busy": "v5b2k_B_seed29[.](json|resume)"
+ },
+ {
+  "id": "v5b2k_C_seed29",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v5b2k_C_seed29.json --preload",
+  "busy": "v5b2k_C_seed29[.](json|resume)"
+ },
+ {
+  "id": "v5b2k_D_seed29",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v5b2k_D_seed29.json --preload",
+  "busy": "v5b2k_D_seed29[.](json|resume)"
+ },
+ {
+  "id": "v5b2k_B_seed17",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v5b2k_B_seed17.json --preload",
+  "busy": "v5b2k_B_seed17[.](json|resume)"
+ },
+ {
+  "id": "v5b2k_B_seed43",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v5b2k_B_seed43.json --preload",
+  "busy": "v5b2k_B_seed43[.](json|resume)"
+ },
+ {
+  "id": "v5b2k_C_seed17",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v5b2k_C_seed17.json --preload",
+  "busy": "v5b2k_C_seed17[.](json|resume)"
+ },
+ {
+  "id": "v5b2k_C_seed43",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v5b2k_C_seed43.json --preload",
+  "busy": "v5b2k_C_seed43[.](json|resume)"
+ },
+ {
+  "id": "v5b2k_D_seed17",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v5b2k_D_seed17.json --preload",
+  "busy": "v5b2k_D_seed17[.](json|resume)"
+ },
+ {
+  "id": "v5b2k_D_seed43",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v5b2k_D_seed43.json --preload",
+  "busy": "v5b2k_D_seed43[.](json|resume)"
+ },
+ {
+  "id": "v5b2k_gate",
+  "gpu": false,
+  "after": [
+   "v5b2k_B_seed29",
+   "v5b2k_C_seed29",
+   "v5b2k_D_seed29",
+   "v5b2k_B_seed17",
+   "v5b2k_B_seed43",
+   "v5b2k_C_seed17",
+   "v5b2k_C_seed43",
+   "v5b2k_D_seed17",
+   "v5b2k_D_seed43"
+  ],
+  "cmd": ".venv/bin/python scripts/v5p/gate.py > docs/v5p/gate.log 2>&1"
+ },
+ {
+  "id": "v5b2k_B_seed29_test",
+  "after": [
+   "v5b2k_B_seed29",
+   "v5b2k_gate"
+  ],
+  "cmd": "test -e runs/v5b2k_B_seed29/test_once/predictions.jsonl || .venv/bin/python -m fieldbridge.cli evaluate --config configs/v3p/v5b2k_B_seed29.json --checkpoint runs/v5b2k_B_seed29/best_material.pt --split test --output runs/v5b2k_B_seed29/test_once > runs/v5b2k_B_seed29/test_once.log"
+ },
+ {
+  "id": "v5b2k_C_seed29_test",
+  "after": [
+   "v5b2k_C_seed29",
+   "v5b2k_gate"
+  ],
+  "cmd": "test -e runs/v5b2k_C_seed29/test_once/predictions.jsonl || .venv/bin/python -m fieldbridge.cli evaluate --config configs/v3p/v5b2k_C_seed29.json --checkpoint runs/v5b2k_C_seed29/best_material.pt --split test --output runs/v5b2k_C_seed29/test_once > runs/v5b2k_C_seed29/test_once.log"
+ },
+ {
+  "id": "v5b2k_D_seed29_test",
+  "after": [
+   "v5b2k_D_seed29",
+   "v5b2k_gate"
+  ],
+  "cmd": "test -e runs/v5b2k_D_seed29/test_once/predictions.jsonl || .venv/bin/python -m fieldbridge.cli evaluate --config configs/v3p/v5b2k_D_seed29.json --checkpoint runs/v5b2k_D_seed29/best_material.pt --split test --output runs/v5b2k_D_seed29/test_once > runs/v5b2k_D_seed29/test_once.log"
+ },
+ {
+  "id": "v5b2k_B_seed17_test",
+  "after": [
+   "v5b2k_B_seed17",
+   "v5b2k_gate"
+  ],
+  "cmd": "test -e runs/v5b2k_B_seed17/test_once/predictions.jsonl || .venv/bin/python -m fieldbridge.cli evaluate --config configs/v3p/v5b2k_B_seed17.json --checkpoint runs/v5b2k_B_seed17/best_material.pt --split test --output runs/v5b2k_B_seed17/test_once > runs/v5b2k_B_seed17/test_once.log"
+ },
+ {
+  "id": "v5b2k_B_seed43_test",
+  "after": [
+   "v5b2k_B_seed43",
+   "v5b2k_gate"
+  ],
+  "cmd": "test -e runs/v5b2k_B_seed43/test_once/predictions.jsonl || .venv/bin/python -m fieldbridge.cli evaluate --config configs/v3p/v5b2k_B_seed43.json --checkpoint runs/v5b2k_B_seed43/best_material.pt --split test --output runs/v5b2k_B_seed43/test_once > runs/v5b2k_B_seed43/test_once.log"
+ },
+ {
+  "id": "v5b2k_C_seed17_test",
+  "after": [
+   "v5b2k_C_seed17",
+   "v5b2k_gate"
+  ],
+  "cmd": "test -e runs/v5b2k_C_seed17/test_once/predictions.jsonl || .venv/bin/python -m fieldbridge.cli evaluate --config configs/v3p/v5b2k_C_seed17.json --checkpoint runs/v5b2k_C_seed17/best_material.pt --split test --output runs/v5b2k_C_seed17/test_once > runs/v5b2k_C_seed17/test_once.log"
+ },
+ {
+  "id": "v5b2k_C_seed43_test",
+  "after": [
+   "v5b2k_C_seed43",
+   "v5b2k_gate"
+  ],
+  "cmd": "test -e runs/v5b2k_C_seed43/test_once/predictions.jsonl || .venv/bin/python -m fieldbridge.cli evaluate --config configs/v3p/v5b2k_C_seed43.json --checkpoint runs/v5b2k_C_seed43/best_material.pt --split test --output runs/v5b2k_C_seed43/test_once > runs/v5b2k_C_seed43/test_once.log"
+ },
+ {
+  "id": "v5b2k_D_seed17_test",
+  "after": [
+   "v5b2k_D_seed17",
+   "v5b2k_gate"
+  ],
+  "cmd": "test -e runs/v5b2k_D_seed17/test_once/predictions.jsonl || .venv/bin/python -m fieldbridge.cli evaluate --config configs/v3p/v5b2k_D_seed17.json --checkpoint runs/v5b2k_D_seed17/best_material.pt --split test --output runs/v5b2k_D_seed17/test_once > runs/v5b2k_D_seed17/test_once.log"
+ },
+ {
+  "id": "v5b2k_D_seed43_test",
+  "after": [
+   "v5b2k_D_seed43",
+   "v5b2k_gate"
+  ],
+  "cmd": "test -e runs/v5b2k_D_seed43/test_once/predictions.jsonl || .venv/bin/python -m fieldbridge.cli evaluate --config configs/v3p/v5b2k_D_seed43.json --checkpoint runs/v5b2k_D_seed43/best_material.pt --split test --output runs/v5b2k_D_seed43/test_once > runs/v5b2k_D_seed43/test_once.log"
+ },
+ {
+  "id": "v5b2k_handoff",
+  "gpu": false,
+  "after": [
+   "v5b2k_B_seed29_test",
+   "v5b2k_C_seed29_test",
+   "v5b2k_D_seed29_test",
+   "v5b2k_B_seed17_test",
+   "v5b2k_B_seed43_test",
+   "v5b2k_C_seed17_test",
+   "v5b2k_C_seed43_test",
+   "v5b2k_D_seed17_test",
+   "v5b2k_D_seed43_test"
+  ],
+  "cmd": ".venv/bin/python scripts/v3p/export_handoff.py --prefix v5b2k --manifest v5bmain_t2000 --docs docs/v5p --data-root data/v5b_main --sid-prefix v5bmain --extra '{\"status\": \"final: V5b full prior (train 0-1999), main_run C_seed29 + 9-run ensemble\", \"note_for_c1_refine\": \"V5b data: data/v5b_main (all six actions; held shear/stretch/bend; V5 ranges). Re-point c1_refine stats/manifest/sid/data_root to the fields above and its generator to the V5b settings of scripts/v3n/gen_v3.py used for data/v5b_main. prediction_dir: val = best val epoch dir (r1_report.best_dir), test = test_once.\"}' > docs/v5p/handoff.log"
+ }
+]

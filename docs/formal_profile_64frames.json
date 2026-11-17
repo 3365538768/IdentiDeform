@@ -1,0 +1,98 @@
+{
+  "status": "profile_passed",
+  "config": {
+    "model": {
+      "backbone": "dinov2",
+      "repo": "external/dinov2",
+      "weights": "weights/dinov2_vitg14_reg4_pretrain.pth",
+      "hub_name": "dinov2_vitg14_reg",
+      "width": 512,
+      "heads": 8,
+      "layers": 2,
+      "field_size": 112,
+      "field_mode": "legacy_visual",
+      "feedback": "fields",
+      "use_prior": false,
+      "freeze_backbone": true,
+      "train_last_blocks": 0,
+      "frame_chunk": 8,
+      "detach_feedback": false
+    },
+    "data": {
+      "manifest": "data/manifests/engineering_pilot_240.jsonl",
+      "stats": "data/manifests/engineering_pilot_240.stats.json",
+      "frames": 64,
+      "max_views": 3,
+      "image_size": 224,
+      "view_dropout": 0.0
+    },
+    "train": {
+      "output": "runs/p0_dinov2_giant",
+      "seed": 17,
+      "epochs": 80,
+      "batch_size": 1,
+      "accumulation": 2,
+      "workers": 2,
+      "lr": 0.0003,
+      "backbone_lr": 3e-06,
+      "weight_decay": 0.05,
+      "field_epochs": 10,
+      "field_weight": 1.0,
+      "contact_loss": "bce",
+      "parameter_weight": 1.0,
+      "nll_weight": 0.05,
+      "law_weight": 0.1,
+      "clip_grad": 1.0,
+      "bf16": true,
+      "device": "cuda",
+      "max_steps": 0,
+      "resume": "",
+      "initialize": "",
+      "purpose": "pilot"
+    }
+  },
+  "iterations": [
+    {
+      "iteration": 0,
+      "gpu_step_seconds": 2.418914125999436,
+      "cpu_read_resize_seconds": 2.3740319149801508,
+      "loss": 1.17252779006958
+    },
+    {
+      "iteration": 1,
+      "gpu_step_seconds": 0.9788585639325902,
+      "cpu_read_resize_seconds": 2.3586835510795936,
+      "loss": 1.7616047859191895
+    },
+    {
+      "iteration": 2,
+      "gpu_step_seconds": 0.9955414190189913,
+      "cpu_read_resize_seconds": 2.304272525012493,
+      "loss": 1.4119367599487305
+    },
+    {
+      "iteration": 3,
+      "gpu_step_seconds": 0.9784178129630163,
+      "cpu_read_resize_seconds": 2.291196345933713,
+      "loss": 1.0457918643951416
+    },
+    {
+      "iteration": 4,
+      "gpu_step_seconds": 0.9993966670008376,
+      "cpu_read_resize_seconds": 2.276900260010734,
+      "loss": 0.6128385066986084
+    },
+    {
+      "iteration": 5,
+      "gpu_step_seconds": 0.9816077830037102,
+      "cpu_read_resize_seconds": 2.295301654958166,
+      "loss": 1.061730980873108
+    }
+  ],
+  "median_gpu_step_seconds_after_warmup": 0.9816077830037102,
+  "max_gpu_allocated_bytes": 5791766528,
+  "max_gpu_reserved_bytes": 6413090816,
+  "parameters": 1147430685,
+  "trainable_parameters": 10943773,
+  "note": "Six steps on training samples only; warmup excluded from median. No model-quality conclusion or test evaluation."
+}

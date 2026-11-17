@@ -1,0 +1,450 @@
+{
+ "phase": "V3c",
+ "max_per_gpu": 8,
+ "gpus": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "jobs": [
+  {
+   "id": "v3c_dino_cache_s0",
+   "kind": "cmd",
+   "group": "v3c-dino-cache",
+   "mem_mib": 10000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/prepare_feature_cache.py --config configs/v3c/v3c_dino_cache.json --control-output runs/v3c_dino_cache --prefetch-workers 6 --shard 0 --num-shards 4 --status-output docs/v3c/dino_cache_shard0.json"
+  },
+  {
+   "id": "v3c_dino_cache_s1",
+   "kind": "cmd",
+   "group": "v3c-dino-cache",
+   "mem_mib": 10000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/prepare_feature_cache.py --config configs/v3c/v3c_dino_cache.json --control-output runs/v3c_dino_cache --prefetch-workers 6 --shard 1 --num-shards 4 --status-output docs/v3c/dino_cache_shard1.json"
+  },
+  {
+   "id": "v3c_dino_cache_s2",
+   "kind": "cmd",
+   "group": "v3c-dino-cache",
+   "mem_mib": 10000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/prepare_feature_cache.py --config configs/v3c/v3c_dino_cache.json --control-output runs/v3c_dino_cache --prefetch-workers 6 --shard 2 --num-shards 4 --status-output docs/v3c/dino_cache_shard2.json"
+  },
+  {
+   "id": "v3c_dino_cache_s3",
+   "kind": "cmd",
+   "group": "v3c-dino-cache",
+   "mem_mib": 10000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/prepare_feature_cache.py --config configs/v3c/v3c_dino_cache.json --control-output runs/v3c_dino_cache --prefetch-workers 6 --shard 3 --num-shards 4 --status-output docs/v3c/dino_cache_shard3.json"
+  },
+  {
+   "id": "v3c_dino_cache_merge",
+   "kind": "cmd",
+   "group": "v3c-dino-cache",
+   "mem_mib": 10000,
+   "retries": 2,
+   "after": [
+    "v3c_dino_cache_s0",
+    "v3c_dino_cache_s1",
+    "v3c_dino_cache_s2",
+    "v3c_dino_cache_s3"
+   ],
+   "cmd": ".venv/bin/python scripts/prepare_feature_cache.py --config configs/v3c/v3c_dino_cache.json --control-output runs/v3c_dino_cache --status-output docs/v3c/dino_cache_merge.json"
+  },
+  {
+   "id": "v3c_dino_B_seed17",
+   "config": "configs/v3c/v3c_dino_B_seed17.json",
+   "group": "v3c-dino-B",
+   "seed": 17,
+   "kind": "train",
+   "mem_mib": 16000,
+   "retries": 2,
+   "after": [
+    "v3c_dino_cache_merge"
+   ]
+  },
+  {
+   "id": "v3c_dino_B_seed29",
+   "config": "configs/v3c/v3c_dino_B_seed29.json",
+   "group": "v3c-dino-B",
+   "seed": 29,
+   "kind": "train",
+   "mem_mib": 16000,
+   "retries": 2,
+   "after": [
+    "v3c_dino_cache_merge"
+   ]
+  },
+  {
+   "id": "v3c_dino_B_seed43",
+   "config": "configs/v3c/v3c_dino_B_seed43.json",
+   "group": "v3c-dino-B",
+   "seed": 43,
+   "kind": "train",
+   "mem_mib": 16000,
+   "retries": 2,
+   "after": [
+    "v3c_dino_cache_merge"
+   ]
+  },
+  {
+   "id": "v3c_dino_C_seed17",
+   "config": "configs/v3c/v3c_dino_C_seed17.json",
+   "group": "v3c-dino-C",
+   "seed": 17,
+   "kind": "train",
+   "mem_mib": 16000,
+   "retries": 2,
+   "after": [
+    "v3c_dino_cache_merge"
+   ]
+  },
+  {
+   "id": "v3c_dino_C_seed29",
+   "config": "configs/v3c/v3c_dino_C_seed29.json",
+   "group": "v3c-dino-C",
+   "seed": 29,
+   "kind": "train",
+   "mem_mib": 16000,
+   "retries": 2,
+   "after": [
+    "v3c_dino_cache_merge"
+   ]
+  },
+  {
+   "id": "v3c_dino_C_seed43",
+   "config": "configs/v3c/v3c_dino_C_seed43.json",
+   "group": "v3c-dino-C",
+   "seed": 43,
+   "kind": "train",
+   "mem_mib": 16000,
+   "retries": 2,
+   "after": [
+    "v3c_dino_cache_merge"
+   ]
+  },
+  {
+   "id": "v3c_dino_S_seed17",
+   "config": "configs/v3c/v3c_dino_S_seed17.json",
+   "group": "v3c-dino-S",
+   "seed": 17,
+   "kind": "train",
+   "mem_mib": 16000,
+   "retries": 2,
+   "after": [
+    "v3c_dino_cache_merge"
+   ]
+  },
+  {
+   "id": "v3c_dino_S_seed29",
+   "config": "configs/v3c/v3c_dino_S_seed29.json",
+   "group": "v3c-dino-S",
+   "seed": 29,
+   "kind": "train",
+   "mem_mib": 16000,
+   "retries": 2,
+   "after": [
+    "v3c_dino_cache_merge"
+   ]
+  },
+  {
+   "id": "v3c_dino_S_seed43",
+   "config": "configs/v3c/v3c_dino_S_seed43.json",
+   "group": "v3c-dino-S",
+   "seed": 43,
+   "kind": "train",
+   "mem_mib": 16000,
+   "retries": 2,
+   "after": [
+    "v3c_dino_cache_merge"
+   ]
+  },
+  {
+   "id": "v3c_vlm_s0",
+   "kind": "cmd",
+   "group": "v3c-vlm",
+   "mem_mib": 26000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v3c/vlm_v2main.py --shard 0 --num-shards 4 --output runs/v3c_vlm_qwen3vl8b_val"
+  },
+  {
+   "id": "v3c_vlm_s1",
+   "kind": "cmd",
+   "group": "v3c-vlm",
+   "mem_mib": 26000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v3c/vlm_v2main.py --shard 1 --num-shards 4 --output runs/v3c_vlm_qwen3vl8b_val"
+  },
+  {
+   "id": "v3c_vlm_s2",
+   "kind": "cmd",
+   "group": "v3c-vlm",
+   "mem_mib": 26000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v3c/vlm_v2main.py --shard 2 --num-shards 4 --output runs/v3c_vlm_qwen3vl8b_val"
+  },
+  {
+   "id": "v3c_vlm_s3",
+   "kind": "cmd",
+   "group": "v3c-vlm",
+   "mem_mib": 26000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v3c/vlm_v2main.py --shard 3 --num-shards 4 --output runs/v3c_vlm_qwen3vl8b_val"
+  },
+  {
+   "id": "v3c_pacnerf_build",
+   "kind": "cmd",
+   "group": "v3c-pacnerf",
+   "mem_mib": 14000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3c/pacnerf_fewshot.py build"
+  },
+  {
+   "id": "v3c_test_cache_vjl_s0",
+   "kind": "cmd",
+   "group": "v3c-test-cache",
+   "mem_mib": 20000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/v3c/v3c_test_vjl_cache.json --splits test --shard 0 --num-shards 2 --status-output docs/v3c/test_cache_vjl_shard0.json"
+  },
+  {
+   "id": "v3c_test_cache_vjl_s1",
+   "kind": "cmd",
+   "group": "v3c-test-cache",
+   "mem_mib": 20000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/v3c/v3c_test_vjl_cache.json --splits test --shard 1 --num-shards 2 --status-output docs/v3c/test_cache_vjl_shard1.json"
+  },
+  {
+   "id": "v3c_test_cache_vjl_merge",
+   "kind": "cmd",
+   "group": "v3c-test-cache",
+   "mem_mib": 20000,
+   "retries": 2,
+   "after": [
+    "v3c_test_cache_vjl_s0",
+    "v3c_test_cache_vjl_s1"
+   ],
+   "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/v3c/v3c_test_vjl_cache.json --splits test --status-output docs/v3c/test_cache_vjl_merge.json"
+  },
+  {
+   "id": "v3c_test_cache_dino_s0",
+   "kind": "cmd",
+   "group": "v3c-test-cache",
+   "mem_mib": 10000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/prepare_feature_cache.py --config configs/v3c/v3c_test_dino_cache.json --control-output runs/v3c_test_dino_cache --prefetch-workers 6 --splits test --shard 0 --num-shards 2 --status-output docs/v3c/test_cache_dino_shard0.json"
+  },
+  {
+   "id": "v3c_test_cache_dino_s1",
+   "kind": "cmd",
+   "group": "v3c-test-cache",
+   "mem_mib": 10000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/prepare_feature_cache.py --config configs/v3c/v3c_test_dino_cache.json --control-output runs/v3c_test_dino_cache --prefetch-workers 6 --splits test --shard 1 --num-shards 2 --status-output docs/v3c/test_cache_dino_shard1.json"
+  },
+  {
+   "id": "v3c_test_cache_dino_merge",
+   "kind": "cmd",
+   "group": "v3c-test-cache",
+   "mem_mib": 10000,
+   "retries": 2,
+   "after": [
+    "v3c_test_cache_dino_s0",
+    "v3c_test_cache_dino_s1"
+   ],
+   "cmd": ".venv/bin/python scripts/prepare_feature_cache.py --config configs/v3c/v3c_test_dino_cache.json --control-output runs/v3c_test_dino_cache --splits test --status-output docs/v3c/test_cache_dino_merge.json"
+  },
+  {
+   "id": "v3c_test_eval_v2main_B_seed17",
+   "kind": "cmd",
+   "group": "v3c-test-eval",
+   "mem_mib": 12000,
+   "retries": 0,
+   "cmd": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v2main/v2main_B_seed17.json --checkpoint runs/v2main_B_seed17/best_material.pt --prepared-dir data/prepared/v2main_test_vjl --output runs/v2main_B_seed17/test_once"
+  },
+  {
+   "id": "v3c_test_eval_v2main_B_seed29",
+   "kind": "cmd",
+   "group": "v3c-test-eval",
+   "mem_mib": 12000,
+   "retries": 0,
+   "cmd": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v2main/v2main_B_seed29.json --checkpoint runs/v2main_B_seed29/best_material.pt --prepared-dir data/prepared/v2main_test_vjl --output runs/v2main_B_seed29/test_once"
+  },
+  {
+   "id": "v3c_test_eval_v2main_B_seed43",
+   "kind": "cmd",
+   "group": "v3c-test-eval",
+   "mem_mib": 12000,
+   "retries": 0,
+   "cmd": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v2main/v2main_B_seed43.json --checkpoint runs/v2main_B_seed43/best_material.pt --prepared-dir data/prepared/v2main_test_vjl --output runs/v2main_B_seed43/test_once"
+  },
+  {
+   "id": "v3c_test_eval_v2main_C_seed17",
+   "kind": "cmd",
+   "group": "v3c-test-eval",
+   "mem_mib": 12000,
+   "retries": 0,
+   "cmd": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v2main/v2main_C_seed17.json --checkpoint runs/v2main_C_seed17/best_material.pt --prepared-dir data/prepared/v2main_test_vjl --output runs/v2main_C_seed17/test_once"
+  },
+  {
+   "id": "v3c_test_eval_v2main_C_seed29",
+   "kind": "cmd",
+   "group": "v3c-test-eval",
+   "mem_mib": 12000,
+   "retries": 0,
+   "cmd": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v2main/v2main_C_seed29.json --checkpoint runs/v2main_C_seed29/best_material.pt --prepared-dir data/prepared/v2main_test_vjl --output runs/v2main_C_seed29/test_once"
+  },
+  {
+   "id": "v3c_test_eval_v2main_C_seed43",
+   "kind": "cmd",
+   "group": "v3c-test-eval",
+   "mem_mib": 12000,
+   "retries": 0,
+   "cmd": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v2main/v2main_C_seed43.json --checkpoint runs/v2main_C_seed43/best_material.pt --prepared-dir data/prepared/v2main_test_vjl --output runs/v2main_C_seed43/test_once"
+  },
+  {
+   "id": "v3c_test_eval_v2main_D_seed17",
+   "kind": "cmd",
+   "group": "v3c-test-eval",
+   "mem_mib": 12000,
+   "retries": 0,
+   "cmd": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v2main/v2main_D_seed17.json --checkpoint runs/v2main_D_seed17/best_material.pt --prepared-dir data/prepared/v2main_test_vjl --output runs/v2main_D_seed17/test_once"
+  },
+  {
+   "id": "v3c_test_eval_v2main_D_seed29",
+   "kind": "cmd",
+   "group": "v3c-test-eval",
+   "mem_mib": 12000,
+   "retries": 0,
+   "cmd": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v2main/v2main_D_seed29.json --checkpoint runs/v2main_D_seed29/best_material.pt --prepared-dir data/prepared/v2main_test_vjl --output runs/v2main_D_seed29/test_once"
+  },
+  {
+   "id": "v3c_test_eval_v2main_D_seed43",
+   "kind": "cmd",
+   "group": "v3c-test-eval",
+   "mem_mib": 12000,
+   "retries": 0,
+   "cmd": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v2main/v2main_D_seed43.json --checkpoint runs/v2main_D_seed43/best_material.pt --prepared-dir data/prepared/v2main_test_vjl --output runs/v2main_D_seed43/test_once"
+  },
+  {
+   "id": "v3c_test_eval_v3c_dino_B_seed17",
+   "kind": "cmd",
+   "group": "v3c-test-eval",
+   "mem_mib": 12000,
+   "retries": 0,
+   "cmd": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v3c/v3c_dino_B_seed17.json --checkpoint runs/v3c_dino_B_seed17/best_material.pt --prepared-dir data/prepared/v2main_test_dinov3l16 --output runs/v3c_dino_B_seed17/test_once"
+  },
+  {
+   "id": "v3c_test_eval_v3c_dino_B_seed29",
+   "kind": "cmd",
+   "group": "v3c-test-eval",
+   "mem_mib": 12000,
+   "retries": 0,
+   "cmd": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v3c/v3c_dino_B_seed29.json --checkpoint runs/v3c_dino_B_seed29/best_material.pt --prepared-dir data/prepared/v2main_test_dinov3l16 --output runs/v3c_dino_B_seed29/test_once"
+  },
+  {
+   "id": "v3c_test_eval_v3c_dino_B_seed43",
+   "kind": "cmd",
+   "group": "v3c-test-eval",
+   "mem_mib": 12000,
+   "retries": 0,
+   "cmd": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v3c/v3c_dino_B_seed43.json --checkpoint runs/v3c_dino_B_seed43/best_material.pt --prepared-dir data/prepared/v2main_test_dinov3l16 --output runs/v3c_dino_B_seed43/test_once"
+  },
+  {
+   "id": "v3c_test_eval_v3c_dino_C_seed17",
+   "kind": "cmd",
+   "group": "v3c-test-eval",
+   "mem_mib": 12000,
+   "retries": 0,
+   "cmd": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v3c/v3c_dino_C_seed17.json --checkpoint runs/v3c_dino_C_seed17/best_material.pt --prepared-dir data/prepared/v2main_test_dinov3l16 --output runs/v3c_dino_C_seed17/test_once"
+  },
+  {
+   "id": "v3c_test_eval_v3c_dino_C_seed29",
+   "kind": "cmd",
+   "group": "v3c-test-eval",
+   "mem_mib": 12000,
+   "retries": 0,
+   "cmd": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v3c/v3c_dino_C_seed29.json --checkpoint runs/v3c_dino_C_seed29/best_material.pt --prepared-dir data/prepared/v2main_test_dinov3l16 --output runs/v3c_dino_C_seed29/test_once"
+  },
+  {
+   "id": "v3c_test_eval_v3c_dino_C_seed43",
+   "kind": "cmd",
+   "group": "v3c-test-eval",
+   "mem_mib": 12000,
+   "retries": 0,
+   "cmd": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v3c/v3c_dino_C_seed43.json --checkpoint runs/v3c_dino_C_seed43/best_material.pt --prepared-dir data/prepared/v2main_test_dinov3l16 --output runs/v3c_dino_C_seed43/test_once"
+  },
+  {
+   "id": "v3c_test_eval_v3c_dino_S_seed17",
+   "kind": "cmd",
+   "group": "v3c-test-eval",
+   "mem_mib": 12000,
+   "retries": 0,
+   "cmd": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v3c/v3c_dino_S_seed17.json --checkpoint runs/v3c_dino_S_seed17/best_material.pt --prepared-dir data/prepared/v2main_test_dinov3l16 --output runs/v3c_dino_S_seed17/test_once"
+  },
+  {
+   "id": "v3c_test_eval_v3c_dino_S_seed29",
+   "kind": "cmd",
+   "group": "v3c-test-eval",
+   "mem_mib": 12000,
+   "retries": 0,
+   "cmd": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v3c/v3c_dino_S_seed29.json --checkpoint runs/v3c_dino_S_seed29/best_material.pt --prepared-dir data/prepared/v2main_test_dinov3l16 --output runs/v3c_dino_S_seed29/test_once"
+  },
+  {
+   "id": "v3c_test_eval_v3c_dino_S_seed43",
+   "kind": "cmd",
+   "group": "v3c-test-eval",
+   "mem_mib": 12000,
+   "retries": 0,
+   "cmd": ".venv/bin/python scripts/v3c/eval_test.py --config configs/v3c/v3c_dino_S_seed43.json --checkpoint runs/v3c_dino_S_seed43/best_material.pt --prepared-dir data/prepared/v2main_test_dinov3l16 --output runs/v3c_dino_S_seed43/test_once"
+  },
+  {
+   "id": "v3c_test_simple",
+   "kind": "cmd",
+   "group": "v3c-test-eval",
+   "mem_mib": 0,
+   "retries": 0,
+   "cmd": ".venv/bin/python scripts/v3c/simple_baselines_test.py"
+  },
+  {
+   "id": "v3c_test_vlm_s0",
+   "kind": "cmd",
+   "group": "v3c-test-eval",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3c/vlm_v2main.py --split test --manifest data/manifests/v2main_withtest.jsonl --shard 0 --num-shards 4 --output runs/v3c_vlm_qwen3vl8b_test"
+  },
+  {
+   "id": "v3c_test_vlm_s1",
+   "kind": "cmd",
+   "group": "v3c-test-eval",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3c/vlm_v2main.py --split test --manifest data/manifests/v2main_withtest.jsonl --shard 1 --num-shards 4 --output runs/v3c_vlm_qwen3vl8b_test"
+  },
+  {
+   "id": "v3c_test_vlm_s2",
+   "kind": "cmd",
+   "group": "v3c-test-eval",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3c/vlm_v2main.py --split test --manifest data/manifests/v2main_withtest.jsonl --shard 2 --num-shards 4 --output runs/v3c_vlm_qwen3vl8b_test"
+  },
+  {
+   "id": "v3c_test_vlm_s3",
+   "kind": "cmd",
+   "group": "v3c-test-eval",
+   "mem_mib": 26000,
+   "retries": 2,
+   "cmd": ".venv/bin/python scripts/v3c/vlm_v2main.py --split test --manifest data/manifests/v2main_withtest.jsonl --shard 3 --num-shards 4 --output runs/v3c_vlm_qwen3vl8b_test"
+  }
+ ]
+}

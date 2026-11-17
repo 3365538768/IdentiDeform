@@ -1,0 +1,22 @@
+simulation failed obs_12 1
+simulation failed obs_13 1
+eval {'n': 13, 'law': 'jelly', 'xf': [2.876167, 2.095095, 0.25, 0.277758], 'x': [2.876167, 2.095095], 'seconds': 149.6202199459076, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval {'n': 14, 'law': 'jelly', 'xf': [2.214124, 2.095095, 0.25, 0.277758], 'x': [2.214124, 2.095095], 'seconds': 150.3001217842102, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval {'n': 15, 'law': 'jelly', 'xf': [2.03544, 2.095095, 0.25, 0.277758], 'x': [2.03544, 2.095095], 'seconds': 453.6548810005188, 'iou': 0.5087749521841965, 'iou_last': 0.4615567150696383, 'rgb_mae_union': 91.73858069001925, 'loss': 0.8509841877766633}
+simulation failed obs_15 1
+simulation failed obs_16 1
+eval {'n': 16, 'law': 'jelly', 'xf': [3.080924, 2.095095, 0.25, 0.277758], 'x': [3.080924, 2.095095], 'seconds': 125.64157366752625, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval {'n': 17, 'law': 'jelly', 'xf': [2.215855, 2.095095, 0.25, 0.277758], 'x': [2.215855, 2.095095], 'seconds': 127.18159365653992, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_18 1
+simulation failed obs_17 1
+eval {'n': 18, 'law': 'jelly', 'xf': [2.550564, 2.095095, 0.25, 0.277758], 'x': [2.550564, 2.095095], 'seconds': 126.28918957710266, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval {'n': 19, 'law': 'jelly', 'xf': [2.322299, 2.095095, 0.25, 0.277758], 'x': [2.322299, 2.095095], 'seconds': 124.98245906829834, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_21 1
+simulation failed obs_22 1
+simulation failed obs_19 1
+eval {'n': 20, 'law': 'jelly', 'xf': [2.131981, 2.095095, 0.25, 0.277758], 'x': [2.131981, 2.095095], 'seconds': 171.02373003959656, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval {'n': 21, 'law': 'jelly', 'xf': [2.351242, 2.095095, 0.25, 0.277758], 'x': [2.351242, 2.095095], 'seconds': 480.9360513687134, 'iou': 0.5143586178008314, 'iou_last': 0.4612150451174841, 'rgb_mae_union': 90.97842379018415, 'loss': 0.8424195147096947}
+eval {'n': 22, 'law': 'jelly', 'xf': [2.425693, 2.095095, 0.25, 0.277758], 'x': [2.425693, 2.095095], 'seconds': 168.80023646354675, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval {'n': 23, 'law': 'jelly', 'xf': [2.155086, 2.095095, 0.25, 0.277758], 'x': [2.155086, 2.095095], 'seconds': 170.0580141544342, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval {'n': 24, 'law': 'jelly', 'xf': [2.106133, 2.095095, 0.25, 0.277758], 'x': [2.106133, 2.095095], 'seconds': 410.84358644485474, 'iou': 0.509294138759601, 'iou_last': 0.46267552403128104, 'rgb_mae_union': 91.4542408552725, 'loss': 0.8493499430257814}
+done 231 cma_gtmean {'0': 0.095, '4': 1.29, '12': 0.581, '24': 0.581}

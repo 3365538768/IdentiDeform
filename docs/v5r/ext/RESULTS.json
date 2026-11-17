@@ -1,0 +1,1258 @@
+{
+ "stage": "v5r",
+ "created_utc": "2026-11-16T05:55:02Z",
+ "prereg": "docs/v5r/PREREG_2026-11-16.md",
+ "grid": {
+  "rule": "docs/v5r/PREREG_2026-11-16.md (= docs/v3r/PREREG_GRID_2026-11-15.md rule on V5b GT)",
+  "n_samples": 31,
+  "gt_failures_per_depth": {},
+  "excluded_depths": [],
+  "oracle_histogram_full_grid": {
+   "0.06": 1,
+   "0.1": 2,
+   "0.18": 1,
+   "0.24": 2,
+   "0.4": 1,
+   "0.56": 4,
+   "0.64": 20
+  },
+  "D_top": 0.64,
+  "grid": [
+   0.06,
+   0.1,
+   0.14,
+   0.18,
+   0.24,
+   0.32,
+   0.4,
+   0.48,
+   0.56,
+   0.64
+  ],
+  "n_at_top_final": 20,
+  "excluded_gt_samples": [],
+  "written_utc": "2026-11-16T05:20:43Z"
+ },
+ "protocol": {
+  "task": "damage-aware parallel-jaw squeeze: two rigid sticky plates close on the object along its narrower horizontal axis by d*W/2 each over 1.0 s, hold until 1.5 s, open (plates removed), free relaxation until 4.0 s; gravity, floor collider; same MPM settings as V2 main/C1 (low damping, substep 1e-4, n_grid from template).",
+  "decision": "largest candidate depth d whose predicted permanent crush <= tau and d >= d_min; else abstain (refuse grasp)",
+  "candidate_depths": [
+   0.06,
+   0.1,
+   0.14,
+   0.18,
+   0.24,
+   0.32,
+   0.4,
+   0.48,
+   0.56,
+   0.64
+  ],
+  "d_min": 0.06,
+  "tau": 0.03,
+  "damage_metric": "crush",
+  "damage_metric_definition": "PRIMARY. permanent crush = (span_ref - span_sq_aligned) / W: span = 1-99 % quantile extent along the squeeze axis of all MPM particles averaged over 3.5-4.0 s (after release); the squeezed configuration is first rigidly (Procrustes) aligned to the reference (d=0 run, same parameters), so rigid rotation after release is not counted; W = initial width along the squeeze axis (narrower horizontal axis)",
+  "gravity": "off for the task (g=0): under the V2-main gravity setting most elastoplastic objects slump to a puddle in <0.5 s (pilot figure docs/v3e/figs/pilot_particles_gravity.png), which makes a grasp ill-posed",
+  "execution": "GT-parameter simulation at the chosen depth (shared GT runs at every candidate depth; Warp-MPM run-to-run nondeterminism noted separately)",
+  "success": "chosen d is GT-feasible, or abstain when no candidate depth is GT-feasible",
+  "regret": "|d_chosen - d_oracle|, abstain = 0",
+  "utility": "secondary (added after the primary-metric switch, before final results): achieved safe grasp depth = d_chosen if GT-feasible else 0 (damage or abstain); oracle utility = d_oracle",
+  "twins": "object geometry = observed object for every method; twins differ only in material law/parameters; hardening/softening are not predicted (0.25 for twins, GT values for GT)",
+  "fixed_heuristic": "single depth or abstain for all objects, chosen leave-one-out on the other evaluated samples using their GT outcomes",
+  "bootstrap": "object (cluster) bootstrap over object identities, 2000 resamples, percentile 95% CI"
+ },
+ "n_samples": 31,
+ "n_complete": 0,
+ "excluded_samples": [],
+ "table": {
+  "gt": {
+   "label": "GT parameters (oracle twin)",
+   "n": 31,
+   "all": {
+    "n": 31,
+    "success": 1.0,
+    "success_ci95_object_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "regret_mean": 0.0,
+    "regret_ci95_object_bootstrap": [
+     0.0,
+     0.0
+    ],
+    "damage_rate": 0.0,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.527741935483871,
+    "utility_mean": 0.527741935483871,
+    "utility_ci95_object_bootstrap": [
+     0.466,
+     0.5967065217391303
+    ],
+    "oracle_utility_mean": 0.527741935483871
+   },
+   "plastic_laws": {
+    "n": 20,
+    "success": 1.0,
+    "success_ci95_object_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "regret_mean": 0.0,
+    "regret_ci95_object_bootstrap": [
+     0.0,
+     0.0
+    ],
+    "damage_rate": 0.0,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.4860000000000001,
+    "utility_mean": 0.4860000000000001,
+    "utility_ci95_object_bootstrap": [
+     0.3930434782608696,
+     0.6023529411764708
+    ],
+    "oracle_utility_mean": 0.4860000000000001
+   },
+   "plasticine": {
+    "n": 12,
+    "success": 1.0,
+    "success_ci95_object_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "regret_mean": 0.0,
+    "regret_ci95_object_bootstrap": [
+     0.0,
+     0.0
+    ],
+    "damage_rate": 0.0,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.555,
+    "utility_mean": 0.555,
+    "utility_ci95_object_bootstrap": [
+     0.48875,
+     0.6311111111111112
+    ],
+    "oracle_utility_mean": 0.555
+   },
+   "metal": {
+    "n": 8,
+    "success": 1.0,
+    "success_ci95_object_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "regret_mean": 0.0,
+    "regret_ci95_object_bootstrap": [
+     0.0,
+     0.0
+    ],
+    "damage_rate": 0.0,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.3825,
+    "utility_mean": 0.3825,
+    "utility_ci95_object_bootstrap": [
+     0.18880952380952382,
+     0.5700000000000001
+    ],
+    "oracle_utility_mean": 0.3825
+   },
+   "jelly": {
+    "n": 11,
+    "success": 1.0,
+    "success_ci95_object_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "regret_mean": 0.0,
+    "regret_ci95_object_bootstrap": [
+     0.0,
+     0.0
+    ],
+    "damage_rate": 0.0,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.6036363636363636,
+    "utility_mean": 0.6036363636363636,
+    "utility_ci95_object_bootstrap": [
+     0.5309090909090909,
+     0.64
+    ],
+    "oracle_utility_mean": 0.6036363636363636
+   }
+  },
+  "prior_vt": {
+   "label": "(c) vision + touch prior (3-seed ensemble, 0 sims)",
+   "n": 6,
+   "all": {
+    "n": 6,
+    "success": 0.8333333333333334,
+    "success_ci95_object_bootstrap": [
+     0.7,
+     1.0
+    ],
+    "regret_mean": 0.043333333333333335,
+    "regret_ci95_object_bootstrap": [
+     0.0,
+     0.078
+    ],
+    "damage_rate": 0.16666666666666666,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.5033333333333334,
+    "utility_mean": 0.45,
+    "utility_ci95_object_bootstrap": [
+     0.29800000000000004,
+     0.64
+    ],
+    "oracle_utility_mean": 0.4733333333333334
+   },
+   "plastic_laws": {
+    "n": 3,
+    "success": 0.6666666666666666,
+    "success_ci95_object_bootstrap": [
+     0.5,
+     1.0
+    ],
+    "regret_mean": 0.08666666666666667,
+    "regret_ci95_object_bootstrap": [
+     0.0,
+     0.13
+    ],
+    "damage_rate": 0.3333333333333333,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.3666666666666667,
+    "utility_mean": 0.26,
+    "utility_ci95_object_bootstrap": [
+     0.07,
+     0.64
+    ],
+    "oracle_utility_mean": 0.3066666666666667
+   },
+   "plasticine": {
+    "n": 2,
+    "success": 0.5,
+    "success_ci95_object_bootstrap": [
+     0.0,
+     1.0
+    ],
+    "regret_mean": 0.11,
+    "regret_ci95_object_bootstrap": [
+     0.0,
+     0.22
+    ],
+    "damage_rate": 0.5,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.48,
+    "utility_mean": 0.32,
+    "utility_ci95_object_bootstrap": [
+     0.0,
+     0.64
+    ],
+    "oracle_utility_mean": 0.37
+   },
+   "metal": {
+    "n": 1,
+    "success": 1.0,
+    "success_ci95_object_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "regret_mean": 0.03999999999999998,
+    "regret_ci95_object_bootstrap": [
+     0.03999999999999998,
+     0.03999999999999998
+    ],
+    "damage_rate": 0.0,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.14,
+    "utility_mean": 0.14,
+    "utility_ci95_object_bootstrap": [
+     0.14,
+     0.14
+    ],
+    "oracle_utility_mean": 0.18
+   },
+   "jelly": {
+    "n": 3,
+    "success": 1.0,
+    "success_ci95_object_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "regret_mean": 0.0,
+    "regret_ci95_object_bootstrap": [
+     0.0,
+     0.0
+    ],
+    "damage_rate": 0.0,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.64,
+    "utility_mean": 0.64,
+    "utility_ci95_object_bootstrap": [
+     0.64,
+     0.64
+    ],
+    "oracle_utility_mean": 0.64
+   }
+  },
+  "prior_vision": {
+   "label": "(b) vision prior (9-run ensemble, 0 sims)",
+   "n": 14,
+   "all": {
+    "n": 14,
+    "success": 0.7857142857142857,
+    "success_ci95_object_bootstrap": [
+     0.5384615384615384,
+     1.0
+    ],
+    "regret_mean": 0.1142857142857143,
+    "regret_ci95_object_bootstrap": [
+     0.01230769230769231,
+     0.2447058823529412
+    ],
+    "damage_rate": 0.21428571428571427,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.5471428571428572,
+    "utility_mean": 0.41,
+    "utility_ci95_object_bootstrap": [
+     0.23055625000000002,
+     0.576
+    ],
+    "oracle_utility_mean": 0.5499999999999999
+   },
+   "plastic_laws": {
+    "n": 8,
+    "success": 0.625,
+    "success_ci95_object_bootstrap": [
+     0.25,
+     1.0
+    ],
+    "regret_mean": 0.1375,
+    "regret_ci95_object_bootstrap": [
+     0.02285714285714286,
+     0.25
+    ],
+    "damage_rate": 0.375,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.54,
+    "utility_mean": 0.30000000000000004,
+    "utility_ci95_object_bootstrap": [
+     0.11,
+     0.5257142857142857
+    ],
+    "oracle_utility_mean": 0.48250000000000004
+   },
+   "plasticine": {
+    "n": 5,
+    "success": 0.8,
+    "success_ci95_object_bootstrap": [
+     0.4,
+     1.0
+    ],
+    "regret_mean": 0.11200000000000002,
+    "regret_ci95_object_bootstrap": [
+     0.016000000000000014,
+     0.20800000000000002
+    ],
+    "damage_rate": 0.2,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.56,
+    "utility_mean": 0.43200000000000005,
+    "utility_ci95_object_bootstrap": [
+     0.20800000000000002,
+     0.608
+    ],
+    "oracle_utility_mean": 0.5760000000000001
+   },
+   "metal": {
+    "n": 3,
+    "success": 0.3333333333333333,
+    "success_ci95_object_bootstrap": [
+     0.0,
+     1.0
+    ],
+    "regret_mean": 0.18000000000000002,
+    "regret_ci95_object_bootstrap": [
+     0.0,
+     0.46
+    ],
+    "damage_rate": 0.6666666666666666,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.5066666666666667,
+    "utility_mean": 0.08,
+    "utility_ci95_object_bootstrap": [
+     0.0,
+     0.24
+    ],
+    "oracle_utility_mean": 0.32666666666666666
+   },
+   "jelly": {
+    "n": 6,
+    "success": 1.0,
+    "success_ci95_object_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "regret_mean": 0.08333333333333333,
+    "regret_ci95_object_bootstrap": [
+     0.0,
+     0.3
+    ],
+    "damage_rate": 0.0,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.5566666666666668,
+    "utility_mean": 0.5566666666666668,
+    "utility_ci95_object_bootstrap": [
+     0.34,
+     0.64
+    ],
+    "oracle_utility_mean": 0.64
+   }
+  },
+  "fixed_loo": {
+   "label": "fixed depth (leave-one-out tuned)",
+   "n": 31,
+   "all": {
+    "n": 31,
+    "success": 0.967741935483871,
+    "success_ci95_object_bootstrap": [
+     0.9210526315789473,
+     1.0
+    ],
+    "regret_mean": 0.4690322580645161,
+    "regret_ci95_object_bootstrap": [
+     0.4090000000000001,
+     0.5367065217391302
+    ],
+    "damage_rate": 0.03225806451612903,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.06129032258064517,
+    "utility_mean": 0.05806451612903227,
+    "utility_ci95_object_bootstrap": [
+     0.05526315789473685,
+     0.06000000000000001
+    ],
+    "oracle_utility_mean": 0.527741935483871
+   },
+   "plastic_laws": {
+    "n": 20,
+    "success": 0.95,
+    "success_ci95_object_bootstrap": [
+     0.8918918918918919,
+     1.0
+    ],
+    "regret_mean": 0.42800000000000005,
+    "regret_ci95_object_bootstrap": [
+     0.33651778656126485,
+     0.5423529411764706
+    ],
+    "damage_rate": 0.05,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.06200000000000001,
+    "utility_mean": 0.05700000000000001,
+    "utility_ci95_object_bootstrap": [
+     0.05351351351351352,
+     0.060000000000000026
+    ],
+    "oracle_utility_mean": 0.4860000000000001
+   },
+   "plasticine": {
+    "n": 12,
+    "success": 1.0,
+    "success_ci95_object_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "regret_mean": 0.49500000000000005,
+    "regret_ci95_object_bootstrap": [
+     0.4287500000000001,
+     0.5711111111111111
+    ],
+    "damage_rate": 0.0,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.06000000000000002,
+    "utility_mean": 0.06000000000000002,
+    "utility_ci95_object_bootstrap": [
+     0.06,
+     0.060000000000000026
+    ],
+    "oracle_utility_mean": 0.555
+   },
+   "metal": {
+    "n": 8,
+    "success": 0.875,
+    "success_ci95_object_bootstrap": [
+     0.6666666666666666,
+     1.0
+    ],
+    "regret_mean": 0.3275,
+    "regret_ci95_object_bootstrap": [
+     0.14216666666666666,
+     0.51
+    ],
+    "damage_rate": 0.125,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.065,
+    "utility_mean": 0.0525,
+    "utility_ci95_object_bootstrap": [
+     0.04,
+     0.060000000000000005
+    ],
+    "oracle_utility_mean": 0.3825
+   },
+   "jelly": {
+    "n": 11,
+    "success": 1.0,
+    "success_ci95_object_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "regret_mean": 0.5436363636363637,
+    "regret_ci95_object_bootstrap": [
+     0.47090909090909094,
+     0.5800000000000001
+    ],
+    "damage_rate": 0.0,
+    "missed_grasp_rate": 0.0,
+    "mean_chosen_d": 0.06000000000000001,
+    "utility_mean": 0.06000000000000001,
+    "utility_ci95_object_bootstrap": [
+     0.06,
+     0.060000000000000026
+    ],
+    "oracle_utility_mean": 0.6036363636363636
+   }
+  }
+ },
+ "primary_contrasts": {
+  "(c)-(b)": {
+   "n": 5,
+   "success_diff": 0.2,
+   "success_ci95_object_bootstrap": [
+    0.0,
+    0.42857142857142855
+   ],
+   "utility_diff": 0.128,
+   "utility_ci95_object_bootstrap": [
+    0.0,
+    0.2742857142857143
+   ],
+   "regret_diff": -0.184,
+   "regret_ci95_object_bootstrap": [
+    -0.3942857142857143,
+    0.0
+   ]
+  },
+  "(c)-(d)": {
+   "n": 6,
+   "success_diff": -0.16666666666666666,
+   "success_ci95_object_bootstrap": [
+    -0.3,
+    0.0
+   ],
+   "utility_diff": 0.39000000000000007,
+   "utility_ci95_object_bootstrap": [
+    0.23800000000000004,
+    0.5800000000000001
+   ],
+   "regret_diff": -0.37000000000000005,
+   "regret_ci95_object_bootstrap": [
+    -0.5800000000000001,
+    -0.20200000000000004
+   ]
+  },
+  "(b)-(d)": {
+   "n": 14,
+   "success_diff": -0.21428571428571427,
+   "success_ci95_object_bootstrap": [
+    -0.46153846153846156,
+    0.0
+   ],
+   "utility_diff": 0.35000000000000003,
+   "utility_ci95_object_bootstrap": [
+    0.17055625,
+    0.516
+   ],
+   "regret_diff": -0.3757142857142858,
+   "regret_ci95_object_bootstrap": [
+    -0.5300192307692307,
+    -0.18823529411764706
+   ]
+  }
+ },
+ "paired_all": {
+  "gt-minus-prior_vision": {
+   "n": 14,
+   "success_diff": 0.21428571428571427,
+   "success_ci95_object_bootstrap": [
+    0.0,
+    0.46153846153846156
+   ],
+   "utility_diff": 0.13999999999999999,
+   "utility_ci95_object_bootstrap": [
+    0.021333333333333336,
+    0.2746823529411764
+   ],
+   "regret_diff": -0.1142857142857143,
+   "regret_ci95_object_bootstrap": [
+    -0.2447058823529412,
+    -0.01230769230769231
+   ]
+  },
+  "gt-minus-fixed_loo": {
+   "n": 31,
+   "success_diff": 0.03225806451612903,
+   "success_ci95_object_bootstrap": [
+    0.0,
+    0.07894736842105263
+   ],
+   "utility_diff": 0.4696774193548387,
+   "utility_ci95_object_bootstrap": [
+    0.41050000000000003,
+    0.5367065217391302
+   ],
+   "regret_diff": -0.4690322580645161,
+   "regret_ci95_object_bootstrap": [
+    -0.5367065217391305,
+    -0.4090000000000001
+   ]
+  },
+  "prior_vt-minus-prior_vision": {
+   "n": 5,
+   "success_diff": 0.2,
+   "success_ci95_object_bootstrap": [
+    0.0,
+    0.42857142857142855
+   ],
+   "utility_diff": 0.128,
+   "utility_ci95_object_bootstrap": [
+    0.0,
+    0.2742857142857143
+   ],
+   "regret_diff": -0.184,
+   "regret_ci95_object_bootstrap": [
+    -0.3942857142857143,
+    0.0
+   ]
+  },
+  "prior_vt-minus-fixed_loo": {
+   "n": 6,
+   "success_diff": -0.16666666666666666,
+   "success_ci95_object_bootstrap": [
+    -0.3,
+    0.0
+   ],
+   "utility_diff": 0.39000000000000007,
+   "utility_ci95_object_bootstrap": [
+    0.23800000000000004,
+    0.5800000000000001
+   ],
+   "regret_diff": -0.37000000000000005,
+   "regret_ci95_object_bootstrap": [
+    -0.5800000000000001,
+    -0.20200000000000004
+   ]
+  },
+  "prior_vision-minus-fixed_loo": {
+   "n": 14,
+   "success_diff": -0.21428571428571427,
+   "success_ci95_object_bootstrap": [
+    -0.46153846153846156,
+    0.0
+   ],
+   "utility_diff": 0.35000000000000003,
+   "utility_ci95_object_bootstrap": [
+    0.17055625,
+    0.516
+   ],
+   "regret_diff": -0.3757142857142858,
+   "regret_ci95_object_bootstrap": [
+    -0.5300192307692307,
+    -0.18823529411764706
+   ]
+  },
+  "fixed_loo-minus-prior_vision": {
+   "n": 14,
+   "success_diff": 0.21428571428571427,
+   "success_ci95_object_bootstrap": [
+    0.0,
+    0.46153846153846156
+   ],
+   "utility_diff": -0.35000000000000003,
+   "utility_ci95_object_bootstrap": [
+    -0.516,
+    -0.1705562500000006
+   ],
+   "regret_diff": 0.3757142857142858,
+   "regret_ci95_object_bootstrap": [
+    0.18823529411764706,
+    0.5300192307692307
+   ]
+  }
+ },
+ "twin_quality": {
+  "prior_vt": {
+   "law_accuracy": 0.8333333333333334,
+   "mean_abs_dlog10_E_over_rho": 0.3208339029700394
+  },
+  "prior_vision": {
+   "law_accuracy": 0.5714285714285714,
+   "mean_abs_dlog10_E_over_rho": 0.3362069041622892
+  }
+ },
+ "below_ceiling": {
+  "definition": "samples whose GT oracle depth < top of grid (0.64); here twins can differ from a fixed depth",
+  "n": 11,
+  "fraction": 0.3548387096774194,
+  "methods": {
+   "gt": {
+    "n": 11,
+    "success": 1.0,
+    "regret": 0.0,
+    "damaged": 0.0,
+    "chosen_d": 0.32363636363636367,
+    "utility": 0.32363636363636367,
+    "success_ci95": [
+     1.0,
+     1.0
+    ],
+    "regret_ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "prior_vt": {
+    "n": 2,
+    "success": 0.5,
+    "regret": 0.13,
+    "damaged": 0.5,
+    "chosen_d": 0.23,
+    "utility": 0.07,
+    "success_ci95": [
+     0.5,
+     0.5
+    ],
+    "regret_ci95": [
+     0.13,
+     0.13
+    ]
+   },
+   "prior_vision": {
+    "n": 5,
+    "success": 0.4,
+    "regret": 0.172,
+    "damaged": 0.6,
+    "chosen_d": 0.528,
+    "utility": 0.144,
+    "success_ci95": [
+     0.0,
+     1.0
+    ],
+    "regret_ci95": [
+     0.020000000000000018,
+     0.3114285714285714
+    ]
+   },
+   "fixed_loo": {
+    "n": 11,
+    "success": 0.9090909090909091,
+    "regret": 0.2672727272727273,
+    "damaged": 0.09090909090909091,
+    "chosen_d": 0.06363636363636364,
+    "utility": 0.05454545454545456,
+    "success_ci95": [
+     0.8125,
+     1.0
+    ],
+    "regret_ci95": [
+     0.12666666666666668,
+     0.43599999999999994
+    ]
+   }
+  },
+  "paired": {
+   "(c)-(b)": {
+    "all": {
+     "n": 5,
+     "n_objects": 4,
+     "success_diff": 0.2,
+     "regret_diff": -0.184,
+     "utility_diff": 0.128,
+     "success_ci95": [
+      0.0,
+      0.42857142857142855
+     ],
+     "regret_ci95": [
+      -0.3942857142857143,
+      0.0
+     ],
+     "utility_ci95": [
+      0.0,
+      0.2742857142857143
+     ]
+    },
+    "below_ceiling": {
+     "n": 1,
+     "n_objects": 1,
+     "success_diff": 1.0,
+     "regret_diff": -0.42000000000000004,
+     "utility_diff": 0.14,
+     "success_ci95": [
+      1.0,
+      1.0
+     ],
+     "regret_ci95": [
+      -0.42000000000000004,
+      -0.42000000000000004
+     ],
+     "utility_ci95": [
+      0.14,
+      0.14
+     ]
+    }
+   },
+   "(c)-(d)": {
+    "all": {
+     "n": 6,
+     "n_objects": 4,
+     "success_diff": -0.16666666666666666,
+     "regret_diff": -0.37000000000000005,
+     "utility_diff": 0.39000000000000007,
+     "success_ci95": [
+      -0.3,
+      0.0
+     ],
+     "regret_ci95": [
+      -0.5800000000000001,
+      -0.20200000000000004
+     ],
+     "utility_ci95": [
+      0.23800000000000004,
+      0.5800000000000001
+     ]
+    },
+    "below_ceiling": {
+     "n": 2,
+     "n_objects": 1,
+     "success_diff": -0.5,
+     "regret_diff": 0.04999999999999999,
+     "utility_diff": 0.010000000000000009,
+     "success_ci95": [
+      -0.5,
+      -0.5
+     ],
+     "regret_ci95": [
+      0.04999999999999999,
+      0.04999999999999999
+     ],
+     "utility_ci95": [
+      0.010000000000000009,
+      0.010000000000000009
+     ]
+    }
+   },
+   "(b)-(d)": {
+    "all": {
+     "n": 14,
+     "n_objects": 8,
+     "success_diff": -0.21428571428571427,
+     "regret_diff": -0.3757142857142858,
+     "utility_diff": 0.35000000000000003,
+     "success_ci95": [
+      -0.46153846153846156,
+      0.0
+     ],
+     "regret_ci95": [
+      -0.5300192307692307,
+      -0.18823529411764706
+     ],
+     "utility_ci95": [
+      0.17055625,
+      0.516
+     ]
+    },
+    "below_ceiling": {
+     "n": 5,
+     "n_objects": 4,
+     "success_diff": -0.6,
+     "regret_diff": -0.156,
+     "utility_diff": 0.08399999999999999,
+     "success_ci95": [
+      -1.0,
+      0.0
+     ],
+     "regret_ci95": [
+      -0.42,
+      0.04285714285714287
+     ],
+     "utility_ci95": [
+      -0.06,
+      0.3
+     ]
+    }
+   }
+  }
+ },
+ "oracle_histogram": {
+  "None": 0,
+  "0.06": 1,
+  "0.1": 2,
+  "0.14": 0,
+  "0.18": 1,
+  "0.24": 2,
+  "0.32": 0,
+  "0.4": 1,
+  "0.48": 0,
+  "0.56": 4,
+  "0.64": 20
+ },
+ "fixed_depth_success_global": {
+  "abstain": 0.0,
+  "0.06": 1.0,
+  "0.10": 0.967741935483871,
+  "0.14": 0.9032258064516129,
+  "0.18": 0.9032258064516129,
+  "0.24": 0.8709677419354839,
+  "0.32": 0.8064516129032258,
+  "0.40": 0.8064516129032258,
+  "0.48": 0.7741935483870968,
+  "0.56": 0.7741935483870968,
+  "0.64": 0.6451612903225806
+ },
+ "v2_grid_reference": {
+  "gt": {
+   "n": 31,
+   "success": 1.0,
+   "success_ci95_object_bootstrap": [
+    1.0,
+    1.0
+   ],
+   "regret_mean": 0.0,
+   "regret_ci95_object_bootstrap": [
+    0.0,
+    0.0
+   ],
+   "damage_rate": 0.0,
+   "missed_grasp_rate": 0.0,
+   "mean_chosen_d": 0.28774193548387095,
+   "utility_mean": 0.28774193548387095,
+   "utility_ci95_object_bootstrap": [
+    0.26341463414634153,
+    0.31619480519480525
+   ],
+   "oracle_utility_mean": 0.28774193548387095
+  },
+  "prior_vt": {
+   "n": 6,
+   "success": 0.8333333333333334,
+   "success_ci95_object_bootstrap": [
+    0.7,
+    1.0
+   ],
+   "regret_mean": 0.043333333333333335,
+   "regret_ci95_object_bootstrap": [
+    0.0,
+    0.078
+   ],
+   "damage_rate": 0.16666666666666666,
+   "missed_grasp_rate": 0.0,
+   "mean_chosen_d": 0.29000000000000004,
+   "utility_mean": 0.2366666666666667,
+   "utility_ci95_object_bootstrap": [
+    0.16999999999999998,
+    0.32
+   ],
+   "oracle_utility_mean": 0.26000000000000006
+  },
+  "prior_vision": {
+   "n": 14,
+   "success": 0.9285714285714286,
+   "success_ci95_object_bootstrap": [
+    0.8125,
+    1.0
+   ],
+   "regret_mean": 0.022857142857142857,
+   "regret_ci95_object_bootstrap": [
+    0.0,
+    0.06
+   ],
+   "damage_rate": 0.07142857142857142,
+   "missed_grasp_rate": 0.0,
+   "mean_chosen_d": 0.30142857142857143,
+   "utility_mean": 0.2785714285714285,
+   "utility_ci95_object_bootstrap": [
+    0.22625,
+    0.31999999999999995
+   ],
+   "oracle_utility_mean": 0.30428571428571427
+  },
+  "fixed_loo": {
+   "n": 31,
+   "success": 0.967741935483871,
+   "success_ci95_object_bootstrap": [
+    0.9210526315789473,
+    1.0
+   ],
+   "regret_mean": 0.22903225806451608,
+   "regret_ci95_object_bootstrap": [
+    0.20634146341463414,
+    0.25619480519480514
+   ],
+   "damage_rate": 0.03225806451612903,
+   "missed_grasp_rate": 0.0,
+   "mean_chosen_d": 0.06129032258064517,
+   "utility_mean": 0.05806451612903227,
+   "utility_ci95_object_bootstrap": [
+    0.05526315789473685,
+    0.06000000000000001
+   ],
+   "oracle_utility_mean": 0.28774193548387095
+  }
+ },
+ "wave1": {
+  "gt": {
+   "n": 17,
+   "success": 1.0,
+   "success_ci95_object_bootstrap": [
+    1.0,
+    1.0
+   ],
+   "regret_mean": 0.0,
+   "regret_ci95_object_bootstrap": [
+    0.0,
+    0.0
+   ],
+   "damage_rate": 0.0,
+   "missed_grasp_rate": 0.0,
+   "mean_chosen_d": 0.523529411764706,
+   "utility_mean": 0.523529411764706,
+   "utility_ci95_object_bootstrap": [
+    0.3991304347826087,
+    0.635
+   ],
+   "oracle_utility_mean": 0.523529411764706
+  },
+  "prior_vt": {
+   "n": 3,
+   "success": 0.6666666666666666,
+   "success_ci95_object_bootstrap": [
+    0.5,
+    1.0
+   ],
+   "regret_mean": 0.08666666666666667,
+   "regret_ci95_object_bootstrap": [
+    0.0,
+    0.13
+   ],
+   "damage_rate": 0.3333333333333333,
+   "missed_grasp_rate": 0.0,
+   "mean_chosen_d": 0.3666666666666667,
+   "utility_mean": 0.26,
+   "utility_ci95_object_bootstrap": [
+    0.07,
+    0.64
+   ],
+   "oracle_utility_mean": 0.3066666666666667
+  },
+  "prior_vision": {
+   "n": 5,
+   "success": 0.6,
+   "success_ci95_object_bootstrap": [
+    0.14285714285714285,
+    1.0
+   ],
+   "regret_mean": 0.13999999999999999,
+   "regret_ci95_object_bootstrap": [
+    0.0,
+    0.29999999999999993
+   ],
+   "damage_rate": 0.4,
+   "missed_grasp_rate": 0.0,
+   "mean_chosen_d": 0.64,
+   "utility_mean": 0.384,
+   "utility_ci95_object_bootstrap": [
+    0.09142857142857143,
+    0.64
+   ],
+   "oracle_utility_mean": 0.5
+  },
+  "fixed_loo": {
+   "n": 17,
+   "success": 0.9411764705882353,
+   "success_ci95_object_bootstrap": [
+    0.8695652173913043,
+    1.0
+   ],
+   "regret_mean": 0.4658823529411765,
+   "regret_ci95_object_bootstrap": [
+    0.3443478260869566,
+    0.5750000000000001
+   ],
+   "damage_rate": 0.058823529411764705,
+   "missed_grasp_rate": 0.0,
+   "mean_chosen_d": 0.06235294117647059,
+   "utility_mean": 0.05647058823529411,
+   "utility_ci95_object_bootstrap": [
+    0.05217391304347827,
+    0.060000000000000026
+   ],
+   "oracle_utility_mean": 0.523529411764706
+  }
+ },
+ "sensitivity": {
+  "sens_abscrush": {
+   "gt": {
+    "success": 1.0,
+    "regret_mean": 0.0,
+    "utility_mean": 0.5129032258064518
+   },
+   "prior_vt": {
+    "success": 0.8333333333333334,
+    "regret_mean": 0.06999999999999999,
+    "utility_mean": 0.42333333333333334
+   },
+   "prior_vision": {
+    "success": 0.7857142857142857,
+    "regret_mean": 0.13714285714285715,
+    "utility_mean": 0.3871428571428571
+   },
+   "fixed_loo": {
+    "success": 0.967741935483871,
+    "regret_mean": 0.45419354838709675,
+    "utility_mean": 0.05806451612903227
+   }
+  },
+  "sens_dentp95": {
+   "gt": {
+    "success": 1.0,
+    "regret_mean": 0.0,
+    "utility_mean": 0.40709677419354845
+   },
+   "prior_vt": {
+    "success": 0.3333333333333333,
+    "regret_mean": 0.10000000000000002,
+    "utility_mean": 0.14666666666666667
+   },
+   "prior_vision": {
+    "success": 0.6428571428571429,
+    "regret_mean": 0.17857142857142858,
+    "utility_mean": 0.1985714285714286
+   },
+   "fixed_loo": {
+    "success": 0.967741935483871,
+    "regret_mean": 0.34838709677419344,
+    "utility_mean": 0.05806451612903227
+   }
+  },
+  "sens_dmin010": {
+   "gt": {
+    "success": 1.0,
+    "regret_mean": 0.0,
+    "utility_mean": 0.5258064516129034
+   },
+   "prior_vt": {
+    "success": 0.8333333333333334,
+    "regret_mean": 0.043333333333333335,
+    "utility_mean": 0.45
+   },
+   "prior_vision": {
+    "success": 0.7857142857142857,
+    "regret_mean": 0.1142857142857143,
+    "utility_mean": 0.41
+   },
+   "fixed_loo": {
+    "success": 0.967741935483871,
+    "regret_mean": 0.43225806451612886,
+    "utility_mean": 0.09677419354838712
+   }
+  },
+  "sens_dmin014": {
+   "gt": {
+    "success": 1.0,
+    "regret_mean": 0.0,
+    "utility_mean": 0.5193548387096775
+   },
+   "prior_vt": {
+    "success": 0.8333333333333334,
+    "regret_mean": 0.06,
+    "utility_mean": 0.45
+   },
+   "prior_vision": {
+    "success": 0.7857142857142857,
+    "regret_mean": 0.1142857142857143,
+    "utility_mean": 0.41
+   },
+   "fixed_loo": {
+    "success": 0.8709677419354839,
+    "regret_mean": 0.3761290322580647,
+    "utility_mean": 0.1567741935483871
+   }
+  },
+  "sens_tau002": {
+   "gt": {
+    "success": 1.0,
+    "regret_mean": 0.0,
+    "utility_mean": 0.5058064516129034
+   },
+   "prior_vt": {
+    "success": 0.8333333333333334,
+    "regret_mean": 0.043333333333333335,
+    "utility_mean": 0.45
+   },
+   "prior_vision": {
+    "success": 0.7142857142857143,
+    "regret_mean": 0.1542857142857143,
+    "utility_mean": 0.3628571428571429
+   },
+   "fixed_loo": {
+    "success": 0.967741935483871,
+    "regret_mean": 0.41225806451612895,
+    "utility_mean": 0.09677419354838712
+   }
+  },
+  "sens_tau005": {
+   "gt": {
+    "success": 1.0,
+    "regret_mean": 0.0,
+    "utility_mean": 0.5567741935483872
+   },
+   "prior_vt": {
+    "success": 0.8333333333333334,
+    "regret_mean": 0.04,
+    "utility_mean": 0.4566666666666667
+   },
+   "prior_vision": {
+    "success": 0.7857142857142857,
+    "regret_mean": 0.09571428571428574,
+    "utility_mean": 0.42428571428571427
+   },
+   "fixed_loo": {
+    "success": 0.967741935483871,
+    "regret_mean": 0.4580645161290321,
+    "utility_mean": 0.09677419354838712
+   }
+  },
+  "sens_wloss_unaligned": {
+   "gt": {
+    "success": 1.0,
+    "regret_mean": 0.0,
+    "utility_mean": 0.28580645161290325
+   },
+   "prior_vt": {
+    "success": 0.6666666666666666,
+    "regret_mean": 0.05000000000000001,
+    "utility_mean": 0.4266666666666667
+   },
+   "prior_vision": {
+    "success": 0.5,
+    "regret_mean": 0.0642857142857143,
+    "utility_mean": 0.22714285714285715
+   },
+   "fixed_loo": {
+    "success": 0.6129032258064516,
+    "regret_mean": 0.26064516129032256,
+    "utility_mean": 0.0367741935483871
+   }
+  }
+ },
+ "F6": "docs/v5r/GRIPPER_TASK.json has the V3e schema (summary.<m>.all.{success, success_ci95_object_bootstrap, regret_mean, regret_ci95_object_bootstrap}, n_samples)",
+ "evaluator_stdout": "n=31 complete=0 metric=crush tau=0.03\ngt              n=31 succ=1.000 CI=1.00-1.00 regret=0.000 util=0.528/0.528 dmg=0.00 miss=0.00 jelly=1.00 metal=1.00 plasticine=1.00 sims=10.0\nprior_vt        n=6 succ=0.833 CI=0.70-1.00 regret=0.043 util=0.450/0.473 dmg=0.17 miss=0.00 jelly=1.00 metal=1.00 plasticine=0.50 sims=10.0\nprior_vision    n=14 succ=0.786 CI=0.54-1.00 regret=0.114 util=0.410/0.550 dmg=0.21 miss=0.00 jelly=1.00 metal=0.33 plasticine=0.80 sims=10.0\nfixed_loo       n=31 succ=0.968 CI=0.92-1.00 regret=0.469 util=0.058/0.528 dmg=0.03 miss=0.00 jelly=1.00 metal=0.88 plasticine=1.00 sims=0.0\nfixed global {'abstain': 0.0, '0.06': 1.0, '0.10': 0.967741935483871, '0.14': 0.9032258064516129, '0.18': 0.9032258064516129, '0.24': 0.8709677419354839, '0.32': 0.8064516129032258, '0.40': 0.8064516129032258, '0.48': 0.7741935483870968, '0.56': 0.7741935483870968, '0.64': 0.6451612903225806}\nexcluded []\noracle depths [0.64, 0.64, 0.1, 0.64, 0.1, 0.64, 0.64, 0.18, 0.64, 0.56, 0.64, 0.64, 0.56, 0.64, 0.56, 0.64, 0.24, 0.64, 0.56, 0.24, 0.64, 0.64, 0.4, 0.64, 0.64, 0.06, 0.64, 0.64, 0.64, 0.64, 0.64]\n"
+}

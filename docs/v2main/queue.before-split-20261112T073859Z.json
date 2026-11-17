@@ -1,0 +1,356 @@
+{
+ "phase": "V2main",
+ "max_per_gpu": 2,
+ "gpus": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "jobs": [
+  {
+   "id": "v2main_gen_val_s0",
+   "kind": "cmd",
+   "group": "v2main-gen",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/gen_v2_main.py --split val --count 300 --shard 0 --num-shards 4"
+  },
+  {
+   "id": "v2main_gen_val_s1",
+   "kind": "cmd",
+   "group": "v2main-gen",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/gen_v2_main.py --split val --count 300 --shard 1 --num-shards 4"
+  },
+  {
+   "id": "v2main_gen_val_s2",
+   "kind": "cmd",
+   "group": "v2main-gen",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/gen_v2_main.py --split val --count 300 --shard 2 --num-shards 4"
+  },
+  {
+   "id": "v2main_gen_val_s3",
+   "kind": "cmd",
+   "group": "v2main-gen",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/gen_v2_main.py --split val --count 300 --shard 3 --num-shards 4"
+  },
+  {
+   "id": "v2main_gen_train_s0",
+   "kind": "cmd",
+   "group": "v2main-gen",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/gen_v2_main.py --split train --count 2000 --shard 0 --num-shards 12"
+  },
+  {
+   "id": "v2main_gen_train_s1",
+   "kind": "cmd",
+   "group": "v2main-gen",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/gen_v2_main.py --split train --count 2000 --shard 1 --num-shards 12"
+  },
+  {
+   "id": "v2main_gen_train_s2",
+   "kind": "cmd",
+   "group": "v2main-gen",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/gen_v2_main.py --split train --count 2000 --shard 2 --num-shards 12"
+  },
+  {
+   "id": "v2main_gen_train_s3",
+   "kind": "cmd",
+   "group": "v2main-gen",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/gen_v2_main.py --split train --count 2000 --shard 3 --num-shards 12"
+  },
+  {
+   "id": "v2main_gen_train_s4",
+   "kind": "cmd",
+   "group": "v2main-gen",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/gen_v2_main.py --split train --count 2000 --shard 4 --num-shards 12"
+  },
+  {
+   "id": "v2main_gen_train_s5",
+   "kind": "cmd",
+   "group": "v2main-gen",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/gen_v2_main.py --split train --count 2000 --shard 5 --num-shards 12"
+  },
+  {
+   "id": "v2main_gen_train_s6",
+   "kind": "cmd",
+   "group": "v2main-gen",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/gen_v2_main.py --split train --count 2000 --shard 6 --num-shards 12"
+  },
+  {
+   "id": "v2main_gen_train_s7",
+   "kind": "cmd",
+   "group": "v2main-gen",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/gen_v2_main.py --split train --count 2000 --shard 7 --num-shards 12"
+  },
+  {
+   "id": "v2main_gen_train_s8",
+   "kind": "cmd",
+   "group": "v2main-gen",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/gen_v2_main.py --split train --count 2000 --shard 8 --num-shards 12"
+  },
+  {
+   "id": "v2main_gen_train_s9",
+   "kind": "cmd",
+   "group": "v2main-gen",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/gen_v2_main.py --split train --count 2000 --shard 9 --num-shards 12"
+  },
+  {
+   "id": "v2main_gen_train_s10",
+   "kind": "cmd",
+   "group": "v2main-gen",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/gen_v2_main.py --split train --count 2000 --shard 10 --num-shards 12"
+  },
+  {
+   "id": "v2main_gen_train_s11",
+   "kind": "cmd",
+   "group": "v2main-gen",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/gen_v2_main.py --split train --count 2000 --shard 11 --num-shards 12"
+  },
+  {
+   "id": "v2main_manifest",
+   "kind": "cmd",
+   "group": "v2main-prep",
+   "mem_mib": 0,
+   "after": [
+    "v2main_gen_val_s0",
+    "v2main_gen_val_s1",
+    "v2main_gen_val_s2",
+    "v2main_gen_val_s3",
+    "v2main_gen_train_s0",
+    "v2main_gen_train_s1",
+    "v2main_gen_train_s2",
+    "v2main_gen_train_s3",
+    "v2main_gen_train_s4",
+    "v2main_gen_train_s5",
+    "v2main_gen_train_s6",
+    "v2main_gen_train_s7",
+    "v2main_gen_train_s8",
+    "v2main_gen_train_s9",
+    "v2main_gen_train_s10",
+    "v2main_gen_train_s11"
+   ],
+   "cmd": ".venv/bin/python scripts/v2/build_v2_manifest.py --root data/v2_main --name v2main && .venv/bin/python -c \"import json;r=[json.loads(l) for l in open('data/manifests/v2main.jsonl')];n=sum(x['split']=='train' for x in r);print('train',n);assert n>=1000,'gate: <1000 train samples, not training'\" "
+  },
+  {
+   "id": "v2main_cache_s0",
+   "kind": "cmd",
+   "group": "v2main-cache",
+   "mem_mib": 20000,
+   "retries": 3,
+   "after": [
+    "v2main_manifest"
+   ],
+   "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/v2main/v2main_cache.json --shard 0 --num-shards 4 --status-output docs/v2main/cache_shard0.json"
+  },
+  {
+   "id": "v2main_cache_s1",
+   "kind": "cmd",
+   "group": "v2main-cache",
+   "mem_mib": 20000,
+   "retries": 3,
+   "after": [
+    "v2main_manifest"
+   ],
+   "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/v2main/v2main_cache.json --shard 1 --num-shards 4 --status-output docs/v2main/cache_shard1.json"
+  },
+  {
+   "id": "v2main_cache_s2",
+   "kind": "cmd",
+   "group": "v2main-cache",
+   "mem_mib": 20000,
+   "retries": 3,
+   "after": [
+    "v2main_manifest"
+   ],
+   "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/v2main/v2main_cache.json --shard 2 --num-shards 4 --status-output docs/v2main/cache_shard2.json"
+  },
+  {
+   "id": "v2main_cache_s3",
+   "kind": "cmd",
+   "group": "v2main-cache",
+   "mem_mib": 20000,
+   "retries": 3,
+   "after": [
+    "v2main_manifest"
+   ],
+   "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/v2main/v2main_cache.json --shard 3 --num-shards 4 --status-output docs/v2main/cache_shard3.json"
+  },
+  {
+   "id": "v2main_cache_merge",
+   "kind": "cmd",
+   "group": "v2main-cache",
+   "mem_mib": 0,
+   "after": [
+    "v2main_cache_s0",
+    "v2main_cache_s1",
+    "v2main_cache_s2",
+    "v2main_cache_s3"
+   ],
+   "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/v2main/v2main_cache.json --status-output docs/v2main/cache_merge.json"
+  },
+  {
+   "id": "v2main_B_seed17",
+   "config": "configs/v2main/v2main_B_seed17.json",
+   "group": "B-v2main",
+   "seed": 17,
+   "kind": "train",
+   "mem_mib": 20000,
+   "after": [
+    "v2main_cache_merge"
+   ]
+  },
+  {
+   "id": "v2main_B_seed29",
+   "config": "configs/v2main/v2main_B_seed29.json",
+   "group": "B-v2main",
+   "seed": 29,
+   "kind": "train",
+   "mem_mib": 20000,
+   "after": [
+    "v2main_cache_merge"
+   ]
+  },
+  {
+   "id": "v2main_B_seed43",
+   "config": "configs/v2main/v2main_B_seed43.json",
+   "group": "B-v2main",
+   "seed": 43,
+   "kind": "train",
+   "mem_mib": 20000,
+   "after": [
+    "v2main_cache_merge"
+   ]
+  },
+  {
+   "id": "v2main_C_seed17",
+   "config": "configs/v2main/v2main_C_seed17.json",
+   "group": "C-v2main",
+   "seed": 17,
+   "kind": "train",
+   "mem_mib": 20000,
+   "after": [
+    "v2main_cache_merge"
+   ]
+  },
+  {
+   "id": "v2main_C_seed29",
+   "config": "configs/v2main/v2main_C_seed29.json",
+   "group": "C-v2main",
+   "seed": 29,
+   "kind": "train",
+   "mem_mib": 20000,
+   "after": [
+    "v2main_cache_merge"
+   ]
+  },
+  {
+   "id": "v2main_C_seed43",
+   "config": "configs/v2main/v2main_C_seed43.json",
+   "group": "C-v2main",
+   "seed": 43,
+   "kind": "train",
+   "mem_mib": 20000,
+   "after": [
+    "v2main_cache_merge"
+   ]
+  },
+  {
+   "id": "v2main_D_seed17",
+   "config": "configs/v2main/v2main_D_seed17.json",
+   "group": "D-v2main",
+   "seed": 17,
+   "kind": "train",
+   "mem_mib": 20000,
+   "after": [
+    "v2main_cache_merge"
+   ]
+  },
+  {
+   "id": "v2main_D_seed29",
+   "config": "configs/v2main/v2main_D_seed29.json",
+   "group": "D-v2main",
+   "seed": 29,
+   "kind": "train",
+   "mem_mib": 20000,
+   "after": [
+    "v2main_cache_merge"
+   ]
+  },
+  {
+   "id": "v2main_D_seed43",
+   "config": "configs/v2main/v2main_D_seed43.json",
+   "group": "D-v2main",
+   "seed": 43,
+   "kind": "train",
+   "mem_mib": 20000,
+   "after": [
+    "v2main_cache_merge"
+   ]
+  },
+  {
+   "id": "v2main_report",
+   "kind": "cmd",
+   "group": "report",
+   "mem_mib": 0,
+   "after": [
+    "v2main_B_seed17",
+    "v2main_B_seed29",
+    "v2main_B_seed43",
+    "v2main_C_seed17",
+    "v2main_C_seed29",
+    "v2main_C_seed43",
+    "v2main_D_seed17",
+    "v2main_D_seed29",
+    "v2main_D_seed43"
+   ],
+   "cmd": ".venv/bin/python scripts/r1_report.py --prefix v2main --pairs B:C C:D B:D --output docs/v2main/V2MAIN_RESULTS.json"
+  },
+  {
+   "id": "day1_summary",
+   "kind": "cmd",
+   "group": "report",
+   "mem_mib": 0,
+   "after": [
+    "v2main_report",
+    "f1_report",
+    "p4d_bc_report",
+    "replay_report"
+   ],
+   "cmd": ".venv/bin/python scripts/v2/day1_summary.py"
+  }
+ ]
+}

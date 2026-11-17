@@ -1,0 +1,3 @@
+
+== 2026-11-16 01:22:53 host a4 gpu 0 attempt 1
+gt_observed {'sample_id': 'v5bmain/test/000005', 'object': 'a_crystal_cactus_013020', 'observed_action': 'drop', 'gt_law': 'plasticine', 'seconds': 497.2498137950897, 'iou': 0.9999914881969665, 'iou_last': 1.0, 'rgb_mae_union': 0.005918001199279179, 'loss': 3.17196508738279e-05, 'complete': True}

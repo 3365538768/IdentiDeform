@@ -1,0 +1,49 @@
+{
+  "status": "verified",
+  "files": [
+    {
+      "export": "data/migration_export/runs/full_giant16_C_aux_no_feedback_seed17/best.pt",
+      "status": "verified",
+      "verification": {
+        "status": "verified",
+        "original_relative_path": "runs/full_giant16_C_aux_no_feedback_seed17/best.pt",
+        "model_tensor_count": 624,
+        "byte_identical_serialization_claimed": false
+      }
+    },
+    {
+      "export": "data/migration_export/runs/full_giant16_C_aux_no_feedback_seed17/last.pt",
+      "status": "verified",
+      "verification": {
+        "status": "verified",
+        "original_relative_path": "runs/full_giant16_C_aux_no_feedback_seed17/last.pt",
+        "model_tensor_count": 624,
+        "byte_identical_serialization_claimed": false
+      }
+    },
+    {
+      "export": "data/migration_export/runs/full_giant16_D_field_bridge_seed17/best.pt",
+      "status": "verified",
+      "verification": {
+        "status": "verified",
+        "original_relative_path": "runs/full_giant16_D_field_bridge_seed17/best.pt",
+        "model_tensor_count": 624,
+        "byte_identical_serialization_claimed": false
+      }
+    },
+    {
+      "export": "data/migration_export/runs/full_giant16_D_field_bridge_seed17/last.pt",
+      "status": "verified",
+      "verification": {
+        "status": "verified",
+        "original_relative_path": "runs/full_giant16_D_field_bridge_seed17/last.pt",
+        "model_tensor_count": 624,
+        "byte_identical_serialization_claimed": false
+      }
+    }
+  ],
+  "total_exports": 4,
+  "verified_unix": 1794072733.3199353,
+  "originals_preserved_on_old_a800": true,
+  "byte_identical_serialization_claimed": false
+}

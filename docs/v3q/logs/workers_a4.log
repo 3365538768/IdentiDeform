@@ -1,0 +1,92 @@
+09:22:58 claim v3q_val_gtobs_000002 host a4 gpu 0 attempt 1
+09:23:01 claim v3q_val_gtobs_000053 host a4 gpu 0 attempt 1
+09:23:04 claim v3q_test_gtobs_000005 host a4 gpu 0 attempt 1
+09:23:07 claim v3q_test_gtobs_000025 host a4 gpu 0 attempt 1
+09:23:10 claim v3q_test_gtobs_000066 host a4 gpu 1 attempt 1
+09:23:13 claim v3q_val_gt24_000002 host a4 gpu 1 attempt 1
+09:23:16 claim v3q_val_gt24_000021 host a4 gpu 1 attempt 1
+09:23:19 claim v3q_val_gt24_000029 host a4 gpu 1 attempt 1
+09:23:22 claim v3q_val_gt24_000037 host a4 gpu 2 attempt 1
+09:23:25 claim v3q_val_gt24_000053 host a4 gpu 2 attempt 1
+09:23:28 claim v3q_val_gt24_000064 host a4 gpu 2 attempt 1
+09:23:31 claim v3q_val_gt24_000068 host a4 gpu 2 attempt 1
+09:23:34 claim v3q_val_gt24_000080 host a4 gpu 3 attempt 1
+09:23:37 claim v3q_val_gt24_000089 host a4 gpu 3 attempt 1
+09:23:40 claim v3q_val_gt24_000112 host a4 gpu 3 attempt 1
+09:23:43 claim v3q_val_gt24_000116 host a4 gpu 3 attempt 1
+09:23:46 claim v3q_val_gt24_000121 host a4 gpu 4 attempt 1
+09:23:49 claim v3q_val_gt24_000134 host a4 gpu 4 attempt 1
+09:23:52 claim v3q_val_gt24_000141 host a4 gpu 4 attempt 1
+09:23:55 claim v3q_val_gt24_000151 host a4 gpu 4 attempt 1
+09:23:58 claim v3q_val_gt24_000169 host a4 gpu 5 attempt 1
+09:24:01 claim v3q_val_gt24_000180 host a4 gpu 5 attempt 1
+09:24:04 claim v3q_val_gt24_000183 host a4 gpu 5 attempt 1
+09:24:07 claim v3q_val_gt24_000186 host a4 gpu 5 attempt 1
+09:24:10 claim v3q_val_gt24_000198 host a4 gpu 6 attempt 1
+09:24:13 claim v3q_val_gt24_000207 host a4 gpu 6 attempt 1
+09:24:16 claim v3q_val_gt24_000214 host a4 gpu 6 attempt 1
+09:24:19 claim v3q_val_gt24_000228 host a4 gpu 6 attempt 1
+09:24:22 claim v3q_val_gt24_000231 host a4 gpu 7 attempt 1
+09:24:25 claim v3q_val_gt24_000244 host a4 gpu 7 attempt 1
+09:24:28 claim v3q_val_gt24_000250 host a4 gpu 7 attempt 1
+09:24:31 claim v3q_val_gt24_000253 host a4 gpu 7 attempt 1
+09:33:50 exit v3q_test_gtobs_000005 0
+09:34:04 claim v3q_val_gt24_000258 host a4 gpu 0 attempt 1
+09:36:09 exit v3q_val_gtobs_000053 0
+09:36:37 claim v3q_val_gt24_000265 host a4 gpu 0 attempt 1
+09:36:41 exit v3q_val_gtobs_000002 0
+09:37:10 claim v3q_val_gt24_000275 host a4 gpu 0 attempt 1
+09:41:19 exit v3q_test_gtobs_000025 0
+09:41:43 claim v3q_val_b3_12_000002 host a4 gpu 0 attempt 1
+09:44:57 exit v3q_test_gtobs_000066 0
+09:45:16 claim v3q_val_b3_12_000021 host a4 gpu 1 attempt 1
+11:31:24 exit v3q_val_gt24_000198 0
+11:37:05 exit v3q_val_gt24_000231 0
+12:02:11 exit v3q_val_gt24_000258 0
+12:51:19 claim v3q_val_b3_12_000029 host a4 gpu 0 attempt 1
+12:51:22 claim v3q_val_b3_12_000037 host a4 gpu 6 attempt 1
+12:51:25 claim v3q_val_b3_12_000053 host a4 gpu 7 attempt 1
+13:00:47 exit v3q_val_b3_12_000002 0
+13:01:00 claim v3q_val_b3_12_000064 host a4 gpu 0 attempt 1
+13:39:18 exit v3q_val_gt24_000037 0
+13:39:45 claim v3q_val_b3_12_000068 host a4 gpu 2 attempt 1
+14:22:48 exit v3q_val_b3_12_000021 0
+14:23:08 claim v3q_val_b3_12_000080 host a4 gpu 1 attempt 1
+14:38:14 exit v3q_val_gt24_000021 0
+14:38:25 exit v3q_val_gt24_000183 0
+14:38:38 claim v3q_val_b3_12_000089 host a4 gpu 1 attempt 1
+14:38:40 claim v3q_val_b3_12_000112 host a4 gpu 5 attempt 1
+14:40:14 exit v3q_val_gt24_000002 0
+14:40:51 claim v3q_val_b3_12_000116 host a4 gpu 1 attempt 1
+15:08:13 exit v3q_val_b3_12_000080 0
+15:08:16 claim v3q_val_b3_12_000121 host a4 gpu 1 attempt 1
+15:10:49 exit v3q_val_gt24_000141 0
+15:10:49 claim v3q_val_b3_12_000134 host a4 gpu 4 attempt 1
+15:17:22 claim v3q_val_t124_000002 host a4 gpu 0 attempt 1
+15:17:25 claim v3q_val_t124_000021 host a4 gpu 0 attempt 1
+15:17:28 claim v3q_val_t124_000029 host a4 gpu 1 attempt 1
+15:17:31 claim v3q_val_t124_000037 host a4 gpu 1 attempt 1
+15:17:34 claim v3q_val_t124_000053 host a4 gpu 1 attempt 1
+15:17:37 claim v3q_val_t124_000064 host a4 gpu 2 attempt 1
+15:17:40 claim v3q_val_t124_000068 host a4 gpu 4 attempt 1
+15:17:43 claim v3q_val_t124_000080 host a4 gpu 5 attempt 1
+15:17:46 claim v3q_val_t124_000089 host a4 gpu 6 attempt 1
+15:17:49 claim v3q_val_t124_000112 host a4 gpu 7 attempt 1
+15:26:24 claim v3q_val_t124_000116 host a4 gpu 0 attempt 1
+15:26:26 claim v3q_val_t124_000121 host a4 gpu 0 attempt 1
+15:26:29 claim v3q_val_t124_000134 host a4 gpu 1 attempt 1
+15:26:32 claim v3q_val_t124_000141 host a4 gpu 1 attempt 1
+15:26:35 claim v3q_val_t124_000151 host a4 gpu 2 attempt 1
+15:26:38 claim v3q_val_t124_000169 host a4 gpu 2 attempt 1
+15:26:41 claim v3q_val_t124_000180 host a4 gpu 3 attempt 1
+15:26:44 claim v3q_val_t124_000183 host a4 gpu 3 attempt 1
+15:26:47 claim v3q_val_t124_000186 host a4 gpu 4 attempt 1
+15:26:50 claim v3q_val_t124_000198 host a4 gpu 4 attempt 1
+15:26:53 claim v3q_val_t124_000207 host a4 gpu 5 attempt 1
+15:26:56 claim v3q_val_t124_000214 host a4 gpu 5 attempt 1
+15:26:59 claim v3q_val_t124_000228 host a4 gpu 6 attempt 1
+15:27:02 claim v3q_val_t124_000231 host a4 gpu 6 attempt 1
+15:27:05 claim v3q_val_t124_000244 host a4 gpu 7 attempt 1
+15:27:08 claim v3q_val_t124_000250 host a4 gpu 7 attempt 1
+15:37:59 exit v3q_val_gt24_000180 0
+15:38:11 claim v3q_val_t124_000253 host a4 gpu 5 attempt 1

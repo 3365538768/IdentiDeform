@@ -1,0 +1,15 @@
+sim 205 lawmean_pred 0.0 True 303
+sim 205 lawmean_pred 0.06 True 238
+sim 205 lawmean_pred 0.1 True 152
+quick failure /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/v5r/runs/000205/cache/6f2db674f89e/0.140 0
+sim 205 lawmean_pred 0.14 True 211
+sim 205 lawmean_pred 0.18 True 174
+sim 205 lawmean_pred 0.24 True 170
+sim 205 lawmean_pred 0.32 True 36
+measure 205 lawmean_pred 0.06 {'crush': 0.006102493672916737, 'dent_p95_vs_x0': 0.006497512699228247, 'dent_mean_vs_x0': 0.0036019283408944593, 'wloss_vs_x0': 0.009301344478545685, 'dent_p95': 0.006497512699228247, 'dent_mean': 0.0036019283408944593, 'wloss': 0.009301344478545685, 'peak_compression': 0.03648557255628653, 'final_width_vs_ref': 0.008654015428810344, 'zmax_drop': -0.007951795958799752, 'n_particles': 17901, 'W': 0.12743937969207764, 'axis': 0}
+measure 205 lawmean_pred 0.1 {'crush': 0.01628988397118259, 'dent_p95_vs_x0': 0.01390936276339677, 'dent_mean_vs_x0': 0.006384487972524541, 'wloss_vs_x0': 0.017854821012142683, 'dent_p95': 0.01390936276339677, 'dent_mean': 0.006384487972524541, 'wloss': 0.017854821012142683, 'peak_compression': 0.05761202350896459, 'final_width_vs_ref': 0.01796077598665719, 'zmax_drop': -0.006696388064419778, 'n_particles': 17901, 'W': 0.12743937969207764, 'axis': 0}
+measure 205 lawmean_pred 0.14 {'crush': 0.03811218872079311, 'dent_p95_vs_x0': 0.03255775736190343, 'dent_mean_vs_x0': 0.013967271412096274, 'wloss_vs_x0': 0.03867305121702763, 'dent_p95': 0.03255775736190343, 'dent_mean': 0.013967271412096274, 'wloss': 0.03867305121702763, 'peak_compression': 0.08887047151694186, 'final_width_vs_ref': 0.03862967581164018, 'zmax_drop': -0.012880297164087657, 'n_particles': 17901, 'W': 0.12743937969207764, 'axis': 0}
+measure 205 lawmean_pred 0.18 {'crush': 0.07756313059743533, 'dent_p95_vs_x0': 0.054879702589806394, 'dent_mean_vs_x0': 0.024038782062066492, 'wloss_vs_x0': 0.0814287411404074, 'dent_p95': 0.054879702589806394, 'dent_mean': 0.024038782062066492, 'wloss': 0.0814287411404074, 'peak_compression': 0.1299246332453727, 'final_width_vs_ref': 0.08063255877475001, 'zmax_drop': -0.024164824669633753, 'n_particles': 17901, 'W': 0.12743937969207764, 'axis': 0}
+measure 205 lawmean_pred 0.24 {'crush': 0.12819738705610967, 'dent_p95_vs_x0': 0.07834124583517084, 'dent_mean_vs_x0': 0.0375772329382799, 'wloss_vs_x0': 0.13711192949929796, 'dent_p95': 0.07834124583517084, 'dent_mean': 0.0375772329382799, 'wloss': 0.13711192949929796, 'peak_compression': 0.1850989533590449, 'final_width_vs_ref': 0.13574530957242908, 'zmax_drop': -0.029204696928737766, 'n_particles': 17901, 'W': 0.12743937969207764, 'axis': 0}
+measure 205 lawmean_pred 0.32 {'crush': 0.16641472962298226, 'dent_p95_vs_x0': 0.10072256145997127, 'dent_mean_vs_x0': 0.050531213399695234, 'wloss_vs_x0': 0.18903753745186097, 'dent_p95': 0.10072256145997127, 'dent_mean': 0.050531213399695234, 'wloss': 0.18903753745186097, 'peak_compression': 0.232295079973696, 'final_width_vs_ref': 0.18843026306804528, 'zmax_drop': -0.04008680693594846, 'n_particles': 17901, 'W': 0.12743937969207764, 'axis': 0}
+done 205 lawmean_pred

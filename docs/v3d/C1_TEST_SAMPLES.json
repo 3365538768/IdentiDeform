@@ -1,0 +1,208 @@
+{
+ "split": "test",
+ "seed": 20261113,
+ "per_cell": 1,
+ "total": 30,
+ "cells": {
+  "jelly/bend": 16,
+  "jelly/drop": 17,
+  "jelly/press": 17,
+  "jelly/shear": 17,
+  "jelly/stretch": 17,
+  "jelly/tap30hold": 16,
+  "metal/bend": 16,
+  "metal/drop": 17,
+  "metal/press": 17,
+  "metal/shear": 17,
+  "metal/stretch": 17,
+  "metal/tap30hold": 16,
+  "plasticine/bend": 16,
+  "plasticine/drop": 17,
+  "plasticine/press": 17,
+  "plasticine/shear": 17,
+  "plasticine/stretch": 17,
+  "plasticine/tap30hold": 16
+ },
+ "samples": [
+  {
+   "index": 5,
+   "law": "plasticine",
+   "action": "drop",
+   "gt_observed": true
+  },
+  {
+   "index": 9,
+   "law": "jelly",
+   "action": "stretch",
+   "gt_observed": true
+  },
+  {
+   "index": 25,
+   "law": "metal",
+   "action": "shear",
+   "gt_observed": true
+  },
+  {
+   "index": 26,
+   "law": "plasticine",
+   "action": "shear",
+   "gt_observed": false
+  },
+  {
+   "index": 29,
+   "law": "plasticine",
+   "action": "stretch",
+   "gt_observed": false
+  },
+  {
+   "index": 55,
+   "law": "metal",
+   "action": "press",
+   "gt_observed": true
+  },
+  {
+   "index": 66,
+   "law": "jelly",
+   "action": "bend",
+   "gt_observed": true
+  },
+  {
+   "index": 74,
+   "law": "plasticine",
+   "action": "press",
+   "gt_observed": false
+  },
+  {
+   "index": 93,
+   "law": "jelly",
+   "action": "drop",
+   "gt_observed": false
+  },
+  {
+   "index": 96,
+   "law": "jelly",
+   "action": "shear",
+   "gt_observed": false
+  },
+  {
+   "index": 116,
+   "law": "plasticine",
+   "action": "shear",
+   "gt_observed": false
+  },
+  {
+   "index": 127,
+   "law": "metal",
+   "action": "press",
+   "gt_observed": false
+  },
+  {
+   "index": 128,
+   "law": "plasticine",
+   "action": "press",
+   "gt_observed": false
+  },
+  {
+   "index": 136,
+   "law": "metal",
+   "action": "stretch",
+   "gt_observed": false
+  },
+  {
+   "index": 140,
+   "law": "plasticine",
+   "action": "bend",
+   "gt_observed": false
+  },
+  {
+   "index": 141,
+   "law": "jelly",
+   "action": "tap30hold",
+   "gt_observed": true
+  },
+  {
+   "index": 142,
+   "law": "metal",
+   "action": "tap30hold",
+   "gt_observed": false
+  },
+  {
+   "index": 160,
+   "law": "metal",
+   "action": "tap30hold",
+   "gt_observed": false
+  },
+  {
+   "index": 179,
+   "law": "plasticine",
+   "action": "tap30hold",
+   "gt_observed": false
+  },
+  {
+   "index": 184,
+   "law": "metal",
+   "action": "drop",
+   "gt_observed": false
+  },
+  {
+   "index": 195,
+   "law": "jelly",
+   "action": "tap30hold",
+   "gt_observed": false
+  },
+  {
+   "index": 198,
+   "law": "jelly",
+   "action": "press",
+   "gt_observed": false
+  },
+  {
+   "index": 203,
+   "law": "plasticine",
+   "action": "drop",
+   "gt_observed": false
+  },
+  {
+   "index": 216,
+   "law": "jelly",
+   "action": "press",
+   "gt_observed": false
+  },
+  {
+   "index": 219,
+   "law": "jelly",
+   "action": "drop",
+   "gt_observed": false
+  },
+  {
+   "index": 228,
+   "law": "jelly",
+   "action": "bend",
+   "gt_observed": false
+  },
+  {
+   "index": 261,
+   "law": "jelly",
+   "action": "stretch",
+   "gt_observed": false
+  },
+  {
+   "index": 265,
+   "law": "metal",
+   "action": "bend",
+   "gt_observed": false
+  },
+  {
+   "index": 269,
+   "law": "plasticine",
+   "action": "tap30hold",
+   "gt_observed": false
+  },
+  {
+   "index": 283,
+   "law": "metal",
+   "action": "bend",
+   "gt_observed": false
+  }
+ ]
+}

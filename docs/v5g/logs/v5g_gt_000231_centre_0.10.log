@@ -1,0 +1,4 @@
+sim 231 gt none:0 True 151
+sim 231 gt centre:0.10 True 495
+measure centre:0.10 {'sag': 0.15225973898181386, 'left': 0.5443340899158361, 'crush': 0.024865214955177878, 'dent_p95': 0.09519597443498208, 'grip': 38.97925901412964, 'lift': 0.17915675640106202, 'height': 0.59718918800354, 'n_particles': 141866, 'seg_particles': 46054}
+done 231 gt centre:0.10 False

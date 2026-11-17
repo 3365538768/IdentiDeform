@@ -1,0 +1,25 @@
+{
+ "stage": "v3w",
+ "deviations": [
+  {
+   "when": "2026-11-16 ~11:35 UTC, before any metric (smoke test on the 20 trials of w_block_10 only, masks inspected visually, no predictions looked at as metrics)",
+   "what": "mask: pixels that are foreground in >85% of a trial's frames (dilated 5 px) are removed before component selection (static background misregistration, e.g. the landing-surface edge).",
+   "why": "release was detected at frame 0 on a spurious static edge component"
+  },
+  {
+   "when": "same",
+   "what": "mask: components within 25 px of the top-border (hand/arm) components are treated as hand, not object.",
+   "why": "skin pixels split off the dark sleeve were picked as the object before release"
+  },
+  {
+   "when": "2026-11-16 ~11:50 UTC, before any metric (full-surface backgrounds still contain the hand; masks of the w_block_10 smoke and a 27-trial QC subset inspected visually only)",
+   "what": "object selection replaced by backward tracking: start from the largest candidate component in the lower 60% of the last frame (object at rest), then go backwards choosing the nearest candidate (centroid < 200 px, area ratio 0.33-3); the clip starts at the earliest tracked frame (replaces the 'first frame with a component in 3 consecutive frames' release rule). Persistence threshold raised 0.85 -> 0.95 so a resting object is not removed.",
+   "why": "hand fragments far from the object were picked as the object at frame 0; the per-surface median background contains the hand"
+  },
+  {
+   "when": "same",
+   "what": "QC observations (no change made): white EPS foam on white wall fragments in some frames; specular reflections/shadows on glass and metal surfaces are partly included in the mask; m_coin trials are often too small/short and get excluded by the pre-registered QC rule.",
+   "why": "reported as limitations"
+  }
+ ]
+}

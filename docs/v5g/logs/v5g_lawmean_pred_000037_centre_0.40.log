@@ -1,0 +1,3 @@
+sim 37 lawmean_pred centre:0.40 True 286
+measure centre:0.40 {'sag': 0.0804643649510791, 'left': 0.36426177701376955, 'crush': 0.368744057660733, 'dent_p95': 0.3933595775632521, 'grip': 128.5735321044922, 'lift': 0.03630942106246948, 'height': 0.12103140354156494, 'n_particles': 19197, 'seg_particles': 5073}
+done 37 lawmean_pred centre:0.40 False

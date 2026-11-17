@@ -1,0 +1,51 @@
+{
+  "phase": "R5",
+  "max_per_gpu": 3,
+  "gpus": [
+    4,
+    5
+  ],
+  "jobs": [
+    {
+      "id": "r5_vlm_shard0",
+      "kind": "cmd",
+      "group": "VLM-qwen3vl8b",
+      "mem_mib": 24000,
+      "cmd": ".venv/bin/python scripts/vlm_baseline.py --split val --shard 0 --num-shards 4 --output runs/r5_vlm_qwen3vl8b_val"
+    },
+    {
+      "id": "r5_vlm_shard1",
+      "kind": "cmd",
+      "group": "VLM-qwen3vl8b",
+      "mem_mib": 24000,
+      "cmd": ".venv/bin/python scripts/vlm_baseline.py --split val --shard 1 --num-shards 4 --output runs/r5_vlm_qwen3vl8b_val"
+    },
+    {
+      "id": "r5_vlm_shard2",
+      "kind": "cmd",
+      "group": "VLM-qwen3vl8b",
+      "mem_mib": 24000,
+      "cmd": ".venv/bin/python scripts/vlm_baseline.py --split val --shard 2 --num-shards 4 --output runs/r5_vlm_qwen3vl8b_val"
+    },
+    {
+      "id": "r5_vlm_shard3",
+      "kind": "cmd",
+      "group": "VLM-qwen3vl8b",
+      "mem_mib": 24000,
+      "cmd": ".venv/bin/python scripts/vlm_baseline.py --split val --shard 3 --num-shards 4 --output runs/r5_vlm_qwen3vl8b_val"
+    },
+    {
+      "id": "r5_vlm_merge",
+      "kind": "cmd",
+      "group": "VLM-qwen3vl8b",
+      "mem_mib": 0,
+      "after": [
+        "r5_vlm_shard0",
+        "r5_vlm_shard1",
+        "r5_vlm_shard2",
+        "r5_vlm_shard3"
+      ],
+      "cmd": "cat runs/r5_vlm_qwen3vl8b_val/predictions.shard*of4.jsonl > runs/r5_vlm_qwen3vl8b_val/predictions.jsonl && .venv/bin/python scripts/audit_within_law.py runs/r5_vlm_qwen3vl8b_val --output docs/r5/VLM_WITHIN_LAW.json > /dev/null"
+    }
+  ]
+}

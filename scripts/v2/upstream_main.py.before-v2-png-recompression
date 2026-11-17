@@ -1,0 +1,37 @@
+"""Run upstream modified_simulation.py as __main__, optionally replacing the press action.
+
+FB_ACTION=tap: plate compresses 10 % of the z extent over 0.5 s, then releases (3.5 s free motion).
+FB_ACTION=tap30hold: 30 % over 0.5 s, plate held still until 1.0 s, then released (3 s free motion).
+"""
+import os
+import runpy
+import sys
+
+import my_utils.sim_utils as sim_utils
+
+if os.environ.get('FB_ACTION') == 'tap':
+    press = sim_utils.build_press_boundary_conditions
+
+    def tap(mpm_init_pos, material_params):
+        bcs = press(mpm_init_pos, material_params)
+        plate = next(b for b in bcs if b['type'] == 'cuboid')
+        plate['velocity'] = [0.0, 0.0, plate['velocity'][2] * (0.1 / 0.7) * (3.0 / 0.5)]
+        plate['end_time'] = 0.5
+        return bcs
+
+    sim_utils.build_press_boundary_conditions = tap
+elif os.environ.get('FB_ACTION') == 'tap30hold':
+    press = sim_utils.build_press_boundary_conditions
+
+    def tap30hold(mpm_init_pos, material_params):
+        bcs = press(mpm_init_pos, material_params)
+        plate = next(b for b in bcs if b['type'] == 'cuboid')
+        vz = plate['velocity'][2] * (0.3 / 0.7) * (3.0 / 0.5)
+        plate['velocity'] = [0.0, 0.0, vz]; plate['end_time'] = 0.5
+        held = dict(plate, point=[plate['point'][0], plate['point'][1], plate['point'][2] + 0.5 * vz],
+                    velocity=[0.0, 0.0, 0.0], start_time=0.5, end_time=1.0)
+        return bcs + [held]
+
+    sim_utils.build_press_boundary_conditions = tap30hold
+sys.argv = ['modified_simulation.py', *sys.argv[1:]]
+runpy.run_path('modified_simulation.py', run_name='__main__')

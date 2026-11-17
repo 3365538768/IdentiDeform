@@ -1,0 +1,78 @@
+2026-11-14T01:54:45+00:00 START .venv/bin/python -I scripts/v3f/fewshot_probe.py docs/v3f/FEWSHOT_PROBE.json
+head v2main_B_seed17
+head v2main_B_seed29
+head v2main_B_seed43
+head v2main_C_seed17
+head v2main_C_seed29
+head v2main_C_seed43
+head v2main_D_seed17
+head v2main_D_seed29
+head v2main_D_seed43
+springgaus/E_over_rho frozen_ridge {"mae_z": 0.23298684062886682, "spearman": 0.2800172855511478, "pairwise_order_acc": 0.6144578313253012, "n_pairs": 83}
+springgaus/E_over_rho frozen_krr {"mae_z": 0.24598053986326102, "spearman": -0.004444718818272186, "pairwise_order_acc": 0.5060240963855421, "n_pairs": 83}
+springgaus/E_over_rho head_ridge {"mae_z": 0.2523774796160323, "spearman": -0.500030867055621, "pairwise_order_acc": 0.3132530120481928, "n_pairs": 83}
+springgaus/E_over_rho head_krr {"mae_z": 0.24525410158404373, "spearman": -0.4000246936444968, "pairwise_order_acc": 0.3614457831325301, "n_pairs": 83}
+springgaus/E_over_rho support_mean {"mae_z": 0.23808120829718454, "spearman": -0.9955356919925976, "pairwise_order_acc": 0.0, "n_pairs": 83}
+Kcurve 3 frozen_ridge {"mae_z": 0.257, "spearman": 0.043, "pairwise_order_acc": 0.522}
+Kcurve 3 frozen_krr {"mae_z": 0.271, "spearman": -0.116, "pairwise_order_acc": 0.455}
+Kcurve 3 head_ridge {"mae_z": 0.286, "spearman": -0.144, "pairwise_order_acc": 0.443}
+Kcurve 3 support_mean {"mae_z": 0.276, "spearman": -0.132, "pairwise_order_acc": 0.44}
+Kcurve 6 frozen_ridge {"mae_z": 0.241, "spearman": 0.102, "pairwise_order_acc": 0.545}
+Kcurve 6 frozen_krr {"mae_z": 0.248, "spearman": -0.102, "pairwise_order_acc": 0.464}
+Kcurve 6 head_ridge {"mae_z": 0.258, "spearman": -0.203, "pairwise_order_acc": 0.423}
+Kcurve 6 support_mean {"mae_z": 0.246, "spearman": -0.207, "pairwise_order_acc": 0.415}
+Kcurve 9 frozen_ridge {"mae_z": 0.233, "spearman": 0.238, "pairwise_order_acc": 0.596}
+Kcurve 9 frozen_krr {"mae_z": 0.247, "spearman": -0.083, "pairwise_order_acc": 0.474}
+Kcurve 9 head_ridge {"mae_z": 0.271, "spearman": -0.284, "pairwise_order_acc": 0.393}
+Kcurve 9 support_mean {"mae_z": 0.244, "spearman": -0.375, "pairwise_order_acc": 0.346}
+Kcurve 13 frozen_ridge {"mae_z": 0.233, "spearman": 0.28, "pairwise_order_acc": 0.614}
+Kcurve 13 frozen_krr {"mae_z": 0.246, "spearman": -0.004, "pairwise_order_acc": 0.506}
+Kcurve 13 head_ridge {"mae_z": 0.252, "spearman": -0.5, "pairwise_order_acc": 0.313}
+Kcurve 13 support_mean {"mae_z": 0.238, "spearman": -0.996, "pairwise_order_acc": 0.0}
+springgaus/nu frozen_ridge {"mae_z": 0.7097859598707448, "spearman": -0.7653088827393817, "pairwise_order_acc": 0.057692307692307696, "n_pairs": 52}
+springgaus/nu frozen_krr {"mae_z": 0.6534442151947554, "spearman": -0.7292337165496465, "pairwise_order_acc": 0.07692307692307693, "n_pairs": 52}
+springgaus/nu head_ridge {"mae_z": 0.7092172841630066, "spearman": -0.8529200006287385, "pairwise_order_acc": 0.0, "n_pairs": 52}
+springgaus/nu head_krr {"mae_z": 0.703284623317432, "spearman": -0.8529200006287385, "pairwise_order_acc": 0.0, "n_pairs": 52}
+springgaus/nu support_mean {"mae_z": 0.6834092216699251, "spearman": -0.9445545449627054, "pairwise_order_acc": 0.0, "n_pairs": 52}
+Kcurve 3 frozen_ridge {"mae_z": 0.841, "spearman": -0.127, "pairwise_order_acc": 0.403}
+Kcurve 3 frozen_krr {"mae_z": 0.839, "spearman": -0.142, "pairwise_order_acc": 0.395}
+Kcurve 3 head_ridge {"mae_z": 0.944, "spearman": -0.15, "pairwise_order_acc": 0.389}
+Kcurve 3 support_mean {"mae_z": 0.878, "spearman": -0.116, "pairwise_order_acc": 0.354}
+Kcurve 6 frozen_ridge {"mae_z": 0.806, "spearman": -0.229, "pairwise_order_acc": 0.377}
+Kcurve 6 frozen_krr {"mae_z": 0.76, "spearman": -0.262, "pairwise_order_acc": 0.359}
+Kcurve 6 head_ridge {"mae_z": 0.787, "spearman": -0.234, "pairwise_order_acc": 0.378}
+Kcurve 6 support_mean {"mae_z": 0.78, "spearman": -0.247, "pairwise_order_acc": 0.337}
+Kcurve 9 frozen_ridge {"mae_z": 0.777, "spearman": -0.32, "pairwise_order_acc": 0.326}
+Kcurve 9 frozen_krr {"mae_z": 0.703, "spearman": -0.327, "pairwise_order_acc": 0.323}
+Kcurve 9 head_ridge {"mae_z": 0.734, "spearman": -0.34, "pairwise_order_acc": 0.316}
+Kcurve 9 support_mean {"mae_z": 0.727, "spearman": -0.321, "pairwise_order_acc": 0.311}
+Kcurve 13 frozen_ridge {"mae_z": 0.71, "spearman": -0.765, "pairwise_order_acc": 0.058}
+Kcurve 13 frozen_krr {"mae_z": 0.653, "spearman": -0.729, "pairwise_order_acc": 0.077}
+Kcurve 13 head_ridge {"mae_z": 0.709, "spearman": -0.853, "pairwise_order_acc": 0.0}
+Kcurve 13 support_mean {"mae_z": 0.683, "spearman": -0.945, "pairwise_order_acc": 0.0}
+head v2main_B_seed17
+head v2main_B_seed29
+head v2main_B_seed43
+head v2main_C_seed17
+head v2main_C_seed29
+head v2main_C_seed43
+head v2main_D_seed17
+head v2main_D_seed29
+head v2main_D_seed43
+pacnerf/E_over_rho frozen_ridge {"mae_z": 0.3010848160965531, "spearman": -0.9486832980505139, "pairwise_order_acc": 0.0, "n_pairs": 5}
+pacnerf/E_over_rho frozen_krr {"mae_z": 0.2917204179990557, "spearman": -0.9486832980505139, "pairwise_order_acc": 0.0, "n_pairs": 5}
+pacnerf/E_over_rho head_ridge {"mae_z": 0.2833014113111243, "spearman": -0.9486832980505139, "pairwise_order_acc": 0.0, "n_pairs": 5}
+pacnerf/E_over_rho head_krr {"mae_z": 0.2868803428151834, "spearman": -0.9486832980505139, "pairwise_order_acc": 0.0, "n_pairs": 5}
+pacnerf/E_over_rho support_mean {"mae_z": 0.29187366366386414, "spearman": -1.0, "pairwise_order_acc": 0.0, "n_pairs": 5}
+head v2main_B_seed17
+head v2main_B_seed29
+head v2main_B_seed43
+head v2main_C_seed17
+head v2main_C_seed29
+head v2main_C_seed43
+head v2main_D_seed17
+head v2main_D_seed29
+head v2main_D_seed43
+v2jelly random14 {"frozen_ridge": 0.055, "frozen_krr": -0.175, "head_ridge": 0.594, "support_mean": -1.0}
+v2jelly range_matched_1decade_3.5_4.5 {"frozen_ridge": -0.407, "frozen_krr": -0.428, "head_ridge": 0.123, "support_mean": -1.0}
+2026-11-14T02:03:53+00:00 END rc=0

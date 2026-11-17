@@ -1,0 +1,272 @@
+{
+  "scope": "Original DeformFieldBench Warp-MPM on a 0.5-unit cube (not GS assets); trajectories of all particles at frame_dt; relative_rms normalised by the reference motion RMS.",
+  "frame_dt": 0.03333333333333333,
+  "substep_dt": 0.0001,
+  "results": [
+    {
+      "material": "metal",
+      "action": "press",
+      "case": "reference",
+      "overrides": {},
+      "relative_rms": 0.0,
+      "relative_rms_deformation": 0.0,
+      "rms_grid_units": 0.0,
+      "reference_motion_rms": 0.10738585854319586,
+      "reference_deformation_rms": 0.07156608453375475
+    },
+    {
+      "material": "metal",
+      "action": "press",
+      "case": "E_x4",
+      "overrides": {
+        "E": 8000000.0
+      },
+      "relative_rms": 0.010412022104163475,
+      "relative_rms_deformation": 0.01510351138593263,
+      "rms_grid_units": 0.0011181039328263273,
+      "reference_motion_rms": 0.10738585854319586,
+      "reference_deformation_rms": 0.07156608453375475
+    },
+    {
+      "material": "metal",
+      "action": "press",
+      "case": "rho_x4",
+      "overrides": {
+        "density": 20000.0
+      },
+      "relative_rms": 0.03144496421448356,
+      "relative_rms_deformation": 0.04672556513226204,
+      "rms_grid_units": 0.003376744479032388,
+      "reference_motion_rms": 0.10738585854319586,
+      "reference_deformation_rms": 0.07156608453375475
+    },
+    {
+      "material": "metal",
+      "action": "press",
+      "case": "E_rho_sigma_x4",
+      "overrides": {
+        "E": 8000000.0,
+        "density": 20000.0,
+        "yield_stress": 40000.0
+      },
+      "relative_rms": 9.546228906712525e-05,
+      "relative_rms_deformation": 0.00014323003936222,
+      "rms_grid_units": 1.0251299869971984e-05,
+      "reference_motion_rms": 0.10738585854319586,
+      "reference_deformation_rms": 0.07156608453375475
+    },
+    {
+      "material": "metal",
+      "action": "press",
+      "case": "sigma_x4",
+      "overrides": {
+        "yield_stress": 40000.0
+      },
+      "relative_rms": 0.046903358423575056,
+      "relative_rms_deformation": 0.06925193776770247,
+      "rms_grid_units": 0.005036757412874845,
+      "reference_motion_rms": 0.10738585854319586,
+      "reference_deformation_rms": 0.07156608453375475
+    },
+    {
+      "material": "metal",
+      "action": "press",
+      "case": "E_x0.25",
+      "overrides": {
+        "E": 500000.0
+      },
+      "relative_rms": 0.030319609240795645,
+      "relative_rms_deformation": 0.04305143676430938,
+      "rms_grid_units": 0.0032558972690170554,
+      "reference_motion_rms": 0.10738585854319586,
+      "reference_deformation_rms": 0.07156608453375475
+    },
+    {
+      "material": "metal",
+      "action": "press",
+      "case": "rho_x0.25",
+      "overrides": {
+        "density": 1250.0
+      },
+      "relative_rms": 0.031102440008505525,
+      "relative_rms_deformation": 0.04663889799821698,
+      "rms_grid_units": 0.00333996222310161,
+      "reference_motion_rms": 0.10738585854319586,
+      "reference_deformation_rms": 0.07156608453375475
+    },
+    {
+      "material": "metal",
+      "action": "press",
+      "case": "E_rho_sigma_x0.25",
+      "overrides": {
+        "E": 500000.0,
+        "density": 1250.0,
+        "yield_stress": 2500.0
+      },
+      "relative_rms": 0.00011796426418971463,
+      "relative_rms_deformation": 0.0001769601934431179,
+      "rms_grid_units": 1.266769378742888e-05,
+      "reference_motion_rms": 0.10738585854319586,
+      "reference_deformation_rms": 0.07156608453375475
+    },
+    {
+      "material": "metal",
+      "action": "press",
+      "case": "sigma_x0.25",
+      "overrides": {
+        "yield_stress": 2500.0
+      },
+      "relative_rms": 0.04011313943551422,
+      "relative_rms_deformation": 0.05966087250555947,
+      "rms_grid_units": 0.004307583917145622,
+      "reference_motion_rms": 0.10738585854319586,
+      "reference_deformation_rms": 0.07156608453375475
+    },
+    {
+      "material": "metal",
+      "action": "press",
+      "case": "nu_0.4",
+      "overrides": {
+        "nu": 0.4
+      },
+      "relative_rms": 0.005911246583287382,
+      "relative_rms_deformation": 0.008661046400512261,
+      "rms_grid_units": 0.0006347842894068486,
+      "reference_motion_rms": 0.10738585854319586,
+      "reference_deformation_rms": 0.07156608453375475
+    },
+    {
+      "material": "metal",
+      "action": "drop",
+      "case": "reference",
+      "overrides": {},
+      "relative_rms": 0.0,
+      "relative_rms_deformation": 0.0,
+      "rms_grid_units": 0.0,
+      "reference_motion_rms": 0.1862569030711861,
+      "reference_deformation_rms": 0.03362847640371872
+    },
+    {
+      "material": "metal",
+      "action": "drop",
+      "case": "E_x4",
+      "overrides": {
+        "E": 8000000.0
+      },
+      "relative_rms": 0.00805000138029941,
+      "relative_rms_deformation": 0.033738366638804626,
+      "rms_grid_units": 0.0014993683268133414,
+      "reference_motion_rms": 0.1862569030711861,
+      "reference_deformation_rms": 0.03362847640371872
+    },
+    {
+      "material": "metal",
+      "action": "drop",
+      "case": "rho_x4",
+      "overrides": {
+        "density": 20000.0
+      },
+      "relative_rms": 0.31681106998435377,
+      "relative_rms_deformation": 1.3317441103953236,
+      "rms_grid_units": 0.05900824875395453,
+      "reference_motion_rms": 0.1862569030711861,
+      "reference_deformation_rms": 0.03362847640371872
+    },
+    {
+      "material": "metal",
+      "action": "drop",
+      "case": "E_rho_sigma_x4",
+      "overrides": {
+        "E": 8000000.0,
+        "density": 20000.0,
+        "yield_stress": 40000.0
+      },
+      "relative_rms": 0.0017219571856518325,
+      "relative_rms_deformation": 0.002936030841581981,
+      "rms_grid_units": 0.00032072641262068574,
+      "reference_motion_rms": 0.1862569030711861,
+      "reference_deformation_rms": 0.03362847640371872
+    },
+    {
+      "material": "metal",
+      "action": "drop",
+      "case": "sigma_x4",
+      "overrides": {
+        "yield_stress": 40000.0
+      },
+      "relative_rms": 0.2215588152733306,
+      "relative_rms_deformation": 0.7392693660802402,
+      "rms_grid_units": 0.04126685878093156,
+      "reference_motion_rms": 0.1862569030711861,
+      "reference_deformation_rms": 0.03362847640371872
+    },
+    {
+      "material": "metal",
+      "action": "drop",
+      "case": "E_x0.25",
+      "overrides": {
+        "E": 500000.0
+      },
+      "relative_rms": 0.01410199649269321,
+      "relative_rms_deformation": 0.060864389890312044,
+      "rms_grid_units": 0.002626594193849765,
+      "reference_motion_rms": 0.1862569030711861,
+      "reference_deformation_rms": 0.03362847640371872
+    },
+    {
+      "material": "metal",
+      "action": "drop",
+      "case": "rho_x0.25",
+      "overrides": {
+        "density": 1250.0
+      },
+      "relative_rms": 0.22589689043777703,
+      "relative_rms_deformation": 0.7531814972845511,
+      "rms_grid_units": 0.042074855226351376,
+      "reference_motion_rms": 0.1862569030711861,
+      "reference_deformation_rms": 0.03362847640371872
+    },
+    {
+      "material": "metal",
+      "action": "drop",
+      "case": "E_rho_sigma_x0.25",
+      "overrides": {
+        "E": 500000.0,
+        "density": 1250.0,
+        "yield_stress": 2500.0
+      },
+      "relative_rms": 0.006943940067512935,
+      "relative_rms_deformation": 0.011827172823553058,
+      "rms_grid_units": 0.0012933567720868821,
+      "reference_motion_rms": 0.1862569030711861,
+      "reference_deformation_rms": 0.03362847640371872
+    },
+    {
+      "material": "metal",
+      "action": "drop",
+      "case": "sigma_x0.25",
+      "overrides": {
+        "yield_stress": 2500.0
+      },
+      "relative_rms": 0.31686922779711835,
+      "relative_rms_deformation": 1.3369182531065489,
+      "rms_grid_units": 0.059019081048049454,
+      "reference_motion_rms": 0.1862569030711861,
+      "reference_deformation_rms": 0.03362847640371872
+    },
+    {
+      "material": "metal",
+      "action": "drop",
+      "case": "nu_0.4",
+      "overrides": {
+        "nu": 0.4
+      },
+      "relative_rms": 0.0034633017035419107,
+      "relative_rms_deformation": 0.017516022349485762,
+      "rms_grid_units": 0.0006450638497028793,
+      "reference_motion_rms": 0.1862569030711861,
+      "reference_deformation_rms": 0.03362847640371872
+    }
+  ],
+  "status": "complete"
+}

@@ -1,0 +1,49 @@
+quick failure obs_00 0
+quick failure obs_00 1
+simulation failed obs_00 1
+eval {'n': 1, 'law': 'plasticine', 'xf': [3.225557, 1.921627, 0.25, 0.283028], 'x': [3.225557, 1.921627], 'seconds': 87.33574151992798, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+quick failure obs_01 0
+quick failure obs_01 1
+simulation failed obs_01 1
+eval {'n': 2, 'law': 'plasticine', 'xf': [3.725557, 1.921627, 0.25, 0.283028], 'x': [3.725557, 1.921627], 'seconds': 87.13788509368896, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval (reused) {'n': 3, 'law': 'plasticine', 'xf': [2.725557, 1.921627, 0.25, 0.283028], 'x': [2.725557, 1.921627], 'seconds': 612.9455695152283, 'iou': 0.24070650662265622, 'iou_last': 0.1590143999502053, 'rgb_mae_union': 142.76970109104477, 'loss': 1.3191746741265389, 'reused_from': 'lawmean_gt#3'}
+quick failure obs_03 0
+quick failure obs_03 1
+simulation failed obs_03 1
+eval {'n': 4, 'law': 'plasticine', 'xf': [2.225557, 1.921627, 0.25, 0.283028], 'x': [2.225557, 1.921627], 'seconds': 87.36124730110168, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+quick failure obs_04 0
+quick failure obs_04 1
+simulation failed obs_04 1
+eval {'n': 5, 'law': 'plasticine', 'xf': [2.725557, 2.421627, 0.25, 0.283028], 'x': [2.725557, 2.421627], 'seconds': 87.361647605896, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval (reused) {'n': 6, 'law': 'plasticine', 'xf': [2.725557, 1.421627, 0.25, 0.283028], 'x': [2.725557, 1.421627], 'seconds': 446.1027171611786, 'iou': 0.2597914748499435, 'iou_last': 0.18245720281276592, 'rgb_mae_union': 139.86969041393482, 'loss': 1.2887171150086245, 'reused_from': 'lawmean_gt#6'}
+eval (reused) {'n': 7, 'law': 'plasticine', 'xf': [2.725557, 0.921627, 0.25, 0.283028], 'x': [2.725557, 0.921627], 'seconds': 552.7963783740997, 'iou': 0.26844402538425743, 'iou_last': 0.19764018773749292, 'rgb_mae_union': 138.3236269812016, 'loss': 1.2740015706204546, 'reused_from': 'lawmean_gt#7'}
+eval (reused) {'n': 8, 'law': 'plasticine', 'xf': [2.725557, 0.421627, 0.25, 0.283028], 'x': [2.725557, 0.421627], 'seconds': 519.3782045841217, 'iou': 0.2734651221202922, 'iou_last': 0.2085079443242449, 'rgb_mae_union': 137.42535396892023, 'loss': 1.2654578346205714, 'reused_from': 'lawmean_gt#8'}
+eval (reused) {'n': 9, 'law': 'plasticine', 'xf': [2.725557, -0.078373, 0.25, 0.283028], 'x': [2.725557, -0.078373], 'seconds': 339.4940872192383, 'iou': 0.26066297208867145, 'iou_last': 0.18369396036316643, 'rgb_mae_union': 139.28514968564434, 'loss': 1.285553301188365, 'reused_from': 'lawmean_gt#9'}
+eval (reused) {'n': 10, 'law': 'plasticine', 'xf': [3.225557, 0.421627, 0.25, 0.283028], 'x': [3.225557, 0.421627], 'seconds': 318.7778458595276, 'iou': 0.6036729987915924, 'iou_last': 0.5884385114077412, 'rgb_mae_union': 76.7979691950469, 'loss': 0.6974955078556504, 'reused_from': 'lawmean_gt#10'}
+eval (reused) {'n': 11, 'law': 'plasticine', 'xf': [3.725557, 0.421627, 0.25, 0.283028], 'x': [3.725557, 0.421627], 'seconds': 485.065940618515, 'iou': 0.7670921598056258, 'iou_last': 0.765390360080322, 'rgb_mae_union': 39.48144194976876, 'loss': 0.3877370243111144, 'reused_from': 'lawmean_gt#11'}
+eval (reused) {'n': 12, 'law': 'plasticine', 'xf': [4.225557, 0.421627, 0.25, 0.283028], 'x': [4.225557, 0.421627], 'seconds': 314.6198182106018, 'iou': 0.39837619657565854, 'iou_last': 0.36885581955214314, 'rgb_mae_union': 108.60162249006149, 'loss': 1.0275125190716414, 'reused_from': 'lawmean_gt#12'}
+eval (reused) {'n': 13, 'law': 'plasticine', 'xf': [3.725557, 0.921627, 0.25, 0.283028], 'x': [3.725557, 0.921627], 'seconds': 414.6760802268982, 'iou': 0.8135580761554664, 'iou_last': 0.8248605520068387, 'rgb_mae_union': 34.00193759395017, 'loss': 0.31978285558551467, 'reused_from': 'lawmean_gt#13'}
+eval (reused) {'n': 14, 'law': 'plasticine', 'xf': [3.725557, 1.421627, 0.25, 0.283028], 'x': [3.725557, 1.421627], 'seconds': 411.4693796634674, 'iou': 0.6536744911763632, 'iou_last': 0.5985507830249434, 'rgb_mae_union': 67.24186459794943, 'loss': 0.610019095482262, 'reused_from': 'lawmean_gt#14'}
+eval (reused) {'n': 15, 'law': 'plasticine', 'xf': [4.225557, 0.921627, 0.25, 0.283028], 'x': [4.225557, 0.921627], 'seconds': 378.65105509757996, 'iou': 0.6747000927866861, 'iou_last': 0.693625061426232, 'rgb_mae_union': 55.29070019606513, 'loss': 0.5421261824920007, 'reused_from': 'lawmean_gt#15'}
+quick failure obs_15 0
+quick failure obs_15 1
+simulation failed obs_15 1
+eval {'n': 16, 'law': 'plasticine', 'xf': [3.225557, 0.921627, 0.25, 0.283028], 'x': [3.225557, 0.921627], 'seconds': 87.96027970314026, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval {'n': 17, 'law': 'plasticine', 'xf': [3.725557, 0.921627, 0.35, 0.283028], 'x': [3.725557, 0.921627], 'seconds': 638.9590539932251, 'iou': 0.8135570512358381, 'iou_last': 0.8248605520068387, 'rgb_mae_union': 34.00203313016959, 'loss': 0.31978425515698383}
+eval {'n': 18, 'law': 'plasticine', 'xf': [3.725557, 0.921627, 0.15, 0.283028], 'x': [3.725557, 0.921627], 'seconds': 589.7785048484802, 'iou': 0.8135619668371178, 'iou_last': 0.8248605520068387, 'rgb_mae_union': 34.001800260634745, 'loss': 0.319778426341842}
+eval {'n': 19, 'law': 'plasticine', 'xf': [3.725557, 0.921627, 0.05, 0.283028], 'x': [3.725557, 0.921627], 'seconds': 598.8443253040314, 'iou': 0.813553487339477, 'iou_last': 0.8248605520068387, 'rgb_mae_union': 34.002367506937574, 'loss': 0.31978913033478806}
+quick failure obs_19 0
+quick failure obs_19 1
+simulation failed obs_19 1
+eval {'n': 20, 'law': 'plasticine', 'xf': [4.225557, 0.921627, 0.15, 0.283028], 'x': [4.225557, 0.921627], 'seconds': 86.87820482254028, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+quick failure obs_20 0
+quick failure obs_20 1
+simulation failed obs_20 1
+eval {'n': 21, 'law': 'plasticine', 'xf': [3.225557, 0.921627, 0.15, 0.283028], 'x': [3.225557, 0.921627], 'seconds': 87.78655481338501, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval {'n': 22, 'law': 'plasticine', 'xf': [3.725557, 1.421627, 0.15, 0.283028], 'x': [3.725557, 1.421627], 'seconds': 638.1406042575836, 'iou': 0.6536732072347385, 'iou_last': 0.5985507830249434, 'rgb_mae_union': 67.2414109819162, 'loss': 0.6100186005374819}
+eval {'n': 23, 'law': 'plasticine', 'xf': [3.725557, 0.421627, 0.15, 0.283028], 'x': [3.725557, 0.421627], 'seconds': 586.4394953250885, 'iou': 0.7670940270491409, 'iou_last': 0.765390360080322, 'rgb_mae_union': 39.48147348529414, 'loss': 0.38773528073632635}
+quick failure obs_23 0
+quick failure obs_23 1
+simulation failed obs_23 1
+eval {'n': 24, 'law': 'plasticine', 'xf': [3.725557, 0.921627, 0.15, 0.363028], 'x': [3.725557, 0.921627], 'seconds': 87.38770341873169, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+done 113 u4_gtmean {'0': 0.505, '4': 0.684, '12': 0.37, '24': 0.329}

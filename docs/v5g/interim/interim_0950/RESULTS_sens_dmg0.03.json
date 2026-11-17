@@ -1,0 +1,5077 @@
+{
+ "thresholds": {
+  "T_DROP_left": 0.5,
+  "T_DMG_crush": 0.03
+ },
+ "candidates": [
+  "centre:0.03",
+  "centre:0.10",
+  "centre:0.25",
+  "centre:0.40",
+  "end:0.03",
+  "end:0.10",
+  "end:0.25",
+  "end:0.40"
+ ],
+ "levels": [
+  0.03,
+  0.1,
+  0.25,
+  0.4
+ ],
+ "n_samples": 40,
+ "summary": {
+  "gt": {
+   "label": "GT oracle",
+   "n": 40,
+   "success": 1.0,
+   "drop": 0.0,
+   "damage": 0.0,
+   "missed": 0.0,
+   "level_regret": 0.0,
+   "success_ci95": [
+    1.0,
+    1.0
+   ],
+   "drop_ci95": [
+    0.0,
+    0.0
+   ],
+   "damage_ci95": [
+    0.0,
+    0.0
+   ],
+   "level_regret_ci95": [
+    0.0,
+    0.0
+   ],
+   "force_regret_rel": 0.0,
+   "force_regret_rel_ci95": [
+    0.0,
+    0.0
+   ],
+   "n_force_regret": 7,
+   "law_accuracy": null
+  },
+  "prior_vt": {
+   "label": "vision + touch prior twin",
+   "n": 40,
+   "success": 0.775,
+   "drop": 0.075,
+   "damage": 0.075,
+   "missed": 0.075,
+   "level_regret": 0.425,
+   "success_ci95": [
+    0.6578947368421053,
+    0.8837209302325582
+   ],
+   "drop_ci95": [
+    0.0,
+    0.13638591800356492
+   ],
+   "damage_ci95": [
+    0.0,
+    0.17073170731707318
+   ],
+   "level_regret_ci95": [
+    0.17770833333333336,
+    0.7
+   ],
+   "force_regret_rel": -0.17872458450597684,
+   "force_regret_rel_ci95": [
+    -0.35744916901195367,
+    0.0
+   ],
+   "n_force_regret": 4,
+   "law_accuracy": 0.675
+  },
+  "prior_vision": {
+   "label": "vision prior twin (9-run)",
+   "n": 40,
+   "success": 0.775,
+   "drop": 0.075,
+   "damage": 0.05,
+   "missed": 0.1,
+   "level_regret": 0.35,
+   "success_ci95": [
+    0.6470588235294118,
+    0.88
+   ],
+   "drop_ci95": [
+    0.0,
+    0.17777777777777778
+   ],
+   "damage_ci95": [
+    0.0,
+    0.11764705882352941
+   ],
+   "level_regret_ci95": [
+    0.16326530612244897,
+    0.6097899728997288
+   ],
+   "force_regret_rel": 0.0,
+   "force_regret_rel_ci95": [
+    0.0,
+    0.0
+   ],
+   "n_force_regret": 2,
+   "law_accuracy": 0.6
+  },
+  "lawmean_pred": {
+   "label": "class-mean twin",
+   "n": 40,
+   "success": 0.75,
+   "drop": 0.075,
+   "damage": 0.075,
+   "missed": 0.1,
+   "level_regret": 0.375,
+   "success_ci95": [
+    0.6086297760210804,
+    0.8666666666666667
+   ],
+   "drop_ci95": [
+    0.0,
+    0.225
+   ],
+   "damage_ci95": [
+    0.0,
+    0.1372718052738336
+   ],
+   "level_regret_ci95": [
+    0.18602497846683894,
+    0.59375
+   ],
+   "force_regret_rel": 0.0,
+   "force_regret_rel_ci95": [
+    0.0,
+    0.0
+   ],
+   "n_force_regret": 2,
+   "law_accuracy": 0.6
+  },
+  "fixed_loo": {
+   "label": "fixed grasp (leave-one-out)",
+   "n": 40,
+   "success": 0.825,
+   "drop": 0.0,
+   "damage": 0.0,
+   "missed": 0.175,
+   "level_regret": 0.275,
+   "success_ci95": [
+    0.6841784338896021,
+    0.9375318877551019
+   ],
+   "drop_ci95": [
+    0.0,
+    0.0
+   ],
+   "damage_ci95": [
+    0.0,
+    0.0
+   ],
+   "level_regret_ci95": [
+    0.09090909090909091,
+    0.5428571428571428
+   ],
+   "force_regret_rel": null,
+   "force_regret_rel_ci95": [
+    null,
+    null
+   ],
+   "n_force_regret": 0,
+   "law_accuracy": null
+  }
+ },
+ "paired": {
+  "vt-minus-vision": {
+   "n": 40,
+   "n_objects": 10,
+   "success_diff": 0.0,
+   "drop_diff": 0.0,
+   "damage_diff": 0.025,
+   "level_regret_diff": 0.075,
+   "success_diff_ci95": [
+    -0.18421052631578946,
+    0.18421052631578946
+   ],
+   "drop_diff_ci95": [
+    -0.06976744186046512,
+    0.06125637755102023
+   ],
+   "damage_diff_ci95": [
+    -0.09679386309992132,
+    0.15221571906354492
+   ],
+   "level_regret_diff_ci95": [
+    -0.181877990430622,
+    0.3864267676767673
+   ]
+  },
+  "vision-minus-classmean": {
+   "n": 40,
+   "n_objects": 10,
+   "success_diff": 0.025,
+   "drop_diff": 0.0,
+   "damage_diff": -0.025,
+   "level_regret_diff": -0.025,
+   "success_diff_ci95": [
+    -0.0625,
+    0.09679386309992122
+   ],
+   "drop_diff_ci95": [
+    -0.06818181818181818,
+    0.07317073170731707
+   ],
+   "damage_diff_ci95": [
+    -0.06818181818181818,
+    0.0
+   ],
+   "level_regret_diff_ci95": [
+    -0.18752948113207546,
+    0.14634146341463414
+   ]
+  },
+  "vt-minus-classmean": {
+   "n": 40,
+   "n_objects": 10,
+   "success_diff": 0.025,
+   "drop_diff": 0.0,
+   "damage_diff": 0.0,
+   "level_regret_diff": 0.05,
+   "success_diff_ci95": [
+    -0.15629111842105262,
+    0.2162455934195063
+   ],
+   "drop_diff_ci95": [
+    -0.13043478260869565,
+    0.10256410256410256
+   ],
+   "damage_diff_ci95": [
+    -0.0976219512195122,
+    0.0967741935483871
+   ],
+   "level_regret_diff_ci95": [
+    -0.15384615384615385,
+    0.2558139534883721
+   ]
+  },
+  "vt-minus-fixed": {
+   "n": 40,
+   "n_objects": 10,
+   "success_diff": -0.05,
+   "drop_diff": 0.075,
+   "damage_diff": 0.075,
+   "level_regret_diff": 0.15,
+   "success_diff_ci95": [
+    -0.25,
+    0.17074912891986055
+   ],
+   "drop_diff_ci95": [
+    0.0,
+    0.13638591800356492
+   ],
+   "damage_diff_ci95": [
+    0.0,
+    0.17073170731707318
+   ],
+   "level_regret_diff_ci95": [
+    -0.15157342657342657,
+    0.46153846153846156
+   ]
+  },
+  "vision-minus-fixed": {
+   "n": 40,
+   "n_objects": 10,
+   "success_diff": -0.05,
+   "drop_diff": 0.075,
+   "damage_diff": 0.05,
+   "level_regret_diff": 0.075,
+   "success_diff_ci95": [
+    -0.16666666666666666,
+    0.05263157894736842
+   ],
+   "drop_diff_ci95": [
+    0.0,
+    0.17777777777777778
+   ],
+   "damage_diff_ci95": [
+    0.0,
+    0.11764705882352941
+   ],
+   "level_regret_diff_ci95": [
+    -0.09302325581395349,
+    0.26193609022556374
+   ]
+  },
+  "classmean-minus-fixed": {
+   "n": 40,
+   "n_objects": 10,
+   "success_diff": -0.075,
+   "drop_diff": 0.075,
+   "damage_diff": 0.075,
+   "level_regret_diff": 0.1,
+   "success_diff_ci95": [
+    -0.2326265389876881,
+    0.06060606060606061
+   ],
+   "drop_diff_ci95": [
+    0.0,
+    0.225
+   ],
+   "damage_diff_ci95": [
+    0.0,
+    0.1372718052738336
+   ],
+   "level_regret_diff_ci95": [
+    -0.1,
+    0.2894949066213921
+   ]
+  }
+ },
+ "gt_outcome_by_candidate": {
+  "centre:0.03": {
+   "success": 5,
+   "drop": 21,
+   "damage": 14
+  },
+  "centre:0.10": {
+   "success": 4,
+   "drop": 20,
+   "damage": 16
+  },
+  "centre:0.25": {
+   "success": 2,
+   "drop": 16,
+   "damage": 22
+  },
+  "centre:0.40": {
+   "success": 2,
+   "drop": 15,
+   "damage": 23
+  },
+  "end:0.03": {
+   "success": 1,
+   "drop": 31,
+   "damage": 8
+  },
+  "end:0.10": {
+   "success": 2,
+   "drop": 30,
+   "damage": 8
+  },
+  "end:0.25": {
+   "success": 1,
+   "drop": 27,
+   "damage": 12
+  },
+  "end:0.40": {
+   "success": 0,
+   "drop": 25,
+   "damage": 15
+  }
+ },
+ "oracle_histogram": {
+  "None": 33,
+  "centre:0.03": 5,
+  "centre:0.10": 1,
+  "centre:0.25": 0,
+  "centre:0.40": 1,
+  "end:0.03": 0,
+  "end:0.10": 0,
+  "end:0.25": 0,
+  "end:0.40": 0
+ },
+ "fixed_global_success": {
+  "centre:0.03": 0.125,
+  "centre:0.10": 0.1,
+  "centre:0.25": 0.05,
+  "centre:0.40": 0.05,
+  "end:0.03": 0.025,
+  "end:0.10": 0.05,
+  "end:0.25": 0.025,
+  "end:0.40": 0.0,
+  "abstain": 0.825
+ },
+ "samples": [
+  {
+   "index": 2,
+   "law": "plasticine",
+   "object": "a_silver_human_skele_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "damage",
+    "centre:0.10": "damage",
+    "centre:0.25": "damage",
+    "centre:0.40": "damage",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "damage",
+    "end:0.40": "damage"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 5,
+   "law": "plasticine",
+   "object": "a_ice_telescope_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "drop",
+    "centre:0.10": "drop",
+    "centre:0.25": "damage",
+    "centre:0.40": "damage",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "drop"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": "centre:0.10",
+     "gt_outcome": "drop",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "success",
+      "centre:0.25": "success",
+      "centre:0.40": "success",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": false,
+     "drop": true,
+     "damage": false,
+     "missed": false,
+     "level_regret": 2,
+     "force_regret_rel": null,
+     "grip_force_gt": 39.22844886779785
+    },
+    "lawmean_pred": {
+     "chosen": "centre:0.03",
+     "gt_outcome": "drop",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "success",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": false,
+     "drop": true,
+     "damage": false,
+     "missed": false,
+     "level_regret": 1,
+     "force_regret_rel": null,
+     "grip_force_gt": 2.121603012084961
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 21,
+   "law": "jelly",
+   "object": "a_stainless_steel_si_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "drop",
+    "centre:0.10": "drop",
+    "centre:0.25": "drop",
+    "centre:0.40": "drop",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "drop"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 27,
+   "law": "jelly",
+   "object": "a_brass_telescope_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "drop",
+    "centre:0.10": "drop",
+    "centre:0.25": "drop",
+    "centre:0.40": "drop",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "drop"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 29,
+   "law": "plasticine",
+   "object": "a_silver_human_skele_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "drop",
+    "centre:0.10": "drop",
+    "centre:0.25": "damage",
+    "centre:0.40": "damage",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "drop"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "damage",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": "centre:0.25",
+     "gt_outcome": "damage",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "success",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": false,
+     "drop": false,
+     "damage": true,
+     "missed": false,
+     "level_regret": 3,
+     "force_regret_rel": null,
+     "grip_force_gt": 0.41806748509407043
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 31,
+   "law": "metal",
+   "object": "a_brass_telescope_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "damage",
+    "centre:0.10": "damage",
+    "centre:0.25": "damage",
+    "centre:0.40": "damage",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "drop"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 37,
+   "law": "metal",
+   "object": "a_brass_telescope_013020",
+   "oracle": "centre:0.03",
+   "gt_outcomes": {
+    "centre:0.03": "success",
+    "centre:0.10": "success",
+    "centre:0.25": "damage",
+    "centre:0.40": "damage",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "drop"
+   },
+   "methods": {
+    "gt": {
+     "chosen": "centre:0.03",
+     "gt_outcome": "success",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "success",
+      "centre:0.10": "success",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": 0.0,
+     "grip_force_gt": 30.647985458374023
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_miss",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": false,
+     "drop": false,
+     "damage": false,
+     "missed": true,
+     "level_regret": 1,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_miss",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": false,
+     "drop": false,
+     "damage": false,
+     "missed": true,
+     "level_regret": 1,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_miss",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": false,
+     "drop": false,
+     "damage": false,
+     "missed": true,
+     "level_regret": 1,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_miss",
+     "success": false,
+     "drop": false,
+     "damage": false,
+     "missed": true,
+     "level_regret": 1,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 40,
+   "law": "metal",
+   "object": "a_plastic_water_bottle_thin_transparent_plastic_isolated_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "damage",
+    "centre:0.10": "damage",
+    "centre:0.25": "damage",
+    "centre:0.40": "damage",
+    "end:0.03": "damage",
+    "end:0.10": "damage",
+    "end:0.25": "damage",
+    "end:0.40": "damage"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 53,
+   "law": "plasticine",
+   "object": "a_stainless_steel_si_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "drop",
+    "centre:0.10": "drop",
+    "centre:0.25": "drop",
+    "centre:0.40": "drop",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "drop"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 60,
+   "law": "jelly",
+   "object": "a_brick_wall_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "damage",
+    "centre:0.10": "damage",
+    "centre:0.25": "damage",
+    "centre:0.40": "damage",
+    "end:0.03": "damage",
+    "end:0.10": "damage",
+    "end:0.25": "damage",
+    "end:0.40": "damage"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": "centre:0.03",
+     "gt_outcome": "damage",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "success",
+      "centre:0.10": "success",
+      "centre:0.25": "success",
+      "centre:0.40": "success",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "success"
+     },
+     "success": false,
+     "drop": false,
+     "damage": true,
+     "missed": false,
+     "level_regret": 1,
+     "force_regret_rel": null,
+     "grip_force_gt": 1153.8129272460938
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 64,
+   "law": "metal",
+   "object": "a_silver_human_skele_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "damage",
+    "centre:0.10": "damage",
+    "centre:0.25": "damage",
+    "centre:0.40": "damage",
+    "end:0.03": "damage",
+    "end:0.10": "damage",
+    "end:0.25": "damage",
+    "end:0.40": "damage"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 68,
+   "law": "plasticine",
+   "object": "a_leather_boot_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "drop",
+    "centre:0.10": "drop",
+    "centre:0.25": "drop",
+    "centre:0.40": "drop",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "drop"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 71,
+   "law": "plasticine",
+   "object": "a_wooden_chair_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "drop",
+    "centre:0.10": "drop",
+    "centre:0.25": "drop",
+    "centre:0.40": "drop",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "drop"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": "centre:0.10",
+     "gt_outcome": "drop",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "success",
+      "centre:0.25": "success",
+      "centre:0.40": "success",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": false,
+     "drop": true,
+     "damage": false,
+     "missed": false,
+     "level_regret": 2,
+     "force_regret_rel": null,
+     "grip_force_gt": 4.341982364654541
+    },
+    "prior_vision": {
+     "chosen": "centre:0.10",
+     "gt_outcome": "drop",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "success",
+      "centre:0.25": "drop",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": false,
+     "drop": true,
+     "damage": false,
+     "missed": false,
+     "level_regret": 2,
+     "force_regret_rel": null,
+     "grip_force_gt": 4.341982364654541
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "damage",
+      "centre:0.25": "drop",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 80,
+   "law": "plasticine",
+   "object": "a_plastic_water_bottle_thin_transparent_plastic_isolated_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "drop",
+    "centre:0.10": "drop",
+    "centre:0.25": "drop",
+    "centre:0.40": "drop",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "drop"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 88,
+   "law": "metal",
+   "object": "a_brick_wall_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "damage",
+    "centre:0.10": "damage",
+    "centre:0.25": "damage",
+    "centre:0.40": "damage",
+    "end:0.03": "damage",
+    "end:0.10": "damage",
+    "end:0.25": "damage",
+    "end:0.40": "damage"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "drop",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 89,
+   "law": "plasticine",
+   "object": "a_brass_telescope_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "drop",
+    "centre:0.10": "drop",
+    "centre:0.25": "drop",
+    "centre:0.40": "drop",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "drop"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 93,
+   "law": "jelly",
+   "object": "a_plastic_water_bottle_thin_transparent_plastic_isolated_013020",
+   "oracle": "centre:0.03",
+   "gt_outcomes": {
+    "centre:0.03": "success",
+    "centre:0.10": "success",
+    "centre:0.25": "success",
+    "centre:0.40": "success",
+    "end:0.03": "drop",
+    "end:0.10": "success",
+    "end:0.25": "success",
+    "end:0.40": "damage"
+   },
+   "methods": {
+    "gt": {
+     "chosen": "centre:0.03",
+     "gt_outcome": "success",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "success",
+      "centre:0.10": "success",
+      "centre:0.25": "success",
+      "centre:0.40": "success",
+      "end:0.03": "drop",
+      "end:0.10": "success",
+      "end:0.25": "success",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": 0.0,
+     "grip_force_gt": 26.027732849121094
+    },
+    "prior_vt": {
+     "chosen": "centre:0.03",
+     "gt_outcome": "success",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "success",
+      "centre:0.10": "success",
+      "centre:0.25": "success",
+      "centre:0.40": "success",
+      "end:0.03": "success",
+      "end:0.10": "success",
+      "end:0.25": "success",
+      "end:0.40": "success"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": 0.0,
+     "grip_force_gt": 26.027732849121094
+    },
+    "prior_vision": {
+     "chosen": "centre:0.03",
+     "gt_outcome": "success",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "success",
+      "centre:0.10": "success",
+      "centre:0.25": "success",
+      "centre:0.40": "success",
+      "end:0.03": "success",
+      "end:0.10": "success",
+      "end:0.25": "success",
+      "end:0.40": "success"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": 0.0,
+     "grip_force_gt": 26.027732849121094
+    },
+    "lawmean_pred": {
+     "chosen": "centre:0.03",
+     "gt_outcome": "success",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "success",
+      "centre:0.10": "success",
+      "centre:0.25": "success",
+      "centre:0.40": "success",
+      "end:0.03": "success",
+      "end:0.10": "success",
+      "end:0.25": "success",
+      "end:0.40": "success"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": 0.0,
+     "grip_force_gt": 26.027732849121094
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_miss",
+     "success": false,
+     "drop": false,
+     "damage": false,
+     "missed": true,
+     "level_regret": 1,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 113,
+   "law": "plasticine",
+   "object": "a_leather_boot_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "drop",
+    "centre:0.10": "drop",
+    "centre:0.25": "drop",
+    "centre:0.40": "drop",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "drop"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 119,
+   "law": "plasticine",
+   "object": "a_silver_human_skele_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "damage",
+    "centre:0.10": "damage",
+    "centre:0.25": "damage",
+    "centre:0.40": "damage",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "damage",
+    "end:0.40": "damage"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": "end:0.03",
+     "gt_outcome": "drop",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "success",
+      "end:0.10": "success",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": false,
+     "drop": true,
+     "damage": false,
+     "missed": false,
+     "level_regret": 1,
+     "force_regret_rel": null,
+     "grip_force_gt": 0.6267910599708557
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 133,
+   "law": "metal",
+   "object": "a_plastic_water_bottle_thin_transparent_plastic_isolated_013020",
+   "oracle": "centre:0.03",
+   "gt_outcomes": {
+    "centre:0.03": "success",
+    "centre:0.10": "success",
+    "centre:0.25": "damage",
+    "centre:0.40": "damage",
+    "end:0.03": "success",
+    "end:0.10": "success",
+    "end:0.25": "damage",
+    "end:0.40": "damage"
+   },
+   "methods": {
+    "gt": {
+     "chosen": "centre:0.03",
+     "gt_outcome": "success",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "success",
+      "centre:0.10": "success",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "success",
+      "end:0.10": "success",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": 0.0,
+     "grip_force_gt": 698.3484497070312
+    },
+    "prior_vt": {
+     "chosen": "end:0.03",
+     "gt_outcome": "success",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "success",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": -0.7148983380239073,
+     "grip_force_gt": 199.10030364990234
+    },
+    "prior_vision": {
+     "chosen": "centre:0.03",
+     "gt_outcome": "success",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "success",
+      "centre:0.10": "success",
+      "centre:0.25": "success",
+      "centre:0.40": "success",
+      "end:0.03": "success",
+      "end:0.10": "success",
+      "end:0.25": "success",
+      "end:0.40": "success"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": 0.0,
+     "grip_force_gt": 698.3484497070312
+    },
+    "lawmean_pred": {
+     "chosen": "centre:0.03",
+     "gt_outcome": "success",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "success",
+      "centre:0.10": "success",
+      "centre:0.25": "success",
+      "centre:0.40": "success",
+      "end:0.03": "success",
+      "end:0.10": "success",
+      "end:0.25": "success",
+      "end:0.40": "success"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": 0.0,
+     "grip_force_gt": 698.3484497070312
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_miss",
+     "success": false,
+     "drop": false,
+     "damage": false,
+     "missed": true,
+     "level_regret": 1,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 135,
+   "law": "jelly",
+   "object": "a_ice_telescope_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "drop",
+    "centre:0.10": "drop",
+    "centre:0.25": "drop",
+    "centre:0.40": "drop",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "drop"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": "centre:0.03",
+     "gt_outcome": "drop",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "success",
+      "centre:0.10": "success",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": false,
+     "drop": true,
+     "damage": false,
+     "missed": false,
+     "level_regret": 1,
+     "force_regret_rel": null,
+     "grip_force_gt": 0.18578751012682915
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 141,
+   "law": "jelly",
+   "object": "a_ice_telescope_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "drop",
+    "centre:0.10": "drop",
+    "centre:0.25": "drop",
+    "centre:0.40": "drop",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "drop"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": "centre:0.03",
+     "gt_outcome": "drop",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "success",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": false,
+     "drop": true,
+     "damage": false,
+     "missed": false,
+     "level_regret": 1,
+     "force_regret_rel": null,
+     "grip_force_gt": 0.39616565918549895
+    },
+    "lawmean_pred": {
+     "chosen": "centre:0.03",
+     "gt_outcome": "drop",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "success",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": false,
+     "drop": true,
+     "damage": false,
+     "missed": false,
+     "level_regret": 1,
+     "force_regret_rel": null,
+     "grip_force_gt": 0.39616565918549895
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 145,
+   "law": "metal",
+   "object": "a_brass_telescope_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "drop",
+    "centre:0.10": "drop",
+    "centre:0.25": "drop",
+    "centre:0.40": "drop",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "drop"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 164,
+   "law": "plasticine",
+   "object": "a_ice_telescope_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "drop",
+    "centre:0.10": "drop",
+    "centre:0.25": "damage",
+    "centre:0.40": "damage",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "drop"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 182,
+   "law": "plasticine",
+   "object": "a_silver_human_skele_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "damage",
+    "centre:0.10": "damage",
+    "centre:0.25": "damage",
+    "centre:0.40": "damage",
+    "end:0.03": "damage",
+    "end:0.10": "damage",
+    "end:0.25": "damage",
+    "end:0.40": "damage"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": "end:0.40",
+     "gt_outcome": "damage",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "success"
+     },
+     "success": false,
+     "drop": false,
+     "damage": true,
+     "missed": false,
+     "level_regret": 4,
+     "force_regret_rel": null,
+     "grip_force_gt": 31.392465591430664
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 184,
+   "law": "metal",
+   "object": "a_wooden_chair_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "drop",
+    "centre:0.10": "drop",
+    "centre:0.25": "drop",
+    "centre:0.40": "drop",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "drop"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 198,
+   "law": "jelly",
+   "object": "a_plastic_duck_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "damage",
+    "centre:0.10": "damage",
+    "centre:0.25": "damage",
+    "centre:0.40": "damage",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "damage"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 205,
+   "law": "metal",
+   "object": "a_silver_human_skele_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "damage",
+    "centre:0.10": "damage",
+    "centre:0.25": "damage",
+    "centre:0.40": "damage",
+    "end:0.03": "damage",
+    "end:0.10": "damage",
+    "end:0.25": "damage",
+    "end:0.40": "damage"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": "end:0.03",
+     "gt_outcome": "damage",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "success",
+      "end:0.10": "success",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": false,
+     "drop": false,
+     "damage": true,
+     "missed": false,
+     "level_regret": 1,
+     "force_regret_rel": null,
+     "grip_force_gt": 18.29185199737549
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 210,
+   "law": "jelly",
+   "object": "a_stainless_steel_si_013020",
+   "oracle": "centre:0.40",
+   "gt_outcomes": {
+    "centre:0.03": "drop",
+    "centre:0.10": "drop",
+    "centre:0.25": "drop",
+    "centre:0.40": "success",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "drop"
+   },
+   "methods": {
+    "gt": {
+     "chosen": "centre:0.40",
+     "gt_outcome": "success",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "success",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": 0.0,
+     "grip_force_gt": 276.3891906738281
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_miss",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": false,
+     "drop": false,
+     "damage": false,
+     "missed": true,
+     "level_regret": 4,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_miss",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": false,
+     "drop": false,
+     "damage": false,
+     "missed": true,
+     "level_regret": 4,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_miss",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": false,
+     "drop": false,
+     "damage": false,
+     "missed": true,
+     "level_regret": 4,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_miss",
+     "success": false,
+     "drop": false,
+     "damage": false,
+     "missed": true,
+     "level_regret": 4,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 214,
+   "law": "metal",
+   "object": "a_plastic_duck_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "drop",
+    "centre:0.10": "damage",
+    "centre:0.25": "damage",
+    "centre:0.40": "damage",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "drop"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 226,
+   "law": "metal",
+   "object": "a_stainless_steel_si_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "drop",
+    "centre:0.10": "drop",
+    "centre:0.25": "drop",
+    "centre:0.40": "drop",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "drop"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 230,
+   "law": "plasticine",
+   "object": "a_wooden_chair_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "drop",
+    "centre:0.10": "drop",
+    "centre:0.25": "drop",
+    "centre:0.40": "drop",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "drop"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 231,
+   "law": "jelly",
+   "object": "a_leather_boot_013020",
+   "oracle": "centre:0.03",
+   "gt_outcomes": {
+    "centre:0.03": "success",
+    "centre:0.10": "drop",
+    "centre:0.25": "success",
+    "centre:0.40": "damage",
+    "end:0.03": "damage",
+    "end:0.10": "damage",
+    "end:0.25": "damage",
+    "end:0.40": "damage"
+   },
+   "methods": {
+    "gt": {
+     "chosen": "centre:0.03",
+     "gt_outcome": "success",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "success",
+      "centre:0.10": "drop",
+      "centre:0.25": "success",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": 0.0,
+     "grip_force_gt": 24.46004843711853
+    },
+    "prior_vt": {
+     "chosen": "centre:0.03",
+     "gt_outcome": "success",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "success",
+      "centre:0.10": "success",
+      "centre:0.25": "success",
+      "centre:0.40": "success",
+      "end:0.03": "success",
+      "end:0.10": "success",
+      "end:0.25": "success",
+      "end:0.40": "success"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": 0.0,
+     "grip_force_gt": 24.46004843711853
+    },
+    "prior_vision": {
+     "chosen": "end:0.03",
+     "gt_outcome": "damage",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "success",
+      "centre:0.40": "success",
+      "end:0.03": "success",
+      "end:0.10": "success",
+      "end:0.25": "damage",
+      "end:0.40": "success"
+     },
+     "success": false,
+     "drop": false,
+     "damage": true,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": 87.22136688232422
+    },
+    "lawmean_pred": {
+     "chosen": "end:0.03",
+     "gt_outcome": "damage",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "success",
+      "centre:0.10": "success",
+      "centre:0.25": "damage",
+      "centre:0.40": "success",
+      "end:0.03": "success",
+      "end:0.10": "success",
+      "end:0.25": "success",
+      "end:0.40": "damage"
+     },
+     "success": false,
+     "drop": false,
+     "damage": true,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": 87.22136688232422
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_miss",
+     "success": false,
+     "drop": false,
+     "damage": false,
+     "missed": true,
+     "level_regret": 1,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 240,
+   "law": "jelly",
+   "object": "a_wooden_chair_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "drop",
+    "centre:0.10": "drop",
+    "centre:0.25": "drop",
+    "centre:0.40": "drop",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "drop"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 244,
+   "law": "metal",
+   "object": "a_ice_telescope_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "drop",
+    "centre:0.10": "damage",
+    "centre:0.25": "damage",
+    "centre:0.40": "damage",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "drop"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": "centre:0.03",
+     "gt_outcome": "drop",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "success",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": false,
+     "drop": true,
+     "damage": false,
+     "missed": false,
+     "level_regret": 1,
+     "force_regret_rel": null,
+     "grip_force_gt": 9.282994031906128
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 250,
+   "law": "metal",
+   "object": "a_leather_boot_013020",
+   "oracle": "centre:0.03",
+   "gt_outcomes": {
+    "centre:0.03": "success",
+    "centre:0.10": "damage",
+    "centre:0.25": "damage",
+    "centre:0.40": "damage",
+    "end:0.03": "damage",
+    "end:0.10": "damage",
+    "end:0.25": "damage",
+    "end:0.40": "damage"
+   },
+   "methods": {
+    "gt": {
+     "chosen": "centre:0.03",
+     "gt_outcome": "success",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "success",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": 0.0,
+     "grip_force_gt": 20.78126335144043
+    },
+    "prior_vt": {
+     "chosen": "centre:0.03",
+     "gt_outcome": "success",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "success",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": 0.0,
+     "grip_force_gt": 20.78126335144043
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_miss",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": false,
+     "drop": false,
+     "damage": false,
+     "missed": true,
+     "level_regret": 1,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_miss",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": false,
+     "drop": false,
+     "damage": false,
+     "missed": true,
+     "level_regret": 1,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_miss",
+     "success": false,
+     "drop": false,
+     "damage": false,
+     "missed": true,
+     "level_regret": 1,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 252,
+   "law": "jelly",
+   "object": "a_plastic_water_bottle_thin_transparent_plastic_isolated_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "damage",
+    "centre:0.10": "damage",
+    "centre:0.25": "damage",
+    "centre:0.40": "damage",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "damage"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": "centre:0.03",
+     "gt_outcome": "damage",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "success",
+      "centre:0.10": "success",
+      "centre:0.25": "success",
+      "centre:0.40": "success",
+      "end:0.03": "drop",
+      "end:0.10": "success",
+      "end:0.25": "success",
+      "end:0.40": "success"
+     },
+     "success": false,
+     "drop": false,
+     "damage": true,
+     "missed": false,
+     "level_regret": 1,
+     "force_regret_rel": null,
+     "grip_force_gt": 3.6799157857894897
+    },
+    "lawmean_pred": {
+     "chosen": "centre:0.03",
+     "gt_outcome": "damage",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "success",
+      "centre:0.10": "success",
+      "centre:0.25": "success",
+      "centre:0.40": "success",
+      "end:0.03": "success",
+      "end:0.10": "success",
+      "end:0.25": "success",
+      "end:0.40": "success"
+     },
+     "success": false,
+     "drop": false,
+     "damage": true,
+     "missed": false,
+     "level_regret": 1,
+     "force_regret_rel": null,
+     "grip_force_gt": 3.6799157857894897
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 254,
+   "law": "plasticine",
+   "object": "a_cork_stopper_013020",
+   "oracle": "centre:0.10",
+   "gt_outcomes": {
+    "centre:0.03": "damage",
+    "centre:0.10": "success",
+    "centre:0.25": "damage",
+    "centre:0.40": "damage",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "drop"
+   },
+   "methods": {
+    "gt": {
+     "chosen": "centre:0.10",
+     "gt_outcome": "success",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "success",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": 0.0,
+     "grip_force_gt": 6.6308910846710205
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_miss",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": false,
+     "drop": false,
+     "damage": false,
+     "missed": true,
+     "level_regret": 2,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_miss",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": false,
+     "drop": false,
+     "damage": false,
+     "missed": true,
+     "level_regret": 2,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_miss",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": false,
+     "drop": false,
+     "damage": false,
+     "missed": true,
+     "level_regret": 2,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_miss",
+     "success": false,
+     "drop": false,
+     "damage": false,
+     "missed": true,
+     "level_regret": 2,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 271,
+   "law": "metal",
+   "object": "a_brass_telescope_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "damage",
+    "centre:0.10": "damage",
+    "centre:0.25": "damage",
+    "centre:0.40": "damage",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "drop",
+    "end:0.40": "drop"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "metal",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "drop",
+      "centre:0.10": "drop",
+      "centre:0.25": "drop",
+      "centre:0.40": "drop",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "drop",
+      "end:0.40": "drop"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  },
+  {
+   "index": 275,
+   "law": "plasticine",
+   "object": "a_silver_human_skele_013020",
+   "oracle": null,
+   "gt_outcomes": {
+    "centre:0.03": "damage",
+    "centre:0.10": "damage",
+    "centre:0.25": "damage",
+    "centre:0.40": "damage",
+    "end:0.03": "drop",
+    "end:0.10": "drop",
+    "end:0.25": "damage",
+    "end:0.40": "damage"
+   },
+   "methods": {
+    "gt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "plasticine",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "drop",
+      "end:0.10": "drop",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vt": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "prior_vision": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "lawmean_pred": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "twin_law": "jelly",
+     "predicted": {
+      "centre:0.03": "damage",
+      "centre:0.10": "damage",
+      "centre:0.25": "damage",
+      "centre:0.40": "damage",
+      "end:0.03": "damage",
+      "end:0.10": "damage",
+      "end:0.25": "damage",
+      "end:0.40": "damage"
+     },
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    },
+    "fixed_loo": {
+     "chosen": null,
+     "gt_outcome": "abstain_ok",
+     "success": true,
+     "drop": false,
+     "damage": false,
+     "missed": false,
+     "level_regret": 0,
+     "force_regret_rel": null,
+     "grip_force_gt": null
+    }
+   }
+  }
+ ]
+}

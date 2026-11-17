@@ -1,0 +1,83 @@
+{
+  "selection": "Lexicographically first object per action, base 2.75; exploratory train examples, not held-out evaluation. RGB and projected fields are simulator ground truth, not network predictions.",
+  "items": [
+    {
+      "action": "press",
+      "member": "a",
+      "gt": {
+        "object": "a_diamond_bone_013020",
+        "action": "press",
+        "base": 2.75,
+        "member": "a",
+        "E_over_rho_specific": 562.341325190349,
+        "gravity": -9.8
+      },
+      "source": "data/v2_pilot/b1/press/a_diamond_bone_013020_2.75_a/a_diamond_bone_013020/sample_pack.npz"
+    },
+    {
+      "action": "press",
+      "member": "b",
+      "gt": {
+        "object": "a_diamond_bone_013020",
+        "action": "press",
+        "base": 2.75,
+        "member": "b",
+        "E_over_rho_specific": 1778.2794100389228,
+        "gravity": -9.8
+      },
+      "source": "data/v2_pilot/b1/press/a_diamond_bone_013020_2.75_b/a_diamond_bone_013020/sample_pack.npz"
+    },
+    {
+      "action": "tap30hold",
+      "member": "a",
+      "gt": {
+        "object": "a_diamond_bone_013020",
+        "action": "tap30hold",
+        "base": 2.75,
+        "member": "a",
+        "E_over_rho_specific": 562.341325190349,
+        "gravity": -9.8
+      },
+      "source": "data/v2_pilot/b1/tap30hold/a_diamond_bone_013020_2.75_a/a_diamond_bone_013020/sample_pack.npz"
+    },
+    {
+      "action": "tap30hold",
+      "member": "b",
+      "gt": {
+        "object": "a_diamond_bone_013020",
+        "action": "tap30hold",
+        "base": 2.75,
+        "member": "b",
+        "E_over_rho_specific": 1778.2794100389228,
+        "gravity": -9.8
+      },
+      "source": "data/v2_pilot/b1/tap30hold/a_diamond_bone_013020_2.75_b/a_diamond_bone_013020/sample_pack.npz"
+    },
+    {
+      "action": "stretch",
+      "member": "a",
+      "gt": {
+        "object": "a_diamond_bone_013020",
+        "action": "stretch",
+        "base": 2.75,
+        "member": "a",
+        "E_over_rho_specific": 562.341325190349,
+        "gravity": -9.8
+      },
+      "source": "data/v2_pilot/b1/stretch/a_diamond_bone_013020_2.75_a/a_diamond_bone_013020/sample_pack.npz"
+    },
+    {
+      "action": "stretch",
+      "member": "b",
+      "gt": {
+        "object": "a_diamond_bone_013020",
+        "action": "stretch",
+        "base": 2.75,
+        "member": "b",
+        "E_over_rho_specific": 1778.2794100389228,
+        "gravity": -9.8
+      },
+      "source": "data/v2_pilot/b1/stretch/a_diamond_bone_013020_2.75_b/a_diamond_bone_013020/sample_pack.npz"
+    }
+  ]
+}

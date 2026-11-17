@@ -1,0 +1,162 @@
+[
+ {
+  "id": "v5r_prior_vision_000005",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 5 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000021",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 21 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000027",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 27 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000040",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 40 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000060",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 60 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000066",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 66 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000071",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 71 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000093",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 93 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000113",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 113 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000116",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 116 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000119",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 119 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000121",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 121 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000135",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 135 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000141",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 141 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000145",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 145 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000151",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 151 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000164",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 164 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000176",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 176 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000180",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 180 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000183",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 183 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000186",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 186 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000198",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 198 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000207",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 207 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000210",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 210 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000226",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 226 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000228",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 228 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000231",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 231 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000252",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 252 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000253",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 253 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000258",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 258 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000261",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 261 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vision_000265",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 265 --method prior_vision --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vt_000005",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 5 --method prior_vt --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vt_000021",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 21 --method prior_vt --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vt_000027",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 27 --method prior_vt --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vt_000040",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 40 --method prior_vt --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vt_000060",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 60 --method prior_vt --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vt_000066",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 66 --method prior_vt --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vt_000071",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 71 --method prior_vt --out data/v5r/runs"
+ },
+ {
+  "id": "v5r_prior_vt_000093",
+  "cmd": "export FB_GRIP_DATA=data/v5b_main/val FB_GRIP_TWINS=v5 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 93 --method prior_vt --out data/v5r/runs"
+ }
+]

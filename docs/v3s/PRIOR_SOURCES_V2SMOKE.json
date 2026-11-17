@@ -1,0 +1,51 @@
+{
+ "runs": [
+  {
+   "name": "v2main_B_seed17",
+   "config": "configs/v2main/v2main_B_seed17.json",
+   "checkpoint": "runs/v2main_B_seed17/best_material.pt"
+  },
+  {
+   "name": "v2main_B_seed29",
+   "config": "configs/v2main/v2main_B_seed29.json",
+   "checkpoint": "runs/v2main_B_seed29/best_material.pt"
+  },
+  {
+   "name": "v2main_B_seed43",
+   "config": "configs/v2main/v2main_B_seed43.json",
+   "checkpoint": "runs/v2main_B_seed43/best_material.pt"
+  },
+  {
+   "name": "v2main_C_seed17",
+   "config": "configs/v2main/v2main_C_seed17.json",
+   "checkpoint": "runs/v2main_C_seed17/best_material.pt"
+  },
+  {
+   "name": "v2main_C_seed29",
+   "config": "configs/v2main/v2main_C_seed29.json",
+   "checkpoint": "runs/v2main_C_seed29/best_material.pt"
+  },
+  {
+   "name": "v2main_C_seed43",
+   "config": "configs/v2main/v2main_C_seed43.json",
+   "checkpoint": "runs/v2main_C_seed43/best_material.pt"
+  },
+  {
+   "name": "v2main_D_seed17",
+   "config": "configs/v2main/v2main_D_seed17.json",
+   "checkpoint": "runs/v2main_D_seed17/best_material.pt"
+  },
+  {
+   "name": "v2main_D_seed29",
+   "config": "configs/v2main/v2main_D_seed29.json",
+   "checkpoint": "runs/v2main_D_seed29/best_material.pt"
+  },
+  {
+   "name": "v2main_D_seed43",
+   "config": "configs/v2main/v2main_D_seed43.json",
+   "checkpoint": "runs/v2main_D_seed43/best_material.pt"
+  }
+ ],
+ "stats": "data/manifests/v2main.specific.stats.json",
+ "note": "smoke: V2 runs, must reproduce data/v3l/prior20.json"
+}

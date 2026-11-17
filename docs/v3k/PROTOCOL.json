@@ -1,0 +1,131 @@
+{
+ "created_utc": "2026-11-15T01:30:22",
+ "split_rule": "V2: validation only (v2main/val). V2 test untouched. Test predictions are used ONLY in D, for calibration reporting with a val-fitted scale (no selection).",
+ "A_springgaus_in_target_refinement": {
+  "claim_tested": "zero-shot cross-dataset is unreliable, but prior + few in-target simulations recovers it",
+  "scenes": [
+   "C",
+   "E",
+   "V",
+   "apple",
+   "banana",
+   "chess",
+   "cream",
+   "cross",
+   "doraemon",
+   "droplet",
+   "duck",
+   "rope",
+   "toothpaste",
+   "torus"
+  ],
+  "excluded": {
+   "torus_heterogeneous": "no scalar GT"
+  },
+  "gt": "physical.json E (Pa), elastic; rho = 1000 assumed (as v3f), so log10(E/rho*1000) = log10 E",
+  "code": "scripts/v3k/a_sg_refine.py (docstring = full spec)",
+  "geometry": "released simulation/<scene>/000.ply particles (frame 0), random subsample (seed 0) to <= 150000",
+  "initial_state": "physical.json INIT_VELOCITY, gravity -9.8 y, ground plane y = BC.GROUND, slip friction 0.3",
+  "engine": "our mpm_solver_warp jelly (fixed corotated), rho 1000, rpic 0, grid_v_damping 0.99999, grid_lim 1.2 / n_grid 120, CFL dt (0.25 dx / c)",
+  "observation": "canonical v3f triplet t0 (3 views), 30 frames, RGBA on black, 512 -> 128 px, mask alpha > 0.5",
+  "render": "particle colours from the PLY, pinhole projection with released K/c2w, z-buffered disk splats, radius r in {0,1,2} px chosen per scene by frame-0 IoU of GT particles (geometry only, no dynamics)",
+  "objective": "(1 - mean mask IoU) + RGB-MAE(union)/255 over 3 views x 30 frames (C1 objective; RGB from un-shaded particle colours)",
+  "optimizer": "C1 compass search, 1-D log10 E, step 0.5 halved on failure, min 0.02, bounds [1.5, 6.5]; nu fixed per arm; failed sims loss 9",
+  "arms": {
+   "prior": "9-run ensemble K0 zero-shot (canonical triplet) log10 E and nu from docs/v3f/SPRINGGAUS_SYN.json ensemble9.K0.z_t0",
+   "jellymean": "uninformed: V2 train-split mean of the jelly law (z-space mean of ln1p(E/rho)), nu = jelly train mean"
+  },
+  "budgets": {
+   "search": 12,
+   "reported_primary": [
+    0,
+    4,
+    12
+   ],
+   "all_k_reported": true
+  },
+  "controls": {
+   "support_mean_no_video": "v3f LOSO support-mean (docs/v3f/SPRINGGAUS_SYN.json ensemble9.support_mean_baseline)",
+   "v3f_zero_shot": "K0 (= prior arm at budget 0)"
+  },
+  "diagnostics_not_estimators": {
+   "renderer_upper_bound": "released GT particle trajectory of every frame rendered with the same splatter vs observed frames",
+   "gt_replay": "our engine with GT E and GT nu (engine-mismatch floor)",
+   "landscape": "loss at log10 E in {3.5,...,6.5} step 0.5 with prior nu"
+  },
+  "metrics": "Spearman and pairwise order accuracy (ties excluded, 83 pairs) of log10 E vs GT; mean |dlog10 E| and mean |dz| (V2 train-standardised ln1p E/rho) vs GT; paired scene bootstrap 95% CI (2000 draws, seed 17) for after - before and prior - jellymean at each budget."
+ },
+ "B_reconstructed_geometry": {
+  "samples": [
+   21,
+   52,
+   53,
+   71,
+   73,
+   96,
+   113,
+   118,
+   119,
+   134,
+   139,
+   141,
+   180,
+   181,
+   182,
+   184,
+   202,
+   210,
+   212,
+   219
+  ],
+  "rule": "first 20 of docs/v3h/PROTOCOL.json subset order",
+  "geometry": "3-view visual hull from the frame-0 object masks of the observed sample_pack (cameras = the pipeline synthetic orbit cameras with random_render_views_seed = index), voxel carving in the normalised MPM frame, largest component, written as a 3DGS PLY (colours from frame-0 RGB of visible views) and fed through the identical asset routine (x90, robust quantile normalisation, particle filling). Code: scripts/v3k/b_hull.py (diagnostics in data/v3k/hull_assets/<idx>/hull_meta.json).",
+  "refinement": "prior_top1 (9-run ensemble, top-1 law, no probes) with the C1 objective vs the ORIGINAL observed video, budget 12, report 0/4/12 (scripts/v3k/bc_refine.py --variant hull)",
+  "replay": "unseen action ACTIONS[(i+3)%6] with hull geometry at budgets 0/4/12 vs a fresh GT replay (GT asset, GT parameters)",
+  "diagnostic": "GT parameters + hull geometry on the observed action (geometry-only floor), run last",
+  "comparison": "existing GT-asset prior_top1 states data/v3b_refine/v2main_C_seed29/<idx>/prior_top1/state.json on the same samples (z-MAE at 0/4/12, replay IoU 0/4/12)",
+  "metric": "identifiable z-MAE (E/rho, sigma_y/rho; pooled elements), object-clustered bootstrap 95% CI of paired differences (2000, seed 17)"
+ },
+ "C_simulator_mismatch": {
+  "samples": [
+   21,
+   52,
+   53,
+   71,
+   73,
+   96,
+   113,
+   118,
+   119,
+   134,
+   139,
+   141,
+   180,
+   181,
+   182
+  ],
+  "rule": "first 15 of the B samples",
+  "perturbation": {
+   "n_grid": "150 -> 112 (x0.75)",
+   "grid_v_damping_scale": "0.99999 -> 0.9999 (1 - s x10)"
+  },
+  "observed": "regenerated with GT parameters (incl. true hardening/softening), GT asset, same cameras/action, perturbed simulator",
+  "refinement": "prior_top1 with the nominal simulator, budget 12, report 0/4/12 (scripts/v3k/bc_refine.py --variant mismatch); no replay",
+  "comparison": "matched simulator = existing prior_top1 states on the same samples (original V2 observed video)"
+ },
+ "D_calibration": {
+  "code": "scripts/v3k/d_calibration.py",
+  "intervals": [
+   "ens: across-run std of the 9 runs",
+   "total: sqrt(mean aleatoric var + across-run var)"
+  ],
+  "temperature": "single scalar per target fitted on val (closed form T^2 = mean r^2/sigma^2); test reported raw and with the val-fitted T only"
+ },
+ "queue": "a800-2 shared queue, docs/v3k/queue.json (ids v3k_), GPUs 0-7, max_per_gpu 5",
+ "addendum_1_before_B_sims": {
+  "utc": "2026-11-15T01:40",
+  "hull_build": "scripts/v3k/b_hull.py --vox 0.006 --dilate 1 (mpm units / px); only the surface shell is written as gaussians, the pipeline particle filling fills the interior; colours from visible frame-0 views, rest mean colour",
+  "sample_212": "released object mask is all ones in every frame (broken); hull uses background subtraction for 212; 212 is kept in the pre-registered set but B/C results are ALSO reported excluding 212 (both arms)",
+  "camera_check": "GT filled particles project inside the frame-0 masks for 0.97-1.00 (19/20), 0.83 for 118"
+ }
+}

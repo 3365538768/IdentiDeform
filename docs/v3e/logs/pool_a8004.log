@@ -1,0 +1,335 @@
+10:04:34 start v3e_ensemble_prior_000135 gpu 0
+10:04:34 start v3e_refined_best3_000135 gpu 1
+10:04:34 start v3e_lawmean_pred_000135 gpu 2
+10:04:34 start v3e_gt_000210 gpu 3
+10:04:34 start v3e_refined_top2_000210 gpu 4
+10:04:34 start v3e_ensemble_prior_000210 gpu 5
+10:04:34 start v3e_refined_best3_000210 gpu 6
+10:04:34 start v3e_lawmean_pred_000210 gpu 7
+10:04:34 start v3e_gt_000228 gpu 0
+10:04:34 start v3e_refined_top2_000228 gpu 1
+10:04:34 start v3e_ensemble_prior_000228 gpu 2
+10:04:34 start v3e_refined_best3_000228 gpu 3
+10:04:34 start v3e_lawmean_pred_000228 gpu 4
+10:04:34 start v3e_gt_000231 gpu 5
+10:04:34 start v3e_refined_top2_000231 gpu 6
+10:04:34 start v3e_ensemble_prior_000231 gpu 7
+10:04:34 start v3e_refined_best3_000231 gpu 0
+10:04:34 start v3e_lawmean_pred_000231 gpu 1
+10:04:34 start v3e_gt_000261 gpu 2
+10:04:34 start v3e_refined_top2_000261 gpu 3
+10:04:34 start v3e_ensemble_prior_000261 gpu 4
+10:04:35 start v3e_refined_best3_000261 gpu 5
+10:04:35 start v3e_lawmean_pred_000261 gpu 6
+10:04:35 start v3e_determinism_000053 gpu 7
+10:04:35 start v3e_determinism_000070 gpu 0
+10:09:35 start v3e_gt_000005 gpu 1
+10:09:35 start v3e_refined_top2_000005 gpu 2
+10:09:35 start v3e_ensemble_prior_000005 gpu 3
+10:09:35 start v3e_refined_best3_000005 gpu 4
+10:09:35 start v3e_lawmean_pred_000005 gpu 5
+10:09:35 start v3e_gt_000009 gpu 6
+10:09:35 start v3e_refined_top2_000009 gpu 7
+10:10:35 exit v3e_determinism_000053 0 gpu 7
+10:10:35 start v3e_ensemble_prior_000009 gpu 7
+10:13:50 exit v3e_determinism_000070 0 gpu 0
+10:13:50 start v3e_refined_best3_000009 gpu 0
+10:20:50 exit v3e_ensemble_prior_000231 0 gpu 7
+10:20:50 start v3e_lawmean_pred_000009 gpu 7
+10:21:05 exit v3e_gt_000231 0 gpu 5
+10:21:05 exit v3e_refined_top2_000231 0 gpu 6
+10:21:05 exit v3e_refined_best3_000231 0 gpu 0
+10:21:05 start v3e_gt_000021 gpu 0
+10:21:05 start v3e_refined_top2_000021 gpu 5
+10:21:05 start v3e_ensemble_prior_000021 gpu 6
+10:42:21 exit v3e_gt_000228 0 gpu 0
+10:42:21 start v3e_refined_best3_000021 gpu 0
+10:43:06 exit v3e_ensemble_prior_000135 0 gpu 0
+10:43:06 start v3e_lawmean_pred_000021 gpu 0
+10:43:36 exit v3e_gt_000210 0 gpu 3
+10:43:36 start v3e_gt_000025 gpu 3
+10:47:06 exit v3e_refined_best3_000228 0 gpu 3
+10:47:06 start v3e_refined_top2_000025 gpu 3
+10:47:21 exit v3e_refined_top2_000261 0 gpu 3
+10:47:21 start v3e_ensemble_prior_000025 gpu 3
+10:47:51 exit v3e_refined_top2_000228 0 gpu 1
+10:47:51 exit v3e_lawmean_pred_000231 0 gpu 1
+10:47:51 start v3e_refined_best3_000025 gpu 1
+10:47:51 start v3e_lawmean_pred_000025 gpu 1
+10:48:06 exit v3e_refined_best3_000135 0 gpu 1
+10:48:06 start v3e_gt_000052 gpu 1
+10:49:21 exit v3e_ensemble_prior_000228 0 gpu 2
+10:49:21 start v3e_refined_top2_000052 gpu 2
+10:49:36 exit v3e_lawmean_pred_000135 0 gpu 2
+10:49:36 exit v3e_gt_000261 0 gpu 2
+10:49:36 start v3e_ensemble_prior_000052 gpu 2
+10:49:36 start v3e_refined_best3_000052 gpu 2
+10:50:36 exit v3e_refined_top2_000005 0 gpu 2
+10:50:36 start v3e_lawmean_pred_000052 gpu 2
+10:53:06 exit v3e_ensemble_prior_000005 0 gpu 3
+10:53:06 start v3e_gt_000066 gpu 3
+10:53:21 exit v3e_gt_000005 0 gpu 1
+10:53:21 start v3e_refined_top2_000066 gpu 1
+10:54:06 exit v3e_refined_best3_000009 0 gpu 0
+10:54:06 start v3e_ensemble_prior_000066 gpu 0
+10:59:36 exit v3e_lawmean_pred_000210 0 gpu 7
+10:59:36 start v3e_refined_best3_000066 gpu 7
+11:01:22 exit v3e_refined_best3_000210 0 gpu 6
+11:01:22 start v3e_lawmean_pred_000066 gpu 6
+11:02:07 exit v3e_gt_000021 0 gpu 0
+11:02:07 start v3e_gt_000071 gpu 0
+11:02:52 exit v3e_lawmean_pred_000261 0 gpu 6
+11:02:52 start v3e_refined_top2_000071 gpu 6
+11:04:37 exit v3e_ensemble_prior_000210 0 gpu 5
+11:04:37 start v3e_ensemble_prior_000071 gpu 5
+11:05:52 exit v3e_refined_best3_000261 0 gpu 5
+11:05:52 start v3e_refined_best3_000071 gpu 5
+11:18:52 exit v3e_refined_top2_000210 0 gpu 4
+11:18:52 start v3e_lawmean_pred_000071 gpu 4
+11:19:52 exit v3e_lawmean_pred_000228 0 gpu 4
+11:19:52 exit v3e_ensemble_prior_000261 0 gpu 4
+11:19:52 exit v3e_refined_top2_000009 0 gpu 7
+11:19:52 start v3e_gt_000093 gpu 4
+11:19:52 start v3e_refined_top2_000093 gpu 4
+11:19:52 start v3e_ensemble_prior_000093 gpu 7
+11:22:07 exit v3e_gt_000009 0 gpu 6
+11:22:07 start v3e_refined_best3_000093 gpu 6
+11:24:07 exit v3e_refined_best3_000021 0 gpu 0
+11:24:07 start v3e_lawmean_pred_000093 gpu 0
+11:24:37 exit v3e_lawmean_pred_000021 0 gpu 0
+11:24:37 start v3e_gt_000106 gpu 0
+11:24:52 exit v3e_ensemble_prior_000009 0 gpu 7
+11:24:52 exit v3e_gt_000025 0 gpu 3
+11:24:52 start v3e_refined_top2_000106 gpu 3
+11:24:52 start v3e_ensemble_prior_000106 gpu 7
+11:26:37 exit v3e_lawmean_pred_000005 0 gpu 5
+11:26:37 start v3e_refined_best3_000106 gpu 5
+11:28:37 exit v3e_refined_top2_000025 0 gpu 3
+11:28:37 start v3e_lawmean_pred_000106 gpu 3
+11:29:07 exit v3e_ensemble_prior_000025 0 gpu 3
+11:29:07 start v3e_gt_000114 gpu 3
+11:30:07 exit v3e_refined_best3_000025 0 gpu 1
+11:30:07 exit v3e_lawmean_pred_000025 0 gpu 1
+11:30:07 start v3e_refined_top2_000114 gpu 1
+11:30:07 start v3e_ensemble_prior_000114 gpu 1
+11:30:22 exit v3e_gt_000052 0 gpu 1
+11:30:22 start v3e_refined_best3_000114 gpu 1
+11:33:37 exit v3e_refined_best3_000005 0 gpu 4
+11:33:37 start v3e_lawmean_pred_000114 gpu 4
+11:34:37 exit v3e_refined_top2_000066 0 gpu 1
+11:34:37 start v3e_gt_000118 gpu 1
+11:34:52 exit v3e_refined_top2_000052 0 gpu 2
+11:34:52 start v3e_refined_top2_000118 gpu 2
+11:35:22 exit v3e_gt_000066 0 gpu 3
+11:35:22 start v3e_ensemble_prior_000118 gpu 3
+11:35:37 exit v3e_ensemble_prior_000052 0 gpu 2
+11:35:37 exit v3e_refined_best3_000052 0 gpu 2
+11:35:37 start v3e_refined_best3_000118 gpu 2
+11:35:37 start v3e_lawmean_pred_000118 gpu 2
+11:35:52 exit v3e_lawmean_pred_000052 0 gpu 2
+11:35:52 start v3e_gt_000119 gpu 2
+11:36:37 exit v3e_ensemble_prior_000066 0 gpu 0
+11:36:37 start v3e_refined_top2_000119 gpu 0
+11:44:37 exit v3e_gt_000071 0 gpu 0
+11:44:37 start v3e_ensemble_prior_000119 gpu 0
+11:56:38 exit v3e_lawmean_pred_000009 0 gpu 7
+11:56:38 start v3e_refined_best3_000119 gpu 7
+11:56:53 exit v3e_ensemble_prior_000021 0 gpu 6
+11:56:53 start v3e_lawmean_pred_000119 gpu 6
+11:58:08 exit v3e_refined_top2_000021 0 gpu 5
+11:58:08 start v3e_gt_000134 gpu 5
+12:06:08 exit v3e_refined_top2_000106 0 gpu 3
+12:06:08 start v3e_refined_top2_000134 gpu 3
+12:06:23 exit v3e_lawmean_pred_000093 0 gpu 0
+12:06:23 start v3e_ensemble_prior_000134 gpu 0
+12:06:38 exit v3e_gt_000106 0 gpu 0
+12:06:38 start v3e_refined_best3_000134 gpu 0
+12:09:23 exit v3e_lawmean_pred_000106 0 gpu 3
+12:09:23 start v3e_lawmean_pred_000134 gpu 3
+12:10:53 exit v3e_gt_000114 0 gpu 3
+12:10:53 start v3e_gt_000136 gpu 3
+12:13:08 exit v3e_refined_top2_000118 0 gpu 2
+12:13:08 start v3e_refined_top2_000136 gpu 2
+12:13:38 exit v3e_refined_top2_000114 0 gpu 1
+12:13:38 exit v3e_ensemble_prior_000114 0 gpu 1
+12:13:38 exit v3e_refined_best3_000114 0 gpu 1
+12:13:38 exit v3e_gt_000118 0 gpu 1
+12:13:38 start v3e_ensemble_prior_000136 gpu 1
+12:13:38 start v3e_refined_best3_000136 gpu 1
+12:13:38 start v3e_lawmean_pred_000136 gpu 1
+12:13:38 start v3e_gt_000139 gpu 1
+12:16:08 exit v3e_refined_best3_000118 0 gpu 2
+12:16:08 exit v3e_lawmean_pred_000118 0 gpu 2
+12:16:08 exit v3e_gt_000119 0 gpu 2
+12:16:08 start v3e_refined_top2_000139 gpu 2
+12:16:08 start v3e_ensemble_prior_000139 gpu 2
+12:16:08 start v3e_refined_best3_000139 gpu 2
+12:17:08 exit v3e_ensemble_prior_000118 0 gpu 3
+12:17:08 start v3e_lawmean_pred_000139 gpu 3
+12:18:53 exit v3e_refined_top2_000119 0 gpu 0
+12:18:53 start v3e_gt_000141 gpu 0
+12:27:23 exit v3e_ensemble_prior_000119 0 gpu 0
+12:27:23 start v3e_refined_top2_000141 gpu 0
+12:29:23 exit v3e_gt_000139 0 gpu 1
+12:29:23 start v3e_ensemble_prior_000141 gpu 1
+12:31:53 exit v3e_refined_top2_000139 0 gpu 2
+12:31:53 start v3e_refined_best3_000141 gpu 2
+12:35:08 exit v3e_refined_best3_000066 0 gpu 7
+12:35:08 start v3e_lawmean_pred_000141 gpu 7
+12:35:53 exit v3e_ensemble_prior_000139 0 gpu 2
+12:35:54 start v3e_gt_000148 gpu 2
+12:36:24 exit v3e_lawmean_pred_000066 0 gpu 6
+12:36:24 start v3e_refined_top2_000148 gpu 6
+12:37:54 exit v3e_refined_top2_000071 0 gpu 6
+12:37:54 start v3e_ensemble_prior_000148 gpu 6
+12:40:09 exit v3e_ensemble_prior_000071 0 gpu 5
+12:40:09 start v3e_refined_best3_000148 gpu 5
+12:41:09 exit v3e_refined_best3_000071 0 gpu 5
+12:41:09 start v3e_lawmean_pred_000148 gpu 5
+12:48:54 exit v3e_refined_top2_000136 0 gpu 2
+12:48:54 start v3e_gt_000152 gpu 2
+12:50:24 exit v3e_refined_top2_000134 0 gpu 3
+12:50:24 start v3e_refined_top2_000152 gpu 3
+12:51:09 exit v3e_ensemble_prior_000134 0 gpu 0
+12:51:09 start v3e_ensemble_prior_000152 gpu 0
+12:51:24 exit v3e_refined_best3_000134 0 gpu 0
+12:51:24 start v3e_refined_best3_000152 gpu 0
+12:52:39 exit v3e_refined_best3_000139 0 gpu 2
+12:52:39 start v3e_lawmean_pred_000152 gpu 2
+12:53:24 exit v3e_lawmean_pred_000134 0 gpu 3
+12:53:24 start v3e_gt_000159 gpu 3
+12:54:54 exit v3e_lawmean_pred_000071 0 gpu 4
+12:54:54 exit v3e_ensemble_prior_000093 0 gpu 7
+12:54:54 exit v3e_gt_000136 0 gpu 3
+12:54:54 start v3e_refined_top2_000159 gpu 3
+12:54:54 start v3e_ensemble_prior_000159 gpu 4
+12:54:54 start v3e_refined_best3_000159 gpu 7
+12:55:54 exit v3e_gt_000093 0 gpu 4
+12:55:54 exit v3e_refined_top2_000093 0 gpu 4
+12:55:54 start v3e_lawmean_pred_000159 gpu 4
+12:55:54 start v3e_gt_000180 gpu 4
+12:57:09 exit v3e_refined_best3_000093 0 gpu 6
+12:57:09 exit v3e_ensemble_prior_000136 0 gpu 1
+12:57:09 exit v3e_refined_best3_000136 0 gpu 1
+12:57:09 exit v3e_lawmean_pred_000136 0 gpu 1
+12:57:09 start v3e_refined_top2_000180 gpu 1
+12:57:09 start v3e_ensemble_prior_000180 gpu 1
+12:57:09 start v3e_refined_best3_000180 gpu 1
+12:57:09 start v3e_lawmean_pred_000180 gpu 6
+12:59:54 exit v3e_ensemble_prior_000106 0 gpu 7
+12:59:54 start v3e_gt_000182 gpu 7
+13:00:24 exit v3e_lawmean_pred_000139 0 gpu 3
+13:00:24 start v3e_refined_top2_000182 gpu 3
+13:01:39 exit v3e_refined_best3_000106 0 gpu 5
+13:01:39 start v3e_ensemble_prior_000182 gpu 5
+13:03:54 exit v3e_gt_000141 0 gpu 0
+13:03:54 start v3e_refined_best3_000182 gpu 0
+13:07:39 exit v3e_lawmean_pred_000114 0 gpu 4
+13:07:39 start v3e_lawmean_pred_000182 gpu 4
+13:09:54 exit v3e_ensemble_prior_000141 0 gpu 1
+13:09:54 start v3e_gt_000188 gpu 1
+13:12:09 exit v3e_refined_top2_000141 0 gpu 0
+13:12:09 start v3e_refined_top2_000188 gpu 0
+13:15:24 exit v3e_refined_best3_000141 0 gpu 2
+13:15:24 start v3e_ensemble_prior_000188 gpu 2
+13:18:54 exit v3e_gt_000148 0 gpu 2
+13:18:54 start v3e_refined_best3_000188 gpu 2
+13:30:40 exit v3e_refined_top2_000152 0 gpu 3
+13:30:40 start v3e_lawmean_pred_000188 gpu 3
+13:31:25 exit v3e_refined_best3_000119 0 gpu 7
+13:31:25 exit v3e_gt_000152 0 gpu 2
+13:31:25 start v3e_gt_000198 gpu 2
+13:31:25 start v3e_refined_top2_000198 gpu 7
+13:31:55 exit v3e_lawmean_pred_000119 0 gpu 6
+13:31:55 start v3e_ensemble_prior_000198 gpu 6
+13:33:25 exit v3e_gt_000159 0 gpu 3
+13:33:25 start v3e_refined_best3_000198 gpu 3
+13:33:40 exit v3e_ensemble_prior_000152 0 gpu 0
+13:33:40 exit v3e_refined_best3_000152 0 gpu 0
+13:33:40 start v3e_lawmean_pred_000198 gpu 0
+13:33:40 start v3e_gt_000200 gpu 0
+13:34:25 exit v3e_gt_000134 0 gpu 5
+13:34:25 start v3e_refined_top2_000200 gpu 5
+13:34:55 exit v3e_lawmean_pred_000152 0 gpu 2
+13:34:55 exit v3e_refined_top2_000159 0 gpu 3
+13:34:55 exit v3e_ensemble_prior_000159 0 gpu 4
+13:34:55 start v3e_ensemble_prior_000200 gpu 2
+13:34:55 start v3e_refined_best3_000200 gpu 3
+13:34:55 start v3e_lawmean_pred_000200 gpu 4
+13:40:10 exit v3e_refined_top2_000180 0 gpu 1
+13:40:10 exit v3e_ensemble_prior_000180 0 gpu 1
+13:40:10 exit v3e_refined_best3_000180 0 gpu 1
+13:40:10 start v3e_gt_000202 gpu 1
+13:40:10 start v3e_refined_top2_000202 gpu 1
+13:40:10 start v3e_ensemble_prior_000202 gpu 1
+13:41:10 exit v3e_refined_top2_000182 0 gpu 3
+13:41:10 start v3e_refined_best3_000202 gpu 3
+13:45:55 exit v3e_refined_best3_000182 0 gpu 0
+13:45:55 start v3e_lawmean_pred_000202 gpu 0
+13:47:40 exit v3e_gt_000188 0 gpu 1
+13:47:40 start v3e_gt_000216 gpu 1
+13:54:25 exit v3e_refined_top2_000188 0 gpu 0
+13:54:25 start v3e_refined_top2_000216 gpu 0
+13:58:10 exit v3e_ensemble_prior_000188 0 gpu 2
+13:58:10 start v3e_ensemble_prior_000216 gpu 2
+14:01:40 exit v3e_refined_best3_000188 0 gpu 2
+14:01:40 start v3e_refined_best3_000216 gpu 2
+14:10:10 exit v3e_lawmean_pred_000141 0 gpu 7
+14:10:10 start v3e_lawmean_pred_000216 gpu 7
+14:11:40 exit v3e_refined_top2_000148 0 gpu 6
+14:11:40 start v3e_gt_000219 gpu 6
+14:12:55 exit v3e_ensemble_prior_000148 0 gpu 6
+14:12:55 start v3e_refined_top2_000219 gpu 6
+14:13:40 exit v3e_lawmean_pred_000188 0 gpu 3
+14:13:40 start v3e_ensemble_prior_000219 gpu 3
+14:14:25 exit v3e_gt_000198 0 gpu 2
+14:14:25 start v3e_refined_best3_000219 gpu 2
+14:16:10 exit v3e_refined_best3_000148 0 gpu 5
+14:16:10 exit v3e_refined_best3_000198 0 gpu 3
+14:16:10 start v3e_lawmean_pred_000219 gpu 3
+14:16:10 start v3e_gt_000222 gpu 5
+14:16:40 exit v3e_lawmean_pred_000198 0 gpu 0
+14:16:40 exit v3e_gt_000200 0 gpu 0
+14:16:40 start v3e_refined_top2_000222 gpu 0
+14:16:40 start v3e_ensemble_prior_000222 gpu 0
+14:17:25 exit v3e_lawmean_pred_000148 0 gpu 5
+14:17:25 exit v3e_ensemble_prior_000200 0 gpu 2
+14:17:25 start v3e_refined_best3_000222 gpu 2
+14:17:25 start v3e_lawmean_pred_000222 gpu 5
+14:17:55 exit v3e_refined_best3_000200 0 gpu 3
+14:17:55 start v3e_gt_000248 gpu 3
+14:22:25 exit v3e_lawmean_pred_000159 0 gpu 4
+14:22:25 exit v3e_gt_000180 0 gpu 4
+14:22:25 start v3e_refined_top2_000248 gpu 4
+14:22:40 exit v3e_refined_top2_000248 0 gpu 4
+14:23:10 exit v3e_gt_000202 0 gpu 1
+14:23:55 exit v3e_refined_best3_000202 0 gpu 3
+14:24:25 exit v3e_refined_top2_000202 0 gpu 1
+14:24:25 exit v3e_ensemble_prior_000202 0 gpu 1
+14:25:10 exit v3e_gt_000216 0 gpu 1
+14:28:56 exit v3e_lawmean_pred_000202 0 gpu 0
+14:29:26 exit v3e_refined_best3_000159 0 gpu 7
+14:30:56 exit v3e_lawmean_pred_000182 0 gpu 4
+14:32:26 exit v3e_lawmean_pred_000180 0 gpu 6
+14:33:26 exit v3e_gt_000182 0 gpu 7
+14:34:56 exit v3e_refined_top2_000216 0 gpu 0
+14:38:11 exit v3e_ensemble_prior_000182 0 gpu 5
+14:40:26 exit v3e_ensemble_prior_000216 0 gpu 2
+14:43:11 exit v3e_refined_best3_000216 0 gpu 2
+14:46:11 exit v3e_ensemble_prior_000219 0 gpu 3
+14:46:56 exit v3e_refined_top2_000222 0 gpu 0
+14:46:56 exit v3e_ensemble_prior_000222 0 gpu 0
+14:47:11 exit v3e_lawmean_pred_000219 0 gpu 3
+14:47:26 exit v3e_gt_000248 0 gpu 3
+14:48:26 exit v3e_refined_best3_000219 0 gpu 2
+14:48:41 exit v3e_refined_best3_000222 0 gpu 2
+14:51:26 exit v3e_lawmean_pred_000200 0 gpu 4
+14:56:26 exit v3e_refined_top2_000198 0 gpu 7
+15:01:26 exit v3e_ensemble_prior_000198 0 gpu 6
+15:08:11 exit v3e_refined_top2_000200 0 gpu 5
+15:22:41 exit v3e_lawmean_pred_000216 0 gpu 7
+15:31:56 exit v3e_gt_000219 0 gpu 6
+15:32:56 exit v3e_refined_top2_000219 0 gpu 6
+15:41:42 exit v3e_gt_000222 0 gpu 5
+15:42:57 exit v3e_lawmean_pred_000222 0 gpu 5
+all done

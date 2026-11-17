@@ -1,0 +1,90 @@
+11:21:16 start v3r_gt_000226 gpu 0
+11:21:16 start v3r_gt_000245 gpu 1
+11:21:16 start v3r_gt_000253 gpu 2
+11:21:16 start v3r_gt_000261 gpu 3
+11:21:16 start v3r_gt_000265 gpu 4
+12:28:16 exit v3r_gt_000226 0 gpu 0
+12:29:31 exit v3r_gt_000253 0 gpu 2
+12:29:46 exit v3r_gt_000245 0 gpu 1
+12:30:31 exit v3r_gt_000261 0 gpu 3
+12:30:31 exit v3r_gt_000265 0 gpu 4
+all done
+12:56:52 start v3r_refined_best3_000031 gpu 0
+12:56:52 start v3r_refined_best3_000040 gpu 1
+12:56:52 start v3r_refined_best3_000145 gpu 2
+13:02:23 start v3r_refined_best3_000002 gpu 3
+13:12:10 start v3r_refined_best3_000027 gpu 4
+13:12:10 start v3r_refined_best3_000060 gpu 5
+13:12:10 start v3r_refined_best3_000135 gpu 6
+13:16:40 exit v3r_refined_best3_000031 0 gpu 0
+13:19:25 exit v3r_refined_best3_000145 0 gpu 2
+13:20:55 exit v3r_refined_best3_000040 0 gpu 1
+13:22:40 exit v3r_refined_best3_000002 0 gpu 3
+stop file
+13:30:55 start v3r_refined_best3_000027 gpu 0
+13:30:55 start v3r_refined_best3_000060 gpu 1
+13:30:55 start v3r_refined_best3_000135 gpu 2
+13:30:55 start v3r_gtx_000002 gpu 3
+13:30:55 start v3r_gtx_000053 gpu 4
+13:30:55 start v3r_gtx_000080 gpu 5
+13:30:55 start v3r_gtx_000182 gpu 6
+13:30:55 start v3r_gtx_000254 gpu 7
+13:30:55 start v3r_gtx_000031 gpu 0
+13:30:55 start v3r_gtx_000088 gpu 1
+13:30:55 start v3r_gtx_000184 gpu 2
+13:30:55 start v3r_gtx_000214 gpu 3
+13:30:55 start v3r_gtx_000250 gpu 4
+13:30:55 start v3r_gtx_000093 gpu 5
+13:30:55 start v3r_gtx_000198 gpu 6
+13:30:55 start v3r_gtx_000240 gpu 7
+13:31:10 exit v3r_refined_best3_000027 0 gpu 0
+13:31:10 start v3r_gtx_000005 gpu 0
+13:31:40 exit v3r_refined_best3_000135 0 gpu 2
+13:31:40 start v3r_gtx_000027 gpu 2
+13:44:25 exit v3r_refined_best3_000060 0 gpu 1
+13:44:25 start v3r_gtx_000040 gpu 1
+13:50:55 exit v3r_gtx_000088 0 gpu 1
+13:50:55 start v3r_gtx_000066 gpu 1
+13:59:10 exit v3r_gtx_000254 0 gpu 7
+13:59:11 start v3r_gtx_000112 gpu 7
+14:01:41 exit v3r_gtx_000214 0 gpu 3
+14:01:46 start v3r_gtx_000116 gpu 3
+14:02:46 exit v3r_gtx_000005 0 gpu 0
+14:02:47 start v3r_gtx_000121 gpu 0
+14:03:02 exit v3r_gtx_000184 0 gpu 2
+14:03:02 start v3r_gtx_000135 gpu 2
+14:05:32 exit v3r_gtx_000198 0 gpu 6
+14:05:39 start v3r_gtx_000151 gpu 6
+14:05:54 exit v3r_gtx_000250 0 gpu 4
+14:05:57 start v3r_gtx_000169 gpu 4
+14:06:42 exit v3r_gtx_000182 0 gpu 6
+14:06:42 exit v3r_gtx_000031 0 gpu 0
+14:06:42 exit v3r_gtx_000093 0 gpu 5
+14:06:42 start v3r_gtx_000180 gpu 0
+14:06:42 start v3r_gtx_000186 gpu 5
+14:06:42 start v3r_gtx_000207 gpu 6
+14:07:27 exit v3r_gtx_000240 0 gpu 7
+14:07:27 exit v3r_gtx_000027 0 gpu 2
+14:07:27 start v3r_gtx_000226 gpu 2
+14:07:27 start v3r_gtx_000245 gpu 7
+14:13:27 exit v3r_gtx_000053 0 gpu 4
+14:13:28 start v3r_gtx_000258 gpu 4
+14:14:13 exit v3r_gtx_000002 0 gpu 3
+14:14:13 exit v3r_gtx_000080 0 gpu 5
+14:14:18 start v3r_gtx_000265 gpu 3
+14:17:48 exit v3r_gtx_000040 0 gpu 1
+14:18:18 exit v3r_gtx_000066 0 gpu 1
+14:34:03 exit v3r_gtx_000186 0 gpu 5
+14:37:48 exit v3r_gtx_000116 0 gpu 3
+14:38:33 exit v3r_gtx_000135 0 gpu 2
+14:38:48 exit v3r_gtx_000112 0 gpu 7
+14:42:03 exit v3r_gtx_000245 0 gpu 7
+14:44:18 exit v3r_gtx_000226 0 gpu 2
+14:46:48 exit v3r_gtx_000121 0 gpu 0
+14:47:03 exit v3r_gtx_000207 0 gpu 6
+14:47:48 exit v3r_gtx_000151 0 gpu 6
+14:47:48 exit v3r_gtx_000180 0 gpu 0
+14:48:18 exit v3r_gtx_000265 0 gpu 3
+14:51:33 exit v3r_gtx_000169 0 gpu 4
+14:53:03 exit v3r_gtx_000258 0 gpu 4
+all done

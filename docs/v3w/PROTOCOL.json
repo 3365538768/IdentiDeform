@@ -1,0 +1,49 @@
+{
+ "stage": "v3w",
+ "written_utc": "2026-11-16T11:30Z",
+ "written_before_any_metric": true,
+ "state_at_writing": "Physics 101 fall-scenario videos partially downloaded; one trial (w_block_10/foam/01) previewed to see the camera layout; no prediction, mask or statistic computed on any trial.",
+ "dataset": {
+  "name": "Physics 101 (Wu et al., BMVC 2016), release v1.0, http://phys101.csail.mit.edu/data/phys101_v1.0.zip",
+  "subset": "scenarios/fall: 33 objects of 12 material categories, 5 landing surfaces (foam, glass, metal, rug, table), 666 trials",
+  "view": "Camera_1.mp4 (front DSLR, 1920x1080, ~30 fps, ~36 frames). Single view; Kinect_RGB_1 only as a secondary robustness view if time permits.",
+  "gt": "dataset material category per object (+ measured mass g / volume mL, reported only). No per-object stiffness is measured by the dataset; stiffness GT is a pre-registered literature value per material category (below)."
+ },
+ "preprocessing": {
+  "background": "per (surface setting) median over frames sampled from all trials of that setting (Camera_1 fixed per setting); if a trial's frame-0 differs from the setting background by >15 gray levels median outside the top 25% of the image, fall back to a per-trial median background",
+  "mask": "max-channel |frame-bg| > 30 after 5x5 Gaussian blur, morphological open(3)/close(7); components touching the top image border = hand/arm, discarded; object = largest remaining component with area >= 150 px",
+  "release": "first frame from which an object component exists in this and the next 2 frames; clip = release frame to the last frame",
+  "crop": "fixed square crop = union object bbox over the clip, side x1.35 (min 96 px), resized to 224; object on black (frame x mask), same as V3f Spring-Gaus preprocessing",
+  "frames": "clip frames -> 64 by nearest repetition, times in seconds from the video fps",
+  "qc_exclusion": "trial excluded if: no release found, < 8 post-release frames, or object mask present in < 80% of clip frames. Exclusions reported per category; no other filtering, no manual curation.",
+  "model": "V2 main 9-run B/C/D ensemble (scripts/v3f/springgaus_fewshot.RUNS, K0 = mean z over runs), single view (V=1), unchanged weights, zero-shot"
+ },
+ "categories_and_literature_stiffness": {
+  "note": "order-of-magnitude log10(E/rho) in m^2/s^2 of the bulk material from standard handbooks; used ONLY as an ordinal target. Our prior's training range is E/rho ~ 1e-1..1e3 m^2/s^2 (soft solids), so every rigid object is out of range; the test is ordinal only.",
+  "rubber":    {"objects": ["rubber_01", "rubber_05", "h_rubber_01", "h_rubber_05", "h_rubber_10"], "log10_E_over_rho": 3.5, "tier": "soft"},
+  "foam":      {"objects": ["foam_04", "foam_07"], "log10_E_over_rho": 5.4, "tier": "intermediate (expanded polystyrene)"},
+  "plastic":   {"objects": ["p_block_*", "p_doll_*", "p_ring_*", "p_toy_*"], "log10_E_over_rho": 6.3, "tier": "rigid"},
+  "wood":      {"objects": ["w_block_*", "w_pole_*", "h_wood_*"], "log10_E_over_rho": 7.2, "tier": "rigid"},
+  "metal":     {"objects": ["m_coin_*"], "log10_E_over_rho": 7.3, "tier": "rigid"},
+  "cardboard": {"objects": ["cardboard_*"], "log10_E_over_rho": null, "tier": "excluded from primary endpoints (hollow box; structural stiffness not given by material E)"}
+ },
+ "unit_of_analysis": "object: mean of per-trial predicted z_E (ensemble mean) over that object's included trials on the primary surfaces",
+ "primary_surfaces": ["table", "metal", "glass"],
+ "endpoints": {
+  "P1_primary": "object-level pairwise ordering accuracy (= AUC) of predicted log10(E/rho): soft tier (5 rubber objects) predicted softer than rigid tier (plastic+wood+metal objects). Chance = 0.5. 95% CI: stratified object bootstrap (10000).",
+  "P2": "object-level Spearman rho between predicted log10(E/rho) and the literature category value, all objects except cardboard (rubber, foam, plastic, wood, metal). 95% CI: object bootstrap.",
+  "S1": "P1 and P2 on all 5 surfaces and on each surface separately (descriptive)",
+  "S2": "trial-level P1 AUC (descriptive, trials not independent)",
+  "S3": "law (class) probabilities per tier, descriptive only (no dough in the fall scenario, so no plasticine GT exists; a rigid object has no class in our taxonomy)",
+  "S4": "predicted log10 rho vs measured density mass/volume, Spearman (descriptive; density is not identifiable from a free-fall video, expected near 0)"
+ },
+ "baselines": {
+  "constant": "same prediction for every object: AUC 0.5, Spearman 0",
+  "first_frame_appearance": "same 9-run ensemble fed a static clip (the release frame, masked/cropped identically, repeated 64 times, same times): appearance-only prediction from the same model",
+  "squash_statistic": "non-learned motion cue: max over post-release frames of relative vertical mask-bbox compression (1 - h_t / median h over the first 3 post-release frames), clipped >= 0, averaged over trials; predicted stiffness = -squash"
+ },
+ "comparisons": "prior minus first-frame and prior minus squash on P1 and P2, paired object bootstrap 95% CI",
+ "success_criteria": "P1 lower CI bound > 0.5 = the prior orders soft vs rigid real objects above chance. Superiority over first-frame requires the paired CI to exclude 0; otherwise reported as 'not shown to come from motion'.",
+ "replay_metrics": "not attempted on Physics 101: single uncalibrated view per camera, no shared calibration between Camera_1/Camera_2/Kinect, no object geometry; v3v-style held-out-camera replay is infeasible within the budget",
+ "deviations_policy": "any change after first metric is logged in docs/v3w/deviations.json and labelled post hoc"
+}

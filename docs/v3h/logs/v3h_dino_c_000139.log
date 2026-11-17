@@ -1,0 +1,40 @@
+eval {'n': 1, 'law': 'metal', 'x': [4.971821, 1.078629], 'seconds': 726.3458485603333, 'iou': 0.8828227764190518, 'iou_last': 0.893202885928653, 'rgb_mae_union': 20.43248722004541, 'loss': 0.19730462444387137}
+quick failure obs_01 0
+quick failure obs_01 1
+simulation failed obs_01 1
+eval {'n': 2, 'law': 'metal', 'x': [5.471821, 1.078629], 'seconds': 86.90690183639526, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+quick failure obs_02 0
+quick failure obs_02 1
+simulation failed obs_02 1
+eval {'n': 3, 'law': 'metal', 'x': [4.471821, 1.078629], 'seconds': 87.10918736457825, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+quick failure obs_03 0
+quick failure obs_03 1
+simulation failed obs_03 1
+eval {'n': 4, 'law': 'metal', 'x': [4.971821, 1.578629], 'seconds': 86.66470265388489, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval {'n': 5, 'law': 'metal', 'x': [4.971821, 0.578629], 'seconds': 733.6743700504303, 'iou': 0.9128920525328156, 'iou_last': 0.923626699105276, 'rgb_mae_union': 15.991173351244075, 'loss': 0.14981843119755334}
+quick failure obs_05 0
+quick failure obs_05 1
+simulation failed obs_05 1
+eval {'n': 6, 'law': 'metal', 'x': [4.971821, 0.078629], 'seconds': 87.46247506141663, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+quick failure obs_06 0
+quick failure obs_06 1
+simulation failed obs_06 1
+eval {'n': 7, 'law': 'metal', 'x': [5.471821, 0.578629], 'seconds': 86.77011561393738, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+quick failure obs_07 0
+quick failure obs_07 1
+simulation failed obs_07 1
+eval {'n': 8, 'law': 'metal', 'x': [4.471821, 0.578629], 'seconds': 86.90913152694702, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+quick failure obs_08 0
+quick failure obs_08 1
+simulation failed obs_08 1
+eval {'n': 9, 'law': 'metal', 'x': [5.221821, 0.578629], 'seconds': 86.25226831436157, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+quick failure obs_09 0
+quick failure obs_09 1
+simulation failed obs_09 1
+eval {'n': 10, 'law': 'metal', 'x': [4.721821, 0.578629], 'seconds': 86.16961717605591, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval {'n': 11, 'law': 'metal', 'x': [4.971821, 0.828629], 'seconds': 470.1780467033386, 'iou': 0.9028360233302678, 'iou_last': 0.9118743684628193, 'rgb_mae_union': 17.608302536769102, 'loss': 0.16621614348059144}
+quick failure obs_11 0
+quick failure obs_11 1
+simulation failed obs_11 1
+eval {'n': 12, 'law': 'metal', 'x': [4.971821, 0.328629], 'seconds': 86.3007493019104, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+done 139 dino_c {'0': 0.423, '4': 0.423, '12': 0.33}

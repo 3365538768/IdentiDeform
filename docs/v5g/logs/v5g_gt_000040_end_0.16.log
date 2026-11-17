@@ -1,0 +1,3 @@
+sim 40 gt end:0.16 True 445
+measure end:0.16 {'sag': 0.010174525454113051, 'left': 0.0, 'crush': 0.07402493156829192, 'dent_p95': 0.0874110913979905, 'grip': 119.01907348632812, 'lift': 0.19203811883926392, 'height': 0.6401270627975464, 'n_particles': 85855, 'seg_particles': 14641}
+done 40 gt end:0.16 False

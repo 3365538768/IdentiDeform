@@ -1,0 +1,249 @@
+{
+  "material": "jelly",
+  "sweep": "E",
+  "damping": "low",
+  "damping_overrides": {
+    "rpic_damping": 0.0,
+    "grid_v_damping_scale": 0.99999
+  },
+  "specific_values": [
+    100.0,
+    316.2277660168379,
+    1000.0,
+    3162.2776601683795,
+    10000.0,
+    31622.776601683792,
+    100000.0,
+    316227.7660168379,
+    1000000.0
+  ],
+  "frame_dt": 0.015625,
+  "substep_dt": 0.0001,
+  "actions": {
+    "press": [
+      {
+        "value": 100.0,
+        "ok": true,
+        "dominant_height_hz": 0.3316062176165803,
+        "height_change_px": 79.20321578979492,
+        "next_value": 316.2277660168379,
+        "diff_px_all": 3.6889936124929696,
+        "diff_px_max": 17.871995305496977,
+        "diff_px_4fps": 4.028091491393987,
+        "diff_px_8fps": 3.8352475702335105,
+        "diff_px_16fps": 3.750731982144761,
+        "diff_px_32fps": 3.7204435269705964
+      },
+      {
+        "value": 316.2277660168379,
+        "ok": true,
+        "dominant_height_hz": 0.3316062176165803,
+        "height_change_px": 83.14531173706055,
+        "next_value": 1000.0,
+        "diff_px_all": 3.64229631953701,
+        "diff_px_max": 19.032703893990252,
+        "diff_px_4fps": 3.4765299259916485,
+        "diff_px_8fps": 3.5649911610547522,
+        "diff_px_16fps": 3.599534039383137,
+        "diff_px_32fps": 3.654698749379878
+      },
+      {
+        "value": 1000.0,
+        "ok": true,
+        "dominant_height_hz": 0.3316062176165803,
+        "height_change_px": 100.88753643035888,
+        "next_value": 3162.2776601683795,
+        "diff_px_all": 3.37205919668292,
+        "diff_px_max": 20.915795659986276,
+        "diff_px_4fps": 3.5696495524467693,
+        "diff_px_8fps": 3.3673351649115393,
+        "diff_px_16fps": 3.3834629893195034,
+        "diff_px_32fps": 3.3914321228051727
+      },
+      {
+        "value": 3162.2776601683795,
+        "ok": true,
+        "dominant_height_hz": 0.3316062176165803,
+        "height_change_px": 99.1864700317383,
+        "next_value": 10000.0,
+        "diff_px_all": 4.221907464655063,
+        "diff_px_max": 33.94519050461639,
+        "diff_px_4fps": 5.391707770223862,
+        "diff_px_8fps": 4.7220588826250385,
+        "diff_px_16fps": 4.421422972378133,
+        "diff_px_32fps": 4.300124870613418
+      },
+      {
+        "value": 10000.0,
+        "ok": true,
+        "dominant_height_hz": 0.3316062176165803,
+        "height_change_px": 96.26128749847412,
+        "next_value": 31622.776601683792,
+        "diff_px_all": 4.257632974308717,
+        "diff_px_max": 25.79966177458153,
+        "diff_px_4fps": 4.798238354471295,
+        "diff_px_8fps": 4.680373140536746,
+        "diff_px_16fps": 4.359061849125645,
+        "diff_px_32fps": 4.318641684811594
+      },
+      {
+        "value": 31622.776601683792,
+        "ok": true,
+        "dominant_height_hz": 0.3316062176165803,
+        "height_change_px": 84.83441104888915,
+        "next_value": 100000.0,
+        "diff_px_all": 18.317064432389422,
+        "diff_px_max": 115.22495832140974,
+        "diff_px_4fps": 20.873339341797394,
+        "diff_px_8fps": 19.36701129322578,
+        "diff_px_16fps": 18.76623795703975,
+        "diff_px_32fps": 18.53549902860344
+      },
+      {
+        "value": 100000.0,
+        "ok": true,
+        "dominant_height_hz": 0.3316062176165803,
+        "height_change_px": 157.76520309448242,
+        "next_value": 316227.7660168379,
+        "diff_px_all": 24.98051718587495,
+        "diff_px_max": 139.67381190952642,
+        "diff_px_4fps": 27.918448709232635,
+        "diff_px_8fps": 26.248213282279902,
+        "diff_px_16fps": 25.52986452243563,
+        "diff_px_32fps": 25.291762209713323
+      },
+      {
+        "value": 316227.7660168379,
+        "ok": true,
+        "dominant_height_hz": 0.3316062176165803,
+        "height_change_px": 211.44622821807855,
+        "next_value": 1000000.0,
+        "diff_px_all": 39.36683978908368,
+        "diff_px_max": 195.20154998068887,
+        "diff_px_4fps": 42.88877386754082,
+        "diff_px_8fps": 40.7493072737083,
+        "diff_px_16fps": 39.98369644360333,
+        "diff_px_32fps": 39.803559442251725
+      },
+      {
+        "value": 1000000.0,
+        "ok": true,
+        "dominant_height_hz": 0.3316062176165803,
+        "height_change_px": 189.90130577087402
+      }
+    ],
+    "tap": [
+      {
+        "value": 100.0,
+        "ok": true,
+        "dominant_height_hz": 0.3316062176165803,
+        "height_change_px": 23.344527626037596,
+        "next_value": 316.2277660168379,
+        "diff_px_all": 3.4522556717964434,
+        "diff_px_max": 7.79499418461978,
+        "diff_px_4fps": 3.335712405642555,
+        "diff_px_8fps": 3.405656466955772,
+        "diff_px_16fps": 3.4240624742952495,
+        "diff_px_32fps": 3.4507179505722436
+      },
+      {
+        "value": 316.2277660168379,
+        "ok": true,
+        "dominant_height_hz": 0.3316062176165803,
+        "height_change_px": 19.38284397125244,
+        "next_value": 1000.0,
+        "diff_px_all": 2.379372152441736,
+        "diff_px_max": 6.6137183734561145,
+        "diff_px_4fps": 2.2660868535129657,
+        "diff_px_8fps": 2.3282349195688306,
+        "diff_px_16fps": 2.3519647446442264,
+        "diff_px_32fps": 2.378921662240913
+      },
+      {
+        "value": 1000.0,
+        "ok": true,
+        "dominant_height_hz": 0.9948186528497409,
+        "height_change_px": 16.50911808013913,
+        "next_value": 3162.2776601683795,
+        "diff_px_all": 1.8851022878360268,
+        "diff_px_max": 5.438665903738281,
+        "diff_px_4fps": 1.8252763380687889,
+        "diff_px_8fps": 1.8512317820661677,
+        "diff_px_16fps": 1.8689992585922806,
+        "diff_px_32fps": 1.8681156354424593
+      },
+      {
+        "value": 3162.2776601683795,
+        "ok": true,
+        "dominant_height_hz": 1.6580310880829017,
+        "height_change_px": 14.224708557128896,
+        "next_value": 10000.0,
+        "diff_px_all": 1.5557382203643797,
+        "diff_px_max": 4.274180627731838,
+        "diff_px_4fps": 1.5278314504685029,
+        "diff_px_8fps": 1.5052917738011198,
+        "diff_px_16fps": 1.5391782531974956,
+        "diff_px_32fps": 1.5470527429029857
+      },
+      {
+        "value": 10000.0,
+        "ok": true,
+        "dominant_height_hz": 2.6528497409326426,
+        "height_change_px": 14.258390808105453,
+        "next_value": 31622.776601683792,
+        "diff_px_all": 1.4808855977705644,
+        "diff_px_max": 4.01422329940397,
+        "diff_px_4fps": 1.3501138116346447,
+        "diff_px_8fps": 1.8047920109708275,
+        "diff_px_16fps": 1.4800612740126555,
+        "diff_px_32fps": 1.4763676031984145
+      },
+      {
+        "value": 31622.776601683792,
+        "ok": true,
+        "dominant_height_hz": 4.974093264248705,
+        "height_change_px": 13.611043739318847,
+        "next_value": 100000.0,
+        "diff_px_all": 1.3838574549167715,
+        "diff_px_max": 3.684514581436151,
+        "diff_px_4fps": 1.5655660663136868,
+        "diff_px_8fps": 1.4188905757095212,
+        "diff_px_16fps": 1.3801110488899213,
+        "diff_px_32fps": 1.3904120959927129
+      },
+      {
+        "value": 100000.0,
+        "ok": true,
+        "dominant_height_hz": 8.953367875647668,
+        "height_change_px": 12.76428337097168,
+        "next_value": 316227.7660168379,
+        "diff_px_all": 13.763453086387761,
+        "diff_px_max": 51.20387676940037,
+        "diff_px_4fps": 14.511168589362386,
+        "diff_px_8fps": 14.071441013792455,
+        "diff_px_16fps": 13.93170195821831,
+        "diff_px_32fps": 13.764905159224316
+      },
+      {
+        "value": 316227.7660168379,
+        "ok": true,
+        "dominant_height_hz": 0.3316062176165803,
+        "height_change_px": 31.514407539367674,
+        "next_value": 1000000.0,
+        "diff_px_all": 46.274985958681434,
+        "diff_px_max": 95.48393119202966,
+        "diff_px_4fps": 46.27499990879177,
+        "diff_px_8fps": 46.068469359994765,
+        "diff_px_16fps": 46.224266891563204,
+        "diff_px_32fps": 46.21546099150245
+      },
+      {
+        "value": 1000000.0,
+        "ok": true,
+        "dominant_height_hz": 0.3316062176165803,
+        "height_change_px": 32.472808456420815
+      }
+    ]
+  },
+  "status": "complete"
+}

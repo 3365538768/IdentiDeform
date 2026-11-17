@@ -1,0 +1,27 @@
+{
+ "stage": "v3v-confirm",
+ "written_utc": "2026-11-16 ~07:17 UTC, uploaded before the confirmation runs were launched (07:18); no confirmation metric existed then",
+ "question": "Does the post-hoc damping arm (prior -> refine E + RPIC strain-rate damping) hold up when the damping is NOT fitted on the evaluated object?",
+ "unseen_data_check": {
+  "result": "No unseen sequences exist in real_capture.zip.",
+  "evidence": "dynamic/sequences/ holds exactly one file per object (bun/burger/dog/pig/potato: 0.json); videos_images and videos_masks hold 100 frames per camera = 5 objects x 20 frames, all of them already used; static/ holds only multi-view stills, masks and a COLMAP model of the objects at rest (no motion). videos_compress/ has 3 full-length compressed MP4s (frame ids up to ~32k) WITHOUT masks; finding other drops in them would need new segmentation and was not attempted (untrusted archive, time box; the bundled extract_video.py is never run).",
+  "consequence": "Fallback (coordinator option 3): leave-one-object-out damping."
+ },
+ "arm_under_test": {
+  "name": "prior_refine_damp_loo",
+  "damping": "for object o and camera fold h: rpic = median of the rpic values fitted by the post-hoc arm (docs/v3v run2, data/v3v/sims/<obj>/refine_damp.json) on the OTHER 4 objects in the same fold h. Those values were fitted only on those objects' fit sets (2 training cameras x frames 0..9), so no data of object o enters the damping.",
+  "expected_values_known_in_advance": "fold-wise fitted rpic: bun 1.0, burger 0.5/0.5/0.625, dog 1.0, pig 1.0, potato 1.0, so the LOO median is 1.0 for every object and fold (stated before evaluation).",
+  "E": "compass search on log10 E/rho x 1000 from the prior, exactly as the pre-registered E-only refinement: step 0.5 decade, +/- poll, move on improvement, halve on failure, stop at step < 0.0625 or 12 simulations; objective 1 - mean mask IoU on the fit set (2 training cameras x frames 0..9); nu = predicted; bounds 2.0..6.5.",
+  "everything_else": "identical to docs/v3v/PROTOCOL.json (initial state, engine, colouring, rendering, metrics, folds, splits)."
+ },
+ "comparisons_frozen": {
+  "prior": "from the first run, unchanged",
+  "class_mean": "from the first run, unchanged (10^3.482, nu 0.278)",
+  "global_constant_loo": "from the first run, constants frozen (per object/fold grid choice already in docs/v3v/RESULTS.json twins.global_constant_loo_log10E_per_fold)",
+  "persist_last": "hold frame 9, from the first run (future split only)",
+  "also_listed_for_reference": "prior_refine (pre-registered E-only) and prior_refine_damp (post hoc, damping fitted in-sample)"
+ },
+ "primary_comparisons": ["prior_refine_damp_loo - prior", "prior_refine_damp_loo - persist_last (future)", "prior_refine_damp_loo - prior_refine", "prior_refine_damp_loo - class_mean", "prior_refine_damp_loo - global_constant_loo"],
+ "metrics_and_stats": "held-out camera (frames 1..19) and future frames (10..19, all cams): mask IoU, PSNR, SSIM; future 3D: centroid, lowest point, Chamfer; mean over n = 5 objects, percentile bootstrap 95% CI over objects (10000 resamples), per-object sign counts.",
+ "limits_stated_in_advance": "This is NOT a test on unseen data: the same 5 drops are re-used; it only removes the in-sample fitting of the damping value. The damping form itself (RPIC) was chosen after seeing the first-run results. n = 5."
+}

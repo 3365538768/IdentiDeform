@@ -1,0 +1,2864 @@
+{
+ "phase": "v4gen",
+ "max_per_gpu": 5,
+ "gpus": [],
+ "note": "V4 data = V3 contact setup + gravity 2 on every action (gen_v3.py --g-all -2); same indices/objects/params as V3; a800-3/4/5 pools use docs/v4/jobs_a*.json | 16:15: only shear/stretch/bend (press/drop/tap identical to V3: reuse data/v3_main) | 18:05 stopped: V4 not better than V3 (docs/v4p); switched to V5 probes",
+ "jobs": [
+  {
+   "id": "v4gen_val_000000",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 0 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000001",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 1 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000002",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 2 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000003",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 3 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000004",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 4 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000005",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 5 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000006",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 6 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000007",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 7 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000031",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 31 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000032",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 32 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000033",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 33 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000034",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 34 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000035",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 35 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000036",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 36 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000037",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 37 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000038",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 38 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000062",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 62 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000063",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 63 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000064",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 64 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000065",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 65 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000066",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 66 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000067",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 67 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000068",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 68 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000069",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 69 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000093",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 93 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000094",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 94 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000095",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 95 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000096",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 96 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000097",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 97 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000098",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 98 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000099",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 99 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000100",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 100 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000124",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 124 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000125",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 125 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000126",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 126 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000127",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 127 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000128",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 128 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000129",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 129 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000130",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 130 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000131",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 131 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000155",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 155 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000156",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 156 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000157",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 157 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000158",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 158 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000159",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 159 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000160",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 160 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000161",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 161 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000162",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 162 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000186",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 186 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000187",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 187 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000188",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 188 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000189",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 189 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000190",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 190 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000191",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 191 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000192",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 192 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000193",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 193 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000222",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 222 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000223",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 223 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000224",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 224 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000248",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 248 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000279",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 279 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000280",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 280 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000281",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 281 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_val_000282",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split val --indices 282 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000027",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 27 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000028",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 28 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000029",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 29 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000030",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 30 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000031",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 31 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000032",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 32 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000060",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 60 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000061",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 61 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000062",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 62 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000063",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 63 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000064",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 64 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000065",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 65 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000096",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 96 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000120",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 120 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000121",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 121 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000122",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 122 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000151",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 151 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000152",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 152 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000153",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 153 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000154",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 154 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000155",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 155 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000156",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 156 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000157",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 157 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000158",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 158 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000186",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 186 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000187",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 187 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000188",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 188 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000189",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 189 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000244",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 244 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000245",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 245 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000246",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 246 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000247",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 247 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000248",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 248 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000276",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 276 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000277",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 277 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000278",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 278 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000279",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 279 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000280",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 280 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000281",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 281 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000282",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 282 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000312",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 312 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000313",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 313 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000337",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 337 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000338",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 338 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000368",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 368 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000369",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 369 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000370",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 370 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000371",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 371 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000372",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 372 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000373",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 373 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000374",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 374 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000402",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 402 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000403",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 403 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000404",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 404 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000405",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 405 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000406",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 406 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000461",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 461 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000462",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 462 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000463",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 463 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000464",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 464 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000492",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 492 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000493",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 493 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000494",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 494 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000495",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 495 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000496",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 496 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000497",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 497 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000498",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 498 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000499",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 499 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000528",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 528 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000529",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 529 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000530",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 530 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000554",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 554 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000585",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 585 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000586",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 586 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000587",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 587 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000588",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 588 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000589",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 589 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000590",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 590 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000618",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 618 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000619",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 619 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000620",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 620 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000621",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 621 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000622",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 622 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000623",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 623 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000654",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 654 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000678",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 678 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000679",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 679 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000680",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 680 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000709",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 709 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000710",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 710 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000711",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 711 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000712",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 712 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000713",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 713 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000714",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 714 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000715",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 715 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000716",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 716 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000744",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 744 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000745",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 745 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000746",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 746 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000747",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 747 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000802",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 802 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000803",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 803 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000804",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 804 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000805",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 805 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000806",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 806 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000834",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 834 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000835",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 835 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000836",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 836 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000837",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 837 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000838",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 838 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000839",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 839 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000840",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 840 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000870",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 870 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000871",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 871 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000895",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 895 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000896",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 896 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000926",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 926 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000927",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 927 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000928",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 928 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000929",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 929 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000930",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 930 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000931",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 931 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000932",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 932 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000960",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 960 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000961",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 961 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000962",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 962 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000963",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 963 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_000964",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 964 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000024",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 24 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000025",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 25 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000026",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 26 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000050",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 50 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000081",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 81 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000082",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 82 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000083",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 83 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000084",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 84 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000085",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 85 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000086",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 86 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000114",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 114 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000115",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 115 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000116",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 116 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000117",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 117 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000118",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 118 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000119",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 119 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000150",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 150 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000174",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 174 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000175",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 175 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000176",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 176 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000205",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 205 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000206",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 206 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000207",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 207 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000208",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 208 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000209",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 209 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000210",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 210 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000211",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 211 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000212",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 212 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000240",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 240 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000241",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 241 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000242",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 242 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000243",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 243 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000298",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 298 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_test_000299",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split test --indices 299 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001000",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1000 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001001",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1001 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001002",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1002 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001003",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1003 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001004",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1004 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001032",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1032 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001033",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1033 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001034",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1034 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001035",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1035 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001036",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1036 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001091",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1091 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001092",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1092 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001093",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1093 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001094",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1094 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001122",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1122 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001123",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1123 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001124",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1124 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001125",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1125 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001126",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1126 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001127",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1127 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001128",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1128 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001129",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1129 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001158",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1158 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001159",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1159 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001160",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1160 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001184",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1184 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001215",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1215 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001216",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1216 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001217",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1217 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001218",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1218 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001219",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1219 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001220",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1220 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001248",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1248 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001249",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1249 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001250",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1250 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001251",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1251 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001252",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1252 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001253",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1253 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001284",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1284 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001308",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1308 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001309",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1309 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001310",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1310 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001339",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1339 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001340",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1340 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001341",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1341 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001342",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1342 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001343",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1343 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001344",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1344 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001345",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1345 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001346",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1346 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001374",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1374 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001375",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1375 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001376",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1376 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001377",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1377 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001432",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1432 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001433",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1433 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001434",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1434 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001435",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1435 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001436",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1436 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001464",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1464 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001465",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1465 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001466",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1466 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001467",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1467 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001468",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1468 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001469",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1469 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001470",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1470 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001500",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1500 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001501",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1501 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001525",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1525 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001526",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1526 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001556",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1556 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001557",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1557 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001558",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1558 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001559",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1559 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001560",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1560 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001561",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1561 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001562",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1562 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001590",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1590 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001591",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1591 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001592",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1592 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001593",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1593 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001594",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1594 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001649",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1649 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001650",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1650 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001651",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1651 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001652",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1652 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001680",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1680 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001681",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1681 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001682",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1682 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001683",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1683 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001684",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1684 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001685",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1685 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001686",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1686 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001687",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1687 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001716",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1716 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001717",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1717 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001718",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1718 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001742",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1742 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001773",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1773 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001774",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1774 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001775",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1775 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001776",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1776 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001777",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1777 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001778",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1778 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001806",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1806 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001807",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1807 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001808",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1808 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001809",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1809 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001810",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1810 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001811",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1811 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001842",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1842 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001866",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1866 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001867",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1867 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001868",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1868 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001897",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1897 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001898",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1898 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001899",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1899 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001900",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1900 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001901",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1901 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001902",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1902 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001903",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1903 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001904",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1904 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001932",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1932 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001933",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1933 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001934",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1934 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001935",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1935 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001990",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1990 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001991",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1991 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001992",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1992 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001993",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1993 --root data/v4_main --g-all -2"
+  },
+  {
+   "id": "v4gen_train_001994",
+   "kind": "cmd",
+   "group": "v4gen",
+   "mem_mib": 7000,
+   "retries": 1,
+   "cmd": ".venv/bin/python scripts/v3n/gen_v3.py --split train --indices 1994 --root data/v4_main --g-all -2"
+  }
+ ]
+}

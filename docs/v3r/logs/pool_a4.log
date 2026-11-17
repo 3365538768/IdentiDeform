@@ -1,0 +1,20 @@
+08:22:26 start v3r_gt_000002 gpu 0
+08:22:26 start v3r_gt_000029 gpu 1
+08:22:26 start v3r_gt_000068 gpu 2
+08:22:26 start v3r_gt_000080 gpu 3
+08:22:26 start v3r_gt_000182 gpu 4
+08:22:26 start v3r_gt_000230 gpu 5
+08:22:26 start v3r_gt_000275 gpu 6
+08:22:26 start v3r_gt_000031 gpu 7
+09:18:26 exit v3r_gt_000031 0 gpu 7
+09:18:26 start v3r_gt_000088 gpu 7
+09:18:41 exit v3r_gt_000230 0 gpu 5
+09:18:41 start v3r_gt_000133 gpu 5
+09:18:56 exit v3r_gt_000029 0 gpu 1
+09:18:56 start v3r_gt_000205 gpu 1
+09:19:26 exit v3r_gt_000182 0 gpu 4
+09:19:41 exit v3r_gt_000275 0 gpu 6
+09:20:41 exit v3r_gt_000068 0 gpu 2
+09:22:11 exit v3r_gt_000080 0 gpu 3
+09:22:41 exit v3r_gt_000002 0 gpu 0
+stop file

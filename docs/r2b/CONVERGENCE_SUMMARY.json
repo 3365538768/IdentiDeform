@@ -1,0 +1,24 @@
+{
+  "updated_unix": 1794402102.7798052,
+  "status": "complete",
+  "scope": "Highest-stiffness cube; summary response comparison only, not full trajectory or physical validation. Frame integration uses rounded substeps; nominal sampled times differ slightly.",
+  "rows": [
+    {
+      "action": "press",
+      "height_change_px_dt25": 75.56722354888916,
+      "height_change_px_dt12_5": 77.35429172515869,
+      "relative_height_change_difference": 0.02310237914942091,
+      "frequency_dt25": 0.3314917127071823,
+      "frequency_dt12_5": 0.3314917127071823
+    },
+    {
+      "action": "drop",
+      "height_change_px_dt25": 13.835224914550786,
+      "height_change_px_dt12_5": 8.452894020080567,
+      "relative_height_change_difference": 0.6367441590636337,
+      "frequency_dt25": 0.6593406593406593,
+      "frequency_dt12_5": 0.6593406593406593
+    }
+  ],
+  "requires_review": true
+}

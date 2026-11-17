@@ -1,0 +1,25 @@
+2026-11-16T06:54:48+00:00 di-20261103141208-krk4l START eval --objs burger
+burger C0733 prior 4.498 HO {'iou': 0.521, 'psnr': 11.711, 'ssim': 0.289} FU {'iou': 0.202, 'psnr': 9.635, 'ssim': 0.108}
+burger C0733 prior_refine 4.56 HO {'iou': 0.51, 'psnr': 11.669, 'ssim': 0.283} FU {'iou': 0.178, 'psnr': 9.472, 'ssim': 0.094}
+burger C0733 class_mean 3.482 HO {'iou': 0.42, 'psnr': 10.845, 'ssim': 0.232} FU {'iou': 0.085, 'psnr': 8.716, 'ssim': 0.037}
+burger C0733 global_constant_loo 5.0 HO {'iou': 0.434, 'psnr': 11.366, 'ssim': 0.245} FU {'iou': 0.072, 'psnr': 9.097, 'ssim': 0.04}
+burger C0733 oracle 3.998 HO {'iou': 0.698, 'psnr': 13.037, 'ssim': 0.37} FU {'iou': 0.645, 'psnr': 13.049, 'ssim': 0.333}
+burger C0733 rigid_track_2cam None HO {'iou': 0.797, 'psnr': 13.989, 'ssim': 0.419} FU {}
+burger C0787 prior 4.498 HO {'iou': 0.511, 'psnr': 12.572, 'ssim': 0.29} FU {'iou': 0.202, 'psnr': 9.508, 'ssim': 0.109}
+burger C0787 prior_refine 4.623 HO {'iou': 0.49, 'psnr': 12.518, 'ssim': 0.279} FU {'iou': 0.158, 'psnr': 9.22, 'ssim': 0.085}
+burger C0787 class_mean 3.482 HO {'iou': 0.429, 'psnr': 11.81, 'ssim': 0.239} FU {'iou': 0.085, 'psnr': 8.561, 'ssim': 0.038}
+burger C0787 global_constant_loo 5.25 HO {'iou': 0.399, 'psnr': 12.078, 'ssim': 0.228} FU {'iou': 0.04, 'psnr': 8.836, 'ssim': 0.023}
+burger C0787 oracle 3.998 HO {'iou': 0.715, 'psnr': 13.917, 'ssim': 0.391} FU {'iou': 0.645, 'psnr': 12.913, 'ssim': 0.341}
+burger C0787 rigid_track_2cam None HO {'iou': 0.817, 'psnr': 15.448, 'ssim': 0.465} FU {}
+burger C0801 prior 4.498 HO {'iou': 0.483, 'psnr': 11.501, 'ssim': 0.242} FU {'iou': 0.202, 'psnr': 9.875, 'ssim': 0.111}
+burger C0801 prior_refine 4.623 HO {'iou': 0.464, 'psnr': 11.398, 'ssim': 0.233} FU {'iou': 0.158, 'psnr': 9.525, 'ssim': 0.085}
+burger C0801 class_mean 3.482 HO {'iou': 0.42, 'psnr': 10.966, 'ssim': 0.206} FU {'iou': 0.085, 'psnr': 8.757, 'ssim': 0.034}
+burger C0801 global_constant_loo 5.25 HO {'iou': 0.393, 'psnr': 11.0, 'ssim': 0.202} FU {'iou': 0.04, 'psnr': 9.022, 'ssim': 0.022}
+burger C0801 oracle 3.998 HO {'iou': 0.749, 'psnr': 12.746, 'ssim': 0.365} FU {'iou': 0.645, 'psnr': 12.546, 'ssim': 0.321}
+burger C0801 rigid_track_2cam None HO {'iou': 0.788, 'psnr': 12.882, 'ssim': 0.415} FU {}
+2026-11-16T06:56:44+00:00 END rc=0
+2026-11-16T06:56:44+00:00 di-20261103141208-krk4l START eval2 --objs burger
+burger C0733 prior_refine_damp 4.4976 0.5 HO {'iou': 0.772, 'psnr': 13.092, 'ssim': 0.417} FU {'iou': 0.63, 'psnr': 11.942, 'ssim': 0.326}
+burger C0787 prior_refine_damp 4.6226 0.5 HO {'iou': 0.623, 'psnr': 13.067, 'ssim': 0.34} FU {'iou': 0.417, 'psnr': 10.417, 'ssim': 0.22}
+burger C0801 prior_refine_damp 4.6226 0.625 HO {'iou': 0.63, 'psnr': 11.881, 'ssim': 0.314} FU {'iou': 0.509, 'psnr': 11.291, 'ssim': 0.272}
+2026-11-16T06:57:34+00:00 END rc=0

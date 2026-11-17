@@ -1,0 +1,261 @@
+2026-11-16T06:32:45+00:00 di-20261103141208-krk4l START run --objs bun burger dog
+Warp 1.11.1 initialized:
+   CUDA Toolkit 12.9, Driver 12.6
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA A800-SXM4-80GB" (79 GiB, sm_80, mempool enabled)
+   Kernel cache:
+     /root/.cache/warp/1.11.1
+Warp DeprecationWarning: The namespace `warp.torch` will soon be removed from the public API. It can still be accessed from `warp._src.torch` but might be changed or removed without notice.
+Warp DeprecationWarning: The symbol `warp.types.float32` will soon be removed from the public API. Use `warp.float32` instead.
+Module warp_utils 5598e36 load on device 'cuda:0' took 2679.83 ms  (compiled)
+Particles initialized from torch data.
+Total particles:  16233
+Warp DeprecationWarning: the built-in `wp.types.matrix()` won't support taking column vectors as input in the future. Use `wp.matrix_from_rows()` or `wp.matrix_from_cols()` instead.
+Module mpm_utils 8c60f93 load on device 'cuda:0' took 56797.81 ms  (compiled)
+Module mpm_solver_warp 3dca6b4 load on device 'cuda:0' took 642.00 ms  (compiled)
+  sim bun lg4.2679_nu0.302 66.5s
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg3.4820_nu0.278 4.4s
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg3.0000_nu0.278 5.7s
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg3.2500_nu0.278 5.7s
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg3.5000_nu0.278 5.3s
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg3.7500_nu0.278 5.6s
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg4.0000_nu0.278 4.8s
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg4.2500_nu0.278 4.6s
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg4.5000_nu0.278 4.4s
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg4.7500_nu0.278 2.1s
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg5.0000_nu0.278 2.1s
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg5.2500_nu0.278 2.8s
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg5.5000_nu0.278 0.8s
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg5.7500_nu0.278 1.4s
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg6.0000_nu0.278 7.3s
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg4.7679_nu0.302 3.5s
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg3.7679_nu0.302 5.0s
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg5.2679_nu0.302 5.8s
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg5.0179_nu0.302 7.0s
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg4.5179_nu0.302 6.9s
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg4.6429_nu0.302 7.4s
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg4.3929_nu0.302 7.3s
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg4.5804_nu0.302 7.5s
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg4.4554_nu0.302 7.3s
+bun fold C0733 refined lg 4.5179 sims 10
+bun fold C0787 refined lg 4.5179 sims 10
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg4.8929_nu0.302 7.3s
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg4.8304_nu0.302 7.4s
+Particles initialized from torch data.
+Total particles:  16233
+  sim bun lg4.7054_nu0.302 7.3s
+bun fold C0801 refined lg 4.7679 sims 10
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg4.4976_nu0.285 7.3s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg3.4820_nu0.278 7.3s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg3.0000_nu0.278 7.3s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg3.2500_nu0.278 7.8s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg3.5000_nu0.278 8.5s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg3.7500_nu0.278 7.3s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg4.0000_nu0.278 7.7s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg4.2500_nu0.278 7.7s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg4.5000_nu0.278 7.3s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg4.7500_nu0.278 7.1s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg5.0000_nu0.278 7.1s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg5.2500_nu0.278 8.7s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg5.5000_nu0.278 12.2s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg5.7500_nu0.278 15.4s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg6.0000_nu0.278 16.9s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg4.9976_nu0.285 2.9s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg3.9976_nu0.285 5.1s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg4.7476_nu0.285 5.5s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg4.2476_nu0.285 4.5s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg4.6226_nu0.285 3.3s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg4.3726_nu0.285 6.8s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg4.6851_nu0.285 6.9s
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg4.5601_nu0.285 5.4s
+burger fold C0733 refined lg 4.5601 sims 9
+burger fold C0787 refined lg 4.6226 sims 9
+Particles initialized from torch data.
+Total particles:  14238
+  sim burger lg4.8726_nu0.285 7.3s
+burger fold C0801 refined lg 4.6226 sims 9
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg4.3897_nu0.273 7.4s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg3.4820_nu0.278 7.3s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg3.0000_nu0.278 7.4s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg3.2500_nu0.278 7.4s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg3.5000_nu0.278 7.2s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg3.7500_nu0.278 7.3s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg4.0000_nu0.278 7.6s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg4.2500_nu0.278 7.7s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg4.5000_nu0.278 7.4s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg4.7500_nu0.278 7.4s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg5.0000_nu0.278 7.6s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg5.2500_nu0.278 8.6s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg5.5000_nu0.278 12.2s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg5.7500_nu0.278 15.5s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg6.0000_nu0.278 21.0s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg4.8897_nu0.273 7.7s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg3.8897_nu0.273 7.1s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg5.3897_nu0.273 10.8s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg5.1397_nu0.273 8.0s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg4.6397_nu0.273 7.3s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg5.2647_nu0.273 9.3s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg5.0147_nu0.273 5.8s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg5.0772_nu0.273 5.6s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg4.9522_nu0.273 4.1s
+dog fold C0733 refined lg 5.0772 sims 10
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg5.8897_nu0.273 15.7s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg5.6397_nu0.273 10.1s
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg5.2022_nu0.273 6.5s
+dog fold C0787 refined lg 5.1397 sims 11
+Particles initialized from torch data.
+Total particles:  12285
+  sim dog lg5.3272_nu0.273 10.1s
+dog fold C0801 refined lg 5.2647 sims 11
+2026-11-16T06:44:54+00:00 END rc=0

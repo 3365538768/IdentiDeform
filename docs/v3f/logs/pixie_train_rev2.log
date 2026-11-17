@@ -1,0 +1,103 @@
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/external/pixie/third_party/f3rm/f3rm/features/clip/clip.py:6: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging
+skip an_empty_aluminum_can_dented_metal_isolated_013020
+skip a_woven_straw_hat_013020
+skip a_wool_sweater_013020
+skip a_wooden_gear_013020
+skip a_wooden_fire_013020
+skip a_wooden_chair_013020
+skip a_wire_mesh_brain_013020
+skip a_wicker_basket_013020
+skip a_velvet_sofa_013020
+skip a_velvet_curtain_013020
+skip a_tin_soldier_bread_013020
+skip a_tin_can_013020
+skip a_terracotta_warrior_013020
+skip a_stone_pillow_013020
+skip a_sponge_porous_soft_material_isolated_013020
+a_silver_spoon_013020 filled metal 3.44e+05 0.404 427 {'occupied_voxels': 4526, 'directly_seen_fraction': 0.8643393516540527, 'mean_views_per_seen_voxel': 78.03553009033203}
+a_silver_spoon_013020 shell metal 3.44e+05 0.404 427 {'occupied_voxels': 4520, 'directly_seen_fraction': 0.8643805384635925, 'mean_views_per_seen_voxel': 78.0588607788086}
+a_silk_scarf_013020 filled jelly 1.39e+04 0.372 411 {'occupied_voxels': 5576, 'directly_seen_fraction': 0.9411764740943909, 'mean_views_per_seen_voxel': 112.2010269165039}
+a_silk_scarf_013020 shell jelly 1.39e+04 0.372 411 {'occupied_voxels': 5576, 'directly_seen_fraction': 0.9411764740943909, 'mean_views_per_seen_voxel': 112.2010269165039}
+a_shingle_roof_013020 filled snow 1.66e+05 0.259 2345 {'occupied_voxels': 8315, 'directly_seen_fraction': 0.982802152633667, 'mean_views_per_seen_voxel': 97.97748565673828}
+a_shingle_roof_013020 shell snow 1.66e+05 0.259 2345 {'occupied_voxels': 8315, 'directly_seen_fraction': 0.982802152633667, 'mean_views_per_seen_voxel': 97.97748565673828}
+a_sapphire_ring_013020 filled jelly 1.33e+06 0.312 736 {'occupied_voxels': 12769, 'directly_seen_fraction': 0.9200407266616821, 'mean_views_per_seen_voxel': 61.07925033569336}
+a_sapphire_ring_013020 shell jelly 1.35e+06 0.311 745 {'occupied_voxels': 12697, 'directly_seen_fraction': 0.9206899404525757, 'mean_views_per_seen_voxel': 61.27989959716797}
+a_sandstone_joystick_013020 filled sand 9.48e+06 0.313 873 {'occupied_voxels': 17383, 'directly_seen_fraction': 0.816372275352478, 'mean_views_per_seen_voxel': 55.083927154541016}
+a_sandstone_joystick_013020 shell sand 9.44e+06 0.313 871 {'occupied_voxels': 17220, 'directly_seen_fraction': 0.8194541335105896, 'mean_views_per_seen_voxel': 55.2559700012207}
+a_sandstone_book_013020 filled sand 8.75e+05 0.329 312 {'occupied_voxels': 21031, 'directly_seen_fraction': 0.6783795356750488, 'mean_views_per_seen_voxel': 69.13710021972656}
+a_sandstone_book_013020 shell sand 8.6e+05 0.328 308 {'occupied_voxels': 20810, 'directly_seen_fraction': 0.6822681427001953, 'mean_views_per_seen_voxel': 69.44429016113281}
+a_rusty_chain_013020 filled metal 1.48e+06 0.409 422 {'occupied_voxels': 4847, 'directly_seen_fraction': 0.9620383977890015, 'mean_views_per_seen_voxel': 75.8252182006836}
+a_rusty_chain_013020 shell metal 1.47e+06 0.409 422 {'occupied_voxels': 4828, 'directly_seen_fraction': 0.9618890285491943, 'mean_views_per_seen_voxel': 75.97846984863281}
+a_rubber_skeleton_013020 filled jelly 3.94e+04 0.281 1087 {'occupied_voxels': 4060, 'directly_seen_fraction': 0.9862069487571716, 'mean_views_per_seen_voxel': 74.93981170654297}
+a_rubber_skeleton_013020 shell jelly 3.93e+04 0.282 1086 {'occupied_voxels': 4053, 'directly_seen_fraction': 0.9861830472946167, 'mean_views_per_seen_voxel': 74.95671844482422}
+a_rubber_ball_matte_elastic_surface_isolated_013020 filled sand 1.79e+06 0.375 462 {'occupied_voxels': 45552, 'directly_seen_fraction': 0.9085001945495605, 'mean_views_per_seen_voxel': 21.7381591796875}
+a_rubber_ball_matte_elastic_surface_isolated_013020 shell sand 1.81e+06 0.375 461 {'occupied_voxels': 45407, 'directly_seen_fraction': 0.9082740545272827, 'mean_views_per_seen_voxel': 21.758813858032227}
+a_porcelain_wrench_013020 filled metal 2.58e+04 0.379 443 {'occupied_voxels': 5583, 'directly_seen_fraction': 0.8266165256500244, 'mean_views_per_seen_voxel': 83.65351867675781}
+a_porcelain_wrench_013020 shell metal 2.58e+04 0.379 443 {'occupied_voxels': 5573, 'directly_seen_fraction': 0.8275614380836487, 'mean_views_per_seen_voxel': 83.7025146484375}
+a_plush_pillow_soft_cloth_isolated_013020 filled snow 3.6e+05 0.357 162 {'occupied_voxels': 20636, 'directly_seen_fraction': 0.6471700072288513, 'mean_views_per_seen_voxel': 58.01317596435547}
+a_plush_pillow_soft_cloth_isolated_013020 shell snow 3.55e+05 0.357 162 {'occupied_voxels': 20528, 'directly_seen_fraction': 0.6482365727424622, 'mean_views_per_seen_voxel': 58.19456100463867}
+a_plastic_toolbox_013020 filled metal 5.75e+07 0.310 2107 {'occupied_voxels': 24585, 'directly_seen_fraction': 0.6270896792411804, 'mean_views_per_seen_voxel': 51.32807540893555}
+a_plastic_toolbox_013020 shell metal 5.75e+07 0.310 2104 {'occupied_voxels': 24392, 'directly_seen_fraction': 0.6297966837882996, 'mean_views_per_seen_voxel': 51.49876403808594}
+a_plastic_duck_013020 filled jelly 1.25e+06 0.421 342 {'occupied_voxels': 29785, 'directly_seen_fraction': 0.5901963710784912, 'mean_views_per_seen_voxel': 51.196937561035156}
+a_plastic_duck_013020 shell jelly 1.25e+06 0.421 342 {'occupied_voxels': 29217, 'directly_seen_fraction': 0.5998562574386597, 'mean_views_per_seen_voxel': 51.313419342041016}
+a_pine_table_013020 filled sand 1.34e+07 0.316 1383 {'occupied_voxels': 8069, 'directly_seen_fraction': 0.9930598735809326, 'mean_views_per_seen_voxel': 74.02134704589844}
+a_pine_table_013020 shell sand 1.34e+07 0.316 1383 {'occupied_voxels': 8069, 'directly_seen_fraction': 0.9930598735809326, 'mean_views_per_seen_voxel': 74.02134704589844}
+skip a_pewter_mug_013020
+skip a_paper_sword_013020
+skip a_paper_box_013020
+skip a_obsidian_skull_013020
+skip a_obsidian_blade_013020
+skip a_oak_barrel_013020
+skip a_marble_pillar_013020
+skip a_marble_football_013020
+skip a_liquid_metal_statu_013020
+skip a_lead_weight_013020
+skip a_lead_balloon_013020
+skip a_lava_rock_chair_013020
+skip a_lava_rock_013020
+skip a_knitted_wrench_013020
+skip a_knitted_skull_013020
+skip a_jade_keyboard_013020
+skip a_ivory_laptop_013020
+skip a_ivory_carving_013020
+skip a_iron_hammer_013020
+skip a_ice_hammer_013020
+skip a_granite_teddybear_013020
+skip a_granite_obelisk_013020
+skip a_granite_block_013020
+skip a_golden_eggshell_013020
+skip a_gold_coin_013020
+skip a_glass_vase_013020
+skip a_glass_bottle_transparent_reflective_surface_isolated_013020
+skip a_glass_ax_013020
+skip a_folded_cotton_towel_soft_fabric_isolated_013020
+skip a_felt_hat_013020
+skip a_emerald_skull_013020
+skip a_emerald_banana_013020
+skip a_eggshell_mosaic_013020
+skip a_diamond_wrench_013020
+skip a_diamond_bone_013020
+skip a_denim_jacket_013020
+skip a_denim_baseball_cap_013020
+skip a_crystal_bowl_013020
+skip a_cotton_shirt_013020
+skip a_cork_stopper_013020
+skip a_concrete_lightbulb_013020
+skip a_concrete_handbag_013020
+skip a_concrete_bench_013020
+skip a_clay_pot_013020
+skip a_clay_camera_013020
+skip a_chrome_banana_013020
+skip a_ceramic_sneaker_013020
+skip a_ceramic_mug_glossy_ceramic_surface_isolated_013020
+skip a_cast_iron_skillet_013020
+skip a_brushed_aluminum_c_013020
+skip a_bronze_bell_013020
+skip a_bronze_apple_013020
+skip a_brick_teddy_bear_013020
+skip a_brass_trumpet_013020
+skip a_brass_octopus_013020
+skip a_blown_glass_swan_013020
+skip a_amber_bead_013020
+skip a_aluminum_foil_013020

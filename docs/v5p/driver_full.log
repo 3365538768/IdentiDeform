@@ -1,0 +1,99 @@
+22:09:24 train=1000 val=283 test=0
+22:11:45 train=1000 val=283 test=0
+22:14:03 train=1000 val=283 test=7
+22:17:08 train=1000 val=283 test=24
+22:19:41 train=1000 val=283 test=77
+22:22:34 train=1000 val=283 test=116
+22:25:17 train=1000 val=283 test=131
+22:27:47 train=1000 val=283 test=154
+22:30:21 train=1000 val=283 test=194
+22:33:10 train=1000 val=283 test=218
+22:35:45 train=1000 val=283 test=246
+22:38:22 train=1009 val=283 test=265
+22:41:06 train=1028 val=283 test=283
+22:43:47 train=1042 val=283 test=293
+22:46:22 train=1067 val=283 test=294
+22:48:57 train=1097 val=283 test=296
+22:51:36 train=1125 val=283 test=297
+22:54:13 train=1156 val=283 test=298
+22:56:52 train=1178 val=283 test=300
+22:59:26 train=1205 val=283 test=300
+23:02:07 train=1241 val=283 test=300
+23:04:51 train=1271 val=283 test=300
+23:07:29 train=1292 val=283 test=300
+23:10:05 train=1315 val=283 test=300
+23:12:41 train=1352 val=283 test=300
+23:15:22 train=1377 val=283 test=300
+23:17:58 train=1410 val=283 test=300
+23:20:41 train=1432 val=283 test=300
+23:23:17 train=1465 val=283 test=300
+23:25:57 train=1490 val=283 test=300
+23:28:36 train=1527 val=283 test=300
+23:31:18 train=1556 val=283 test=300
+23:33:59 train=1582 val=283 test=300
+23:36:37 train=1611 val=283 test=300
+23:39:16 train=1638 val=283 test=300
+23:42:09 train=1668 val=283 test=300
+23:44:49 train=1704 val=283 test=300
+23:47:34 train=1733 val=283 test=300
+23:50:15 train=1769 val=283 test=300
+23:52:58 train=1788 val=283 test=300
+23:55:34 train=1819 val=283 test=300
+23:58:17 train=1849 val=283 test=300
+00:00:57 train=1889 val=283 test=300
+00:03:43 train=1913 val=283 test=300
+00:06:21 train=1924 val=283 test=300
+00:08:54 train=1935 val=283 test=300
+00:11:26 train=1955 val=283 test=300
+00:14:24 train=1970 val=283 test=300
+00:16:59 train=1983 val=283 test=300
+00:19:33 train=1994 val=283 test=300
+00:22:06 train=1996 val=283 test=300
+00:24:34 train=2000 val=283 test=300
+index data/prepared/v5bmain_t2000_vjl/index.json 2583
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v5b2k_B_seed17.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v5b2k_B_seed29.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v5b2k_B_seed43.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v5b2k_C_seed17.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v5b2k_C_seed29.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v5b2k_C_seed43.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v5b2k_D_seed17.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v5b2k_D_seed29.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v5b2k_D_seed43.json
+ok 2000 283 0
+ok 2000 300 0
+queued 20
+00:25:17 start v5b2k_B_seed29 gpu 7
+00:25:18 start v5b2k_C_seed29 gpu 7
+00:25:19 start v5b2k_D_seed29 gpu 7
+00:25:20 start v5b2k_B_seed17 gpu 7
+00:25:21 start v5b2k_B_seed43 gpu 7
+00:41:34 exit v5b2k_B_seed43 0 gpu 7
+00:48:43 exit v5b2k_B_seed17 0 gpu 7
+00:53:36 exit v5b2k_B_seed29 0 gpu 7
+00:54:36 exit v5b2k_C_seed29 0 gpu 7
+01:00:41 exit v5b2k_D_seed29 0 gpu 7
+01:18:25 start v5b2k_gate gpu 
+01:20:41 exit v5b2k_gate 0 gpu 
+01:20:41 start v5b2k_B_seed29_test gpu 7
+01:20:42 start v5b2k_C_seed29_test gpu 7
+01:20:43 start v5b2k_D_seed29_test gpu 7
+01:20:44 start v5b2k_B_seed17_test gpu 7
+01:20:45 start v5b2k_B_seed43_test gpu 7
+01:21:16 exit v5b2k_C_seed29_test 0 gpu 7
+01:21:16 start v5b2k_C_seed17_test gpu 7
+01:21:32 exit v5b2k_B_seed29_test 0 gpu 7
+01:21:32 exit v5b2k_D_seed29_test 0 gpu 7
+01:21:32 exit v5b2k_B_seed17_test 0 gpu 7
+01:21:32 exit v5b2k_B_seed43_test 0 gpu 7
+01:21:32 start v5b2k_C_seed43_test gpu 7
+01:21:33 start v5b2k_D_seed17_test gpu 7
+01:21:34 start v5b2k_D_seed43_test gpu 7
+01:21:50 exit v5b2k_C_seed17_test 0 gpu 7
+01:22:05 exit v5b2k_C_seed43_test 0 gpu 7
+01:22:05 exit v5b2k_D_seed17_test 0 gpu 7
+01:22:05 exit v5b2k_D_seed43_test 0 gpu 7
+01:22:05 start v5b2k_handoff gpu 
+01:22:21 exit v5b2k_handoff 0 gpu 
+all done
+01:22:22 pool finished

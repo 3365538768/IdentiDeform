@@ -1,0 +1,272 @@
+{
+  "scope": "Original DeformFieldBench Warp-MPM on a 0.5-unit cube (not GS assets); trajectories of all particles at frame_dt; relative_rms normalised by the reference motion RMS.",
+  "frame_dt": 0.03333333333333333,
+  "substep_dt": 0.0001,
+  "results": [
+    {
+      "material": "plasticine",
+      "action": "press",
+      "case": "reference",
+      "overrides": {},
+      "relative_rms": 0.0,
+      "relative_rms_deformation": 0.0,
+      "rms_grid_units": 0.0,
+      "reference_motion_rms": 0.09631233640004637,
+      "reference_deformation_rms": 0.059198881453642
+    },
+    {
+      "material": "plasticine",
+      "action": "press",
+      "case": "E_x4",
+      "overrides": {
+        "E": 40000.0
+      },
+      "relative_rms": 0.1174103205470523,
+      "relative_rms_deformation": 0.18138211579663965,
+      "rms_grid_units": 0.011308062289364979,
+      "reference_motion_rms": 0.09631233640004637,
+      "reference_deformation_rms": 0.059198881453642
+    },
+    {
+      "material": "plasticine",
+      "action": "press",
+      "case": "rho_x4",
+      "overrides": {
+        "density": 4000.0
+      },
+      "relative_rms": 0.07873241278068141,
+      "relative_rms_deformation": 0.12366927631924846,
+      "rms_grid_units": 0.007582902625320299,
+      "reference_motion_rms": 0.09631233640004637,
+      "reference_deformation_rms": 0.059198881453642
+    },
+    {
+      "material": "plasticine",
+      "action": "press",
+      "case": "E_rho_sigma_x4",
+      "overrides": {
+        "E": 40000.0,
+        "density": 4000.0,
+        "yield_stress": 4000.0
+      },
+      "relative_rms": 7.64781188387837e-05,
+      "relative_rms_deformation": 0.00012437765146115253,
+      "rms_grid_units": 7.36578630884366e-06,
+      "reference_motion_rms": 0.09631233640004637,
+      "reference_deformation_rms": 0.059198881453642
+    },
+    {
+      "material": "plasticine",
+      "action": "press",
+      "case": "sigma_x4",
+      "overrides": {
+        "yield_stress": 4000.0
+      },
+      "relative_rms": 0.21762387282968515,
+      "relative_rms_deformation": 0.2943478324877256,
+      "rms_grid_units": 0.020959863648653546,
+      "reference_motion_rms": 0.09631233640004637,
+      "reference_deformation_rms": 0.059198881453642
+    },
+    {
+      "material": "plasticine",
+      "action": "press",
+      "case": "E_x0.25",
+      "overrides": {
+        "E": 2500.0
+      },
+      "relative_rms": 0.2493640348266546,
+      "relative_rms_deformation": 0.3589786685971616,
+      "rms_grid_units": 0.02401683280829764,
+      "reference_motion_rms": 0.09631233640004637,
+      "reference_deformation_rms": 0.059198881453642
+    },
+    {
+      "material": "plasticine",
+      "action": "press",
+      "case": "rho_x0.25",
+      "overrides": {
+        "density": 250.0
+      },
+      "relative_rms": 0.034362145490737094,
+      "relative_rms_deformation": 0.05316167770308621,
+      "rms_grid_units": 0.003309498515931207,
+      "reference_motion_rms": 0.09631233640004637,
+      "reference_deformation_rms": 0.059198881453642
+    },
+    {
+      "material": "plasticine",
+      "action": "press",
+      "case": "E_rho_sigma_x0.25",
+      "overrides": {
+        "E": 2500.0,
+        "density": 250.0,
+        "yield_stress": 250.0
+      },
+      "relative_rms": 0.00024294520284230328,
+      "relative_rms_deformation": 0.0003909960215348382,
+      "rms_grid_units": 2.3398620102925418e-05,
+      "reference_motion_rms": 0.09631233640004637,
+      "reference_deformation_rms": 0.059198881453642
+    },
+    {
+      "material": "plasticine",
+      "action": "press",
+      "case": "sigma_x0.25",
+      "overrides": {
+        "yield_stress": 250.0
+      },
+      "relative_rms": 0.08482477080726,
+      "relative_rms_deformation": 0.13258726693596082,
+      "rms_grid_units": 0.008169671861045658,
+      "reference_motion_rms": 0.09631233640004637,
+      "reference_deformation_rms": 0.059198881453642
+    },
+    {
+      "material": "plasticine",
+      "action": "press",
+      "case": "nu_0.4",
+      "overrides": {
+        "nu": 0.4
+      },
+      "relative_rms": 0.06385907220222367,
+      "relative_rms_deformation": 0.10168069423534278,
+      "rms_grid_units": 0.0061504164441354165,
+      "reference_motion_rms": 0.09631233640004637,
+      "reference_deformation_rms": 0.059198881453642
+    },
+    {
+      "material": "plasticine",
+      "action": "drop",
+      "case": "reference",
+      "overrides": {},
+      "relative_rms": 0.0,
+      "relative_rms_deformation": 0.0,
+      "rms_grid_units": 0.0,
+      "reference_motion_rms": 0.20420035582558593,
+      "reference_deformation_rms": 0.043727576573685874
+    },
+    {
+      "material": "plasticine",
+      "action": "drop",
+      "case": "E_x4",
+      "overrides": {
+        "E": 40000.0
+      },
+      "relative_rms": 0.05113249042855627,
+      "relative_rms_deformation": 0.19241698651493916,
+      "rms_grid_units": 0.010441272739759557,
+      "reference_motion_rms": 0.20420035582558593,
+      "reference_deformation_rms": 0.043727576573685874
+    },
+    {
+      "material": "plasticine",
+      "action": "drop",
+      "case": "rho_x4",
+      "overrides": {
+        "density": 4000.0
+      },
+      "relative_rms": 0.18438495853007664,
+      "relative_rms_deformation": 0.5677571976995127,
+      "rms_grid_units": 0.03765147414072755,
+      "reference_motion_rms": 0.20420035582558593,
+      "reference_deformation_rms": 0.043727576573685874
+    },
+    {
+      "material": "plasticine",
+      "action": "drop",
+      "case": "E_rho_sigma_x4",
+      "overrides": {
+        "E": 40000.0,
+        "density": 4000.0,
+        "yield_stress": 4000.0
+      },
+      "relative_rms": 0.007326078703494489,
+      "relative_rms_deformation": 0.008970185715452767,
+      "rms_grid_units": 0.0014959878780598217,
+      "reference_motion_rms": 0.20420035582558593,
+      "reference_deformation_rms": 0.043727576573685874
+    },
+    {
+      "material": "plasticine",
+      "action": "drop",
+      "case": "sigma_x4",
+      "overrides": {
+        "yield_stress": 4000.0
+      },
+      "relative_rms": 0.18971592341851115,
+      "relative_rms_deformation": 0.6283719378840393,
+      "rms_grid_units": 0.03874005906783959,
+      "reference_motion_rms": 0.20420035582558593,
+      "reference_deformation_rms": 0.043727576573685874
+    },
+    {
+      "material": "plasticine",
+      "action": "drop",
+      "case": "E_x0.25",
+      "overrides": {
+        "E": 2500.0
+      },
+      "relative_rms": 0.14498905408230037,
+      "relative_rms_deformation": 0.40068107216322485,
+      "rms_grid_units": 0.029606816434420855,
+      "reference_motion_rms": 0.20420035582558593,
+      "reference_deformation_rms": 0.043727576573685874
+    },
+    {
+      "material": "plasticine",
+      "action": "drop",
+      "case": "rho_x0.25",
+      "overrides": {
+        "density": 250.0
+      },
+      "relative_rms": 0.2783488546954507,
+      "relative_rms_deformation": 0.7697766500765383,
+      "rms_grid_units": 0.05683893517245534,
+      "reference_motion_rms": 0.20420035582558593,
+      "reference_deformation_rms": 0.043727576573685874
+    },
+    {
+      "material": "plasticine",
+      "action": "drop",
+      "case": "E_rho_sigma_x0.25",
+      "overrides": {
+        "E": 2500.0,
+        "density": 250.0,
+        "yield_stress": 250.0
+      },
+      "relative_rms": 0.030291539076753488,
+      "relative_rms_deformation": 0.03563208543777136,
+      "rms_grid_units": 0.006185543057977703,
+      "reference_motion_rms": 0.20420035582558593,
+      "reference_deformation_rms": 0.043727576573685874
+    },
+    {
+      "material": "plasticine",
+      "action": "drop",
+      "case": "sigma_x0.25",
+      "overrides": {
+        "yield_stress": 250.0
+      },
+      "relative_rms": 0.1817255596850268,
+      "relative_rms_deformation": 0.7346097265000918,
+      "rms_grid_units": 0.037108423950286226,
+      "reference_motion_rms": 0.20420035582558593,
+      "reference_deformation_rms": 0.043727576573685874
+    },
+    {
+      "material": "plasticine",
+      "action": "drop",
+      "case": "nu_0.4",
+      "overrides": {
+        "nu": 0.4
+      },
+      "relative_rms": 0.028674815331274875,
+      "relative_rms_deformation": 0.11847716118398498,
+      "rms_grid_units": 0.005855407493879296,
+      "reference_motion_rms": 0.20420035582558593,
+      "reference_deformation_rms": 0.043727576573685874
+    }
+  ],
+  "status": "complete"
+}

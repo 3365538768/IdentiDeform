@@ -1,0 +1,3555 @@
+{
+ "phase": "v3b",
+ "max_per_gpu": 6,
+ "jobs": [
+  {
+   "id": "v3b_C2mix_seed17",
+   "kind": "train",
+   "config": "configs/v3b/v3b_C2mix_seed17.json",
+   "group": "v3b-C2",
+   "seed": 17,
+   "mem_mib": 14000,
+   "retries": 2
+  },
+  {
+   "id": "v3b_C2mix_seed29",
+   "kind": "train",
+   "config": "configs/v3b/v3b_C2mix_seed29.json",
+   "group": "v3b-C2",
+   "seed": 29,
+   "mem_mib": 14000,
+   "retries": 2
+  },
+  {
+   "id": "v3b_C2mix_seed43",
+   "kind": "train",
+   "config": "configs/v3b/v3b_C2mix_seed43.json",
+   "group": "v3b-C2",
+   "seed": 43,
+   "mem_mib": 14000,
+   "retries": 2
+  },
+  {
+   "id": "v3b_C1_000002",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 2 --budget 24 --replay-budgets 0,4,12,24 --gt-observed"
+  },
+  {
+   "id": "v3b_C1p24_000002",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 2 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000002"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000002",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 2 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000002",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 2 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000005",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 5 --budget 24 --replay-budgets 0,4,12,24 --gt-observed"
+  },
+  {
+   "id": "v3b_C1p24_000005",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 5 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000005"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000005",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 5 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000005",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 5 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000007",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 7 --budget 24 --replay-budgets 0,4,12,24 --gt-observed"
+  },
+  {
+   "id": "v3b_C1p24_000007",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 7 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000007"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000007",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 7 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000007",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 7 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000009",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 9 --budget 24 --replay-budgets 0,4,12,24 --gt-observed"
+  },
+  {
+   "id": "v3b_C1p24_000009",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 9 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000009"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000009",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 9 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000009",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 9 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000021",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 21 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000021",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 21 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000021"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000021",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 21 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000021",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 21 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000025",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 25 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000025",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 25 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000025"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000025",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 25 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000025",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 25 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000029",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 29 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000029",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 29 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000029"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000029",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 29 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000029",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 29 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000052",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 52 --budget 24 --replay-budgets 0,4,12,24 --gt-observed"
+  },
+  {
+   "id": "v3b_C1p24_000052",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 52 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000052"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000052",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 52 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000052",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 52 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000053",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 53 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000053",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 53 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000053"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000053",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 53 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000053",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 53 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000066",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 66 --budget 24 --replay-budgets 0,4,12,24 --gt-observed"
+  },
+  {
+   "id": "v3b_C1p24_000066",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 66 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000066"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000066",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 66 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000066",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 66 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000068",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 68 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000068",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 68 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000068"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000068",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 68 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000068",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 68 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000070",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 70 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000070",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 70 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000070"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000070",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 70 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000070",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 70 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000071",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 71 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000071",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 71 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000071"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000071",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 71 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000071",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 71 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000073",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 73 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000073",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 73 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000073"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000073",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 73 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000073",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 73 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000089",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 89 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000089",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 89 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000089"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000089",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 89 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000089",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 89 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000093",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 93 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000093",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 93 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000093"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000093",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 93 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000093",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 93 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000096",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 96 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000096",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 96 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000096"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000096",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 96 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000096",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 96 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000106",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 106 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000106",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 106 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000106"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000106",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 106 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000106",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 106 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000113",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 113 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000113",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 113 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000113"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000113",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 113 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000113",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 113 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000114",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 114 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000114",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 114 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000114"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000114",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 114 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000114",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 114 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000118",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 118 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000118",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 118 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000118"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000118",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 118 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000118",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 118 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000119",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 119 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000119",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 119 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000119"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000119",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 119 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000119",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 119 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000127",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 127 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000127",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 127 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000127"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000127",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 127 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000127",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 127 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000134",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 134 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000134",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 134 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000134"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000134",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 134 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000134",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 134 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000135",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 135 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000135",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 135 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000135"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000135",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 135 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000135",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 135 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000136",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 136 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000136",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 136 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000136"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000136",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 136 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000136",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 136 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000139",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 139 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000139",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 139 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000139"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000139",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 139 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000139",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 139 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000141",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 141 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000141",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 141 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000141"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000141",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 141 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000141",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 141 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000148",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 148 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000148",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 148 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000148"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000148",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 148 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000148",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 148 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000152",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 152 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000152",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 152 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000152"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000152",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 152 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000152",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 152 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000154",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 154 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000154",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 154 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000154"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000154",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 154 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000154",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 154 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000159",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 159 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000159",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 159 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000159"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000159",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 159 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000159",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 159 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000180",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 180 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000180",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 180 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000180"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000180",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 180 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000180",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 180 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000181",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 181 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000181",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 181 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000181"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000181",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 181 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000181",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 181 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000182",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 182 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000182",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 182 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000182"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000182",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 182 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000182",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 182 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000184",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 184 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000184",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 184 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000184"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000184",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 184 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000184",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 184 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000188",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 188 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000188",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 188 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000188"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000188",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 188 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000188",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 188 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000198",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 198 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000198",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 198 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000198"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000198",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 198 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000198",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 198 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000200",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 200 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000200",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 200 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000200"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000200",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 200 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000200",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 200 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000202",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 202 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000202",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 202 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000202"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000202",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 202 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000202",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 202 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000210",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 210 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000210",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 210 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000210"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000210",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 210 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000210",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 210 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000212",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 212 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000212",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 212 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000212"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000212",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 212 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000212",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 212 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000216",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 216 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000216",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 216 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000216"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000216",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 216 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000216",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 216 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000219",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 219 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000219",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 219 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000219"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000219",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 219 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000219",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 219 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000222",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 222 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000222",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 222 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000222"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000222",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 222 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000222",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 222 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000228",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 228 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000228",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 228 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000228"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000228",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 228 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000228",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 228 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000231",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 231 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000231",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 231 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000231"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000231",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 231 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000231",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 231 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000235",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 235 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000235",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 235 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000235"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000235",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 235 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000235",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 235 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000241",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 241 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000241",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 241 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000241"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000241",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 241 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000241",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 241 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000245",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 245 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000245",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 245 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000245"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000245",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 245 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000245",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 245 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000248",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 248 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000248",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 248 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000248"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000248",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 248 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000248",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 248 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000261",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 261 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000261",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 261 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000261"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000261",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 261 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000261",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 261 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000265",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 265 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000265",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 265 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000265"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000265",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 265 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000265",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 265 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000272",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 272 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000272",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 272 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000272"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000272",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 272 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000272",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 272 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000276",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 276 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000276",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 276 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000276"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000276",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 276 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000276",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 276 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000283",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 283 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000283",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 283 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000283"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000283",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 283 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000283",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 283 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000293",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 293 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000293",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 293 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000293"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000293",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 293 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000293",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 293 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000295",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 295 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000295",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 295 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000295"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000295",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 295 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000295",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 295 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000296",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 296 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000296",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 296 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000296"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000296",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 296 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000296",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 296 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1_000297",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 297 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1p24_000297",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 297 --budget 24 --replay-budgets 0,4,12,24",
+   "after": [
+    "v3b_C1_000297"
+   ]
+  },
+  {
+   "id": "v3b_C1g_000297",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 297 --arm lawmean_gt --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1b_000297",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 297 --arm lawmean_best3 --budget 24 --replay-budgets 12,24"
+  },
+  {
+   "id": "v3b_C1t_000002",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 2 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000005",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 5 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000007",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 7 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000009",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 9 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000021",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 21 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000025",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 25 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000029",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 29 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000052",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 52 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000053",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 53 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000066",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 66 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000068",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 68 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000070",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 70 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000071",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 71 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000073",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 73 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000089",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 89 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000093",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 93 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000096",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 96 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000106",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 106 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000113",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 113 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000114",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 114 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000118",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 118 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000119",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 119 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000127",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 127 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000134",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 134 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000135",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 135 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000136",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 136 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000139",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 139 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000141",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 141 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000148",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 148 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000152",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 152 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000154",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 154 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000159",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 159 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000180",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 180 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000181",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 181 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000182",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 182 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000184",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 184 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000188",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 188 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000198",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 198 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000200",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 200 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000202",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 202 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000210",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 210 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000212",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 212 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000216",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 216 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000219",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 219 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000222",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 222 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000228",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 228 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000231",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 231 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000235",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 235 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000241",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 241 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000245",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 245 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000248",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 248 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000261",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 261 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000265",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 265 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000272",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 272 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000276",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 276 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000283",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 283 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000293",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 293 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000295",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 295 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000296",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 296 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1t_000297",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 297 --arm prior_top2 --budget 24 --replay-budgets 0,4,12,24"
+  },
+  {
+   "id": "v3b_C1u_000002",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 2 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000005",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 5 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000007",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 7 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000009",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 9 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000021",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 21 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000025",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 25 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000029",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 29 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000052",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 52 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000053",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 53 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000066",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 66 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000068",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 68 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000070",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 70 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000071",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 71 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000073",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 73 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000089",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 89 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000093",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 93 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000096",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 96 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000106",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 106 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000113",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 113 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000114",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 114 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000118",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 118 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000119",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 119 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000127",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 127 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000134",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 134 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000135",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 135 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000136",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 136 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000139",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 139 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000141",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 141 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000148",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 148 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000152",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 152 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000154",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 154 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000159",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 159 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000180",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 180 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000181",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 181 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000182",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 182 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000184",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 184 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000188",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 188 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000198",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 198 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000200",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 200 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000202",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 202 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000210",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 210 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000212",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 212 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000216",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 216 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000219",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 219 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000222",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 222 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000228",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 228 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000231",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 231 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000235",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 235 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000241",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 241 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000245",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 245 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000248",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 248 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000261",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 261 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000265",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 265 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000272",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 272 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000276",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 276 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000283",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 283 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000293",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 293 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000295",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 295 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000296",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 296 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1u_000297",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 297 --arm prior_sigma --budget 12 --replay-budgets 12"
+  },
+  {
+   "id": "v3b_C1g48_000002",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 2 --arm lawmean_gt --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1g_000002"
+   ]
+  },
+  {
+   "id": "v3b_C1b48_000002",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 2 --arm lawmean_best3 --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1b_000002"
+   ]
+  },
+  {
+   "id": "v3b_C1g48_000005",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 5 --arm lawmean_gt --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1g_000005"
+   ]
+  },
+  {
+   "id": "v3b_C1b48_000005",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 5 --arm lawmean_best3 --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1b_000005"
+   ]
+  },
+  {
+   "id": "v3b_C1g48_000007",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 7 --arm lawmean_gt --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1g_000007"
+   ]
+  },
+  {
+   "id": "v3b_C1b48_000007",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 7 --arm lawmean_best3 --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1b_000007"
+   ]
+  },
+  {
+   "id": "v3b_C1g48_000009",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 9 --arm lawmean_gt --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1g_000009"
+   ]
+  },
+  {
+   "id": "v3b_C1b48_000009",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 9 --arm lawmean_best3 --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1b_000009"
+   ]
+  },
+  {
+   "id": "v3b_C1g48_000021",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 21 --arm lawmean_gt --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1g_000021"
+   ]
+  },
+  {
+   "id": "v3b_C1b48_000021",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 21 --arm lawmean_best3 --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1b_000021"
+   ]
+  },
+  {
+   "id": "v3b_C1g48_000029",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 29 --arm lawmean_gt --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1g_000029"
+   ]
+  },
+  {
+   "id": "v3b_C1b48_000029",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 29 --arm lawmean_best3 --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1b_000029"
+   ]
+  },
+  {
+   "id": "v3b_C1g48_000052",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 52 --arm lawmean_gt --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1g_000052"
+   ]
+  },
+  {
+   "id": "v3b_C1b48_000052",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 52 --arm lawmean_best3 --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1b_000052"
+   ]
+  },
+  {
+   "id": "v3b_C1g48_000053",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 53 --arm lawmean_gt --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1g_000053"
+   ]
+  },
+  {
+   "id": "v3b_C1b48_000053",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 53 --arm lawmean_best3 --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1b_000053"
+   ]
+  },
+  {
+   "id": "v3b_C1g48_000066",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 66 --arm lawmean_gt --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1g_000066"
+   ]
+  },
+  {
+   "id": "v3b_C1b48_000066",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 66 --arm lawmean_best3 --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1b_000066"
+   ]
+  },
+  {
+   "id": "v3b_C1g48_000068",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 68 --arm lawmean_gt --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1g_000068"
+   ]
+  },
+  {
+   "id": "v3b_C1b48_000068",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 68 --arm lawmean_best3 --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1b_000068"
+   ]
+  },
+  {
+   "id": "v3b_C1g48_000073",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 73 --arm lawmean_gt --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1g_000073"
+   ]
+  },
+  {
+   "id": "v3b_C1b48_000073",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 73 --arm lawmean_best3 --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1b_000073"
+   ]
+  },
+  {
+   "id": "v3b_C1g48_000096",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 96 --arm lawmean_gt --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1g_000096"
+   ]
+  },
+  {
+   "id": "v3b_C1b48_000096",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 96 --arm lawmean_best3 --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1b_000096"
+   ]
+  },
+  {
+   "id": "v3b_C1g48_000118",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 118 --arm lawmean_gt --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1g_000118"
+   ]
+  },
+  {
+   "id": "v3b_C1b48_000118",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 118 --arm lawmean_best3 --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1b_000118"
+   ]
+  },
+  {
+   "id": "v3b_C1g48_000134",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 134 --arm lawmean_gt --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1g_000134"
+   ]
+  },
+  {
+   "id": "v3b_C1b48_000134",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 134 --arm lawmean_best3 --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1b_000134"
+   ]
+  },
+  {
+   "id": "v3b_C1g48_000139",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 139 --arm lawmean_gt --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1g_000139"
+   ]
+  },
+  {
+   "id": "v3b_C1b48_000139",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 139 --arm lawmean_best3 --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1b_000139"
+   ]
+  },
+  {
+   "id": "v3b_C1g48_000141",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 141 --arm lawmean_gt --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1g_000141"
+   ]
+  },
+  {
+   "id": "v3b_C1b48_000141",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 141 --arm lawmean_best3 --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1b_000141"
+   ]
+  },
+  {
+   "id": "v3b_C1g48_000148",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 148 --arm lawmean_gt --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1g_000148"
+   ]
+  },
+  {
+   "id": "v3b_C1b48_000148",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 148 --arm lawmean_best3 --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1b_000148"
+   ]
+  },
+  {
+   "id": "v3b_C1g48_000180",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 180 --arm lawmean_gt --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1g_000180"
+   ]
+  },
+  {
+   "id": "v3b_C1b48_000180",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 180 --arm lawmean_best3 --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1b_000180"
+   ]
+  },
+  {
+   "id": "v3b_C1g48_000025",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 25 --arm lawmean_gt --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1g_000025"
+   ]
+  },
+  {
+   "id": "v3b_C1b48_000025",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 25 --arm lawmean_best3 --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1b_000025"
+   ]
+  },
+  {
+   "id": "v3b_C1g48_000070",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 70 --arm lawmean_gt --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1g_000070"
+   ]
+  },
+  {
+   "id": "v3b_C1b48_000070",
+   "kind": "cmd",
+   "group": "v3b-C1",
+   "mem_mib": 14000,
+   "retries": 6,
+   "cmd": ".venv/bin/python scripts/v3b/c1_refine.py --run v2main_C_seed29 --index 70 --arm lawmean_best3 --budget 48 --replay-budgets 12,24,48",
+   "after": [
+    "v3b_C1b_000070"
+   ]
+  }
+ ],
+ "c1_subset48": [
+  2,
+  5,
+  7,
+  9,
+  21,
+  29,
+  52,
+  53,
+  66,
+  68,
+  73,
+  96,
+  118,
+  134,
+  139,
+  141,
+  148,
+  180,
+  25,
+  70
+ ]
+}

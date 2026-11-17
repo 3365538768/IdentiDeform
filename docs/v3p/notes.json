@@ -1,0 +1,716 @@
+{
+ "headline": {
+  "V2/val": {
+   "C (3 seeds)": {
+    "z_mae": {
+     "value": 0.6440708240609001,
+     "ci95": [
+      0.6157551567190724,
+      0.6745544739182683
+     ]
+    },
+    "ident_z_mae": {
+     "value": 0.39362644655400353,
+     "ci95": [
+      0.3610366343069185,
+      0.43034263590773
+     ]
+    },
+    "law_accuracy": {
+     "value": 0.6607773851590106,
+     "ci95": [
+      0.6212108284207261,
+      0.701113213811421
+     ]
+    },
+    "within_law_pearson_E_over_rho": {
+     "value": 0.6342172708404524,
+     "ci95": [
+      0.5753105035588979,
+      0.697137210532032
+     ]
+    },
+    "within_law_spearman_E_over_rho": {
+     "value": 0.6403833053727588,
+     "ci95": [
+      0.5785049975072797,
+      0.694277733133764
+     ]
+    },
+    "within_law_pearson_sigma_y_over_rho": {
+     "value": 0.8749142260373447,
+     "ci95": [
+      0.8434172981775913,
+      0.8913972588298145
+     ]
+    },
+    "within_law_spearman_sigma_y_over_rho": {
+     "value": 0.8617016386174786,
+     "ci95": [
+      0.8186150933619254,
+      0.8810550276973387
+     ]
+    },
+    "decade_mae_E_over_rho": {
+     "value": 0.4412774702896622,
+     "ci95": [
+      0.3962342173114949,
+      0.4916381515385344
+     ]
+    },
+    "decade_mae_sigma_y_over_rho": {
+     "value": 0.4501200452691048,
+     "ci95": [
+      0.3955986668822,
+      0.508267438456917
+     ]
+    }
+   },
+   "ensemble_BCD9": {
+    "z_mae": {
+     "value": 0.616246852638067,
+     "ci95": [
+      0.5865065351242834,
+      0.6476156640080216
+     ]
+    },
+    "ident_z_mae": {
+     "value": 0.3507024887738301,
+     "ci95": [
+      0.3095169379161676,
+      0.3978153480286397
+     ]
+    },
+    "law_accuracy": {
+     "value": 0.6996466431095406,
+     "ci95": [
+      0.6433811274509804,
+      0.7528980602685782
+     ]
+    },
+    "within_law_pearson_E_over_rho": {
+     "value": 0.685693981149842,
+     "ci95": [
+      0.6165826772481425,
+      0.7661740115061862
+     ]
+    },
+    "within_law_spearman_E_over_rho": {
+     "value": 0.7135210767541048,
+     "ci95": [
+      0.6433595547343341,
+      0.7786569023239354
+     ]
+    },
+    "within_law_pearson_sigma_y_over_rho": {
+     "value": 0.8946324071928032,
+     "ci95": [
+      0.8686353111674822,
+      0.910538395619551
+     ]
+    },
+    "within_law_spearman_sigma_y_over_rho": {
+     "value": 0.8841559297993542,
+     "ci95": [
+      0.8415815900420848,
+      0.9017121871021067
+     ]
+    },
+    "decade_mae_E_over_rho": {
+     "value": 0.3813701358282338,
+     "ci95": [
+      0.3230314837918337,
+      0.44768721200251466
+     ]
+    },
+    "decade_mae_sigma_y_over_rho": {
+     "value": 0.4210423182656892,
+     "ci95": [
+      0.3631762700945898,
+      0.481173969089513
+     ]
+    }
+   },
+   "constant_train_mean": {
+    "decade_mae_E_over_rho": 0.9018672145663311,
+    "decade_mae_sigma_y_over_rho": 1.077553450012657,
+    "z_mae": 0.8575882477086423,
+    "ident_z_mae": 0.8645883095971174
+   },
+   "ensemble_gain_over_constant_rel": {
+    "decade_mae_E_over_rho": 0.5771327201292951,
+    "decade_mae_sigma_y_over_rho": 0.6092608508090771,
+    "z_mae": 0.2814187294606779,
+    "ident_z_mae": 0.5943705404283675
+   }
+  },
+  "V2/test": {
+   "C (3 seeds)": {
+    "z_mae": {
+     "value": 0.6759782702168682,
+     "ci95": [
+      0.6393181882081657,
+      0.7167804672106037
+     ]
+    },
+    "ident_z_mae": {
+     "value": 0.44926292180125255,
+     "ci95": [
+      0.3938925067591565,
+      0.5140937878688259
+     ]
+    },
+    "law_accuracy": {
+     "value": 0.7177777777777777,
+     "ci95": [
+      0.6655655369538588,
+      0.7725803620681009
+     ]
+    },
+    "within_law_pearson_E_over_rho": {
+     "value": 0.607699057917241,
+     "ci95": [
+      0.5625326890750082,
+      0.6706403025536829
+     ]
+    },
+    "within_law_spearman_E_over_rho": {
+     "value": 0.6247390390748707,
+     "ci95": [
+      0.5674429181555212,
+      0.6853120487982018
+     ]
+    },
+    "within_law_pearson_sigma_y_over_rho": {
+     "value": 0.7537636930223052,
+     "ci95": [
+      0.6580280221499881,
+      0.8346351526141476
+     ]
+    },
+    "within_law_spearman_sigma_y_over_rho": {
+     "value": 0.7416971894002004,
+     "ci95": [
+      0.6368742690431146,
+      0.8223105798636511
+     ]
+    },
+    "decade_mae_E_over_rho": {
+     "value": 0.46505569838145294,
+     "ci95": [
+      0.39968782095253635,
+      0.541467509733246
+     ]
+    },
+    "decade_mae_sigma_y_over_rho": {
+     "value": 0.5783398390215814,
+     "ci95": [
+      0.5085736008344668,
+      0.6503746144701786
+     ]
+    }
+   },
+   "ensemble_BCD9": {
+    "z_mae": {
+     "value": 0.6460587754369654,
+     "ci95": [
+      0.6079206782483056,
+      0.6902127191292192
+     ]
+    },
+    "ident_z_mae": {
+     "value": 0.40407274116142206,
+     "ci95": [
+      0.3440458942125673,
+      0.4748161571633292
+     ]
+    },
+    "law_accuracy": {
+     "value": 0.7433333333333333,
+     "ci95": [
+      0.6860794747323873,
+      0.8020142817875713
+     ]
+    },
+    "within_law_pearson_E_over_rho": {
+     "value": 0.6292136249010583,
+     "ci95": [
+      0.5826034050716621,
+      0.6976363545969175
+     ]
+    },
+    "within_law_spearman_E_over_rho": {
+     "value": 0.653113311331133,
+     "ci95": [
+      0.5971455344181353,
+      0.7119681422415846
+     ]
+    },
+    "within_law_pearson_sigma_y_over_rho": {
+     "value": 0.7934126762077227,
+     "ci95": [
+      0.7026442230064835,
+      0.8641295736349877
+     ]
+    },
+    "within_law_spearman_sigma_y_over_rho": {
+     "value": 0.788155146250547,
+     "ci95": [
+      0.6809479203318975,
+      0.866529927688581
+     ]
+    },
+    "decade_mae_E_over_rho": {
+     "value": 0.413424263736403,
+     "ci95": [
+      0.34292124413007335,
+      0.4946184060854456
+     ]
+    },
+    "decade_mae_sigma_y_over_rho": {
+     "value": 0.5301771510364947,
+     "ci95": [
+      0.45159603684246685,
+      0.6088727330858844
+     ]
+    }
+   },
+   "constant_train_mean": {
+    "decade_mae_E_over_rho": 0.8656101941647095,
+    "decade_mae_sigma_y_over_rho": 1.0541655441884146,
+    "z_mae": 0.8531698527522141,
+    "ident_z_mae": 0.8354040698335381
+   },
+   "ensemble_gain_over_constant_rel": {
+    "decade_mae_E_over_rho": 0.522389793323372,
+    "decade_mae_sigma_y_over_rho": 0.49706461764061005,
+    "z_mae": 0.24275480040361896,
+    "ident_z_mae": 0.5163146125898845
+   }
+  },
+  "V3/val": {
+   "C (3 seeds)": {
+    "z_mae": {
+     "value": 0.8047086180729949,
+     "ci95": [
+      0.7807511997131608,
+      0.8288228065797237
+     ]
+    },
+    "ident_z_mae": {
+     "value": 0.7698438104406718,
+     "ci95": [
+      0.7269398262717758,
+      0.817310543585933
+     ]
+    },
+    "law_accuracy": {
+     "value": 0.5053003533568905,
+     "ci95": [
+      0.46643497701838527,
+      0.5494522084195996
+     ]
+    },
+    "within_law_pearson_E_over_rho": {
+     "value": 0.3585180848778416,
+     "ci95": [
+      0.24338835209117007,
+      0.4742439913856817
+     ]
+    },
+    "within_law_spearman_E_over_rho": {
+     "value": 0.3644101863867475,
+     "ci95": [
+      0.23796856825186577,
+      0.4746549594164382
+     ]
+    },
+    "within_law_pearson_sigma_y_over_rho": {
+     "value": 0.4214103404454062,
+     "ci95": [
+      0.3252630510759788,
+      0.5143020796458603
+     ]
+    },
+    "within_law_spearman_sigma_y_over_rho": {
+     "value": 0.41382752051648586,
+     "ci95": [
+      0.30751299063538884,
+      0.5054845405207089
+     ]
+    },
+    "decade_mae_E_over_rho": {
+     "value": 0.49803377614364547,
+     "ci95": [
+      0.45787997771392847,
+      0.5460196504103845
+     ]
+    },
+    "decade_mae_sigma_y_over_rho": {
+     "value": 0.2990466092721279,
+     "ci95": [
+      0.2757906318376278,
+      0.32571267643423
+     ]
+    }
+   },
+   "ensemble_BCD9": {
+    "z_mae": {
+     "value": 0.7790386691326254,
+     "ci95": [
+      0.756789412043204,
+      0.8012144561847274
+     ]
+    },
+    "ident_z_mae": {
+     "value": 0.7293921211395379,
+     "ci95": [
+      0.6912466490869283,
+      0.7718324261736947
+     ]
+    },
+    "law_accuracy": {
+     "value": 0.5477031802120141,
+     "ci95": [
+      0.5018050541516246,
+      0.5869623239981433
+     ]
+    },
+    "within_law_pearson_E_over_rho": {
+     "value": 0.4382598736598579,
+     "ci95": [
+      0.30764049981416813,
+      0.5800121850571207
+     ]
+    },
+    "within_law_spearman_E_over_rho": {
+     "value": 0.457949674288673,
+     "ci95": [
+      0.3006470777592845,
+      0.5954872353214354
+     ]
+    },
+    "within_law_pearson_sigma_y_over_rho": {
+     "value": 0.4886592068074554,
+     "ci95": [
+      0.38986040898925517,
+      0.5803154454905607
+     ]
+    },
+    "within_law_spearman_sigma_y_over_rho": {
+     "value": 0.4846319528998352,
+     "ci95": [
+      0.3676800673502984,
+      0.5638377075620697
+     ]
+    },
+    "decade_mae_E_over_rho": {
+     "value": 0.4666825144342872,
+     "ci95": [
+      0.425468478640408,
+      0.5118952336035036
+     ]
+    },
+    "decade_mae_sigma_y_over_rho": {
+     "value": 0.28861505266468407,
+     "ci95": [
+      0.2619224287129284,
+      0.31866434484446154
+     ]
+    }
+   },
+   "constant_train_mean": {
+    "decade_mae_E_over_rho": 0.5591838767594132,
+    "decade_mae_sigma_y_over_rho": 0.3318196443732536,
+    "z_mae": 0.8570497321021341,
+    "ident_z_mae": 0.8606043800962577
+   },
+   "ensemble_gain_over_constant_rel": {
+    "decade_mae_E_over_rho": 0.16542208416521342,
+    "decade_mae_sigma_y_over_rho": 0.13020504494293905,
+    "z_mae": 0.09102279604961372,
+    "ident_z_mae": 0.152465246507395
+   }
+  },
+  "V3/test": {
+   "C (3 seeds)": {
+    "z_mae": {
+     "value": 0.7987215795898269,
+     "ci95": [
+      0.7697569189209472,
+      0.8309127882077697
+     ]
+    },
+    "ident_z_mae": {
+     "value": 0.7564329815520668,
+     "ci95": [
+      0.697312693530766,
+      0.8273196536918223
+     ]
+    },
+    "law_accuracy": {
+     "value": 0.5144444444444445,
+     "ci95": [
+      0.4807204700061843,
+      0.5479321340186559
+     ]
+    },
+    "within_law_pearson_E_over_rho": {
+     "value": 0.3579196811781498,
+     "ci95": [
+      0.2680823999874963,
+      0.47543573711475084
+     ]
+    },
+    "within_law_spearman_E_over_rho": {
+     "value": 0.3497199815337319,
+     "ci95": [
+      0.24465715663750415,
+      0.465234101801066
+     ]
+    },
+    "within_law_pearson_sigma_y_over_rho": {
+     "value": 0.4307375094983415,
+     "ci95": [
+      0.32949236668445087,
+      0.5022183264835345
+     ]
+    },
+    "within_law_spearman_sigma_y_over_rho": {
+     "value": 0.4211339191450854,
+     "ci95": [
+      0.29450313020148955,
+      0.500447963391916
+     ]
+    },
+    "decade_mae_E_over_rho": {
+     "value": 0.4972864787703514,
+     "ci95": [
+      0.45035472602714344,
+      0.5523916284379392
+     ]
+    },
+    "decade_mae_sigma_y_over_rho": {
+     "value": 0.2861894784796471,
+     "ci95": [
+      0.2658151223683192,
+      0.30962128437646774
+     ]
+    }
+   },
+   "ensemble_BCD9": {
+    "z_mae": {
+     "value": 0.77542033814292,
+     "ci95": [
+      0.7453447340290125,
+      0.8076022685641043
+     ]
+    },
+    "ident_z_mae": {
+     "value": 0.7162768948702829,
+     "ci95": [
+      0.6545848733801287,
+      0.7849255496934314
+     ]
+    },
+    "law_accuracy": {
+     "value": 0.5466666666666666,
+     "ci95": [
+      0.4936285185946168,
+      0.6
+     ]
+    },
+    "within_law_pearson_E_over_rho": {
+     "value": 0.4362868835197988,
+     "ci95": [
+      0.3435662920447692,
+      0.5651987244619565
+     ]
+    },
+    "within_law_spearman_E_over_rho": {
+     "value": 0.4218986575426264,
+     "ci95": [
+      0.3052783913373136,
+      0.5542159758440022
+     ]
+    },
+    "within_law_pearson_sigma_y_over_rho": {
+     "value": 0.46966608379056496,
+     "ci95": [
+      0.34586244561689716,
+      0.5593361266558512
+     ]
+    },
+    "within_law_spearman_sigma_y_over_rho": {
+     "value": 0.473612678435948,
+     "ci95": [
+      0.30741800173380895,
+      0.564932792448193
+     ]
+    },
+    "decade_mae_E_over_rho": {
+     "value": 0.4637045203323675,
+     "ci95": [
+      0.41367314436848357,
+      0.5197191255385114
+     ]
+    },
+    "decade_mae_sigma_y_over_rho": {
+     "value": 0.2788078106796032,
+     "ci95": [
+      0.2579932927108062,
+      0.30255105160226425
+     ]
+    }
+   },
+   "constant_train_mean": {
+    "decade_mae_E_over_rho": 0.5553508584934879,
+    "decade_mae_sigma_y_over_rho": 0.32163618938360566,
+    "z_mae": 0.8584833334289413,
+    "ident_z_mae": 0.8466152453591541
+   },
+   "ensemble_gain_over_constant_rel": {
+    "decade_mae_E_over_rho": 0.1650242126387116,
+    "decade_mae_sigma_y_over_rho": 0.13315783521151714,
+    "z_mae": 0.09675551295125595,
+    "ident_z_mae": 0.1539522837597599
+   }
+  }
+ },
+ "per_action_val_ensemble": {
+  "V2": {
+   "bend": {
+    "n": 45,
+    "law_acc": 0.84,
+    "r_E": 0.67,
+    "r_sig": 0.97,
+    "ident_zmae": 0.294
+   },
+   "drop": {
+    "n": 48,
+    "law_acc": 0.65,
+    "r_E": 0.75,
+    "r_sig": 0.85,
+    "ident_zmae": 0.332
+   },
+   "press": {
+    "n": 48,
+    "law_acc": 0.6,
+    "r_E": 0.61,
+    "r_sig": 0.82,
+    "ident_zmae": 0.471
+   },
+   "shear": {
+    "n": 49,
+    "law_acc": 0.71,
+    "r_E": 0.81,
+    "r_sig": 0.96,
+    "ident_zmae": 0.31
+   },
+   "stretch": {
+    "n": 50,
+    "law_acc": 0.76,
+    "r_E": 0.65,
+    "r_sig": 0.93,
+    "ident_zmae": 0.314
+   },
+   "tap30hold": {
+    "n": 43,
+    "law_acc": 0.63,
+    "r_E": 0.72,
+    "r_sig": 0.82,
+    "ident_zmae": 0.385
+   }
+  },
+  "V3": {
+   "bend": {
+    "n": 46,
+    "law_acc": 0.54,
+    "r_E": 0.4,
+    "r_sig": 0.71,
+    "ident_zmae": 0.62
+   },
+   "drop": {
+    "n": 48,
+    "law_acc": 0.54,
+    "r_E": 0.42,
+    "r_sig": 0.63,
+    "ident_zmae": 0.663
+   },
+   "press": {
+    "n": 48,
+    "law_acc": 0.6,
+    "r_E": 0.39,
+    "r_sig": 0.53,
+    "ident_zmae": 0.821
+   },
+   "shear": {
+    "n": 48,
+    "law_acc": 0.48,
+    "r_E": 0.44,
+    "r_sig": 0.04,
+    "ident_zmae": 0.791
+   },
+   "stretch": {
+    "n": 48,
+    "law_acc": 0.56,
+    "r_E": 0.57,
+    "r_sig": 0.51,
+    "ident_zmae": 0.679
+   },
+   "tap30hold": {
+    "n": 45,
+    "law_acc": 0.56,
+    "r_E": 0.47,
+    "r_sig": 0.65,
+    "ident_zmae": 0.802
+   }
+  }
+ },
+ "differences_vs_v2": [
+  "Data: V3 = contact through external rigid plates/grippers; gravity 2 (press/tap30hold/drop) else 0; narrower log10 ranges (E/rho jelly 3.5-6, plasticine 3.5-5.5, metal 4.5-6; sigma_y/rho 3.2-4.5); per-sample censoring sigma/rho > 0.5 E/rho (any law); screened objects v3_split (57/10/10).",
+  "Train set: 2000 V3 samples (V2: 1955); val 283 / test 300 (V2: 283 / 300).",
+  "Standardization from V3 train: std(ln E/rho) = 0.666 decades (V2 1.068), std(ln sigma_y/rho) = 0.369 decades (V2 1.166); 1098/2000 train samples carry a sigma label (V2 1264/1955). z-units therefore differ; decade errors are the cross-dataset comparison.",
+  "Class information is much weaker in V3: privileged GT-class mean reaches z-MAE 0.827 vs constant 0.857 (V2: 0.786 vs 0.858), because the per-law ranges overlap."
+ ],
+ "protocol_identical_to_v2": "Same V-JEPA 2 ViT-L frozen 32-step features (64 frames, tubelet 2, 3 views, 224 px), same 2-layer transformer head and hyper-parameters (configs/v2main/* with only data paths/output changed), same loss weights (smooth-l1 + 0.05 NLL + 0.1 class CE; C/D field weight 0.1, 2 field-warmup epochs, D feedback=fields), seeds 17/29/43, best-val-epoch selection (best_material.pt), early stop patience 5 / min 8 joint epochs, test evaluated once.",
+ "deviations": [
+  "Feature cache built incrementally into one shared directory (scripts/v3p/cache_v3.py, same encoder code path as scripts/prepare_vjepa_cache.py); per-manifest index.json files point into it. No change to features.",
+  "IO fix during training (14:31-14:45 UTC): 8 of 9 runs were paused at an epoch boundary (control.json, built-in mechanism) and resumed from last.pt with scripts/v3p/train_job.py --preload (features read once into RAM; identical math/sampling; verified on a smoke run: val MAE identical to 1e-4). C_seed29 was not paused.",
+  "First-frame DINOv3 baseline uses a first-frame-only DINOv3 cache (frames 1..15 stored as a stride-0 copy of frame 0; they are masked by static_first_frame anyway), not the full 16-frame cache.",
+  "Within-class correlation: V2 tables use Pearson; both Pearson and Spearman are reported here.",
+  "C/D were trainable: V3 packs contain the same stress/flow/force_mask fields as V2 (contact channel is empty in both V2 and V3).",
+  "4000-sample data-scaling point not run: cancelled 15:45 UTC when the user switched to V4 data (train 2000-3999 generation was ~3300/4000 then); V3 train 0-999 was trained instead as the V4/V5 control (docs/v4/PRIOR_CHECK*)."
+ ],
+ "hand_off": "docs/v3p/HANDOFF.json: main_run v3main_C_seed29 (2000-sample prior) + 9-run B/C/D ensemble (docs/v3p/ENSEMBLE_BCD9_{VAL,TEST}.json, runs/v3main_ens_bcd9_{val,test}).",
+ "zh_sections": [
+  "## 结论（2000 条训练样本，V2 原管线原超参）",
+  "- **V3 上前馈先验明显变弱。** 9 头集成 test：z-MAE 0.775（V2 0.646），类别准确率 0.55（V2 0.74），族内 Spearman r(E/ρ) 0.42（V2 0.65），r(σ/ρ) 0.47（V2 0.79）。单个 C 头 test z-MAE 0.799（V2 0.676）。",
+  "- **按 decade 比较（跨数据集公平口径）：** V3 test E/ρ 误差 0.464 dec（V2 0.413），σ/ρ 0.279 dec（V2 0.530）。绝对误差看似相近甚至更小，是因为 V3 的范围窄：常数基线本身就只有 0.555 / 0.322 dec（V2 0.866 / 1.054）。相对常数基线，V3 先验只把 E/ρ 误差降低 17%、σ/ρ 降低 13%（V2 为 52% / 50%）。",
+  "- 仍明显优于外观基线：首帧 DINOv3 ≈ 常数（V3 test z-MAE 0.858 vs 常数 0.858），视频先验也优于特权的 GT 类均值（0.834）。B/C/D 之间仍无可分辨差异（与 V2 一致，场监督/反馈无收益）。",
+  "- 每种动作都退化（docs/v3p/PER_ACTION_VAL.json，val 集成）：族准确率从 0.60–0.84 降到 0.48–0.60，plasticine 最难（val 仅 26/94 判对）；shear 下 r(σ/ρ) 几乎为 0。drop 不经过夹板也退化，说明不只是接触方式的问题：可能与重力减小（drop 重力 2）、族间参数范围重叠（GT 类均值仅比常数好 0.030 z）、以及物体在画面中更小有关（抽查 val 前 24 个样本，物体像素占比约为 V2 的 1/3）。这些是推测，未做受控验证。",
+  "",
+  "## V2 vs V3 主表（9 头集成；方括号为物体 bootstrap 95% CI）",
+  "",
+  "| split | 数据 | z-MAE(4) | 可辨识 z-MAE | 类别准确率 | 族内 r_S(E/ρ) | 族内 r_S(σ/ρ) | E/ρ 误差 dec | 常数 E/ρ dec | σ/ρ 误差 dec | 常数 σ/ρ dec |",
+  "|---|---|---|---|---|---|---|---|---|---|---|",
+  "| val | V2 | 0.616 [0.587, 0.648] | 0.351 [0.310, 0.398] | 0.700 [0.643, 0.753] | 0.714 [0.643, 0.779] | 0.884 [0.842, 0.902] | 0.381 [0.323, 0.448] | 0.902 | 0.421 [0.363, 0.481] | 1.078 |",
+  "| val | V3 | 0.779 [0.757, 0.801] | 0.729 [0.691, 0.772] | 0.548 [0.502, 0.587] | 0.458 [0.301, 0.595] | 0.485 [0.368, 0.564] | 0.467 [0.425, 0.512] | 0.559 | 0.289 [0.262, 0.319] | 0.332 |",
+  "| test | V2 | 0.646 [0.608, 0.690] | 0.404 [0.344, 0.475] | 0.743 [0.686, 0.802] | 0.653 [0.597, 0.712] | 0.788 [0.681, 0.867] | 0.413 [0.343, 0.495] | 0.866 | 0.530 [0.452, 0.609] | 1.054 |",
+  "| test | V3 | 0.775 [0.745, 0.808] | 0.716 [0.655, 0.785] | 0.547 [0.494, 0.600] | 0.422 [0.305, 0.554] | 0.474 [0.307, 0.565] | 0.464 [0.414, 0.520] | 0.555 | 0.279 [0.258, 0.303] | 0.322 |",
+  "",
+  "## 与 V2 的差异 / 偏离",
+  "- Data: V3 = contact through external rigid plates/grippers; gravity 2 (press/tap30hold/drop) else 0; narrower log10 ranges (E/rho jelly 3.5-6, plasticine 3.5-5.5, metal 4.5-6; sigma_y/rho 3.2-4.5); per-sample censoring sigma/rho > 0.5 E/rho (any law); screened objects v3_split (57/10/10).",
+  "- Train set: 2000 V3 samples (V2: 1955); val 283 / test 300 (V2: 283 / 300).",
+  "- Standardization from V3 train: std(ln E/rho) = 0.666 decades (V2 1.068), std(ln sigma_y/rho) = 0.369 decades (V2 1.166); 1098/2000 train samples carry a sigma label (V2 1264/1955). z-units therefore differ; decade errors are the cross-dataset comparison.",
+  "- Class information is much weaker in V3: privileged GT-class mean reaches z-MAE 0.827 vs constant 0.857 (V2: 0.786 vs 0.858), because the per-law ranges overlap.",
+  "- 协议：Same V-JEPA 2 ViT-L frozen 32-step features (64 frames, tubelet 2, 3 views, 224 px), same 2-layer transformer head and hyper-parameters (configs/v2main/* with only data paths/output changed), same loss weights (smooth-l1 + 0.05 NLL + 0.1 class CE; C/D field weight 0.1, 2 field-warmup epochs, D feedback=fields), seeds 17/29/43, best-val-epoch selection (best_material.pt), early stop patience 5 / min 8 joint epochs, test evaluated once.",
+  "- 偏离：Feature cache built incrementally into one shared directory (scripts/v3p/cache_v3.py, same encoder code path as scripts/prepare_vjepa_cache.py); per-manifest index.json files point into it. No change to features.",
+  "- 偏离：IO fix during training (14:31-14:45 UTC): 8 of 9 runs were paused at an epoch boundary (control.json, built-in mechanism) and resumed from last.pt with scripts/v3p/train_job.py --preload (features read once into RAM; identical math/sampling; verified on a smoke run: val MAE identical to 1e-4). C_seed29 was not paused.",
+  "- 偏离：First-frame DINOv3 baseline uses a first-frame-only DINOv3 cache (frames 1..15 stored as a stride-0 copy of frame 0; they are masked by static_first_frame anyway), not the full 16-frame cache.",
+  "- 偏离：Within-class correlation: V2 tables use Pearson; both Pearson and Spearman are reported here.",
+  "- 偏离：C/D were trainable: V3 packs contain the same stress/flow/force_mask fields as V2 (contact channel is empty in both V2 and V3).",
+  "- 偏离：4000 样本数据扩展点未做（15:45 UTC 用户改用 V4 数据后取消）；改为训练 V3 train 0–999 作为 V4/V5 对照（见 docs/v4/PRIOR_CHECK_ZH.md）。",
+  "- 交接：docs/v3p/HANDOFF.json: main_run v3main_C_seed29 (2000-sample prior) + 9-run B/C/D ensemble (docs/v3p/ENSEMBLE_BCD9_{VAL,TEST}.json, runs/v3main_ens_bcd9_{val,test})."
+ ]
+}

@@ -1,0 +1,4 @@
+sim 53 gt none:0 True 264
+sim 53 gt end:0.10 True 381
+measure end:0.10 {'sag': 0.4789686562948465, 'left': 0.9858448035706261, 'crush': -0.05019924157999079, 'dent_p95': 0.0253013776696862, 'grip': 0.3147724121809006, 'lift': 0.043196547031402584, 'height': 0.1439884901046753, 'n_particles': 66767, 'seg_particles': 16678}
+done 53 gt end:0.10 False

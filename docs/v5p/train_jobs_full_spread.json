@@ -1,0 +1,22 @@
+[
+ {
+  "id": "v5b2k_C_seed17",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v5b2k_C_seed17.json --preload",
+  "busy": "v5b2k_C_seed17[.](json|resume)"
+ },
+ {
+  "id": "v5b2k_C_seed43",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v5b2k_C_seed43.json --preload",
+  "busy": "v5b2k_C_seed43[.](json|resume)"
+ },
+ {
+  "id": "v5b2k_D_seed17",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v5b2k_D_seed17.json --preload",
+  "busy": "v5b2k_D_seed17[.](json|resume)"
+ },
+ {
+  "id": "v5b2k_D_seed43",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v5b2k_D_seed43.json --preload",
+  "busy": "v5b2k_D_seed43[.](json|resume)"
+ }
+]

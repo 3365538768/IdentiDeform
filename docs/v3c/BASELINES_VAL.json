@@ -1,0 +1,2008 @@
+{
+  "protocol": {
+    "split": "V2 main val (283 samples, 10 objects); test untouched",
+    "metric": "standardized MAE over all scored (sample, parameter) entries in specific space (E/rho, nu, rho, sigma_y/rho; ln1p + train z-score); rho is an expected-unidentifiable control",
+    "identifiable": [
+      "E_over_rho",
+      "sigma_y_over_rho"
+    ],
+    "within_law_r": "Pearson r inside each GT law, averaged over laws (scripts/audit_within_law.py)",
+    "selection": "trained runs: epoch with best val standardized MAE (same rule as V2 main report); deterministic baselines: none",
+    "bootstrap": "paired object bootstrap (2000 draws, seed 17) of object-macro MAE difference method - V-JEPA C; negative favors V-JEPA C",
+    "caveat": "only 10 val objects: object bootstrap CIs are wide; val is also the selection split for trained runs"
+  },
+  "methods": {
+    "constant_train_mean": {
+      "samples": 283,
+      "standardized_mae": 0.8575882477086423,
+      "object_macro_mae": 0.8619617685605947,
+      "per_parameter_mae_z": {
+        "E_over_rho": 0.8442724846840701,
+        "nu": 0.8615468427795562,
+        "rho": 0.842177254565771,
+        "sigma_y_over_rho": 0.8965293009881862
+      },
+      "law_accuracy": 0.3286219081272085,
+      "within_law_r": {
+        "E_over_rho": {
+          "mean_over_laws": null,
+          "note": "undefined: prediction constant within each law"
+        },
+        "nu": {
+          "mean_over_laws": null,
+          "note": "undefined: prediction constant within each law"
+        },
+        "rho": {
+          "mean_over_laws": null,
+          "note": "undefined: prediction constant within each law"
+        },
+        "sigma_y_over_rho": {
+          "mean_over_laws": null,
+          "note": "undefined: prediction constant within each law"
+        }
+      },
+      "vs_vjepa_C": {
+        "17": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.2138645208066242,
+          "paired_bootstrap_95_ci": [
+            -0.23861943385214596,
+            -0.19131145112465434
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        },
+        "29": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.20244659716677238,
+          "paired_bootstrap_95_ci": [
+            -0.22683922021590594,
+            -0.1807424464578566
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        },
+        "43": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.213626349929058,
+          "paired_bootstrap_95_ci": [
+            -0.23653368736862201,
+            -0.19311153409621568
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        }
+      },
+      "note": "law prediction = majority train law"
+    },
+    "law_mean_gt_privileged": {
+      "samples": 283,
+      "standardized_mae": 0.7859548133654816,
+      "object_macro_mae": 0.7896572632145515,
+      "per_parameter_mae_z": {
+        "E_over_rho": 0.5890431127894309,
+        "nu": 0.8636668760707209,
+        "rho": 0.8405242311588833,
+        "sigma_y_over_rho": 0.8875678815982989
+      },
+      "law_accuracy": null,
+      "within_law_r": {
+        "E_over_rho": {
+          "mean_over_laws": null,
+          "note": "undefined: prediction constant within each law"
+        },
+        "nu": {
+          "mean_over_laws": null,
+          "note": "undefined: prediction constant within each law"
+        },
+        "rho": {
+          "mean_over_laws": null,
+          "note": "undefined: prediction constant within each law"
+        },
+        "sigma_y_over_rho": {
+          "mean_over_laws": null,
+          "note": "undefined: prediction constant within each law"
+        }
+      },
+      "vs_vjepa_C": {
+        "17": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.1415600154605811,
+          "paired_bootstrap_95_ci": [
+            -0.1713656463869017,
+            -0.1137224656334662
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        },
+        "29": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.13014209182072928,
+          "paired_bootstrap_95_ci": [
+            -0.14473148245373613,
+            -0.11490292567312603
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        },
+        "43": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.14132184458301494,
+          "paired_bootstrap_95_ci": [
+            -0.1575623263496882,
+            -0.12509232615264296
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        }
+      },
+      "note": "uses GT law (privileged); law accuracy not applicable"
+    },
+    "qwen3vl8b_zeroshot": {
+      "samples": 283,
+      "standardized_mae": 1.601299463183324,
+      "object_macro_mae": 1.6085947920386072,
+      "per_parameter_mae_z": {
+        "E_over_rho": 1.6291160694140012,
+        "nu": 1.753491328558605,
+        "rho": 1.7867306047925469,
+        "sigma_y_over_rho": 1.026747182406123
+      },
+      "law_accuracy": 0.36395759717314485,
+      "within_law_r": {
+        "E_over_rho": {
+          "mean_over_laws": 0.04743682246711307,
+          "per_law": {
+            "0": null,
+            "1": -0.03918373122863843,
+            "2": 0.13405737616286456
+          },
+          "global_pearson": 0.09178581744178019
+        },
+        "nu": {
+          "mean_over_laws": 0.07499531907140217,
+          "per_law": {
+            "0": null,
+            "1": 0.15410036109934408,
+            "2": -0.004109722956539759
+          },
+          "global_pearson": 0.07395778588726833
+        },
+        "rho": {
+          "mean_over_laws": 0.043378566060588056,
+          "per_law": {
+            "0": null,
+            "1": 0.002012506100055711,
+            "2": 0.0847446260211204
+          },
+          "global_pearson": 0.03217817655769228
+        },
+        "sigma_y_over_rho": {
+          "mean_over_laws": -0.17085592946253364,
+          "per_law": {
+            "1": -0.2583769840954744,
+            "2": -0.08333487482959293
+          },
+          "global_pearson": -0.17970330453487282
+        }
+      },
+      "unparseable_answers": 0,
+      "field_fallback_rate_on_scored_entries": {
+        "E_over_rho": 0.0,
+        "nu": 0.0,
+        "rho": 0.0,
+        "sigma_y_over_rho": 0.9277777777777778
+      },
+      "vs_vjepa_C": {
+        "17": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.9604975442846365,
+          "paired_bootstrap_95_ci": [
+            -1.0238552146426607,
+            -0.9064425889920982
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        },
+        "29": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.9490796206447847,
+          "paired_bootstrap_95_ci": [
+            -1.01117199560889,
+            -0.8974052760167741
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        },
+        "43": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.9602593734070703,
+          "paired_bootstrap_95_ci": [
+            -1.0153342380827224,
+            -0.9111866440511157
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        }
+      }
+    },
+    "dinov3_static_first_frame_B": {
+      "seeds": {
+        "17": {
+          "samples": 283,
+          "standardized_mae": 0.8570416801025551,
+          "object_macro_mae": 0.8604435906032493,
+          "per_parameter_mae_z": {
+            "E_over_rho": 0.8422205767428911,
+            "nu": 0.8618313126996581,
+            "rho": 0.8399433446356981,
+            "sigma_y_over_rho": 0.8996957643410295
+          },
+          "law_accuracy": 0.3215547703180212,
+          "within_law_r": {
+            "E_over_rho": {
+              "mean_over_laws": 0.039266198260956515,
+              "per_law": {
+                "0": -0.012693722560518138,
+                "1": -0.04242366478355601,
+                "2": 0.1729159821269437
+              },
+              "global_pearson": 0.10752768133940695
+            },
+            "nu": {
+              "mean_over_laws": 0.13882432818174514,
+              "per_law": {
+                "0": 0.13384048262811518,
+                "1": 0.1726531562350494,
+                "2": 0.10997934568207081
+              },
+              "global_pearson": 0.13872167159826626
+            },
+            "rho": {
+              "mean_over_laws": 0.03910165408663671,
+              "per_law": {
+                "0": 0.19507988019053013,
+                "1": -0.09815714964925258,
+                "2": 0.02038223171863259
+              },
+              "global_pearson": 0.037338007453695615
+            },
+            "sigma_y_over_rho": {
+              "mean_over_laws": 0.08892346123733896,
+              "per_law": {
+                "1": 0.06823024867915309,
+                "2": 0.10961667379552485
+              },
+              "global_pearson": 0.10171871578396974
+            }
+          },
+          "best_epoch": 6,
+          "dir": "runs/v3c_dino_S_seed17/val_epoch_0005",
+          "vs_vjepa_C_same_seed": {
+            "objects": 10,
+            "mean_object_delta_B_minus_A": -0.21234634284927875,
+            "paired_bootstrap_95_ci": [
+              -0.23574795762312428,
+              -0.19085218573089596
+            ],
+            "draws": 2000,
+            "seed": 17,
+            "negative_favors": "B",
+            "score": "object-macro standardized MAE"
+          }
+        },
+        "29": {
+          "samples": 283,
+          "standardized_mae": 0.8572656059809857,
+          "object_macro_mae": 0.8621135279986388,
+          "per_parameter_mae_z": {
+            "E_over_rho": 0.8442353816771248,
+            "nu": 0.8618274627108614,
+            "rho": 0.8392141238249865,
+            "sigma_y_over_rho": 0.8989607030564609
+          },
+          "law_accuracy": 0.3392226148409894,
+          "within_law_r": {
+            "E_over_rho": {
+              "mean_over_laws": -0.007330657648243824,
+              "per_law": {
+                "0": 0.017123947719426855,
+                "1": 0.03668966438754356,
+                "2": -0.07580558505170189
+              },
+              "global_pearson": -0.07918837729381209
+            },
+            "nu": {
+              "mean_over_laws": 0.06799122280384423,
+              "per_law": {
+                "0": 0.14226741219269035,
+                "1": 0.08946535199933484,
+                "2": -0.02775909578049249
+              },
+              "global_pearson": 0.05334297101172275
+            },
+            "rho": {
+              "mean_over_laws": -0.015646243239002267,
+              "per_law": {
+                "0": -0.23221031702560888,
+                "1": 0.03580313121081242,
+                "2": 0.14946845609778966
+              },
+              "global_pearson": -0.03862274878249922
+            },
+            "sigma_y_over_rho": {
+              "mean_over_laws": 0.004744734318711037,
+              "per_law": {
+                "1": 0.0047891321168681885,
+                "2": 0.004700336520553887
+              },
+              "global_pearson": 0.00633501158212339
+            }
+          },
+          "best_epoch": 4,
+          "dir": "runs/v3c_dino_S_seed29/val_epoch_0003",
+          "vs_vjepa_C_same_seed": {
+            "objects": 10,
+            "mean_object_delta_B_minus_A": -0.20259835660481654,
+            "paired_bootstrap_95_ci": [
+              -0.22620315007881334,
+              -0.1801725891315204
+            ],
+            "draws": 2000,
+            "seed": 17,
+            "negative_favors": "B",
+            "score": "object-macro standardized MAE"
+          }
+        },
+        "43": {
+          "samples": 283,
+          "standardized_mae": 0.8562530326242699,
+          "object_macro_mae": 0.8614504461953562,
+          "per_parameter_mae_z": {
+            "E_over_rho": 0.8429124535916228,
+            "nu": 0.8617849580436787,
+            "rho": 0.8390691811778309,
+            "sigma_y_over_rho": 0.8955468044680958
+          },
+          "law_accuracy": 0.34275618374558303,
+          "within_law_r": {
+            "E_over_rho": {
+              "mean_over_laws": 0.04010606620258216,
+              "per_law": {
+                "0": 0.012114701689686019,
+                "1": 0.013398570424863539,
+                "2": 0.09480492649319693
+              },
+              "global_pearson": 0.03321528085264294
+            },
+            "nu": {
+              "mean_over_laws": 0.06508188366678451,
+              "per_law": {
+                "0": 0.127618804770165,
+                "1": 0.13442969593918416,
+                "2": -0.06680284970899564
+              },
+              "global_pearson": 0.05238720294896282
+            },
+            "rho": {
+              "mean_over_laws": 0.0455654279645809,
+              "per_law": {
+                "0": 0.14541440008830953,
+                "1": 0.026351672256060256,
+                "2": -0.035069788450627075
+              },
+              "global_pearson": 0.053406707114623704
+            },
+            "sigma_y_over_rho": {
+              "mean_over_laws": 0.009158700650848721,
+              "per_law": {
+                "1": 0.0015744156749016415,
+                "2": 0.0167429856267958
+              },
+              "global_pearson": 0.01622210276517126
+            }
+          },
+          "best_epoch": 8,
+          "dir": "runs/v3c_dino_S_seed43/val_epoch_0007",
+          "vs_vjepa_C_same_seed": {
+            "objects": 10,
+            "mean_object_delta_B_minus_A": -0.21311502756381948,
+            "paired_bootstrap_95_ci": [
+              -0.23752222773230133,
+              -0.19185832985952728
+            ],
+            "draws": 2000,
+            "seed": 17,
+            "negative_favors": "B",
+            "score": "object-macro standardized MAE"
+          }
+        }
+      },
+      "standardized_mae": {
+        "mean": 0.8568534395692703,
+        "sd": 0.0005318853959841363,
+        "values": [
+          0.8570416801025551,
+          0.8572656059809857,
+          0.8562530326242699
+        ]
+      },
+      "law_accuracy": {
+        "mean": 0.33451118963486454,
+        "sd": 0.011358834818601829,
+        "values": [
+          0.3215547703180212,
+          0.3392226148409894,
+          0.34275618374558303
+        ]
+      },
+      "per_parameter_mae_z": {
+        "E_over_rho": {
+          "mean": 0.8431228040038796,
+          "sd": 0.001023740788825727,
+          "values": [
+            0.8422205767428911,
+            0.8442353816771248,
+            0.8429124535916228
+          ]
+        },
+        "nu": {
+          "mean": 0.8618145778180661,
+          "sd": 2.5723605491876927e-05,
+          "values": [
+            0.8618313126996581,
+            0.8618274627108614,
+            0.8617849580436787
+          ]
+        },
+        "rho": {
+          "mean": 0.8394088832128385,
+          "sd": 0.00046849637366252545,
+          "values": [
+            0.8399433446356981,
+            0.8392141238249865,
+            0.8390691811778309
+          ]
+        },
+        "sigma_y_over_rho": {
+          "mean": 0.8980677572885286,
+          "sd": 0.002213928886652548,
+          "values": [
+            0.8996957643410295,
+            0.8989607030564609,
+            0.8955468044680958
+          ]
+        }
+      },
+      "within_law_r": {
+        "E_over_rho": {
+          "mean": 0.024013868938431618,
+          "sd": 0.027148404276254347,
+          "values": [
+            0.039266198260956515,
+            -0.007330657648243824,
+            0.04010606620258216
+          ]
+        },
+        "nu": {
+          "mean": 0.09063247821745796,
+          "sd": 0.04176070959393389,
+          "values": [
+            0.13882432818174514,
+            0.06799122280384423,
+            0.06508188366678451
+          ]
+        },
+        "rho": {
+          "mean": 0.02300694627073845,
+          "sd": 0.03363029716852418,
+          "values": [
+            0.03910165408663671,
+            -0.015646243239002267,
+            0.0455654279645809
+          ]
+        },
+        "sigma_y_over_rho": {
+          "mean": 0.03427563206896624,
+          "sd": 0.047377839749265134,
+          "values": [
+            0.08892346123733896,
+            0.004744734318711037,
+            0.009158700650848721
+          ]
+        }
+      }
+    },
+    "dinov3_16f_B": {
+      "seeds": {
+        "17": {
+          "samples": 283,
+          "standardized_mae": 0.6551102974111092,
+          "object_macro_mae": 0.6644488471461585,
+          "per_parameter_mae_z": {
+            "E_over_rho": 0.47051214849923545,
+            "nu": 0.8669048260087838,
+            "rho": 0.8376031331257243,
+            "sigma_y_over_rho": 0.3254322531982325
+          },
+          "law_accuracy": 0.6678445229681979,
+          "within_law_r": {
+            "E_over_rho": {
+              "mean_over_laws": 0.5859569587228982,
+              "per_law": {
+                "0": 0.8593665966685672,
+                "1": 0.08227173768806098,
+                "2": 0.8162325418120666
+              },
+              "global_pearson": 0.8060240442778976
+            },
+            "nu": {
+              "mean_over_laws": 0.02106349689513151,
+              "per_law": {
+                "0": 0.15070672536322433,
+                "1": 0.046905633791154325,
+                "2": -0.1344218684689841
+              },
+              "global_pearson": -0.02139894899643555
+            },
+            "rho": {
+              "mean_over_laws": 0.07312388026888557,
+              "per_law": {
+                "0": 0.0521531858974843,
+                "1": -0.02226776892040729,
+                "2": 0.18948622382957972
+              },
+              "global_pearson": 0.0729724108182006
+            },
+            "sigma_y_over_rho": {
+              "mean_over_laws": 0.9008639511680584,
+              "per_law": {
+                "1": 0.9401678012902649,
+                "2": 0.8615601010458519
+              },
+              "global_pearson": 0.9060461912365497
+            }
+          },
+          "best_epoch": 9,
+          "dir": "runs/v3c_dino_B_seed17/val_epoch_0008",
+          "vs_vjepa_C_same_seed": {
+            "objects": 10,
+            "mean_object_delta_B_minus_A": -0.01635159939218807,
+            "paired_bootstrap_95_ci": [
+              -0.03417704179849444,
+              0.002304129707580726
+            ],
+            "draws": 2000,
+            "seed": 17,
+            "negative_favors": "B",
+            "score": "object-macro standardized MAE"
+          }
+        },
+        "29": {
+          "samples": 283,
+          "standardized_mae": 0.6638104239035446,
+          "object_macro_mae": 0.6729352222925055,
+          "per_parameter_mae_z": {
+            "E_over_rho": 0.48152157819588,
+            "nu": 0.8722497317446363,
+            "rho": 0.8367427135011438,
+            "sigma_y_over_rho": 0.3508080975708759
+          },
+          "law_accuracy": 0.6819787985865724,
+          "within_law_r": {
+            "E_over_rho": {
+              "mean_over_laws": 0.5738584848247733,
+              "per_law": {
+                "0": 0.8379750657661412,
+                "1": 0.010829413146189905,
+                "2": 0.872770975561989
+              },
+              "global_pearson": 0.7811533577414912
+            },
+            "nu": {
+              "mean_over_laws": 0.0600771294108162,
+              "per_law": {
+                "0": 0.18419648690219217,
+                "1": -0.06328654112419177,
+                "2": 0.0593214424544482
+              },
+              "global_pearson": 0.08179739197942264
+            },
+            "rho": {
+              "mean_over_laws": 0.040755379545472335,
+              "per_law": {
+                "0": -0.045644107515941335,
+                "1": 0.05014981844266184,
+                "2": 0.1177604277096965
+              },
+              "global_pearson": 0.03290178636308494
+            },
+            "sigma_y_over_rho": {
+              "mean_over_laws": 0.891689591563514,
+              "per_law": {
+                "1": 0.9200590033006003,
+                "2": 0.8633201798264277
+              },
+              "global_pearson": 0.9016636509961039
+            }
+          },
+          "best_epoch": 7,
+          "dir": "runs/v3c_dino_B_seed29/val_epoch_0006",
+          "vs_vjepa_C_same_seed": {
+            "objects": 10,
+            "mean_object_delta_B_minus_A": -0.013420050898683103,
+            "paired_bootstrap_95_ci": [
+              -0.036880989158535694,
+              0.0034898185248711145
+            ],
+            "draws": 2000,
+            "seed": 17,
+            "negative_favors": "B",
+            "score": "object-macro standardized MAE"
+          }
+        },
+        "43": {
+          "samples": 283,
+          "standardized_mae": 0.6646734961079781,
+          "object_macro_mae": 0.6687864278651654,
+          "per_parameter_mae_z": {
+            "E_over_rho": 0.4649264466460932,
+            "nu": 0.8803602065331576,
+            "rho": 0.8495951568108882,
+            "sigma_y_over_rho": 0.3488748625994453
+          },
+          "law_accuracy": 0.6607773851590106,
+          "within_law_r": {
+            "E_over_rho": {
+              "mean_over_laws": 0.5727511761388165,
+              "per_law": {
+                "0": 0.8573728844596172,
+                "1": 0.04863883309036811,
+                "2": 0.8122418108664643
+              },
+              "global_pearson": 0.7940342772474278
+            },
+            "nu": {
+              "mean_over_laws": 0.006022097980463342,
+              "per_law": {
+                "0": 0.11599798538619326,
+                "1": -0.1187703220327476,
+                "2": 0.020838630587944364
+              },
+              "global_pearson": -0.01885573176255362
+            },
+            "rho": {
+              "mean_over_laws": -0.06382215218820482,
+              "per_law": {
+                "0": -0.06477587621362128,
+                "1": -0.1863315527432209,
+                "2": 0.05964097239222773
+              },
+              "global_pearson": -0.03608715999528732
+            },
+            "sigma_y_over_rho": {
+              "mean_over_laws": 0.890296173014955,
+              "per_law": {
+                "1": 0.9217571862363052,
+                "2": 0.8588351597936048
+              },
+              "global_pearson": 0.9007254328397711
+            }
+          },
+          "best_epoch": 12,
+          "dir": "runs/v3c_dino_B_seed43/val_epoch_0011",
+          "vs_vjepa_C_same_seed": {
+            "objects": 10,
+            "mean_object_delta_B_minus_A": -0.0204510092336287,
+            "paired_bootstrap_95_ci": [
+              -0.036268316435459684,
+              -0.004535581648701069
+            ],
+            "draws": 2000,
+            "seed": 17,
+            "negative_favors": "B",
+            "score": "object-macro standardized MAE"
+          }
+        }
+      },
+      "standardized_mae": {
+        "mean": 0.6611980724742106,
+        "sd": 0.005289799364976566,
+        "values": [
+          0.6551102974111092,
+          0.6638104239035446,
+          0.6646734961079781
+        ]
+      },
+      "law_accuracy": {
+        "mean": 0.6702002355712603,
+        "sd": 0.010795231319094998,
+        "values": [
+          0.6678445229681979,
+          0.6819787985865724,
+          0.6607773851590106
+        ]
+      },
+      "per_parameter_mae_z": {
+        "E_over_rho": {
+          "mean": 0.4723200577804029,
+          "sd": 0.008443991933048046,
+          "values": [
+            0.47051214849923545,
+            0.48152157819588,
+            0.4649264466460932
+          ]
+        },
+        "nu": {
+          "mean": 0.8731715880955259,
+          "sd": 0.0067748934023112856,
+          "values": [
+            0.8669048260087838,
+            0.8722497317446363,
+            0.8803602065331576
+          ]
+        },
+        "rho": {
+          "mean": 0.8413136678125855,
+          "sd": 0.007184871293513028,
+          "values": [
+            0.8376031331257243,
+            0.8367427135011438,
+            0.8495951568108882
+          ]
+        },
+        "sigma_y_over_rho": {
+          "mean": 0.34170507112285126,
+          "sd": 0.014125784996577535,
+          "values": [
+            0.3254322531982325,
+            0.3508080975708759,
+            0.3488748625994453
+          ]
+        }
+      },
+      "within_law_r": {
+        "E_over_rho": {
+          "mean": 0.5775222065621627,
+          "sd": 0.00732566148148229,
+          "values": [
+            0.5859569587228982,
+            0.5738584848247733,
+            0.5727511761388165
+          ]
+        },
+        "nu": {
+          "mean": 0.02905424142880368,
+          "sd": 0.02789938358433601,
+          "values": [
+            0.02106349689513151,
+            0.0600771294108162,
+            0.006022097980463342
+          ]
+        },
+        "rho": {
+          "mean": 0.016685702542051026,
+          "sd": 0.07157559615344733,
+          "values": [
+            0.07312388026888557,
+            0.040755379545472335,
+            -0.06382215218820482
+          ]
+        },
+        "sigma_y_over_rho": {
+          "mean": 0.8942832385821758,
+          "sd": 0.005741492612236144,
+          "values": [
+            0.9008639511680584,
+            0.891689591563514,
+            0.890296173014955
+          ]
+        }
+      }
+    },
+    "dinov3_16f_C": {
+      "seeds": {
+        "17": {
+          "samples": 283,
+          "standardized_mae": 0.6601521560775869,
+          "object_macro_mae": 0.6643222819233644,
+          "per_parameter_mae_z": {
+            "E_over_rho": 0.4669414802578643,
+            "nu": 0.863870516685973,
+            "rho": 0.84028994720495,
+            "sigma_y_over_rho": 0.36041510227627843
+          },
+          "law_accuracy": 0.6466431095406361,
+          "within_law_r": {
+            "E_over_rho": {
+              "mean_over_laws": 0.5874764351927563,
+              "per_law": {
+                "0": 0.8674417943269767,
+                "1": 0.05759994036270227,
+                "2": 0.8373875708885898
+              },
+              "global_pearson": 0.7977987923136358
+            },
+            "nu": {
+              "mean_over_laws": 0.04045359983821467,
+              "per_law": {
+                "0": -0.003567634138858598,
+                "1": 0.10630096152367685,
+                "2": 0.01862747212982575
+              },
+              "global_pearson": 0.013126030357968641
+            },
+            "rho": {
+              "mean_over_laws": 0.013686797076715712,
+              "per_law": {
+                "0": 0.02120942089243538,
+                "1": -0.0764688607798944,
+                "2": 0.09631983111760616
+              },
+              "global_pearson": 0.016996280326452586
+            },
+            "sigma_y_over_rho": {
+              "mean_over_laws": 0.8850049120067469,
+              "per_law": {
+                "1": 0.9372173570104916,
+                "2": 0.8327924670030022
+              },
+              "global_pearson": 0.9043046261299728
+            }
+          },
+          "best_epoch": 7,
+          "dir": "runs/v3c_dino_C_seed17/val_epoch_0006",
+          "vs_vjepa_C_same_seed": {
+            "objects": 10,
+            "mean_object_delta_B_minus_A": -0.016225034169393925,
+            "paired_bootstrap_95_ci": [
+              -0.04260267366805334,
+              0.012002824213984279
+            ],
+            "draws": 2000,
+            "seed": 17,
+            "negative_favors": "B",
+            "score": "object-macro standardized MAE"
+          }
+        },
+        "29": {
+          "samples": 283,
+          "standardized_mae": 0.6629294399838429,
+          "object_macro_mae": 0.6690791763178866,
+          "per_parameter_mae_z": {
+            "E_over_rho": 0.4777901898670527,
+            "nu": 0.870445434138995,
+            "rho": 0.8433625906205641,
+            "sigma_y_over_rho": 0.34406721668912926
+          },
+          "law_accuracy": 0.6360424028268551,
+          "within_law_r": {
+            "E_over_rho": {
+              "mean_over_laws": 0.5558123665069684,
+              "per_law": {
+                "0": 0.8632199051908906,
+                "1": 0.008116690983087468,
+                "2": 0.7961005033469273
+              },
+              "global_pearson": 0.7816409296128598
+            },
+            "nu": {
+              "mean_over_laws": 0.028785750237464075,
+              "per_law": {
+                "0": 0.1893854235557489,
+                "1": 0.03891017212649219,
+                "2": -0.14193834496984886
+              },
+              "global_pearson": 0.0240944761001402
+            },
+            "rho": {
+              "mean_over_laws": -0.021490531441511047,
+              "per_law": {
+                "0": -0.164197459610502,
+                "1": -0.05332364772543031,
+                "2": 0.15304951301139916
+              },
+              "global_pearson": -0.02158575180369229
+            },
+            "sigma_y_over_rho": {
+              "mean_over_laws": 0.8945760252562616,
+              "per_law": {
+                "1": 0.9370843654336486,
+                "2": 0.8520676850788746
+              },
+              "global_pearson": 0.906386359563913
+            }
+          },
+          "best_epoch": 7,
+          "dir": "runs/v3c_dino_C_seed29/val_epoch_0006",
+          "vs_vjepa_C_same_seed": {
+            "objects": 10,
+            "mean_object_delta_B_minus_A": -0.009564004924064255,
+            "paired_bootstrap_95_ci": [
+              -0.020372227642981626,
+              0.003832267858099419
+            ],
+            "draws": 2000,
+            "seed": 17,
+            "negative_favors": "B",
+            "score": "object-macro standardized MAE"
+          }
+        },
+        "43": {
+          "samples": 283,
+          "standardized_mae": 0.665090149981368,
+          "object_macro_mae": 0.6702336905375371,
+          "per_parameter_mae_z": {
+            "E_over_rho": 0.4781333505510856,
+            "nu": 0.8632934568976398,
+            "rho": 0.8525047487523341,
+            "sigma_y_over_rho": 0.3527507440329322
+          },
+          "law_accuracy": 0.6749116607773852,
+          "within_law_r": {
+            "E_over_rho": {
+              "mean_over_laws": 0.5400388375600463,
+              "per_law": {
+                "0": 0.8328886418702675,
+                "1": 0.008742052153879592,
+                "2": 0.7784858186559921
+              },
+              "global_pearson": 0.7662117733805092
+            },
+            "nu": {
+              "mean_over_laws": 0.04377531994730668,
+              "per_law": {
+                "0": 0.23958603699939482,
+                "1": -0.1507593217905103,
+                "2": 0.04249924463303552
+              },
+              "global_pearson": 0.06778230673741732
+            },
+            "rho": {
+              "mean_over_laws": 0.01703163500353459,
+              "per_law": {
+                "0": -0.02346161425435497,
+                "1": -0.1341627526994963,
+                "2": 0.20871927196445503
+              },
+              "global_pearson": 0.04361944156299353
+            },
+            "sigma_y_over_rho": {
+              "mean_over_laws": 0.8849030915980653,
+              "per_law": {
+                "1": 0.9193630364018768,
+                "2": 0.850443146794254
+              },
+              "global_pearson": 0.8944860347075231
+            }
+          },
+          "best_epoch": 14,
+          "dir": "runs/v3c_dino_C_seed43/val_epoch_0013",
+          "vs_vjepa_C_same_seed": {
+            "objects": 10,
+            "mean_object_delta_B_minus_A": -0.021898271906000362,
+            "paired_bootstrap_95_ci": [
+              -0.037991012757149195,
+              -0.0035788432101182847
+            ],
+            "draws": 2000,
+            "seed": 17,
+            "negative_favors": "B",
+            "score": "object-macro standardized MAE"
+          }
+        }
+      },
+      "standardized_mae": {
+        "mean": 0.6627239153475992,
+        "sd": 0.002475404255979607,
+        "values": [
+          0.6601521560775869,
+          0.6629294399838429,
+          0.665090149981368
+        ]
+      },
+      "law_accuracy": {
+        "mean": 0.6525323910482922,
+        "sd": 0.020092723332428737,
+        "values": [
+          0.6466431095406361,
+          0.6360424028268551,
+          0.6749116607773852
+        ]
+      },
+      "per_parameter_mae_z": {
+        "E_over_rho": {
+          "mean": 0.47428834022533417,
+          "sd": 0.006364880466275479,
+          "values": [
+            0.4669414802578643,
+            0.4777901898670527,
+            0.4781333505510856
+          ]
+        },
+        "nu": {
+          "mean": 0.8658698025742027,
+          "sd": 0.003973103656132206,
+          "values": [
+            0.863870516685973,
+            0.870445434138995,
+            0.8632934568976398
+          ]
+        },
+        "rho": {
+          "mean": 0.845385762192616,
+          "sd": 0.006353759644333704,
+          "values": [
+            0.84028994720495,
+            0.8433625906205641,
+            0.8525047487523341
+          ]
+        },
+        "sigma_y_over_rho": {
+          "mean": 0.35241102099944666,
+          "sd": 0.00817923588101238,
+          "values": [
+            0.36041510227627843,
+            0.34406721668912926,
+            0.3527507440329322
+          ]
+        }
+      },
+      "within_law_r": {
+        "E_over_rho": {
+          "mean": 0.5611092130865903,
+          "sd": 0.024158308199390976,
+          "values": [
+            0.5874764351927563,
+            0.5558123665069684,
+            0.5400388375600463
+          ]
+        },
+        "nu": {
+          "mean": 0.03767155667432848,
+          "sd": 0.007872523302337831,
+          "values": [
+            0.04045359983821467,
+            0.028785750237464075,
+            0.04377531994730668
+          ]
+        },
+        "rho": {
+          "mean": 0.0030759668795797518,
+          "sd": 0.021340843821397722,
+          "values": [
+            0.013686797076715712,
+            -0.021490531441511047,
+            0.01703163500353459
+          ]
+        },
+        "sigma_y_over_rho": {
+          "mean": 0.8881613429536913,
+          "sd": 0.005555511104397809,
+          "values": [
+            0.8850049120067469,
+            0.8945760252562616,
+            0.8849030915980653
+          ]
+        }
+      }
+    },
+    "vjepa2_32f_B (reference)": {
+      "seeds": {
+        "17": {
+          "samples": 283,
+          "standardized_mae": 0.6471366213936226,
+          "object_macro_mae": 0.6578825728460745,
+          "per_parameter_mae_z": {
+            "E_over_rho": 0.40712006623706987,
+            "nu": 0.8516307225148111,
+            "rho": 0.8514331736315581,
+            "sigma_y_over_rho": 0.38178623366402464
+          },
+          "law_accuracy": 0.6678445229681979,
+          "within_law_r": {
+            "E_over_rho": {
+              "mean_over_laws": 0.629925695067569,
+              "per_law": {
+                "0": 0.8882573182539278,
+                "1": 0.14570098098413622,
+                "2": 0.8558187859646432
+              },
+              "global_pearson": 0.8437393816784217
+            },
+            "nu": {
+              "mean_over_laws": 0.16798938225687973,
+              "per_law": {
+                "0": 0.1443066880638128,
+                "1": 0.2416119110844323,
+                "2": 0.118049547622394
+              },
+              "global_pearson": 0.18998823628297465
+            },
+            "rho": {
+              "mean_over_laws": 0.11535594582427876,
+              "per_law": {
+                "0": -0.07418419967609305,
+                "1": 0.07688341426736979,
+                "2": 0.3433686228815595
+              },
+              "global_pearson": 0.1127934671194247
+            },
+            "sigma_y_over_rho": {
+              "mean_over_laws": 0.8734815037939216,
+              "per_law": {
+                "1": 0.9339737079839743,
+                "2": 0.812989299603869
+              },
+              "global_pearson": 0.8922284140942026
+            }
+          },
+          "best_epoch": 8,
+          "dir": "runs/v2main_B_seed17/val_epoch_0007",
+          "vs_vjepa_C_same_seed": {
+            "objects": 10,
+            "mean_object_delta_B_minus_A": -0.009785325092104124,
+            "paired_bootstrap_95_ci": [
+              -0.02751463594332072,
+              0.00780943788104227
+            ],
+            "draws": 2000,
+            "seed": 17,
+            "negative_favors": "B",
+            "score": "object-macro standardized MAE"
+          }
+        },
+        "29": {
+          "samples": 283,
+          "standardized_mae": 0.6508602180602608,
+          "object_macro_mae": 0.6601500744990079,
+          "per_parameter_mae_z": {
+            "E_over_rho": 0.4187182647899261,
+            "nu": 0.8707829655605523,
+            "rho": 0.8436759783040614,
+            "sigma_y_over_rho": 0.3669223018598536
+          },
+          "law_accuracy": 0.6890459363957597,
+          "within_law_r": {
+            "E_over_rho": {
+              "mean_over_laws": 0.634621692250301,
+              "per_law": {
+                "0": 0.8692387470739131,
+                "1": 0.1854262726316295,
+                "2": 0.8492000570453602
+              },
+              "global_pearson": 0.8300055488217556
+            },
+            "nu": {
+              "mean_over_laws": 0.07645822803444345,
+              "per_law": {
+                "0": -0.001799365348323869,
+                "1": 0.22204393542512837,
+                "2": 0.00913011402652583
+              },
+              "global_pearson": 0.02555577680238718
+            },
+            "rho": {
+              "mean_over_laws": 0.09036260971465353,
+              "per_law": {
+                "0": -0.08817199297745798,
+                "1": 0.07138729707039689,
+                "2": 0.2878725250510217
+              },
+              "global_pearson": 0.10121772265783804
+            },
+            "sigma_y_over_rho": {
+              "mean_over_laws": 0.8735967054609468,
+              "per_law": {
+                "1": 0.9435784856177147,
+                "2": 0.803614925304179
+              },
+              "global_pearson": 0.8883451618132795
+            }
+          },
+          "best_epoch": 11,
+          "dir": "runs/v2main_B_seed29/val_epoch_0010",
+          "vs_vjepa_C_same_seed": {
+            "objects": 10,
+            "mean_object_delta_B_minus_A": -0.0006349031051854738,
+            "paired_bootstrap_95_ci": [
+              -0.018612589590236022,
+              0.019097437481181572
+            ],
+            "draws": 2000,
+            "seed": 17,
+            "negative_favors": "B",
+            "score": "object-macro standardized MAE"
+          }
+        },
+        "43": {
+          "samples": 283,
+          "standardized_mae": 0.6380047198353096,
+          "object_macro_mae": 0.6472032298267706,
+          "per_parameter_mae_z": {
+            "E_over_rho": 0.40482144006453913,
+            "nu": 0.8570351520579559,
+            "rho": 0.7975979831017054,
+            "sigma_y_over_rho": 0.4093400662338051
+          },
+          "law_accuracy": 0.7067137809187279,
+          "within_law_r": {
+            "E_over_rho": {
+              "mean_over_laws": 0.6741265248273147,
+              "per_law": {
+                "0": 0.9129156746848194,
+                "1": 0.24013042275187374,
+                "2": 0.8693334770452511
+              },
+              "global_pearson": 0.8700337173164872
+            },
+            "nu": {
+              "mean_over_laws": 0.10018871648012029,
+              "per_law": {
+                "0": 0.06430043943130699,
+                "1": 0.1634329778548174,
+                "2": 0.07283273215423648
+              },
+              "global_pearson": 0.10077824926822489
+            },
+            "rho": {
+              "mean_over_laws": 0.19073812850071703,
+              "per_law": {
+                "0": 0.045714026221696125,
+                "1": 0.2070670524769207,
+                "2": 0.3194333068035343
+              },
+              "global_pearson": 0.20342939069121577
+            },
+            "sigma_y_over_rho": {
+              "mean_over_laws": 0.8578598152825065,
+              "per_law": {
+                "1": 0.9102332505931162,
+                "2": 0.8054863799718968
+              },
+              "global_pearson": 0.8620739767069259
+            }
+          },
+          "best_epoch": 12,
+          "dir": "runs/v2main_B_seed43/val_epoch_0011",
+          "vs_vjepa_C_same_seed": {
+            "objects": 10,
+            "mean_object_delta_B_minus_A": 0.0011321888047660447,
+            "paired_bootstrap_95_ci": [
+              -0.018438548238962748,
+              0.017991815110331304
+            ],
+            "draws": 2000,
+            "seed": 17,
+            "negative_favors": "B",
+            "score": "object-macro standardized MAE"
+          }
+        }
+      },
+      "standardized_mae": {
+        "mean": 0.6453338530963977,
+        "sd": 0.006614638221629403,
+        "values": [
+          0.6471366213936226,
+          0.6508602180602608,
+          0.6380047198353096
+        ]
+      },
+      "law_accuracy": {
+        "mean": 0.6878680800942285,
+        "sd": 0.01946138002574597,
+        "values": [
+          0.6678445229681979,
+          0.6890459363957597,
+          0.7067137809187279
+        ]
+      },
+      "per_parameter_mae_z": {
+        "E_over_rho": {
+          "mean": 0.41021992369717836,
+          "sd": 0.007448977887386577,
+          "values": [
+            0.40712006623706987,
+            0.4187182647899261,
+            0.40482144006453913
+          ]
+        },
+        "nu": {
+          "mean": 0.8598162800444397,
+          "sd": 0.00987436621149373,
+          "values": [
+            0.8516307225148111,
+            0.8707829655605523,
+            0.8570351520579559
+          ]
+        },
+        "rho": {
+          "mean": 0.8309023783457751,
+          "sd": 0.029102071692014262,
+          "values": [
+            0.8514331736315581,
+            0.8436759783040614,
+            0.7975979831017054
+          ]
+        },
+        "sigma_y_over_rho": {
+          "mean": 0.3860162005858945,
+          "sd": 0.02152292147318997,
+          "values": [
+            0.38178623366402464,
+            0.3669223018598536,
+            0.4093400662338051
+          ]
+        }
+      },
+      "within_law_r": {
+        "E_over_rho": {
+          "mean": 0.6462246373817283,
+          "sd": 0.02427755320568136,
+          "values": [
+            0.629925695067569,
+            0.634621692250301,
+            0.6741265248273147
+          ]
+        },
+        "nu": {
+          "mean": 0.11487877559048115,
+          "sd": 0.04750090973678584,
+          "values": [
+            0.16798938225687973,
+            0.07645822803444345,
+            0.10018871648012029
+          ]
+        },
+        "rho": {
+          "mean": 0.13215222801321644,
+          "sd": 0.052253205781278775,
+          "values": [
+            0.11535594582427876,
+            0.09036260971465353,
+            0.19073812850071703
+          ]
+        },
+        "sigma_y_over_rho": {
+          "mean": 0.8683126748457917,
+          "sd": 0.009052625179656024,
+          "values": [
+            0.8734815037939216,
+            0.8735967054609468,
+            0.8578598152825065
+          ]
+        }
+      }
+    },
+    "vjepa2_32f_C (reference)": {
+      "seeds": {
+        "17": {
+          "samples": 283,
+          "standardized_mae": 0.6382580841512467,
+          "object_macro_mae": 0.6480972477539705,
+          "per_parameter_mae_z": {
+            "E_over_rho": 0.4013564644127183,
+            "nu": 0.9003392120415193,
+            "rho": 0.7892140761847104,
+            "sigma_y_over_rho": 0.36133393663783664
+          },
+          "law_accuracy": 0.657243816254417,
+          "within_law_r": {
+            "E_over_rho": {
+              "mean_over_laws": 0.6489412206969134,
+              "per_law": {
+                "0": 0.8959509726045911,
+                "1": 0.19915224710413776,
+                "2": 0.8517204423820113
+              },
+              "global_pearson": 0.8440041743792892
+            },
+            "nu": {
+              "mean_over_laws": 0.08577005799692693,
+              "per_law": {
+                "0": -0.02040806037133758,
+                "1": 0.22167238998111907,
+                "2": 0.05604584438099926
+              },
+              "global_pearson": 0.07417854719860205
+            },
+            "rho": {
+              "mean_over_laws": 0.21951110525104775,
+              "per_law": {
+                "0": 0.24963001410651442,
+                "1": 0.07004708344115217,
+                "2": 0.33885621820547657
+              },
+              "global_pearson": 0.23099549639248515
+            },
+            "sigma_y_over_rho": {
+              "mean_over_laws": 0.8662993934526722,
+              "per_law": {
+                "1": 0.9439932771084439,
+                "2": 0.7886055097969004
+              },
+              "global_pearson": 0.8814545303063189
+            }
+          },
+          "best_epoch": 17,
+          "dir": "runs/v2main_C_seed17/val_epoch_0016"
+        },
+        "29": {
+          "samples": 283,
+          "standardized_mae": 0.6549673362371925,
+          "object_macro_mae": 0.6595151713938223,
+          "per_parameter_mae_z": {
+            "E_over_rho": 0.42470114645852575,
+            "nu": 0.8656860246115723,
+            "rho": 0.8511718898985284,
+            "sigma_y_over_rho": 0.3772231929663879
+          },
+          "law_accuracy": 0.6325088339222615,
+          "within_law_r": {
+            "E_over_rho": {
+              "mean_over_laws": 0.6087479445708658,
+              "per_law": {
+                "0": 0.8667629109850676,
+                "1": 0.12959025008696523,
+                "2": 0.8298906726405645
+              },
+              "global_pearson": 0.8303253789751854
+            },
+            "nu": {
+              "mean_over_laws": 0.08461480413412488,
+              "per_law": {
+                "0": 0.07451879212584095,
+                "1": 0.09447911330413386,
+                "2": 0.08484650697239982
+              },
+              "global_pearson": 0.06486698944365885
+            },
+            "rho": {
+              "mean_over_laws": -0.13032147097376226,
+              "per_law": {
+                "0": -0.225764918177459,
+                "1": -0.11172216016421911,
+                "2": -0.05347733457960868
+              },
+              "global_pearson": -0.1239543141129643
+            },
+            "sigma_y_over_rho": {
+              "mean_over_laws": 0.8682606246061162,
+              "per_law": {
+                "1": 0.9229819994115275,
+                "2": 0.813539249800705
+              },
+              "global_pearson": 0.8876680193642579
+            }
+          },
+          "best_epoch": 8,
+          "dir": "runs/v2main_C_seed29/val_epoch_0007"
+        },
+        "43": {
+          "samples": 283,
+          "standardized_mae": 0.6389870517942611,
+          "object_macro_mae": 0.6483354186315367,
+          "per_parameter_mae_z": {
+            "E_over_rho": 0.4131249648188948,
+            "nu": 0.8635003860519916,
+            "rho": 0.8237262190296561,
+            "sigma_y_over_rho": 0.3506565667468951
+          },
+          "law_accuracy": 0.6925795053003534,
+          "within_law_r": {
+            "E_over_rho": {
+              "mean_over_laws": 0.6449626472535782,
+              "per_law": {
+                "0": 0.8558074714266536,
+                "1": 0.24400862874835583,
+                "2": 0.8350718415857254
+              },
+              "global_pearson": 0.8466524019926646
+            },
+            "nu": {
+              "mean_over_laws": 0.09228924416999555,
+              "per_law": {
+                "0": 0.04055117176166485,
+                "1": 0.21290757123889645,
+                "2": 0.023408989509425326
+              },
+              "global_pearson": 0.04976517739762022
+            },
+            "rho": {
+              "mean_over_laws": 0.12576281453587904,
+              "per_law": {
+                "0": -0.07681877176678792,
+                "1": 0.12850126690667665,
+                "2": 0.3256059484677484
+              },
+              "global_pearson": 0.1368563197024303
+            },
+            "sigma_y_over_rho": {
+              "mean_over_laws": 0.8901826600532455,
+              "per_law": {
+                "1": 0.9486759133428277,
+                "2": 0.8316894067636633
+              },
+              "global_pearson": 0.8990885877069277
+            }
+          },
+          "best_epoch": 12,
+          "dir": "runs/v2main_C_seed43/val_epoch_0011"
+        }
+      },
+      "standardized_mae": {
+        "mean": 0.6440708240609001,
+        "sd": 0.009443692692067377,
+        "values": [
+          0.6382580841512467,
+          0.6549673362371925,
+          0.6389870517942611
+        ]
+      },
+      "law_accuracy": {
+        "mean": 0.6607773851590106,
+        "sd": 0.030190825955185616,
+        "values": [
+          0.657243816254417,
+          0.6325088339222615,
+          0.6925795053003534
+        ]
+      },
+      "per_parameter_mae_z": {
+        "E_over_rho": {
+          "mean": 0.41306085856337965,
+          "sd": 0.011672473052612226,
+          "values": [
+            0.4013564644127183,
+            0.42470114645852575,
+            0.4131249648188948
+          ]
+        },
+        "nu": {
+          "mean": 0.8765085409016944,
+          "sd": 0.020666879764713993,
+          "values": [
+            0.9003392120415193,
+            0.8656860246115723,
+            0.8635003860519916
+          ]
+        },
+        "rho": {
+          "mean": 0.8213707283709649,
+          "sd": 0.031045996879331007,
+          "values": [
+            0.7892140761847104,
+            0.8511718898985284,
+            0.8237262190296561
+          ]
+        },
+        "sigma_y_over_rho": {
+          "mean": 0.3630712321170399,
+          "sd": 0.01336824797264419,
+          "values": [
+            0.36133393663783664,
+            0.3772231929663879,
+            0.3506565667468951
+          ]
+        }
+      },
+      "within_law_r": {
+        "E_over_rho": {
+          "mean": 0.6342172708404524,
+          "sd": 0.02214660689882305,
+          "values": [
+            0.6489412206969134,
+            0.6087479445708658,
+            0.6449626472535782
+          ]
+        },
+        "nu": {
+          "mean": 0.08755803543368246,
+          "sd": 0.004137862365014551,
+          "values": [
+            0.08577005799692693,
+            0.08461480413412488,
+            0.09228924416999555
+          ]
+        },
+        "rho": {
+          "mean": 0.07165081627105484,
+          "sd": 0.18108503282762253,
+          "values": [
+            0.21951110525104775,
+            -0.13032147097376226,
+            0.12576281453587904
+          ]
+        },
+        "sigma_y_over_rho": {
+          "mean": 0.8749142260373447,
+          "sd": 0.013259163430727815,
+          "values": [
+            0.8662993934526722,
+            0.8682606246061162,
+            0.8901826600532455
+          ]
+        }
+      }
+    },
+    "vjepa2_32f_D (reference)": {
+      "seeds": {
+        "17": {
+          "samples": 283,
+          "standardized_mae": 0.633586159414581,
+          "object_macro_mae": 0.6435571879622117,
+          "per_parameter_mae_z": {
+            "E_over_rho": 0.3883618643114922,
+            "nu": 0.8557996956644705,
+            "rho": 0.8142945767436243,
+            "sigma_y_over_rho": 0.38565039636644843
+          },
+          "law_accuracy": 0.7067137809187279,
+          "within_law_r": {
+            "E_over_rho": {
+              "mean_over_laws": 0.6742470391963221,
+              "per_law": {
+                "0": 0.8722519241629157,
+                "1": 0.28004495661087,
+                "2": 0.8704442368151807
+              },
+              "global_pearson": 0.8563199387247447
+            },
+            "nu": {
+              "mean_over_laws": 0.13064284158472098,
+              "per_law": {
+                "0": 0.09635022392973525,
+                "1": 0.2465445012802676,
+                "2": 0.04903379954416012
+              },
+              "global_pearson": 0.1471755853223003
+            },
+            "rho": {
+              "mean_over_laws": 0.20701513296133836,
+              "per_law": {
+                "0": 0.16538849487763838,
+                "1": 0.06758045907725517,
+                "2": 0.3880764449291216
+              },
+              "global_pearson": 0.1979118901793067
+            },
+            "sigma_y_over_rho": {
+              "mean_over_laws": 0.8725859421760933,
+              "per_law": {
+                "1": 0.9378567552869775,
+                "2": 0.807315129065209
+              },
+              "global_pearson": 0.8907211334390408
+            }
+          },
+          "best_epoch": 12,
+          "dir": "runs/v2main_D_seed17/val_epoch_0011",
+          "vs_vjepa_C_same_seed": {
+            "objects": 10,
+            "mean_object_delta_B_minus_A": 0.004540059791758745,
+            "paired_bootstrap_95_ci": [
+              -0.013119471524963863,
+              0.022320178883417936
+            ],
+            "draws": 2000,
+            "seed": 17,
+            "negative_favors": "B",
+            "score": "object-macro standardized MAE"
+          }
+        },
+        "29": {
+          "samples": 283,
+          "standardized_mae": 0.6402133987713976,
+          "object_macro_mae": 0.6465537863118438,
+          "per_parameter_mae_z": {
+            "E_over_rho": 0.3953382233984591,
+            "nu": 0.8859215522211296,
+            "rho": 0.8143294304082755,
+            "sigma_y_over_rho": 0.3651546779437922
+          },
+          "law_accuracy": 0.6678445229681979,
+          "within_law_r": {
+            "E_over_rho": {
+              "mean_over_laws": 0.6694592495261387,
+              "per_law": {
+                "0": 0.9076142820098402,
+                "1": 0.24137421895313643,
+                "2": 0.8593892476154394
+              },
+              "global_pearson": 0.8489995530735782
+            },
+            "nu": {
+              "mean_over_laws": 0.02944359387458328,
+              "per_law": {
+                "0": -0.033107606431253774,
+                "1": 0.1938401811165306,
+                "2": -0.07240179306152698
+              },
+              "global_pearson": 0.014877402874838998
+            },
+            "rho": {
+              "mean_over_laws": 0.16436693376969916,
+              "per_law": {
+                "0": 0.01098709701585864,
+                "1": 0.12189675710989947,
+                "2": 0.3602169471833394
+              },
+              "global_pearson": 0.16212324087583974
+            },
+            "sigma_y_over_rho": {
+              "mean_over_laws": 0.872568716863978,
+              "per_law": {
+                "1": 0.9350640970454724,
+                "2": 0.8100733366824835
+              },
+              "global_pearson": 0.8933424030623175
+            }
+          },
+          "best_epoch": 18,
+          "dir": "runs/v2main_D_seed29/val_epoch_0017",
+          "vs_vjepa_C_same_seed": {
+            "objects": 10,
+            "mean_object_delta_B_minus_A": 0.012961385081978503,
+            "paired_bootstrap_95_ci": [
+              -0.0002806516849139358,
+              0.026919211368200174
+            ],
+            "draws": 2000,
+            "seed": 17,
+            "negative_favors": "B",
+            "score": "object-macro standardized MAE"
+          }
+        },
+        "43": {
+          "samples": 283,
+          "standardized_mae": 0.6446565825681531,
+          "object_macro_mae": 0.6549449353379948,
+          "per_parameter_mae_z": {
+            "E_over_rho": 0.39038057485060573,
+            "nu": 0.8606994373973973,
+            "rho": 0.8585463698637464,
+            "sigma_y_over_rho": 0.36848531847224675
+          },
+          "law_accuracy": 0.6890459363957597,
+          "within_law_r": {
+            "E_over_rho": {
+              "mean_over_laws": 0.6617270462808927,
+              "per_law": {
+                "0": 0.90272283553967,
+                "1": 0.19892307172514034,
+                "2": 0.8835352315778676
+              },
+              "global_pearson": 0.861113236758271
+            },
+            "nu": {
+              "mean_over_laws": 0.15057460240196044,
+              "per_law": {
+                "0": 0.07862365484736636,
+                "1": 0.22384450141238485,
+                "2": 0.14925565094613008
+              },
+              "global_pearson": 0.13936630750141205
+            },
+            "rho": {
+              "mean_over_laws": 0.027971087606470352,
+              "per_law": {
+                "0": -0.097500550655636,
+                "1": -0.03195128889709692,
+                "2": 0.21336510237214398
+              },
+              "global_pearson": 0.03816762009002884
+            },
+            "sigma_y_over_rho": {
+              "mean_over_laws": 0.8851922251122545,
+              "per_law": {
+                "1": 0.9358157550098464,
+                "2": 0.8345686952146626
+              },
+              "global_pearson": 0.8961248080929675
+            }
+          },
+          "best_epoch": 12,
+          "dir": "runs/v2main_D_seed43/val_epoch_0011",
+          "vs_vjepa_C_same_seed": {
+            "objects": 10,
+            "mean_object_delta_B_minus_A": -0.006609516706458175,
+            "paired_bootstrap_95_ci": [
+              -0.022829910470802878,
+              0.008911850993692419
+            ],
+            "draws": 2000,
+            "seed": 17,
+            "negative_favors": "B",
+            "score": "object-macro standardized MAE"
+          }
+        }
+      },
+      "standardized_mae": {
+        "mean": 0.6394853802513772,
+        "sd": 0.005571003089561682,
+        "values": [
+          0.633586159414581,
+          0.6402133987713976,
+          0.6446565825681531
+        ]
+      },
+      "law_accuracy": {
+        "mean": 0.6878680800942285,
+        "sd": 0.01946138002574597,
+        "values": [
+          0.7067137809187279,
+          0.6678445229681979,
+          0.6890459363957597
+        ]
+      },
+      "per_parameter_mae_z": {
+        "E_over_rho": {
+          "mean": 0.391360220853519,
+          "sd": 0.0035898713411269025,
+          "values": [
+            0.3883618643114922,
+            0.3953382233984591,
+            0.39038057485060573
+          ]
+        },
+        "nu": {
+          "mean": 0.8674735617609991,
+          "sd": 0.016163172067238055,
+          "values": [
+            0.8557996956644705,
+            0.8859215522211296,
+            0.8606994373973973
+          ]
+        },
+        "rho": {
+          "mean": 0.8290567923385487,
+          "sd": 0.025538729229455964,
+          "values": [
+            0.8142945767436243,
+            0.8143294304082755,
+            0.8585463698637464
+          ]
+        },
+        "sigma_y_over_rho": {
+          "mean": 0.3730967975941624,
+          "sd": 0.010998541866270318,
+          "values": [
+            0.38565039636644843,
+            0.3651546779437922,
+            0.36848531847224675
+          ]
+        }
+      },
+      "within_law_r": {
+        "E_over_rho": {
+          "mean": 0.6684777783344512,
+          "sd": 0.006317437765873504,
+          "values": [
+            0.6742470391963221,
+            0.6694592495261387,
+            0.6617270462808927
+          ]
+        },
+        "nu": {
+          "mean": 0.10355367928708824,
+          "sd": 0.06495034520466765,
+          "values": [
+            0.13064284158472098,
+            0.02944359387458328,
+            0.15057460240196044
+          ]
+        },
+        "rho": {
+          "mean": 0.13311771811250261,
+          "sd": 0.09352313966955714,
+          "values": [
+            0.20701513296133836,
+            0.16436693376969916,
+            0.027971087606470352
+          ]
+        },
+        "sigma_y_over_rho": {
+          "mean": 0.876782294717442,
+          "sd": 0.007283218458349201,
+          "values": [
+            0.8725859421760933,
+            0.872568716863978,
+            0.8851922251122545
+          ]
+        }
+      }
+    }
+  },
+  "table": [
+    {
+      "method": "vjepa2_32f_D (reference)",
+      "standardized_mae": 0.6394853802513772,
+      "law_accuracy": 0.6878680800942285,
+      "E_over_rho_within_law_r": 0.6684777783344512,
+      "sigma_y_over_rho_within_law_r": 0.876782294717442,
+      "seeds": 3
+    },
+    {
+      "method": "vjepa2_32f_C (reference)",
+      "standardized_mae": 0.6440708240609001,
+      "law_accuracy": 0.6607773851590106,
+      "E_over_rho_within_law_r": 0.6342172708404524,
+      "sigma_y_over_rho_within_law_r": 0.8749142260373447,
+      "seeds": 3
+    },
+    {
+      "method": "vjepa2_32f_B (reference)",
+      "standardized_mae": 0.6453338530963977,
+      "law_accuracy": 0.6878680800942285,
+      "E_over_rho_within_law_r": 0.6462246373817283,
+      "sigma_y_over_rho_within_law_r": 0.8683126748457917,
+      "seeds": 3
+    },
+    {
+      "method": "dinov3_16f_B",
+      "standardized_mae": 0.6611980724742106,
+      "law_accuracy": 0.6702002355712603,
+      "E_over_rho_within_law_r": 0.5775222065621627,
+      "sigma_y_over_rho_within_law_r": 0.8942832385821758,
+      "seeds": 3
+    },
+    {
+      "method": "dinov3_16f_C",
+      "standardized_mae": 0.6627239153475992,
+      "law_accuracy": 0.6525323910482922,
+      "E_over_rho_within_law_r": 0.5611092130865903,
+      "sigma_y_over_rho_within_law_r": 0.8881613429536913,
+      "seeds": 3
+    },
+    {
+      "method": "law_mean_gt_privileged",
+      "standardized_mae": 0.7859548133654816,
+      "law_accuracy": null,
+      "E_over_rho_within_law_r": null,
+      "sigma_y_over_rho_within_law_r": null,
+      "seeds": null
+    },
+    {
+      "method": "dinov3_static_first_frame_B",
+      "standardized_mae": 0.8568534395692703,
+      "law_accuracy": 0.33451118963486454,
+      "E_over_rho_within_law_r": 0.024013868938431618,
+      "sigma_y_over_rho_within_law_r": 0.03427563206896624,
+      "seeds": 3
+    },
+    {
+      "method": "constant_train_mean",
+      "standardized_mae": 0.8575882477086423,
+      "law_accuracy": 0.3286219081272085,
+      "E_over_rho_within_law_r": null,
+      "sigma_y_over_rho_within_law_r": null,
+      "seeds": null
+    },
+    {
+      "method": "qwen3vl8b_zeroshot",
+      "standardized_mae": 1.601299463183324,
+      "law_accuracy": 0.36395759717314485,
+      "E_over_rho_within_law_r": 0.04743682246711307,
+      "sigma_y_over_rho_within_law_r": -0.17085592946253364,
+      "seeds": null
+    }
+  ]
+}

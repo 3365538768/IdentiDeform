@@ -1,0 +1,82 @@
+08:25:34 train<2000 done=0
+08:30:34 train<2000 done=0
+08:35:34 train<2000 done=0
+08:40:34 train<2000 done=0
+08:45:34 train<2000 done=0
+08:50:34 train<2000 done=0
+08:55:35 train<2000 done=0
+09:00:35 train<2000 done=0
+09:05:35 train<2000 done=6
+09:10:35 train<2000 done=20
+09:15:35 train<2000 done=38
+09:20:35 train<2000 done=65
+09:25:35 train<2000 done=93
+09:30:35 train<2000 done=116
+09:35:35 train<2000 done=135
+09:40:35 train<2000 done=150
+09:45:35 train<2000 done=160
+09:50:35 train<2000 done=169
+09:55:35 train<2000 done=180
+10:00:35 train<2000 done=187
+10:05:35 train<2000 done=197
+10:10:35 train<2000 done=212
+10:15:36 train<2000 done=265
+10:20:36 train<2000 done=334
+10:25:36 train<2000 done=395
+10:30:36 train<2000 done=460
+10:35:36 train<2000 done=531
+10:40:37 train<2000 done=591
+10:45:37 train<2000 done=655
+10:50:37 train<2000 done=725
+10:55:37 train<2000 done=798
+11:00:38 train<2000 done=860
+11:05:38 train<2000 done=925
+11:10:38 train<2000 done=995
+11:15:39 train<2000 done=1059
+11:20:39 train<2000 done=1131
+11:25:39 train<2000 done=1199
+11:30:39 train<2000 done=1271
+11:35:40 train<2000 done=1337
+11:40:40 train<2000 done=1412
+11:45:41 train<2000 done=1478
+11:50:42 train<2000 done=1557
+11:55:42 train<2000 done=1625
+12:00:43 train<2000 done=1688
+12:05:43 train<2000 done=1739
+12:10:43 train<2000 done=1789
+12:15:44 train<2000 done=1836
+12:20:45 train<2000 done=1876
+12:25:45 train<2000 done=1909
+12:30:46 train<2000 done=1938
+12:35:47 train<2000 done=1955
+12:40:47 train<2000 done=1974
+12:45:48 train<2000 done=1994
+12:50:49 train<2000 done=2000
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/manifests/v3main_t2000.jsonl {'train': 2000, 'val': 283, 'test': 300} objects 77
+index data/prepared/v3main_t2000_vjl/index.json 2583
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v3main_B_seed17.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v3main_B_seed29.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v3main_B_seed43.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v3main_C_seed17.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v3main_C_seed29.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v3main_C_seed43.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v3main_D_seed17.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v3main_D_seed29.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v3main_D_seed43.json
+ok 2000 283 0
+ok 2000 300 0
+queued
+12:51:23 launching pool
+12:51:23 start v3main_C_seed29 gpu 1
+12:51:24 start v3main_C_seed17 gpu 2
+12:51:25 start v3main_C_seed43 gpu 3
+12:51:26 start v3main_B_seed29 gpu 4
+12:51:27 start v3main_D_seed29 gpu 5
+12:51:28 start v3main_D_seed43 gpu 6
+12:59:54 start v3main_dinoS_seed17 gpu 7
+13:45:16 exit v3main_dinoS_seed17 0 gpu 7
+13:45:18 start v3main_dinoS_seed17_test gpu 7
+13:48:49 exit v3main_dinoS_seed17_test 0 gpu 7
+13:48:50 start v3main_dinoS_seed29 gpu 7
+Terminated
+14:33:36 pool finished

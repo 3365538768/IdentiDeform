@@ -1,0 +1,3 @@
+sim 184 prior_vt end:0.03 True 427
+measure end:0.03 {'sag': 0.5036681001826129, 'left': 0.7292869491083904, 'crush': 0.12144044702866563, 'dent_p95': 0.42913273932011026, 'grip': 2.8687028884887695, 'lift': 0.190045166015625, 'height': 0.63348388671875, 'n_particles': 42227, 'seg_particles': 9978}
+done 184 prior_vt end:0.03 False

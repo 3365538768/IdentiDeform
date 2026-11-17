@@ -1,0 +1,17 @@
+
+== 2026-11-15 09:24:08 host a2 gpu 5 attempt 1
+eval {'n': 1, 'law': 'plasticine', 'x': [4.491988, 3.746546], 'nu': 0.2788999372153278, 'cache': '3bfce4eb0962fcca', 'simulated_by': 'lawmean_gt', 'iou': 0.9590586692228511, 'iou_last': 0.8622131438864611, 'rgb_mae_union': 7.1666427355573825, 'loss': 0.06904581209306021, 'seconds': 1084.6316976547241}
+eval {'n': 2, 'law': 'plasticine', 'x': [4.991988, 3.746546], 'nu': 0.2788999372153278, 'cache': 'a634e6c7c4e8e55b', 'simulated_by': 'lawmean_gt', 'iou': 0.9388903104769583, 'iou_last': 0.8484582878732331, 'rgb_mae_union': 10.039593930609492, 'loss': 0.1004806461136672, 'seconds': 1181.4637899398804}
+
+== 2026-11-15 12:51:07 host a2 gpu 1 attempt 2
+eval {'n': 3, 'law': 'plasticine', 'x': [3.991988, 3.746546], 'nu': 0.2788999372153278, 'cache': '43a821a3b3ddac84', 'simulated_by': 'lawmean_gt', 'iou': 0.9374852047291329, 'iou_last': 0.8763134480634491, 'rgb_mae_union': 11.037611581716131, 'loss': 0.1057995465717147, 'seconds': 993.408205986023}
+eval {'n': 4, 'law': 'plasticine', 'x': [4.491988, 4.246546], 'nu': 0.2788999372153278, 'cache': '081a38e7ed1989ce', 'simulated_by': 'lawmean_gt', 'iou': 0.9423688415492801, 'iou_last': 0.8204386381217247, 'rgb_mae_union': 10.153566139323727, 'loss': 0.09744906487944036, 'seconds': 531.0761504173279}
+eval {'n': 5, 'law': 'plasticine', 'x': [4.491988, 3.246546], 'nu': 0.2788999372153278, 'cache': '8b97ef907951b83f', 'simulated_by': 'lawmean_best3', 'iou': 0.9376864499054878, 'iou_last': 0.8472971363833718, 'rgb_mae_union': 10.322268080686602, 'loss': 0.10279303276387144, 'seconds': 1242.421838760376}
+eval {'n': 6, 'law': 'plasticine', 'x': [4.741988, 3.746546], 'nu': 0.2788999372153278, 'cache': 'e84a0bb8172de7d3', 'simulated_by': 'lawmean_gt', 'iou': 0.9524434157610382, 'iou_last': 0.8977920607050893, 'rgb_mae_union': 7.698121647853246, 'loss': 0.07774529658348434, 'seconds': 1344.9247641563416}
+eval {'n': 7, 'law': 'plasticine', 'x': [4.241988, 3.746546], 'nu': 0.2788999372153278, 'cache': '47336faf4fe59f9d', 'simulated_by': 'lawmean_best3', 'iou': 0.951455423067861, 'iou_last': 0.9065331746143225, 'rgb_mae_union': 8.436941744650705, 'loss': 0.08163062298959273, 'seconds': 1471.4372515678406}
+eval {'n': 8, 'law': 'plasticine', 'x': [4.491988, 3.996546], 'nu': 0.2788999372153278, 'cache': '11ea0b456d6a3623', 'simulated_by': 'lawmean_gt', 'iou': 0.9555519884093169, 'iou_last': 0.8421308833005168, 'rgb_mae_union': 7.751977008722029, 'loss': 0.07484792142880872, 'seconds': 1147.5530886650085}
+eval {'n': 9, 'law': 'plasticine', 'x': [4.491988, 3.496546], 'nu': 0.2788999372153278, 'cache': 'f43d0e58c43e4f00', 'simulated_by': 'lawmean_best3', 'iou': 0.9468864032408325, 'iou_last': 0.8567222159694167, 'rgb_mae_union': 8.852927314801011, 'loss': 0.08783095877799499, 'seconds': 1380.8631978034973}
+eval {'n': 10, 'law': 'plasticine', 'x': [4.616988, 3.746546], 'nu': 0.2788999372153278, 'cache': 'e5a4fdfa0e38d64f', 'simulated_by': 'lawmean_gt', 'iou': 0.9529995468823841, 'iou_last': 0.8591104839327435, 'rgb_mae_union': 7.8928339441236295, 'loss': 0.07795274309457133, 'seconds': 848.6584544181824}
+eval {'n': 11, 'law': 'plasticine', 'x': [4.366988, 3.746546], 'nu': 0.2788999372153278, 'cache': '590c90b019839bd8', 'simulated_by': 'lawmean_gt', 'iou': 0.9577156045560201, 'iou_last': 0.8797515821999898, 'rgb_mae_union': 7.405453786578862, 'loss': 0.07132539068546562, 'seconds': 1420.2534730434418}
+
+== 2026-11-15 15:47:01 host a2 gpu 6 attempt 3

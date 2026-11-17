@@ -1,0 +1,214 @@
+{
+ "phase": "Day1",
+ "max_per_gpu": 2,
+ "gpus": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "jobs": [
+  {
+   "id": "replay_s0",
+   "kind": "cmd",
+   "group": "replay",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/replay_eval.py --run p4d_Clow_seed17 --shard 0 --num-shards 16"
+  },
+  {
+   "id": "replay_s1",
+   "kind": "cmd",
+   "group": "replay",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/replay_eval.py --run p4d_Clow_seed17 --shard 1 --num-shards 16"
+  },
+  {
+   "id": "replay_s2",
+   "kind": "cmd",
+   "group": "replay",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/replay_eval.py --run p4d_Clow_seed17 --shard 2 --num-shards 16"
+  },
+  {
+   "id": "replay_s3",
+   "kind": "cmd",
+   "group": "replay",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/replay_eval.py --run p4d_Clow_seed17 --shard 3 --num-shards 16"
+  },
+  {
+   "id": "replay_s4",
+   "kind": "cmd",
+   "group": "replay",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/replay_eval.py --run p4d_Clow_seed17 --shard 4 --num-shards 16"
+  },
+  {
+   "id": "replay_s5",
+   "kind": "cmd",
+   "group": "replay",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/replay_eval.py --run p4d_Clow_seed17 --shard 5 --num-shards 16"
+  },
+  {
+   "id": "replay_s6",
+   "kind": "cmd",
+   "group": "replay",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/replay_eval.py --run p4d_Clow_seed17 --shard 6 --num-shards 16"
+  },
+  {
+   "id": "replay_s7",
+   "kind": "cmd",
+   "group": "replay",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/replay_eval.py --run p4d_Clow_seed17 --shard 7 --num-shards 16"
+  },
+  {
+   "id": "replay_s8",
+   "kind": "cmd",
+   "group": "replay",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/replay_eval.py --run p4d_Clow_seed17 --shard 8 --num-shards 16"
+  },
+  {
+   "id": "replay_s9",
+   "kind": "cmd",
+   "group": "replay",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/replay_eval.py --run p4d_Clow_seed17 --shard 9 --num-shards 16"
+  },
+  {
+   "id": "replay_s10",
+   "kind": "cmd",
+   "group": "replay",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/replay_eval.py --run p4d_Clow_seed17 --shard 10 --num-shards 16"
+  },
+  {
+   "id": "replay_s11",
+   "kind": "cmd",
+   "group": "replay",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/replay_eval.py --run p4d_Clow_seed17 --shard 11 --num-shards 16"
+  },
+  {
+   "id": "replay_s12",
+   "kind": "cmd",
+   "group": "replay",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/replay_eval.py --run p4d_Clow_seed17 --shard 12 --num-shards 16"
+  },
+  {
+   "id": "replay_s13",
+   "kind": "cmd",
+   "group": "replay",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/replay_eval.py --run p4d_Clow_seed17 --shard 13 --num-shards 16"
+  },
+  {
+   "id": "replay_s14",
+   "kind": "cmd",
+   "group": "replay",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/replay_eval.py --run p4d_Clow_seed17 --shard 14 --num-shards 16"
+  },
+  {
+   "id": "replay_s15",
+   "kind": "cmd",
+   "group": "replay",
+   "mem_mib": 12000,
+   "retries": 3,
+   "cmd": ".venv/bin/python scripts/v2/replay_eval.py --run p4d_Clow_seed17 --shard 15 --num-shards 16"
+  },
+  {
+   "id": "replay_report",
+   "kind": "cmd",
+   "group": "report",
+   "mem_mib": 0,
+   "after": [
+    "replay_s0",
+    "replay_s1",
+    "replay_s2",
+    "replay_s3",
+    "replay_s4",
+    "replay_s5",
+    "replay_s6",
+    "replay_s7",
+    "replay_s8",
+    "replay_s9",
+    "replay_s10",
+    "replay_s11",
+    "replay_s12",
+    "replay_s13",
+    "replay_s14",
+    "replay_s15"
+   ],
+   "cmd": ".venv/bin/python scripts/v2/replay_report.py --run p4d_Clow_seed17"
+  },
+  {
+   "id": "f1_report",
+   "kind": "cmd",
+   "group": "report",
+   "mem_mib": 0,
+   "after": [
+    "f1_B_f05_seed17",
+    "f1_B_f05_seed29",
+    "f1_B_f05_seed43",
+    "f1_B_f10_seed17",
+    "f1_B_f10_seed29",
+    "f1_B_f10_seed43",
+    "f1_B_f25_seed17",
+    "f1_B_f25_seed29",
+    "f1_B_f25_seed43",
+    "f1_B_f50_seed17",
+    "f1_B_f50_seed29",
+    "f1_B_f50_seed43",
+    "f1_C_f05_seed17",
+    "f1_C_f05_seed29",
+    "f1_C_f05_seed43",
+    "f1_C_f10_seed17",
+    "f1_C_f10_seed29",
+    "f1_C_f10_seed43",
+    "f1_C_f25_seed17",
+    "f1_C_f25_seed29",
+    "f1_C_f25_seed43",
+    "f1_C_f50_seed17",
+    "f1_C_f50_seed29",
+    "f1_C_f50_seed43"
+   ],
+   "cmd": ".venv/bin/python scripts/r1_report.py --prefix f1 --pairs B_f05:C_f05 B_f10:C_f10 B_f25:C_f25 B_f50:C_f50 --output docs/f1/F1_RESULTS.json"
+  },
+  {
+   "id": "p4d_bc_report",
+   "kind": "cmd",
+   "group": "report",
+   "mem_mib": 0,
+   "after": [
+    "p4d_Blow_seed17",
+    "p4d_Blow_seed29",
+    "p4d_Blow_seed43"
+   ],
+   "cmd": ".venv/bin/python scripts/r1_report.py --prefix p4d --pairs Blow:Clow --output docs/f1/P4D_BC_RESULTS.json"
+  }
+ ]
+}

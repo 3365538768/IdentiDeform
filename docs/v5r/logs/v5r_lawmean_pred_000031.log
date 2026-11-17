@@ -1,0 +1,14 @@
+sim 31 lawmean_pred 0.0 True 313
+sim 31 lawmean_pred 0.06 True 555
+sim 31 lawmean_pred 0.1 True 450
+sim 31 lawmean_pred 0.14 True 328
+simulation failed /kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/data/v5r/runs/000031/cache/6f2db674f89e/0.180 -9
+sim 31 lawmean_pred 0.18 False 402
+sim 31 lawmean_pred 0.24 True 533
+sim 31 lawmean_pred 0.32 True 466
+measure 31 lawmean_pred 0.06 {'crush': 2.8191535965898092e-05, 'dent_p95_vs_x0': 0.0007135279751636324, 'dent_mean_vs_x0': 0.000294944866618696, 'wloss_vs_x0': 0.03371269904621435, 'dent_p95': 0.0007135279751636324, 'dent_mean': 0.000294944866618696, 'wloss': 0.03371269904621435, 'peak_compression': 0.06084214390033845, 'final_width_vs_ref': 0.03366226637670922, 'zmax_drop': -0.002493474081287954, 'n_particles': 19197, 'W': 0.43129968643188477, 'axis': 0}
+measure 31 lawmean_pred 0.1 {'crush': 0.0008579683283574782, 'dent_p95_vs_x0': 0.0017633697259257005, 'dent_mean_vs_x0': 0.0006584575001272397, 'wloss_vs_x0': 0.10446022724131857, 'dent_p95': 0.0017633697259257005, 'dent_mean': 0.0006584575001272397, 'wloss': 0.10446022724131857, 'peak_compression': 0.10502814811702775, 'final_width_vs_ref': 0.10431475299640325, 'zmax_drop': -0.027149691597907737, 'n_particles': 19197, 'W': 0.43129968643188477, 'axis': 0}
+measure 31 lawmean_pred 0.14 {'crush': 0.002009907916212754, 'dent_p95_vs_x0': 0.0030370270550586415, 'dent_mean_vs_x0': 0.0011161888283163092, 'wloss_vs_x0': 0.06668554263621587, 'dent_p95': 0.0030370270550586415, 'dent_mean': 0.0011161888283163092, 'wloss': 0.06668554263621587, 'peak_compression': 0.139082046343785, 'final_width_vs_ref': 0.06655558567652223, 'zmax_drop': 0.007002913429615428, 'n_particles': 19197, 'W': 0.43129968643188477, 'axis': 0}
+measure 31 lawmean_pred 0.24 {'crush': 0.003210119077937757, 'dent_p95_vs_x0': 0.005879065163811104, 'dent_mean_vs_x0': 0.0021590530388253164, 'wloss_vs_x0': 0.2374382781224119, 'dent_p95': 0.005879065163811104, 'dent_mean': 0.0021590530388253164, 'wloss': 0.2374382781224119, 'peak_compression': 0.23875348949310174, 'final_width_vs_ref': 0.23748573368078077, 'zmax_drop': 0.011745678998697443, 'n_particles': 19197, 'W': 0.43129968643188477, 'axis': 0}
+measure 31 lawmean_pred 0.32 {'crush': 0.006327775853076133, 'dent_p95_vs_x0': 0.010850704559222735, 'dent_mean_vs_x0': 0.003753639943241575, 'wloss_vs_x0': 0.18149058983903799, 'dent_p95': 0.010850704559222735, 'dent_mean': 0.003753639943241575, 'wloss': 0.18149058983903799, 'peak_compression': 0.310223045635107, 'final_width_vs_ref': 0.18168112351451227, 'zmax_drop': 0.01549749707297284, 'n_particles': 19197, 'W': 0.43129968643188477, 'axis': 0}
+done 31 lawmean_pred

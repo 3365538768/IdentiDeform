@@ -1,0 +1,45 @@
+{
+  "phase": "R2b",
+  "max_per_gpu": 3,
+  "gpus": [
+    6,
+    7
+  ],
+  "jobs": [
+    {
+      "id": "r2b_jelly_E",
+      "kind": "cmd",
+      "group": "sweep-jelly-E",
+      "mem_mib": 6000,
+      "cmd": "cd scripts && PYTHONPATH=$PWD/../.venv/lib/python3.12/site-packages ../.engine-envs/warp/bin/python r2b_mpm_sweep.py --material jelly --sweep E && cd .. && test -f docs/r2/MPM_SWEEP_jelly_E.json"
+    },
+    {
+      "id": "r2b_plasticine_E",
+      "kind": "cmd",
+      "group": "sweep-plasticine-E",
+      "mem_mib": 6000,
+      "cmd": "cd scripts && PYTHONPATH=$PWD/../.venv/lib/python3.12/site-packages ../.engine-envs/warp/bin/python r2b_mpm_sweep.py --material plasticine --sweep E && cd .. && test -f docs/r2/MPM_SWEEP_plasticine_E.json"
+    },
+    {
+      "id": "r2b_plasticine_yield_stress",
+      "kind": "cmd",
+      "group": "sweep-plasticine-yield_stress",
+      "mem_mib": 6000,
+      "cmd": "cd scripts && PYTHONPATH=$PWD/../.venv/lib/python3.12/site-packages ../.engine-envs/warp/bin/python r2b_mpm_sweep.py --material plasticine --sweep yield_stress && cd .. && test -f docs/r2/MPM_SWEEP_plasticine_yield_stress.json"
+    },
+    {
+      "id": "r2b_metal_E",
+      "kind": "cmd",
+      "group": "sweep-metal-E",
+      "mem_mib": 6000,
+      "cmd": "cd scripts && PYTHONPATH=$PWD/../.venv/lib/python3.12/site-packages ../.engine-envs/warp/bin/python r2b_mpm_sweep.py --material metal --sweep E && cd .. && test -f docs/r2/MPM_SWEEP_metal_E.json"
+    },
+    {
+      "id": "r2b_metal_yield_stress",
+      "kind": "cmd",
+      "group": "sweep-metal-yield_stress",
+      "mem_mib": 6000,
+      "cmd": "cd scripts && PYTHONPATH=$PWD/../.venv/lib/python3.12/site-packages ../.engine-envs/warp/bin/python r2b_mpm_sweep.py --material metal --sweep yield_stress && cd .. && test -f docs/r2/MPM_SWEEP_metal_yield_stress.json"
+    }
+  ]
+}

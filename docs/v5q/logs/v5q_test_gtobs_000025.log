@@ -1,0 +1,3 @@
+
+== 2026-11-16 01:22:56 host a4 gpu 0 attempt 1
+gt_observed {'sample_id': 'v5bmain/test/000025', 'object': 'a_lead_weight_013020', 'observed_action': 'shear', 'gt_law': 'metal', 'seconds': 1259.5561397075653, 'iou': 0.9999959182340649, 'iou_last': 1.0, 'rgb_mae_union': 0.0012253090114188528, 'loss': 8.886899313250909e-06, 'complete': True}

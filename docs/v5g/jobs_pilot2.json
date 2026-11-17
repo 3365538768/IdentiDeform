@@ -1,0 +1,266 @@
+[
+ {
+  "id": "v5g_pilot2_gt_000021_none_0",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 21 --method gt --cands none:0 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000021_end_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 21 --method gt --cands end:0.03 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000021_end_0.06",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 21 --method gt --cands end:0.06 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000021_end_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 21 --method gt --cands end:0.10 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000021_end_0.16",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 21 --method gt --cands end:0.16 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000021_end_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 21 --method gt --cands end:0.25 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000021_centre_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 21 --method gt --cands centre:0.03 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000021_centre_0.06",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 21 --method gt --cands centre:0.06 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000021_centre_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 21 --method gt --cands centre:0.10 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000021_centre_0.16",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 21 --method gt --cands centre:0.16 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000021_centre_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 21 --method gt --cands centre:0.25 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000027_none_0",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 27 --method gt --cands none:0 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000027_end_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 27 --method gt --cands end:0.03 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000027_end_0.06",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 27 --method gt --cands end:0.06 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000027_end_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 27 --method gt --cands end:0.10 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000027_end_0.16",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 27 --method gt --cands end:0.16 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000027_end_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 27 --method gt --cands end:0.25 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000027_centre_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 27 --method gt --cands centre:0.03 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000027_centre_0.06",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 27 --method gt --cands centre:0.06 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000027_centre_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 27 --method gt --cands centre:0.10 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000027_centre_0.16",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 27 --method gt --cands centre:0.16 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000027_centre_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 27 --method gt --cands centre:0.25 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000031_none_0",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 31 --method gt --cands none:0 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000031_end_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 31 --method gt --cands end:0.03 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000031_end_0.06",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 31 --method gt --cands end:0.06 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000031_end_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 31 --method gt --cands end:0.10 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000031_end_0.16",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 31 --method gt --cands end:0.16 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000031_end_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 31 --method gt --cands end:0.25 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000031_centre_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 31 --method gt --cands centre:0.03 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000031_centre_0.06",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 31 --method gt --cands centre:0.06 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000031_centre_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 31 --method gt --cands centre:0.10 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000031_centre_0.16",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 31 --method gt --cands centre:0.16 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000031_centre_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 31 --method gt --cands centre:0.25 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000037_none_0",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 37 --method gt --cands none:0 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000037_end_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 37 --method gt --cands end:0.03 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000037_end_0.06",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 37 --method gt --cands end:0.06 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000037_end_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 37 --method gt --cands end:0.10 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000037_end_0.16",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 37 --method gt --cands end:0.16 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000037_end_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 37 --method gt --cands end:0.25 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000037_centre_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 37 --method gt --cands centre:0.03 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000037_centre_0.06",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 37 --method gt --cands centre:0.06 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000037_centre_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 37 --method gt --cands centre:0.10 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000037_centre_0.16",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 37 --method gt --cands centre:0.16 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000037_centre_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 37 --method gt --cands centre:0.25 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000002_none_0",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 2 --method gt --cands none:0 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000002_end_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 2 --method gt --cands end:0.03 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000002_end_0.06",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 2 --method gt --cands end:0.06 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000002_end_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 2 --method gt --cands end:0.10 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000002_end_0.16",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 2 --method gt --cands end:0.16 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000002_end_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 2 --method gt --cands end:0.25 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000002_centre_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 2 --method gt --cands centre:0.03 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000002_centre_0.06",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 2 --method gt --cands centre:0.06 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000002_centre_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 2 --method gt --cands centre:0.10 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000002_centre_0.16",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 2 --method gt --cands centre:0.16 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000002_centre_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 2 --method gt --cands centre:0.25 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000005_none_0",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 5 --method gt --cands none:0 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000005_end_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 5 --method gt --cands end:0.03 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000005_end_0.06",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 5 --method gt --cands end:0.06 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000005_end_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 5 --method gt --cands end:0.10 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000005_end_0.16",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 5 --method gt --cands end:0.16 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000005_end_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 5 --method gt --cands end:0.25 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000005_centre_0.03",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 5 --method gt --cands centre:0.03 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000005_centre_0.06",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 5 --method gt --cands centre:0.06 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000005_centre_0.10",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 5 --method gt --cands centre:0.10 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000005_centre_0.16",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 5 --method gt --cands centre:0.16 --out data/v5g/pilot2"
+ },
+ {
+  "id": "v5g_pilot2_gt_000005_centre_0.25",
+  "cmd": "export FB_GRASP_CANDS=end:0.03,end:0.06,end:0.10,end:0.16,end:0.25,centre:0.03,centre:0.06,centre:0.10,centre:0.16,centre:0.25 && .venv/bin/python scripts/v5g/grasp_run.py --index 5 --method gt --cands centre:0.25 --out data/v5g/pilot2"
+ }
+]

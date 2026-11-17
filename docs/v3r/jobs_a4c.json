@@ -1,0 +1,170 @@
+[
+ {
+  "id": "v3r_gt_000226",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 226 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gt_000245",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 245 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gt_000253",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 253 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gt_000261",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 261 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gt_000265",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 265 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_refined_best3_000031",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 31 --method refined_best3 --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_refined_best3_000040",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 40 --method refined_best3 --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_refined_best3_000145",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 145 --method refined_best3 --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_refined_best3_000002",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 2 --method refined_best3 --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_refined_best3_000027",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 27 --method refined_best3 --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_refined_best3_000060",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 60 --method refined_best3 --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_refined_best3_000135",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 && .venv/bin/python scripts/v3e/squeeze_run.py --index 135 --method refined_best3 --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000002",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 2 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000053",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 53 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000080",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 80 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000182",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 182 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000254",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 254 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000031",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 31 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000088",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 88 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000184",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 184 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000214",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 214 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000250",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 250 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000093",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 93 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000198",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 198 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000240",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 240 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000005",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 5 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000027",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 27 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000040",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 40 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000066",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 66 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000112",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 112 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000116",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 116 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000121",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 121 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000135",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 135 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000151",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 151 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000169",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 169 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000180",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 180 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000186",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 186 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000207",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 207 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000226",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 226 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000245",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 245 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000258",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 258 --method gt --out data/v3r/runs"
+ },
+ {
+  "id": "v3r_gtx_000265",
+  "cmd": "export FB_GRIP_DATA=data/v3_main/val FB_GRIP_TWINS=v3 FB_SQUEEZE_CLAMP=1 FB_GRIP_DEPTHS=0.06,0.10,0.14,0.18,0.24,0.32,0.40,0.48,0.56,0.64 && .venv/bin/python scripts/v3e/squeeze_run.py --index 265 --method gt --out data/v3r/runs"
+ }
+]

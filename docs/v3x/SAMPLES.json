@@ -1,0 +1,278 @@
+{
+ "split": "test",
+ "seed": 20261113,
+ "rule": "V3x: 30 MORE test samples by continuing scripts/v3d/c1_select_test.py (seed 20261113, same RNG stream).\nReproduces the original draws exactly (asserted against docs/v3d/C1_TEST_SAMPLES.json), then continues:\ncontinuation order = remaining 2nd picks extra[12:] (original shuffled order), then round r=3,4,... where each\nround takes pool[r-1] of every (law, action) cell and shuffles them with the same rng. Coverage rule: every\none of the 10 test objects must appear in the NEW 30 (so the new 30 is a self-contained replication and the 60\ncover all objects): objects absent from the natural first 30 of the continuation (or from the original 30) get\ntheir first sample in continuation order first; the rest is filled in continuation order. Uses only gt.json law/action/object labels.",
+ "original_30": [
+  5,
+  9,
+  25,
+  26,
+  29,
+  55,
+  66,
+  74,
+  93,
+  96,
+  116,
+  127,
+  128,
+  136,
+  140,
+  141,
+  142,
+  160,
+  179,
+  184,
+  195,
+  198,
+  203,
+  216,
+  219,
+  228,
+  261,
+  265,
+  269,
+  283
+ ],
+ "objects_original": [
+  "a_bamboo_spacesuit_013020",
+  "a_carbon_fiber_helme_013020",
+  "a_carbon_fiber_rose_013020",
+  "a_ceramic_plate_013020",
+  "a_crystal_cactus_013020",
+  "a_denim_violin_013020",
+  "a_rubber_tire_013020",
+  "a_seashell_necklace_013020",
+  "a_stone_statue_013020"
+ ],
+ "objects_missing_in_original": [
+  "a_embroidered_fan_013020",
+  "a_stone_statue_013020"
+ ],
+ "objects_all": [
+  "a_bamboo_spacesuit_013020",
+  "a_carbon_fiber_helme_013020",
+  "a_carbon_fiber_rose_013020",
+  "a_ceramic_plate_013020",
+  "a_crystal_cactus_013020",
+  "a_denim_violin_013020",
+  "a_embroidered_fan_013020",
+  "a_rubber_tire_013020",
+  "a_seashell_necklace_013020",
+  "a_stone_statue_013020"
+ ],
+ "new_order": [
+  114,
+  253,
+  155,
+  230,
+  154,
+  259,
+  130,
+  89,
+  222,
+  172,
+  167,
+  135,
+  210,
+  271,
+  21,
+  166,
+  286,
+  180,
+  284,
+  139,
+  272,
+  242,
+  123,
+  137,
+  187,
+  226,
+  276,
+  104,
+  239,
+  54
+ ],
+ "samples": [
+  {
+   "index": 114,
+   "law": "jelly",
+   "action": "shear",
+   "object": "a_embroidered_fan_013020"
+  },
+  {
+   "index": 253,
+   "law": "metal",
+   "action": "press",
+   "object": "a_stone_statue_013020"
+  },
+  {
+   "index": 155,
+   "law": "plasticine",
+   "action": "stretch",
+   "object": "a_seashell_necklace_013020"
+  },
+  {
+   "index": 230,
+   "law": "plasticine",
+   "action": "bend",
+   "object": "a_seashell_necklace_013020"
+  },
+  {
+   "index": 154,
+   "law": "metal",
+   "action": "stretch",
+   "object": "a_ceramic_plate_013020"
+  },
+  {
+   "index": 259,
+   "law": "metal",
+   "action": "shear",
+   "object": "a_seashell_necklace_013020"
+  },
+  {
+   "index": 130,
+   "law": "metal",
+   "action": "drop",
+   "object": "a_carbon_fiber_rose_013020"
+  },
+  {
+   "index": 89,
+   "law": "plasticine",
+   "action": "tap30hold",
+   "object": "a_ceramic_plate_013020"
+  },
+  {
+   "index": 222,
+   "law": "jelly",
+   "action": "shear",
+   "object": "a_bamboo_spacesuit_013020"
+  },
+  {
+   "index": 172,
+   "law": "metal",
+   "action": "stretch",
+   "object": "a_carbon_fiber_rose_013020"
+  },
+  {
+   "index": 167,
+   "law": "plasticine",
+   "action": "drop",
+   "object": "a_denim_violin_013020"
+  },
+  {
+   "index": 135,
+   "law": "jelly",
+   "action": "stretch",
+   "object": "a_carbon_fiber_rose_013020"
+  },
+  {
+   "index": 210,
+   "law": "jelly",
+   "action": "bend",
+   "object": "a_carbon_fiber_rose_013020"
+  },
+  {
+   "index": 271,
+   "law": "metal",
+   "action": "press",
+   "object": "a_seashell_necklace_013020"
+  },
+  {
+   "index": 21,
+   "law": "jelly",
+   "action": "drop",
+   "object": "a_carbon_fiber_rose_013020"
+  },
+  {
+   "index": 166,
+   "law": "metal",
+   "action": "drop",
+   "object": "a_crystal_cactus_013020"
+  },
+  {
+   "index": 286,
+   "law": "metal",
+   "action": "tap30hold",
+   "object": "a_bamboo_spacesuit_013020"
+  },
+  {
+   "index": 180,
+   "law": "jelly",
+   "action": "press",
+   "object": "a_rubber_tire_013020"
+  },
+  {
+   "index": 284,
+   "law": "plasticine",
+   "action": "bend",
+   "object": "a_bamboo_spacesuit_013020"
+  },
+  {
+   "index": 139,
+   "law": "metal",
+   "action": "bend",
+   "object": "a_rubber_tire_013020"
+  },
+  {
+   "index": 272,
+   "law": "plasticine",
+   "action": "press",
+   "object": "a_seashell_necklace_013020"
+  },
+  {
+   "index": 242,
+   "law": "plasticine",
+   "action": "shear",
+   "object": "a_bamboo_spacesuit_013020"
+  },
+  {
+   "index": 123,
+   "law": "jelly",
+   "action": "tap30hold",
+   "object": "a_bamboo_spacesuit_013020"
+  },
+  {
+   "index": 137,
+   "law": "plasticine",
+   "action": "stretch",
+   "object": "a_carbon_fiber_rose_013020"
+  },
+  {
+   "index": 187,
+   "law": "metal",
+   "action": "shear",
+   "object": "a_denim_violin_013020"
+  },
+  {
+   "index": 226,
+   "law": "metal",
+   "action": "stretch",
+   "object": "a_carbon_fiber_helme_013020"
+  },
+  {
+   "index": 276,
+   "law": "jelly",
+   "action": "shear",
+   "object": "a_embroidered_fan_013020"
+  },
+  {
+   "index": 104,
+   "law": "plasticine",
+   "action": "bend",
+   "object": "a_seashell_necklace_013020"
+  },
+  {
+   "index": 239,
+   "law": "plasticine",
+   "action": "drop",
+   "object": "a_ceramic_plate_013020"
+  },
+  {
+   "index": 54,
+   "law": "jelly",
+   "action": "press",
+   "object": "a_rubber_tire_013020"
+  }
+ ]
+}

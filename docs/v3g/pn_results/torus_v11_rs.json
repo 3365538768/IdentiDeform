@@ -1,0 +1,83 @@
+{
+ "name": "torus_v11_rs",
+ "scene": "torus",
+ "views": 11,
+ "gpu": "7 NVIDIA A800-SXM4-80GB",
+ "rc": "1",
+ "n_attempts": 3,
+ "attempts": [
+  {
+   "log": "pn_torus_v11_rs.a1.log",
+   "stages": {
+    "static": 1794647310,
+    "velocity": 1794647313,
+    "dynamic": 1794647314
+   },
+   "t_start": 1794647306,
+   "t_end": 1794647513,
+   "rc": "1",
+   "t_last": 1794647512,
+   "dynamic_iteration_in_progress": {
+    "t": 1794647498,
+    "E": 158523.8823211881,
+    "nu": 0.11856236308813095,
+    "tau_y": null
+   }
+  },
+  {
+   "log": "pn_torus_v11_rs.a2.log",
+   "stages": {
+    "static": 1794647699,
+    "velocity": 1794647702,
+    "dynamic": 1794647702
+   },
+   "t_start": 1794647693,
+   "t_end": 1794651061,
+   "rc": "1",
+   "t_last": 1794651060,
+   "dynamic_iteration_in_progress": {
+    "t": 1794651032,
+    "E": 1045857.7020123462,
+    "nu": 0.25975528359413147,
+    "tau_y": null
+   }
+  },
+  {
+   "log": "pn_torus_v11_rs.log",
+   "stages": {
+    "static": 1794651247,
+    "velocity": 1794651250,
+    "dynamic": 1794651251
+   },
+   "t_start": 1794651241,
+   "t_end": 1794651290,
+   "rc": "1",
+   "t_last": 1794651289,
+   "dynamic_iteration_in_progress": {
+    "t": 1794651251,
+    "E": 100000.0,
+    "nu": 0.10000000894069672,
+    "tau_y": null
+   }
+  }
+ ],
+ "wall_s_sum_attempts": 3624,
+ "stage_wall_s": {
+  "data_prep_matting": 16,
+  "static": 9,
+  "velocity": 2,
+  "dynamic": 3597
+ },
+ "dynamic_wall_s_last_attempt": 39,
+ "dynamic_iters_logged": 0,
+ "dynamic_nan_retries_total": 0,
+ "velocity_evals": 0,
+ "dynamic_loss": [],
+ "dynamic_traj": [],
+ "completed": false,
+ "estimate": null,
+ "gt": {
+  "E": 1000000.0,
+  "nu": 0.3
+ }
+}

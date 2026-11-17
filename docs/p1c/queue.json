@@ -1,0 +1,148 @@
+{
+  "phase": "P1c",
+  "max_per_gpu": 3,
+  "gpus": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "jobs": [
+    {
+      "id": "p1c_wait_download",
+      "kind": "cmd",
+      "group": "vitg-cache",
+      "mem_mib": 0,
+      "cmd": "until grep -q \"vjepa2-vitg-fpc64-256 ok\" runs/downloads/hf_vitg.log; do sleep 30; done"
+    },
+    {
+      "id": "p1c_cache_shard0",
+      "kind": "cmd",
+      "group": "vitg-cache",
+      "mem_mib": 20000,
+      "after": [
+        "p1c_wait_download"
+      ],
+      "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/p1c/p1c_cache.json --shard 0 --num-shards 4 --status-output docs/p1c/cache_shard0.json"
+    },
+    {
+      "id": "p1c_cache_shard1",
+      "kind": "cmd",
+      "group": "vitg-cache",
+      "mem_mib": 20000,
+      "after": [
+        "p1c_wait_download"
+      ],
+      "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/p1c/p1c_cache.json --shard 1 --num-shards 4 --status-output docs/p1c/cache_shard1.json"
+    },
+    {
+      "id": "p1c_cache_shard2",
+      "kind": "cmd",
+      "group": "vitg-cache",
+      "mem_mib": 20000,
+      "after": [
+        "p1c_wait_download"
+      ],
+      "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/p1c/p1c_cache.json --shard 2 --num-shards 4 --status-output docs/p1c/cache_shard2.json"
+    },
+    {
+      "id": "p1c_cache_shard3",
+      "kind": "cmd",
+      "group": "vitg-cache",
+      "mem_mib": 20000,
+      "after": [
+        "p1c_wait_download"
+      ],
+      "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/p1c/p1c_cache.json --shard 3 --num-shards 4 --status-output docs/p1c/cache_shard3.json"
+    },
+    {
+      "id": "p1c_cache_merge",
+      "kind": "cmd",
+      "group": "vitg-cache",
+      "mem_mib": 20000,
+      "after": [
+        "p1c_cache_shard0",
+        "p1c_cache_shard1",
+        "p1c_cache_shard2",
+        "p1c_cache_shard3"
+      ],
+      "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/p1c/p1c_cache.json --status-output docs/p1c/cache_merged.json"
+    },
+    {
+      "id": "p1c_stage",
+      "kind": "cmd",
+      "group": "stage",
+      "mem_mib": 0,
+      "after": [
+        "p1c_cache_merge"
+      ],
+      "cmd": "mkdir -p /dev/shm/p1c_vjepa2_vitg && ls data/prepared/p1c_vjepa2_vitg | xargs -P 32 -I{} cp data/prepared/p1c_vjepa2_vitg/{} /dev/shm/p1c_vjepa2_vitg/{} && test $(ls /dev/shm/p1c_vjepa2_vitg | wc -l) -eq $(ls data/prepared/p1c_vjepa2_vitg | wc -l)"
+    },
+    {
+      "id": "p1c_Bvg_seed17",
+      "config": "configs/p1c/p1c_Bvg_seed17.json",
+      "group": "B-vjepa2-vitg",
+      "seed": 17,
+      "kind": "train",
+      "after": [
+        "p1c_stage"
+      ],
+      "mem_mib": 24000
+    },
+    {
+      "id": "p1c_Cvg_seed17",
+      "config": "configs/p1c/p1c_Cvg_seed17.json",
+      "group": "C-vjepa2-vitg",
+      "seed": 17,
+      "kind": "train",
+      "after": [
+        "p1c_stage"
+      ],
+      "mem_mib": 24000
+    },
+    {
+      "id": "p1c_Bvg_seed29",
+      "config": "configs/p1c/p1c_Bvg_seed29.json",
+      "group": "B-vjepa2-vitg",
+      "seed": 29,
+      "kind": "train",
+      "after": [
+        "p1c_stage"
+      ],
+      "mem_mib": 24000
+    },
+    {
+      "id": "p1c_Cvg_seed29",
+      "config": "configs/p1c/p1c_Cvg_seed29.json",
+      "group": "C-vjepa2-vitg",
+      "seed": 29,
+      "kind": "train",
+      "after": [
+        "p1c_stage"
+      ],
+      "mem_mib": 24000
+    },
+    {
+      "id": "p1c_Bvg_seed43",
+      "config": "configs/p1c/p1c_Bvg_seed43.json",
+      "group": "B-vjepa2-vitg",
+      "seed": 43,
+      "kind": "train",
+      "after": [
+        "p1c_stage"
+      ],
+      "mem_mib": 24000
+    },
+    {
+      "id": "p1c_Cvg_seed43",
+      "config": "configs/p1c/p1c_Cvg_seed43.json",
+      "group": "C-vjepa2-vitg",
+      "seed": 43,
+      "kind": "train",
+      "after": [
+        "p1c_stage"
+      ],
+      "mem_mib": 24000
+    }
+  ]
+}

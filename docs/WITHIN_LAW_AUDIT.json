@@ -1,0 +1,374 @@
+[
+  {
+    "predictions": "runs/m2v2_B_rgb_seed17/val_epoch_0011",
+    "samples": 128,
+    "law_accuracy": 0.625,
+    "parameters": {
+      "E": {
+        "count": 128,
+        "pearson": 0.6080110611290375,
+        "model_mae": 0.6274674971646164,
+        "constant_mae": 0.8778474482824095,
+        "law_mean_oracle_mae": 0.2720414243395562,
+        "within_law": {
+          "0": {
+            "count": 40,
+            "pearson": -0.001070668144880668,
+            "spread_ratio": 2.890184320833741
+          },
+          "1": {
+            "count": 46,
+            "pearson": 0.05319719107595343,
+            "spread_ratio": 1.5604635699156724
+          },
+          "2": {
+            "count": 42,
+            "pearson": 0.1868253433271594,
+            "spread_ratio": 1.444185626375585
+          }
+        }
+      },
+      "nu": {
+        "count": 128,
+        "pearson": 0.6572068868976821,
+        "model_mae": 0.6052606928424211,
+        "constant_mae": 0.8508487550200243,
+        "law_mean_oracle_mae": 0.44705417353841725,
+        "within_law": {
+          "0": {
+            "count": 40,
+            "pearson": 0.20483203608877157,
+            "spread_ratio": 1.0411640259820545
+          },
+          "1": {
+            "count": 46,
+            "pearson": 0.1491750328123544,
+            "spread_ratio": 1.1539565025522018
+          },
+          "2": {
+            "count": 42,
+            "pearson": 0.1692757779429459,
+            "spread_ratio": 0.7297724131098843
+          }
+        }
+      },
+      "rho": {
+        "count": 128,
+        "pearson": 0.08324812691916063,
+        "model_mae": 0.8252720493746892,
+        "constant_mae": 0.8728541781619867,
+        "law_mean_oracle_mae": 0.8682069352516577,
+        "within_law": {
+          "0": {
+            "count": 40,
+            "pearson": 0.07958963362528888,
+            "spread_ratio": 0.1154428027751276
+          },
+          "1": {
+            "count": 46,
+            "pearson": 0.17734235977797563,
+            "spread_ratio": 0.20398250269340304
+          },
+          "2": {
+            "count": 42,
+            "pearson": 0.149872695421726,
+            "spread_ratio": 0.0729906389676112
+          }
+        }
+      },
+      "sigma_y": {
+        "count": 46,
+        "pearson": 0.4567012129757802,
+        "model_mae": 0.8124187687492889,
+        "constant_mae": 0.9071080756632499,
+        "law_mean_oracle_mae": 0.9071080756632499,
+        "within_law": {
+          "1": {
+            "count": 46,
+            "pearson": 0.4567012129757802,
+            "spread_ratio": 0.5091523380699265
+          }
+        }
+      }
+    }
+  },
+  {
+    "predictions": "runs/m2v2_C_aux_seed17/val_epoch_0016",
+    "samples": 128,
+    "law_accuracy": 0.6796875,
+    "parameters": {
+      "E": {
+        "count": 128,
+        "pearson": 0.6812477829628658,
+        "model_mae": 0.5898983204097021,
+        "constant_mae": 0.8778474482824095,
+        "law_mean_oracle_mae": 0.2720414243395562,
+        "within_law": {
+          "0": {
+            "count": 40,
+            "pearson": 0.210931285717684,
+            "spread_ratio": 2.3539431772406973
+          },
+          "1": {
+            "count": 46,
+            "pearson": 0.10293677420896097,
+            "spread_ratio": 1.930106104645571
+          },
+          "2": {
+            "count": 42,
+            "pearson": 0.320664027884799,
+            "spread_ratio": 1.7064515332557948
+          }
+        }
+      },
+      "nu": {
+        "count": 128,
+        "pearson": 0.6405280414460008,
+        "model_mae": 0.5853871906147106,
+        "constant_mae": 0.8508487550200243,
+        "law_mean_oracle_mae": 0.44705417353841725,
+        "within_law": {
+          "0": {
+            "count": 40,
+            "pearson": -0.007218242950600316,
+            "spread_ratio": 0.7806227702752608
+          },
+          "1": {
+            "count": 46,
+            "pearson": 0.21536009425379282,
+            "spread_ratio": 1.360560888379156
+          },
+          "2": {
+            "count": 42,
+            "pearson": 0.08636884491302917,
+            "spread_ratio": 0.803016677209432
+          }
+        }
+      },
+      "rho": {
+        "count": 128,
+        "pearson": 0.29804851148387473,
+        "model_mae": 0.8127384896815784,
+        "constant_mae": 0.8728541781619867,
+        "law_mean_oracle_mae": 0.8682069352516577,
+        "within_law": {
+          "0": {
+            "count": 40,
+            "pearson": 0.3581316111142593,
+            "spread_ratio": 0.16223872022675098
+          },
+          "1": {
+            "count": 46,
+            "pearson": -0.029369356970226478,
+            "spread_ratio": 0.23392804565323022
+          },
+          "2": {
+            "count": 42,
+            "pearson": 0.2916710159096983,
+            "spread_ratio": 0.1726180025116146
+          }
+        }
+      },
+      "sigma_y": {
+        "count": 46,
+        "pearson": 0.5178538464480946,
+        "model_mae": 0.8509010155887707,
+        "constant_mae": 0.9071080756632499,
+        "law_mean_oracle_mae": 0.9071080756632499,
+        "within_law": {
+          "1": {
+            "count": 46,
+            "pearson": 0.5178538464480946,
+            "spread_ratio": 0.4501532377993377
+          }
+        }
+      }
+    }
+  },
+  {
+    "predictions": "runs/m2v2_D_fields_seed17/val_epoch_0011",
+    "samples": 128,
+    "law_accuracy": 0.671875,
+    "parameters": {
+      "E": {
+        "count": 128,
+        "pearson": 0.6686226729004805,
+        "model_mae": 0.5553911660972517,
+        "constant_mae": 0.8778474482824095,
+        "law_mean_oracle_mae": 0.2720414243395562,
+        "within_law": {
+          "0": {
+            "count": 40,
+            "pearson": 0.22801806914113013,
+            "spread_ratio": 3.20612001933428
+          },
+          "1": {
+            "count": 46,
+            "pearson": 0.011635501934988393,
+            "spread_ratio": 1.5599093730745128
+          },
+          "2": {
+            "count": 42,
+            "pearson": 0.30568467694197987,
+            "spread_ratio": 1.4731508445930332
+          }
+        }
+      },
+      "nu": {
+        "count": 128,
+        "pearson": 0.6504057013235541,
+        "model_mae": 0.624108405012521,
+        "constant_mae": 0.8508487550200243,
+        "law_mean_oracle_mae": 0.44705417353841725,
+        "within_law": {
+          "0": {
+            "count": 40,
+            "pearson": 0.036510941030329286,
+            "spread_ratio": 1.0362369087043157
+          },
+          "1": {
+            "count": 46,
+            "pearson": 0.2879052722472605,
+            "spread_ratio": 1.0366836936267874
+          },
+          "2": {
+            "count": 42,
+            "pearson": -0.17457317406687062,
+            "spread_ratio": 0.7508129501475581
+          }
+        }
+      },
+      "rho": {
+        "count": 128,
+        "pearson": 0.17885060664029348,
+        "model_mae": 0.8245348800282954,
+        "constant_mae": 0.8728541781619867,
+        "law_mean_oracle_mae": 0.8682069352516577,
+        "within_law": {
+          "0": {
+            "count": 40,
+            "pearson": 0.12533773191095715,
+            "spread_ratio": 0.22905586286695023
+          },
+          "1": {
+            "count": 46,
+            "pearson": -0.059641791356294216,
+            "spread_ratio": 0.23496194861761177
+          },
+          "2": {
+            "count": 42,
+            "pearson": 0.3204818561448525,
+            "spread_ratio": 0.10308351508487408
+          }
+        }
+      },
+      "sigma_y": {
+        "count": 46,
+        "pearson": 0.3329732919354399,
+        "model_mae": 0.8428675968038,
+        "constant_mae": 0.9071080756632499,
+        "law_mean_oracle_mae": 0.9071080756632499,
+        "within_law": {
+          "1": {
+            "count": 46,
+            "pearson": 0.3329732919354399,
+            "spread_ratio": 0.37946057507640246
+          }
+        }
+      }
+    }
+  },
+  {
+    "predictions": "runs/g1f_O_local_oracle_seed17/val_epoch_0023",
+    "samples": 128,
+    "law_accuracy": 0.625,
+    "parameters": {
+      "E": {
+        "count": 128,
+        "pearson": 0.7032596390677035,
+        "model_mae": 0.563748206855962,
+        "constant_mae": 0.8778474482824095,
+        "law_mean_oracle_mae": 0.2720414243395562,
+        "within_law": {
+          "0": {
+            "count": 40,
+            "pearson": -0.07207251098028282,
+            "spread_ratio": 2.3134881483538874
+          },
+          "1": {
+            "count": 46,
+            "pearson": 0.1689707959334237,
+            "spread_ratio": 1.7535850893029228
+          },
+          "2": {
+            "count": 42,
+            "pearson": -0.01796872810872344,
+            "spread_ratio": 1.494847725085633
+          }
+        }
+      },
+      "nu": {
+        "count": 128,
+        "pearson": 0.6387112632833467,
+        "model_mae": 0.6425534376612632,
+        "constant_mae": 0.8508487550200243,
+        "law_mean_oracle_mae": 0.44705417353841725,
+        "within_law": {
+          "0": {
+            "count": 40,
+            "pearson": 0.038632890675358134,
+            "spread_ratio": 0.8227307458826244
+          },
+          "1": {
+            "count": 46,
+            "pearson": 0.06822506963904311,
+            "spread_ratio": 1.3954166241215307
+          },
+          "2": {
+            "count": 42,
+            "pearson": 0.033324072453561046,
+            "spread_ratio": 0.7911241234921197
+          }
+        }
+      },
+      "rho": {
+        "count": 128,
+        "pearson": 0.031549368191476274,
+        "model_mae": 0.8271831601468875,
+        "constant_mae": 0.8728541781619867,
+        "law_mean_oracle_mae": 0.8682069352516577,
+        "within_law": {
+          "0": {
+            "count": 40,
+            "pearson": 0.062316704627626646,
+            "spread_ratio": 0.0798761969576241
+          },
+          "1": {
+            "count": 46,
+            "pearson": -0.04907611087769365,
+            "spread_ratio": 0.3950088606174207
+          },
+          "2": {
+            "count": 42,
+            "pearson": 0.13052116718439724,
+            "spread_ratio": 0.0630377206379476
+          }
+        }
+      },
+      "sigma_y": {
+        "count": 46,
+        "pearson": 0.505996037556952,
+        "model_mae": 0.7946247894154943,
+        "constant_mae": 0.9071080756632499,
+        "law_mean_oracle_mae": 0.9071080756632499,
+        "within_law": {
+          "1": {
+            "count": 46,
+            "pearson": 0.505996037556952,
+            "spread_ratio": 0.46009801607515083
+          }
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,63 @@
+{
+ "stage": "v5m",
+ "written_utc": "2026-11-16T02:55:12Z",
+ "data_root": "data/v5b_main",
+ "sample_id_format": "v5bmain/<split>/<idx:06d>",
+ "stats_specific": "data/manifests/v5bmain_t2000.specific.stats.json",
+ "target_space": "prediction_z: same space/order as docs/v5p/HANDOFF.json [E_over_rho, nu, rho, sigma_y_over_rho]; physical: decoded values incl. E [Pa], rho [kg/m^3]",
+ "law_ids": {
+  "0": "jelly",
+  "1": "metal",
+  "2": "plasticine"
+ },
+ "doc": "V5m hand-off: 3-seed ensemble predictions of the v5m arms (default: vision, vision_touch_action) on V5b val/test, in the\nformat of docs/v5p/ENSEMBLE_BCD9_{VAL,TEST}.json (read by the gripper twin / refinement code), plus physical values.\n\nPer sample: prediction_z / z_std_across_runs in the V5b prior's space (data/manifests/v5bmain_t2000.specific.stats.json,\norder [E_over_rho, nu, rho, sigma_y_over_rho]; v5m outputs are decoded with the v5m train stats and re-encoded, so\nexisting decoders work unchanged); law_posterior_votes = mean softmax law probability over the 3 seeds (also law_top2);\nphysical = {E_over_rho, nu, rho, sigma_y_over_rho, E} decoded (E_over_rho / sigma_y_over_rho in the specific units\nx/(rho/1000); rho [kg/m^3], E [Pa]); rho and E are only meaningful for the touch arm (vision-only rho/E are reported but\nare not identifiable from video). Writes docs/v5m/ENSEMBLE_<ARM>_{VAL,TEST}.json, runs/v5m_ens_<arm>_<split>/predictions.jsonl,\ndocs/v5m/HANDOFF.json.\n",
+ "arms": {
+  "vision": {
+   "runs": [
+    "runs/v5m_vision_seed17",
+    "runs/v5m_vision_seed29",
+    "runs/v5m_vision_seed43"
+   ],
+   "modalities": [
+    "vision"
+   ],
+   "val": {
+    "json": "docs/v5m/ENSEMBLE_VISION_VAL.json",
+    "predictions": "runs/v5m_ens_vision_val/predictions.jsonl",
+    "samples": 283
+   },
+   "test": {
+    "json": "docs/v5m/ENSEMBLE_VISION_TEST.json",
+    "predictions": "runs/v5m_ens_vision_test/predictions.jsonl",
+    "samples": 300
+   }
+  },
+  "vision_touch_action": {
+   "runs": [
+    "runs/v5m_vision_touch_action_seed17",
+    "runs/v5m_vision_touch_action_seed29",
+    "runs/v5m_vision_touch_action_seed43"
+   ],
+   "modalities": [
+    "vision",
+    "touch",
+    "action"
+   ],
+   "val": {
+    "json": "docs/v5m/ENSEMBLE_VISION_TOUCH_ACTION_VAL.json",
+    "predictions": "runs/v5m_ens_vision_touch_action_val/predictions.jsonl",
+    "samples": 283
+   },
+   "test": {
+    "json": "docs/v5m/ENSEMBLE_VISION_TOUCH_ACTION_TEST.json",
+    "predictions": "runs/v5m_ens_vision_touch_action_test/predictions.jsonl",
+    "samples": 300
+   }
+  }
+ },
+ "notes": [
+  "E_over_rho, sigma_y_over_rho, rho and E come from separate output heads, so E is not exactly E_over_rho*rho/1000 (e.g. val/000000: 15.4 kPa vs 17.4 kPa). For a simulator twin, use E_over_rho/sigma_y_over_rho/nu (as with the V5b prior). For the touch arm, rho/E are the identifiable absolute values (val: E 0.367 dec, rho 0.173 dec error; docs/v5m/RESULTS_ZH.md).",
+  "law_posterior_votes / law_top2 = mean softmax over the 3 seeds (the v5p file used 9-run vote fractions).",
+  "Model selection = best val epoch per seed; test predictions were produced once from those checkpoints (same as docs/v5m/RESULTS)."
+ ]
+}

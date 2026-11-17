@@ -1,0 +1,4 @@
+
+== 2026-11-15 14:55:56 host a2 gpu 2 attempt 1
+eval {'n': 13, 'law': 'metal', 'x': [4.5, 3.837308], 'nu': 0.2771963906206961, 'cache': '82c3f63f8e9eb159', 'simulated_by': 'lawmean_best3', 'iou': 0.5408295262330144, 'iou_last': 0.6294144694930751, 'rgb_mae_union': 51.243846420909264, 'loss': 0.6601267342411397, 'seconds': 665.9700164794922}
+eval {'n': 14, 'law': 'metal', 'x': [4.5, 3.2], 'nu': 0.2771963906206961, 'cache': 'ed2ceab575a843b8', 'simulated_by': 'lawmean_best3', 'iou': 0.7533265130855047, 'iou_last': 0.8812871582023254, 'rgb_mae_union': 37.25199439200664, 'loss': 0.3927597394321684, 'seconds': 522.6240880489349}

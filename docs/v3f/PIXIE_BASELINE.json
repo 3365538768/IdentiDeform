@@ -1,0 +1,2736 @@
+{
+  "protocol": {
+    "method": "PIXIE (Le et al., github.com/vlongle/pixie) released UNets: checkpoints_discrete/20250505_013424/epoch_510.pth (8-class material segmentation) + checkpoints_continuous_mse/20250805_040343/epoch_250.pth (density, E, nu); input = 64^3 CLIP ViT-L/14@336 feature voxel grid of the static object (see pixie_features.py docstring for faithful vs approximated steps)",
+    "class_mapping_a_priori": {
+      "jelly": "jelly",
+      "metal": "metal",
+      "stationary": "metal (rigid -> stiffest of our laws)",
+      "sand": "plasticine",
+      "visplas": "plasticine",
+      "snow": "plasticine",
+      "fluid": "plasticine",
+      "background": "jelly (majority train law; only if every mask voxel were background)",
+      "rationale": "our laws: jelly = elastic (FCR), metal = elastic + von Mises yield (StVK), plasticine = elastoplastic/irreversible; PIXIE ids follow PhysGaussian MPM (0 jelly, 1 metal, 2 sand, 3 visplas, 4 fluid, 5 snow, 6 stationary, 7 background); every PIXIE flow/plastic class goes to plasticine"
+    },
+    "aggregation": "object = majority PIXIE class over occupied voxels (background excluded); E, nu, rho = medians over occupied voxels",
+    "targets": "specific space as V2: E/(rho/1000), nu, rho, sigma_y/(rho/1000); ln1p + z-score with train stats (data/manifests/v2main.specific.stats.json). PIXIE has no yield stress -> sigma_y/rho prediction = train mean (z = 0), same as the constant baseline",
+    "primary_variant": "filled (occupancy with interior filled); shell variant reported as sensitivity",
+    "metric": "identical to docs/v3c/BASELINES_VAL.json (scripts/v3c/baselines_report.score); bootstrap = scripts/bootstrap_object_ci.compare vs V-JEPA C seeds",
+    "test_rule": "test scored once, only after val numbers were written to this file",
+    "calibrated_variant": "filled_train_calibrated: PIXIE also run on the 87 TRAIN objects; per parameter (E/rho, nu, rho) an OLS map z_target = a + b * z_pixie is fitted on train samples only and applied to val/test (fixes PIXIE's real-world absolute scale vs our sampled parameter ranges; laws unchanged). Added after the first val scoring showed the scale mismatch; fixed before test."
+  },
+  "val": {
+    "train_calibration": {
+      "params": [
+        "E_over_rho",
+        "nu",
+        "rho"
+      ],
+      "intercept_slope": [
+        [
+          -0.014428211994032684,
+          0.007861005858924616
+        ],
+        [
+          0.010314516723913461,
+          -0.019951740299896083
+        ],
+        [
+          0.007404070935712879,
+          0.011177242444958482
+        ]
+      ],
+      "train_objects": 87,
+      "train_object_law_counts": {
+        "plasticine": 29,
+        "jelly": 34,
+        "metal": 24
+      }
+    },
+    "filled": {
+      "samples": 283,
+      "standardized_mae": 1.4465204943416086,
+      "object_macro_mae": 1.4634069400998697,
+      "per_parameter_mae_z": {
+        "E_over_rho": 2.7272070957929415,
+        "nu": 0.9061499319858718,
+        "rho": 1.0560221754001329,
+        "sigma_y_over_rho": 0.8965293009881862
+      },
+      "law_accuracy": 0.29328621908127206,
+      "within_law_r": {
+        "E_over_rho": {
+          "mean_over_laws": -0.020638600000220487,
+          "per_law": {
+            "0": -0.07003379364720216,
+            "1": 0.021468694347128465,
+            "2": -0.013350700700587755
+          },
+          "global_pearson": -0.05009781528922485
+        },
+        "nu": {
+          "mean_over_laws": 0.05720011797970911,
+          "per_law": {
+            "0": -0.02267731169378027,
+            "1": 0.10371189458969757,
+            "2": 0.09056577104321001
+          },
+          "global_pearson": 0.04880241898389777
+        },
+        "rho": {
+          "mean_over_laws": 0.021448931701906773,
+          "per_law": {
+            "0": 0.11562066780214462,
+            "1": 0.05123017867749426,
+            "2": -0.10250405137391856
+          },
+          "global_pearson": 0.01690049322100644
+        },
+        "sigma_y_over_rho": {
+          "mean_over_laws": null,
+          "per_law": {
+            "1": null,
+            "2": null
+          },
+          "global_pearson": null
+        }
+      },
+      "vs_vjepa_C": {
+        "17": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.8153096923458992,
+          "paired_bootstrap_95_ci": [
+            -0.9661165258214695,
+            -0.6563054475139328
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        },
+        "29": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.8038917687060472,
+          "paired_bootstrap_95_ci": [
+            -0.9438345153931359,
+            -0.642666544615203
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        },
+        "43": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.8150715214683331,
+          "paired_bootstrap_95_ci": [
+            -0.95783159412733,
+            -0.6546250517972052
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        }
+      },
+      "vs_vjepa_ensemble_BCD9": {
+        "objects": 10,
+        "mean_object_delta_B_minus_A": -0.8386179428080724,
+        "paired_bootstrap_95_ci": [
+          -0.981766621935809,
+          -0.6771217449552372
+        ],
+        "draws": 2000,
+        "seed": 17,
+        "negative_favors": "B",
+        "score": "object-macro standardized MAE"
+      },
+      "across_object_spread_of_predicted_z": {
+        "E_over_rho_sd": 0.8512826534522677,
+        "nu_sd": 0.3454307254066025,
+        "rho_sd": 0.8867521036484483
+      },
+      "predicted_law_counts_objects": {
+        "plasticine": 5,
+        "metal": 3,
+        "jelly": 2
+      },
+      "objects": {
+        "a_bamboo_mat_013020": {
+          "pixie_class": "sand",
+          "law": "plasticine",
+          "E_Pa": 1687320.75,
+          "nu": 0.32741719484329224,
+          "rho": 583.5799560546875,
+          "z": [
+            2.3975486755371094,
+            0.468296080827713,
+            -0.7312517166137695,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 0,
+            "metal": 0,
+            "sand": 6241,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 4,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 7,
+            "1": 9,
+            "2": 14
+          }
+        },
+        "a_brass_telescope_013020": {
+          "pixie_class": "metal",
+          "law": "metal",
+          "E_Pa": 9321269.0,
+          "nu": 0.3231083154678345,
+          "rho": 1024.11328125,
+          "z": [
+            2.8640341758728027,
+            0.4269426465034485,
+            0.1321752518415451,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 67,
+            "metal": 4213,
+            "sand": 152,
+            "visplas": 0,
+            "fluid": 11,
+            "snow": 3,
+            "stationary": 14,
+            "background": 4
+          },
+          "gt_law_counts": {
+            "0": 18,
+            "1": 5,
+            "2": 5
+          }
+        },
+        "a_brick_wall_013020": {
+          "pixie_class": "sand",
+          "law": "plasticine",
+          "E_Pa": 580301.625,
+          "nu": 0.2734350562095642,
+          "rho": 675.0025634765625,
+          "z": [
+            1.904163122177124,
+            -0.04978445917367935,
+            -0.5078824162483215,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 0,
+            "metal": 0,
+            "sand": 18481,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 1,
+            "stationary": 30,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "1": 9,
+            "0": 11,
+            "2": 3
+          }
+        },
+        "a_gold_leaf_hamburge_013020": {
+          "pixie_class": "sand",
+          "law": "plasticine",
+          "E_Pa": 18013972.0,
+          "nu": 0.3104468584060669,
+          "rho": 748.0739135742188,
+          "z": [
+            3.2598090171813965,
+            0.3054273724555969,
+            -0.3500960171222687,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 3,
+            "metal": 0,
+            "sand": 40700,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 10,
+            "2": 13,
+            "1": 11
+          }
+        },
+        "a_ice_telescope_013020": {
+          "pixie_class": "snow",
+          "law": "plasticine",
+          "E_Pa": 34945536.0,
+          "nu": 0.3050478398799896,
+          "rho": 1975.5712890625,
+          "z": [
+            3.1343283653259277,
+            0.25361159443855286,
+            1.1414813995361328,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 0,
+            "metal": 0,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 16600,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "1": 3,
+            "2": 6,
+            "0": 3
+          }
+        },
+        "a_leather_boot_013020": {
+          "pixie_class": "jelly",
+          "law": "jelly",
+          "E_Pa": 621644.1875,
+          "nu": 0.3994644284248352,
+          "rho": 410.52099609375,
+          "z": [
+            2.134448766708374,
+            1.1597520112991333,
+            -1.2708821296691895,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 35561,
+            "metal": 0,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "2": 12,
+            "0": 9,
+            "1": 9
+          }
+        },
+        "a_marble_bread_013020": {
+          "pixie_class": "sand",
+          "law": "plasticine",
+          "E_Pa": 23083860.0,
+          "nu": 0.306413859128952,
+          "rho": 1268.678466796875,
+          "z": [
+            3.1458098888397217,
+            0.2667216360569,
+            0.4610890746116638,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 0,
+            "metal": 0,
+            "sand": 19380,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 11850,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 10,
+            "1": 17,
+            "2": 5
+          }
+        },
+        "a_plastic_water_bottle_thin_transparent_plastic_isolated_013020": {
+          "pixie_class": "metal",
+          "law": "metal",
+          "E_Pa": 182714144.0,
+          "nu": 0.31396859884262085,
+          "rho": 2273.11181640625,
+          "z": [
+            3.750138759613037,
+            0.3392264246940613,
+            1.3570454120635986,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 0,
+            "metal": 29333,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "1": 10,
+            "2": 16,
+            "0": 10
+          }
+        },
+        "a_silver_human_skele_013020": {
+          "pixie_class": "jelly",
+          "law": "jelly",
+          "E_Pa": 69378.4609375,
+          "nu": 0.2543255388736725,
+          "rho": 1812.4149169921875,
+          "z": [
+            0.6383863091468811,
+            -0.23318344354629517,
+            1.0090429782867432,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 4706,
+            "metal": 91,
+            "sand": 0,
+            "visplas": 91,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 1,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 9,
+            "1": 11,
+            "2": 8
+          }
+        },
+        "a_stainless_steel_si_013020": {
+          "pixie_class": "metal",
+          "law": "metal",
+          "E_Pa": 35034280.0,
+          "nu": 0.30534595251083374,
+          "rho": 2118.75634765625,
+          "z": [
+            3.106896162033081,
+            0.2564726769924164,
+            1.248993992805481,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 0,
+            "metal": 14848,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "2": 11,
+            "0": 10,
+            "1": 9
+          }
+        }
+      },
+      "predictions": "runs/v3f_pixie_filled_val/predictions.jsonl"
+    },
+    "shell": {
+      "samples": 283,
+      "standardized_mae": 1.433544701788112,
+      "object_macro_mae": 1.4531544301666866,
+      "per_parameter_mae_z": {
+        "E_over_rho": 2.6999207212661256,
+        "nu": 0.9071060024932448,
+        "rho": 1.0351719474847767,
+        "sigma_y_over_rho": 0.8965293009881862
+      },
+      "law_accuracy": 0.29328621908127206,
+      "within_law_r": {
+        "E_over_rho": {
+          "mean_over_laws": -0.026936663753434554,
+          "per_law": {
+            "0": -0.07719938870106377,
+            "1": 0.013618264160426934,
+            "2": -0.017228866719666842
+          },
+          "global_pearson": -0.053252441957301826
+        },
+        "nu": {
+          "mean_over_laws": 0.056536642925751425,
+          "per_law": {
+            "0": -0.024604908104561767,
+            "1": 0.10220957640364291,
+            "2": 0.09200526047817315
+          },
+          "global_pearson": 0.04813682906412972
+        },
+        "rho": {
+          "mean_over_laws": 0.020286411785689032,
+          "per_law": {
+            "0": 0.12053020757635163,
+            "1": 0.05446598476121013,
+            "2": -0.11413695698049466
+          },
+          "global_pearson": 0.01548652907938886
+        },
+        "sigma_y_over_rho": {
+          "mean_over_laws": null,
+          "per_law": {
+            "1": null,
+            "2": null
+          },
+          "global_pearson": null
+        }
+      },
+      "vs_vjepa_C": {
+        "17": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.8050571824127161,
+          "paired_bootstrap_95_ci": [
+            -0.9393883467883434,
+            -0.6539167596844329
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        },
+        "29": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.7936392587728642,
+          "paired_bootstrap_95_ci": [
+            -0.9215688446213124,
+            -0.6413128038032336
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        },
+        "43": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.8048190115351501,
+          "paired_bootstrap_95_ci": [
+            -0.9347585272137694,
+            -0.6530671344512398
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        }
+      },
+      "vs_vjepa_ensemble_BCD9": {
+        "objects": 10,
+        "mean_object_delta_B_minus_A": -0.8283654328748895,
+        "paired_bootstrap_95_ci": [
+          -0.9581608662892988,
+          -0.6734516085033975
+        ],
+        "draws": 2000,
+        "seed": 17,
+        "negative_favors": "B",
+        "score": "object-macro standardized MAE"
+      },
+      "across_object_spread_of_predicted_z": {
+        "E_over_rho_sd": 0.8222151952563045,
+        "nu_sd": 0.34602733795707186,
+        "rho_sd": 0.8611772147065615
+      },
+      "predicted_law_counts_objects": {
+        "plasticine": 5,
+        "metal": 3,
+        "jelly": 2
+      },
+      "objects": {
+        "a_bamboo_mat_013020": {
+          "pixie_class": "sand",
+          "law": "plasticine",
+          "E_Pa": 1687320.75,
+          "nu": 0.32741719484329224,
+          "rho": 583.5799560546875,
+          "z": [
+            2.3975486755371094,
+            0.468296080827713,
+            -0.7312517166137695,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 0,
+            "metal": 0,
+            "sand": 6241,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 4,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 7,
+            "1": 9,
+            "2": 14
+          }
+        },
+        "a_brass_telescope_013020": {
+          "pixie_class": "metal",
+          "law": "metal",
+          "E_Pa": 9321837.0,
+          "nu": 0.32316601276397705,
+          "rho": 1023.7284545898438,
+          "z": [
+            2.8642117977142334,
+            0.42749640345573425,
+            0.1315976232290268,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 67,
+            "metal": 4212,
+            "sand": 152,
+            "visplas": 0,
+            "fluid": 11,
+            "snow": 3,
+            "stationary": 14,
+            "background": 4
+          },
+          "gt_law_counts": {
+            "0": 18,
+            "1": 5,
+            "2": 5
+          }
+        },
+        "a_brick_wall_013020": {
+          "pixie_class": "sand",
+          "law": "plasticine",
+          "E_Pa": 580301.625,
+          "nu": 0.2734350562095642,
+          "rho": 675.0025634765625,
+          "z": [
+            1.904163122177124,
+            -0.04978445917367935,
+            -0.5078824162483215,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 0,
+            "metal": 0,
+            "sand": 18481,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 1,
+            "stationary": 30,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "1": 9,
+            "0": 11,
+            "2": 3
+          }
+        },
+        "a_gold_leaf_hamburge_013020": {
+          "pixie_class": "sand",
+          "law": "plasticine",
+          "E_Pa": 17833866.0,
+          "nu": 0.31060975790023804,
+          "rho": 743.119140625,
+          "z": [
+            3.258424997329712,
+            0.30699077248573303,
+            -0.3602982461452484,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 0,
+            "metal": 0,
+            "sand": 39721,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 10,
+            "2": 13,
+            "1": 11
+          }
+        },
+        "a_ice_telescope_013020": {
+          "pixie_class": "snow",
+          "law": "plasticine",
+          "E_Pa": 34973748.0,
+          "nu": 0.3050970435142517,
+          "rho": 1973.796630859375,
+          "z": [
+            3.135021924972534,
+            0.2540838122367859,
+            1.140100359916687,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 0,
+            "metal": 1,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 16529,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "1": 3,
+            "2": 6,
+            "0": 3
+          }
+        },
+        "a_leather_boot_013020": {
+          "pixie_class": "jelly",
+          "law": "jelly",
+          "E_Pa": 656199.875,
+          "nu": 0.3996742367744446,
+          "rho": 409.736572265625,
+          "z": [
+            2.1572329998016357,
+            1.1617655754089355,
+            -1.273815631866455,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 35175,
+            "metal": 0,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "2": 12,
+            "0": 9,
+            "1": 9
+          }
+        },
+        "a_marble_bread_013020": {
+          "pixie_class": "sand",
+          "law": "plasticine",
+          "E_Pa": 21606632.0,
+          "nu": 0.30651479959487915,
+          "rho": 1223.0347900390625,
+          "z": [
+            3.133812427520752,
+            0.26769039034843445,
+            0.4048081934452057,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 0,
+            "metal": 0,
+            "sand": 19944,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 10889,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 10,
+            "1": 17,
+            "2": 5
+          }
+        },
+        "a_plastic_water_bottle_thin_transparent_plastic_isolated_013020": {
+          "pixie_class": "metal",
+          "law": "metal",
+          "E_Pa": 92007720.0,
+          "nu": 0.31550711393356323,
+          "rho": 1971.7496337890625,
+          "z": [
+            3.528919219970703,
+            0.35399195551872253,
+            1.1385060548782349,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 0,
+            "metal": 25545,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "1": 10,
+            "2": 16,
+            "0": 10
+          }
+        },
+        "a_silver_human_skele_013020": {
+          "pixie_class": "jelly",
+          "law": "jelly",
+          "E_Pa": 69423.2265625,
+          "nu": 0.25432008504867554,
+          "rho": 1812.7666015625,
+          "z": [
+            0.6385694146156311,
+            -0.23323577642440796,
+            1.0093412399291992,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 4704,
+            "metal": 92,
+            "sand": 0,
+            "visplas": 91,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 1,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 9,
+            "1": 11,
+            "2": 8
+          }
+        },
+        "a_stainless_steel_si_013020": {
+          "pixie_class": "metal",
+          "law": "metal",
+          "E_Pa": 34950832.0,
+          "nu": 0.3053462505340576,
+          "rho": 2118.24951171875,
+          "z": [
+            3.1060233116149902,
+            0.2564755380153656,
+            1.2486259937286377,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 0,
+            "metal": 14826,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "2": 11,
+            "0": 10,
+            "1": 9
+          }
+        }
+      },
+      "predictions": "runs/v3f_pixie_shell_val/predictions.jsonl"
+    },
+    "filled_train_calibrated": {
+      "samples": 283,
+      "standardized_mae": 0.8573349281541136,
+      "object_macro_mae": 0.8617354012361643,
+      "per_parameter_mae_z": {
+        "E_over_rho": 0.8443378482154626,
+        "nu": 0.8617239171217851,
+        "rho": 0.841013736050418,
+        "sigma_y_over_rho": 0.8965293009881862
+      },
+      "law_accuracy": 0.29328621908127206,
+      "within_law_r": {
+        "E_over_rho": {
+          "mean_over_laws": -0.020638606445466876,
+          "per_law": {
+            "0": -0.07003379600988197,
+            "1": 0.021468681588139783,
+            "2": -0.013350704914658442
+          },
+          "global_pearson": -0.05009781597919985
+        },
+        "nu": {
+          "mean_over_laws": -0.057200118142497,
+          "per_law": {
+            "0": 0.022677311988943422,
+            "1": -0.10371189636668537,
+            "2": -0.09056577004974904
+          },
+          "global_pearson": -0.048802419084281214
+        },
+        "rho": {
+          "mean_over_laws": 0.021448933257447608,
+          "per_law": {
+            "0": 0.11562067064953585,
+            "1": 0.05123017744874909,
+            "2": -0.10250404832594211
+          },
+          "global_pearson": 0.016900494723432868
+        },
+        "sigma_y_over_rho": {
+          "mean_over_laws": null,
+          "per_law": {
+            "1": null,
+            "2": null
+          },
+          "global_pearson": null
+        }
+      },
+      "vs_vjepa_C": {
+        "17": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.2136381534821939,
+          "paired_bootstrap_95_ci": [
+            -0.2379010024576597,
+            -0.19113320105439896
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        },
+        "29": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.20222022984234203,
+          "paired_bootstrap_95_ci": [
+            -0.22631626500217888,
+            -0.18094764407907857
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        },
+        "43": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.21339998260462764,
+          "paired_bootstrap_95_ci": [
+            -0.2356761989431047,
+            -0.19318882315595312
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        }
+      },
+      "vs_vjepa_ensemble_BCD9": {
+        "objects": 10,
+        "mean_object_delta_B_minus_A": -0.23694640394436717,
+        "paired_bootstrap_95_ci": [
+          -0.255536650961459,
+          -0.21771494100115826
+        ],
+        "draws": 2000,
+        "seed": 17,
+        "negative_favors": "B",
+        "score": "object-macro standardized MAE"
+      },
+      "across_object_spread_of_predicted_z": {
+        "E_over_rho_sd": 0.006691938184766624,
+        "nu_sd": 0.006891943994226446,
+        "rho_sd": 0.009911443419179792
+      },
+      "predicted_law_counts_objects": {
+        "plasticine": 5,
+        "metal": 3,
+        "jelly": 2
+      },
+      "objects": {
+        "a_bamboo_mat_013020": {
+          "pixie_class": "sand",
+          "law": "plasticine",
+          "E_Pa": 1687320.75,
+          "nu": 0.32741719484329224,
+          "rho": 583.5799560546875,
+          "z": [
+            0.0044189328327775,
+            0.000971195288002491,
+            -0.0007693073712289333,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 0,
+            "metal": 0,
+            "sand": 6241,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 4,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 7,
+            "1": 9,
+            "2": 14
+          }
+        },
+        "a_brass_telescope_013020": {
+          "pixie_class": "metal",
+          "law": "metal",
+          "E_Pa": 9321269.0,
+          "nu": 0.3231083154678345,
+          "rho": 1024.11328125,
+          "z": [
+            0.008085978217422962,
+            0.0017962679266929626,
+            0.008881425485014915,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 67,
+            "metal": 4213,
+            "sand": 152,
+            "visplas": 0,
+            "fluid": 11,
+            "snow": 3,
+            "stationary": 14,
+            "background": 4
+          },
+          "gt_law_counts": {
+            "0": 18,
+            "1": 5,
+            "2": 5
+          }
+        },
+        "a_brick_wall_013020": {
+          "pixie_class": "sand",
+          "law": "plasticine",
+          "E_Pa": 580301.625,
+          "nu": 0.2734350562095642,
+          "rho": 675.0025634765625,
+          "z": [
+            0.0005404260009527206,
+            0.011307802982628345,
+            0.0017273458652198315,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 0,
+            "metal": 0,
+            "sand": 18481,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 1,
+            "stationary": 30,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "1": 9,
+            "0": 11,
+            "2": 3
+          }
+        },
+        "a_gold_leaf_hamburge_013020": {
+          "pixie_class": "sand",
+          "law": "plasticine",
+          "E_Pa": 18013972.0,
+          "nu": 0.3104468584060669,
+          "rho": 748.0739135742188,
+          "z": [
+            0.011197165586054325,
+            0.004220709204673767,
+            0.00349096255376935,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 3,
+            "metal": 0,
+            "sand": 40700,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 10,
+            "2": 13,
+            "1": 11
+          }
+        },
+        "a_ice_telescope_013020": {
+          "pixie_class": "snow",
+          "law": "plasticine",
+          "E_Pa": 34945536.0,
+          "nu": 0.3050478398799896,
+          "rho": 1975.5712890625,
+          "z": [
+            0.010210762731730938,
+            0.005254523828625679,
+            0.020162684842944145,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 0,
+            "metal": 0,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 16600,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "1": 3,
+            "2": 6,
+            "0": 3
+          }
+        },
+        "a_leather_boot_013020": {
+          "pixie_class": "jelly",
+          "law": "jelly",
+          "E_Pa": 621644.1875,
+          "nu": 0.3994644284248352,
+          "rho": 410.52099609375,
+          "z": [
+            0.0023507019504904747,
+            -0.01282455399632454,
+            -0.006800887640565634,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 35561,
+            "metal": 0,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "2": 12,
+            "0": 9,
+            "1": 9
+          }
+        },
+        "a_marble_bread_013020": {
+          "pixie_class": "sand",
+          "law": "plasticine",
+          "E_Pa": 23083860.0,
+          "nu": 0.306413859128952,
+          "rho": 1268.678466796875,
+          "z": [
+            0.010301019065082073,
+            0.004992955829948187,
+            0.012557774782180786,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 0,
+            "metal": 0,
+            "sand": 19380,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 11850,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 10,
+            "1": 17,
+            "2": 5
+          }
+        },
+        "a_plastic_water_bottle_thin_transparent_plastic_isolated_013020": {
+          "pixie_class": "metal",
+          "law": "metal",
+          "E_Pa": 182714144.0,
+          "nu": 0.31396859884262085,
+          "rho": 2273.11181640625,
+          "z": [
+            0.015051650814712048,
+            0.0035463590174913406,
+            0.022572096437215805,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 0,
+            "metal": 29333,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "1": 10,
+            "2": 16,
+            "0": 10
+          }
+        },
+        "a_silver_human_skele_013020": {
+          "pixie_class": "jelly",
+          "law": "jelly",
+          "E_Pa": 69378.4609375,
+          "nu": 0.2543255388736725,
+          "rho": 1812.4149169921875,
+          "z": [
+            -0.00940985418856144,
+            0.014966932125389576,
+            0.018682388588786125,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 4706,
+            "metal": 91,
+            "sand": 0,
+            "visplas": 91,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 1,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 9,
+            "1": 11,
+            "2": 8
+          }
+        },
+        "a_stainless_steel_si_013020": {
+          "pixie_class": "metal",
+          "law": "metal",
+          "E_Pa": 35034280.0,
+          "nu": 0.30534595251083374,
+          "rho": 2118.75634765625,
+          "z": [
+            0.009995116852223873,
+            0.0051974402740597725,
+            0.021364379674196243,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 0,
+            "metal": 14848,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "2": 11,
+            "0": 10,
+            "1": 9
+          }
+        }
+      },
+      "predictions": "runs/v3f_pixie_filled_train_calibrated_val/predictions.jsonl"
+    },
+    "comparison": {
+      "source": "docs/v3c/BASELINES_VAL.json",
+      "table": [
+        {
+          "method": "vjepa2_32f_D (reference)",
+          "standardized_mae": 0.6394853802513772,
+          "law_accuracy": 0.6878680800942285,
+          "E_over_rho_within_law_r": 0.6684777783344512,
+          "sigma_y_over_rho_within_law_r": 0.876782294717442,
+          "seeds": 3
+        },
+        {
+          "method": "vjepa2_32f_C (reference)",
+          "standardized_mae": 0.6440708240609001,
+          "law_accuracy": 0.6607773851590106,
+          "E_over_rho_within_law_r": 0.6342172708404524,
+          "sigma_y_over_rho_within_law_r": 0.8749142260373447,
+          "seeds": 3
+        },
+        {
+          "method": "vjepa2_32f_B (reference)",
+          "standardized_mae": 0.6453338530963977,
+          "law_accuracy": 0.6878680800942285,
+          "E_over_rho_within_law_r": 0.6462246373817283,
+          "sigma_y_over_rho_within_law_r": 0.8683126748457917,
+          "seeds": 3
+        },
+        {
+          "method": "dinov3_16f_B",
+          "standardized_mae": 0.6611980724742106,
+          "law_accuracy": 0.6702002355712603,
+          "E_over_rho_within_law_r": 0.5775222065621627,
+          "sigma_y_over_rho_within_law_r": 0.8942832385821758,
+          "seeds": 3
+        },
+        {
+          "method": "dinov3_16f_C",
+          "standardized_mae": 0.6627239153475992,
+          "law_accuracy": 0.6525323910482922,
+          "E_over_rho_within_law_r": 0.5611092130865903,
+          "sigma_y_over_rho_within_law_r": 0.8881613429536913,
+          "seeds": 3
+        },
+        {
+          "method": "law_mean_gt_privileged",
+          "standardized_mae": 0.7859548133654816,
+          "law_accuracy": null,
+          "E_over_rho_within_law_r": null,
+          "sigma_y_over_rho_within_law_r": null,
+          "seeds": null
+        },
+        {
+          "method": "dinov3_static_first_frame_B",
+          "standardized_mae": 0.8568534395692703,
+          "law_accuracy": 0.33451118963486454,
+          "E_over_rho_within_law_r": 0.024013868938431618,
+          "sigma_y_over_rho_within_law_r": 0.03427563206896624,
+          "seeds": 3
+        },
+        {
+          "method": "constant_train_mean",
+          "standardized_mae": 0.8575882477086423,
+          "law_accuracy": 0.3286219081272085,
+          "E_over_rho_within_law_r": null,
+          "sigma_y_over_rho_within_law_r": null,
+          "seeds": null
+        },
+        {
+          "method": "qwen3vl8b_zeroshot",
+          "standardized_mae": 1.601299463183324,
+          "law_accuracy": 0.36395759717314485,
+          "E_over_rho_within_law_r": 0.04743682246711307,
+          "sigma_y_over_rho_within_law_r": -0.17085592946253364,
+          "seeds": null
+        }
+      ],
+      "vjepa2_ensemble_BCD9 (ours, rescored here)": {
+        "standardized_mae": 0.616246852638067,
+        "object_macro_mae": 0.624788997291797,
+        "law_accuracy": 0.6996466431095406,
+        "per_parameter_mae_z": {
+          "E_over_rho": 0.3569983854808238,
+          "nu": 0.8609466992979004,
+          "rho": 0.8059888450918089,
+          "sigma_y_over_rho": 0.3408039400622789
+        },
+        "within_law_r": {
+          "E_over_rho": {
+            "mean_over_laws": 0.685693981149842,
+            "per_law": {
+              "0": 0.9197998055492503,
+              "1": 0.24270384642255644,
+              "2": 0.8945782914777193
+            },
+            "global_pearson": 0.8797088714125324
+          },
+          "nu": {
+            "mean_over_laws": 0.1289855895605718,
+            "per_law": {
+              "0": 0.04618045597627192,
+              "1": 0.2751494255782694,
+              "2": 0.06562688712717411
+            },
+            "global_pearson": 0.11237252204056167
+          },
+          "rho": {
+            "mean_over_laws": 0.16422676431658992,
+            "per_law": {
+              "0": 0.01253764012839715,
+              "1": 0.11408512014566627,
+              "2": 0.3660575326757064
+            },
+            "global_pearson": 0.1768178885293049
+          },
+          "sigma_y_over_rho": {
+            "mean_over_laws": 0.8946324071928032,
+            "per_law": {
+              "1": 0.9518246805925537,
+              "2": 0.8374401337930528
+            },
+            "global_pearson": 0.9095805670164434
+          }
+        }
+      }
+    }
+  },
+  "train_diagnostic_filled": {
+    "samples": 1955,
+    "objects": 87,
+    "law_accuracy": 0.32634271099744244,
+    "majority_law_rate": 0.3345268542199488,
+    "confusion_gt_rows_pred_cols": [
+      [
+        258,
+        189,
+        204
+      ],
+      [
+        263,
+        157,
+        230
+      ],
+      [
+        269,
+        162,
+        223
+      ]
+    ],
+    "E_over_rho": {
+      "pearson": 0.008991532480653153,
+      "spearman": 0.010087747999463614,
+      "within_law_r_mean": -0.012018549695606513
+    },
+    "nu": {
+      "pearson": -0.008389364492343416,
+      "spearman": -0.002953237674332443,
+      "within_law_r_mean": -0.007464467280522848
+    },
+    "rho": {
+      "pearson": 0.013353357535164543,
+      "spearman": 0.011776081873846113,
+      "within_law_r_mean": 0.012953132827621235
+    }
+  },
+  "test": {
+    "train_calibration": {
+      "params": [
+        "E_over_rho",
+        "nu",
+        "rho"
+      ],
+      "intercept_slope": [
+        [
+          -0.014428211994032684,
+          0.007861005858924616
+        ],
+        [
+          0.010314516723913461,
+          -0.019951740299896083
+        ],
+        [
+          0.007404070935712879,
+          0.011177242444958482
+        ]
+      ],
+      "train_objects": 87,
+      "train_object_law_counts": {
+        "plasticine": 29,
+        "jelly": 34,
+        "metal": 24
+      }
+    },
+    "filled": {
+      "samples": 300,
+      "standardized_mae": 1.3386913114808363,
+      "object_macro_mae": 1.3577184539685327,
+      "per_parameter_mae_z": {
+        "E_over_rho": 1.5488569832358432,
+        "nu": 1.0696487831793882,
+        "rho": 1.6929959031722197,
+        "sigma_y_over_rho": 0.874668690834331
+      },
+      "law_accuracy": 0.39,
+      "within_law_r": {
+        "E_over_rho": {
+          "mean_over_laws": -0.003960869847363348,
+          "per_law": {
+            "0": -0.014459887680606819,
+            "1": -0.06339698968858452,
+            "2": 0.0659742678271013
+          },
+          "global_pearson": 0.008950630707093867
+        },
+        "nu": {
+          "mean_over_laws": -0.11598915174399262,
+          "per_law": {
+            "0": -0.19262792532090192,
+            "1": -0.045588162227660184,
+            "2": -0.10975136768341577
+          },
+          "global_pearson": -0.10973255557354437
+        },
+        "rho": {
+          "mean_over_laws": 0.06741897551717281,
+          "per_law": {
+            "0": 0.08178334168734958,
+            "1": -0.0655648862563589,
+            "2": 0.18603847112052777
+          },
+          "global_pearson": 0.07136844828415681
+        },
+        "sigma_y_over_rho": {
+          "mean_over_laws": null,
+          "per_law": {
+            "1": null,
+            "2": null
+          },
+          "global_pearson": null
+        }
+      },
+      "vs_vjepa_C": {
+        "17": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.6862859461748975,
+          "paired_bootstrap_95_ci": [
+            -0.8588850339834085,
+            -0.49173391214870515
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        },
+        "29": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.6696307093819509,
+          "paired_bootstrap_95_ci": [
+            -0.8479448398351026,
+            -0.47547788513810557
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        },
+        "43": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.6933429788314462,
+          "paired_bootstrap_95_ci": [
+            -0.8614767752315249,
+            -0.5062861429445253
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        }
+      },
+      "vs_vjepa_ensemble_BCD9": {
+        "objects": 10,
+        "mean_object_delta_B_minus_A": -0.7137606802521841,
+        "paired_bootstrap_95_ci": [
+          -0.8894347552785126,
+          -0.521375864007252
+        ],
+        "draws": 2000,
+        "seed": 17,
+        "negative_favors": "B",
+        "score": "object-macro standardized MAE"
+      },
+      "across_object_spread_of_predicted_z": {
+        "E_over_rho_sd": 0.7793646844024481,
+        "nu_sd": 0.5305129961288315,
+        "rho_sd": 1.5431025934296176
+      },
+      "predicted_law_counts_objects": {
+        "jelly": 4,
+        "plasticine": 4,
+        "metal": 2
+      },
+      "objects": {
+        "a_bamboo_spacesuit_013020": {
+          "pixie_class": "jelly",
+          "law": "jelly",
+          "E_Pa": 2638.942138671875,
+          "nu": 0.36307814717292786,
+          "rho": 359.826171875,
+          "z": [
+            -0.033745553344488144,
+            0.8105434775352478,
+            -1.4729769229888916,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 8793,
+            "metal": 0,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 12,
+            "1": 9,
+            "2": 6
+          }
+        },
+        "a_carbon_fiber_helme_013020": {
+          "pixie_class": "snow",
+          "law": "plasticine",
+          "E_Pa": 18666.947265625,
+          "nu": 0.3389970660209656,
+          "rho": 652.4010009765625,
+          "z": [
+            0.5199878811836243,
+            0.5794311165809631,
+            -0.5601580142974854,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 9487,
+            "metal": 5,
+            "sand": 16024,
+            "visplas": 0,
+            "fluid": 45,
+            "snow": 46452,
+            "stationary": 414,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "2": 11,
+            "1": 10,
+            "0": 8
+          }
+        },
+        "a_carbon_fiber_rose_013020": {
+          "pixie_class": "jelly",
+          "law": "jelly",
+          "E_Pa": 107411.0,
+          "nu": 0.3800351023674011,
+          "rho": 166.3544921875,
+          "z": [
+            1.787704348564148,
+            0.9732837677001953,
+            -2.6540284156799316,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 12319,
+            "metal": 0,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "1": 10,
+            "0": 16,
+            "2": 7
+          }
+        },
+        "a_ceramic_plate_013020": {
+          "pixie_class": "metal",
+          "law": "metal",
+          "E_Pa": 115145.3515625,
+          "nu": 0.25830942392349243,
+          "rho": 2018.0198974609375,
+          "z": [
+            0.8007565140724182,
+            -0.19494906067848206,
+            1.1741456985473633,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 115,
+            "metal": 7361,
+            "sand": 2283,
+            "visplas": 0,
+            "fluid": 48,
+            "snow": 5800,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "1": 15,
+            "2": 15,
+            "0": 6
+          }
+        },
+        "a_crystal_cactus_013020": {
+          "pixie_class": "snow",
+          "law": "plasticine",
+          "E_Pa": 5633208.0,
+          "nu": 0.2772201597690582,
+          "rho": 2254.05322265625,
+          "z": [
+            2.338252305984497,
+            -0.013457841239869595,
+            1.3441075086593628,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 0,
+            "metal": 0,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 14521,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "2": 11,
+            "1": 14,
+            "0": 11
+          }
+        },
+        "a_denim_violin_013020": {
+          "pixie_class": "jelly",
+          "law": "jelly",
+          "E_Pa": 73734.0625,
+          "nu": 0.35987406969070435,
+          "rho": 260.61114501953125,
+          "z": [
+            1.4520628452301025,
+            0.7797930836677551,
+            -1.9672638177871704,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 8330,
+            "metal": 1,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 8,
+            "2": 9,
+            "1": 10
+          }
+        },
+        "a_embroidered_fan_013020": {
+          "pixie_class": "jelly",
+          "law": "jelly",
+          "E_Pa": 50507.8515625,
+          "nu": 0.38533860445022583,
+          "rho": 135.91798400878906,
+          "z": [
+            1.5629693269729614,
+            1.0241827964782715,
+            -2.96260666847229,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 9539,
+            "metal": 0,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 3,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 11,
+            "2": 8,
+            "1": 5
+          }
+        },
+        "a_rubber_tire_013020": {
+          "pixie_class": "metal",
+          "law": "metal",
+          "E_Pa": 1038168.875,
+          "nu": 0.4013146460056305,
+          "rho": 371.6307373046875,
+          "z": [
+            2.383553981781006,
+            1.177509069442749,
+            -1.4234896898269653,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 3350,
+            "metal": 26094,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 308,
+            "snow": 0,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 10,
+            "1": 9,
+            "2": 9
+          }
+        },
+        "a_seashell_necklace_013020": {
+          "pixie_class": "sand",
+          "law": "plasticine",
+          "E_Pa": 362090.53125,
+          "nu": 0.37173619866371155,
+          "rho": 282.251953125,
+          "z": [
+            2.0669848918914795,
+            0.8936370015144348,
+            -1.845085620880127,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 655,
+            "metal": 0,
+            "sand": 3376,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 169,
+            "stationary": 744,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "1": 13,
+            "2": 14,
+            "0": 8
+          }
+        },
+        "a_stone_statue_013020": {
+          "pixie_class": "snow",
+          "law": "plasticine",
+          "E_Pa": 102286.4375,
+          "nu": 0.2367401123046875,
+          "rho": 2047.634033203125,
+          "z": [
+            0.7466606497764587,
+            -0.40195533633232117,
+            1.1965299844741821,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 0,
+            "metal": 0,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 12454,
+            "stationary": 24,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 10,
+            "1": 5,
+            "2": 10
+          }
+        }
+      },
+      "predictions": "runs/v3f_pixie_filled_test/predictions.jsonl"
+    },
+    "shell": {
+      "samples": 300,
+      "standardized_mae": 1.3372333613924847,
+      "object_macro_mae": 1.3566109317128414,
+      "per_parameter_mae_z": {
+        "E_over_rho": 1.546515380331742,
+        "nu": 1.0735832840922133,
+        "rho": 1.6861009266755234,
+        "sigma_y_over_rho": 0.874668690834331
+      },
+      "law_accuracy": 0.39,
+      "within_law_r": {
+        "E_over_rho": {
+          "mean_over_laws": -0.0045610752798295505,
+          "per_law": {
+            "0": -0.013620363429679882,
+            "1": -0.0645440053263009,
+            "2": 0.06448114291649214
+          },
+          "global_pearson": 0.008281260610288261
+        },
+        "nu": {
+          "mean_over_laws": -0.11731803195039013,
+          "per_law": {
+            "0": -0.19199823784857092,
+            "1": -0.048337068339871926,
+            "2": -0.11161878966272755
+          },
+          "global_pearson": -0.11111702125205958
+        },
+        "rho": {
+          "mean_over_laws": 0.06746783935616733,
+          "per_law": {
+            "0": 0.08353371441964874,
+            "1": -0.06407083897171481,
+            "2": 0.18294064262056808
+          },
+          "global_pearson": 0.07155285880038073
+        },
+        "sigma_y_over_rho": {
+          "mean_over_laws": null,
+          "per_law": {
+            "1": null,
+            "2": null
+          },
+          "global_pearson": null
+        }
+      },
+      "vs_vjepa_C": {
+        "17": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.6851784239192065,
+          "paired_bootstrap_95_ci": [
+            -0.8586120881375755,
+            -0.4920798281275721
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        },
+        "29": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.66852318712626,
+          "paired_bootstrap_95_ci": [
+            -0.8457135455269336,
+            -0.4743543187186067
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        },
+        "43": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.6922354565757552,
+          "paired_bootstrap_95_ci": [
+            -0.8602068182810888,
+            -0.5060190227768203
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        }
+      },
+      "vs_vjepa_ensemble_BCD9": {
+        "objects": 10,
+        "mean_object_delta_B_minus_A": -0.7126531579964931,
+        "paired_bootstrap_95_ci": [
+          -0.889406176405991,
+          -0.52112160217835
+        ],
+        "draws": 2000,
+        "seed": 17,
+        "negative_favors": "B",
+        "score": "object-macro standardized MAE"
+      },
+      "across_object_spread_of_predicted_z": {
+        "E_over_rho_sd": 0.7784014403718758,
+        "nu_sd": 0.533533026216748,
+        "rho_sd": 1.5387836013840654
+      },
+      "predicted_law_counts_objects": {
+        "jelly": 4,
+        "plasticine": 4,
+        "metal": 2
+      },
+      "objects": {
+        "a_bamboo_spacesuit_013020": {
+          "pixie_class": "jelly",
+          "law": "jelly",
+          "E_Pa": 2491.24609375,
+          "nu": 0.3611871302127838,
+          "rho": 356.98834228515625,
+          "z": [
+            -0.053950756788253784,
+            0.7923948764801025,
+            -1.4851150512695312,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 8314,
+            "metal": 0,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 12,
+            "1": 9,
+            "2": 6
+          }
+        },
+        "a_carbon_fiber_helme_013020": {
+          "pixie_class": "snow",
+          "law": "plasticine",
+          "E_Pa": 19759.767578125,
+          "nu": 0.33935225009918213,
+          "rho": 649.9608154296875,
+          "z": [
+            0.5446547865867615,
+            0.5828399062156677,
+            -0.5659100413322449,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 7379,
+            "metal": 3,
+            "sand": 13907,
+            "visplas": 0,
+            "fluid": 45,
+            "snow": 48702,
+            "stationary": 250,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "2": 11,
+            "1": 10,
+            "0": 8
+          }
+        },
+        "a_carbon_fiber_rose_013020": {
+          "pixie_class": "jelly",
+          "law": "jelly",
+          "E_Pa": 104683.765625,
+          "nu": 0.37946397066116333,
+          "rho": 165.14617919921875,
+          "z": [
+            1.7802077531814575,
+            0.9678024649620056,
+            -2.665168046951294,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 12136,
+            "metal": 0,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "1": 10,
+            "0": 16,
+            "2": 7
+          }
+        },
+        "a_ceramic_plate_013020": {
+          "pixie_class": "metal",
+          "law": "metal",
+          "E_Pa": 115198.5859375,
+          "nu": 0.25831466913223267,
+          "rho": 2017.71630859375,
+          "z": [
+            0.8010059595108032,
+            -0.19489872455596924,
+            1.1739147901535034,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 115,
+            "metal": 7372,
+            "sand": 2282,
+            "visplas": 0,
+            "fluid": 48,
+            "snow": 5789,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "1": 15,
+            "2": 15,
+            "0": 6
+          }
+        },
+        "a_crystal_cactus_013020": {
+          "pixie_class": "snow",
+          "law": "plasticine",
+          "E_Pa": 5505543.0,
+          "nu": 0.27746039628982544,
+          "rho": 2238.482421875,
+          "z": [
+            2.33174729347229,
+            -0.011152229271829128,
+            1.3334567546844482,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 0,
+            "metal": 0,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 14098,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "2": 11,
+            "1": 14,
+            "0": 11
+          }
+        },
+        "a_denim_violin_013020": {
+          "pixie_class": "jelly",
+          "law": "jelly",
+          "E_Pa": 74373.7890625,
+          "nu": 0.35970738530158997,
+          "rho": 261.212890625,
+          "z": [
+            1.4546387195587158,
+            0.7781934142112732,
+            -1.963732123374939,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 8243,
+            "metal": 1,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 8,
+            "2": 9,
+            "1": 10
+          }
+        },
+        "a_embroidered_fan_013020": {
+          "pixie_class": "jelly",
+          "law": "jelly",
+          "E_Pa": 50507.8515625,
+          "nu": 0.38533860445022583,
+          "rho": 135.91798400878906,
+          "z": [
+            1.5629693269729614,
+            1.0241827964782715,
+            -2.96260666847229,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 9539,
+            "metal": 0,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 3,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 11,
+            "2": 8,
+            "1": 5
+          }
+        },
+        "a_rubber_tire_013020": {
+          "pixie_class": "metal",
+          "law": "metal",
+          "E_Pa": 1068037.25,
+          "nu": 0.40119051933288574,
+          "rho": 370.760498046875,
+          "z": [
+            2.396045684814453,
+            1.176317811012268,
+            -1.4270844459533691,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 3589,
+            "metal": 25426,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 320,
+            "snow": 0,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 10,
+            "1": 9,
+            "2": 9
+          }
+        },
+        "a_seashell_necklace_013020": {
+          "pixie_class": "sand",
+          "law": "plasticine",
+          "E_Pa": 355577.15625,
+          "nu": 0.3786265552043915,
+          "rho": 295.6705017089844,
+          "z": [
+            2.0407071113586426,
+            0.9597655534744263,
+            -1.7739331722259521,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 598,
+            "metal": 0,
+            "sand": 3210,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 173,
+            "stationary": 590,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "1": 13,
+            "2": 14,
+            "0": 8
+          }
+        },
+        "a_stone_statue_013020": {
+          "pixie_class": "snow",
+          "law": "plasticine",
+          "E_Pa": 102545.4140625,
+          "nu": 0.23662708699703217,
+          "rho": 2047.1181640625,
+          "z": [
+            0.7477914690971375,
+            -0.4030400514602661,
+            1.1961430311203003,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 0,
+            "metal": 0,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 12350,
+            "stationary": 27,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 10,
+            "1": 5,
+            "2": 10
+          }
+        }
+      },
+      "predictions": "runs/v3f_pixie_shell_test/predictions.jsonl"
+    },
+    "filled_train_calibrated": {
+      "samples": 300,
+      "standardized_mae": 0.852567616741992,
+      "object_macro_mae": 0.844844462387887,
+      "per_parameter_mae_z": {
+        "E_over_rho": 0.8105517003667774,
+        "nu": 0.8318712393718306,
+        "rho": 0.9012088933152457,
+        "sigma_y_over_rho": 0.874668690834331
+      },
+      "law_accuracy": 0.39,
+      "within_law_r": {
+        "E_over_rho": {
+          "mean_over_laws": -0.003960873298929056,
+          "per_law": {
+            "0": -0.014459877863626116,
+            "1": -0.0633970044064812,
+            "2": 0.06597426237332014
+          },
+          "global_pearson": 0.008950630945473492
+        },
+        "nu": {
+          "mean_over_laws": 0.11598915266011638,
+          "per_law": {
+            "0": 0.19262792216600186,
+            "1": 0.04558816852116009,
+            "2": 0.10975136729318717
+          },
+          "global_pearson": 0.10973255667737562
+        },
+        "rho": {
+          "mean_over_laws": 0.06741897742195109,
+          "per_law": {
+            "0": 0.08178334072869933,
+            "1": -0.06556488607135887,
+            "2": 0.18603847760851283
+          },
+          "global_pearson": 0.07136844995886815
+        },
+        "sigma_y_over_rho": {
+          "mean_over_laws": null,
+          "per_law": {
+            "1": null,
+            "2": null
+          },
+          "global_pearson": null
+        }
+      },
+      "vs_vjepa_C": {
+        "17": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.1734119545942519,
+          "paired_bootstrap_95_ci": [
+            -0.20465135345085664,
+            -0.14043756702531615
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        },
+        "29": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.15675671780130546,
+          "paired_bootstrap_95_ci": [
+            -0.18165483597685017,
+            -0.12928730353918302
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        },
+        "43": {
+          "objects": 10,
+          "mean_object_delta_B_minus_A": -0.18046898725080074,
+          "paired_bootstrap_95_ci": [
+            -0.2014709134021821,
+            -0.1551228526883176
+          ],
+          "draws": 2000,
+          "seed": 17,
+          "negative_favors": "B",
+          "score": "object-macro standardized MAE"
+        }
+      },
+      "vs_vjepa_ensemble_BCD9": {
+        "objects": 10,
+        "mean_object_delta_B_minus_A": -0.20088668867153858,
+        "paired_bootstrap_95_ci": [
+          -0.22731425393954774,
+          -0.17399273233654136
+        ],
+        "draws": 2000,
+        "seed": 17,
+        "negative_favors": "B",
+        "score": "object-macro standardized MAE"
+      },
+      "across_object_spread_of_predicted_z": {
+        "E_over_rho_sd": 0.006126590445436067,
+        "nu_sd": 0.010584657477557595,
+        "rho_sd": 0.017247632271009634
+      },
+      "predicted_law_counts_objects": {
+        "jelly": 4,
+        "plasticine": 4,
+        "metal": 2
+      },
+      "objects": {
+        "a_bamboo_spacesuit_013020": {
+          "pixie_class": "jelly",
+          "law": "jelly",
+          "E_Pa": 2638.942138671875,
+          "nu": 0.36307814717292786,
+          "rho": 359.826171875,
+          "z": [
+            -0.014693486504256725,
+            -0.005857236683368683,
+            -0.00905974954366684,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 8793,
+            "metal": 0,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 12,
+            "1": 9,
+            "2": 6
+          }
+        },
+        "a_carbon_fiber_helme_013020": {
+          "pixie_class": "snow",
+          "law": "plasticine",
+          "E_Pa": 18666.947265625,
+          "nu": 0.3389970660209656,
+          "rho": 652.4010009765625,
+          "z": [
+            -0.010340584442019463,
+            -0.0012461422011256218,
+            0.0011430485174059868,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 9487,
+            "metal": 5,
+            "sand": 16024,
+            "visplas": 0,
+            "fluid": 45,
+            "snow": 46452,
+            "stationary": 414,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "2": 11,
+            "1": 10,
+            "0": 8
+          }
+        },
+        "a_carbon_fiber_rose_013020": {
+          "pixie_class": "jelly",
+          "law": "jelly",
+          "E_Pa": 107411.0,
+          "nu": 0.3800351023674011,
+          "rho": 166.3544921875,
+          "z": [
+            -0.00037505757063627243,
+            -0.009104188531637192,
+            -0.022260649129748344,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 12319,
+            "metal": 0,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "1": 10,
+            "0": 16,
+            "2": 7
+          }
+        },
+        "a_ceramic_plate_013020": {
+          "pixie_class": "metal",
+          "law": "metal",
+          "E_Pa": 115145.3515625,
+          "nu": 0.25830942392349243,
+          "rho": 2018.0198974609375,
+          "z": [
+            -0.008133459836244583,
+            0.014204089529812336,
+            0.020527781918644905,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 115,
+            "metal": 7361,
+            "sand": 2283,
+            "visplas": 0,
+            "fluid": 48,
+            "snow": 5800,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "1": 15,
+            "2": 15,
+            "0": 6
+          }
+        },
+        "a_crystal_cactus_013020": {
+          "pixie_class": "snow",
+          "law": "plasticine",
+          "E_Pa": 5633208.0,
+          "nu": 0.2772201597690582,
+          "rho": 2254.05322265625,
+          "z": [
+            0.003952804021537304,
+            0.010583024471998215,
+            0.02242748625576496,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 0,
+            "metal": 0,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 14521,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "2": 11,
+            "1": 14,
+            "0": 11
+          }
+        },
+        "a_denim_violin_013020": {
+          "pixie_class": "jelly",
+          "law": "jelly",
+          "E_Pa": 73734.0625,
+          "nu": 0.35987406969070435,
+          "rho": 260.61114501953125,
+          "z": [
+            -0.0030135372653603554,
+            -0.005243712104856968,
+            -0.014584515243768692,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 8330,
+            "metal": 1,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 8,
+            "2": 9,
+            "1": 10
+          }
+        },
+        "a_embroidered_fan_013020": {
+          "pixie_class": "jelly",
+          "law": "jelly",
+          "E_Pa": 50507.8515625,
+          "nu": 0.38533860445022583,
+          "rho": 135.91798400878906,
+          "z": [
+            -0.0021417010575532913,
+            -0.010119711980223656,
+            -0.02570970356464386,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 9539,
+            "metal": 0,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 0,
+            "stationary": 3,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 11,
+            "2": 8,
+            "1": 5
+          }
+        },
+        "a_rubber_tire_013020": {
+          "pixie_class": "metal",
+          "law": "metal",
+          "E_Pa": 1038168.875,
+          "nu": 0.4013146460056305,
+          "rho": 371.6307373046875,
+          "z": [
+            0.004308919422328472,
+            -0.013178838416934013,
+            -0.008506620302796364,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 3350,
+            "metal": 26094,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 308,
+            "snow": 0,
+            "stationary": 0,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 10,
+            "1": 9,
+            "2": 9
+          }
+        },
+        "a_seashell_necklace_013020": {
+          "pixie_class": "sand",
+          "law": "plasticine",
+          "E_Pa": 362090.53125,
+          "nu": 0.37173619866371155,
+          "rho": 282.251953125,
+          "z": [
+            0.0018203677609562874,
+            -0.007515097036957741,
+            -0.013218900188803673,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 655,
+            "metal": 0,
+            "sand": 3376,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 169,
+            "stationary": 744,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "1": 13,
+            "2": 14,
+            "0": 8
+          }
+        },
+        "a_stone_statue_013020": {
+          "pixie_class": "snow",
+          "law": "plasticine",
+          "E_Pa": 102286.4375,
+          "nu": 0.2367401123046875,
+          "rho": 2047.634033203125,
+          "z": [
+            -0.008558708243072033,
+            0.018334224820137024,
+            0.020777976140379906,
+            0.0
+          ],
+          "class_hist": {
+            "jelly": 0,
+            "metal": 0,
+            "sand": 0,
+            "visplas": 0,
+            "fluid": 0,
+            "snow": 12454,
+            "stationary": 24,
+            "background": 0
+          },
+          "gt_law_counts": {
+            "0": 10,
+            "1": 5,
+            "2": 10
+          }
+        }
+      },
+      "predictions": "runs/v3f_pixie_filled_train_calibrated_test/predictions.jsonl"
+    },
+    "comparison": {
+      "source": "docs/v3c/BASELINES_TEST.json",
+      "table": [
+        {
+          "method": "vjepa2_ensemble_BCD9",
+          "standardized_mae": 0.6460587754369654,
+          "law_accuracy": 0.7433333333333333,
+          "E_over_rho_within_law_r": 0.6292136249010583,
+          "sigma_y_over_rho_within_law_r": 0.7934126762077227,
+          "seeds": null
+        },
+        {
+          "method": "vjepa2_ensemble_C3",
+          "standardized_mae": 0.657817500030251,
+          "law_accuracy": 0.7433333333333333,
+          "E_over_rho_within_law_r": 0.6271197270698695,
+          "sigma_y_over_rho_within_law_r": 0.7746805050278236,
+          "seeds": null
+        },
+        {
+          "method": "vjepa2_32f_B",
+          "standardized_mae": 0.6670882773410871,
+          "law_accuracy": 0.7311111111111112,
+          "E_over_rho_within_law_r": 0.5909362310396237,
+          "sigma_y_over_rho_within_law_r": 0.7704297999222715,
+          "seeds": 3
+        },
+        {
+          "method": "vjepa2_32f_D",
+          "standardized_mae": 0.6673247304538473,
+          "law_accuracy": 0.7511111111111112,
+          "E_over_rho_within_law_r": 0.6113198224768327,
+          "sigma_y_over_rho_within_law_r": 0.7711105264333263,
+          "seeds": 3
+        },
+        {
+          "method": "vjepa2_32f_C",
+          "standardized_mae": 0.6759782702168682,
+          "law_accuracy": 0.7177777777777777,
+          "E_over_rho_within_law_r": 0.607699057917241,
+          "sigma_y_over_rho_within_law_r": 0.7537636930223052,
+          "seeds": 3
+        },
+        {
+          "method": "dinov3_16f_C",
+          "standardized_mae": 0.6862112598025011,
+          "law_accuracy": 0.7077777777777777,
+          "E_over_rho_within_law_r": 0.5395248625419912,
+          "sigma_y_over_rho_within_law_r": 0.8329628236587333,
+          "seeds": 3
+        },
+        {
+          "method": "dinov3_16f_B",
+          "standardized_mae": 0.6880391986526213,
+          "law_accuracy": 0.7055555555555556,
+          "E_over_rho_within_law_r": 0.5616786128804343,
+          "sigma_y_over_rho_within_law_r": 0.8143286831470525,
+          "seeds": 3
+        },
+        {
+          "method": "law_mean_gt_privileged",
+          "standardized_mae": 0.7918817203839794,
+          "law_accuracy": null,
+          "E_over_rho_within_law_r": null,
+          "sigma_y_over_rho_within_law_r": null,
+          "seeds": null
+        },
+        {
+          "method": "dinov3_static_first_frame_B",
+          "standardized_mae": 0.851947402587459,
+          "law_accuracy": 0.3422222222222222,
+          "E_over_rho_within_law_r": 0.02885431573175044,
+          "sigma_y_over_rho_within_law_r": 0.08069674167863163,
+          "seeds": 3
+        },
+        {
+          "method": "constant_train_mean",
+          "standardized_mae": 0.8531698527522141,
+          "law_accuracy": 0.3333333333333333,
+          "E_over_rho_within_law_r": null,
+          "sigma_y_over_rho_within_law_r": null,
+          "seeds": null
+        },
+        {
+          "method": "qwen3vl8b_zeroshot",
+          "standardized_mae": 1.580333686738856,
+          "law_accuracy": 0.3466666666666667,
+          "E_over_rho_within_law_r": 0.16644637352619956,
+          "sigma_y_over_rho_within_law_r": -0.12892700381224714,
+          "seeds": null
+        }
+      ],
+      "vjepa2_ensemble_BCD9 (ours, rescored here)": {
+        "standardized_mae": 0.6460587754369654,
+        "object_macro_mae": 0.6439577737163483,
+        "law_accuracy": 0.7433333333333333,
+        "per_parameter_mae_z": {
+          "E_over_rho": 0.3870552829377293,
+          "nu": 0.8406513901338136,
+          "rho": 0.8475166368377567,
+          "sigma_y_over_rho": 0.4308017331358087
+        },
+        "within_law_r": {
+          "E_over_rho": {
+            "mean_over_laws": 0.6292136249010583,
+            "per_law": {
+              "0": 0.90862145452548,
+              "1": 0.19888932011381003,
+              "2": 0.7801301000638847
+            },
+            "global_pearson": 0.8274010045288351
+          },
+          "nu": {
+            "mean_over_laws": 0.03322592388612328,
+            "per_law": {
+              "0": 0.025372985876972547,
+              "1": -0.045242829918987745,
+              "2": 0.11954761570038505
+            },
+            "global_pearson": 0.03297791882498345
+          },
+          "rho": {
+            "mean_over_laws": 0.28766561222292747,
+            "per_law": {
+              "0": 0.30338099437114047,
+              "1": 0.17105957716287293,
+              "2": 0.388556265134769
+            },
+            "global_pearson": 0.29112751679279497
+          },
+          "sigma_y_over_rho": {
+            "mean_over_laws": 0.7934126762077227,
+            "per_law": {
+              "1": 0.8736333900471319,
+              "2": 0.7131919623683135
+            },
+            "global_pearson": 0.8137239356339919
+          }
+        }
+      }
+    }
+  }
+}

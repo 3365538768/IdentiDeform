@@ -1,0 +1,19 @@
+simulation failed obs_00 1
+eval {'n': 1, 'law': 'jelly', 'x': [3.833995, 0.11257], 'seconds': 102.68564534187317, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_01 1
+eval {'n': 2, 'law': 'jelly', 'x': [4.333995, 0.11257], 'seconds': 91.69790244102478, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_02 1
+eval {'n': 3, 'law': 'jelly', 'x': [3.333995, 0.11257], 'seconds': 102.13650035858154, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_03 1
+eval {'n': 4, 'law': 'jelly', 'x': [4.083995, 0.11257], 'seconds': 95.22197937965393, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_04 1
+eval {'n': 5, 'law': 'jelly', 'x': [3.583995, 0.11257], 'seconds': 98.77671504020691, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_05 1
+eval {'n': 6, 'law': 'jelly', 'x': [3.958995, 0.11257], 'seconds': 95.14344429969788, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+simulation failed obs_06 1
+eval {'n': 7, 'law': 'jelly', 'x': [3.708995, 0.11257], 'seconds': 97.92181444168091, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval {'n': 8, 'law': 'jelly', 'x': [3.896495, 0.11257], 'seconds': 397.2416162490845, 'iou': 0.6674495159300418, 'iou_last': 0.4757590079725376, 'rgb_mae_union': 64.83345252026177, 'loss': 0.5867993174827495}
+eval {'n': 9, 'law': 'jelly', 'x': [3.927745, 0.11257], 'seconds': 379.6476991176605, 'iou': 0.6608707712266731, 'iou_last': 0.47512159550245886, 'rgb_mae_union': 65.9040090922312, 'loss': 0.597576323252665}
+simulation failed obs_09 1
+eval {'n': 10, 'law': 'jelly', 'x': [3.865245, 0.11257], 'seconds': 96.61765670776367, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+done 231 gtnoise_0.5 {'0': 0.141, '4': 0.141, '12': 0.161}

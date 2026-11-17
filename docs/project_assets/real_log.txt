@@ -1,0 +1,5 @@
+bun {'prior': 0.317, 'prior_refine_damp_loo': 0.546, 'class_mean': 0.064} 156022
+burger {'prior': 0.202, 'prior_refine_damp_loo': 0.681, 'class_mean': 0.085} 146747
+dog {'prior': 0.16, 'prior_refine_damp_loo': 0.194, 'class_mean': 0.002} 152867
+pig {'prior': 0.388, 'prior_refine_damp_loo': 0.199, 'class_mean': 0.008} 162927
+potato {'prior': 0.224, 'prior_refine_damp_loo': 0.269, 'class_mean': 0.046} 140477

@@ -1,0 +1,336 @@
+{
+ "rule": "V2/V3 rule (c1_select, seed 20261113) on V5b val = docs/v5q/SAMPLES_RESOLVED.json val (60); wave1 quota 10/10/6 seed 20261114",
+ "identical_to_v3r_samples": true,
+ "samples": [
+  {
+   "index": 2,
+   "law": "plasticine"
+  },
+  {
+   "index": 5,
+   "law": "plasticine"
+  },
+  {
+   "index": 21,
+   "law": "jelly"
+  },
+  {
+   "index": 27,
+   "law": "jelly"
+  },
+  {
+   "index": 29,
+   "law": "plasticine"
+  },
+  {
+   "index": 31,
+   "law": "metal"
+  },
+  {
+   "index": 37,
+   "law": "metal"
+  },
+  {
+   "index": 40,
+   "law": "metal"
+  },
+  {
+   "index": 53,
+   "law": "plasticine"
+  },
+  {
+   "index": 60,
+   "law": "jelly"
+  },
+  {
+   "index": 64,
+   "law": "metal"
+  },
+  {
+   "index": 66,
+   "law": "jelly"
+  },
+  {
+   "index": 68,
+   "law": "plasticine"
+  },
+  {
+   "index": 71,
+   "law": "plasticine"
+  },
+  {
+   "index": 80,
+   "law": "plasticine"
+  },
+  {
+   "index": 88,
+   "law": "metal"
+  },
+  {
+   "index": 89,
+   "law": "plasticine"
+  },
+  {
+   "index": 93,
+   "law": "jelly"
+  },
+  {
+   "index": 112,
+   "law": "metal"
+  },
+  {
+   "index": 113,
+   "law": "plasticine"
+  },
+  {
+   "index": 116,
+   "law": "plasticine"
+  },
+  {
+   "index": 119,
+   "law": "plasticine"
+  },
+  {
+   "index": 121,
+   "law": "metal"
+  },
+  {
+   "index": 133,
+   "law": "metal"
+  },
+  {
+   "index": 134,
+   "law": "plasticine"
+  },
+  {
+   "index": 135,
+   "law": "jelly"
+  },
+  {
+   "index": 141,
+   "law": "jelly"
+  },
+  {
+   "index": 145,
+   "law": "metal"
+  },
+  {
+   "index": 151,
+   "law": "metal"
+  },
+  {
+   "index": 164,
+   "law": "plasticine"
+  },
+  {
+   "index": 169,
+   "law": "metal"
+  },
+  {
+   "index": 176,
+   "law": "plasticine"
+  },
+  {
+   "index": 180,
+   "law": "jelly"
+  },
+  {
+   "index": 182,
+   "law": "plasticine"
+  },
+  {
+   "index": 183,
+   "law": "jelly"
+  },
+  {
+   "index": 184,
+   "law": "metal"
+  },
+  {
+   "index": 186,
+   "law": "jelly"
+  },
+  {
+   "index": 195,
+   "law": "jelly"
+  },
+  {
+   "index": 198,
+   "law": "jelly"
+  },
+  {
+   "index": 205,
+   "law": "metal"
+  },
+  {
+   "index": 207,
+   "law": "jelly"
+  },
+  {
+   "index": 210,
+   "law": "jelly"
+  },
+  {
+   "index": 214,
+   "law": "metal"
+  },
+  {
+   "index": 226,
+   "law": "metal"
+  },
+  {
+   "index": 228,
+   "law": "jelly"
+  },
+  {
+   "index": 230,
+   "law": "plasticine"
+  },
+  {
+   "index": 231,
+   "law": "jelly"
+  },
+  {
+   "index": 240,
+   "law": "jelly"
+  },
+  {
+   "index": 244,
+   "law": "metal"
+  },
+  {
+   "index": 245,
+   "law": "plasticine"
+  },
+  {
+   "index": 250,
+   "law": "metal"
+  },
+  {
+   "index": 252,
+   "law": "jelly"
+  },
+  {
+   "index": 253,
+   "law": "metal"
+  },
+  {
+   "index": 254,
+   "law": "plasticine"
+  },
+  {
+   "index": 258,
+   "law": "jelly"
+  },
+  {
+   "index": 261,
+   "law": "jelly"
+  },
+  {
+   "index": 265,
+   "law": "metal"
+  },
+  {
+   "index": 271,
+   "law": "metal"
+  },
+  {
+   "index": 275,
+   "law": "plasticine"
+  },
+  {
+   "index": 278,
+   "law": "plasticine"
+  }
+ ],
+ "wave1": [
+  2,
+  29,
+  53,
+  68,
+  80,
+  89,
+  182,
+  230,
+  254,
+  275,
+  31,
+  64,
+  88,
+  133,
+  184,
+  205,
+  214,
+  244,
+  250,
+  271,
+  93,
+  141,
+  198,
+  231,
+  240,
+  252
+ ],
+ "indices": [
+  2,
+  29,
+  53,
+  68,
+  80,
+  89,
+  182,
+  230,
+  254,
+  275,
+  31,
+  64,
+  88,
+  133,
+  184,
+  205,
+  214,
+  244,
+  250,
+  271,
+  93,
+  141,
+  198,
+  231,
+  240,
+  252,
+  5,
+  21,
+  27,
+  37,
+  40,
+  60,
+  66,
+  71,
+  112,
+  113,
+  116,
+  119,
+  121,
+  134,
+  135,
+  145,
+  151,
+  164,
+  169,
+  176,
+  180,
+  183,
+  186,
+  195,
+  207,
+  210,
+  226,
+  228,
+  245,
+  253,
+  258,
+  261,
+  265,
+  278
+ ]
+}

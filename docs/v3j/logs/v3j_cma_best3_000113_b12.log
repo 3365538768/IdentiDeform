@@ -1,0 +1,18 @@
+quick failure obs_09 0
+quick failure obs_07 0
+quick failure obs_08 0
+quick failure obs_09 1
+simulation failed obs_09 1
+quick failure obs_07 1
+simulation failed obs_07 1
+quick failure obs_08 1
+simulation failed obs_08 1
+eval {'n': 8, 'law': 'metal', 'xf': [6.0, 1.770637, 0.25, 0.275055], 'x': [6.0, 1.770637], 'seconds': 88.02839207649231, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval {'n': 9, 'law': 'metal', 'xf': [5.070516, 2.754495, 0.25, 0.275055], 'x': [5.070516, 2.754495], 'seconds': 90.46510338783264, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval {'n': 10, 'law': 'metal', 'xf': [5.470774, 0.994437, 0.25, 0.275055], 'x': [5.470774, 0.994437], 'seconds': 87.67020797729492, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+eval {'n': 11, 'law': 'metal', 'xf': [3.417795, 2.840212, 0.25, 0.275055], 'x': [3.417795, 2.840212], 'seconds': 662.8507483005524, 'iou': 0.3935970559439947, 'iou_last': 0.29803711079856615, 'rgb_mae_union': 120.32737824766618, 'loss': 1.0782750156154806}
+quick failure obs_11 0
+quick failure obs_11 1
+simulation failed obs_11 1
+eval {'n': 12, 'law': 'metal', 'xf': [2.058719, 3.642139, 0.25, 0.275055], 'x': [2.058719, 3.642139], 'seconds': 89.86825346946716, 'iou': None, 'iou_last': None, 'rgb_mae_union': None, 'loss': 9.0, 'failed': True}
+done 113 cma_best3 {'4': 1.479, '12': 1.479}

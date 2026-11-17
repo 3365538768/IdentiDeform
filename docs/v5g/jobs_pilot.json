@@ -1,0 +1,266 @@
+[
+ {
+  "id": "v5g_pilot_gt_000021_none_0",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 21 --method gt --cands none:0 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000021_end_0.04",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 21 --method gt --cands end:0.04 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000021_end_0.10",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 21 --method gt --cands end:0.10 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000021_end_0.20",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 21 --method gt --cands end:0.20 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000021_end_0.30",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 21 --method gt --cands end:0.30 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000021_end_0.40",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 21 --method gt --cands end:0.40 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000021_centre_0.04",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 21 --method gt --cands centre:0.04 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000021_centre_0.10",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 21 --method gt --cands centre:0.10 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000021_centre_0.20",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 21 --method gt --cands centre:0.20 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000021_centre_0.30",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 21 --method gt --cands centre:0.30 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000021_centre_0.40",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 21 --method gt --cands centre:0.40 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000027_none_0",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 27 --method gt --cands none:0 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000027_end_0.04",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 27 --method gt --cands end:0.04 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000027_end_0.10",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 27 --method gt --cands end:0.10 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000027_end_0.20",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 27 --method gt --cands end:0.20 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000027_end_0.30",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 27 --method gt --cands end:0.30 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000027_end_0.40",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 27 --method gt --cands end:0.40 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000027_centre_0.04",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 27 --method gt --cands centre:0.04 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000027_centre_0.10",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 27 --method gt --cands centre:0.10 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000027_centre_0.20",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 27 --method gt --cands centre:0.20 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000027_centre_0.30",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 27 --method gt --cands centre:0.30 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000027_centre_0.40",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 27 --method gt --cands centre:0.40 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000031_none_0",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 31 --method gt --cands none:0 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000031_end_0.04",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 31 --method gt --cands end:0.04 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000031_end_0.10",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 31 --method gt --cands end:0.10 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000031_end_0.20",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 31 --method gt --cands end:0.20 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000031_end_0.30",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 31 --method gt --cands end:0.30 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000031_end_0.40",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 31 --method gt --cands end:0.40 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000031_centre_0.04",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 31 --method gt --cands centre:0.04 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000031_centre_0.10",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 31 --method gt --cands centre:0.10 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000031_centre_0.20",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 31 --method gt --cands centre:0.20 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000031_centre_0.30",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 31 --method gt --cands centre:0.30 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000031_centre_0.40",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 31 --method gt --cands centre:0.40 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000037_none_0",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 37 --method gt --cands none:0 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000037_end_0.04",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 37 --method gt --cands end:0.04 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000037_end_0.10",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 37 --method gt --cands end:0.10 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000037_end_0.20",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 37 --method gt --cands end:0.20 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000037_end_0.30",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 37 --method gt --cands end:0.30 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000037_end_0.40",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 37 --method gt --cands end:0.40 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000037_centre_0.04",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 37 --method gt --cands centre:0.04 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000037_centre_0.10",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 37 --method gt --cands centre:0.10 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000037_centre_0.20",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 37 --method gt --cands centre:0.20 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000037_centre_0.30",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 37 --method gt --cands centre:0.30 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000037_centre_0.40",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 37 --method gt --cands centre:0.40 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000002_none_0",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 2 --method gt --cands none:0 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000002_end_0.04",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 2 --method gt --cands end:0.04 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000002_end_0.10",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 2 --method gt --cands end:0.10 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000002_end_0.20",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 2 --method gt --cands end:0.20 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000002_end_0.30",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 2 --method gt --cands end:0.30 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000002_end_0.40",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 2 --method gt --cands end:0.40 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000002_centre_0.04",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 2 --method gt --cands centre:0.04 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000002_centre_0.10",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 2 --method gt --cands centre:0.10 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000002_centre_0.20",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 2 --method gt --cands centre:0.20 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000002_centre_0.30",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 2 --method gt --cands centre:0.30 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000002_centre_0.40",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 2 --method gt --cands centre:0.40 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000005_none_0",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 5 --method gt --cands none:0 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000005_end_0.04",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 5 --method gt --cands end:0.04 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000005_end_0.10",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 5 --method gt --cands end:0.10 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000005_end_0.20",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 5 --method gt --cands end:0.20 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000005_end_0.30",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 5 --method gt --cands end:0.30 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000005_end_0.40",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 5 --method gt --cands end:0.40 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000005_centre_0.04",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 5 --method gt --cands centre:0.04 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000005_centre_0.10",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 5 --method gt --cands centre:0.10 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000005_centre_0.20",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 5 --method gt --cands centre:0.20 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000005_centre_0.30",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 5 --method gt --cands centre:0.30 --out data/v5g/pilot"
+ },
+ {
+  "id": "v5g_pilot_gt_000005_centre_0.40",
+  "cmd": ".venv/bin/python scripts/v5g/grasp_run.py --index 5 --method gt --cands centre:0.40 --out data/v5g/pilot"
+ }
+]

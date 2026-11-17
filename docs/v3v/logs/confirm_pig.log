@@ -1,0 +1,34 @@
+2026-11-16T07:18:05+00:00 di-20261103141208-krk4l START run3 --objs pig
+Warp 1.11.1 initialized:
+   CUDA Toolkit 12.9, Driver 12.6
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA A800-SXM4-80GB" (79 GiB, sm_80, mempool enabled)
+   Kernel cache:
+     /root/.cache/warp/1.11.1
+Warp DeprecationWarning: The namespace `warp.torch` will soon be removed from the public API. It can still be accessed from `warp._src.torch` but might be changed or removed without notice.
+Warp DeprecationWarning: The symbol `warp.types.float32` will soon be removed from the public API. Use `warp.float32` instead.
+Module warp_utils 5598e36 load on device 'cuda:0' took 1.09 ms  (cached)
+Particles initialized from torch data.
+Total particles:  13806
+Module mpm_utils 8c60f93 load on device 'cuda:0' took 2.30 ms  (cached)
+Module mpm_solver_warp 3dca6b4 load on device 'cuda:0' took 1.10 ms  (cached)
+  sim pig lg3.7520_nu0.278_r1.0000 13.9s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg5.1270_nu0.278_r1.0000 13.8s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg5.4395_nu0.278_r1.0000 17.9s
+Particles initialized from torch data.
+Total particles:  13806
+  sim pig lg5.3145_nu0.278_r1.0000 14.4s
+pig fold C0733 loo rpic 1.0 refined lg 5.377 sims 11
+pig fold C0787 loo rpic 1.0 refined lg 5.377 sims 11
+pig fold C0801 loo rpic 1.0 refined lg 5.377 sims 11
+2026-11-16T07:19:13+00:00 END rc=0
+2026-11-16T07:19:13+00:00 di-20261103141208-krk4l START eval3 --objs pig
+pig C0733 prior_refine_damp_loo 5.377 1.0 HO {'iou': 0.497, 'psnr': 10.826, 'ssim': 0.255} FU {'iou': 0.199, 'psnr': 8.339, 'ssim': 0.098}
+pig C0787 prior_refine_damp_loo 5.377 1.0 HO {'iou': 0.487, 'psnr': 11.622, 'ssim': 0.208} FU {'iou': 0.199, 'psnr': 8.469, 'ssim': 0.098}
+pig C0801 prior_refine_damp_loo 5.377 1.0 HO {'iou': 0.476, 'psnr': 10.135, 'ssim': 0.251} FU {'iou': 0.199, 'psnr': 8.516, 'ssim': 0.102}
+2026-11-16T07:19:35+00:00 END rc=0

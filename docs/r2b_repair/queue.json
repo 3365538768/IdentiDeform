@@ -1,0 +1,50 @@
+{
+  "phase": "R2b-repair",
+  "max_per_gpu": 1,
+  "gpus": [
+    3
+  ],
+  "jobs": [
+    {
+      "id": "r2b_metal_stability_probe",
+      "kind": "cmd",
+      "group": "stability-probe",
+      "mem_mib": 6000,
+      "retries": 0,
+      "cmd": "cd scripts && PYTHONPATH=$PWD/../.venv/lib/python3.12/site-packages ../.engine-envs/warp/bin/python r2b_mpm_sweep.py --material metal --sweep E --decades 7 7 --substep-dt 0.000025 --output docs/r2b/metal_probe_dt25us.json"
+    },
+    {
+      "id": "r2b_metal_E_dt25us",
+      "kind": "cmd",
+      "group": "sweep-metal-E-dt25us",
+      "mem_mib": 6000,
+      "retries": 0,
+      "after": [
+        "r2b_metal_stability_probe"
+      ],
+      "cmd": "cd scripts && PYTHONPATH=$PWD/../.venv/lib/python3.12/site-packages ../.engine-envs/warp/bin/python r2b_mpm_sweep.py --material metal --sweep E --substep-dt 0.000025 --output docs/r2b/metal_E_dt25us.json"
+    },
+    {
+      "id": "r2b_metal_convergence_probe",
+      "kind": "cmd",
+      "group": "convergence-probe",
+      "mem_mib": 6000,
+      "retries": 0,
+      "after": [
+        "r2b_metal_E_dt25us"
+      ],
+      "cmd": "cd scripts && PYTHONPATH=$PWD/../.venv/lib/python3.12/site-packages ../.engine-envs/warp/bin/python r2b_mpm_sweep.py --material metal --sweep E --decades 7 7 --substep-dt 0.0000125 --output docs/r2b/metal_probe_dt12_5us.json"
+    },
+    {
+      "id": "r2b_convergence_summary",
+      "kind": "cmd",
+      "group": "numerical-report",
+      "mem_mib": 0,
+      "retries": 0,
+      "after": [
+        "r2b_metal_convergence_probe"
+      ],
+      "cmd": ".venv/bin/python scripts/report_repair_convergence.py"
+    }
+  ]
+}

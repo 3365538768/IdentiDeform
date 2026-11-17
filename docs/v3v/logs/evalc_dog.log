@@ -1,0 +1,25 @@
+2026-11-16T06:54:48+00:00 di-20261103141208-krk4l START eval --objs dog
+dog C0733 prior 4.39 HO {'iou': 0.386, 'psnr': 8.778, 'ssim': 0.155} FU {'iou': 0.16, 'psnr': 7.448, 'ssim': 0.072}
+dog C0733 prior_refine 5.077 HO {'iou': 0.399, 'psnr': 8.953, 'ssim': 0.161} FU {'iou': 0.055, 'psnr': 7.077, 'ssim': 0.023}
+dog C0733 class_mean 3.482 HO {'iou': 0.269, 'psnr': 7.998, 'ssim': 0.109} FU {'iou': 0.002, 'psnr': 6.369, 'ssim': 0.0}
+dog C0733 global_constant_loo 4.75 HO {'iou': 0.396, 'psnr': 8.892, 'ssim': 0.159} FU {'iou': 0.086, 'psnr': 7.067, 'ssim': 0.039}
+dog C0733 oracle 4.0 HO {'iou': 0.405, 'psnr': 8.951, 'ssim': 0.163} FU {'iou': 0.339, 'psnr': 8.434, 'ssim': 0.127}
+dog C0733 rigid_track_2cam None HO {'iou': 0.729, 'psnr': 10.252, 'ssim': 0.294} FU {}
+dog C0787 prior 4.39 HO {'iou': 0.426, 'psnr': 9.363, 'ssim': 0.171} FU {'iou': 0.16, 'psnr': 7.172, 'ssim': 0.067}
+dog C0787 prior_refine 5.14 HO {'iou': 0.375, 'psnr': 9.46, 'ssim': 0.153} FU {'iou': 0.052, 'psnr': 6.776, 'ssim': 0.019}
+dog C0787 class_mean 3.482 HO {'iou': 0.272, 'psnr': 8.245, 'ssim': 0.108} FU {'iou': 0.002, 'psnr': 6.14, 'ssim': 0.0}
+dog C0787 global_constant_loo 4.75 HO {'iou': 0.403, 'psnr': 9.428, 'ssim': 0.163} FU {'iou': 0.086, 'psnr': 6.787, 'ssim': 0.035}
+dog C0787 oracle 4.0 HO {'iou': 0.484, 'psnr': 9.702, 'ssim': 0.186} FU {'iou': 0.339, 'psnr': 8.104, 'ssim': 0.129}
+dog C0787 rigid_track_2cam None HO {'iou': 0.711, 'psnr': 11.524, 'ssim': 0.283} FU {}
+dog C0801 prior 4.39 HO {'iou': 0.384, 'psnr': 8.534, 'ssim': 0.14} FU {'iou': 0.16, 'psnr': 7.318, 'ssim': 0.065}
+dog C0801 prior_refine 5.265 HO {'iou': 0.37, 'psnr': 8.289, 'ssim': 0.132} FU {'iou': 0.049, 'psnr': 6.975, 'ssim': 0.015}
+dog C0801 class_mean 3.482 HO {'iou': 0.261, 'psnr': 7.915, 'ssim': 0.096} FU {'iou': 0.002, 'psnr': 6.416, 'ssim': 0.001}
+dog C0801 global_constant_loo 5.0 HO {'iou': 0.377, 'psnr': 8.398, 'ssim': 0.137} FU {'iou': 0.062, 'psnr': 6.938, 'ssim': 0.021}
+dog C0801 oracle 4.0 HO {'iou': 0.486, 'psnr': 8.825, 'ssim': 0.171} FU {'iou': 0.339, 'psnr': 8.093, 'ssim': 0.117}
+dog C0801 rigid_track_2cam None HO {'iou': 0.724, 'psnr': 9.488, 'ssim': 0.265} FU {}
+2026-11-16T06:56:28+00:00 END rc=0
+2026-11-16T06:56:28+00:00 di-20261103141208-krk4l START eval2 --objs dog
+dog C0733 prior_refine_damp 5.1397 1.0 HO {'iou': 0.519, 'psnr': 9.493, 'ssim': 0.207} FU {'iou': 0.241, 'psnr': 7.921, 'ssim': 0.1}
+dog C0787 prior_refine_damp 5.3897 1.0 HO {'iou': 0.446, 'psnr': 9.885, 'ssim': 0.187} FU {'iou': 0.181, 'psnr': 7.475, 'ssim': 0.075}
+dog C0801 prior_refine_damp 5.3897 1.0 HO {'iou': 0.453, 'psnr': 8.477, 'ssim': 0.16} FU {'iou': 0.181, 'psnr': 7.45, 'ssim': 0.069}
+2026-11-16T06:57:14+00:00 END rc=0

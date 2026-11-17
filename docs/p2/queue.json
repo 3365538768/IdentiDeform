@@ -1,0 +1,394 @@
+{
+  "phase": "P2",
+  "max_per_gpu": 3,
+  "gpus": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "jobs": [
+    {
+      "id": "p2_cache_dino_shard0",
+      "kind": "cmd",
+      "group": "test-cache-dino",
+      "mem_mib": 12000,
+      "cmd": ".venv/bin/python scripts/prepare_feature_cache.py --prefetch-workers 6 --control-output runs/p2_cache --config configs/p2/p2_cache_dino.json --splits test --shard 0 --num-shards 2 --status-output docs/p2/cache_dino_shard0.json"
+    },
+    {
+      "id": "p2_cache_dino_shard1",
+      "kind": "cmd",
+      "group": "test-cache-dino",
+      "mem_mib": 12000,
+      "cmd": ".venv/bin/python scripts/prepare_feature_cache.py --prefetch-workers 6 --control-output runs/p2_cache --config configs/p2/p2_cache_dino.json --splits test --shard 1 --num-shards 2 --status-output docs/p2/cache_dino_shard1.json"
+    },
+    {
+      "id": "p2_cache_dino",
+      "kind": "cmd",
+      "group": "test-cache-dino",
+      "mem_mib": 12000,
+      "after": [
+        "p2_cache_dino_shard0",
+        "p2_cache_dino_shard1"
+      ],
+      "cmd": ".venv/bin/python scripts/prepare_feature_cache.py --prefetch-workers 6 --control-output runs/p2_cache --config configs/p2/p2_cache_dino.json --splits test --status-output docs/p2/cache_dino_merged.json"
+    },
+    {
+      "id": "p2_cache_vjepa_shard0",
+      "kind": "cmd",
+      "group": "test-cache-vjepa",
+      "mem_mib": 12000,
+      "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/p2/p2_cache_vjepa.json --splits test --shard 0 --num-shards 2 --status-output docs/p2/cache_vjepa_shard0.json"
+    },
+    {
+      "id": "p2_cache_vjepa_shard1",
+      "kind": "cmd",
+      "group": "test-cache-vjepa",
+      "mem_mib": 12000,
+      "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/p2/p2_cache_vjepa.json --splits test --shard 1 --num-shards 2 --status-output docs/p2/cache_vjepa_shard1.json"
+    },
+    {
+      "id": "p2_cache_vjepa",
+      "kind": "cmd",
+      "group": "test-cache-vjepa",
+      "mem_mib": 12000,
+      "after": [
+        "p2_cache_vjepa_shard0",
+        "p2_cache_vjepa_shard1"
+      ],
+      "cmd": ".venv/bin/python scripts/prepare_vjepa_cache.py --config configs/p2/p2_cache_vjepa.json --splits test --status-output docs/p2/cache_vjepa_merged.json"
+    },
+    {
+      "id": "p2_eval_r1_B_seed17",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_dino"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_r1_B_seed17.json --checkpoint runs/r1_B_seed17/best_material.pt --split test --output runs/r1_B_seed17/eval_test > runs/r1_B_seed17/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_r1_B_seed29",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_dino"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_r1_B_seed29.json --checkpoint runs/r1_B_seed29/best_material.pt --split test --output runs/r1_B_seed29/eval_test > runs/r1_B_seed29/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_r1_B_seed43",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_dino"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_r1_B_seed43.json --checkpoint runs/r1_B_seed43/best_material.pt --split test --output runs/r1_B_seed43/eval_test > runs/r1_B_seed43/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_r1_C_seed17",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_dino"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_r1_C_seed17.json --checkpoint runs/r1_C_seed17/best_material.pt --split test --output runs/r1_C_seed17/eval_test > runs/r1_C_seed17/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_r1_C_seed29",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_dino"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_r1_C_seed29.json --checkpoint runs/r1_C_seed29/best_material.pt --split test --output runs/r1_C_seed29/eval_test > runs/r1_C_seed29/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_r1_C_seed43",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_dino"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_r1_C_seed43.json --checkpoint runs/r1_C_seed43/best_material.pt --split test --output runs/r1_C_seed43/eval_test > runs/r1_C_seed43/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_r1_D_seed17",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_dino"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_r1_D_seed17.json --checkpoint runs/r1_D_seed17/best_material.pt --split test --output runs/r1_D_seed17/eval_test > runs/r1_D_seed17/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_r1_D_seed29",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_dino"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_r1_D_seed29.json --checkpoint runs/r1_D_seed29/best_material.pt --split test --output runs/r1_D_seed29/eval_test > runs/r1_D_seed29/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_r1_D_seed43",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_dino"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_r1_D_seed43.json --checkpoint runs/r1_D_seed43/best_material.pt --split test --output runs/r1_D_seed43/eval_test > runs/r1_D_seed43/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_p1_Bvjn_seed17",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_vjepa"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_p1_Bvjn_seed17.json --checkpoint runs/p1_Bvjn_seed17/best_material.pt --split test --output runs/p1_Bvjn_seed17/eval_test > runs/p1_Bvjn_seed17/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_p1_Bvjn_seed29",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_vjepa"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_p1_Bvjn_seed29.json --checkpoint runs/p1_Bvjn_seed29/best_material.pt --split test --output runs/p1_Bvjn_seed29/eval_test > runs/p1_Bvjn_seed29/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_p1_Bvjn_seed43",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_vjepa"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_p1_Bvjn_seed43.json --checkpoint runs/p1_Bvjn_seed43/best_material.pt --split test --output runs/p1_Bvjn_seed43/eval_test > runs/p1_Bvjn_seed43/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_p1_Cvjn_seed17",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_vjepa"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_p1_Cvjn_seed17.json --checkpoint runs/p1_Cvjn_seed17/best_material.pt --split test --output runs/p1_Cvjn_seed17/eval_test > runs/p1_Cvjn_seed17/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_p1_Cvjn_seed29",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_vjepa"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_p1_Cvjn_seed29.json --checkpoint runs/p1_Cvjn_seed29/best_material.pt --split test --output runs/p1_Cvjn_seed29/eval_test > runs/p1_Cvjn_seed29/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_p1_Cvjn_seed43",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_vjepa"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_p1_Cvjn_seed43.json --checkpoint runs/p1_Cvjn_seed43/best_material.pt --split test --output runs/p1_Cvjn_seed43/eval_test > runs/p1_Cvjn_seed43/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_p1_Dvjn_seed17",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_vjepa"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_p1_Dvjn_seed17.json --checkpoint runs/p1_Dvjn_seed17/best_material.pt --split test --output runs/p1_Dvjn_seed17/eval_test > runs/p1_Dvjn_seed17/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_p1_Dvjn_seed29",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_vjepa"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_p1_Dvjn_seed29.json --checkpoint runs/p1_Dvjn_seed29/best_material.pt --split test --output runs/p1_Dvjn_seed29/eval_test > runs/p1_Dvjn_seed29/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_p1_Dvjn_seed43",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_vjepa"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_p1_Dvjn_seed43.json --checkpoint runs/p1_Dvjn_seed43/best_material.pt --split test --output runs/p1_Dvjn_seed43/eval_test > runs/p1_Dvjn_seed43/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_p1_Sstatic_seed17",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_dino"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_p1_Sstatic_seed17.json --checkpoint runs/p1_Sstatic_seed17/best_material.pt --split test --output runs/p1_Sstatic_seed17/eval_test > runs/p1_Sstatic_seed17/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_p1_Sstatic_seed29",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_dino"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_p1_Sstatic_seed29.json --checkpoint runs/p1_Sstatic_seed29/best_material.pt --split test --output runs/p1_Sstatic_seed29/eval_test > runs/p1_Sstatic_seed29/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_p1_Sstatic_seed43",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_dino"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_p1_Sstatic_seed43.json --checkpoint runs/p1_Sstatic_seed43/best_material.pt --split test --output runs/p1_Sstatic_seed43/eval_test > runs/p1_Sstatic_seed43/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_r1b_C_seed17",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_dino"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_r1b_C_seed17.json --checkpoint runs/r1b_C_seed17/best_material.pt --split test --output runs/r1b_C_seed17/eval_test > runs/r1b_C_seed17/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_r1b_C_seed29",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_dino"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_r1b_C_seed29.json --checkpoint runs/r1b_C_seed29/best_material.pt --split test --output runs/r1b_C_seed29/eval_test > runs/r1b_C_seed29/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_r1b_C_seed43",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_dino"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_r1b_C_seed43.json --checkpoint runs/r1b_C_seed43/best_material.pt --split test --output runs/r1b_C_seed43/eval_test > runs/r1b_C_seed43/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_r4_Cvj_seed17",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_vjepa"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_r4_Cvj_seed17.json --checkpoint runs/r4_Cvj_seed17/best_material.pt --split test --output runs/r4_Cvj_seed17/eval_test > runs/r4_Cvj_seed17/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_r4_Cvj_seed29",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_vjepa"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_r4_Cvj_seed29.json --checkpoint runs/r4_Cvj_seed29/best_material.pt --split test --output runs/r4_Cvj_seed29/eval_test > runs/r4_Cvj_seed29/eval_test.summary.json"
+    },
+    {
+      "id": "p2_eval_r4_Cvj_seed43",
+      "kind": "cmd",
+      "group": "test-eval",
+      "mem_mib": 10000,
+      "after": [
+        "p2_cache_vjepa"
+      ],
+      "cmd": ".venv/bin/python -m fieldbridge.cli evaluate --config configs/p2/eval_r4_Cvj_seed43.json --checkpoint runs/r4_Cvj_seed43/best_material.pt --split test --output runs/r4_Cvj_seed43/eval_test > runs/r4_Cvj_seed43/eval_test.summary.json"
+    },
+    {
+      "id": "p2_vlm_shard0",
+      "kind": "cmd",
+      "group": "test-vlm",
+      "mem_mib": 24000,
+      "cmd": ".venv/bin/python scripts/vlm_baseline.py --split test --shard 0 --num-shards 2 --output runs/p2_vlm_qwen3vl8b_test"
+    },
+    {
+      "id": "p2_vlm_shard1",
+      "kind": "cmd",
+      "group": "test-vlm",
+      "mem_mib": 24000,
+      "cmd": ".venv/bin/python scripts/vlm_baseline.py --split test --shard 1 --num-shards 2 --output runs/p2_vlm_qwen3vl8b_test"
+    },
+    {
+      "id": "p2_vlm_merge",
+      "kind": "cmd",
+      "group": "test-vlm",
+      "mem_mib": 0,
+      "after": [
+        "p2_vlm_shard0",
+        "p2_vlm_shard1"
+      ],
+      "cmd": "cat runs/p2_vlm_qwen3vl8b_test/predictions.shard*of2.jsonl > runs/p2_vlm_qwen3vl8b_test/predictions.jsonl"
+    },
+    {
+      "id": "p2_report",
+      "kind": "cmd",
+      "group": "test-report",
+      "mem_mib": 0,
+      "after": [
+        "p2_eval_r1_B_seed17",
+        "p2_eval_r1_B_seed29",
+        "p2_eval_r1_B_seed43",
+        "p2_eval_r1_C_seed17",
+        "p2_eval_r1_C_seed29",
+        "p2_eval_r1_C_seed43",
+        "p2_eval_r1_D_seed17",
+        "p2_eval_r1_D_seed29",
+        "p2_eval_r1_D_seed43",
+        "p2_eval_p1_Bvjn_seed17",
+        "p2_eval_p1_Bvjn_seed29",
+        "p2_eval_p1_Bvjn_seed43",
+        "p2_eval_p1_Cvjn_seed17",
+        "p2_eval_p1_Cvjn_seed29",
+        "p2_eval_p1_Cvjn_seed43",
+        "p2_eval_p1_Dvjn_seed17",
+        "p2_eval_p1_Dvjn_seed29",
+        "p2_eval_p1_Dvjn_seed43",
+        "p2_eval_p1_Sstatic_seed17",
+        "p2_eval_p1_Sstatic_seed29",
+        "p2_eval_p1_Sstatic_seed43",
+        "p2_eval_r1b_C_seed17",
+        "p2_eval_r1b_C_seed29",
+        "p2_eval_r1b_C_seed43",
+        "p2_eval_r4_Cvj_seed17",
+        "p2_eval_r4_Cvj_seed29",
+        "p2_eval_r4_Cvj_seed43",
+        "p2_vlm_merge"
+      ],
+      "cmd": ".venv/bin/python scripts/p2_report.py"
+    }
+  ]
+}

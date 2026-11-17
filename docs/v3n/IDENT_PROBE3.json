@@ -1,0 +1,232 @@
+{
+ "per_action": {
+  "press": {
+   "V3": {
+    "n": 4,
+    "mask_change": 0.28825782243135584,
+    "rgb_mae": 39.962587933054685
+   },
+   "V3+g2": {
+    "n": 4,
+    "mask_change": 0.2882600015233045,
+    "rgb_mae": 39.96271172967384
+   },
+   "fast release": {
+    "n": 4,
+    "mask_change": 0.2608099405141322,
+    "rgb_mae": 43.80503551011043
+   }
+  },
+  "tap30hold": {
+   "V3": {
+    "n": 4,
+    "mask_change": 0.31992618766809355,
+    "rgb_mae": 29.972314948321923
+   },
+   "V3+g2": {
+    "n": 4,
+    "mask_change": 0.3199223638745588,
+    "rgb_mae": 29.97221921748165
+   },
+   "fast release": {
+    "n": 4,
+    "mask_change": 0.16961789349780007,
+    "rgb_mae": 18.447583687777794
+   }
+  }
+ },
+ "rows": [
+  [
+   0,
+   "press",
+   "jelly",
+   "V3",
+   0.187,
+   38.5
+  ],
+  [
+   0,
+   "press",
+   "jelly",
+   "V3+g2",
+   0.187,
+   38.5
+  ],
+  [
+   0,
+   "press",
+   "jelly",
+   "fast release",
+   0.331,
+   75.6
+  ],
+  [
+   1,
+   "press",
+   "metal",
+   "V3",
+   0.079,
+   11.0
+  ],
+  [
+   1,
+   "press",
+   "metal",
+   "V3+g2",
+   0.079,
+   11.0
+  ],
+  [
+   1,
+   "press",
+   "metal",
+   "fast release",
+   0.116,
+   20.3
+  ],
+  [
+   2,
+   "press",
+   "plasticine",
+   "V3",
+   0.486,
+   62.6
+  ],
+  [
+   2,
+   "press",
+   "plasticine",
+   "V3+g2",
+   0.486,
+   62.6
+  ],
+  [
+   2,
+   "press",
+   "plasticine",
+   "fast release",
+   0.422,
+   59.1
+  ],
+  [
+   18,
+   "press",
+   "jelly",
+   "V3",
+   0.401,
+   47.7
+  ],
+  [
+   18,
+   "press",
+   "jelly",
+   "V3+g2",
+   0.401,
+   47.7
+  ],
+  [
+   18,
+   "press",
+   "jelly",
+   "fast release",
+   0.174,
+   20.2
+  ],
+  [
+   15,
+   "tap30hold",
+   "jelly",
+   "V3",
+   0.545,
+   42.0
+  ],
+  [
+   15,
+   "tap30hold",
+   "jelly",
+   "V3+g2",
+   0.545,
+   42.0
+  ],
+  [
+   15,
+   "tap30hold",
+   "jelly",
+   "fast release",
+   0.08,
+   6.5
+  ],
+  [
+   16,
+   "tap30hold",
+   "metal",
+   "V3",
+   0.03,
+   9.8
+  ],
+  [
+   16,
+   "tap30hold",
+   "metal",
+   "V3+g2",
+   0.03,
+   9.8
+  ],
+  [
+   16,
+   "tap30hold",
+   "metal",
+   "fast release",
+   0.03,
+   11.4
+  ],
+  [
+   17,
+   "tap30hold",
+   "plasticine",
+   "V3",
+   0.11,
+   22.1
+  ],
+  [
+   17,
+   "tap30hold",
+   "plasticine",
+   "V3+g2",
+   0.11,
+   22.1
+  ],
+  [
+   17,
+   "tap30hold",
+   "plasticine",
+   "fast release",
+   0.068,
+   16.5
+  ],
+  [
+   33,
+   "tap30hold",
+   "jelly",
+   "V3",
+   0.594,
+   46.0
+  ],
+  [
+   33,
+   "tap30hold",
+   "jelly",
+   "V3+g2",
+   0.594,
+   46.0
+  ],
+  [
+   33,
+   "tap30hold",
+   "jelly",
+   "fast release",
+   0.5,
+   39.3
+  ]
+ ]
+}

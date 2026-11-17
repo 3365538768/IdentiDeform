@@ -1,0 +1,3 @@
+
+== 2026-11-16 01:22:59 host a4 gpu 0 attempt 1
+gt_observed {'sample_id': 'v5bmain/test/000066', 'object': 'a_bamboo_spacesuit_013020', 'observed_action': 'bend', 'gt_law': 'jelly', 'seconds': 897.8199331760406, 'iou': 0.9998337130731315, 'iou_last': 0.9945945646927469, 'rgb_mae_union': 0.03384824702583418, 'loss': 0.00029902515049920865, 'complete': True}

@@ -1,0 +1,26 @@
+{
+  "frozen_unix_note": "written before any test prediction was produced; do not edit after test evaluation starts",
+  "split": "test (494 samples of the published DeformFieldBench split; objects disjoint from train/val)",
+  "checkpoint_rule": "each run's best_material.pt = epoch with the lowest validation standardized MAE during joint training; no test-based selection, no re-training, no hyper-parameter change after this file",
+  "runs": {
+    "native_space_main_table": {
+      "DINOv3_B": ["r1_B_seed17", "r1_B_seed29", "r1_B_seed43"],
+      "DINOv3_C": ["r1_C_seed17", "r1_C_seed29", "r1_C_seed43"],
+      "DINOv3_D": ["r1_D_seed17", "r1_D_seed29", "r1_D_seed43"],
+      "VJEPA2L_B": ["p1_Bvjn_seed17", "p1_Bvjn_seed29", "p1_Bvjn_seed43"],
+      "VJEPA2L_C": ["p1_Cvjn_seed17", "p1_Cvjn_seed29", "p1_Cvjn_seed43"],
+      "VJEPA2L_D": ["p1_Dvjn_seed17", "p1_Dvjn_seed29", "p1_Dvjn_seed43"],
+      "Static_first_frame": ["p1_Sstatic_seed17", "p1_Sstatic_seed29", "p1_Sstatic_seed43"],
+      "VLM_Qwen3VL8B_zero_shot": "scripts/vlm_baseline.py, same protocol as validation",
+      "constant": "train mean (z=0)",
+      "law_mean_reference": "GT law + train-set law mean; privileged diagnostic, not deployable"
+    },
+    "identifiable_space_supplement": {
+      "DINOv3_C": ["r1b_C_seed17", "r1b_C_seed29", "r1b_C_seed43"],
+      "VJEPA2L_C": ["r4_Cvj_seed17", "r4_Cvj_seed29", "r4_Cvj_seed43"]
+    }
+  },
+  "metrics": ["standardized MAE (train statistics)", "law accuracy", "within-law Pearson r per parameter", "per-parameter MAE"],
+  "statistics": "3-seed mean +- sd; object-level paired bootstrap (2000 draws) per seed for VJEPA2L_C vs DINOv3_C, C vs D, B vs C, Static vs VJEPA2L_B",
+  "decision_threshold": "2% relative improvement (engineering threshold, pre-registered in the project)"
+}

@@ -1,0 +1,142 @@
+{
+  "phase": "P1",
+  "max_per_gpu": 3,
+  "gpus": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "jobs": [
+    {
+      "id": "p1_stage_vjl",
+      "kind": "cmd",
+      "group": "stage",
+      "mem_mib": 0,
+      "cmd": "mkdir -p /dev/shm/r4_vjepa2_vitl && ls data/prepared/r4_vjepa2_vitl | xargs -P 32 -I{} cp data/prepared/r4_vjepa2_vitl/{} /dev/shm/r4_vjepa2_vitl/{} && test $(ls /dev/shm/r4_vjepa2_vitl | wc -l) -eq $(ls data/prepared/r4_vjepa2_vitl | wc -l) && cmp -s data/prepared/r4_vjepa2_vitl/index.json /dev/shm/r4_vjepa2_vitl/index.json"
+    },
+    {
+      "id": "p1_Bvjn_seed17",
+      "config": "configs/p1/p1_Bvjn_seed17.json",
+      "group": "B-vjepa2-native",
+      "seed": 17,
+      "kind": "train",
+      "after": [
+        "p1_stage_vjl"
+      ],
+      "mem_mib": 20000
+    },
+    {
+      "id": "p1_Cvjn_seed17",
+      "config": "configs/p1/p1_Cvjn_seed17.json",
+      "group": "C-vjepa2-native",
+      "seed": 17,
+      "kind": "train",
+      "after": [
+        "p1_stage_vjl"
+      ],
+      "mem_mib": 20000
+    },
+    {
+      "id": "p1_Dvjn_seed17",
+      "config": "configs/p1/p1_Dvjn_seed17.json",
+      "group": "D-vjepa2-native",
+      "seed": 17,
+      "kind": "train",
+      "after": [
+        "p1_stage_vjl"
+      ],
+      "mem_mib": 20000
+    },
+    {
+      "id": "p1_Sstatic_seed17",
+      "config": "configs/p1/p1_Sstatic_seed17.json",
+      "group": "static-first-frame",
+      "seed": 17,
+      "kind": "train",
+      "mem_mib": 12000
+    },
+    {
+      "id": "p1_Bvjn_seed29",
+      "config": "configs/p1/p1_Bvjn_seed29.json",
+      "group": "B-vjepa2-native",
+      "seed": 29,
+      "kind": "train",
+      "after": [
+        "p1_stage_vjl"
+      ],
+      "mem_mib": 20000
+    },
+    {
+      "id": "p1_Cvjn_seed29",
+      "config": "configs/p1/p1_Cvjn_seed29.json",
+      "group": "C-vjepa2-native",
+      "seed": 29,
+      "kind": "train",
+      "after": [
+        "p1_stage_vjl"
+      ],
+      "mem_mib": 20000
+    },
+    {
+      "id": "p1_Dvjn_seed29",
+      "config": "configs/p1/p1_Dvjn_seed29.json",
+      "group": "D-vjepa2-native",
+      "seed": 29,
+      "kind": "train",
+      "after": [
+        "p1_stage_vjl"
+      ],
+      "mem_mib": 20000
+    },
+    {
+      "id": "p1_Sstatic_seed29",
+      "config": "configs/p1/p1_Sstatic_seed29.json",
+      "group": "static-first-frame",
+      "seed": 29,
+      "kind": "train",
+      "mem_mib": 12000
+    },
+    {
+      "id": "p1_Bvjn_seed43",
+      "config": "configs/p1/p1_Bvjn_seed43.json",
+      "group": "B-vjepa2-native",
+      "seed": 43,
+      "kind": "train",
+      "after": [
+        "p1_stage_vjl"
+      ],
+      "mem_mib": 20000
+    },
+    {
+      "id": "p1_Cvjn_seed43",
+      "config": "configs/p1/p1_Cvjn_seed43.json",
+      "group": "C-vjepa2-native",
+      "seed": 43,
+      "kind": "train",
+      "after": [
+        "p1_stage_vjl"
+      ],
+      "mem_mib": 20000
+    },
+    {
+      "id": "p1_Dvjn_seed43",
+      "config": "configs/p1/p1_Dvjn_seed43.json",
+      "group": "D-vjepa2-native",
+      "seed": 43,
+      "kind": "train",
+      "after": [
+        "p1_stage_vjl"
+      ],
+      "mem_mib": 20000
+    },
+    {
+      "id": "p1_Sstatic_seed43",
+      "config": "configs/p1/p1_Sstatic_seed43.json",
+      "group": "static-first-frame",
+      "seed": 43,
+      "kind": "train",
+      "mem_mib": 12000
+    }
+  ]
+}

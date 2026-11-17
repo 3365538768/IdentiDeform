@@ -1,0 +1,3 @@
+sim 240 gt centre:0.03 True 363
+measure centre:0.03 {'sag': 0.713775830801816, 'left': 0.9973713500840694, 'crush': 0.08282862725858559, 'dent_p95': 0.4589260608735328, 'grip': 0.00025204691337421536, 'lift': 0.190045166015625, 'height': 0.63348388671875, 'n_particles': 42227, 'seg_particles': 3726}
+done 240 gt centre:0.03 False

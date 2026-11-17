@@ -1,0 +1,31 @@
+{
+  "status": "validation_in_progress",
+  "scope": "8 procedural/3D contact preflights, nested mesh/time and force unit diagnostics, 3852 saved-frame intersection checks complete. Force mesh/friction followup running; full energy, GS solids and training admission still pending.",
+  "geometry_assets_present": 108,
+  "simulation_ready_gs_assets_validated": 0,
+  "pilot_physics_solves_planned": 64,
+  "pilot_rendered_clips_maximum": 576,
+  "milestones": [
+    {
+      "title": "\u6709\u6548\u52a8\u4f5c\u4e0e\u65f6\u95f4\u6b65",
+      "state": "auditing",
+      "gate": "\u7a33\u6001\u65e9\u505c\u5bf9\u7167\uff1b\u52a0\u8f7d\u5378\u8f7d\u65f6\u95f4\u6b65\u51cf\u534a\u8bef\u5dee\uff1b\u88c1\u53bb\u91cd\u590d\u9759\u5e27\u800c\u4e0d\u6539\u65f6\u95f4\u6233"
+    },
+    {
+      "title": "\u4e0d\u89c4\u5219\u51e0\u4f55\u4e0e\u771f\u5b9e\u63a5\u89e6",
+      "state": "force_mesh_friction_validation",
+      "gate": "8/8 \u63a5\u89e6\u300113 \u6b21\u6570\u503c\u8bca\u65ad\u30014/4 \u53cd\u529b\u5355\u4f4d\u548c 3852 \u5e27\u4ea4\u53e0\u7b5b\u67e5\u5b8c\u6210\uff1b\u4e0b\u4e00\u6b65\u53cd\u529b\u7f51\u683c/\u6469\u64e6\u53ca\u5b8c\u6574\u80fd\u91cf\u3001\u8ddd\u79bb\u9a8c\u6536\uff1bGS \u5b9e\u4f53\u4ecd\u672a\u901a\u8fc7\u3002"
+    },
+    {
+      "title": "\u591a\u6750\u8d28\u4e0e\u906e\u6321",
+      "state": "bonded_limit_passed_not_admitted",
+      "gate": "\u5747\u8d28\u6781\u9650\u901a\u8fc7\uff0c\u771f\u5b9e\u5de5\u5177\u906e\u6321\u5b8c\u6210\uff1b\u82af\u58f3\u6750\u6599\u53ca\u66f4\u591a\u52a8\u4f5c\u4ecd\u9700\u5355\u72ec\u51c6\u5165\uff0c\u4e0d\u81ea\u52a8\u6269\u91cf\u3002"
+    },
+    {
+      "title": "\u89c6\u9891\u573a\u6865\u548c\u5f15\u64ce\u9002\u914d",
+      "state": "planned",
+      "gate": "\u76f8\u540c\u8f93\u5165\u4e0e\u9884\u7b97\u3001\u4e09\u79cd\u5b50\u3001\u51e0\u4f55\u9694\u79bb\u3001\u65b0\u52a8\u4f5c\u56de\u653e\uff1b\u672a\u77e5\u529b\u8f93\u51fa\u4e0d\u786e\u5b9a\u6027"
+    }
+  ],
+  "updated_unix": 1794074067.3606045
+}

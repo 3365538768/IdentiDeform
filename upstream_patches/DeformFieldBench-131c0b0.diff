@@ -1,0 +1,18 @@
+diff --git a/simulation/particle_filling/filling.py b/simulation/particle_filling/filling.py
+index e9bfb7a..7a2a77b 100644
+--- a/simulation/particle_filling/filling.py
++++ b/simulation/particle_filling/filling.py
+@@ -66,9 +66,10 @@ def densify_grids(
+             r = ti.max(r, sig[idx])
+ 
+         r = ti.ceil(r / grid_dx, dtype=int)
+-        for dx in range(-r, r + 1):
+-            for dy in range(-r, r + 1):
+-                for dz in range(-r, r + 1):
++        # FieldBridge P4 patch: stencil clipped to the grid (scripts/v2/patch_filling.py).
++        for dx in range(ti.max(-r, -i), ti.min(r, grid_density.shape[0] - 1 - i) + 1):
++            for dy in range(ti.max(-r, -j), ti.min(r, grid_density.shape[1] - 1 - j) + 1):
++                for dz in range(ti.max(-r, -k), ti.min(r, grid_density.shape[2] - 1 - k) + 1):
+                     if (
+                         i + dx >= 0
+                         and i + dx < grid_density.shape[0]

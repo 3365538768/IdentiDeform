@@ -1,0 +1,31 @@
+{
+  "phase": "R2",
+  "max_per_gpu": 2,
+  "gpus": [
+    6,
+    7
+  ],
+  "jobs": [
+    {
+      "id": "r2_mpm_jelly",
+      "kind": "cmd",
+      "cmd": "PYTHONPATH=$PWD/.venv/lib/python3.12/site-packages .engine-envs/warp/bin/python scripts/r2_mpm_identifiability.py --materials jelly --output docs/r2/MPM_IDENTIFIABILITY_jelly.json",
+      "group": "MPM-jelly",
+      "mem_mib": 6000
+    },
+    {
+      "id": "r2_mpm_plasticine",
+      "kind": "cmd",
+      "cmd": "PYTHONPATH=$PWD/.venv/lib/python3.12/site-packages .engine-envs/warp/bin/python scripts/r2_mpm_identifiability.py --materials plasticine --output docs/r2/MPM_IDENTIFIABILITY_plasticine.json",
+      "group": "MPM-plasticine",
+      "mem_mib": 6000
+    },
+    {
+      "id": "r2_mpm_metal",
+      "kind": "cmd",
+      "cmd": "PYTHONPATH=$PWD/.venv/lib/python3.12/site-packages .engine-envs/warp/bin/python scripts/r2_mpm_identifiability.py --materials metal --output docs/r2/MPM_IDENTIFIABILITY_metal.json",
+      "group": "MPM-metal",
+      "mem_mib": 6000
+    }
+  ]
+}

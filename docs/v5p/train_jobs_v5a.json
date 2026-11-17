@@ -1,0 +1,47 @@
+[
+ {
+  "id": "v5at1k_B_seed29",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v5at1k_B_seed29.json --preload",
+  "busy": "v5at1k_B_seed29[.](json|resume)"
+ },
+ {
+  "id": "v5at1k_C_seed29",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v5at1k_C_seed29.json --preload",
+  "busy": "v5at1k_C_seed29[.](json|resume)"
+ },
+ {
+  "id": "v5at1k_D_seed29",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v5at1k_D_seed29.json --preload",
+  "busy": "v5at1k_D_seed29[.](json|resume)"
+ },
+ {
+  "id": "v5at1k_B_seed17",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v5at1k_B_seed17.json --preload",
+  "busy": "v5at1k_B_seed17[.](json|resume)"
+ },
+ {
+  "id": "v5at1k_B_seed43",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v5at1k_B_seed43.json --preload",
+  "busy": "v5at1k_B_seed43[.](json|resume)"
+ },
+ {
+  "id": "v5at1k_C_seed17",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v5at1k_C_seed17.json --preload",
+  "busy": "v5at1k_C_seed17[.](json|resume)"
+ },
+ {
+  "id": "v5at1k_C_seed43",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v5at1k_C_seed43.json --preload",
+  "busy": "v5at1k_C_seed43[.](json|resume)"
+ },
+ {
+  "id": "v5at1k_D_seed17",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v5at1k_D_seed17.json --preload",
+  "busy": "v5at1k_D_seed17[.](json|resume)"
+ },
+ {
+  "id": "v5at1k_D_seed43",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v5at1k_D_seed43.json --preload",
+  "busy": "v5at1k_D_seed43[.](json|resume)"
+ }
+]

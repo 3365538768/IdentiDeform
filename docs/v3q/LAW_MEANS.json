@@ -1,0 +1,58 @@
+{
+ "source": "gen_v2.sample(i, \"main-train\") with V3 ranges (scripts/v3n/gen_v3.py) over the planned train indices",
+ "n_train_planned": 4000,
+ "means": {
+  "jelly": {
+   "n": 1334,
+   "logE": 10.925861094400856,
+   "nu": 0.2786735510388583,
+   "logS": null,
+   "n_sigma": 0,
+   "log10E_geo": 4.745016820397988,
+   "log10S_geo": null
+  },
+  "metal": {
+   "n": 1333,
+   "logE": 12.094801416035207,
+   "nu": 0.2771963906206961,
+   "logS": 8.835873932026013,
+   "n_sigma": 1304,
+   "log10E_geo": 5.252701770584696,
+   "log10S_geo": 3.8372829616074102
+  },
+  "plasticine": {
+   "n": 1333,
+   "logE": 10.343216235516866,
+   "nu": 0.2788999372153278,
+   "logS": 8.626919488593133,
+   "n_sigma": 899,
+   "log10E_geo": 4.491973147452868,
+   "log10S_geo": 3.7465188385474746
+  }
+ },
+ "all_law_logS": 8.750603825513911,
+ "stats_provisional": {
+  "mean": [
+   11.121244057362414,
+   0.27825673052281424,
+   6.849862673726479,
+   8.750603825513911
+  ],
+  "std": [
+   1.5274174339190965,
+   0.10414612946461023,
+   0.6577919218370668,
+   0.8480534772753673
+  ],
+  "count": [
+   4000,
+   4000,
+   4000,
+   2203
+  ],
+  "transform": "ln1p_E_rho_sigma_y;linear_nu",
+  "target_space": "specific",
+  "fit_split": "train (planned V3 indices, sampler)",
+  "note": "provisional; the V3 prior hand-off stats replace it if shipped"
+ }
+}

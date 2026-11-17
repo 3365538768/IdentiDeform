@@ -1,0 +1,123 @@
+[
+ {
+  "id": "v3main_C_seed29",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v3main_C_seed29.json --preload",
+  "busy": "v3main_C_seed29\\.(json|resume)"
+ },
+ {
+  "id": "v3main_C_seed29_test",
+  "after": [
+   "v3main_C_seed29"
+  ],
+  "cmd": "test -e runs/v3main_C_seed29/test_once/predictions.jsonl || ( .venv/bin/python -m fieldbridge.cli evaluate --config configs/v3p/v3main_C_seed29.json --checkpoint runs/v3main_C_seed29/best_material.pt --split test --output runs/v3main_C_seed29/test_once > runs/v3main_C_seed29/test_once.log )"
+ },
+ {
+  "id": "v3main_C_seed17",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v3main_C_seed17.json --preload",
+  "busy": "v3main_C_seed17\\.(json|resume)"
+ },
+ {
+  "id": "v3main_C_seed17_test",
+  "after": [
+   "v3main_C_seed17"
+  ],
+  "cmd": "test -e runs/v3main_C_seed17/test_once/predictions.jsonl || ( .venv/bin/python -m fieldbridge.cli evaluate --config configs/v3p/v3main_C_seed17.json --checkpoint runs/v3main_C_seed17/best_material.pt --split test --output runs/v3main_C_seed17/test_once > runs/v3main_C_seed17/test_once.log )"
+ },
+ {
+  "id": "v3main_C_seed43",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v3main_C_seed43.json --preload",
+  "busy": "v3main_C_seed43\\.(json|resume)"
+ },
+ {
+  "id": "v3main_C_seed43_test",
+  "after": [
+   "v3main_C_seed43"
+  ],
+  "cmd": "test -e runs/v3main_C_seed43/test_once/predictions.jsonl || ( .venv/bin/python -m fieldbridge.cli evaluate --config configs/v3p/v3main_C_seed43.json --checkpoint runs/v3main_C_seed43/best_material.pt --split test --output runs/v3main_C_seed43/test_once > runs/v3main_C_seed43/test_once.log )"
+ },
+ {
+  "id": "v3main_B_seed29",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v3main_B_seed29.json --preload",
+  "busy": "v3main_B_seed29\\.(json|resume)"
+ },
+ {
+  "id": "v3main_B_seed29_test",
+  "after": [
+   "v3main_B_seed29"
+  ],
+  "cmd": "test -e runs/v3main_B_seed29/test_once/predictions.jsonl || ( .venv/bin/python -m fieldbridge.cli evaluate --config configs/v3p/v3main_B_seed29.json --checkpoint runs/v3main_B_seed29/best_material.pt --split test --output runs/v3main_B_seed29/test_once > runs/v3main_B_seed29/test_once.log )"
+ },
+ {
+  "id": "v3main_D_seed29",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v3main_D_seed29.json --preload",
+  "busy": "v3main_D_seed29\\.(json|resume)"
+ },
+ {
+  "id": "v3main_D_seed29_test",
+  "after": [
+   "v3main_D_seed29"
+  ],
+  "cmd": "test -e runs/v3main_D_seed29/test_once/predictions.jsonl || ( .venv/bin/python -m fieldbridge.cli evaluate --config configs/v3p/v3main_D_seed29.json --checkpoint runs/v3main_D_seed29/best_material.pt --split test --output runs/v3main_D_seed29/test_once > runs/v3main_D_seed29/test_once.log )"
+ },
+ {
+  "id": "v3main_D_seed43",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v3main_D_seed43.json --preload",
+  "busy": "v3main_D_seed43\\.(json|resume)"
+ },
+ {
+  "id": "v3main_D_seed43_test",
+  "after": [
+   "v3main_D_seed43"
+  ],
+  "cmd": "test -e runs/v3main_D_seed43/test_once/predictions.jsonl || ( .venv/bin/python -m fieldbridge.cli evaluate --config configs/v3p/v3main_D_seed43.json --checkpoint runs/v3main_D_seed43/best_material.pt --split test --output runs/v3main_D_seed43/test_once > runs/v3main_D_seed43/test_once.log )"
+ },
+ {
+  "id": "v3main_handoff",
+  "gpu": false,
+  "after": [
+   "v3main_C_seed29_test",
+   "v3main_C_seed17_test",
+   "v3main_C_seed43_test",
+   "v3main_B_seed29_test",
+   "v3main_D_seed29_test",
+   "v3main_D_seed43_test"
+  ],
+  "cmd": "until test -e runs/v3main_B_seed17/test_once/predictions.jsonl && test -e runs/v3main_B_seed29/test_once/predictions.jsonl && test -e runs/v3main_B_seed43/test_once/predictions.jsonl && test -e runs/v3main_C_seed17/test_once/predictions.jsonl && test -e runs/v3main_C_seed29/test_once/predictions.jsonl && test -e runs/v3main_C_seed43/test_once/predictions.jsonl && test -e runs/v3main_D_seed17/test_once/predictions.jsonl && test -e runs/v3main_D_seed29/test_once/predictions.jsonl && test -e runs/v3main_D_seed43/test_once/predictions.jsonl; do sleep 60; done; .venv/bin/python scripts/v3p/export_handoff.py --prefix v3main --manifest v3main_t2000"
+ },
+ {
+  "id": "v3main_dinoS_seed17",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v3main_dinoS_seed17.json",
+  "busy": "v3main_dinoS_seed17\\.(json|resume)"
+ },
+ {
+  "id": "v3main_dinoS_seed17_test",
+  "after": [
+   "v3main_dinoS_seed17"
+  ],
+  "cmd": "test -e runs/v3main_dinoS_seed17/test_once/predictions.jsonl || ( .venv/bin/python -m fieldbridge.cli evaluate --config configs/v3p/v3main_dinoS_seed17.json --checkpoint runs/v3main_dinoS_seed17/best_material.pt --split test --output runs/v3main_dinoS_seed17/test_once > runs/v3main_dinoS_seed17/test_once.log )"
+ },
+ {
+  "id": "v3main_dinoS_seed29",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v3main_dinoS_seed29.json",
+  "busy": "v3main_dinoS_seed29\\.(json|resume)"
+ },
+ {
+  "id": "v3main_dinoS_seed29_test",
+  "after": [
+   "v3main_dinoS_seed29"
+  ],
+  "cmd": "test -e runs/v3main_dinoS_seed29/test_once/predictions.jsonl || ( .venv/bin/python -m fieldbridge.cli evaluate --config configs/v3p/v3main_dinoS_seed29.json --checkpoint runs/v3main_dinoS_seed29/best_material.pt --split test --output runs/v3main_dinoS_seed29/test_once > runs/v3main_dinoS_seed29/test_once.log )"
+ },
+ {
+  "id": "v3main_dinoS_seed43",
+  "cmd": ".venv/bin/python scripts/v3p/train_job.py configs/v3p/v3main_dinoS_seed43.json",
+  "busy": "v3main_dinoS_seed43\\.(json|resume)"
+ },
+ {
+  "id": "v3main_dinoS_seed43_test",
+  "after": [
+   "v3main_dinoS_seed43"
+  ],
+  "cmd": "test -e runs/v3main_dinoS_seed43/test_once/predictions.jsonl || ( .venv/bin/python -m fieldbridge.cli evaluate --config configs/v3p/v3main_dinoS_seed43.json --checkpoint runs/v3main_dinoS_seed43/best_material.pt --split test --output runs/v3main_dinoS_seed43/test_once > runs/v3main_dinoS_seed43/test_once.log )"
+ }
+]

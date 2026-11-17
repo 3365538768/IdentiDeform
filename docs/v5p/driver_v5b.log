@@ -1,0 +1,122 @@
+18:08:24 train=0 val=0
+18:10:24 train=0 val=0
+18:12:25 train=0 val=0
+18:14:25 train=0 val=7
+18:16:25 train=0 val=26
+18:18:26 train=0 val=51
+18:20:26 train=0 val=60
+18:22:27 train=0 val=65
+18:24:27 train=0 val=95
+18:26:28 train=0 val=113
+18:28:29 train=0 val=116
+18:30:29 train=0 val=130
+18:32:30 train=0 val=142
+18:34:31 train=0 val=171
+18:36:32 train=0 val=187
+18:38:33 train=0 val=200
+18:40:33 train=0 val=212
+18:42:35 train=2 val=227
+ValueError: Invalid train standard deviation
+18:44:43 train=5 val=231
+18:48:45 train=11 val=260
+18:51:18 train=19 val=266
+18:53:44 train=35 val=279
+18:56:17 train=45 val=280
+18:58:38 train=62 val=280
+19:01:06 train=75 val=280
+19:03:30 train=94 val=280
+19:05:58 train=107 val=280
+19:08:25 train=122 val=280
+19:10:49 train=138 val=280
+19:13:15 train=163 val=282
+19:15:45 train=182 val=282
+19:18:15 train=196 val=282
+19:20:42 train=212 val=283
+19:23:10 train=232 val=283
+19:25:41 train=242 val=283
+19:28:06 train=261 val=283
+19:30:37 train=277 val=283
+19:33:06 train=302 val=283
+19:35:44 train=326 val=283
+19:38:14 train=331 val=283
+19:40:34 train=350 val=283
+19:43:04 train=375 val=283
+19:45:38 train=392 val=283
+19:48:11 train=404 val=283
+19:50:47 train=418 val=283
+19:53:21 train=450 val=283
+19:56:06 train=465 val=283
+19:58:28 train=489 val=283
+20:00:59 train=501 val=283
+20:03:25 train=510 val=283
+20:05:50 train=538 val=283
+20:08:26 train=552 val=283
+20:10:50 train=580 val=283
+20:13:27 train=591 val=283
+20:15:54 train=609 val=283
+20:18:29 train=628 val=283
+20:21:06 train=642 val=283
+20:23:33 train=659 val=283
+20:26:03 train=678 val=283
+20:28:36 train=706 val=283
+20:31:11 train=716 val=283
+20:33:37 train=735 val=283
+20:36:11 train=758 val=283
+20:38:43 train=778 val=283
+20:41:10 train=793 val=283
+20:43:34 train=807 val=283
+20:46:06 train=830 val=283
+20:48:42 train=844 val=283
+20:51:20 train=859 val=283
+20:53:48 train=881 val=283
+20:56:23 train=906 val=283
+20:59:04 train=926 val=283
+21:01:33 train=947 val=283
+21:04:05 train=956 val=283
+21:06:31 train=956 val=283
+21:08:47 train=956 val=283
+21:11:02 train=959 val=283
+21:13:28 train=963 val=283
+21:15:57 train=971 val=283
+21:18:25 train=978 val=283
+21:20:58 train=982 val=283
+21:23:24 train=985 val=283
+21:25:49 train=985 val=283
+21:28:01 train=992 val=283
+21:30:26 train=993 val=283
+21:32:51 train=993 val=283
+21:35:03 train=995 val=283
+21:37:28 train=998 val=283
+21:39:50 train=1000 val=283
+index data/prepared/v5bmain_t1000_vjl/index.json 1283
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v5bt1k_B_seed17.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v5bt1k_B_seed29.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v5bt1k_B_seed43.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v5bt1k_C_seed17.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v5bt1k_C_seed29.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v5bt1k_C_seed43.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v5bt1k_D_seed17.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v5bt1k_D_seed29.json
+/kairos-yangsen/kairis-vepfs-6t/linrui/rsi_real_test/configs/v3p/v5bt1k_D_seed43.json
+queued
+21:40:18 training
+21:40:18 start v5bt1k_B_seed29 gpu 4
+21:40:19 start v5bt1k_C_seed29 gpu 5
+21:40:20 start v5bt1k_D_seed29 gpu 6
+21:40:21 start v5bt1k_B_seed17 gpu 7
+21:56:20 exit v5bt1k_C_seed29 0 gpu 5
+21:56:24 start v5bt1k_B_seed43 gpu 5
+21:58:25 exit v5bt1k_B_seed29 0 gpu 4
+21:58:28 start v5bt1k_C_seed17 gpu 4
+22:04:10 exit v5bt1k_D_seed29 0 gpu 6
+22:04:10 start v5bt1k_C_seed43 gpu 6
+22:04:26 exit v5bt1k_B_seed17 0 gpu 7
+22:04:29 start v5bt1k_D_seed17 gpu 7
+22:16:22 exit v5bt1k_B_seed43 0 gpu 5
+22:16:22 start v5bt1k_D_seed43 gpu 5
+22:20:53 exit v5bt1k_C_seed17 0 gpu 4
+22:23:23 exit v5bt1k_D_seed17 0 gpu 7
+22:25:08 exit v5bt1k_C_seed43 0 gpu 6
+22:36:53 exit v5bt1k_D_seed43 0 gpu 5
+all done
+22:36:53 pool finished

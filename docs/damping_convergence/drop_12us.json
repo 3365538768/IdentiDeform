@@ -1,0 +1,22 @@
+{
+  "material": "metal",
+  "sweep": "E",
+  "specific_values": [
+    10000000.0
+  ],
+  "density": 5000.0,
+  "px_per_unit_assumed": 240.0,
+  "frame_dt": 0.016666666666666666,
+  "substep_dt": 1.25e-05,
+  "damping_mode": "physical_time",
+  "actions": {
+    "drop": [
+      {
+        "value": 10000000.0,
+        "dominant_height_hz": 0.6593406593406593,
+        "height_change_px": 36.593869972229
+      }
+    ]
+  },
+  "status": "complete"
+}
